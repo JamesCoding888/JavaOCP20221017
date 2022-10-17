@@ -1,6 +1,6 @@
 # JavaOCP NoteBook
-Integrated Development Environment (IDE): Eclipse 2021-06
-JDK: Java SE 11
+#Integrated Development Environment (IDE): Eclipse 2021-06
+#JDK: Java SE 11
 
 ==============================================================================
 
