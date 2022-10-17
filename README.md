@@ -18,3 +18,6 @@ day1:
 
 - CalcMath:
 - Description: 計算平均和計算標準差之方法撰寫
+
+day2: 
+- Coming Soon ~~~
