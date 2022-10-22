@@ -32,4 +32,6 @@ day2:
 
 > ArrayDemo2
 - Description: 
-This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also lecture you with length of Array object to print out the value of Array object.
+a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also lecture you with length of Array object to print out the value of Array object.
+b. 
+c. 
