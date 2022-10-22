@@ -23,11 +23,6 @@ day2:
 - Coming Soon ~~~
 
 
-Visibility 	Private	Default	Protected	Public
-Same Class	Y	Y	Y	Y
-Class in same Package	N	Y	Y	Y
-Subclass in Same Package	N	Y	Y	Y
-Subclass Outside the same Package	N	N	Y	Y
-Non-subclass Outside the same package	N	N	N	Y
+
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
