@@ -32,6 +32,12 @@ day2:
 
 > ArrayDemo2:
 - Description: 
-- a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also lecture you with using length of Array object to print out the value of Array object.
+- a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on using length of Array object to print out the value of Array object.
 - b. Also, you will learn the Array API - "package java.util;" of Arrays.toString(name_of_ArrayObject)
 - c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - "package java.util;" with Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", "))
+
+> ArrayDemo3:
+- Description:
+- a. This session will use a built-in methods to get the results of Count of ArrayObject, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
+- getSum(int[] array), getAvg(int[] array), getMin(int[] array) and getMax(int[] array)
+
