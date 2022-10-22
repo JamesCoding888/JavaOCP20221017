@@ -39,10 +39,10 @@ day2:
 > ArrayDemo3.java:
 - Description:
 - a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
-- getSum(int[] array)
-- getAvg(int[] array)
-- getMin(int[] array)
-- getMax(int[] array)
+- 1) getSum(int[] array)
+- 2) getAvg(int[] array)
+- 3) getMin(int[] array)
+- 4) getMax(int[] array)
 
 > ArrayDemo4.java:
 - Description:
