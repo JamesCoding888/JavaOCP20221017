@@ -38,7 +38,7 @@ day2:
 
 > ArrayDemo3.java:
 - Description:
-- a. This session will use a built-in methods to get the results of Count of ArrayObject, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
+- a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
 - getSum(int[] array)
 - getAvg(int[] array)
 - getMin(int[] array)
