@@ -13,10 +13,10 @@ day1:
 - BMIUtil.java:
 - Description: Create an Util of BMI
 
-- CalcBMI:
+- CalcBMI.java:
 - Description: Giving the both of BMI-method calculation but different concept
 
-- CalcMath:
+- CalcMath.java:
 - Description: 計算平均和計算標準差之方法撰寫
 
 day2: 
