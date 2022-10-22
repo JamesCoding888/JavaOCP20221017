@@ -6,7 +6,7 @@ JDK: Java SE 11
 ------------------------------------------------------------------------------
 day1:
 1. Set-up environment with Eclipse Workspace
-2. Lesson note of following programming:
+2. Lesson learned of following programming:
 > Hello.java:
 - Description: To make sure the whole system of Eclipse is functional work after running on this code.
 
@@ -20,13 +20,13 @@ day1:
 - Description: 計算平均和計算標準差之方法撰寫
 
 day2: 
-1. Lesson note of following programming for Accessibility:
+1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist.
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
 
-2. Lesson note of the Application of Array:
+2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 
