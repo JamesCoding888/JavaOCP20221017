@@ -56,10 +56,13 @@ day2:
 
 > ArrayDemo5.java:
 - Description:
-- This session will give you a tool which is API of "IntSummaryStatistics".
-- You shall make a note of following built-in API from IntSummaryStatistics as
+- This session will give you a tool which is API of "IntSummaryStatistics". You shall make a note of following built-in API from IntSummaryStatistics as
 - 1) Arrays.stream(name_of_ArrayObject).summaryStatistics().getCount()
 - 2) Arrays.stream(name_of_ArrayObject).summaryStatistics().getSum()
 - 3) Arrays.stream(name_of_ArrayObject).summaryStatistics().getAverage()
 - 4) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMax()
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
+
+
+day3:
+- Coming Soon ~
