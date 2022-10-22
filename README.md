@@ -20,9 +20,10 @@ day1:
 - Description: 計算平均和計算標準差之方法撰寫
 
 day2: 
-- Coming Soon ~~~
-
-
-
+1. Lesson note of following programming:
+- Let's talk about accessibilty of Java as following checklist
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
+- Description: We do create three different .java as following
+  Apple.java / Banana.java / Cherry.java
+  
