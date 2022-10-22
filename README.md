@@ -5,19 +5,19 @@ JDK: Java SE 11
 
 ------------------------------------------------------------------------------
 day1:
-> The initially build-up environment on Eclipse Workspace
-> Introduction of following programming:
-> Hello.java:
+- The initially build-up environment on Eclipse Workspace
+- Introduction of following programming:
+- Hello.java:
 > Description: To make sure the whole system of Eclipse is functional work after running on this code.
 
-> BMIUtil.java:
+- BMIUtil.java:
 > Description: Create an Util of BMI
 
-> CalcBMI:
+- CalcBMI:
 > Description: Giving the both of BMI-method calculation but different concept
 
-> CalcMath:
+- CalcMath:
 > Description: 計算平均和計算標準差之方法撰寫
 
 day2: 
-> Coming Soon ~~~
+- Coming Soon ~~~
