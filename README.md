@@ -3,6 +3,9 @@ Integrated Development Environment (IDE): Eclipse 2021-06
 
 JDK: Java SE 11
 
+Recommended Book: Java 8 Lambdas
+> https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf
+
 ------------------------------------------------------------------------------
 day1:
 1. Set-up environment with Eclipse Workspace
