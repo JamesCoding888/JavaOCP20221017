@@ -27,16 +27,16 @@ day2:
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
 
 2. Lesson note of the Application of Array:
-> ArrayDemo1:
+> ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 
-> ArrayDemo2:
+> ArrayDemo2.java:
 - Description: 
 - a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on using length of Array object to print out the value of Array object.
 - b. Also, you will learn the Array API - "package java.util;" of Arrays.toString(name_of_ArrayObject)
 - c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - "package java.util;" with Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", "))
 
-> ArrayDemo3:
+> ArrayDemo3.java:
 - Description:
 - a. This session will use a built-in methods to get the results of Count of ArrayObject, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
 - getSum(int[] array)
@@ -44,3 +44,12 @@ day2:
 - getMin(int[] array)
 - getMax(int[] array)
 
+> ArrayDemo4.java:
+- Description:
+- a. Since you already understood of how to design your own method(s) as previously lecture, then plz check out the API of "Arrays.stream" to do the work as ArrayDemo3.java. 
+- Plz make a note of 
+- 1) Arrays.stream(name_of_ArrayObject).count()
+- 2) Arrays.stream(name_of_ArrayObject).sum()
+- 3) Arrays.stream(name_of_ArrayObject).average().getAsDouble()
+- 4) Arrays.stream(name_of_ArrayObject).max().getAsInt()
+- 5) Arrays.stream(name_of_ArrayObject).min().getAsInt()
