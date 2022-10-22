@@ -33,7 +33,7 @@ day2:
 > ArrayDemo2.java:
 - Description: 
 - a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on using length of Array object to print out the value of Array object.
-- b. Also, you will learn the Array API - "package java.util;" of Arrays.toString(name_of_ArrayObject)
+- b. Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
 - c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package java.util;".
 
 > ArrayDemo3.java:
