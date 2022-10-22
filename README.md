@@ -22,6 +22,5 @@ day1:
 day2: 
 - Coming Soon ~~~
 
-1	2	6
-7	4	5
+
 ![image](https://user-images.githubusercontent.com/83496093/197315652-4ecce1cc-a26a-4c4e-ad7f-9f5b167f27a8.png)
