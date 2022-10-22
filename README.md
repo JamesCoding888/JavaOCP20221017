@@ -27,10 +27,10 @@ day2:
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
 
 2. Lesson note of the Application of Array:
-> ArrayDemo1
+> ArrayDemo1:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 
-> ArrayDemo2
+> ArrayDemo2:
 - Description: 
 - a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also lecture you with using length of Array object to print out the value of Array object.
 - b. Also, you will learn the Array API - "package java.util;" of Arrays.toString(name_of_ArrayObject)
