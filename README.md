@@ -8,7 +8,7 @@ day1:
 1. Set-up environment with Eclipse Workspace
 2. Lesson note of following programming:
 - Hello.java:
--> Description: To make sure the whole system of Eclipse is functional work after running on this code.
+>> Description: To make sure the whole system of Eclipse is functional work after running on this code.
 
 - BMIUtil.java:
 - Description: Create an Util of BMI
