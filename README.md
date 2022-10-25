@@ -79,10 +79,10 @@ day3:
 
 
 > StringArraydemo2.java:
-- Description: This session will follow up the previously code but updating to Java 1.8
+- Description: This session will follow up the previously StringArraydemo.java but updating to Java 1.8
 
 > StringArraydemo3.java:
-- Description: 
+- Description: This session will give a lecture on "Integer.parseInt" and calculation of average Pass Score.
 
 > StringArraydemo4.java:
-- Description: 
+- Description: This session will follow up the previously StringArraydemo3.java but differently demostration of calculation of average Pass Score in Java 1.8.
