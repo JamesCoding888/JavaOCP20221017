@@ -96,4 +96,12 @@ day3:
 - Description: This session is giving an introduction of StringBuffer and StringBuilder.
 
 > StringBuilderDemo2.java;
-> Description: This session gives a lecture on how to use StringBuilder Util.
+- Description: This session gives a lecture on how to use StringBuilder Util.
+
+> StringDemo1.java;
+- Description: This session will introduce String,  
+
+> StringDem2.java;
+- Description: This session gives a lecture on how to use StringBuilder Util.
+
+
