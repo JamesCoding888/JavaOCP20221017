@@ -99,13 +99,14 @@ day3:
 - Description: This session gives a lecture on how to use StringBuilder Util.
 
 > StringDemo1.java;
-- Description: 
+- Description: This session will introduce how to compare with two differently String variables of their memory and value.
 - 1) string_name1 == string_name2
 - 2) string_name1.equals(string_name2)
 - 3) string_name1.equalsIgnoreCase(string_name2) 
 
 
 > StringDem2.java;
-- Description: 
+- Description: This session is not big deal but only one NEW API of .intern() for your reference
+- 1) string_name1.intern() == string_name2
 
 
