@@ -90,3 +90,10 @@ day3:
 - 2) filter(score -> score >= 60)
 - 3) average()
 - 4) getAsDouble()
+
+
+> StringBuilderDemo.java:
+- Description: This session is giving an introduction of StringBuffer and StringBuilder.
+
+> StringBuilderDemo2.java;
+> Description: This session gives a lecture on how to use StringBuilder Util.
