@@ -3,10 +3,12 @@ Integrated Development Environment (IDE): Eclipse 2021-06
 
 JDK: Java SE 11
 
+Recommended Book: Java 8 Lambdas [https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf]
+
 ------------------------------------------------------------------------------
 day1:
 1. Set-up environment with Eclipse Workspace
-2. Lesson note of following programming:
+2. Lesson learned of following programming:
 > Hello.java:
 - Description: To make sure the whole system of Eclipse is functional work after running on this code.
 
@@ -20,29 +22,29 @@ day1:
 - Description: 計算平均和計算標準差之方法撰寫
 
 day2: 
-1. Lesson note of following programming for Accessibility:
+1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist.
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
 
-2. Lesson note of the Application of Array:
+2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 
 > ArrayDemo2.java:
 - Description: 
 - a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on using length of Array object to print out the value of Array object.
-- b. Also, you will learn the Array API - "package java.util;" of Arrays.toString(name_of_ArrayObject)
-- c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - "package java.util;" with Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", "))
+- b. Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
+- c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package java.util;".
 
 > ArrayDemo3.java:
 - Description:
-- a. This session will use a built-in methods to get the results of Count of ArrayObject, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
-- getSum(int[] array)
-- getAvg(int[] array)
-- getMin(int[] array)
-- getMax(int[] array)
+- a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
+- 1) getSum(int[] array)
+- 2) getAvg(int[] array)
+- 3) getMin(int[] array)
+- 4) getMax(int[] array)
 
 > ArrayDemo4.java:
 - Description:
@@ -65,4 +67,26 @@ day2:
 
 
 day3:
-- Coming Soon ~
+1. Lesson learned of following programming for combination of String2Array and Stream's API:
+- Description: The coming of sample codes of StringArrayDemo(s), will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+
+> StringArraydemo.java:
+- Description: This session will tell you, 
+- 1) how to use "String[] java.lang.String.split(String regex)" for collecting the each name into String[]
+- 2) how to use "Arrays.toString(name_of_stringArray)"
+- 3) calculation of arrayLength, p.s., name_of_array.length
+- 4) calculation of stringLength, p.s., name_of_string.length()
+
+
+> StringArraydemo2.java:
+- Description: This session will follow up the previously StringArraydemo.java but updating to Java 1.8
+
+> StringArraydemo3.java:
+- Description: This session will give a lecture on "Integer.parseInt" and calculation of average Pass Score.
+
+> StringArraydemo4.java:
+- Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Pass Score in Java 1.8.
+- 1) mapToInt(score -> Integer.parseInt(score))
+- 2) filter(score -> score >= 60)
+- 3) average()
+- 4) getAsDouble()
