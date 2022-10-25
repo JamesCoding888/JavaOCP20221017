@@ -99,9 +99,13 @@ day3:
 - Description: This session gives a lecture on how to use StringBuilder Util.
 
 > StringDemo1.java;
-- Description: This session will introduce String,  
+- Description: 
+- 1) string_name1 == string_name2
+- 2) string_name1.equals(string_name2)
+- 3) string_name1.equalsIgnoreCase(string_name2) 
+
 
 > StringDem2.java;
-- Description: This session gives a lecture on how to use StringBuilder Util.
+- Description: 
 
 
