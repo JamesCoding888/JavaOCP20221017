@@ -110,8 +110,8 @@ day3:
 - 1) string_name1.intern() == string_name2
 
 > StringDemo3.java:
-- Description: This seesion will introduce "public String substring(int beginIndex, int endIndex)"
+- Description: This session will introduce "public String substring(int beginIndex, int endIndex)"
 
 > StringDemo4.java:
-- Description: 
+- Description: This session creates a "String addUtil()" for your reference.
 
