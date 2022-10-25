@@ -85,4 +85,8 @@ day3:
 - Description: This session will give a lecture on "Integer.parseInt" and calculation of average Pass Score.
 
 > StringArraydemo4.java:
-- Description: This session will follow up the previously StringArraydemo3.java but differently demostration of calculation of average Pass Score in Java 1.8.
+- Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Pass Score in Java 1.8.
+- 1) mapToInt(score -> Integer.parseInt(score))
+- 2) filter(score -> score >= 60)
+- 3) average()
+- 4) getAsDouble()
