@@ -21,6 +21,7 @@ day1:
 > CalcMath.java:
 - Description: 計算平均和計算標準差之方法撰寫
 
+------------------------------------------------------------------------------
 day2: 
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist.
@@ -65,7 +66,7 @@ day2:
 - 4) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMax()
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
-
+------------------------------------------------------------------------------
 day3:
 1. Lesson learned of following programming for combination of String2Array and Stream's API:
 - Description: The coming of sample codes of StringArrayDemo(s), will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
@@ -115,3 +116,6 @@ day3:
 > StringDemo4.java:
 - Description: This session creates a "String addUtil()" for your reference.
 
+------------------------------------------------------------------------------
+day4:
+- Coming Soon~~
