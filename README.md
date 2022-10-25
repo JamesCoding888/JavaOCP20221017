@@ -67,4 +67,22 @@ day2:
 
 
 day3:
-- Coming Soon ~
+1. Lesson learned of following programming for combination of String2Array and Stream's API:
+- Description: The coming of sample codes of StringArrayDemo(s), will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+
+> StringArraydemo.java:
+- Description: This session will tell you, 
+- 1) how to use "String[] java.lang.String.split(String regex)" for collecting the each name into String[]
+- 2) how to use "Arrays.toString(name_of_stringArray)"
+- 3) calculation of arrayLength, p.s., name_of_array.length
+- 4) calculation of stringLength, p.s., name_of_string.length()
+
+
+> StringArraydemo2.java:
+- Description: This session will follow up the previously code but updating to Java 1.8
+
+> StringArraydemo3.java:
+- Description: 
+
+> StringArraydemo4.java:
+- Description: 
