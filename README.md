@@ -128,7 +128,7 @@ day4:
 - Description: This session creates method of print and getSum util 
 
 > MultiArrayDemo3.java:
-- Description: 
+- Description: This session will give a lecture on BMI calculator of multi-ple array 
 
 > MultiArrayDemo4.java:
 - Description: 
