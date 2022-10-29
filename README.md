@@ -118,4 +118,8 @@ day3:
 
 ------------------------------------------------------------------------------
 day4:
-- Coming Soon~~
+1. Lesson learned of following programming for Array:
+- Description: The coming of sample codes of MultiArrayDemo(s)
+
+> MultiArrayDemo1.java:
+- Description: This session will introduce how to print out the memory of Array and value of Array
