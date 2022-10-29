@@ -1,8 +1,7 @@
 package com.ocp.day4;
 public class MultiArrayDemo1 {
 	public static void main(String[] args) {
-		int[][] arrayByInt = new int[3][2];
-		
+		int[][] arrayByInt = new int[3][2];		
 		arrayByInt[0][0] = 1;
 		arrayByInt[0][1] = 2;
 		arrayByInt[1][0] = 3;
