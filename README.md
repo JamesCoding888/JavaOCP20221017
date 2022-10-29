@@ -123,3 +123,18 @@ day4:
 
 > MultiArrayDemo1.java:
 - Description: This session will introduce how to print out the memory of Array and value of Array
+
+> MultiArrayDemo2.java:
+- Description: 
+
+> MultiArrayDemo3.java:
+- Description: 
+
+> MultiArrayDemo4.java:
+- Description: 
+
+> MultiArrayDemo5.java:
+- Description: 
+
+> MultiArrayDemo6.java:
+- Description: 
