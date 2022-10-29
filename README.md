@@ -125,7 +125,7 @@ day4:
 - Description: This session will introduce how to initialize for an array, and print out the memory and value of multiple Array
 
 > MultiArrayDemo2.java:
-- Description: 
+- Description: This session creates method of print and getSum util 
 
 > MultiArrayDemo3.java:
 - Description: 
