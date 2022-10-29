@@ -122,7 +122,7 @@ day4:
 - Description: The coming of sample codes of MultiArrayDemo(s)
 
 > MultiArrayDemo1.java:
-- Description: This session will introduce how to print out the memory of Array and value of Array
+- Description: This session will introduce how to initialize for an array, and print out the memory and value of multiple Array
 
 > MultiArrayDemo2.java:
 - Description: 
