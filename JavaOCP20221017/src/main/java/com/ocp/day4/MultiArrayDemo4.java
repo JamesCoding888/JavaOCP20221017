@@ -1,28 +1,36 @@
 package com.ocp.day4;
-
 import java.util.Arrays;
-
 public class MultiArrayDemo4 {
 	public static void main(String[] args) {
-		// 有三組[身高, 體重]的資料如下:
-		double[][] x = { { 170.0, 185.0, 165.5 }, // 身高
-				{ 60.0, 75.5, 43.5 } // 體重
-		};
-		// 請個別計算出這三組的bmi值(小數點一位) = ?
-		System.out.println(Arrays.deepToString(x));
-		/*
-		 * [170.0, 185.0, 165.5] [60.0 , 75.5 , 43.5] --------------------- 0 1 2
-		 */
-		if (x != null && x.length == 2 && x[0].length == x[1].length) {
-			for (int i = 0; i < x[0].length; i++) {
-				System.out.println(x[0][i]);
-				System.out.println(x[1][i]);
-				double h = x[0][i];
-				double w = x[1][i];
-				double bmi = w / Math.pow(h / 100, 2);
-				System.out.printf("bmi: %.1f\n", bmi);
-			}
-		}
-
-	}
+		// Please calculation of bmi for each person
+		double[][] arrayOfHeightAndWeight = {
+												{160, 170, 180}, // height
+												{50.5, 70, 80.4} // weight
+											};
+		// API - deepToString 
+		System.out.println(Arrays.deepToString(arrayOfHeightAndWeight));
+		if(arrayOfHeightAndWeight != null && 
+		   arrayOfHeightAndWeight.length == 2 &&
+		   arrayOfHeightAndWeight[0].length == arrayOfHeightAndWeight[1].length) {
+			for(int i=0; i < arrayOfHeightAndWeight[0].length; i++) {
+					double valueOfHeight = arrayOfHeightAndWeight[0][i];
+					double valueOfWeight = arrayOfHeightAndWeight[1][i];
+					double bmi = (double) valueOfWeight / Math.pow(valueOfHeight/100, 2);
+					System.out.printf("BMI 計算結果: %.2f\n", bmi);	
+			}	
+		}	
+	}		
 }
+/*
+ * ======================================================================
+ * 作業
+ * for(double[] array : arrayOfHeightAndWeight) { for(double value : array) {
+ * 
+ * double[] arrayOfHeight = arrayOfHeightAndWeight[0]; double[] arrayOfWeight =
+ * arrayOfHeightAndWeight[1];
+ * 
+ * double bmi = (double) array[0] / Math.pow(array[1]/100, 2);
+ * System.out.printf("BMI 計算結果: %.2f\n", bmi); }
+ * 
+ * }
+ */
