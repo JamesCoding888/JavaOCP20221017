@@ -131,7 +131,7 @@ day4:
 - Description: This session will give a lecture on BMI calculator of multi-ple array 
 
 > MultiArrayDemo4.java:
-- Description: Following the previously MultiArrayDemo3.java, we modify the order of initialized array, and re-design the for-loop algorithm
+- Description: Following the previously MultiArrayDemo3.java, we modify the order of initialized array, and re-design the for-loop algorithm. Also, one API of Arrays.deepToString(name_of_array) for your reference
 
 > MultiArrayDemo5.java:
 - Description: 
