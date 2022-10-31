@@ -36,7 +36,7 @@ day1:
 day2: 
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist. 
-在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
+> 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
