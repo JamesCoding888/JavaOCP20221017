@@ -59,7 +59,8 @@ day2:
 
 > ArrayDemo3.java:
 - Description:
-- a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following: 
+- Of this session, we design methods to get the result of Sum, Average, Maximum and Minimum value from Array object. Please see the following methods that presented in this session 
+- 此節建立了 4 個 method 去獲取分數之和、平均、最小值和最大值
 - 1) getSum(int[] array)
 - 2) getAvg(int[] array)
 - 3) getMin(int[] array)
@@ -67,7 +68,7 @@ day2:
 
 > ArrayDemo4.java:
 - Description:
-- a. Since you already understood of how to design your own method(s) as previously lecture, then plz check out the API of "Arrays.stream" to do the work as ArrayDemo3.java. 
+- Since you already understood of how to design your own method(s) as previously lecture, then plz check out the API of "Arrays.stream" to do the work as ArrayDemo3.java. 
 - Plz make a note of 
 - 1) Arrays.stream(name_of_ArrayObject).count()
 - 2) Arrays.stream(name_of_ArrayObject).sum()
