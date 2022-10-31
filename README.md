@@ -124,15 +124,20 @@ day4:
 
 > MultiArrayDemo1.java:
 - Description: This session will introduce how to initialize for an array, and print out the memory and value of multiple Array
+- 此節將介紹如何將陣列初始化，並印出陣列的記憶體位址和多維陣列的值
 
 > MultiArrayDemo2.java:
 - Description: This session creates method of print and getSum util 
+- 此節建立 print 和 getSum 的工具，當需要用這些工具 (也就是 method)，將可直接調用
 
 > MultiArrayDemo3.java:
 - Description: This session will give a lecture on BMI calculator of multi-ple array 
+- 此節介紹使用多維陣列，來收集體重和身高的參數，並建立一個多維陣列的 BMI 計算器，將每組的 BMI 參數產出
 
 > MultiArrayDemo4.java:
-- Description: Following the previously MultiArrayDemo3.java, we modify the order of initialized array, and re-design the for-loop algorithm. Also, one API of Arrays.deepToString(name_of_array) for your reference
+- Description: Following the previously MultiArrayDemo3.java, we modify the order of initialized array, and re-design the for-loop algorithm to generate the each group of BMI. Also, one API of Arrays.deepToString(name_of_array) for your reference
+- 依據先前的 MultiArrayDemo3.java 介紹，我們修改了初始化陣列的順序，並重新設計一個 for-loop 的演算法，將每組的 BMI 參數產出。另外此節介紹了一個內建 API - Arrays.deepToString(name_of_array)，可直接將陣列的值抓出，並由 System.out.println(Arrays.deepToString(name_of_array)) 印出。
+- 備註: name_of_array 係指陣列的變數名稱
 
 > MultiArrayDemo5.java:
 - Description: 
