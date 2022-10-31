@@ -119,7 +119,8 @@ day3:
 ------------------------------------------------------------------------------
 day4:
 1. Lesson learned of following programming for Array:
-- Description: The coming of sample codes of MultiArrayDemo(s)
+- Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
+本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
 
 > MultiArrayDemo1.java:
 - Description: This session will introduce how to initialize for an array, and print out the memory and value of multiple Array
