@@ -40,20 +40,26 @@ day2:
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
 - Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
+- 本節建立的 .java 範例，係為了驗證讀取權限
 
 2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
+- 本節將說明如何將一維陣列初始化，並計算陣列物件的長度
+
 
 > ArrayDemo2.java:
 - Description: 
 - a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on using length of Array object to print out the value of Array object.
+- 介接如何使用 for-loop 和 for-each 的方式，將陣列中的值印出，另外方式是藉由抓取陣列的長度，將陣列的值印出
 - b. Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
+- 將學到如何使用 Oracle 提供的 API - Arrays.toString(name_of_ArrayObject)，在 package java.util 中
 - c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package java.util;".
+- 介紹 Java 1.8 提供的 API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", "))，在 Oracle 中的 package java.util，將陣列中的值印出
 
 > ArrayDemo3.java:
 - Description:
-- a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following:
+- a. This session will use a built-in methods to get the results of Count of length, Sum, Average, Maximum and Minimum value from Array object. Therefore, you will get four differently methods as following: 
 - 1) getSum(int[] array)
 - 2) getAvg(int[] array)
 - 3) getMin(int[] array)
