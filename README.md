@@ -5,6 +5,12 @@ JDK: Java SE 11
 
 Recommended Book: Java 8 Lambdas [https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf]
 
+Video Lectures of each session will be coming soon
+
+每單元之影片介紹，將陸續推出，請各為讀者盡請期待 ~~~
+
+備註: 後續還會放上 SpringMVC 和 SpringBoot Framework 的介紹
+
 ------------------------------------------------------------------------------
 day1:
 1. Set-up environment with Eclipse Workspace
