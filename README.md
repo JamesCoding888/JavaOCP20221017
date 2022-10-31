@@ -68,8 +68,8 @@ day2:
 
 > ArrayDemo4.java:
 - Description:
-- Since you already understood of how to design your own method(s) as previously lecture, then plz check out the API of "Arrays.stream" to do the work as ArrayDemo3.java. 
-- Plz make a note of 
+- Since you already understood of how to design your own method(s) as previously lecture, then plz check out the following API with regards to "Arrays.stream" 
+- 讀者應能從上節 ArrayDemo3.java 了解如何自行建立 method(s)，本節將介紹如何使用 Arrays.stream 來實作 ArrayDemo3.java 提到的範例
 - 1) Arrays.stream(name_of_ArrayObject).count()
 - 2) Arrays.stream(name_of_ArrayObject).sum()
 - 3) Arrays.stream(name_of_ArrayObject).average().getAsDouble()
