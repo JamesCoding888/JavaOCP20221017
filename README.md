@@ -7,7 +7,7 @@ Recommended Book: Java 8 Lambdas [https://lemus.webs.upv.es/wordpress/wp-content
 
 Video Lectures of each session will be coming soon
 
-每單元之影片介紹，將陸續推出，請各為讀者盡請期待 ~~~
+本教學專案: JavaOCP20221017 之影片介紹，將陸續推出，請各為讀者盡請期待 ~~~
 
 ------------------------------------------------------------------------------
 day1:
