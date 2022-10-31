@@ -11,15 +11,22 @@ day1:
 2. Lesson learned of following programming:
 > Hello.java:
 - Description: To make sure the whole system of Eclipse is functional work after running on this code.
+- 在 Eclipse Workspace 建立的新專案 Hello.java，並確認此程式可成功執行且印出 "Hello World"
+
 
 > BMIUtil.java:
 - Description: Create an Util of BMI.
+- 建立 BMI 計算工具
+
 
 > CalcBMI.java:
 - Description: Giving the both of BMI-method calculation but different concept.
+- 如 BMIUtil.java 所述， 此節調整為 BMI method 工具，供開發者使用
+
 
 > CalcMath.java:
-- Description: 計算平均和計算標準差之方法撰寫
+- Description: This session is giving three design of methods (eg, calcSum, calcAvg and calcSD) to calculate the add-up score and average score and standard deviation of students 
+- 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
 day2: 
