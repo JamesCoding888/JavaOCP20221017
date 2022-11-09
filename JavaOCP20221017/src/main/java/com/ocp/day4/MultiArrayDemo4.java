@@ -7,30 +7,24 @@ public class MultiArrayDemo4 {
 												{160, 170, 180}, // height
 												{50.5, 70, 80.4} // weight
 											};
-		// API - deepToString 
+		// API - deepToString 將 arrayOfHeightAndWeight 的 value(s) 印出
 		System.out.println(Arrays.deepToString(arrayOfHeightAndWeight));
+		
+		
+		// arrayOfHeightAndWeight 不為 Null
+		// arrayOfHeightAndWeight.length 陣列長度為 2
+		// arrayOfHeightAndWeight[0].length 在陣列 0 位址的長度，也就是 height 的長度
+		// arrayOfHeightAndWeight[1].length 在陣列 1 位址，的長度，也就是 weight 的長度
 		if(arrayOfHeightAndWeight != null && 
 		   arrayOfHeightAndWeight.length == 2 &&
 		   arrayOfHeightAndWeight[0].length == arrayOfHeightAndWeight[1].length) {
-			for(int i=0; i < arrayOfHeightAndWeight[0].length; i++) {
-					double valueOfHeight = arrayOfHeightAndWeight[0][i];
-					double valueOfWeight = arrayOfHeightAndWeight[1][i];
-					double bmi = (double) valueOfWeight / Math.pow(valueOfHeight/100, 2);
-					System.out.printf("BMI 計算結果: %.2f\n", bmi);	
-			}	
-		}	
+		   for(int i = 0 ; i < arrayOfHeightAndWeight[0].length ; i++) {
+			   
+			   double arrayOfHeight = arrayOfHeightAndWeight[0][i];
+			   double arrayOfWeight = arrayOfHeightAndWeight[1][i];
+			   double bmi = arrayOfWeight / (double)(Math.pow(arrayOfHeight/100, 2)) ;
+			   System.out.printf("BMI[%d]: %s\n", i+1, bmi);
+		   }		  
+		}					
 	}		
 }
-/*
- * ======================================================================
- * 作業
- * for(double[] array : arrayOfHeightAndWeight) { for(double value : array) {
- * 
- * double[] arrayOfHeight = arrayOfHeightAndWeight[0]; double[] arrayOfWeight =
- * arrayOfHeightAndWeight[1];
- * 
- * double bmi = (double) array[0] / Math.pow(array[1]/100, 2);
- * System.out.printf("BMI 計算結果: %.2f\n", bmi); }
- * 
- * }
- */

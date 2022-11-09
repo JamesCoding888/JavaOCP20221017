@@ -1,5 +1,4 @@
 package com.ocp.day4;
-
 import java.util.Arrays;
 
 public class MultiArrayDemo5 {
