@@ -26,4 +26,15 @@ public class MultiArrayDemo2 {
 		return sum;
 	}
 }
-	
+
+/*
+	Console:
+			0
+			1
+			2
+			3
+			4
+			5
+			Sum of arrayByIntInValue: 15
+
+*/

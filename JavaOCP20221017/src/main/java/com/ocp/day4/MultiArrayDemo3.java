@@ -17,3 +17,15 @@ public class MultiArrayDemo3 {
 		}
 	}
 }
+
+/*
+	Console:
+			array2String: [160.0, 50.5]
+			BMI 計算結果: 19.73
+			array2String: [170.0, 70.0]
+			BMI 計算結果: 24.22
+			array2String: [180.0, 80.4]
+			BMI 計算結果: 24.81
+
+
+*/

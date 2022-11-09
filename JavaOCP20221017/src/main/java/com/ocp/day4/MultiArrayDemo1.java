@@ -38,3 +38,34 @@ public class MultiArrayDemo1 {
 		}
 	}
 }
+
+/*
+	Console:
+			Length of arrayByInt: 3
+			Length of arrayByInt[0]: 2
+			Length of arrayByInt[1]: 2
+			Length of arrayByInt[2]: 2
+			========= 直接印出 =========
+			1
+			2
+			3
+			4
+			5
+			6
+			========= for-loop =========
+			value: 1
+			value: 2
+			value: 3
+			value: 4
+			value: 5
+			value: 6
+			========= for-each =========
+			Memory of arrayByInt: [[I@38cccef
+			memory: [I@5679c6c6 ; value: 1
+			memory: [I@5679c6c6 ; value: 2
+			memory: [I@27ddd392 ; value: 3
+			memory: [I@27ddd392 ; value: 4
+			memory: [I@19e1023e ; value: 5
+			memory: [I@19e1023e ; value: 6
+
+*/
