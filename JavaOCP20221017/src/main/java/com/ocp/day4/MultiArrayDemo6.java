@@ -8,14 +8,15 @@ public class MultiArrayDemo6 {
 		// 利用 Java stream 來進行分析
 		// {{100, 90}, {85, 70}, {95, 40}} -> {100, 90, 85, 70, 95, 40};
 		int sum = Arrays.stream(scores) // 二維陣列串流
-				.flatMapToInt(array -> Arrays.stream(array)) // 一維陣列串流
-				.sum();
+				        .flatMapToInt(array -> Arrays.stream(array)) // 一維陣列串流
+				        .sum();
 		System.out.println(sum);
 		// A 班的班平均是多少 ? 將 3 個學生的每一個人平均算出來之後再加總除以 3
 		// {{100, 90}, {85, 70}, {95, 40}} -> { 95.0, 77.5, 67.5 } -> 80.0
 		double avg = Arrays.stream(scores) // {{100, 90}, {85, 70}, {95, 40}}
-				.mapToDouble(score -> Arrays.stream(score).average().getAsDouble()) // { 95.0, 77.5, 67.5 }
-				.average().getAsDouble(); // 80.0
-		System.out.println(avg);
+				           .mapToDouble(score -> Arrays.stream(score).average().getAsDouble()) // { 95.0, 77.5, 67.5 }
+				           .peek(personal_avg_score -> System.out.print("個人平均分數: " + personal_avg_score + "\n"))
+				           .average().getAsDouble(); // 80.0
+		System.out.println("班平均分數: " + avg);
 	}
 }
