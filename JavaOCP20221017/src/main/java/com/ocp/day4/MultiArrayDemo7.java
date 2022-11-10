@@ -41,3 +41,16 @@ public class MultiArrayDemo7 {
 		System.out.println("Avg_Total_Score: " + avgOfTotalScoreBymapToDouble);
 	}
 }
+
+/*
+	Console:
+			總分: 607.000
+			個人平均分數: 83.333
+			個人平均分數: 64.333
+			個人平均分數: 54.667
+			{ 100.000  90.000  60.000  85.000  70.000  38.000  95.000  40.000  29.000 }
+			Avg_Total_Score: 67.44444444444444
+			{ 83.333  64.333  54.667 }
+			Avg_Total_Score: 67.44444444444444
+
+*/

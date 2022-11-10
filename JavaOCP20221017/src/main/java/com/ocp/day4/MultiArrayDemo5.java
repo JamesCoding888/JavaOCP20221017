@@ -51,3 +51,16 @@ public class MultiArrayDemo5 {
 		return arraysT;
 	}
 }
+
+/*
+	Console: 
+			valueOfarrays: [[1, 2, 3], [11, 22, 33]]
+			********** arrays[i][k] **********
+			arrays[0][0]: 1 arrays[1][0]: 11 arrays[0][1]: 2 arrays[1][1]: 22 arrays[0][2]: 3 arrays[1][2]: 33 
+			********** arraysT[i][k] **********
+			arraysT[0][0]: 1 arraysT[0][1]: 11 arraysT[1][0]: 2 arraysT[1][1]: 22 arraysT[2][0]: 3 arraysT[2][1]: 33 
+			[1]valueOfarraysT: [[1, 11], [2, 22], [3, 33]]
+			[2]valueOfarraysT: [[1, 11], [2, 22], [3, 33]]
+			[3]valueOfarraysT: [[1, 2, 3], [11, 22, 33]]
+
+*/

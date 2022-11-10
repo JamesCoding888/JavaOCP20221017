@@ -20,3 +20,13 @@ public class MultiArrayDemo6 {
 		System.out.println("班平均分數: " + avg);
 	}
 }
+
+/*
+	Console:
+			總分: 480
+			個人平均分數: 95.0
+			個人平均分數: 77.5
+			個人平均分數: 67.5
+			班平均分數: 80.0
+
+*/
