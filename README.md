@@ -163,5 +163,12 @@ day4:
 - Description: Of this session, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3). 
 
 
-> MultiArrayDemo6.java:
-- Description: 
+> MultiArrayDemo6.java & MultiArrayDemo7.java:
+- Description: We will introduce the application of API from Arrays in Java 1.8. You shall learn a combination of following
+- 1) Arrays.stream
+- 2) flatMapToInt
+- 3) flatMapToDouble
+- 4) mapToDouble
+- 5) peek
+- 6) forEach
+
