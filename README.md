@@ -160,7 +160,7 @@ day4:
 - 備註: name_of_array 係指陣列的變數名稱
 
 > MultiArrayDemo5.java:
-- Description: Of this session, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3).
+- Description: Of this session, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3). 
 
 
 > MultiArrayDemo6.java:
