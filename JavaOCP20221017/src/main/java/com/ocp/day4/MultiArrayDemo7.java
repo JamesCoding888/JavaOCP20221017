@@ -41,20 +41,3 @@ public class MultiArrayDemo7 {
 		System.out.println("Avg_Total_Score: " + avgOfTotalScoreBymapToDouble);
 	}
 }
-
-
-/*
-double totalScore1 = 250.0;
-double avg1 = totalScore1 / 3;
-System.out.println(avg1);
-double totalScore2 = 193.0;
-double avg2 = totalScore2 / 3;
-System.out.println(avg2);
-double totalScore3 = 164.0;
-double avg3 = totalScore3 / 3;
-System.out.println(avg3);
-double totalScore = avg1 + avg2 + avg3;
-double totalAvf = totalScore / 3;
-System.out.println(totalAvf);
-
-*/
