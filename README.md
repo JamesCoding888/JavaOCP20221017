@@ -77,8 +77,9 @@ day2:
 - 5) Arrays.stream(name_of_ArrayObject).min().getAsInt()
 
 > ArrayDemo5.java:
-- Description:
-- This session will give you a tool which is API of "IntSummaryStatistics". You shall make a note of following built-in API from IntSummaryStatistics as
+- Description: This session will give you a tool which is API of "IntSummaryStatistics".
+- 讀者可從本節學到如何使用 Oracle 內建的 API - IntSummaryStatistics，此 Class 包被放置在此路徑中 java.util.stream.IntStream.summaryStatistics()，裡面提供了幾個好用的工具，例如計算總數、加總、平均、最大值和最小值
+- You shall make a note of following built-in API from IntSummaryStatistics as
 - 1) Arrays.stream(name_of_ArrayObject).summaryStatistics().getCount()
 - 2) Arrays.stream(name_of_ArrayObject).summaryStatistics().getSum()
 - 3) Arrays.stream(name_of_ArrayObject).summaryStatistics().getAverage()
@@ -87,8 +88,9 @@ day2:
 
 ------------------------------------------------------------------------------
 day3:
-1. Lesson learned of following programming for combination of String2Array and Stream's API:
-- Description: The coming of sample codes of StringArrayDemo(s), will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+1. Lesson learned of following programming with regards to String2Array and Stream's API:
+- Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+- 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
 
 > StringArraydemo.java:
 - Description: This session will tell you, 
@@ -99,13 +101,14 @@ day3:
 
 
 > StringArraydemo2.java:
-- Description: This session will follow up the previously StringArraydemo.java but updating to Java 1.8
+- Description: This session will follow up the previously StringArraydemo.java but updated in Java 1.8
 
 > StringArraydemo3.java:
-- Description: This session will give a lecture on "Integer.parseInt" and calculation of average Pass Score.
+- Description: This session will give a lecture on how to use "Integer.parseInt" （which is meaning by "Parses the string argument as a signed decimal integer"）to catch the score of students that are over or equal to 60, and turn into calculating their average score.
+- 此節說明如何運用 "Integer.parseInt" (此 API 將 String 的引數轉成十進制的值)，來去抓取學生分數係大於或等於 60 分的人數，並將這些及格分數另外做總及格平均分數的計算
 
 > StringArraydemo4.java:
-- Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Pass Score in Java 1.8.
+- Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Score (which is >= 60) in Java 1.8.
 - 1) mapToInt(score -> Integer.parseInt(score))
 - 2) filter(score -> score >= 60)
 - 3) average()
@@ -160,7 +163,15 @@ day4:
 - 備註: name_of_array 係指陣列的變數名稱
 
 > MultiArrayDemo5.java:
-- Description: 
+- Description: Of this session, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3). 
+- 此節介紹一組二維陣列 (列: 3, 行: 2) 的內容，轉換成 2 維陣列 (列: 2, 行: 3)。對於讀者而言，本節為了訓練陣列大小編排的邏輯概念，所設置。但在開發中，建議仍採用 Java 1.8 提供的 API 來做設計，因為設計者胥撰寫 for-loop 或 for-each 的迴圈架構，其迴圈的順序對於抓取陣列的位置和內容，至關重要，但對於維護上，並不是一個上策，假設開發者過了兩個月後，再回來閱讀程式碼時，將花上許多時間來回顧當時撰寫此程式碼的心路歷程。再者，用迴圈的撰寫方式，邏輯上較不直接 (若與 Java 1.8 的 API 相比)
 
-> MultiArrayDemo6.java:
-- Description: 
+> MultiArrayDemo6.java & MultiArrayDemo7.java:
+- Description: We will introduce the application of API from Arrays in Java 1.8. You shall learn a combination of following
+- 1) Arrays.stream
+- 2) flatMapToInt
+- 3) flatMapToDouble
+- 4) mapToDouble
+- 5) peek
+- 6) forEach
+
