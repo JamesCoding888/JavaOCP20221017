@@ -77,8 +77,9 @@ day2:
 - 5) Arrays.stream(name_of_ArrayObject).min().getAsInt()
 
 > ArrayDemo5.java:
-- Description:
-- This session will give you a tool which is API of "IntSummaryStatistics". You shall make a note of following built-in API from IntSummaryStatistics as
+- Description: This session will give you a tool which is API of "IntSummaryStatistics".
+- 讀者可從本節學到如何使用 Oracle 內建的 API - IntSummaryStatistics，此 Class 包被放置在此路徑中 java.util.stream.IntStream.summaryStatistics()，裡面提供了幾個好用的工具，例如計算總數、加總、平均、最大值和最小值
+- You shall make a note of following built-in API from IntSummaryStatistics as
 - 1) Arrays.stream(name_of_ArrayObject).summaryStatistics().getCount()
 - 2) Arrays.stream(name_of_ArrayObject).summaryStatistics().getSum()
 - 3) Arrays.stream(name_of_ArrayObject).summaryStatistics().getAverage()
