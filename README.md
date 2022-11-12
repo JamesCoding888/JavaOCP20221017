@@ -88,8 +88,9 @@ day2:
 
 ------------------------------------------------------------------------------
 day3:
-1. Lesson learned of following programming for combination of String2Array and Stream's API:
-- Description: The coming of sample codes of StringArrayDemo(s), will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+1. Lesson learned of following programming with regards to String2Array and Stream's API:
+- Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
+- 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
 
 > StringArraydemo.java:
 - Description: This session will tell you, 
