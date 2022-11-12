@@ -102,7 +102,7 @@ day3:
 - Description: This session will follow up the previously StringArraydemo.java but updating to Java 1.8
 
 > StringArraydemo3.java:
-- Description: This session will give a lecture on "Integer.parseInt" and calculation of average Pass Score.
+- Description: This session will give a lecture on how to use "Integer.parseInt" to catch out the score that is over or equal to "60", and then calculate the average score of qualifier (i.e., scores >= 60).
 
 > StringArraydemo4.java:
 - Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Pass Score in Java 1.8.
