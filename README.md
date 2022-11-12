@@ -177,5 +177,5 @@ Video Lectures of each session will be coming soon
 
 
 ------------------------------------------------------------------------------
-# day5 Java 進階: Stream API 和 介紹 Object-Oriented Programming (OOP) Patterns 之運用
+# day5 Java 進階: 介紹 Object-Oriented Programming (OOP) Patterns 之運用並結合 Stream API
 - Coming Soon ~~~
