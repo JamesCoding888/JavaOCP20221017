@@ -87,7 +87,7 @@ Video Lectures of each session will be coming soon
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
 ------------------------------------------------------------------------------
-day3:
+# day3 Java 進階: 運用 String & Stream API 
 1. Lesson learned of following programming with regards to String2Array and Stream's API:
 - Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
 - 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
@@ -139,7 +139,7 @@ day3:
 - Description: This session creates a "String addUtil()" for your reference.
 
 ------------------------------------------------------------------------------
-day4:
+# day4 Java 進階: 運用 Stream API 計算一維和二維之參數
 1. Lesson learned of following programming for Array:
 - Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
 - 本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
