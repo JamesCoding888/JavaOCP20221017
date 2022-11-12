@@ -1,5 +1,4 @@
 package com.ocp.day5;
-
 public class Account {
 	String accountName; // 用戶名稱
 	private int accountBalance; // 帳戶餘額
