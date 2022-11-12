@@ -10,7 +10,7 @@ Video Lectures of each session will be coming soon
 本教學專案 JavaOCP20221017 之影片介紹，將陸續推出，請親愛的讀者盡請期待 ~~~
 
 ------------------------------------------------------------------------------
-# day1:
+# day1 Java 基礎
 1. Set-up environment with Eclipse Workspace
 2. Lesson learned of following programming:
 > Hello.java:
