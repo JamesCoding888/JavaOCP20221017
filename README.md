@@ -175,3 +175,7 @@ Video Lectures of each session will be coming soon
 - 5) peek
 - 6) forEach
 
+
+------------------------------------------------------------------------------
+# day5 Java 進階: Stream API 和 介紹 Object-Oriented Programming (OOP) Patterns 之運用
+- Coming Soon ~~~
