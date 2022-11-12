@@ -41,3 +41,10 @@ public class StringDemo2 {
 	public native String intern();
 
 */
+
+/*
+	Console:
+		false
+		true
+		true
+*/

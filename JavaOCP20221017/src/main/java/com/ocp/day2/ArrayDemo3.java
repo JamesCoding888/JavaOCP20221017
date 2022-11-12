@@ -50,3 +50,11 @@ public class ArrayDemo3 {
 		return min;
 	}
 }
+/*
+	Console:
+		個數: 5
+		總和: 418
+		平均: 83.6
+		最大值: 100
+		最小值: 68
+*/

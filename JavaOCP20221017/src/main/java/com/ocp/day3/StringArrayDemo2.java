@@ -72,3 +72,18 @@ public class StringArrayDemo2 {
 
  */
 
+
+
+
+/*
+
+	Console:
+	stringOfName: Jose, Mary, Jerry, David, Jack
+	namesInArray2String: [Jose, Mary, Jerry, David, Jack]
+	Length of stringOfName: 30
+	Length of namesInArray: 5
+	avg = 4.4
+
+
+*/
+

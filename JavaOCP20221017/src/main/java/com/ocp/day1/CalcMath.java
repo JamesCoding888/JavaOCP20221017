@@ -31,3 +31,10 @@ public class CalcMath {
 	        return sd;
 	    }
 }
+
+
+/*
+	Console:
+		總分: 275, 平均: 91.7 標準差: 8.5, 變異係數: 0.093
+
+*/

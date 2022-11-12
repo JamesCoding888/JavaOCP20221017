@@ -87,3 +87,9 @@ public class StringArrayDemo4 {
 		}
 
 */
+
+
+/*
+	Console:
+	及格人數的平均分數: 77.83
+*/

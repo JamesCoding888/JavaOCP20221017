@@ -19,3 +19,16 @@ public class StringDemo3 {
 		System.out.print(name.substring(5, 6)); 
 	}
 }
+
+/*
+	Console:
+		she sell sea shell on the sea shore
+		Length of message 35
+		Substring(9, 12): sea
+		james
+		Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 5, end 6, length 5
+			at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3751)
+			at java.base/java.lang.String.substring(String.java:1907)
+			at com.ocp.day3.StringDemo3.main(StringDemo3.java:19)
+
+*/

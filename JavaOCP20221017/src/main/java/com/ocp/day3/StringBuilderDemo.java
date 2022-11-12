@@ -12,3 +12,8 @@ public class StringBuilderDemo {
 		System.out.print(stringBuffer);
 	}
 }
+/*
+	Console:
+		Oracle
+		Oracle Java 11 v.s. Java 8
+*/

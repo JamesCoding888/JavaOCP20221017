@@ -11,3 +11,8 @@ public class StringBuilderDemo2 {
 		stringBuilder.append("to be node.js");
 	}
 }
+
+/*
+	Console:
+		Javascript to be node.js
+*/

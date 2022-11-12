@@ -10,3 +10,8 @@ public class StringDemo4 {
 		return string;
 	}
 }
+
+/*
+	Console:
+		String = Javascrip to be node.js
+*/

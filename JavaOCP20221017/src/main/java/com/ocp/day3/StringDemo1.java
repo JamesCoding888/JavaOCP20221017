@@ -20,3 +20,12 @@ public class StringDemo1 {
 	}
 
 }
+
+/*
+	Console:
+		false
+		true
+		true
+		true
+		true
+*/

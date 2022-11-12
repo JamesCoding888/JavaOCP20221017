@@ -13,3 +13,12 @@ public class ArrayDemo5 {
         System.out.printf("最小: %d\n", summary.getMin());        
     }
 }
+/*
+	Console:
+		個數: 5
+		總和: 418
+		平均: 83.6
+		最大: 100
+		最小: 68
+
+*/
