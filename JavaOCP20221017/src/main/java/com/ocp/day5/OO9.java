@@ -25,3 +25,20 @@ public class OO9 {
         account2.printAccount();       
     }
 }
+
+/*
+	Console:
+			Name of Account: James : $1000
+			Name of Account: James : $1500
+			[Error Code: A-0002] Insufficent Account Balance
+			[Error Code: A-0002-0002] Insufficent Account Balance, because amount > accountBalance
+			Name of Account: James : $1500
+			Name of Account: James : $0
+			Name of Account: Betty : $2500
+			[Error Code: A-0002] Insufficent Account Balance
+			[Error Code: A-0002-0002] Insufficent Account Balance, because amount > accountBalance
+			[Error Code: A-0001] Transfer Error, please contanct Service Team
+			[Error Code: A-0001-0001] Transfer Error - Account Balance is out of limit
+			Name of Account: James : $0
+			Name of Account: Betty : $2500
+*/
