@@ -56,15 +56,12 @@ public class Account {
 			otherAccount.deposit(amount);
 			return true;
 		}
-		// 轉帳失敗，請洽詢客服
-		// 本程式在於提交錯誤訊息給客戶
-		// 因基於現階段課程尚未教授例外處理 (Exception / Throws)，僅在 Console 中提報錯誤訊息
-		// 再者，例外處理拋出的訊息可分為二：
-		// 1. 第一種錯誤訊息，係給客戶端閱讀，其訊息應淺顯易懂，不包含專業術語。此錯誤處理的程式碼可直接寫在前端網頁 
-		// 當然本錯誤是發生轉帳出了問題，需經過資料庫中的 accountBalance 查詢帳戶餘額，在判斷是否符合規定。
-		// 如果此錯誤訊息只限於輸入欄位之英文不可小寫，那錯誤訊息的程式碼，可直接在前端網頁處理 (通常使用 JavaScript 處理之)
-		// 後端)。
+
+		// 例外處理拋出的訊息可分為二：
+		// 1. 第一種錯誤訊息，係給客戶端閱讀，其訊息應淺顯易懂，不包含專業術語
 		// 2. 第二種錯誤訊息，係給工程師辨識的專業術語，可讓工程人員快速的修復錯誤
+		// 備註: 
+		// 如果此錯誤訊息只限於輸入欄位之英文不可小寫，那錯誤訊息的程式碼，可直接在前端網頁處理 (通常使用 JavaScript 處理之)
 		System.out.println("[Error Code: A-0001] Transfer Error, please contanct Service Team"); // 第一種
 		System.out.println("[Error Code: A-0001-0001] Transfer Error - Account Balance is out of limit"); // 第二種
 		return false;
