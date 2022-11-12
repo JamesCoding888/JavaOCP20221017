@@ -102,7 +102,8 @@ day3:
 - Description: This session will follow up the previously StringArraydemo.java but updating to Java 1.8
 
 > StringArraydemo3.java:
-- Description: This session will give a lecture on how to use "Integer.parseInt" to catch out the score that is over or equal to "60", and then calculate the average score of qualifier (i.e., scores >= 60).
+- Description: This session will give a lecture on how to use "Integer.parseInt" （which is meaning by "Parses the string argument as a signed decimal integer"）to catch the score of students that are over or equal to 60, and turn into calculating their average score.
+- 此傑講述如何運用 "Integer.parseInt" (此 API 將 String 的引數轉成十進制的值)，來去抓取學生分數係大於或等於 60 分的人數，並將這些及格分數另外做總及格平均分數的計算
 
 > StringArraydemo4.java:
 - Description: This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Pass Score in Java 1.8.
