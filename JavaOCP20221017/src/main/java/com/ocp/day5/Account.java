@@ -25,6 +25,24 @@ public class Account {
 			accountBalance -= amount;
 			return true;		
 		}
+		// 提出的錢 >= accountBalance
+		if(amount > 0 && amount > accountBalance) {
+			// For end-user error message 
+			// 給終端使用者看的錯誤訊息
+			// Generally speaking, if this error message is NOT sensitive and confidential, 
+			// we do write JavaScript to handle with error and present the error message on front-end
+			// 一般來說，若錯誤訊息非敏感且機密性的，我們會用 JavaScript 的語法在前端網頁拋出錯誤訊息
+			System.out.println("[Error Code: A-0002] Insufficent Account Balance"); 
+			// Supposed to show this error message to engineer for debug, 
+			// since the error message with covering the variables of programming 
+			// 給工程師看的錯誤訊息，因夾帶專業的術語 (在此為變數名稱)，好讓工程師判斷問題的根因
+			System.out.println("[Error Code: A-0002-0002] Insufficent Account Balance, because amount > accountBalance");
+		}
+		// 根本就沒有輸入提錢的 amount 或 輸入提出金額小於 0
+		if(amount == 0 | amount < 0) {
+			System.out.println("[Error Code: A-0003] The placeholder of withdraw money shall not be empty"); 
+			System.out.println("[Error Code: A-0003-0003] The placeholder of withdraw money <= 0");		
+		}
 		return false;
 	}
 	
@@ -47,12 +65,12 @@ public class Account {
 		// 如果此錯誤訊息只限於輸入欄位之英文不可小寫，那錯誤訊息的程式碼，可直接在前端網頁處理 (通常使用 JavaScript 處理之)
 		// 後端)。
 		// 2. 第二種錯誤訊息，係給工程師辨識的專業術語，可讓工程人員快速的修復錯誤
-		System.out.println("[A-0001] Transfer Error, please contanct Service Team"); // 第一種
-		System.out.println("[A-0001-0001] Transfer Error - Account Balance is out of limit"); // 第二種
+		System.out.println("[Error Code: A-0001] Transfer Error, please contanct Service Team"); // 第一種
+		System.out.println("[Error Code: A-0001-0001] Transfer Error - Account Balance is out of limit"); // 第二種
 		return false;
 	}
 	
 	public void printAccount() {
-		System.out.println("Name of Account:" + accountName + " ; " + "$" + accountBalance);
+		System.out.println("Name of Account: " + accountName + " : " + "$" + accountBalance);
 	}
 }
