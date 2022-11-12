@@ -33,7 +33,7 @@ Video Lectures of each session will be coming soon
 - 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
-day2: 
+# day2 Java 基礎: 一維陣列
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist. 
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
