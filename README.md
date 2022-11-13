@@ -5,7 +5,7 @@ JDK: Java SE 11
 
 Recommended Book: Java 8 Lambdas [https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf]
 
-Video Lectures of each session will be coming soon
+Introduction of video for each lecture will be coming soon ~~~
 
 本教學專案 JavaOCP20221017 之影片介紹，將陸續推出，請親愛的讀者盡請期待 ~~~
 
@@ -204,5 +204,5 @@ Video Lectures of each session will be coming soon
 - Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
 
 > OO9.java & Account.java & Student.java
-- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-oriented Pattern) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
+- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-Oriented Programming) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
 
