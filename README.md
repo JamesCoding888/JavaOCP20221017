@@ -178,4 +178,31 @@ Video Lectures of each session will be coming soon
 
 ------------------------------------------------------------------------------
 # day5 Java 進階: 介紹 Object-Oriented Programming (OOP) Patterns 之運用並結合 Stream API
-- Coming Soon ~~~
+1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
+> OO1.java 
+- Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
+
+> OO2.java
+- Description: This lecture we would like sharing to reader about initializing the global variables by Object
+
+> OO3.java
+- Description: This lecture we create Object from Constructors and also initialize the global variables at the same time
+
+> OO4.java
+- Description: According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+
+> OO5.java
+- Description: We create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
+
+> OO6.java
+- Description: We create 1-D array of Student with Dynamic Memory
+
+> OO7.java
+- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
+
+> OO8.java
+- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
+
+> OO9.java & Account.java & Student.java
+- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-oriented Pattern) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
+
