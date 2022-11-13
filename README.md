@@ -5,7 +5,7 @@ JDK: Java SE 11
 
 Recommended Book: Java 8 Lambdas [https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf]
 
-Video Lectures of each session will be coming soon
+Introduction of video for each lecture will be coming soon ~~~
 
 本教學專案 JavaOCP20221017 之影片介紹，將陸續推出，請親愛的讀者盡請期待 ~~~
 
