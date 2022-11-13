@@ -7,7 +7,7 @@ public class Student {
 	
 	// Default Constructor 
 	public Student() {
-		super(); // default; 可寫可不寫，系統會自動幫您帶入此程式
+		super(); // 此行程式碼可寫可不寫，系統預設會自動幫您帶入此程式
 		System.out.println("建立 Student 物件");
 	}
 	
