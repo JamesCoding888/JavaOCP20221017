@@ -180,4 +180,25 @@ Video Lectures of each session will be coming soon
 # day5 Java 進階: 介紹 Object-Oriented Programming (OOP) Patterns 之運用並結合 Stream API
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
-- Description: This lecture we would like to share the reader
+- Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
+
+> OO2.java
+- Description: This lecture we would like sharing to reader about initializing the global variables by Object
+
+> OO3.java
+- Description: This lecture we create Object from Constructors and also initialize the global variables at the same time
+
+> OO4.java
+- Description: According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+
+> OO5.java
+- Description: Create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
+
+> OO6.java
+- Description: Create 1-D array of Student with Dynamic Memory
+
+> OO7.java
+- Description: Create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
+
+> OO8.java
+- Description: 
