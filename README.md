@@ -203,5 +203,6 @@ Video Lectures of each session will be coming soon
 > OO8.java
 - Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
 
-> OO9.java
-- Description: 
+> OO9.java & Account.java & Student.java
+- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-oriented Pattern) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
+
