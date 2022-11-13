@@ -1,4 +1,5 @@
 package com.ocp.day5;
+// 6th pattern of Object-Oriented
 import java.util.Arrays;
 public class OO6 {
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
 package com.ocp.day5;
+// 5th pattern of Object-Oriented
 public class OO5 {
     public static void main(String[] args) {
     	// Create 1-D array of Student with 10 Fixed Memory

@@ -1,6 +1,6 @@
 package com.ocp.day5;
+// 7th pattern of Object-Oriented
 import java.util.Arrays;
-
 public class OO7 {
     public static void main(String[] args) {
     	// Create 1-D array of Student with Dynamic Memory
