@@ -35,7 +35,7 @@ public class OO8 {
         // Let's review the sample code of MultiArrayDemo7.java from day4 as following
         // As you can see "Arrays.stream(studentsIn1DArray).asDoubleStream()" 
         // could transfer the 2-D array of scoresIn2DArray to DoubleStream
-        // because the return type from "rrays.stream(studentsIn1DArray)" is IntStream
+        // because the return type from "Arrays.stream(studentsIn1DArray)" is IntStream
         
         // 回顧一下，day4 的 MultiArrayDemo7.java 程式範例如下
         // Arrays.stream(studentsIn1DArray).asDoubleStream() 可直接轉 DoubleStream 
