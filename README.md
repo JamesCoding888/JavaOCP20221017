@@ -178,4 +178,6 @@ Video Lectures of each session will be coming soon
 
 ------------------------------------------------------------------------------
 # day5 Java 進階: 介紹 Object-Oriented Programming (OOP) Patterns 之運用並結合 Stream API
-- Coming Soon ~~~
+1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
+> OO1.java 
+- Description: This lecture we would like to share the reader
