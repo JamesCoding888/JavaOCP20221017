@@ -3,7 +3,7 @@ public class Student {
 	// Global Variable 
 	// 全域變數
 	String name;
-	int score;
+	Integer score; // Supposed to be a type of Boxing (應該使用 Boxing 的 type，不建議使用 int)
 	
 	// Default Constructor 
 	public Student() {
