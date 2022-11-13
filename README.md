@@ -192,13 +192,16 @@ Video Lectures of each session will be coming soon
 - Description: According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
 
 > OO5.java
-- Description: Create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
+- Description: We create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
 
 > OO6.java
-- Description: Create 1-D array of Student with Dynamic Memory
+- Description: We create 1-D array of Student with Dynamic Memory
 
 > OO7.java
-- Description: Create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
+- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
 
 > OO8.java
+- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
+
+> OO9.java
 - Description: 
