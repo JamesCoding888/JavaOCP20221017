@@ -1,20 +1,27 @@
 package com.ocp.day6;
+// Following the previously lesson (i.e., ArrayListDemo1.java),  
+// we design an Office Check-in System with function of CRUD by ArrayList.
+// 此課程延續 ArrayListDemo1.java，設計一個 CRUD 的簽到系統，使用 ArrayList API
 
-import java.awt.Toolkit;
+import java.awt.Toolkit;  
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayListDemo2 {
-    // 利用類別變數存放所有的簽到資料
+    // Create a static variable - new ArrayList<>()
+	// 建立類別變數來存放所有簽到資料 
     static ArrayList<String> names = new ArrayList<>();
     
-    // 程式進入點
+    // Entry point of programming
+    // 程式進入起始點
     public static void main(String[] args) {
+    	// an infinite loop to execute menu() method
+    	// 無窮迴圈，不斷執行 menu() method
         while (true) {            
              menu();
         }
     }
-    
+    // The menu of Office Check-in System
     // 系統功能目錄
     public static void menu() {
         System.out.println("簽到系統");
@@ -31,41 +38,48 @@ public class ArrayListDemo2 {
         System.out.println("0. Exit");
         System.out.println("----------------");
         System.out.print("請選擇: ");
+        
+        // Create an Object for user to choose service
+        // 建立一個輸入區，給使用者輸入所需的服務
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt(); // 得到使用者所輸入的選項
+        // Giving the input as an type of "int" 
+        int choice = scanner.nextInt(); 
+        // The allocator of services
+        // 這裡稱之為服務選項之分派器
         switch (choice) {
             case 1:
-                add(); // 簽到
+                add(); // Check-in (簽到)
                 break;
             case 2:
-                update(); // 修改
+                update(); // Update (修改)
                 break;
             case 3:
-                delete(); // 刪除
+                delete(); // Delete (刪除)
                 break;
             case 4:
-                findOne(); // 單筆查詢
+                findOne(); // QueryForOneRow (單筆查詢)
                 break;
             case 5:
-                findAll(); // 全部查詢
+                findAll(); // QueryForAllRow (全部查詢)
                 break;
             case 6:
-                batchAdd(); // 多筆(批次)新增 
+                batchAdd(); // Multiple added (多筆 "批次" 新增) 
                 break;
             case 7:
-                updateByName(); // 根據人名來修改    
+                updateByName(); // Update data by Name (根據人名來修改)    
                 break;
             case 8:
-                deleteByName(); // 根據人名來刪除
+                deleteByName(); // Delete data by Name (根據人名來刪除)
                 break;
             case 9:
-                clear(); // 清空打卡資訊
+                clear(); // Clean all check-in info (清空打卡資訊)
                 break;
             case 0:
-                exit(); // 離開
+                exit(); // Exit (離開)
                 break;
             default:
-                // 發出聲音
+            	// API - Alert with beep tone
+            	// 發出聲音之 API
                 Toolkit.getDefaultToolkit().beep();
                 System.out.println("無此選單, 請重新輸入...");
         }
