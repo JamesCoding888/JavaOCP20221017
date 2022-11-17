@@ -187,7 +187,7 @@ public class ArrayListDemo2 {
          	解決方式是，重新建立一個 Scanner scannerForNextLine = new Scanner(System.in) 單獨給此 method 使用
           
         */
-//        Scanner scannerForNextLine = new Scanner(System.in);
+
         String allname = scannerForNextLine.nextLine(); 
                
         // Splits this string around matches of the given regular expression.
@@ -217,7 +217,7 @@ public class ArrayListDemo2 {
      	解決方式是，重新建立一個 Scanner scannerForNextLine = new Scanner(System.in) 單獨給此 method 使用
       
         */
-//        Scanner scannerForNextLine = new Scanner(System.in);        
+        
         String pairName = scannerForNextLine.nextLine();
         String[] array = pairName.split(" ");
         // If the length of array object is equally to '2', then continue
