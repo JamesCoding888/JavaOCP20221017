@@ -181,28 +181,96 @@ Introduction of video for each lecture will be coming soon ~~~
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
+- 此節介紹如何使用建構子將全域變數初始化
 
 > OO2.java
 - Description: This lecture we would like sharing to reader about initializing the global variables by Object
+- 此節介紹如何由物件變數將全域變數初始化
 
 > OO3.java
-- Description: This lecture we create Object from Constructors and also initialize the global variables at the same time
+- Description: This lecture we create Constructors and also initialize the global variables at the same time
+- 此節介紹如何由建構子將全域變數初始化
+
 
 > OO4.java
 - Description: According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+- 依先前課程 (也就是 003.java)，您將可學到如何將全域變數的值，由 void 方法印出
 
 > OO5.java
-- Description: We create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
+- Description: We create 1-D array of Student with 10 Fixed length (which is 10 differently memory) and initialize the global variable from object of 1-
+  D array
+- 此節將學到，如何建立固定長度 (也就是 10 個不同的記憶體) 的一維陣列之 Student 物件，並由一維陣列中的物件，將全域變數 (也就是 name 和 score) 初始化
 
 > OO6.java
 - Description: We create 1-D array of Student with Dynamic Memory
+- 此節將介紹，如何建立一個動態的一維陣列的 Student 物件
 
 > OO7.java
-- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
+- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of students by mapToDouble
+- 此節介紹，使用一個動態的一維陣列的 Student 物件，並結合 Java 1.8 Stream API - mapToDouble，來計算學生的平均分數
 
 > OO8.java
-- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
+- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API to calculate the average score of students
+- A kindly reminder, we need to understand how differently does we use Java 1.8 Stream API - flatMap and flatMapToDouble
+- 此節介紹，建立兩個動態的一維陣列的 Student 物件，並將其放入至二維陣列中來管理，並結合 Java 1.8 Stream API，來計算學生的平均分數
+- 請讀者特別留意，Java 1.8 Stream API - flatMap 和 flatMapToDouble 之應用
 
 > OO9.java & Account.java & Student.java
-- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-Oriented Programming) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
+- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-Oriented 
+  Programming) is likely to 4th pattern of OOP (which is OO4.java). Furthermore, we share a concept of how to handle with error message during this lesson.
+- 本節設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
+
+
+------------------------------------------------------------------------------
+# day6 Java 進階: 介紹 ArrayList 與 Scanner 之運用
+1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
+
+
+
+> ScannerDemo.java 
+- Description: 
+- 
+
+
+
+> ScannerForPractice_Loop_And_If.java 
+- Description: 
+- 
+
+
+
+> ScannerLimiter.java 
+- Description: 
+- 
+
+
+
+> ScannerIllegalStateException.java 
+- Description: 
+
+
+
+> ScannerNoSuchElementException.java 
+- Description: 
+
+
+
+> ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
+- Description: 
+
+
+
+> ArrayListOfHeapMemoryTest.java 
+- Description: 
+
+
+
+> ArrayListDemo1.java 
+- Description: 
+
+
+
+> ArrayListDemo2.java 
+- Description: 
+
 
