@@ -16,7 +16,7 @@ public class ScannerLimiter {
 		int limitedNumber = scan.nextInt();
 		if(limitedNumber <= 0) {
 			System.out.println("您輸入的值 <= 0，因此結束程式執行");
-			return;
+			return; // Terminate operation of current method
 		}
 		// 判斷 n <= limitedNumber (也就是您輸入的值) 
 		while(n <= limitedNumber) {

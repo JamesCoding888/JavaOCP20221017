@@ -7,6 +7,7 @@ package com.ocp.day6;
    3) 如果 2) 的方式，其 heap memory 還不夠給 JVM 使用，我們可從硬體著手，也就是在 Run Configurations 中的 VM arguments，下指令。
       Command: -Xms1000m
 	  Description: 1M （若硬體允許，可開到最大來做測試。例如本系統 Mac M1 內建 8M DDR4，那指令可改為 -Xms8000m）
+	  
 */
 import java.util.ArrayList;
 

@@ -1,6 +1,9 @@
 package com.ocp.day6.ScannerPractice;
-// Of this practice, you will learn how to use "break" and "return" 
+// Of this practice, you will learn how to use "break" and "return"  
 // during the process of running programming
+// "break" : break loop
+// "return" : Terminate operation of current method
+
 import java.util.Scanner;
 public class ScannerForPractice_Loop_And_If {
 	public static void main(String[] args) {
@@ -32,12 +35,12 @@ public class ScannerForPractice_Loop_And_If {
 			System.out.print("[3]若想停止程式執行，請輸入 \"Happy_Ending\":");
 			if (scan.hasNext("Happy_Ending")) {
 				System.out.println("程式執行停止");
-				return;
+				return; // Terminate operation of current process from this method (在此終止本方法運行)
 			}
-			System.out.println("此程式碼不會執行，因為因 return 導致停止程式");
+			System.out.println("此程式碼不會執行，因為因 return 導致終止本方法運行");
 			scan.next();
 		}
-		System.out.println("此程式碼不會執行，因為 return 導致停止程式");
+		System.out.println("此程式碼不會執行，因為 return 導致終止本方法運行");
 	}
 }
 

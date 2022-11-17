@@ -161,10 +161,11 @@ public class ArrayListDemo2 {
     	 * transient Object[] elementData; // non-private to simplify nested class access
     	 * 
     	 * 新增的 element(s) 將被暫時性的存放在 Object[] elementData 收集
-    	 * 當開發者呼叫 System.out.println(names)，則將 elementData.toString
+    	 * 
          */
-//        new ArrayList().
-//        System.out.println(names);
+        
+        // 印出 ArrayList 中的 elements
+        System.out.println(names);
         System.out.println("資料筆數: " + names.size());
     }
     
@@ -172,20 +173,41 @@ public class ArrayListDemo2 {
     public static void batchAdd() {
         System.out.println("多筆(批次)新增");
         System.out.print("請輸入人名(名字間請用空白隔開): ");
-        String allname = scanner.nextLine(); // 讀取一整列
+        
+        /*
+         	Advances this scanner past the current line and returns the input that was skipped. 
+         	This method returns the rest of the current line, excluding any line separator at the end. 
+         	The position is set to the beginning of the next line.
+         	
+         	呼叫 Scanner 內建的 API - nextLine() 來處理一整列的資料
+         	
+         	注意，若設定為全域變數 static Scanner scanner = new Scanner(System.in)
+         	直接在此 method 中調用 scanner.nextLine()，會導致輸入失效
+         	解決方式是，重新建立一個 Scanner scanner = new Scanner(System.in) 單獨給此 method 使用
+          
+         */
+        Scanner scannerForNextLine = new Scanner(System.in);
+        String allname = scannerForNextLine.nextLine(); 
+               
+        // Splits this string around matches of the given regular expression.
+        // 由 String API - split(String regex)，將 allname 中的字串中，採 " " 切分，並儲存於 String[] array 中
         String[] array = allname.split(" ");
+        // for-each to store the each elements from String[] into name variable
         // 透過 for-each 逐筆新增到 names 中
         for(String name : array) {
             names.add(name);
         }
         System.out.println("多筆(批次)新增完成");
+        scannerForNextLine.close();
     }
     
     // 7. Update data by Name (根據人名來修改)
     public static void updateByName() {
         System.out.println("根據人名來修改");
         System.out.print("輸入要修改的人名(修改前 修改後): ");
-        String pairName = scanner.nextLine();
+        Scanner scannerForNextLine = new Scanner(System.in);        
+        String pairName = scannerForNextLine.nextLine();
+        scannerForNextLine.close();
         String[] array = pairName.split(" ");
         if(array.length == 2) {
             String beforeName = array[0];
@@ -193,7 +215,7 @@ public class ArrayListDemo2 {
             for(int index=0;index<names.size();index++) {
                 if(names.get(index).equals(beforeName)) {
                     names.set(index, afterName);
-                    System.out.println("修改完成");
+                    System.out.println("修改完成");                    
                     return; // 方法結束
                 }
             }
