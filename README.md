@@ -277,3 +277,27 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day7 Java 進階: Coming Soon
+1. This lesson we give a following introduction:
+- 1) Inheritance
+- 2) Encapsulation
+- 3) Auto-boxing
+- 4) Annotation of Override
+
+
+> Person.java 
+- Description: 
+- 
+
+> Student.java 
+- Description: 
+- 
+
+
+> Teacher.java 
+- Description: 
+- 
+
+
+> Main.java 
+- Description: 
+- 
