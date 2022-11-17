@@ -274,3 +274,6 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description: 
 
 
+
+------------------------------------------------------------------------------
+# day7 Java 進階: Coming Soon
