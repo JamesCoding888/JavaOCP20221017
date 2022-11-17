@@ -1,5 +1,5 @@
 /************************************************************************************************************
-* 	Before studying this lesson, please go back to package: ScannerPractice for deeply learning of Scanner  *  
+* 	Before studying this lesson, please go back to package: ScannerPractice for deeply learning of Scanner  *   
 *	開始學習本課程之前，請讀者先將 package: ScannerPractice 和 ScannerException 的課程研讀後，再回來此節				*
 *************************************************************************************************************/
 
