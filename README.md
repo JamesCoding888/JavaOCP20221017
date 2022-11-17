@@ -203,13 +203,20 @@ Introduction of video for each lecture will be coming soon ~~~
 
 > OO6.java
 - Description: We create 1-D array of Student with Dynamic Memory
+- 此節將介紹，如何建立一個動態的一維陣列的 Student 物件
 
 > OO7.java
-- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of all students by mapToDouble
+- Description: We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of students by mapToDouble
+- 此節介紹，使用一個動態的一維陣列的 Student 物件，並結合 Java 1.8 Stream API - mapToDouble，來計算學生的平均分數
 
 > OO8.java
-- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API  to calculate the average score of all students
+- Description: We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you will learn how to use Java 1.8 Stream API to calculate the average score of students
+- A kindly reminder, we need to understand how differently does we use Java 1.8 Stream API - flatMap and flatMapToDouble
+- 此節介紹，建立兩個動態的一維陣列的 Student 物件，並將其放入至二維陣列中來管理，並結合 Java 1.8 Stream API，來計算學生的平均分數
+- 請讀者特別留意，Java 1.8 Stream API - flatMap 和 flatMapToDouble 之應用
 
 > OO9.java & Account.java & Student.java
-- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-Oriented Programming) is likely to 4th pattern of OOP (which is OO4.java). And also, we share a concept of how to handle with error message during this lesson.
+- Description: You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-Oriented 
+  Programming) is likely to 4th pattern of OOP (which is OO4.java). Furthermore, we share a concept of how to handle with error message during this lesson.
+- 本節設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
 
