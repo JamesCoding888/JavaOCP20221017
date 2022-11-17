@@ -222,7 +222,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day6 Java 進階: 介紹 ArrayList 與 Scanner 之運用
+# day6 Java 進階: 使用 ArrayList 與 Scanner 建立辦公室打卡系統
 1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
 
 
