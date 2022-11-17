@@ -1,4 +1,9 @@
 package com.ocp.day7;
+// This lesson we give a following introduction:
+// 1) Inheritance
+// 2) Encapsulation
+// 3) Auto-boxing
+// 4) Annotation of Override
 
 
 public class Main {
