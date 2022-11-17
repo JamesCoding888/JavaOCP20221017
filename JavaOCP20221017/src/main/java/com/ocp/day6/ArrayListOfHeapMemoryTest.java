@@ -25,9 +25,9 @@ public class ArrayListOfHeapMemoryTest {
 
 		// 2)
 		ArrayList<ArrayList<String>> arrayListContainer = new ArrayList<>();
-		ArrayList<String> arrayList1 = new ArrayList<>(); // max heap memory: 236557360
-		ArrayList<String> arrayList2 = new ArrayList<>(); // max heap memory: 236557360
-		ArrayList<String> arrayList3 = new ArrayList<>(); // max heap memory: 236557360
+		ArrayList<String> arrayList1 = new ArrayList<>(); 
+		ArrayList<String> arrayList2 = new ArrayList<>(); 
+		ArrayList<String> arrayList3 = new ArrayList<>(); 
 		
 		System.out.println("The limited number will be enhanced to " + 105136605 * 3); // 315409815
 		arrayListContainer.add(arrayList1);
