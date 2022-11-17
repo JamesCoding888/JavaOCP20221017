@@ -220,3 +220,47 @@ Introduction of video for each lecture will be coming soon ~~~
   Programming) is likely to 4th pattern of OOP (which is OO4.java). Furthermore, we share a concept of how to handle with error message during this lesson.
 - 本節設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
 
+
+------------------------------------------------------------------------------
+# day6 Java 進階: 介紹 ArrayList 與 Scanner 之運用並
+1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
+
+
+> ScannerDemo.java 
+- Description: 
+- 
+
+> ScannerForPractice_Loop_And_If.java 
+- Description: 
+- 
+
+
+> ScannerLimiter.java 
+- Description: 
+- 
+
+
+> ScannerIllegalStateException.java 
+- Description: 
+
+
+
+> ScannerNoSuchElementException.java 
+- Description: 
+
+
+> ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
+- Description: 
+
+
+> ArrayListOfHeapMemoryTest.java 
+- Description: 
+
+
+> ArrayListDemo1.java 
+- Description: 
+
+
+> ArrayListDemo2.java 
+- Description: 
+
