@@ -2,7 +2,7 @@ package com.ocp.day5;
 // 2nd pattern of Object-Oriented 
 public class OO2 {
     public static void main(String[] args) {
-    	// Create Object from Constructors
+    	// Create Object by Constructors
         Student s1 = new Student();        
         Student s2 = new Student();
         Student s3 = new Student();
