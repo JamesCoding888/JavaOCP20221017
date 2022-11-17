@@ -226,18 +226,23 @@ Introduction of video for each lecture will be coming soon ~~~
 1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
 
 
+
 > ScannerDemo.java 
 - Description: 
 - 
+
+
 
 > ScannerForPractice_Loop_And_If.java 
 - Description: 
 - 
 
 
+
 > ScannerLimiter.java 
 - Description: 
 - 
+
 
 
 > ScannerIllegalStateException.java 
@@ -249,18 +254,23 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description: 
 
 
+
 > ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
 - Description: 
+
 
 
 > ArrayListOfHeapMemoryTest.java 
 - Description: 
 
 
+
 > ArrayListDemo1.java 
 - Description: 
 
 
+
 > ArrayListDemo2.java 
 - Description: 
+
 
