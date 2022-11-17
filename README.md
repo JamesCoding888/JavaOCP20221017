@@ -276,7 +276,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day7 Java 進階: Stream API combination with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
+# day7 Java 進階: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
 1. This lesson we give a following introduction:
 - 1) Inheritance
 - 2) Encapsulation
