@@ -181,18 +181,25 @@ Introduction of video for each lecture will be coming soon ~~~
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
+- 此節介紹如何使用建構子將全域變數初始化
 
 > OO2.java
 - Description: This lecture we would like sharing to reader about initializing the global variables by Object
+- 此節介紹如何由物件變數將全域變數初始化
 
 > OO3.java
-- Description: This lecture we create Object from Constructors and also initialize the global variables at the same time
+- Description: This lecture we create Constructors and also initialize the global variables at the same time
+- 此節介紹如何由建構子將全域變數初始化
+
 
 > OO4.java
 - Description: According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+- 依先前課程 (也就是 003.java)，您將可學到如何將全域變數的值，由 void 方法印出
 
 > OO5.java
-- Description: We create 1-D array of Student with 10 Fixed Memory and initialize the object of 1-D array
+- Description: We create 1-D array of Student with 10 Fixed length (which is 10 differently memory) and initialize the global variable from object of 1-
+  D array
+- 此節將學到，如何建立固定長度 (也就是 10 個不同的記憶體) 的一維陣列之 Student 物件，並由一維陣列中的物件，將全域變數 (也就是 name 和 score) 初始化
 
 > OO6.java
 - Description: We create 1-D array of Student with Dynamic Memory
