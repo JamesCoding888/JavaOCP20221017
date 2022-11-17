@@ -1,16 +1,16 @@
 /************************************************************************************************************
-* 	Before studying this lesson, please go back to package: ScannerPractice for deeply learning of Scanner  *
-*	開始學習本課程之前，請讀者先將 package: ScannerPractice 的課程研讀後，再回來此節									*
+* 	Before studying this lesson, please go back to package: ScannerPractice for deeply learning of Scanner  * 
+*	開始學習本課程之前，請讀者先將 package: ScannerPractice 和 ScannerException 的課程研讀後，再回來此節									*
 *************************************************************************************************************/
 
 
 package com.ocp.day6;
 
 // Following the previously lesson (i.e., ArrayListDemo1.java),   
-// we design an Office Check-in System with function of CRUD by ArrayList.
+// we design an Office Check-in System with function of CRUD by ArrayList - API.
 // 此課程延續 ArrayListDemo1.java，設計一個 CRUD 的簽到系統，使用 ArrayList API
 
-import java.awt.Toolkit;   
+import java.awt.Toolkit;    
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,6 +23,7 @@ public class ArrayListDemo2 {
 	// Create an Global Object variable for user to choose service
 	// 建立一個全域物件變數，給使用者輸入所需的服務
 	static Scanner scanner = new Scanner(System.in);
+    static Scanner scannerForNextLine = new Scanner(System.in);
     
     // Entry point of programming
     // 程式進入起始點
@@ -183,10 +184,10 @@ public class ArrayListDemo2 {
          	
          	注意，若設定為全域變數 static Scanner scanner = new Scanner(System.in)
          	直接在此 method 中調用 scanner.nextLine()，會導致輸入失效
-         	解決方式是，重新建立一個 Scanner scanner = new Scanner(System.in) 單獨給此 method 使用
+         	解決方式是，重新建立一個 Scanner scannerForNextLine = new Scanner(System.in) 單獨給此 method 使用
           
-         */
-        Scanner scannerForNextLine = new Scanner(System.in);
+        */
+//        Scanner scannerForNextLine = new Scanner(System.in);
         String allname = scannerForNextLine.nextLine(); 
                
         // Splits this string around matches of the given regular expression.
@@ -197,28 +198,41 @@ public class ArrayListDemo2 {
         for(String name : array) {
             names.add(name);
         }
-        System.out.println("多筆(批次)新增完成");
-        scannerForNextLine.close();
+        System.out.println("多筆(批次)新增完成");       
     }
     
     // 7. Update data by Name (根據人名來修改)
     public static void updateByName() {
         System.out.println("根據人名來修改");
         System.out.print("輸入要修改的人名(修改前 修改後): ");
-        Scanner scannerForNextLine = new Scanner(System.in);        
+        /*
+     	Advances this scanner past the current line and returns the input that was skipped. 
+     	This method returns the rest of the current line, excluding any line separator at the end. 
+     	The position is set to the beginning of the next line.
+     	
+     	呼叫 Scanner 內建的 API - nextLine() 來處理一整列的資料
+     	
+     	注意，若設定為全域變數 static Scanner scanner = new Scanner(System.in)
+     	直接在此 method 中調用 scanner.nextLine()，會導致輸入失效
+     	解決方式是，重新建立一個 Scanner scannerForNextLine = new Scanner(System.in) 單獨給此 method 使用
+      
+        */
+//        Scanner scannerForNextLine = new Scanner(System.in);        
         String pairName = scannerForNextLine.nextLine();
-        scannerForNextLine.close();
         String[] array = pairName.split(" ");
+        // If the length of array object is equally to '2', then continue
         if(array.length == 2) {
-            String beforeName = array[0];
-            String afterName = array[1];
-            for(int index=0;index<names.size();index++) {
+            String beforeName = array[0]; // collect the element from position of array at '0' into beforeName
+            String afterName = array[1];  // collect the element from position of array at '1' into afterName
+            // Comparison to each element of names, if any equally to beforeName, then that element(s) will be replaced by afterName
+            // 個別比對所有參數的值，若值等於 beforeName，則用 afteName 替換 
+            for(int index=0 ; index < names.size() ; index++ ) {
                 if(names.get(index).equals(beforeName)) {
                     names.set(index, afterName);
-                    System.out.println("修改完成");                    
-                    return; // 方法結束
+                    System.out.println("修改完成");                                        
                 }
             }
+            return; // 方法結束
         }
         System.out.println("修改失敗/查無此人");
     }
@@ -228,17 +242,22 @@ public class ArrayListDemo2 {
         System.out.println("根據人名來刪除");
         System.out.print("請輸入欲刪除的人名: ");
         String name = scanner.next();
-        if(names.remove(name)) {
-            System.out.println("刪除成功");
-        } else {
-            System.out.println("刪除失敗");
-        }
+        // Comparison to each element of names, if any equally to name, then that element(s) will be removed
+        // 個別比對所有參數的值，若值等於 name，則將參數移除 
+        for(int index = 0; index < names.size() ; index++ ) {
+        	if(names.remove(name)) {
+                System.out.println("刪除成功");
+            } else {
+                System.out.println("刪除失敗");
+            }
+        }      
     }
     
     // 9. Clean all check-in info (清空打卡資訊)
     public static void clear() {
         System.out.print("是否要清空打卡資訊(y/n): ");
         String check = scanner.next();
+        // If users Confirm to Clean all element(s) of names, please type 'Y' or 'y'
         if(check.equalsIgnoreCase("y")) {
             names.clear();
             System.out.println("清空打卡資訊成功");
@@ -254,6 +273,354 @@ public class ArrayListDemo2 {
         scanner.close();
         // Terminates the currently running Java Virtual Machine
         System.exit(0); 
-    }
-    
+    }    
 }
+
+/*
+	Console:
+	
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 6
+			多筆(批次)新增
+			請輸入人名(名字間請用空白隔開): james john jack jason david marry mod ted tim daniel michael michelle
+			多筆(批次)新增完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[james, john, jack, jason, david, marry, mod, ted, tim, daniel, michael, michelle]
+			資料筆數: 12
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): john james
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): jack james
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): jason james
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[james, james, james, james, david, marry, mod, ted, tim, daniel, michael, michelle]
+			資料筆數: 12
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): marry david
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): mod david
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): mod david
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[james, james, james, james, david, david, david, ted, tim, daniel, michael, michelle]
+			資料筆數: 12
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 7
+			根據人名來修改
+			輸入要修改的人名(修改前 修改後): james david
+			修改完成
+			修改完成
+			修改完成
+			修改完成
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[david, david, david, david, david, david, david, ted, tim, daniel, michael, michelle]
+			資料筆數: 12
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 8
+			根據人名來刪除
+			請輸入欲刪除的人名: david
+			刪除成功
+			刪除成功
+			刪除成功
+			刪除成功
+			刪除成功
+			刪除成功
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[david, ted, tim, daniel, michael, michelle]
+			資料筆數: 6
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 9
+			是否要清空打卡資訊(y/n): n
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 9
+			是否要清空打卡資訊(y/n): y
+			清空打卡資訊成功
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 5
+			全部查詢
+			[]
+			資料筆數: 0
+			請按下 y 繼續 ...
+			y
+			簽到系統
+			----------------
+			1. 簽到
+			2. 修改
+			3. 刪除
+			4. 單筆查詢
+			5. 全部查詢
+			6. 多筆(批次)新增
+			7. 根據人名來修改
+			8. 根據人名來刪除
+			9. 清空打卡資訊
+			0. Exit
+			----------------
+			請選擇: 0
+			離開系統
+
+
+*/
