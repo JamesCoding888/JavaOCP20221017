@@ -301,3 +301,36 @@ Introduction of video for each lecture will be coming soon ~~~
 > Main.java 
 - Description: 
 - 
+
+
+
+> Person.java 
+- Description: 
+- 
+
+> Student.java 
+- Description: 
+- 
+
+
+> Teacher.java 
+- Description: 
+- 
+
+
+> Main.java 
+- Description: 
+- 
+
+
+
+> Classroom.java
+- Description:
+- 
+
+
+
+
+> Main2.java 
+- Description: 
+- 
