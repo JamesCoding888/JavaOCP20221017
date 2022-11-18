@@ -30,7 +30,7 @@ public class Teacher extends Person {
 	}
 
 	// Super implementation for "public String toString() { ... }" of Person.class, since Teacher.class inherits to Person.class
-	// 改寫父類別的 "public String toString() { ... }"，因 Teacher.class 繼承 Person.class
+	// 覆寫父類別的 "public String toString() { ... }"，因 Teacher.class 繼承 Person.class
 	@Override
 	public String toString() {
 		return "Teacher{" + "salary = " + salary + '}' + super.toString();  // super.toString(): 呼叫父類別的 toString()

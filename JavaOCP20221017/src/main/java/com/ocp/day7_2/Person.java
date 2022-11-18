@@ -42,11 +42,10 @@ public class Person {
     }
 
     /*    
-    Returns a string representation of the object, 
-    which is "public String toString() { ... }, 
-    from Object.class.
+    Override the method of "public String toString() { ... } from Object.class
+    with Customization method of public String toString() { ... } from Person.class
     
-    覆寫 Object 類別中的 "public String toString() { ... }。
+    Person.class 中，使用客製化的 Public String toString() { ... } 去覆寫 Object.class 中的 "public String toString() { ... }。
     因建立任一的 Class，系統會自動產生無參數建構子，
     其建構子中之默認函數 "super()" 會調用父類別的 public Object() { }，
     意思就是說，任意的 Class 都繼承 Object.class     

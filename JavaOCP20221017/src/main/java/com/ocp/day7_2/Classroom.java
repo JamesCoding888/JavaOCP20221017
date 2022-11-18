@@ -1,14 +1,14 @@
 package com.ocp.day7_2;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.Arrays;
 
-// 組合模式
+// A design pattern of 
 public class Classroom {
 	
 	// These Global Variables only could be Visible in SAME Class, due to accessibility in "Private"
 	// 全域變數，只可在此 Classroom class 中，被調用，因為權限是 Private
-	private int id; // number of classromm (教室編號)
+	private int id; // number of classroom (教室編號)
 	private Teacher teacher;  
 	private ArrayList<Student> students = new ArrayList<>(); // 建立 ArrayList object 來管理 Student 的物件
 
@@ -57,53 +57,105 @@ public class Classroom {
 	public void removeAllStudents() {
 		students.clear();
 	}
-
+	
+	// Customization method to calculate the Average score from student(s)
 	// 計算學生平均成績
-	public double getScoreOfAvg() {
+	public double getAvgScoreOfStudents() {
+		// If the length of students is equal to 0, then return 0.0
+		// 若 students 的 ArrayList 長度等於 0，則回傳 0.0
 		if (students.size() == 0) {
 			return 0.0;
 		}
-		return students.stream().mapToInt(Student::getScore)
-				// .mapToInt(student -> student.getScore())
-				.average().getAsDouble();
+		// 使用 Java 1.8 - Stream API，將 ArrayList<Student> 的元素，也就是 Student 的物件 (students)，
+		// 由 Student.class 中的 getScore 方法，取得學生每一個學生分數，並運用 .mapToInt 將分數放入 IntStream 中
+		return students.stream()
+					   /*
+						* 請讀者留意，兩種語法都可:
+						* 1) .mapToInt(Student::getScore)
+						* 2) .mapToInt(students -> students.getScore())
+					   */
+					   .mapToInt(Student::getScore)
+					   // 使用 IntStream 和 OptionalDouble 之 API 獲取平均分數
+					   .average().getAsDouble(); 
 	}
-
-	// 計算平均年齡
-	public double getAgeOfAvg() {
+	
+	// Get the average age of teacher and all students
+	// 計算老師和學生的總平均年齡
+	public double getAvgAgeOfTeacherAndStudents() {
+		// Initialize the local variable to be 0.0
+		// 區域變數初始化為 0.0
 		double avg = 0.0;
+		
+		// If the object of Teacher is Null and also the length from object of Student in ArrayList is 0
+		// 若老師物件未被初始化 且 ArrayList 的長度為 0 (也就是無 Student 的物件０)
 		if (teacher == null && students.size() == 0) {
+			// return 0.0
+			// 回傳 0.0
 			return avg;
 		}
+		
+		
+		// If the object of Teacher is NOT Null and also the length from object of Student in ArrayList is 0,
+		// then return the age of teacher
+		// 若老師物件有被初始化 且 ArrayList 的長度為 0 (也就是無 Student 的物件)
+		// 則回傳老師的 age
 		if (teacher != null && students.size() == 0) {
 			return teacher.getAge();
 		}
-		// 先計算出學生平均年齡
-		double studentAgeOfAvg = students.stream().mapToInt(Student::getAge).average().getAsDouble();
-		// 有學生沒有老師的情況下
+		
+		// Get the average age of student(s)
+		// 計算出學生平均年齡
+		double studentAgeOfAvg = students.stream()										 
+										 // 由 Student.class 中的 getScore 方法，取得學生每一個學生分數，並運用 .mapToInt 將分數放入 IntStream 中
+										 /*
+										  * 請讀者留意，兩種語法都可:
+										  * 1) .mapToInt(Student::getScore)
+										  * 2) .mapToInt(students -> students.getScore())
+										  */
+										 .mapToInt(Student::getAge)
+										 // 使用 IntStream 和 OptionalDouble 之 API 獲取平均分數
+										 .average().getAsDouble(); 
+
+		// If the object of Teacher is NOT Null, then leave the getAgeOfAvg() method by "return" 
+		// 若老師物件未被初始化，也就是 Null，則使用 "return" 結束 getAgeOfAvg() 方法
+		//若老師有學生沒有老師的情況下
 		if (teacher == null) {
 			return studentAgeOfAvg;
 		}
-		// 有學生有老師的情況下
-		// 先計算出學生年齡總和 + 老師的年齡
-		int sumOfAge = students.stream().mapToInt(Student::getAge).sum() + teacher.getAge();
+		
+		
+		// Add-up age of teacher and student(s)
+		// 計算學生年齡和老師年齡之和
+		int sumOfAge = students.stream()
+							  // 由 Student.class 中的 getScore 方法，取得學生每一個學生分數，並運用 .mapToInt 將分數放入 IntStream 中
+							  /*
+							   * 請讀者留意，兩種語法都可:
+							   * 1) .mapToInt(Student::getScore)
+							   * 2) .mapToInt(students -> students.getScore())
+							   */
+							   .mapToInt(Student::getAge)
+							   // IntStream API - sum()，將學生年齡加總，再加上老師年齡
+							   .sum() + teacher.getAge(); 
+		
+		// get the average age (A kindly reminder: Here we need to upcast to double from int 
+		// 取得總平均年齡 (讀者留意，需轉型為 double)
 		avg = sumOfAge / (double) (students.size() + 1);
 		return avg;
 	}
 
 	
 	/*    
-    Returns a string representation of the object, 
-    which is "public String toString() { ... }, 
-    from Object.class.
+    Override the method of "public String toString() { ... } from Object.class
+    with Customization method of public String toString() { ... } from Classroom.class
     
-    覆寫 Object 類別中的 "public String toString() { ... }。
+    Classroom.class 中，使用客製化的 Public String toString() { ... } 去覆寫 Object.class 中的 "public String toString() { ... }。
     因建立任一的 Class，系統會自動產生無參數建構子，
     其建構子中之默認函數 "super()" 會調用父類別的 public Object() { }，
     意思就是說，任意的 Class 都繼承 Object.class     
     */
 	@Override
 	public String toString() {
-		return "Classroom{" + "id=" + id + ", teacher=" + teacher + ", students=" + students + '}';
+		return "Classroom{" + "id = " + id + ", teacher = " + teacher + ", students = " + students + '}';
 	}
 
 }

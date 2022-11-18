@@ -3,27 +3,60 @@ package com.ocp.day7_2;
 public class Main2 {
 	
 	public static void main(String[] args) {
+		
+		// Initialize the Global variable of id by Constructor of Classroom
+	    // 有參數建構子 Classroom 將 id 全域變數初始化
 		Classroom classroom = new Classroom(405);
 		
-		Teacher teacher = new Teacher("Helen", 30, 70000);
+		// Initialize the variables of name, age, and salary by Constructor of Teacher
+	    // 有參數建構子 Teacher 將變數 name、age 和 salary 初始化
+		Teacher teacher = new Teacher("James", 18, 70000);
 		
-		Student s1 = new Student("John", 18, 90);
-		Student s2 = new Student("Mary", 17, 75);
-		Student s3 = new Student("Anita", 20, 100);
+		// Initialize the variables of name, age, and salary by Constructor of Student
+	    // 有參數建構子 Student 將變數 name、age 和 score 初始化
+		Student student1 = new Student("Jack", 28, 100);
+		Student student2 = new Student("Tim", 47, 75);
+		Student student3 = new Student("Mercy", 30, 90);
 		
-		classroom.setTeacher(teacher);
+		// Encapsulation of setter method
+		classroom.setTeacher(teacher); // setTeacher(teacher) -> Teacher teacher = new Teacher("James, 18, 70000)
 		
-		classroom.addStudent(s1);
-		classroom.addStudent(s2);
-		classroom.addStudent(s3);
+		// Appends the specified element(s) (i.e., object of Student) to the end of this list 
+		// 使用 "ArrayList.add" 新增功能，新增一筆學生資料至 ArrayList 中
+		classroom.addStudent(student1);
+		classroom.addStudent(student2);
+		classroom.addStudent(student3);
 		
-		System.out.println(classroom);
+		/*    
+	    Override the method of "public String toString() { ... } from Object.class
+	    with Customization method of public String toString() { ... } from Classroom.class
+	    
+	    Classroom.class 中，使用客製化的 Public String toString() { ... } 去覆寫 Object.class 中的 "public String toString() { ... }。
+	    因建立任一的 Class，系統會自動產生無參數建構子，
+	    其建構子中之默認函數 "super()" 會調用父類別的 public Object() { }，
+	    意思就是說，任意的 Class 都繼承 Object.class     
+	    */
+		System.out.println("Print out the object reference of Classroom: " + classroom);
 		
-		// 請求此班級出學生平均成績 ?
-		double avg = classroom.getScoreOfAvg();
-		System.out.println(avg);
 		
-		// 請求出此班級平均年齡
-		System.out.println(classroom.getAgeOfAvg());
+		// To get the Average score from student(s)
+		// 計算學生平均成績
+		double avgScoreOfStudents = classroom.getAvgScoreOfStudents();
+		System.out.printf("Get the average score from student(s): %.3f (by 3rd decimal place)\n", avgScoreOfStudents);
+		
+		
+		// Get the average age of teacher and all students from Classroom
+		// 求出此班級的老師和總學生之平均年齡
+		System.out.println("Get the average age of teacher and all students from classroom: "+ classroom.getAvgAgeOfTeacherAndStudents());
 	}
 }
+
+
+/*
+ 	Console:
+ 				Print out the object reference of Classroom: Classroom{id = 405, teacher = Teacher{salary = 70000}Person{name = James, age = 18}, students = [Student{score = 100}Person{name = Jack, age = 28}, Student{score = 75}Person{name = Tim, age = 47}, Student{score = 90}Person{name = Mercy, age = 30}]}
+				Get the average score from student(s): 88.333 (by 3rd decimal place)
+				Get the average age of teacher and all students from classroom: 30.75
+
+
+*/
