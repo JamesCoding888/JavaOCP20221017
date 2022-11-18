@@ -334,3 +334,8 @@ Introduction of video for each lecture will be coming soon ~~~
 > Main2.java 
 - Description: 
 - 
+
+
+------------------------------------------------------------------------------
+# day8 Java 進階: Coming Soon
+
