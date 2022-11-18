@@ -378,8 +378,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day9 Java 進階: Coming Soon
-1. This lesson we give a following introduction:
-...
+
 
 
 
