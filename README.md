@@ -302,6 +302,12 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description: 
 - 
 
+2. This lesson we give a following introduction:
+- 1) Inheritance
+- 2) Encapsulation
+- 3) Auto-boxing
+- 4) Annotation of Override
+- 5) Application of Stream API to calculate the average age and score
 
 
 > Person.java 
@@ -338,4 +344,33 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day8 Java 進階: Coming Soon
+1. This lesson we give a following introduction:
+...
 
+
+
+> demo1.java 
+- Description: 
+- 
+
+
+
+> Overloading.java 
+- Description: 
+- 
+
+
+
+> WrapperClass1.java 
+- Description: 
+- 
+
+
+> WrapperClass2.java 
+- Description: 
+- 
+
+
+> WrapperClass3.java 
+- Description: 
+- 
