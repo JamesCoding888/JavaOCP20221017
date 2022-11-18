@@ -5,10 +5,10 @@ package com.ocp.day7;
  * 2) Annotation of "@Override"
  */
 
-// Super Class (父類別)
+// Super Class (父類別) of Student.class and Teacher.class
 public class Person {
 	// These Global Variables only could be Visible in SAME Class, due to accessibility in "Private"
-	// 全域變數，只能被此 Person class 中，被調用，因為權限是 Private
+	// 全域變數，只可在此 Person class 中，被調用，因為權限是 Private
     private String name;
     private int age; // int -> Integer , Suggested to be a type of Boxing  
     
