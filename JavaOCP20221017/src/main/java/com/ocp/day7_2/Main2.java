@@ -1,4 +1,10 @@
 package com.ocp.day7_2;
+// This lesson we give a following introduction:
+// 1) Inheritance
+// 2) Encapsulation
+// 3) Auto-boxing
+// 4) Annotation of Override
+// 5) Application of Stream API to calculate the average age and score
 
 public class Main2 {
 	
