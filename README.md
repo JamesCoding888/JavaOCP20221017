@@ -40,11 +40,12 @@ Introduction of video for each lecture will be coming soon ~~~
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
 - Description: This lesson we introduce the accessibility of java from following sample code. 
+- 此節介紹底下範例，讓讀者更清楚了解 Java 的讀取權限之應用
 - 1) Apple.java
 - 2) Banana.java
 - 3) Cherry.java
 - 4) Fruit.java
-- 本節建立的 .java 範例，係為了驗證讀取權限
+
 
 
 
