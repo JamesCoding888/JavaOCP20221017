@@ -39,8 +39,14 @@ Introduction of video for each lecture will be coming soon ~~~
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
 
-- Description: We do create three different .java as Apple, Banana and Cherry for verification of accessiblity.
+- Description: This lesson we introduce the accessibility of java from following sample code. 
+- 1) Apple.java
+- 2) Banana.java
+- 3) Cherry.java
+- 4) Fruit.java
 - 本節建立的 .java 範例，係為了驗證讀取權限
+
+
 
 2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
