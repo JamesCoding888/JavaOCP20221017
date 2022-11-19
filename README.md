@@ -349,7 +349,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 
-> demo1.java 
+> DemoInheritanceAndConstructors.java 
 - Description: 
 - 
 
