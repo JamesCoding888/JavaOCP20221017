@@ -11,6 +11,9 @@ package com.ocp.day6.ScannerException;
  		
  		3) a class: Prevent Inheritance
  	
+ 		4) final variable Must be initialized at early beginning or inside Constructor
+		   
+		   
  	=================================================================
  	
  	關於 final 變數之用法如下:
@@ -20,6 +23,8 @@ package com.ocp.day6.ScannerException;
 		2) 類別: 當宣告在類別上時，該類別就無法被繼承！
 	
 		3) 函數: 當一個函數被宣告為 final 時，則繼承他的子類別無法覆寫
+		
+		4) final 變數，必須被初始化，其初始化之方式有兩種，一種在一開始設計變數時就給定，另一種則是在建構子中
 		
 	=================================================================
 	
@@ -35,10 +40,7 @@ final class Alcoholic_Beverages{
 	    
 	    2) This method is NOT able to be Overrided, since the "final class Alcoholic_Beverages" Already is a Constant Class
 		   不可被改寫，因為 "final class Alcoholic_Beverages" 已經係常數類別，無法被繼承，既然無法被繼承，怎能被改寫
-	
-		3) final variable Must be initialized at early beginning or inside Constructor
-		   final 變數，必須被初始化，其初始化之方式有兩種，一種在一開始設計變數時就給定，另一種則是在建構子中
-		   
+			
 	*/
 	public void drinkAlcoholicBeveragesInDrivingCar() {
 		System.out.println("Don't Drink And Drive !!! ");
