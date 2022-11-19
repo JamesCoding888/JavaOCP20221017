@@ -14,8 +14,10 @@ public class ScannerIllegalStateException {
 	 
 	public static void main(String[] args) {
 		
-		// Created Scanner for getAge() and getName() method 
-		final Scanner scanner = new Scanner(System.in);
+		 
+		// Regarding type of final, please go to study the "IntroductionOfFinal.java" from package: com.ocp.day6.ScannerException
+		// 關於 final 變數之用法，請參 IntroductionOfFinal.java (在 package: com.ocp.day6.ScannerException)
+		final Scanner scanner = new Scanner(System.in); // Created Scanner for getAge() and getName() method
 		System.out.println(getAge(scanner));
 		System.out.println(getName(scanner));
 	}
