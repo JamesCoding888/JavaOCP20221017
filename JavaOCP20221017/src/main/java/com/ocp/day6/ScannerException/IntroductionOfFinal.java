@@ -5,7 +5,7 @@ package com.ocp.day6.ScannerException;
  	
  	final is a non-access modifier applicable only to the following:
  		
- 		1) a variable: To Create an Constant Variable
+ 		1) a variable: To Create an Constant Variable, and Must be initialized
  		   			 		   
  		2) a method: Prevent method Overriding
  		
@@ -36,6 +36,9 @@ final class Alcoholic_Beverages{
 	    2) This method is NOT able to be Overrided, since the "final class Alcoholic_Beverages" Already is a Constant Class
 		   不可被改寫，因為 "final class Alcoholic_Beverages" 已經係常數類別，無法被繼承，既然無法被繼承，怎能被改寫
 	
+		3) final variable Must be initialized at early beginning or inside Constructor
+		   final 變數，必須被初始化，其初始化之方式有兩種，一種在一開始設計變數時就給定，另一種則是在建構子中
+		   
 	*/
 	public void drinkAlcoholicBeveragesInDrivingCar() {
 		System.out.println("Don't Drink And Drive !!! ");
@@ -44,10 +47,14 @@ final class Alcoholic_Beverages{
 
 class Father{
 
+	// final variable Must be initialized at early beginning or inside Constructor
+	//
+	final String carName = "Tesla";
+	
 	// Prevent method Overriding by child class (i.e., "public void driveCar(int speed)" of Son.class)
 	// 函數被宣告為 final 時，則繼承他的子類別 (也就是 Son.class) 無法覆寫
 	final public void driveCar(int speed) {
-		System.out.printf("My Car could reach to %d miles per hour !\n", speed);
+		System.out.printf("My %s could reach to %d miles per hour !\n", carName, speed);
 	}
 	
 	
@@ -74,10 +81,17 @@ public class IntroductionOfFinal
 { 
 
 	// To Create an Constant Variable
-	static final int CONSTANT_VARIABLE = 60;
+	// final variable Must be initialized at early beginning or inside Constructor
+	final int CONSTANT_VARIABLE; 
+	
+	public IntroductionOfFinal() {
+		this.CONSTANT_VARIABLE = 60;
+	}
 	
 	public static void main(String[] args) {
-		new Son().driveCar(CONSTANT_VARIABLE);
+		IntroductionOfFinal i = new IntroductionOfFinal();
+		new IntroductionOfFinal();
+		new Son().driveCar(i.CONSTANT_VARIABLE);
 		new Alcoholic_Beverages().drinkAlcoholicBeveragesInDrivingCar();
 	}
 	
@@ -86,8 +100,9 @@ public class IntroductionOfFinal
 
 /*
 	Console:
-			My Car could reach to 60 miles per hour !
+			My Tesla could reach to 60 miles per hour !
 			Don't Drink And Drive !!! 
+ 
 
 			
 	
