@@ -244,35 +244,39 @@ Introduction of video for each lecture will be coming soon ~~~
 - 
 
 
+> IntroductionOfFinal.java
+- Description:
+- 
+
 
 > ScannerIllegalStateException.java 
-- Description: 
-
+- Description: 本節使用了 final 變數，需請讀者先閱讀 IntroductionOfFinal.java，再回來此節
+- 
 
 
 > ScannerNoSuchElementException.java 
 - Description: 
-
+- 
 
 
 > ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
 - Description: 
-
+- 
 
 
 > ArrayListOfHeapMemoryTest.java 
 - Description: 
-
+- 
 
 
 > ArrayListDemo1.java 
 - Description: 
-
+- 
 
 
 > ArrayListDemo2.java 
 - Description: 
-
+- 
 
 
 ------------------------------------------------------------------------------
