@@ -1,4 +1,4 @@
-# Oracle - Java SE 11 Developer
+# Oracle University - Java SE 11 Developer
 
 Integrated Development Environment (IDE): Eclipse 2021-06
 
