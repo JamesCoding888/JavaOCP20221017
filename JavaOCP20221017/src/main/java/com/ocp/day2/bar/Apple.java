@@ -18,7 +18,7 @@ public class Apple {
      	The type of radius variable by "protected":
     	把變數宣告為 protected 之用處:
 
-		1) This protected variable could be used mutually 
+		1) This protected variable could be used mutually by Parent or child's class
 		   父子類別皆能使用
 		   
 		2) Any .class is Out of the Parent and child's class, 
