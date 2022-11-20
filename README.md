@@ -403,8 +403,6 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 
-------------------------------------------------------------------------------
-# day27 Java 進階: Public Key Infrastructure (PKI) - Coming Soon
 
 
 
