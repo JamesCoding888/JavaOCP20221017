@@ -21,3 +21,12 @@ public class WrapperClass2 {
         Integer i = null;
     }
 }
+
+/*
+	Console:
+			100
+			100
+			200
+			200
+
+*/

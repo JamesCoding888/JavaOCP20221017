@@ -19,3 +19,9 @@ public class WrapperClass3 {
         // boxed() 可以將 int 轉 Integer
     }
 }
+
+/*
+	Console:
+			270
+			210
+*/
