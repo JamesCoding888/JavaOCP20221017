@@ -1,32 +1,27 @@
 package com.ocp.day8;
 
+import java.util.Arrays;
 public class WrapperClass2 {
     public static void main(String[] args) {
-        // Java 1.5 以前的寫法
-        int x = 100;
-        Integer y = Integer.valueOf(100);
-        System.out.println(x);
-        System.out.println(y.intValue());
-        int z = x + y.intValue();
-        System.out.println(z);
-        // Java 1.5 以後引進了 auto-Boxing / unboxing 技術
-        // 讓 int 與 Integer 可以更直觀的應用
-        int a = 100;
-        Integer b = 100; // 背後所代表的語法 Integer.valueOf(100)
-                         // auto-boxing
-        int c = a + b;   // 背後所代表的語法 a + b.intValue();
-                         // auto-unboxing
-        System.out.println(c);        
-        
-        Integer i = null;
+        int[] nums = {100, 90, 80};
+        // 利用 Arrays.stream() 計算 sum()
+        int sum = Arrays.stream(nums) // IntStream
+                        .sum();
+        System.out.println(sum);
+        Integer[] nums2 = {80, 70, 60};
+        // 利用 Arrays.stream() 計算 sum()
+        int sum2 = Arrays.stream(nums2)
+                         //.mapToInt(n -> n.intValue())
+                         //.mapToInt(Integer::intValue)
+                         .mapToInt(n -> n) // auto-unboxing
+                         .sum();
+        System.out.println(sum2);
+        // boxed() 可以將 int 轉 Integer
     }
 }
 
 /*
 	Console:
-			100
-			100
-			200
-			200
-
+			270
+			210
 */
