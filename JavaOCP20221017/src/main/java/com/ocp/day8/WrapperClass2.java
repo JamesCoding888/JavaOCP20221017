@@ -43,7 +43,7 @@ public class WrapperClass2 {
 
         int totalScoreAutoUnboxing = Arrays.stream(scoresInWrapperClass) 
         								   // 使用內建 API - Stream.mapToInt
-								           .mapToInt(n -> n) // auto-unboxing (自動向下轉型)			 
+								           .mapToInt(n -> n) // auto-unboxing from Integer to int (自動向下轉型為 int)			 
 								           // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
 								           .sum();
 
