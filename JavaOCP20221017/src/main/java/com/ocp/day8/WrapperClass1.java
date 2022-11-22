@@ -3,7 +3,7 @@ package com.ocp.day8;
 
 public class WrapperClass1 {
     public static void main(String[] args) {
-        // Writing a programming by Java 1.0 to Java 1.4 (NOT support auto-boxing and unboxing)
+        // Write a programming in Java - 1.0, 1.1, 1.2, 1.3, and 1.4 (NOT support auto-boxing and unboxing)
     	// Java 1.5 之前版本，不支援 auto-boxing 和 unboxing
     	int x = 100;
     	// 需手動將 int 型別向上轉型 (UpCasting) 為 Integer type
