@@ -1,7 +1,7 @@
 package com.ocp.day7_2;
 /*
  * Java 1.5 之前版本，不支援 
- * 1) auto-boxing
+ * 1) auto-boxing and unboxing
  * 2) Annotation of "@Override"
  */
 
