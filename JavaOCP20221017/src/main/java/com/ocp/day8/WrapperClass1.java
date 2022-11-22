@@ -14,7 +14,7 @@ public class WrapperClass1 {
         /*
 	         x: int type, y: Integer type
 	         different type add-up, shall make sure both of type are SAME
-	         Therefore, we shall have y (local variable) downCast to int type 
+	         Therefore, we shall have y (which is a local variable) downCast to int type 
 	         
 	         因兩個變數之型別不同，須先將 Wrapper Class 向下轉型為 int 基本型別，
 	         方能將兩個基本型別之變數相加
@@ -22,7 +22,7 @@ public class WrapperClass1 {
         int z = x + y.intValue();
         System.out.println(z);
         
-        // Writing a programming by Java 1.5 or above version 
+        // Write a programming by Java 1.5 or above version 
     	// Java 1.5 或以上之版本，支援 auto-boxing 和 unboxing
         // 讓 int 與 Integer 可以更直觀的應用
         int a = 100;

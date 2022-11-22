@@ -9,26 +9,57 @@ public class WrapperClass2 {
     	// Initialize the element of 1-D array 
     	// 一維陣列元素初始化
     	int[] scoresInPrimitiveType = {100, 90, 80};
-        // Calculate total scores by Arrays.stream()
-    	// 使用 Arrays.stream() 計算總分
-        int totalScore01 = Arrays.stream(scoresInPrimitiveType) // IntStream
-                        .sum();
-        System.out.println(totalScore01);
-    	// 一維陣列元素初始化
-        Integer[] scoresInWrapperClass = {80, 70, 60};
-        // 利用 Arrays.stream() 計算 sum()
+        // Calculate total scores by API - Arrays.stream()
+    	// 使用 Java 1.2 之 API - Arrays.stream(int[] array)，來計算總分
+
+        int totalScoreInPrimitiveType = Arrays.stream(scoresInPrimitiveType) // 回傳 IntStream type 
+        									  // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
+        					     			  .sum(); 
+        System.out.println(totalScoreInPrimitiveType);
+        
+        // WrapperClass of Integer (Integer 包覆類別) 
+        // Initialize the element of 1-D array
+        // 一維陣列元素初始化
+        Integer[] scoresInWrapperClass = {100, 90, 80};
+        
+        int totalScore01 = Arrays.stream(scoresInWrapperClass)
+        						 // 使用內建 API - Stream.mapToInt
+                         		 .mapToInt((Integer n) -> n.intValue())        				 
+                         		 // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
+                                 .sum();
+                
+
         int totalScore02 = Arrays.stream(scoresInWrapperClass)
-                         //.mapToInt(n -> n.intValue())
-                         //.mapToInt(Integer::intValue)
-                         .mapToInt(n -> n) // auto-unboxing
-                         .sum();
-        System.out.println(totalScore02);
-        // boxed() 可以將 int 轉 Integer
+        						 // 使用內建 API - Stream.mapToInt
+        						 .mapToInt(n -> n.intValue())
+        						 // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
+        						 .sum();
+        						 
+        int totalScore03 = Arrays.stream(scoresInWrapperClass)    
+        						 // 使用內建 API - Stream.mapToInt
+        						 .mapToInt(Integer::intValue)				 
+        						 // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
+        						 .sum();
+
+        int totalScoreAutoUnboxing = Arrays.stream(scoresInWrapperClass) 
+        								   // 使用內建 API - Stream.mapToInt
+								           .mapToInt(n -> n) // auto-unboxing (自動向下轉型)			 
+								           // 使用 IntStream 內建 API - sum()，將 IntStream 中的元素加總
+								           .sum();
+
+		System.out.println(totalScore01);
+		System.out.println(totalScore02);
+		System.out.println(totalScore03);
+		System.out.println(totalScoreAutoUnboxing);
+		
     }
 }
 
 /*
 	Console:
 			270
-			210
+			270
+			270
+			270
+			270
 */
