@@ -395,6 +395,29 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day9 Java 進階: Coming Soon
+1. This lesson we give a following introduction:
+...
+
+
+
+> VarargDemo1.java 
+- Description: 
+- 
+
+
+
+> VarargDemo2.java 
+- Description: 
+- 
+
+
+
+> VarargDemo3.java 
+- Description: 
+- 
+
+
+
 
 
 
