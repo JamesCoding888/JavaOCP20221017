@@ -22,6 +22,9 @@ public class WrapperClass2 {
         // 一維陣列元素初始化
         Integer[] scoresInWrapperClass = {100, 90, 80};
         
+        
+        // There are three differently syntax as following to calculate the totalScore
+        // 底下 3 種撰寫方式 - totalScore01、totalScore02 和 totalScore03
         int totalScore01 = Arrays.stream(scoresInWrapperClass)
         						 // 使用內建 API - Stream.mapToInt
                          		 .mapToInt((Integer n) -> n.intValue())        				 
