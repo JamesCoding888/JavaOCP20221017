@@ -45,6 +45,7 @@ public class VarargDemo1 {
         return sum;
     }
     
+    
     public static void main(String[] args) {        
         System.out.println(addVarargsIn1DimensionArray());
         System.out.println(addVarargsIn1DimensionArray(1));
