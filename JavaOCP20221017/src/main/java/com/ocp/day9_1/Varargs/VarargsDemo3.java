@@ -8,7 +8,7 @@ package com.ocp.day9_1.Varargs;
 */
 
 import java.util.Arrays;
-public class VarargDemo3 {
+public class VarargsDemo3 {
 	
     public static void add(int a, int ... values) {
         System.out.println("a = " + a);

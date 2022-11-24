@@ -16,7 +16,7 @@ package com.ocp.day9_1.Varargs;
 	1) public String format() {String ... values}
 
 */
-public class VarargDemo1 {
+public class VarargsDemo1 {
     // addVarargsIn1DimensionArray method to add up all values
 	// Reminder here of following available syntax -> int...values / int... values / int ...values
 	// 建立 addVarargsIn1DimensionArray 方法，將 values 加總
