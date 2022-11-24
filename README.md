@@ -426,7 +426,7 @@ Introduction of video for each lecture will be coming soon ~~~
 > UserDao.java 
 - Description: This class is implementing the Dao.class and SingleDao.class
 - A kindly Reminder: 
-- (1) you may get a different console from following, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
+- (1) you may get a different Console message from following, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
 - Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
