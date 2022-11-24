@@ -476,13 +476,13 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description:
 
 > Test04.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 > Test05.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 > Test06.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 
 
