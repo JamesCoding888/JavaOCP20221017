@@ -419,8 +419,9 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 > Dao.java 
-- Description: 
-- 
+- Description: The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an "abstract API". 
+- Regarding the information above, it's at very beginning moment for you, since we do NOT include any "abstract" API during this lesson. But, no worry, we will review this topic at the following later day. 
+
 
 
 
