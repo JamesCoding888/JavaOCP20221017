@@ -18,7 +18,7 @@ public class UserDao {
 
 /*
 
-	A kind Reminder: 
+	A kindly Reminder: 
 	(1) you may get a different console from following, 
 	because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
 	
