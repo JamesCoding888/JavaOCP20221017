@@ -11,7 +11,7 @@ package com.ocp.day9.dao;
 	3) Create a public static method (eg., "public static SingleDao getSingleDaoInstance()") that allows us to create and access the object we created. 
 	   Inside the method, we will create a condition that prohibits us from creating more than one object.
 	   
-	   What's this mean by, regarding "allows us to create and access the object we created" ? 
+	   What's this mean by, "allows us to create and access the object we created" ? 
 	   It's likely you share a Single Global Instance and provide a Global Point of Access to SingleDao.class.
 	  
 	   
