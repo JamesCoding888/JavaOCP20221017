@@ -1,4 +1,4 @@
-package com.ocp.day9.Varargs;
+package com.ocp.day9_1.Varargs;
 /*
  	This lesson we introduce the application of Varargs:
 	==============================================================================================================

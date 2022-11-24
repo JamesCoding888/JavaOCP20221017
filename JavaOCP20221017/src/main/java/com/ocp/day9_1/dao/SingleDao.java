@@ -1,4 +1,4 @@
-package com.ocp.day9.dao;
+package com.ocp.day9_1.dao;
 
 /*
  	Introduction of how to create a Singleton Pattern as below

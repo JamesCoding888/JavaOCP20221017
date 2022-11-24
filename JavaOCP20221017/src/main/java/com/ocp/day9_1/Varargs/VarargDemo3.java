@@ -1,4 +1,4 @@
-package com.ocp.day9.Varargs;
+package com.ocp.day9_1.Varargs;
 /*
  	This lesson we design a method with one fixed argument  
  	but support an arbitrary number of parameters of one type (i.e., int) for another

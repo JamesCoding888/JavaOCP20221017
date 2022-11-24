@@ -1,4 +1,4 @@
-package com.ocp.day9.Varargs;
+package com.ocp.day9_1.Varargs;
 // This lesson we design a same name of method but differently arbitrary number of arguments 
 // 本節設計相同的方法名稱，但不同的參數
 
