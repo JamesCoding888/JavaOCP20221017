@@ -403,13 +403,13 @@ Introduction of video for each lecture will be coming soon ~~~
 - After Java 1.5 (including 1.5 version), provides a short-hand for methods that support an arbitrary number of parameters of one type
 - 1) public String format() {String ... values}
 
-> VarargDemo1.java 
+> VarargsDemo1.java 
 - Description: You will learn how to design a 1-D array of Varargs method and 2-D array of Varargs to add up all values.
 
-> VarargDemo2.java 
+> VarargsDemo2.java 
 - Description: This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
 
-> VarargDemo3.java 
+> VarargsDemo3.java 
 - Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
 
 2. Introduction the application of DAO and Singleton:
