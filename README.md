@@ -404,7 +404,7 @@ Introduction of video for each lecture will be coming soon ~~~
 - 1) public String format() {String ... values}
 
 > VarargDemo1.java 
-- Description: You will learn how to design an 1-D array of Varargs method and 2-D array of Varargs to add up all values.
+- Description: You will learn how to design a 1-D array of Varargs method and 2-D array of Varargs to add up all values.
 
 > VarargDemo2.java 
 - Description: This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
