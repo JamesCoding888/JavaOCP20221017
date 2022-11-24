@@ -395,26 +395,26 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day9 Java 進階: Varargs, DAO (Data Access Object) and Singleton
-1. This lesson we give a following introduction:
-...
-
-
+1. This lesson we introduce the application of Varargs:
+- Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
+- 1) public String format() { ... }
+- 2) public String format(String value) { ... }
+- 3) public String format(String value_1, String value_2) { ... }
+- After Java 1.5 (including 1.5 version), provides a short-hand for methods that support an arbitrary number of parameters of one type
+- 1) public String format() {String ... values}
 
 > VarargDemo1.java 
-- Description: 
-- 
-
+- Description: You will learn how to design an 1-D array of Varargs method and 2-D array of Varargs to add up all values.
 
 
 > VarargDemo2.java 
-- Description: 
-- 
+- Description: This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
 
 
 
 > VarargDemo3.java 
-- Description: 
-- 
+- Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
+
 
 
 
