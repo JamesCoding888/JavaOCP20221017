@@ -9,7 +9,7 @@ public class UserDao {
 			Dao dao = new Dao();
 			System.out.println(dao);
 		}
-		// Randomly output SAME id_number by 20 times, since Singleton
+		// Output SAME id_number by 20 times, eventually using "new Random().nextInt(int value)", since Singleton pattern
 		for(int n = 0 ; n < 20 ; n++)
 		System.out.println(SingleDao.getSingleDaoInstance());		
 	}
