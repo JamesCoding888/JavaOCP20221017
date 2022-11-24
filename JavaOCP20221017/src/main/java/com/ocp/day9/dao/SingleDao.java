@@ -6,9 +6,9 @@ package com.ocp.day9.dao;
 	
 	1) Create a private constructor of the class to restrict object created outside of the singleton-class.
 	
-	2) Create a private attribute (i.e., "private static SingleDao SingleDao_Instance = new SingleDao()") of the class type that refers to the single object.
+	2) Create a private attribute (eg., "private static SingleDao SingleDao_Instance = new SingleDao()") of the class type that refers to the single object.
 	
-	3) Create a public static method (i.e., "public static SingleDao getSingleDaoInstance()") that allows us to create and access the object we created. 
+	3) Create a public static method (eg., "public static SingleDao getSingleDaoInstance()") that allows us to create and access the object we created. 
 	   Inside the method, we will create a condition that prohibits us from creating more than one object.
 	   
 	   What's this mean by, regarding "allows us to create and access the object we created" ? 

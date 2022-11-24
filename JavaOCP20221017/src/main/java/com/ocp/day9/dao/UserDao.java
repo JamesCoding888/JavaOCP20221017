@@ -18,6 +18,24 @@ public class UserDao {
 
 /*
 
+	A kind Reminder: 
+	(1) you may get a different console from following, 
+	because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
+	
+	Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
+ 	
+ 	(2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from 
+ 	creating more than one object for accessing the inside object of "SingleDao.java".
+	
+	(1) 請讀者留意，您產生的結果訊息，可能與底下的不同，原因是本程式碼 "Dao.java" 產生 id_number 的方式，係使用 "new Random().nextInt()"
+	去產生一個隨機的數值。
+	
+	
+	(2) 另外產書的 SingleDao 訊息，請不用懷疑，因為本設計之 "SingleDao.java"， 係使用 Singletoe 架構，外部 .class 若要調用 SingleDao.java 中的物件時，
+	因為都是呼叫相同的類別物件，所以產出的 id_number 均相同，但您產出的結果可能與本內容的值不同，因為 "new Random().nextInt(int value)" 是亂數產生的 int 數值。
+	
+	
+	
 	Console:
 				Dao {  id_number = 6273689 }
 				Dao {  id_number = 28208821 }
