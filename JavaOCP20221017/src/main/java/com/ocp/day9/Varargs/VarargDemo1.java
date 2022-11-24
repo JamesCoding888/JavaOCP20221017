@@ -1,6 +1,6 @@
 package com.ocp.day9.Varargs;
 /*
- 	This lesson we introduce that Varargs used in Java 1.5. The following examples for your information.
+ 	This lesson we introduce the application of Varargs:
 	==============================================================================================================
  	Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, 
  	we had to pass all arguments in an array or implement N methods (one for each additional parameter):

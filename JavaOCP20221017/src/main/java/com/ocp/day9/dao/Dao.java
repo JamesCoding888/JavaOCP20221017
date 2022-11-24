@@ -19,7 +19,8 @@ package com.ocp.day9.dao;
 import java.util.Random;
 public class Dao {
 	// Global Variable
-	// Accessibility: Private 
+	// Accessibility: Private
+	// This id_number is so-called a "Field" from Table of Schema and "Type" is int,  in Database [e.g., Transact-SQL (MS-SQL) , PL/SQL (Oracle) ... etc]
 	private int id_number;
 	
 	// Default Constructor
