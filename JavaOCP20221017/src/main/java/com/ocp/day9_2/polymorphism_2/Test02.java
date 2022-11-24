@@ -6,10 +6,29 @@ public class Test02 {
         Employee manager = new Manager();
         Employee supervisor = new Supervisor();
         System.out.println(employee.salary);
+        
+        /*
+           There is NO salary variable from Manager.class, 
+           then programming will invoke the salary variable from Employee.class
+        */         
         System.out.println(manager.salary);
-        //System.out.println(manager.budget);
+        /*
+        	There is NO salary variable from Supervisor.class, 
+            then programming will invoke the salary variable from Employee.class
+        */
         System.out.println(supervisor.salary);
-        //System.out.println(supervisor.budget);
-        //System.out.println(supervisor.stockoption);
+        
+        /* 
+         	Compiler error, because there is no budget variable from Employee.class
+         	Please remove the double-slash at line: 25 and 26        
+        */        
+//      System.out.println(manager.budget); 
+//      System.out.println(supervisor.budget);
+        
+        /* 
+     		Compiler error, because there is no stockoption variable from Employee.class
+     		Please remove the double-slash at line: 31      
+        */     
+//      System.out.println(supervisor.stockoption);
     }
 }
