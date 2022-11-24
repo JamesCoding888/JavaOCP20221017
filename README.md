@@ -395,7 +395,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 ------------------------------------------------------------------------------
 # day9 Java 進階: Varargs, DAO (Data Access Object) and Singleton
-1. This lesson we introduce the application of Varargs:
+1. Introduce the application of Varargs:
 - Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
 - 1) public String format() { ... }
 - 2) public String format(String value) { ... }
@@ -404,7 +404,7 @@ Introduction of video for each lecture will be coming soon ~~~
 - 1) public String format() {String ... values}
 
 > VarargDemo1.java 
-- Description: You will learn how to design an 1-D array of Varargs method and 2-D array of Varargs to add up all values.
+- Description: You will learn how to design a 1-D array of Varargs method and 2-D array of Varargs to add up all values.
 
 > VarargDemo2.java 
 - Description: This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
@@ -412,6 +412,7 @@ Introduction of video for each lecture will be coming soon ~~~
 > VarargDemo3.java 
 - Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
 
+2. Introduce the application of DAO and Singleton:
 > Dao.java 
 - Description: The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an "abstract API". Regarding the information above, it's at very beginning moment for you, since we do NOT include any "abstract API" during this lesson. But, no worry, we will review this topic at the following later day. 
 
