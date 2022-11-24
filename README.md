@@ -425,9 +425,9 @@ Introduction of video for each lecture will be coming soon ~~~
 - What's this mean by, "allows us to create and access the object we created" ? It's likely you share a Single Global Instance and provide a Global Point of Access to SingleDao.class.
 	  
 > UserDao.java 
-- Description: This class is implementing the Dao.class and SingleDao.class
+- Description: This UserDaoclass is implementing the Dao.class and SingleDao.class
 - A kindly Reminder: 
-- (1) you may get a different Console message from following, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
+- (1) You may get a different Console message from the annotation of this UserDao.java, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
 - Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
