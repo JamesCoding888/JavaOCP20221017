@@ -394,8 +394,8 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day9 Java 進階: Varargs, DAO (Data Access Object) and Singleton
-1. Introduce the application of Varargs:
+# day9 Java 進階: Varargs, DAO (Data Access Object), Singleton and Polymorphism
+1. Introduction the application of Varargs:
 - Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
 - 1) public String format() { ... }
 - 2) public String format(String value) { ... }
@@ -412,7 +412,7 @@ Introduction of video for each lecture will be coming soon ~~~
 > VarargDemo3.java 
 - Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
 
-2. Introduce the application of DAO and Singleton:
+2. Introduction the application of DAO and Singleton:
 > Dao.java 
 - Description: The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an "abstract API". Regarding the information above, it's at very beginning moment for you, since we do NOT include any "abstract API" during this lesson. But, no worry, we will review this topic at the following later day. 
 
@@ -425,9 +425,9 @@ Introduction of video for each lecture will be coming soon ~~~
 - What's this mean by, "allows us to create and access the object we created" ? It's likely you share a Single Global Instance and provide a Global Point of Access to SingleDao.class.
 	  
 > UserDao.java 
-- Description: This class is implementing the Dao.class and SingleDao.class
+- Description: This UserDaoclass is implementing the Dao.class and SingleDao.class
 - A kindly Reminder: 
-- (1) you may get a different Console message from following, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
+- (1) You may get a different Console message from the annotation of this UserDao.java, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
 - Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
