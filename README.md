@@ -394,7 +394,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day9 Java 進階: Varargs, DAO (Data Access Object) and Singleton
+# day9 Java 進階: Varargs, DAO (Data Access Object), Singleton and Polymorphism
 1. Introduction the application of Varargs:
 - Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
 - 1) public String format() { ... }
