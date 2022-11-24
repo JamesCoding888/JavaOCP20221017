@@ -450,7 +450,7 @@ Introduction of video for each lecture will be coming soon ~~~
 > Feet.java 
 - Description:
 
-> TestPolymorphism.java 
+> TestPolymorphismOfAnimal.java 
 - Description:
 
 4. Introduction the application of Polymorphism_2:
@@ -476,13 +476,13 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description:
 
 > Test04.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 > Test05.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 > Test06.java 
-- Description:
+- Description: NOT COMPLETED YET
 
 
 
