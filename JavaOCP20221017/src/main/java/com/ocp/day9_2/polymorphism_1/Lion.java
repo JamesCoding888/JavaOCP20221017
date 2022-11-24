@@ -5,6 +5,7 @@ public class Lion extends Cat {
     public void animalSound() {
         System.out.println("roar~~ roar~~~~");
     }
+    
     public String getName() {
         return nameOfAnimal;
     }
