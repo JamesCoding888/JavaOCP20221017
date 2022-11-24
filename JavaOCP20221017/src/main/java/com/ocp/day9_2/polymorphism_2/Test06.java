@@ -9,7 +9,7 @@ public class Test06 {
 		printBudget(employee);
 	}
 
-	// 印出 budget 資源
+	// Print out budget
 	public static void printBudget(Employee employee) {
 		
 		if (employee instanceof Manager) {
