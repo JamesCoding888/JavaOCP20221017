@@ -432,6 +432,29 @@ Introduction of video for each lecture will be coming soon ~~~
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
 3. Introduction the application of Polymorphism:
+- ...
+
+
+> Cat.java 
+- Description:
+
+> Lion.java 
+- Description:
+
+> Feet.java 
+- Description:
+
+> Cow.java 
+- Description:
+
+> Horse.java 
+- Description:
+
+> TestPolymorphism.java 
+- Description:
+
+
+
 
 
 
