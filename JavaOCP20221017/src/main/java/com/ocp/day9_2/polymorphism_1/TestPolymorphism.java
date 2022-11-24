@@ -23,3 +23,24 @@ public class TestPolymorphism {
 		System.out.println("OH~~~ Thanks God to help me out");
 	}
 }
+
+
+/*
+	Console:
+			Cow
+			moo~~ moo~~~~
+			How many feet of Cow have? 4 feet
+			Horse
+			neigh~~ neigh~~~~
+			How many feet of Horse have? 4 feet
+			Cat
+			How many feet of Cat have? 4 feet
+			meow ~~ meow ~~~~
+			Omg! What is a creepy sound from Cat!!!
+			roar~~ roar~~~~
+			Let's downCast the object of Cat.class to sub-class (i.e., Lion.class)
+			Lion
+			roar~~ roar~~~~
+			OH~~~ Thanks God to help me out
+*/
+	
