@@ -19,7 +19,7 @@ public class UserDao {
 /*
 
 	A kindly Reminder: 
-	(1) you may get a different console from following, 
+	(1) you may get a different Console message from following, 
 	because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
 	
 	Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
