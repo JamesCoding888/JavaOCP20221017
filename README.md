@@ -406,33 +406,30 @@ Introduction of video for each lecture will be coming soon ~~~
 > VarargDemo1.java 
 - Description: You will learn how to design an 1-D array of Varargs method and 2-D array of Varargs to add up all values.
 
-
 > VarargDemo2.java 
 - Description: This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
-
-
 
 > VarargDemo3.java 
 - Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
 
-
-
-
 > Dao.java 
-- Description: 
-- 
-
-
+- Description: The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an "abstract API". Regarding the information above, it's at very beginning moment for you, since we do NOT include any "abstract API" during this lesson. But, no worry, we will review this topic at the following later day. 
 
 > SingleDao.java 
-- Description: 
-- 
-
-
-
+- Description: This lesson you wil learn how to design Singleton pattern.
+- To create a singleton-class, this class must implement the following properties:
+- 1) Create a private constructor of the class to restrict object created outside of the singleton-class.
+- 2) Create a private attribute (eg., "private static SingleDao SingleDao_Instance = new SingleDao()") of the class type that refers to the single  object.
+- 3) Create a public static method (eg., "public static SingleDao getSingleDaoInstance()") that allows us to create and access the object we created.  Inside the method, we will create a condition that prohibits us from creating more than one object.
+- What's this mean by, "allows us to create and access the object we created" ? It's likely you share a Single Global Instance and provide a Global Point of Access to SingleDao.class.
+	  
 > UserDao.java 
-- Description: 
-- 
+- Description: This class is implementing the Dao.class and SingleDao.class
+- A kindly Reminder: 
+- (1) you may get a different console from following, because the programming of generating value of id_number from "Dao.java" is via "new Random().nextInt()"
+- Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
+- (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
+	
 
 
 
