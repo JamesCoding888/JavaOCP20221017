@@ -1,6 +1,6 @@
 package com.ocp.day9.dao;
 /*
- 	What is Dao (Data Access Object)? 
+ 	What is Dao (Data Access Object)?  
  	
  	"The Data Access Object (DAO) pattern is a structural pattern that 
  	allows us to isolate the application/business layer from 
@@ -10,7 +10,7 @@ package com.ocp.day9.dao;
  	"資料訪問對象 (DAO) 模式是一種程式架構中的模式，它允許開發者使用 "一個抽象 API"，將 "應用層" 或 "業務層" 從 "持久層" 隔離開來。
  	
  	何謂持久層呢?
- 	通常係指 "關聯式資料庫"，但也可以是任何其它 "持久化" 的機制
+ 	通常係指 "關聯式資料庫"，但也可以是指任何其它 "持久化" 的機制
  	
  	
  	Reference: https://www.baeldung.com/java-dao-pattern
