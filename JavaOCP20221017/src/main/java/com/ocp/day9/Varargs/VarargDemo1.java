@@ -1,4 +1,4 @@
-package com.ocp.day9;
+package com.ocp.day9.Varargs;
 /*
  	This lesson we introduce that Varargs used in Java 1.5. The following examples for your information.
 	==============================================================================================================
