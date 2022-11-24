@@ -441,13 +441,13 @@ Introduction of video for each lecture will be coming soon ~~~
 > Lion.java 
 - Description:
 
-> Feet.java 
-- Description:
-
 > Cow.java 
 - Description:
 
 > Horse.java 
+- Description:
+
+> Feet.java 
 - Description:
 
 > TestPolymorphism.java 
