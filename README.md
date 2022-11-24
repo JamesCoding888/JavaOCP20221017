@@ -431,6 +431,29 @@ Introduction of video for each lecture will be coming soon ~~~
 - Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
+3. Introduction the application of Polymorphism:
+- ...
+
+
+> Cat.java 
+- Description:
+
+> Lion.java 
+- Description:
+
+> Cow.java 
+- Description:
+
+> Horse.java 
+- Description:
+
+> Feet.java 
+- Description:
+
+> TestPolymorphism.java 
+- Description:
+
+
 
 
 
