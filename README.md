@@ -355,7 +355,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day8 Java 進階: Coming Soon
+# day8 Java 進階: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance
 1. This lesson we give a following introduction:
 ...
 
@@ -394,7 +394,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day9 Java 進階: Coming Soon
+# day9 Java 進階: Varargs, DAO (Data Access Object) and Singleton
 1. This lesson we give a following introduction:
 ...
 
@@ -418,7 +418,21 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 
+> Dao.java 
+- Description: 
+- 
 
+
+
+> SingleDao.java 
+- Description: 
+- 
+
+
+
+> UserDao.java 
+- Description: 
+- 
 
 
 
