@@ -494,19 +494,19 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description:
 
 > Test01.java 
-- Description:
+- Description: No inheritance between Supervisor and Manager, we cannot move the object of Supervisor to Employee, and then downcast the object from Employee to Manager; otherwise, java.lang.ClassCastException.
 
 > Test02.java 
-- Description:
+- Description: Only invoke the value from salary variable in Employee, because of polymorphism.
 
 > Test03.java 
-- Description:
+- Description: Invoke the jobDescription method from object of employee, manager and supervisor, to get the value of job description.
 
 > Test04.java 
-- Description:
+- Description: "instanceof" operator to test whether the object is an instance of the specified type.
 
 > Test05.java 
-- Description:
+- Description: We create a static method of printBudget to test whether the object from employee, manager and supervisor is an instance of the specified type. 
 
 
 
