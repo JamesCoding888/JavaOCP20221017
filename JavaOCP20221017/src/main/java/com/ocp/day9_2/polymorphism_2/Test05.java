@@ -9,23 +9,23 @@ public class Test05 {
 		
 		System.out.println("Employee Salary: " + employee.salary);
 		
-		printBudget(employee);
+		printBudget(employee); // no action after invoking printBudget(Employee employee) method
 		printBudget(manager);
 		printBudget(supervisor);
 	}
 
 	public static void printBudget(Employee employee) {
-		
+				
 		// To confirm if the object is an instance of the specified type (i.e., Manager)
 		if (employee instanceof Manager) {
-			System.out.println("The object of employee is inherited by Manager: "  + employee.getClass());
-			System.out.println("The object of employee is downcasted from Employee.class to Manager.class, for catching the value of variable from budget in Manager.class: " + ((Manager) employee).budget);
+			System.out.println(employee.getClass());
+			System.out.println("The object of employee is downcasted from Employee.class to Manager.class, for getting the value of variable from budget in Manager.class: " + ((Manager) employee).budget);
 		}  
 
 		// To confirm if the object is an instance of the specified type (i.e., Supervisor)
 		if (employee instanceof Supervisor) {
-			System.out.println("The object of employee is inherited by Supervisor: " + employee.getClass());
-			System.out.println(((Supervisor) employee).stock_option);
+			System.out.println(employee.getClass());
+			System.out.println("The object of employee is downcasted from Employee.class to Supervisor.class, for getting the value of variable from stock_option in Supervisor.class: " + ((Supervisor) employee).stock_option);
 		}			
 	}
 }
@@ -33,10 +33,11 @@ public class Test05 {
 /*
 	Console:
 				Employee Salary: 80000
-				The object of employee is inherited by Manager: class com.ocp.day9_2.polymorphism_2.Manager
-				The object of employee is downcasted from Employee.class to Manager.class, for catching the value of variable from budget in Manager.class: 100000
-				The object of employee is inherited by Supervisor: class com.ocp.day9_2.polymorphism_2.Supervisor
-				120000
+				class com.ocp.day9_2.polymorphism_2.Manager
+				The object of employee is downcasted from Employee.class to Manager.class, for getting the value of variable from budget in Manager.class: 100000
+				class com.ocp.day9_2.polymorphism_2.Supervisor
+				The object of employee is downcasted from Employee.class to Supervisor.class, for getting the value of variable from stock_option in Supervisor.class: 120000
+
 
 
 */
