@@ -1,4 +1,16 @@
 package com.ocp.day9_2.polymorphism_2;
+/*
+ 
+ 	The java instanceof operator is used to test whether the object is 
+ 	an instance of the specified type (class or subclass or interface).
+
+	The instanceof in java is also known as type comparison operator 
+	because it compares the instance with type. 
+	It returns either true or false. 
+	If we apply the instanceof operator with any variable that has null value, 
+	it returns false.
+	
+*/
 
 public class Test04 {
 	public static void main(String[] args) {
@@ -17,9 +29,10 @@ public class Test04 {
 			// Print out the Job Description
 			emp.jobDescription();
 			
-			// To confirm if object of emp is inheritance of Manager
+			// To confirm if the object is an instance of the specified type (i.e., Manager)
 			if(emp.getClass().getSimpleName().equals("Manager")) {
-				// Since the object of Manager 
+				// Since manager is at the array of object (i.e., Employee[]), 
+				// we need to downcast the object of manager from Employee.class to Manager.class, then we could invoke the value of budget   
 				System.out.println("budget: " + ((Manager) emp).budget);
 			}
 			
@@ -27,11 +40,14 @@ public class Test04 {
 				System.out.println("budget: " + ((Manager) emp).budget);
 			}
 			
-			// To confirm if object of emp is inheritance of Supervisor
+			// To confirm if the object is an instance of the specified type (i.e., Supervisor)
 			if (emp.getClass().getSimpleName().equals("Supervisor")) {
+				// Since supervisor is at the array of object (i.e., Employee[]), 
+				// we need to downcast the object of supervisor from Employee.class to Supervisor.class, then we could invoke the value of stock_option
 				System.out.println("stockoption: " + ((Supervisor) emp).stock_option);
 			}
-			
+
+			  
 			if (emp instanceof Supervisor) {
 				System.out.println("stockoption: " + ((Supervisor) emp).stock_option);
 			}
