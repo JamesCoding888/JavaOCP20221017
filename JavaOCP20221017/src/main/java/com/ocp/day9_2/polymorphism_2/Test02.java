@@ -32,3 +32,10 @@ public class Test02 {
 //      System.out.println(supervisor.stockoption);
     }
 }
+
+/*	
+	Console:
+				80000
+				80000
+				80000
+*/

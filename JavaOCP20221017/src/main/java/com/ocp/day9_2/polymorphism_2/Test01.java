@@ -1,8 +1,8 @@
 package com.ocp.day9_2.polymorphism_2;
 
 public class Test01 {
-	public static void main(String[] args) {
-		
+	
+	public static void main(String[] args){		
 		Employee employee = new Employee();		
 		System.out.println("Employee salary: $" + employee.salary);
 		System.out.print("Job Description: ");
@@ -16,10 +16,8 @@ public class Test01 {
 		System.out.println("Supervisor salary: $" + supervisor.salary + " What! Are you sure!!!");
 		System.out.println("No worry ~ " + "We supply" + " Stock Option, $" + supervisor.stock_option +  ", for you");
 		System.out.print("Job Description: ");
-		supervisor.jobDescription();
+		supervisor.jobDescription();		
 		System.out.println(((Manager)((Employee)supervisor)).budget); // Bug here - Exception in thread "main" java.lang.ClassCastException
-		
-		
 	}
 }
 

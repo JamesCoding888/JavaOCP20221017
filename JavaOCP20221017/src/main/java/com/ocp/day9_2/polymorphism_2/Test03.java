@@ -5,9 +5,16 @@ public class Test03 {
 		Employee employee = new Employee();
 		Employee manager = new Manager();
 		Employee supervisor = new Supervisor();
-
+		// Print out the Job Description
 		employee.jobDescription();
 		manager.jobDescription();
 		supervisor.jobDescription();
 	}
 }
+
+/*
+	Console:
+				Programming
+				Project Manager
+				Business Strategy
+*/
