@@ -6,12 +6,39 @@ JDK: Java SE 11
 
 Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
-Introduction of video for each lecture will be coming soon ~~~
 
-本教學專案 JavaOCP20221017 之影片介紹，將陸續推出，請親愛的讀者盡請期待 ~~~
 
 ------------------------------------------------------------------------------
-# day1 Java 基礎
+#  Video of each lesson
+> day1
+-
+> day2
+-
+> day3
+-
+> day4
+-
+> day5
+-
+> day6
+-
+> day7
+-
+> day8
+-
+> day9
+-
+> day10
+-
+> day11
+-
+> day12
+-
+> day13
+-
+> ...
+------------------------------------------------------------------------------
+# day1 Java Basic
 1. Set-up environment with Eclipse Workspace
 2. Lesson learned of following programming:
 > Hello.java:
@@ -34,7 +61,7 @@ Introduction of video for each lecture will be coming soon ~~~
 - 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
-# day2 Java 基礎: 一維陣列
+# day2 Java Basic: 1-D array
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist. 
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
@@ -95,7 +122,7 @@ Introduction of video for each lecture will be coming soon ~~~
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
 ------------------------------------------------------------------------------
-# day3 Java 進階: 運用 String & Stream API 
+# day3 Java Advanced: Application of String & Stream API 
 1. Lesson learned of following programming with regards to String2Array and Stream's API:
 - Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
 - 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
@@ -147,7 +174,7 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description: This session creates a "String addUtil()" for your reference.
 
 ------------------------------------------------------------------------------
-# day4 Java 進階: 運用 Stream API 計算一維和二維之參數
+# day4 Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array
 1. Lesson learned of following programming for Array:
 - Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
 - 本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
@@ -185,7 +212,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day5 Java 進階: 介紹 Object-Oriented Programming (OOP) Patterns 之運用並結合 Stream API
+# day5 Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
@@ -230,7 +257,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day6 Java 進階: 使用 ArrayList 與 Scanner 設計辦公室打卡系統
+# day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
 1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
 
 
@@ -288,7 +315,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day7 Java 進階: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
+# day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
 1. This lesson we give a following introduction:
 - 1) Inheritance
 - 2) Encapsulation
@@ -355,7 +382,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day8 Java 進階: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance
+# day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance
 1. This lesson we give a following introduction:
 ...
 
@@ -394,7 +421,7 @@ Introduction of video for each lecture will be coming soon ~~~
 
 
 ------------------------------------------------------------------------------
-# day9 Java 進階: Varargs, DAO (Data Access Object), Singleton and Polymorphism
+# day9 Java Advanced: Varargs, DAO (Data Access Object), Singleton and Polymorphism
 1. Introduction the application of Varargs:
 - Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
 - 1) public String format() { ... }
@@ -485,6 +512,9 @@ Introduction of video for each lecture will be coming soon ~~~
 - Description: NOT COMPLETED YET
 
 
+
+------------------------------------------------------------------------------
+# day10 Java Advanced: Exception, Coming Soon
 
 
 
