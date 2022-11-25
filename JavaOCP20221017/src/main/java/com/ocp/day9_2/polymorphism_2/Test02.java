@@ -9,12 +9,14 @@ public class Test02 {
         
         /*
            There is NO salary variable from Manager.class, 
-           then programming will invoke the salary variable from Employee.class
+           but, due to inheritance between Manager and Employee, 
+           programming will invoke the salary variable from Employee.class
         */         
         System.out.println(manager.salary);
         /*
         	There is NO salary variable from Supervisor.class, 
-            then programming will invoke the salary variable from Employee.class
+            but, due to inheritance between Supervisor and Employee, 
+            programming will invoke the salary variable from Employee.class
         */
         System.out.println(supervisor.salary);
         
