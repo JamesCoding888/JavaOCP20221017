@@ -503,13 +503,12 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description:
 
 > Test04.java 
-- Description: NOT COMPLETED YET
+- Description:
 
 > Test05.java 
-- Description: NOT COMPLETED YET
+- Description:
 
-> Test06.java 
-- Description: NOT COMPLETED YET
+
 
 
 
