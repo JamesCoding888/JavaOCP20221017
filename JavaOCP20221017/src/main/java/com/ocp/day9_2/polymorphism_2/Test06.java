@@ -18,7 +18,6 @@ public class Test06 {
 		if (employee instanceof Supervisor) {
 			System.out.println(((Supervisor) employee).stock_option);
 		}
-		
-		
+			
 	}
 }
