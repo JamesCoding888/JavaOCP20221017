@@ -514,6 +514,23 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 ------------------------------------------------------------------------------
 # day10 Java Advanced: Abstract and Interface
+1. Introduction...
+
+
+> Animal.java
+- Description: Interface ...
+
+> AbstractAnimal.java
+- Description: Abstract class ...
+
+> Cat.java
+- Description: 
+
+> Dog.java
+- Description: 
+
+> PetStore.java
+- Description: 
 
 
 
