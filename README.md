@@ -514,23 +514,37 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 ------------------------------------------------------------------------------
 # day10 Java Advanced: Abstract and Interface
-1. Introduction...
+1. Introduction of abstract:
+- 1) Abstraction can be achieved with either abstract classes or interfaces
+- 2) The abstract keyword is a non-access modifier, used for classes and methods:
+- 3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+- 4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).	
+2. Introduction of interface:
+- 1) Another way to achieve abstract
+- 2) interface method (does not have a body), the body is provided by the "implement" class
+- 3) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of "extends")
+- 4) On implementation of an interface, you must override all of its methods
+- 5) Interface attributes are by "public static final"
+- 6) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
+	
+3. Why And When To Use Interfaces?
+- 1) For security - we can hide certain details and only show the important details of an object (interface).
+- 2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
 
-
-> Animal.java
-- Description: Interface ...
+> InterfaceAnimal.java
+- Description: Create an interface of Animal to introduce the rules of interface
 
 > AbstractAnimal.java
-- Description: Abstract class ...
+- Description: Create an abstrace of Animal to introduce the rules of abstract
 
 > Cat.java
-- Description: 
+- Description: Create Cat.class to inherit AbstractAnimal.class, and also override the method of interfaceAnimal
 
 > Dog.java
-- Description: 
+- Description: Create Cat.class to inherit AbstractAnimal.class, and also override the method of interfaceAnimal
 
 > PetStore.java
-- Description: 
+- Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
 
 
 
