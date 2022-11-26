@@ -76,13 +76,10 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - 4) Fruit.java
 
 
-
-
 2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 - 本節將說明如何將一維陣列初始化，並計算陣列物件的長度
-
 
 > ArrayDemo2.java:
 - Description: 
