@@ -22,4 +22,10 @@ public interface InterfaceAnimal {
     default void copyRight() {  // same as "public default void copyRight() { ... }"
         System.out.println(COPY_RIGHT);
     }
+    // Interface cannon have constructor
+    /*
+    public InterfaceAnimal() {
+    	super();
+    }
+    */
 }
