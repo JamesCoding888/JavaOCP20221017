@@ -7,16 +7,19 @@ public class Test01 {
 		System.out.println("Employee salary: $" + employee.salary);
 		System.out.print("Job Description: ");
 		employee.jobDescription();
+		
 		Manager manager = new Manager();		
 		System.out.println("Manager salary: $" + manager.salary);		
 		System.out.println("Budget of Manager: $" + manager.budget);
 		System.out.print("Job Description: ");
 		manager.jobDescription();
+		
 		Supervisor supervisor = new Supervisor();
 		System.out.println("Supervisor salary: $" + supervisor.salary + " What! Are you sure!!!");
 		System.out.println("No worry ~ " + "We supply" + " Stock Option, $" + supervisor.stock_option +  ", for you");
 		System.out.print("Job Description: ");
-		supervisor.jobDescription();		
+		supervisor.jobDescription();
+		
 		System.out.println(((Manager)((Employee)supervisor)).budget); // Bug here - Exception in thread "main" java.lang.ClassCastException
 	}
 }
