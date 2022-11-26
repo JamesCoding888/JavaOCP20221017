@@ -7,7 +7,6 @@ JDK: Java SE 11
 Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
 
-
 ------------------------------------------------------------------------------
 #  Video of each lesson
 > day1
