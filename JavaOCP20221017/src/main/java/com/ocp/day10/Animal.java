@@ -1,10 +1,16 @@
 package com.ocp.day10;
 /*
- 	Why Interfaces need Default Methods?
- 	Like a regular interface methods, default methods are implicitly public; there's no need to specify the public modifier.
-
-	Unlike regular interface methods, we declare them with the default keyword at the beginning of the method signature, and they provide an implementation.
+ 	What is interface?
+ 	1) Another way to achieve abstract
+ 	2) interface method (does not have a body), the body is provided by the "implement" class
+ 	3) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of "extends")
+ 	4) On implementation of an interface, you must override all of its methods
+	5) Interface attributes are by "public static final"
+	6) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
 	
+	Why And When To Use Interfaces?
+	1) For security - we can hide certain details and only show the important details of an object (interface).
+	2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D 
 */
 public interface Animal {
     String COPY_RIGHT = "Discovery.com"; // same as "public static final String COPY_RIGHT"
