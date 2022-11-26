@@ -6,9 +6,11 @@ package com.ocp.day9_2.polymorphism_2;
 
 	The instanceof in java is also known as type comparison operator 
 	because it compares the instance with type. 
-	It returns either true or false. 
-	If we apply the instanceof operator with any variable that has null value, 
-	it returns false.
+	
+	Notice:
+		1) It returns either true or false. 
+		2) If we apply the instanceof operator with any variable that has null value, 
+	   	   it returns false.
 	
 */
 
