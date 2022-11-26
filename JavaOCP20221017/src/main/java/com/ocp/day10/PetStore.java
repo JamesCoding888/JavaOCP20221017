@@ -22,7 +22,7 @@ public class PetStore {
                 
 
         // Java 1.8 - Stream.forEach
-        // Invoke the method of name() by each element (object of animal)
+        // Invoke the method of name() by each element (i.e., object of animal)
         animals.stream().forEach(nameOfAnimal -> nameOfAnimal.name());
         
         

@@ -14,6 +14,6 @@ public interface Animal {
     // After Java 1.8 (including 1.8 version), Java allows the implemented method in interface.class, but must add "default"
     // Java 1.8 之後，介面中有實作的方法必須加上 default 
     default void copyRight() {  // same as "public default void copyRight() { ... }"
-        System.out.println("Discovery Copyright");
+        System.out.println(COPY_RIGHT);
     }
 }
