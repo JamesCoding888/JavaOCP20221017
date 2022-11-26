@@ -7,7 +7,6 @@ JDK: Java SE 11
 Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
 
-
 ------------------------------------------------------------------------------
 #  Video of each lesson
 > day1
@@ -37,6 +36,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > day13
 -
 > ...
+
 ------------------------------------------------------------------------------
 # day1 Java Basic
 1. Set-up environment with Eclipse Workspace
@@ -75,13 +75,10 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - 4) Fruit.java
 
 
-
-
 2. Lesson learned of the Application of Array:
 > ArrayDemo1.java:
 - Description: This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 - 本節將說明如何將一維陣列初始化，並計算陣列物件的長度
-
 
 > ArrayDemo2.java:
 - Description: 
@@ -518,7 +515,8 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - 1) Abstraction can be achieved with either abstract classes or interfaces
 - 2) The abstract keyword is a non-access modifier, used for classes and methods:
 - 3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
-- 4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).	
+- 4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
 2. Introduction of interface:
 - 1) Another way to achieve abstract
 - 2) interface method (does not have a body), the body is provided by the "implement" class
