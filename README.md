@@ -481,17 +481,17 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description:
 
 4. Introduction the application of Polymorphism_2:
-- ...
+- This lesson you will learn a roughly design of different positions at company and some variables/methods only for specific position
 
 
 > Employee.java 
-- Description:
+- Description: Create a Super-class (Employee)
 
 > Manager.java 
-- Description:
+- Description: Create a Sub-class (Manager) to inherite Super-class (Employee)
 
 > Supervisor.java 
-- Description:
+- Description: Create a Sub-class (Supervisor) to inherite Super-class (Employee)
 
 > Test01.java 
 - Description: No inheritance between Supervisor and Manager, we cannot move the object of Supervisor to Employee, and then downcast the object from Employee to Manager; otherwise, java.lang.ClassCastException.
@@ -500,7 +500,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Only invoke the value from salary variable in Employee, because of polymorphism.
 
 > Test03.java 
-- Description: Invoke the jobDescription method from object of employee, manager and supervisor, to get the value of job description.
+- Description: Invoke the method of jobDescription from object of employee, manager and supervisor, to get the value of job description.
 
 > Test04.java 
 - Description: "instanceof" operator to test whether the object is an instance of the specified type.
