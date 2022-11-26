@@ -12,7 +12,7 @@ package com.ocp.day10;
 	1) For security - we can hide certain details and only show the important details of an object (interface).
 	2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D 
 */
-public interface Animal {
+public interface InterfaceAnimal {
     String COPY_RIGHT = "Discovery.com"; // same as "public static final String COPY_RIGHT"
     void eat();  // same as "public abstract void eat();"
     void play(); // same as "public abstract void play();"
