@@ -11,7 +11,7 @@ public class PetStore {
     	*/ 
 //    	AbstractAnimal abstractAnimal = new AbstractAnimal();
     	
-    	// interface <- class
+
     	InterfaceAnimal maltese  = new Dog();    // 馬爾濟斯
     	InterfaceAnimal persian  = new Cat(); 	 // 波斯貓
         Dog chihuahua = new Dog();   			 // 吉娃娃

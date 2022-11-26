@@ -9,6 +9,8 @@ public class Cat extends AbstractAnimal {
         System.out.println("Play cat litter"); // 玩貓砂
     }
    
+    // Override the abstract method of name
+ 	// 覆寫介面的抽象方法 name
     @Override
     public void name() {
     	System.out.println("I'm Persian");  // 我是馬爾濟斯
