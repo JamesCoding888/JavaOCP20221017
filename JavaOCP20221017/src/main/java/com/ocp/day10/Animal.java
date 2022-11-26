@@ -16,5 +16,4 @@ public interface Animal {
     default void copyRight() {  // same as "public default void copyRight() { ... }"
         System.out.println("Discovery Copyright");
     }
-    
 }
