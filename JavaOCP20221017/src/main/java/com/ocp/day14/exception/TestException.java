@@ -1,4 +1,4 @@
-package com.ocp.day10.exception;
+package com.ocp.day14.exception;
 
 class HandleNumberException extends Exception {
 
