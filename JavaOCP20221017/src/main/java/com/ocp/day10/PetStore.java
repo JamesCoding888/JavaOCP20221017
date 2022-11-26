@@ -47,6 +47,5 @@ public class PetStore {
 			I'm Persian
 			Discovery.com
 			Discovery.com
-			Discovery.com
-			
+			Discovery.com		
 */
