@@ -9,4 +9,9 @@ public class Dog extends AbstractAnimal {
         System.out.println("Play frisbee"); // 玩飛盤
     }
     
+    
+    @Override
+    public void name() {
+    	System.out.println("I'm Chihuahua~ "); // 我是吉娃娃
+    }
 }

@@ -9,4 +9,8 @@ public class Cat extends AbstractAnimal {
         System.out.println("Play cat litter"); // 玩貓砂
     }
    
+    @Override
+    public void name() {
+    	System.out.println("I'm Persian");  // 我是馬爾濟斯
+    }
 }
