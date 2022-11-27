@@ -1,4 +1,4 @@
-package com.ocp.day10;
+package com.ocp.day10_1;
 
 import java.util.ArrayList; 
 import java.util.List;

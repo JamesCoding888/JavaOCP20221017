@@ -1,4 +1,4 @@
-package com.ocp.day10;
+package com.ocp.day10_1;
 /*
  	What is interface?
  	1) Another way to achieve abstract

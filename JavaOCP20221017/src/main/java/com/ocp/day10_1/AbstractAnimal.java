@@ -1,4 +1,4 @@
-package com.ocp.day10;
+package com.ocp.day10_1;
 /*	
     What is abstract?
 	1) Abstraction can be achieved with either abstract classes or interfaces
