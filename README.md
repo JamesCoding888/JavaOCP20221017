@@ -563,7 +563,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Create JetAircraft.class, which inherits abstract Airplane.class and interface Weapon.class 
 
 > Drone.java
-- Description: 
+- Description: Create Drone.class, which inherits abstract Airplane.class and interface Weapon.class 
 
 
 
