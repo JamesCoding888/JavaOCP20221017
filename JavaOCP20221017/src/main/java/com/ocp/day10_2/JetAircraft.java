@@ -12,7 +12,7 @@ public class JetAircraft extends Airplane implements Weapon{
 	@Override
 	public void shoot() {
 		
-		System.out.println("Launche Sidewinder missile"); // 發射響尾蛇飛彈
+		System.out.println("Launche Sidewinder missile");  // 發射響尾蛇飛彈
 		
 	}
 	
