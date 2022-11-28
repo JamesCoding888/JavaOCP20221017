@@ -545,6 +545,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > PetStore.java
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
 
+5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class
 
 > Weapon.java
 - Description: Create interface of Weapon.class for its sub-class(es) to implement
