@@ -548,7 +548,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Create interface of Weapon.class for its sub-class(es) to implement
 
 > Car.java
-- Description:
+- Description: Create abstract of Car.class (which inheritance with interface Weapon), and also being implemented by sub-class(es) (e.g., Tank.class and Truck.class)
 
 
 
