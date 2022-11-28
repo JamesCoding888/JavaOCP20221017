@@ -529,6 +529,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - 1) For security - we can hide certain details and only show the important details of an object (interface).
 - 2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
 
+4. The following sample code for your information of relationship between abstract and interface:
 > InterfaceAnimal.java
 - Description: Create an interface of Animal to introduce the rules of interface
 
@@ -543,6 +544,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 > PetStore.java
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
+
 
 > Weapon.java
 - Description: Create interface of Weapon.class for its sub-class(es) to implement
