@@ -556,6 +556,8 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > Tank.java
 - Description: Create Tank.class, which inherits abstract Car.class and interface Weapon.class
 
+> Truck.java
+
 
 ------------------------------------------------------------------------------
 # day14 Java Advanced: Exception, ... Coming Soon
