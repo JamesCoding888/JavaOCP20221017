@@ -551,7 +551,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Create abstract of Car.class (which inheritance with interface Weapon), and also being implemented by sub-class(es) (e.g., Tank.class and Truck.class)
 
 > Airplane.java
-- Description: 
+- Description: Create abstract of Airplane.class (which inheritance with interface Weapon), and also being implemented by sub-class(es) (e.g., JetAircraft.class and Drone.class)
 
 
 ------------------------------------------------------------------------------
