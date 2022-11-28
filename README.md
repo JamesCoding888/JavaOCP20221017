@@ -560,7 +560,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Create Truck.class, which inherits abstract Car.class and interface Weapon.class 
 
 > JetAircraft.java
-- Description: 
+- Description: Create JetAircraft.class, which inherits abstract Airplane.class and interface Weapon.class 
 
 
 
