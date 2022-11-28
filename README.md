@@ -544,6 +544,9 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > PetStore.java
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
 
+> Weapon.java
+
+
 
 
 
