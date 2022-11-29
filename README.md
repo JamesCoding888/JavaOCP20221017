@@ -546,7 +546,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
 
 
-5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class
+5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class. Please check out the following UML design Pattern.
 
 	<img width="438" alt="Class Diagram_Military" src="https://user-images.githubusercontent.com/83496093/204460202-efc085ac-a1d2-47f1-bb03-495fbf622803.png">
 
