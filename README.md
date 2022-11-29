@@ -529,6 +529,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 - 1) For security - we can hide certain details and only show the important details of an object (interface).
 - 2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
 
+4. The following sample code for your information of relationship between abstract and interface:
 > InterfaceAnimal.java
 - Description: Create an interface of Animal to introduce the rules of interface
 
@@ -543,6 +544,34 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 > PetStore.java
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
+
+
+5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class
+
+	<img width="633" alt="Screen Shot 2022-11-28 at 6 34 17 PM" src="https://user-images.githubusercontent.com/83496093/204256434-ecc3d987-5b51-45bc-938d-31845fdf95bc.png">
+
+> Weapon.java
+- Description: Create interface of Weapon.class for its sub-class(es) to implement
+
+> Car.java
+- Description: Create abstract of Car.class (which inheritance with interface Weapon), and also being implemented by sub-class(es) (e.g., Tank.class and Truck.class)
+
+> Airplane.java
+- Description: Create abstract of Airplane.class (which inheritance with interface Weapon), and also being implemented by sub-class(es) (e.g., JetAircraft.class and Drone.class)
+
+> Tank.java
+- Description: Create Tank.class, which inherits abstract Car.class and interface Weapon.class
+
+> Truck.java
+- Description: Create Truck.class, which inherits abstract Car.class and interface Weapon.class 
+
+> JetAircraft.java
+- Description: Create JetAircraft.class, which inherits abstract Airplane.class and interface Weapon.class 
+
+> Drone.java
+- Description: Create Drone.class, which inherits abstract Airplane.class and interface Weapon.class 
+
+
 
 
 
