@@ -548,7 +548,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class
 
-	<img width="633" alt="Screen Shot 2022-11-28 at 6 34 17 PM" src="https://user-images.githubusercontent.com/83496093/204256434-ecc3d987-5b51-45bc-938d-31845fdf95bc.png">
+
 
 > Weapon.java
 - Description: Create interface of Weapon.class for its sub-class(es) to implement
