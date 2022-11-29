@@ -548,6 +548,8 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class
 
+![Uploading Class Diagram_Military.png…]()
+
 
 
 > Weapon.java
