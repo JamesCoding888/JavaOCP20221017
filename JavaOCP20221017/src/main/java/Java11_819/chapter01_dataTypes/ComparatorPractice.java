@@ -55,6 +55,8 @@ public class ComparatorPractice {
 		  int compare(T o1, T o2); // 等同 public abstract int compare(T o1, T o2);
 		  		 		  
 		  boolean equals(Object obj); // 等同 public abstract boolean equals(Object obj);
+		  
+		  ...
 	}
 	
 	
