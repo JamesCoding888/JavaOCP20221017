@@ -10,7 +10,7 @@ public interface Weapon {
 	
 	}
 	
-	public abstract void shoot();  // "abstract" keyword - Optional in interface class
+	public abstract void fire();  // "abstract" keyword - Optional in interface class
 			
 	
 }
