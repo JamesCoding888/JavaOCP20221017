@@ -8,7 +8,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-#  Video of each lesson
+#  Video of each lecture
 > day1
 -
 > day2
@@ -260,24 +260,24 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > ScannerDemo.java 
-- Description: 
+- Description:  ...
 - 
 
 
 
 > ScannerForPractice_Loop_And_If.java 
-- Description: 
+- Description:  ...
 - 
 
 
 
 > ScannerLimiter.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > IntroductionOfFinal.java
-- Description:
+- Description: ...
 - 
 
 
@@ -287,27 +287,27 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > ScannerNoSuchElementException.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > ArrayListOfHeapMemoryTest.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > ArrayListDemo1.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > ArrayListDemo2.java 
-- Description: 
+- Description:  ...
 - 
 
 
@@ -321,21 +321,21 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > Person.java 
-- Description: 
+- Description:  ...
 - 
 
 > Student.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > Teacher.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > Main.java 
-- Description: 
+- Description:  ...
 - 
 
 2. This lesson we give a following introduction:
@@ -347,34 +347,34 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > Person.java 
-- Description: 
+- Description: ... 
 - 
 
 > Student.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > Teacher.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > Main.java 
-- Description: 
+- Description:  ...
 - 
 
 
 
 > Classroom.java
-- Description:
+- Description: ...
 - 
 
 
 
 
 > Main2.java 
-- Description: 
+- Description:  ...
 - 
 
 
@@ -386,34 +386,34 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > DemoInheritanceAndConstructors.java 
-- Description: 
+- Description:  ...
 - 
 
 
 
 > Overloading01.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > Overloading02.java 
-- Description: 
+- Description:  ...
 - 
 
 
 
 > PrimitiveClass.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > WrapperClass1.java 
-- Description: 
+- Description:  ...
 - 
 
 
 > WrapperClass2.java 
-- Description: 
+- Description:  ...
 - 
 
 
@@ -460,22 +460,22 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 > Cat.java 
-- Description:
+- Description: ...
 
 > Lion.java 
-- Description:
+- Description: ...
 
 > Cow.java 
-- Description:
+- Description: ...
 
 > Horse.java 
-- Description:
+- Description: ...
 
 > Feet.java 
-- Description:
+- Description: ...
 
 > TestPolymorphismOfAnimal.java 
-- Description:
+- Description: ...
 
 4. Introduction the application of Polymorphism_2:
 - This lesson you will learn a roughly design of different positions at company and some variables/methods only for specific position
@@ -577,9 +577,23 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 
+------------------------------------------------------------------------------
+# day11 Java Advanced: The Decorator Pattern
+1. Introduction of ...:
+- 1) 
 
 
+> Food.java
+- Description:  ...
 
+> xxx.java
+- Description:  ...
+
+> xxx.java
+- Description:  ...
+
+> xxx.java
+- Description:  ...
 ------------------------------------------------------------------------------
 # day14 Java Advanced: Exception, ... Coming Soon
 
