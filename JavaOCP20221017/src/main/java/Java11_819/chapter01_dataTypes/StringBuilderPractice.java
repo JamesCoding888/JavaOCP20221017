@@ -32,7 +32,7 @@ public class StringBuilderPractice {
 //		第四練習： 同第三練習
 /*		
 		sb1 = sb1.append(new StringBuilderPractice().foo(new StringBuilder("hey"))); //hey oh hi
-		System.out.println(sb1); 
+		System.out.println(sb1);  //yo ey
 */
 	}
 }
