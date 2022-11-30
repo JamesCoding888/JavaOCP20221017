@@ -36,3 +36,13 @@ public class StringBuilderPractice {
 */
 	}
 }
+
+
+
+
+
+
+/*
+	本節練習，探討 StringBuilder 之用法，主要訓練邏輯思考
+	共有四個練習題，請讀者將註解分別移除後，執行程式碼，確認與自己判斷的產出結果，是否一致	
+*/
