@@ -32,7 +32,7 @@ public class Airplane {
 	}
 	
 	public static void main(String ... start) {
-		new Airplane(10).fly(5);
+		new Airplane(30).fly(5);
 	}
 }
 
