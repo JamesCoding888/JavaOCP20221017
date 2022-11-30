@@ -43,7 +43,9 @@ public class Airplane {
 
 
 /*
-	The answer is F. 2 5
+	The answer is F.
 	
-	line: 34 的語法，請參 "com.ocp.day9_1.Varargs" 說明
+	說明如下：
+	line: 23，final variable 之應用和說明，請參 package: com.ocp.day6.ScannerException 之 IntroductionOfFinal.java
+	line: 34，(String ... start) 之 Varargs 語法，請參 "com.ocp.day9_1.Varargs" 說明
 */
