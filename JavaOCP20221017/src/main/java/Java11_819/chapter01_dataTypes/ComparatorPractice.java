@@ -1,6 +1,9 @@
 package Java11_819.chapter01_dataTypes;
 import java.util.Comparator;
 public class ComparatorPractice<T> {
+	
+	// Following the syntax below, how many does compile successfully? Please give your answers by upper-case letter.  
+
 	// A.
 	Comparator<String> c1 = (j, k) -> 0;
 	// B.
