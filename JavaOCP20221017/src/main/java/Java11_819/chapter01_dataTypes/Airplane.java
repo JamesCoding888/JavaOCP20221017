@@ -42,12 +42,8 @@ public class Airplane {
 
 
 
-
-
-
-
-
-
 /*
 	The answer is F. 2 5
+	
+	line: 34 的語法，請參 "com.ocp.day9_1.Varargs" 說明
 */
