@@ -1,20 +1,22 @@
 package Java11_819.chapter01_dataTypes;
 import java.util.Comparator;
-public class ComparatorPractice {
+public class ComparatorPractice<T> {
 	// A.
 	Comparator<String> c1 = (j, k) -> 0;
 	// B.
 	Comparator<String> c2 = (String j, String k) -> 0;
 	// C.
-	Comparator<String> c6 = (Integer j, var k) -> 0;
+	Comparator<String> c3 = (Integer j, var k) -> 0;
 	// D.
-	Comparator<String> c5 = (var j, var k) -> 0;
+	Comparator<String> c4 = (var j, var k) -> 0;
 	// E.
-	Comparator<String> c4 = (var j, k) -> 0;
+	Comparator<String> c5 = (var j, k) -> 0;
 	// F.
-	Comparator<String> c3 = (var j, String k) -> 0;
+	Comparator<String> c6 = (var j, String k) -> 0;
 	// G.
 	Comparator<Integer> c7 = (Integer j, Integer k) -> 0;
+	// H.	
+	Comparator<T> c8 = (T j, T k) -> 0;
 }
 
 
@@ -24,7 +26,7 @@ public class ComparatorPractice {
 
 
 /*
- 	Answer: A, B, D, G
+ 	Answer: A, B, D, G, H
  	
  	
 	本節說明功能型介面 API - Comparator 
