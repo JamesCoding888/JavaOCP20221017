@@ -8,7 +8,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-#  Video Of Each Lecture
+#  Video of Each Lecture
 > day1
 -
 > day2
