@@ -615,66 +615,58 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: Exception, ... Coming Soon
+# day15 Java Advanced: ... , ... Coming Soon
 
 
 
 
 
 ------------------------------------------------------------------------------
-# day16 Java Advanced: Exception, ... Coming Soon
+# day16 Java Advanced: ... , ... Coming Soon
 
 
 
 
 ------------------------------------------------------------------------------
-# day17 Java Advanced: Exception, ... Coming Soon
+# day17 Java Advanced: ... , ... Coming Soon
 
 
 
 
 ------------------------------------------------------------------------------
-# day18 Java Advanced: Exception, ... Coming Soon
+# day18 Java Advanced: ... , ... Coming Soon
 
 
 
 
 ------------------------------------------------------------------------------
-# day19 Java Advanced: Exception, ... Coming Soon
+# day19 Java Advanced: ... , ... Coming Soon
 
 
 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: Exception, ... Coming Soon
+# day20 Java Advanced: ... , ... Coming Soon
 
 
 
 
 ------------------------------------------------------------------------------
-# day21 Java Advanced: Exception, ... Coming Soon
-
-
-
-
-
-------------------------------------------------------------------------------
-# day22 Java Advanced: Exception, ... Coming Soon
+# day21 Java Advanced: ... , ... Coming Soon
 
 
 
 
 
 ------------------------------------------------------------------------------
-# day23 Java Advanced: Exception, ... Coming Soon
-
+# day22 Java Advanced: ... , ... Coming Soon
 
 
 
 
 
 ------------------------------------------------------------------------------
-# day24 Java Advanced: Exception, ... Coming Soon
+# day23 Java Advanced: ... , ... Coming Soon
 
 
 
@@ -682,7 +674,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-# day25 Java Advanced: Exception, ... Coming Soon
+# day24 Java Advanced: ... , ... Coming Soon
 
 
 
@@ -690,7 +682,15 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-# day26 Java Advanced: Exception, ... Coming Soon
+# day25 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+
+------------------------------------------------------------------------------
+# day26 Java Advanced: ... , ... Coming Soon
 
 
 
