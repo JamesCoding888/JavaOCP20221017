@@ -617,5 +617,5 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > StringBuilderPractice04.java
 - Description:  ...
 
-> StringBuilderPractice05.java
+> ComparatorPractice.java
 - Description:  ...
