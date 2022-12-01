@@ -1,8 +1,14 @@
 package Java11.chapter01_dataTypes;
+
+/*
+ 
+  	Following the programming below, how many does compile successfully? 
+  	Please give your answers by upper-case letter.
+
+*/
+
 import java.util.Comparator;
-public class ComparatorPractice<T> {
-	
-	// Following the syntax below, how many does compile successfully? Please give your answers by upper-case letter.  
+public class ComparatorPractice<T> {  
 
 	// A.
 	Comparator<String> c1 = (j, k) -> 0;
@@ -21,6 +27,8 @@ public class ComparatorPractice<T> {
 	// H.	
 	Comparator<T> c8 = (T j, T k) -> 0;
 }
+
+
 
 
 
