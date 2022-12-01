@@ -1,6 +1,6 @@
 package Java11.chapter01_dataTypes;
 
-public class VarPractice {
+public class VarTest {
 
 	/*
 	 	What is result of running the following programming?
