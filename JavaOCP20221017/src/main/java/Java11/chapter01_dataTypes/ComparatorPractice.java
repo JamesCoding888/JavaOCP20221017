@@ -1,4 +1,4 @@
-package Java11_819.chapter01_dataTypes;
+package Java11.chapter01_dataTypes;
 import java.util.Comparator;
 public class ComparatorPractice<T> {
 	

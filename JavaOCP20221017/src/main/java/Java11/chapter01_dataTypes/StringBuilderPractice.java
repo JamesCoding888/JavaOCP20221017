@@ -1,4 +1,4 @@
-package Java11_819.chapter01_dataTypes;
+package Java11.chapter01_dataTypes;
 public class StringBuilderPractice {
 	
 	static StringBuilder sb1 = new StringBuilder("yo ");
