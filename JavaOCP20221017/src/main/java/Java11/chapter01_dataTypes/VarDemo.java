@@ -162,6 +162,7 @@ public class VarDemo {
 			false
 			***** Demo of Object type for var *****
 			{ [ id: 1 , name: David | [Math, Science, Tech] ] =true,  [ id: 3 , name: Tim | [History] ] =true,  [ id: 2 , name: Marry | [English, Art] ] =true}
+			***** CANNOT use local variable type inference *****
 
 
 
