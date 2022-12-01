@@ -609,7 +609,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: Exception, ... Coming Soon
+# day14 Java Advanced: Exception, Coming Soon
 
 
 
