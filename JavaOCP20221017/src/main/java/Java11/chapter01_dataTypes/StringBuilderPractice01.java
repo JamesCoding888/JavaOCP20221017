@@ -33,5 +33,6 @@ public class StringBuilderPractice01 {
 	Answer: C)
 
 	本節練習，探討 StringBuilder 之用法，主要訓練邏輯思考
+	了解 StringBuilder 之 "append" API 用法
 		
 */
