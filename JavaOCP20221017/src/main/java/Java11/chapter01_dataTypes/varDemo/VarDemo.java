@@ -1,22 +1,29 @@
-package Java11.chapter01_dataTypes;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
+package Java11.chapter01_dataTypes.varDemo;
 
 /*
+ 	==============================================================================================================
+ 	
  	Java 10 introduces a new language feature called var (which is, local variable type inference). 
+ 	
  	The var allows developer to define a variable with var type but without giving a specific type of variable.
  	
- 	Let's check-out the following sample code for your practice.
+ 	JRE will automatically detect the data-type of variable.
  	
- 	1) var_Practice01: JRE will automatically detect the data-type of variable 
+ 	==============================================================================================================
+ 	
+ 	Let's check-out the following sample codes for your practice:
+ 	
+ 	1) var for Primitive type and Object type, please refer to VarDemo.java at package: Java11.chapter01_dataTypes.varDemo
 	
-	
-	Reference from "https://developer.oracle.com/learn/technical-articles/jdk-10-local-variable-type-inference"
+	2) var Can and Cannot, please refer to varCanAndCannot.java at package: Java11.chapter01_dataTypes.varDemo 
+		
 	 
 */
+
+
+import java.util.ArrayList; 
+import java.util.HashMap;
+import java.util.List;
 
 class User{
 	
@@ -36,25 +43,8 @@ class User{
 	}
 }
 
-class varCannot{
-	
-	var cannotImplicitlyInitialisation;
-	
-	var cannotNull = null;
-	
-	var cannotLambda = () -> {} ;
-	
-	
-	public int cannot(var list) {
-		
-	}
-	
-	public void Lambda() {
-		var list = new ArrayList<>();	
-	}
-	
-}
-class Var_Practice01{
+
+class Var_PrimitiveType{
 	
 	public void PrimitiveType() {
 		
@@ -116,12 +106,11 @@ class Var_Practice01{
 }
 
 public class VarDemo {
-	/*  	     
-		var variable = "var type"; // "var" type is NOT able to be global, but ONLY local !
-	*/
+	
 	public static void main(String[] args) {
+		
 		System.out.println("***** Demo of Primitive type for var *****");
-		Var_Practice01 var_Practice01 = new Var_Practice01();		 
+		Var_PrimitiveType var_Practice01 = new Var_PrimitiveType();		 
 		var_Practice01.PrimitiveType();
 		
 		
@@ -137,8 +126,6 @@ public class VarDemo {
 		userHashMap.put(user2,  user2.list.add("Art"));
 		userHashMap.put(user3,  user3.list.add("History"));
 		System.out.println(userHashMap);
-		
-		System.out.println("***** CANNOT use local variable type inference *****");
 		
 		
 	}
@@ -162,7 +149,7 @@ public class VarDemo {
 			false
 			***** Demo of Object type for var *****
 			{ [ id: 1 , name: David | [Math, Science, Tech] ] =true,  [ id: 3 , name: Tim | [History] ] =true,  [ id: 2 , name: Marry | [English, Art] ] =true}
-			***** CANNOT use local variable type inference *****
+
 
 
 
