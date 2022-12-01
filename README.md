@@ -619,3 +619,6 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 > ComparatorPractice.java
 - Description:  ...
+
+> Airplane.java
+- Description:  ...
