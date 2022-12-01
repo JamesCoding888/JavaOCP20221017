@@ -9,6 +9,7 @@ package Java11.chapter01_dataTypes;
 	D. 20
 	E. 25
 	F. 30
+	
 */
 
 public class VarTest {
