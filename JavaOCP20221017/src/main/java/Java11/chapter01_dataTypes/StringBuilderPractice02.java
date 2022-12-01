@@ -21,8 +21,8 @@ public class StringBuilderPractice02 {
 	}
 	
 	public static void main(String[] args) {			
-		sb1 = sb1.append(new StringBuilderPractice02().foo(new StringBuilder())); // oh hi 
-		System.out.println(sb1); //  oh hi yo ey
+		sb1 = sb1.append(new StringBuilderPractice02().foo(new StringBuilder())); 
+		System.out.println(sb1); 
 	}
 }
 
