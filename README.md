@@ -622,3 +622,8 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 > Airplane.java
 - Description:  ...
+
+
+> VarTest.java
+- Description:  ...
+
