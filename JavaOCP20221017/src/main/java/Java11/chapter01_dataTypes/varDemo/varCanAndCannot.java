@@ -1,12 +1,13 @@
 package Java11.chapter01_dataTypes.varDemo;
 
 /*
-	The following sample code of introducing local variable type inference 
-	for what the "var" 1) Can or 2) Cannot
+	The following sample code of local variable type inference 
+	we design with 1) Can or 2) Cannot, respectively.
 */
 
 import java.util.ArrayList;
 public class varCanAndCannot{
+	
 	// 1) "var" Can
 	public void Lambda() {
 		var listWithoutExplicitlyTargetType = new ArrayList<>();

@@ -31,6 +31,7 @@ public class VarTest {
 /*
  
  	Answer: C
-	本節說明 "var" type，請參 package: Java11.chapter01_dataTypes 的 VarDemo.java 說明
+	本節考的是 "var" type 之應用
+	對於不熟悉 var 的讀者，可參 package: Java11.chapter01_dataTypes 的 VarDemo.java 說明
 	
 */
