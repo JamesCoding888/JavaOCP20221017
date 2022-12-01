@@ -611,5 +611,7 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 > StringBuilderPractice02.java
 - Description:  ...
 
+> StringBuilderPractice03.java
+- Description:  ...
 
 
