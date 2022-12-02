@@ -18,23 +18,7 @@ public class Subway {
 			System.out.print("Which type of bread? ");
 			
 			bread = scan.nextLine();
-			
-			switch(bread) {
-				
-				case "Wheat":	
-				     
-					 break;
-				
-				case "Honey Oat":
-					 
-					 break;
-					 
-				case "Italian and Parmesan Oregano":
-					 
-					 break;
-				
-			}	
-			
+						
 			if(bread.equals("Wheat") ? true : bread.equals("Honey Oat") ? true : bread.equals("Italian and Parmesan Oregano") ? true : false) {
 				break;
 			}							
