@@ -1,14 +1,19 @@
 # Java SE 11 Developer
+------------------------------------------------------------------------------
+> Toolkits
+- Integrated Development Environment (IDE): Eclipse 2021-06
+- JDK: Java SE 11
 
-Integrated Development Environment (IDE): Eclipse 2021-06
+> Recommended Book
+- Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
-JDK: Java SE 11
+> Certificates
+- <img width="503" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
-Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
 
 ------------------------------------------------------------------------------
-#  Video of each lecture
+#  Video of Each Lecture
 > day1
 -
 > day2
@@ -35,7 +40,33 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 -
 > day13
 -
-> ...
+> day14
+- 
+> day15
+-
+> day16
+-
+> day17
+-
+> day18
+-
+> day19
+-
+> day20
+-
+> day21
+-
+> day22
+-
+> day23
+-
+> day24
+-
+> day25
+-
+> day26
+-
+
 
 ------------------------------------------------------------------------------
 # day1 Java Basic
@@ -594,14 +625,135 @@ Recommended Book: Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-conten
 
 > xxx.java
 - Description:  ...
+
+
 ------------------------------------------------------------------------------
-# day14 Java Advanced: Exception, ... Coming Soon
+# day12 Java Advanced: ..., ... Coming Soon
+
+
+
+
+
+------------------------------------------------------------------------------
+# day13 Java Advanced: ..., ... Coming Soon
+
+
+
+------------------------------------------------------------------------------
+# day14 Java Advanced: Exception
+
+
+
+
+------------------------------------------------------------------------------
+# day15 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+------------------------------------------------------------------------------
+# day16 Java Advanced: ... , ... Coming Soon
+
+
+
+
+------------------------------------------------------------------------------
+# day17 Java Advanced: ... , ... Coming Soon
+
+
+
+
+------------------------------------------------------------------------------
+# day18 Java Advanced: ... , ... Coming Soon
+
+
+
+
+------------------------------------------------------------------------------
+# day19 Java Advanced: ... , ... Coming Soon
+
+
+
+
+------------------------------------------------------------------------------
+# day20 Java Advanced: ... , ... Coming Soon
+
+
+
+
+------------------------------------------------------------------------------
+# day21 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+------------------------------------------------------------------------------
+# day22 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+------------------------------------------------------------------------------
+# day23 Java Advanced: ... , ... Coming Soon
 
 
 
 
 
 
+------------------------------------------------------------------------------
+# day24 Java Advanced: ... , ... Coming Soon
 
 
+
+
+
+
+------------------------------------------------------------------------------
+# day25 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+
+------------------------------------------------------------------------------
+# day26 Java Advanced: ... , ... Coming Soon
+
+
+
+
+
+------------------------------------------------------------------------------
+# Java SE 11 Developer Exam - Data Types
+
+> StringBuilderPractice01.java
+- Description:  ...
+
+> StringBuilderPractice02.java
+- Description:  ...
+
+> StringBuilderPractice03.java
+- Description:  ...
+
+> StringBuilderPractice04.java
+- Description:  ...
+
+> ComparatorPractice.java
+- Description:  ...
+
+> Airplane.java
+- Description:  ...
+
+> VarTest.java
+- Description:  ...
+
+> VarDemo.java
+- Description:  ...
+
+> varCanAndCannot.java
+- Description:  ...
 
