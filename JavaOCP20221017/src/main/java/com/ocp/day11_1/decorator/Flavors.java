@@ -1,11 +1,11 @@
 package com.ocp.day11_1.decorator;
 
-public class SideDish extends AFood {
+public class Flavors extends AFood {
 	
 	protected Food food;
 	
 	
-	public SideDish(Food food) {
+	public Flavors(Food food) {
 		this.food = food; 
 	}
 

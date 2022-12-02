@@ -1,6 +1,6 @@
 package com.ocp.day11_1.decorator;
 
-public class Lettuce extends SideDish {
+public class Lettuce extends Flavors {
 	
 	public Lettuce(Food food) {
 		super(food);
