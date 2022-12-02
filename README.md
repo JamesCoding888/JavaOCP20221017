@@ -612,7 +612,7 @@
 # day11 Java Advanced: The Decorator Pattern
 1. Introduction of ...:
 - 1) 
-<img width="503" ![SubwayUML](https://user-images.githubusercontent.com/83496093/205223270-6310abdc-0b8d-4c62-acc5-a9f57a10a3b1.png) >
+	![SubwayUML](https://user-images.githubusercontent.com/83496093/205223270-6310abdc-0b8d-4c62-acc5-a9f57a10a3b1.png) 
 
 
 
