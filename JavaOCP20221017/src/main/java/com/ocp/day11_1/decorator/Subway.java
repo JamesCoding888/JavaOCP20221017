@@ -39,8 +39,7 @@ public class Subway {
 				break;
 			}							
 		}
-		
-		
+				
 		Food food = new Bread(bread);
 		
 		// Flavors 
