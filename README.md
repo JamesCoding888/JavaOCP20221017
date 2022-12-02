@@ -640,7 +640,7 @@
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: Exception, Coming Soon
+# day14 Java Advanced: Exception
 
 
 
