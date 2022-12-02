@@ -614,7 +614,7 @@
 
 	<img width="503" alt="Screen Shot 2022-12-02 at 3 20 57 PM" src="https://user-images.githubusercontent.com/83496093/205260349-aa4ec76b-2e58-457c-88cd-ff3fedd599f9.png">
 
-2. Following sample codes for your information:
+2. Following sample codes of decorator for your information:
 > Food.java
 - Description:  ...
 
@@ -648,8 +648,12 @@
 > Tuna.java
 - Description:  ...
 
+3. Following sample codes of observer for your information:
 
+> Observer.java
+- Description:  ...
 
+...
 
 
 ------------------------------------------------------------------------------
