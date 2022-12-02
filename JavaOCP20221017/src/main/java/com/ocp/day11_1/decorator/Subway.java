@@ -27,6 +27,10 @@ public class Subway {
 		Food food = new Bread(bread);
 		
 		// Flavors 
+		/*	
+		    Same as following syntax:
+			food = new Onion(new Lettuce(new OliveOil(new Tuna(new Egg(new Egg(new Tomato(new Tomato(new Ham(new Ham(new Bread(bread))))))))))); 
+		*/
 		food = new Ham(food);
 		food = new Ham(food);		
 		food = new Tomato(food);
@@ -37,7 +41,7 @@ public class Subway {
 		food = new OliveOil(food);
 		food = new Lettuce(food);		
 		food = new Onion(food);
-		
+					
 		// object of food downCasting to Flavors.class
 		System.out.println("Meal Combination: " + ((Flavors)food).getName());
 		System.out.println("Total Price: $" + ((Flavors)food).getPrice());
