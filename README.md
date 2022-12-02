@@ -612,7 +612,11 @@
 # day11 Java Advanced: The Decorator Pattern
 1. Introduction of ...:
 - 1) 
-	<img width="503" alt="Screen Shot 2022-12-02 at 2 13 50 PM" src="https://user-images.githubusercontent.com/83496093/205227481-3f720ba8-8e90-43f1-b601-1bfe5c5a0ae9.png">
+	<img width="503" alt="Screen Shot 2022-12-02 at 2 19 44 PM" src="https://user-images.githubusercontent.com/83496093/205228695-45b524f0-8336-4c4e-a84a-fcb989c9c4d9.png">
+
+
+
+	
 
 
 
