@@ -52,7 +52,9 @@ public class Subway {
 
 /*
  	Console: 
-	 		Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano.
+	 		Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
+			Which type of bread? W h e a t
+			Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
 			Which type of bread? Wheat
 			Meal Combination: Onion + Ham + Olive oil + Tune + Egg + Egg + Tomato + Tomato + Lettuce + Lettuce + Wheat
 			Total Price: $241
