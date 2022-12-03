@@ -1,7 +1,11 @@
 package com.ocp.day11_1.decorator;
 
-
-
+/*
+ 
+ 
+ 
+ 
+*/
 
 import java.util.Scanner;
 public class Subway {
@@ -30,7 +34,7 @@ public class Subway {
 		/*	
 		    Same as following syntax:
 			food = new Onion(new Lettuce(new OliveOil(new Tuna(new Egg(new Egg(new Tomato(new Tomato(new Ham(new Ham(new Bread(bread)))))))))));
-			            o11     o10         o9           o8       o7      o6      o5         o4         o3      o2      o1 
+			          o11       o10         o9           o8       o7      o6      o5         o4         o3      o2      o1 
 		*/
 		food = new Ham(food);  		  // o2  ...
 		food = new Ham(food);		  // o3  ...
