@@ -8,7 +8,7 @@
 - Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
 
 > Certificates
-- <img width="503" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
+- <img width="103" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
 
 
