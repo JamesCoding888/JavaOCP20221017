@@ -6,7 +6,11 @@ public class Flavors extends AgentOfFood {
 	
 	
 	public Flavors(Food food) {
-		this.food = food; 
+		/*
+			Here, the "food" is next of the outermost object, or could say the 1st object initiated, 
+			will be kept into the global variable of food at line: 5
+    	*/
+		this.food = food;   
 	}
 
 

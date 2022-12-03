@@ -1,9 +1,15 @@
 package com.ocp.day11_1.decorator;
 
 /*
- 
- 
- 
+ 	Of this lecture - Decorator Pattern, we design a Menu of Subway Order System. 
+ 	We design a Scanner object for customer to choose three fixed option of bread. 
+ 	
+ 	(BTW, if you forgot how operation of Scanner and nextLine could be, please refer to package: com.ocp.day6.ScannerPractice)
+ 	 
+ 	Also, we follow up with the rule of inheritance between each of subclass and superclass. 
+ 	Then, you can read the line at 34 and line at 42 to 51. That many different objects from each of classes.
+ 	As you see, the objects from o1 to o11. While the each object being initiated, then will implement the variable of "name" from abstraction Food.class. 
+ 	Especially, the method of "public String getName(){ ... }" from Flavors.class at line: 14 to 18, which has a detail operation for your information.  
  
 */
 
@@ -22,7 +28,7 @@ public class Subway {
 			System.out.print("Which type of bread? ");
 			
 			bread = scan.nextLine();
-						
+				
 			if(bread.equals("Wheat") ? true : bread.equals("Honey Oat") ? true : bread.equals("Italian and Parmesan Oregano") ? true : false) {
 				break;
 			}							
@@ -66,6 +72,8 @@ public class Subway {
 /*
  	Console: 
 	 		Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
+			Which type of bread? W h e a t 
+			Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
 			Which type of bread? Wheat
 			Meal Combination: Onion + Lettuce + Olive oil + Tuna + Egg + Egg + Tomato + Tomato + Ham + Ham + Wheat
 			Total Price: $241
