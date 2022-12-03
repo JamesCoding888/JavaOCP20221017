@@ -610,15 +610,17 @@
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: The Decorator Pattern
-1. The decorator pattern as following SubwayUML below, we separate the structures of Bread and Flavors, and also both of them inherit to abstraction class (i.e., AFood.class). Finally, we have AFood.class inherit abstraction class (i.e., Food.class).
+1. The decorator pattern as following SubwayUML below, we separate the structures of Bread and Flavors, and also both of them inherit to abstraction class (i.e., AFood.class). Finally, we have AgentOfFood.class inherit abstraction class (i.e., Food.class).
 
-	<img width="503" alt="Screen Shot 2022-12-02 at 3 20 57 PM" src="https://user-images.githubusercontent.com/83496093/205260349-aa4ec76b-2e58-457c-88cd-ff3fedd599f9.png">
+	<img width="1061" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
+
+	
 
 2. Following sample codes of decorator for your information:
 > Food.java
 - Description:  ...
 
-> AFood.java
+> AgentOfFood.java
 - Description:  ...
 
 > Bread.java
