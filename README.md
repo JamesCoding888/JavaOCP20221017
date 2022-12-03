@@ -614,7 +614,8 @@
 
 	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 
-2. Of this lecture - Decorator Pattern, a menu of Subway Order System. We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57. Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
+2. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
+We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57. Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
 For an instance of your house, you may need a big door, chairs, a oral table, a set of sofa, two Televisions, and many bulb...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
 
 For this said, you are hangry now, and need to order a meal of subway. You could choose what kind of bread you need, and also what flavors you would like to decorate into the bread. 
