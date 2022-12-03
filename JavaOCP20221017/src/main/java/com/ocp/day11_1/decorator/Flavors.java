@@ -12,7 +12,8 @@ public class Flavors extends AgentOfFood {
 
 	@Override
 	public String getName() {
-
+		// hereby, the "name" is outermost object, 
+		// and "food.getName()" is next of the outermost object
 		return name + " + " + food.getName();
 	}
 

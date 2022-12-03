@@ -24,23 +24,24 @@ public class Subway {
 			}							
 		}
 				
-		Food food = new Bread(bread);
+		Food food = new Bread(bread); // o1 (the innermost object will be the 1st object)
 		
 		// Flavors 
 		/*	
 		    Same as following syntax:
-			food = new Onion(new Lettuce(new OliveOil(new Tuna(new Egg(new Egg(new Tomato(new Tomato(new Ham(new Ham(new Bread(bread))))))))))); 
+			food = new Onion(new Lettuce(new OliveOil(new Tuna(new Egg(new Egg(new Tomato(new Tomato(new Ham(new Ham(new Bread(bread)))))))))));
+			            o11     o10         o9           o8       o7      o6      o5         o4         o3      o2      o1 
 		*/
-		food = new Ham(food);
-		food = new Ham(food);		
-		food = new Tomato(food);
-		food = new Tomato(food);		
-		food = new Egg(food);
-		food = new Egg(food);
-		food = new Tuna(food);
-		food = new OliveOil(food);
-		food = new Lettuce(food);		
-		food = new Onion(food);
+		food = new Ham(food);  		  // o2  ...
+		food = new Ham(food);		  // o3  ...
+		food = new Tomato(food);  	  // o4  ...
+		food = new Tomato(food);	  // o5  ...
+		food = new Egg(food);  		  // o6  ...
+		food = new Egg(food);         // o7  ...
+		food = new Tuna(food);  	  // o8  ...
+		food = new OliveOil(food);    // o9  ...
+		food = new Lettuce(food);	  // o10 (next of the outermost object)
+		food = new Onion(food);       // o11 (the outermost object)
 					
 		// object of food downCasting to Flavors.class
 		System.out.println("Meal Combination: " + ((Flavors)food).getName());
