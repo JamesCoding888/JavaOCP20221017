@@ -1,6 +1,6 @@
 package com.ocp.day11_1.decorator;
 
-public class Bread extends AFood {
+public class Bread extends AgentOfFood {
 	
 	public Bread(String bread) {
 		name = bread;

@@ -48,7 +48,11 @@ public class Subway {
 		
 		// Print out the Meal and Price
 		System.out.printf("Perfect meal combination: [%s ] is ready. Price: $%d, thank you.\n", food.getName(), food.getPrice() );	
-		System.out.printf("Perfect meal combination: [%s ] is ready. Price: $%d, thank you.\n", ((AFood)food).getNameAndPrice(), food.getPrice());
+		System.out.printf("Perfect meal combination: [%s ] is ready. Price: $%d, thank you.\n", ((AgentOfFood)food).getNameAndPrice(), food.getPrice());
+		
+		// New function to query the all name and price of meal
+		System.out.println(((Flavors)food).getNameAndPrice());
+		
 		
 		scan.close();
 	}	
@@ -57,12 +61,11 @@ public class Subway {
 /*
  	Console: 
 	 		Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
-			Which type of bread? W h e a t
-			Currently, we only have following options of bread: 1) Wheat 2) Honey Oat 3) Italian and Parmesan Oregano
 			Which type of bread? Wheat
-			Meal Combination: Onion + Ham + Olive oil + Tune + Egg + Egg + Tomato + Tomato + Lettuce + Lettuce + Wheat
+			Meal Combination: Onion + Lettuce + Olive oil + Tuna + Egg + Egg + Tomato + Tomato + Ham + Ham + Wheat
 			Total Price: $241
-			Perfect meal combination: [Onion + Ham + Olive oil + Tune + Egg + Egg + Tomato + Tomato + Lettuce + Lettuce + Wheat ] is ready. Price: $241, thank you.
-			Perfect meal combination: [Onion(22) ] is ready. Price: $241, thank you.
+			Perfect meal combination: [Onion + Lettuce + Olive oil + Tuna + Egg + Egg + Tomato + Tomato + Ham + Ham + Wheat ] is ready. Price: $241, thank you.
+			Perfect meal combination: [Get all flavors and price: [ Onion + Lettuce + Olive oil + Tuna + Egg + Egg + Tomato + Tomato + Ham + Ham + Wheat ] = 241 ] is ready. Price: $241, thank you.
+			Get all flavors and price: [ Onion + Lettuce + Olive oil + Tuna + Egg + Egg + Tomato + Tomato + Ham + Ham + Wheat ] = 241
 
 */

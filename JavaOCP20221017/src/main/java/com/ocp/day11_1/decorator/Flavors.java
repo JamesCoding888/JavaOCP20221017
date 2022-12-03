@@ -1,6 +1,6 @@
 package com.ocp.day11_1.decorator;
 
-public class Flavors extends AFood {
+public class Flavors extends AgentOfFood {
 	
 	protected Food food;
 	
@@ -26,7 +26,7 @@ public class Flavors extends AFood {
 	
 	@Override
 	public String toString() {
-		return name + "(" + price + ")" + " + " + ((AFood)food).getNameAndPrice();
+		return name + "(" + price + ")" + " + " + ((AgentOfFood)food).getNameAndPrice();
 	}
 	
 }

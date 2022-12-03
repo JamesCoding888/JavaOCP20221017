@@ -4,7 +4,7 @@ public class Lettuce extends Flavors {
 	
 	public Lettuce(Food food) {
 		super(food);
-		name = "Ham";
+		name = "Lettuce";
 		price = 40;
 	}
 }

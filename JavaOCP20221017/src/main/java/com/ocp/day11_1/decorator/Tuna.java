@@ -4,7 +4,7 @@ public class Tuna extends Flavors {
 	
 	public Tuna(Food food) {
 		super(food);
-		name = "Tune";
+		name = "Tuna";
 		price = 22;
 	}
 }
