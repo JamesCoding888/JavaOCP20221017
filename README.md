@@ -616,13 +616,13 @@
 
 2. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
 We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57. Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
-For an instance of your house, you may need a big door, chairs, a oral table, a set of sofa, two Televisions, and many bulb...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
+For an instance of your house, you may need a big door, chairs, a oval table, a set of sofa, two Televisions, and many bulbs...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
 
 For this said, you are hangry now, and need to order a meal of subway. You could choose what kind of bread you need, and also what flavors you would like to decorate into the bread. 
 
 Just in case of the reason you like to remove one of flavors (e.g., egg), then make an annotation of it.
  	
-By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to package: com.ocp.day6.ScannerPractice
+By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to the previously package at com.ocp.day6.ScannerPractice
 
 
 2. Following sample codes of decorator for your information:
