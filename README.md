@@ -623,7 +623,8 @@ By the way, if you forgot how operation of Scanner and nextLine() could be, plea
 
 3. Following sample codes of Decorator Pattern for your information:
 > Food.java
-- Description:  ...
+- Description: The gloabl variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
+
 
 > AgentOfFood.java
 - Description: The menu of Order System is almost to be DONE, but suddenly your client request additional function which could query the flavors and price of meal. Engineer is NOT willing to update the original structure of programming because the mostly is settled. Hereinafter, you could design an abstraction class (i.e., AgentOfFood.class) to create a function that client required to.  
