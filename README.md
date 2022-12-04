@@ -679,7 +679,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 > Recipient.java
 - Description:  ...
 
-> RecipientCommuincation.java
+> RecipientCommunication.java
 - Description:  ...
 
 
