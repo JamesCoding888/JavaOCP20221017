@@ -682,6 +682,18 @@ Observer Pattern (CipherText for RecipientCommuincation):
 > RecipientCommunication.java
 - Description:  ...
 
+------------------------------------------------------------------------------
+# day11 Java Advanced: Equals & HashCode 
+1. Introduction of overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collisions"
+
+> EqualsFunction.java
+- Description:  ...
+
+> EqualsHashCode.java
+- Description:  ...
+
+> Pen.java
+- Description:  ...
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: ..., ... Coming Soon
