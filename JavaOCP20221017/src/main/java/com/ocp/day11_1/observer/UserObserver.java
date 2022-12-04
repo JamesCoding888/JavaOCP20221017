@@ -10,7 +10,7 @@ public class UserObserver implements Observer {
 
 	@Override
 	public void update(String message) {
-		System.out.println(name + " 收到: " + message);
+		System.out.println(name + ", Received: " + message);
 	}
 
 }
