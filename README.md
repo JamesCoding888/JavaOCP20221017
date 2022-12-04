@@ -682,6 +682,17 @@ Observer Pattern (CipherText for RecipientCommuincation):
 > RecipientCommunication.java
 - Description:  ...
 
+------------------------------------------------------------------------------
+# day11 Java Advanced: Equals & HashCode 
+
+> EqualsFunction.java
+- Description:  ...
+
+> EqualsHashCode.java
+- Description:  ...
+
+> Pen.java
+- Description:  ...
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: ..., ... Coming Soon
