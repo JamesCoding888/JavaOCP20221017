@@ -621,7 +621,7 @@ For this said, you are hangry now, and need to order a meal of subway. You could
 Just in case of the reason you like to remove one of flavors (e.g., egg), then make an annotation of it.
 By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to the previously package at com.ocp.day6.ScannerPractice
 
-3. Following sample codes of decorator for your information:
+3. Following sample codes of Decorator Pattern for your information:
 > Food.java
 - Description:  ...
 
@@ -633,31 +633,32 @@ And therefore, we could avoid the original structure of programming from updatin
 那為什麼選用抽象類別，因為抽象類別無法將物件實體化，也就是不可從任意類別中，使用 new AgentOfFood()，其原因是，抽象類別出現，係為了由子累別實體化的物件，來呼叫抽象類別中的變數或方法，如此，可避免去修改既有程式碼的商業邏輯，而僅僅只需讓底層的類別去繼承抽象類別，這樣既不會改動原來的架構
 	
 > Bread.java
-- Description:  
+- Description:  Bread.class is the base of all objects from o1 to o11.  
 
 > Flavors.java
-- Description:  ...
+- Description:  While initiating the object, e.g., new Ham(), new Lettuces(), or new Egg(), Flavors.class, likely a Container, will collect object(s) from its subclass, by "protected Food food;".
 
 > Egg.java
-- Description:  ...
+- Description:  Egg.class is subclass of Flavors.class. While you initiate the object of Egg, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Ham.java
-- Description:  ...
+- Description:  Ham.class is subclass of Flavors.class. While you initiate the object of Ham, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Lettuces.java
-- Description:  ...
+- Description:  Lettuces.class is subclass of Flavors.class. While you initiate the object of Lettuces, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > OliveOil.java
-- Description:  ...
+- Description:  OliveOil.class is subclass of Flavors.class. While you initiate the object of OliveOil, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Tomato.java
-- Description:  ...
+- Description:  Tomato.class is subclass of Flavors.class. While you initiate the object of Tomato, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Onion.java
-- Description:  ...
+- Description:  Onion.class is subclass of Flavors.class. While you initiate the object of Onion, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Tuna.java
-- Description:  ...
+- Description:  Tuna.class is subclass of Flavors.class. While you initiate the object of Tuna, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
+
 
 3. Following sample codes of observer for your information:
 
