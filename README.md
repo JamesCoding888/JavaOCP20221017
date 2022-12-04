@@ -610,55 +610,60 @@
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: The Decorator Pattern
-1. The decorator pattern as following SubwayUML below:
+1. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
+- We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). 
+- Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. 
+- Please read the line at 40 and 48-57. 
+- Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
+- For an instance of your house, you may need a big door, chairs, a oval table, a set of sofa, two Televisions, and many bulbs...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
+- For this said, you are hangry now, and need to order a meal of subway. You could choose what kind of bread you need, and also what flavors you would like to decorate into the bread. 
+- Just in case of the reason you like to remove one of flavors (e.g., egg), then make an annotation of it.
+- By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to the previously package at com.ocp.day6.ScannerPractice
+
+2. The decorator pattern as following SubwayUML below:
 
 	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
-
-3. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
-We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57. Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
-For an instance of your house, you may need a big door, chairs, a oval table, a set of sofa, two Televisions, and many bulbs...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
-For this said, you are hangry now, and need to order a meal of subway. You could choose what kind of bread you need, and also what flavors you would like to decorate into the bread. 
-Just in case of the reason you like to remove one of flavors (e.g., egg), then make an annotation of it.
-By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to the previously package at com.ocp.day6.ScannerPractice
-
-3. Following sample codes of decorator for your information:
+	
+3. Following sample codes of Decorator Pattern for your information:
 > Food.java
-- Description:  ...
+- Description: The global variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
+
 
 > AgentOfFood.java
-- Description: The menu of Order System is almost to be DONE, but suddenly your client request additional function which could query the flavors and price of meal. Engineer is NOT willing to update the original structure of programming because the mostly is settled. Hereinafter, you could design an abstraction class (i.e., AgentOfFood.class) to create a function that client required to.  
+- Description: For a purpose of designing the abstraction class here, please imagine that your project (e.g., Menu of Order System) is almost to be DONE, but suddenly your client request additional function which could query the flavors and price of meal. Engineer is NOT willing to update the original structure of programming because the mostly is settled. Hereinafter, you could design an abstraction class (i.e., AgentOfFood.class) to create a function that client required to.  
 Any reason of solution we choose, is abstraction class? Since cannot initiate the object of abstraction class by itself, we need the subclass of abstraction class to invoke the variable/method of abstraction class.
-And therefore, we could avoid the original structure of programming from updating, but only have subclass inherit the abstraction class (i.e., AgentOfFood).	
-- 有一天食物訂單系統專案已接近完工，卻接到客戶要求，需在訂單系統中增加一個功能 (可查詢顧客點的餐點配料和餐點價格)，但基於程式架構已完成，工程師為了在不影響訂單系統的程式架構，這時可使用抽象類別 (AgentOfFood.class) 來設計。
-那為什麼選用抽象類別，因為抽象類別無法將物件實體化，也就是不可從任意類別中，使用 new AgentOfFood()，其原因是，抽象類別出現，係為了由子累別實體化的物件，來呼叫抽象類別中的變數或方法，如此，可避免去修改既有程式碼的商業邏輯，只需讓其原來的類別去繼承抽象類別，這樣既不會改動原來的架構
+And therefore, we could avoid the original structure of programming from updating, but merely have subclass inherit the abstraction class (i.e., AgentOfFood).	
+For the sake of designing an abstraction class, you may have many requirements from different clients, then you merely manage the package of abstraction class without any impact on the original design.
+- 設計此抽象類別之用意，請讀者想像一個情境，假設您目前執行的專案為『點餐訂單系統』且已接近完工，卻接到客戶要求，需在訂單系統中增加一個功能 (可查詢顧客點的餐點配菜和餐點價格)，但基於程式架構已完成，工程師為了不影響訂單系統的程式架構，這時可使用抽象類別 (也就是本程式中的 AgentOfFood.class) 來設計。
+那為什麼選用抽象類別，因為抽象類別無法將物件實體化，也就是不可從任意類別中，使用 new AgentOfFood()，其原因是，抽象類別係為了由子類別實體化的物件，來呼叫抽象類別中的變數或方法，如此，可避免設計者去修改既有程式碼的商業邏輯，而僅僅只需讓底層的類別去繼承抽象類別，這樣既保有原來的架構，後期在維護上也能因應不同的客戶之需求，建立其它的抽象類別之功能。最後設計者只需管理抽象類別包，都不需動到底層的架構
 	
-
 > Bread.java
-- Description:  
+- Description:  Bread.class is the base of all objects from o1 to o11.  
 
 > Flavors.java
-- Description:  ...
+- Description:  While initiating the object, e.g., new Ham(), new Lettuces(), or new Egg(), Flavors.class, likely a Container, will collect object(s) from its subclass, by "protected Food food;".
 
 > Egg.java
-- Description:  ...
+- Description:  Egg.class is subclass of Flavors.class. While you initiate the object of Egg, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Ham.java
-- Description:  ...
+- Description:  Ham.class is subclass of Flavors.class. While you initiate the object of Ham, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Lettuces.java
-- Description:  ...
+- Description:  Lettuces.class is subclass of Flavors.class. While you initiate the object of Lettuces, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > OliveOil.java
-- Description:  ...
+- Description:  OliveOil.class is subclass of Flavors.class. While you initiate the object of OliveOil, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Tomato.java
-- Description:  ...
+- Description:  Tomato.class is subclass of Flavors.class. While you initiate the object of Tomato, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Onion.java
-- Description:  ...
+- Description:  Onion.class is subclass of Flavors.class. While you initiate the object of Onion, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 > Tuna.java
-- Description:  ...
+- Description:  Tuna.class is subclass of Flavors.class. While you initiate the object of Tuna, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
+
 
 3. Following sample codes of observer for your information:
 
