@@ -610,18 +610,28 @@
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: The Decorator Pattern
-1. The decorator pattern as following SubwayUML below, we separate the structures of Bread and Flavors, and also both of them inherit to abstraction class (i.e., AFood.class). Finally, we have AgentOfFood.class inherit abstraction class (i.e., Food.class).
+1. The decorator pattern as following SubwayUML below:
 
 	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 
-	
+3. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
+We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57. Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house. 
+For an instance of your house, you may need a big door, chairs, a oval table, a set of sofa, two Televisions, and many bulbs...etc. Those of furniture of house, it seems that you can add or remove whenever you want. 
+For this said, you are hangry now, and need to order a meal of subway. You could choose what kind of bread you need, and also what flavors you would like to decorate into the bread. 
+Just in case of the reason you like to remove one of flavors (e.g., egg), then make an annotation of it.
+By the way, if you forgot how operation of Scanner and nextLine() could be, please refer to the previously package at com.ocp.day6.ScannerPractice
 
-2. Following sample codes of decorator for your information:
+3. Following sample codes of decorator for your information:
 > Food.java
 - Description:  ...
 
 > AgentOfFood.java
-- Description:  ...
+- Description: The menu of Order System is almost to be DONE, but suddenly your client request additional function which could query the flavors and price of meal. Engineer is NOT willing to update the original structure of programming because the mostly is settled. Hereinafter, you could design an abstraction class (i.e., AgentOfFood.class) to create a function that client required to.  
+Any reason of solution we choose, is abstraction class? Since cannot initiate the object of abstraction class by itself, we need the subclass of abstraction class to invoke the variable/method of abstraction class.
+And therefore, we could avoid the original structure of programming from updating, but only have subclass inherit the abstraction class (i.e., AgentOfFood).	
+- 有一天食物訂單系統專案已接近完工，卻接到客戶要求，需在訂單系統中增加一個功能 (可查詢顧客點的餐點配料和餐點價格)，但基於程式架構已完成，工程師為了在不影響訂單系統的程式架構，這時可使用抽象類別 (AgentOfFood.class) 來設計。
+那為什麼選用抽象類別，因為抽象類別無法將物件實體化，也就是不可從任意類別中，使用 new AgentOfFood()，其原因是，抽象類別出現，係為了由子累別實體化的物件，來呼叫抽象類別中的變數或方法，如此，可避免去修改既有程式碼的商業邏輯，只需讓其原來的類別去繼承抽象類別，這樣既不會改動原來的架構
+	
 
 > Bread.java
 - Description:  
