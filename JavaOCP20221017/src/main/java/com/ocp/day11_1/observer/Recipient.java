@@ -1,10 +1,10 @@
 package com.ocp.day11_1.observer;
 
-public class UserObserver implements Observer {
+public class Recipient implements Observer {
 	
 	private String name;
 
-	public UserObserver(String name) {
+	public Recipient(String name) {
 	        this.name = name;
 	}
 

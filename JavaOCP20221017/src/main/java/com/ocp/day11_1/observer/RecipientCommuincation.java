@@ -1,12 +1,12 @@
 package com.ocp.day11_1.observer;
 
-public class Demo {
+public class RecipientCommuincation {
 	public static void main(String[] args) {
 
 		// Initiated the "name" variable of UserObserver 
-		Observer observer1 = new UserObserver("President Tsia");
-		Observer observer2 = new UserObserver("President of the Executive Yuan");
-		Observer observer3 = new UserObserver("Mission");
+		Observer observer1 = new Recipient("President Tsia");
+		Observer observer2 = new Recipient("President of the Executive Yuan");
+		Observer observer3 = new Recipient("Mission");
 
 		// Initiated an object of NewsTopic for management of observer(s)
 		Subject subject = new NewsTopic();
