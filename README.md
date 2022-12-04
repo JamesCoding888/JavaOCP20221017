@@ -692,7 +692,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 > EqualsHashCode.java
 - Description:  ...
 
-> Pen.java
+> OverrideEqualsHashCodeFunction.java
 - Description:  ...
 
 ------------------------------------------------------------------------------
