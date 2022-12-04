@@ -35,7 +35,7 @@ public class EqualsFunction {
 		   ================================================================================================================
 		   After comparison of string3 and string4 with .equals() function, and result is unequal, then
 		   both of hasCode are usually different. However, there is a very low possibility to get a SAME hashCode. 
-		   If so, we call this scenario is "Hash Collisions". 
+		   If so, we call this scenario is "Hash Collision". 
 		   
 		   Finally, the value of hashCode is decided by JVM (Java Virtual Machine).		   
 		   Notice here, the execution environment we use - Java-11 [JRE 16.0.1]

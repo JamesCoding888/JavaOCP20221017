@@ -22,7 +22,7 @@ public class EqualsHashCode {
 
 
 /*
-	Console for 1) :	
+	Console of 1) :	
 					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
 					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
 					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
@@ -36,7 +36,7 @@ public class EqualsHashCode {
 					-1885956526
 
 
-	Console for 2):		
+	Console of 2):		
 					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
 					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
 					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
@@ -48,4 +48,19 @@ public class EqualsHashCode {
 					982036583
 					1182934204
 					-1923228093
+			
+					
+	Console of 3):				
+					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
+					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
+					false
+					true
+					false
+					false
+					false
+					-1907976736
+					-931664533
+					-616219772
+
 */

@@ -31,7 +31,7 @@ public class OverrideEqualsHashCodeFunction {
 		this.price = price;
 	}
 	
-//	/*  1) Override the method of "public int hashCode(){ ... }" 	 	
+	/*  1) Override the method of "public int hashCode(){ ... }" 	 	
 	 	
 	 	@Override
 		public int hashCode() {
@@ -40,7 +40,7 @@ public class OverrideEqualsHashCodeFunction {
 			hash = 17 * hash + this.price;
 			return hash;
 		}
-//	*/
+	*/
 
 	/*  2) Override the method of "public int hashCode(){ ... }"
 		
@@ -52,7 +52,17 @@ public class OverrideEqualsHashCodeFunction {
 			return result;
 		}
 	*/
-		
+	 	
+//	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
+	 	@Override
+	 	public int hashCode() {
+	 	    int hash = 7;
+	 	    hash = 31 * hash + (int) price;
+	 	    hash = 31 * hash + (color == null ? 0 : color.hashCode());
+	 	    return hash;
+	 	}
+//	*/	
+	 	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
