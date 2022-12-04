@@ -1,6 +1,6 @@
 package com.ocp.day11_1.observer;
 
-public class RecipientCommuincation {
+public class RecipientCommunication {
 	public static void main(String[] args) {
 
 		// Initiated the "name" variable of UserObserver 
