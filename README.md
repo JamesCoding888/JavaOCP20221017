@@ -684,6 +684,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
+1. Introduction of overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collisions"
 
 > EqualsFunction.java
 - Description:  ...
