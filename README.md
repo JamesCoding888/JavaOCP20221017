@@ -626,7 +626,7 @@
 	
 3. Following sample codes of Decorator Pattern for your information:
 > Food.java
-- Description: The gloabl variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
+- Description: The global variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
 
 
 > AgentOfFood.java
