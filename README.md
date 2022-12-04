@@ -610,7 +610,7 @@
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: The Decorator Pattern
-1. Of this lecture - Decorator Pattern (a menu of Subway Order System). 
+1. Of this lecture - Decorator Pattern (A menu of Subway Order System). 
 - We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). 
 - Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. 
 - Please read the line at 40 and 48-57. 
