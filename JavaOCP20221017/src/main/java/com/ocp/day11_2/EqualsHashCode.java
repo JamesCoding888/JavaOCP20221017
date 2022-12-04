@@ -2,9 +2,9 @@ package com.ocp.day11_2;
 
 public class EqualsHashCode {
 	public static void main(String[] args) {
-		Pen pen1 = new Pen("Pencil", 20);
-		Pen pen2 = new Pen("Rollerball pen", 30);
-		Pen pen3 = new Pen("Fountain pen", 80);
+		OverrideEqualsHashCodeFunction pen1 = new OverrideEqualsHashCodeFunction("Pencil", 20);
+		OverrideEqualsHashCodeFunction pen2 = new OverrideEqualsHashCodeFunction("Rollerball pen", 30);
+		OverrideEqualsHashCodeFunction pen3 = new OverrideEqualsHashCodeFunction("Fountain pen", 80);
 		
 		System.out.println(pen1);
 		System.out.println(pen2);
@@ -23,9 +23,9 @@ public class EqualsHashCode {
 
 /*
 	Console for 1) :	
-					Pen [color = Pencil, price = 20]
-					Pen [color = Rollerball pen, price = 30]
-					Pen [color = Fountain pen, price = 80]
+					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
+					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
 					false
 					true
 					false
@@ -35,10 +35,11 @@ public class EqualsHashCode {
 					1341443429
 					-1885956526
 
+
 	Console for 2):		
-					Pen [color = Pencil, price = 20]
-					Pen [color = Rollerball pen, price = 30]
-					Pen [color = Fountain pen, price = 80]
+					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
+					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
 					false
 					true
 					false

@@ -3,13 +3,13 @@ package com.ocp.day11_2;
 
 import java.util.Objects;
 
-public class Pen {
+public class OverrideEqualsHashCodeFunction {
 	
 	private String color;
 	
 	private int price;
 
-	public Pen(String color, int price) {
+	public OverrideEqualsHashCodeFunction(String color, int price) {
 		super();
 		this.color = color;
 		this.price = price;
@@ -61,12 +61,12 @@ public class Pen {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Pen other = (Pen) obj;
+		OverrideEqualsHashCodeFunction other = (OverrideEqualsHashCodeFunction) obj;
 		return Objects.equals(color, other.color) && price == other.price;
 	}
 	
 	@Override
 	public String toString() {
-		return "Pen [color = " + color + ", price = " + price + "]";
+		return "OverrideEqualsHashCodeFunction [color = " + color + ", price = " + price + "]";
 	}	
 }	
