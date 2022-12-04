@@ -1,9 +1,12 @@
 package com.ocp.day11_1.decorator;
 /*
   
-  	Regarding visibility of protected, 
-  	please recap the previously lecture on package: com.ocp.day2.bar
-  
+  	The global variable of "name" and "price", we place here in the Food.class, for implement by subclass. 
+  	Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, 
+  	developer expected them to be implemented.
+  	
+  	
+  	Regarding visibility of "protected", please recap the previously lecture on package: com.ocp.day2.bar
 */
 
 public abstract class Food {
