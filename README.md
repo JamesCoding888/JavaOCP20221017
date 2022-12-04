@@ -609,7 +609,7 @@
 
 
 ------------------------------------------------------------------------------
-# day11 Java Advanced: The Decorator Pattern and Observer Pattern
+# day11 Java Advanced: The Decorator and Observer's Pattern
 Decorator Pattern (A menu of Subway Order System):
 - We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano). 
 - Well, let's go back to the topic regarding Decorator Pattern. Firstly, you will see the many different initiated objects from o1 to o11. 
@@ -679,7 +679,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 > Recipient.java
 - Description:  ...
 
-> RecipientCommuincation.java
+> RecipientCommunication.java
 - Description:  ...
 
 
