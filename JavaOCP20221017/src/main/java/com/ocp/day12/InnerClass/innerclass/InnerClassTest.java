@@ -4,9 +4,9 @@ public class InnerClassTest {
 	
 	public static void main(String[] args) {
 		
-		Outter inner = new Outter("888888");
+		Outer inner = new Outer("888888");
 		
-		Outter.InnerCardOwner cardOwner = inner.new InnerCardOwner("Fubon", 5);
+		Outer.InnerCardOwner cardOwner = inner.new InnerCardOwner("Fubon", 5);
 		
 		cardOwner.print();
 	}
@@ -16,6 +16,6 @@ public class InnerClassTest {
 
 /*
   	Console:
-  			Card Info.: No.: 100, Name on Card: Fubon, ID: 888888, Confidentiality Level: 5
+  			Card Info.: No.: 100, Name on Card: Fubon, Serial-Number: 888888, Confidentiality Level: 5
 
 */

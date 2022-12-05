@@ -4,11 +4,11 @@ public class StaticInnerClassTest {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Invoke the globalVariable in Outter.class: " + new Outter().globalVariable);
+		System.out.println("Invoke the globalVariable in Outter.class: " + new Outer().globalVariable);
 		
-		System.out.println("Invoke the staticMemberVariable in Outter.class: " + Outter.staticMemberVariable);
+		System.out.println("Invoke the staticMemberVariable in Outter.class: " + Outer.staticMemberVariable);
 			
-		Outter.Inner.staticInnerMethod();
+		Outer.Inner.staticInnerMethod();
 		
 	}
 }

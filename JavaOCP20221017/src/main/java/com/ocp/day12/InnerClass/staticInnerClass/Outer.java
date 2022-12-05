@@ -5,13 +5,13 @@ package com.ocp.day12.InnerClass.staticInnerClass;
  	請移除底下註解 '/'* *'/' ，即能看到錯誤的紅色底線	
 */
 
-public class Outter {
+public class Outer {
 	
 	int globalVariable = 1;
 	
 	static int staticMemberVariable = 2;
 	
-	// Generally speaking of the general Inner Class, the static members NOT Allowable !)
+	// Generally speaking of the general Inner Class, the static members NOT Allowable !
 	public class GeneralInner{
 	
 		int globalVariableInGeneralInnerClassDeclaredNonStaticInnerType = 3;
@@ -26,8 +26,8 @@ public class Outter {
 			
 			System.out.println("innerMethod");
 			System.out.println(this.globalVariableInGeneralInnerClassDeclaredNonStaticInnerType);
-			System.out.println(Outter.this.globalVariable);
-			System.out.println(new Outter().globalVariable);
+			System.out.println(Outer.this.globalVariable);
+			System.out.println(new Outer().globalVariable);
 			
 		}
 	}
@@ -46,7 +46,7 @@ public class Outter {
 			System.out.println("I'm in staticInnerMethod");
 			
 			/*
-				System.out.println("Non-static variable, globalVariableInStaticInnerClass is Unreachable: " + Outter.Inner.globalVariableInStaticInnerClassDeclaredNonStaticInnerType);
+				System.out.println("Non-static variable, globalVariableInStaticInnerClass is Unreachable: " + Outer.Inner.globalVariableInStaticInnerClassDeclaredNonStaticInnerType);
 			*/
 			
 			
