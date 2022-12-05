@@ -1,8 +1,8 @@
 package com.ocp.day12.static_innerClass;
 
 /*
- 	底下註解 '/'* *'/' 移除，即能看到錯誤的紅色底線
- 	
+ 	Please remove the following annotation with '/'* *'/', then you will see the error with red underline
+ 	請移除底下註解 '/'* *'/' ，即能看到錯誤的紅色底線	
 */
 
 public class Outter {

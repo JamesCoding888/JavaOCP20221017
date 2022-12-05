@@ -10,18 +10,5 @@ public class InnerClassTest {
 			
 		Outter.Inner.staticInnerMethod();
 		
-		
-		
-		 
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
-
 }
