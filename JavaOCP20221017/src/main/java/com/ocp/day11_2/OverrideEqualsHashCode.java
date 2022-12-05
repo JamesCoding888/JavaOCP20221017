@@ -3,13 +3,13 @@ package com.ocp.day11_2;
 
 import java.util.Objects;
 
-public class OverrideEqualsHashCodeFunction {
+public class OverrideEqualsHashCode {
 	
 	private String color;
 	
 	private int price;
 
-	public OverrideEqualsHashCodeFunction(String color, int price) {
+	public OverrideEqualsHashCode(String color, int price) {
 		super();
 		this.color = color;
 		this.price = price;
@@ -31,7 +31,7 @@ public class OverrideEqualsHashCodeFunction {
 		this.price = price;
 	}
 	
-	/*  1) Override the method of "public int hashCode(){ ... }" 	 	
+//	/*  1) Override the method of "public int hashCode(){ ... }" 	 	
 	 	
 	 	@Override
 		public int hashCode() {
@@ -40,7 +40,7 @@ public class OverrideEqualsHashCodeFunction {
 			hash = 17 * hash + this.price;
 			return hash;
 		}
-	*/
+//	*/
 
 	/*  2) Override the method of "public int hashCode(){ ... }"
 		
@@ -53,7 +53,7 @@ public class OverrideEqualsHashCodeFunction {
 		}
 	*/
 	 	
-//	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
+	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
 	 	@Override
 	 	public int hashCode() {
 	 	    int hash = 7;
@@ -61,7 +61,7 @@ public class OverrideEqualsHashCodeFunction {
 	 	    hash = 31 * hash + (color == null ? 0 : color.hashCode());
 	 	    return hash;
 	 	}
-//	*/	
+	*/	
 	 	
 	@Override
 	public boolean equals(Object obj) {
@@ -71,12 +71,12 @@ public class OverrideEqualsHashCodeFunction {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		OverrideEqualsHashCodeFunction other = (OverrideEqualsHashCodeFunction) obj;
+		OverrideEqualsHashCode other = (OverrideEqualsHashCode) obj;
 		return Objects.equals(color, other.color) && price == other.price;
 	}
 	
 	@Override
 	public String toString() {
-		return "OverrideEqualsHashCodeFunction [color = " + color + ", price = " + price + "]";
+		return "OverrideEqualsHashCode [color = " + color + ", price = " + price + "]";
 	}	
 }	

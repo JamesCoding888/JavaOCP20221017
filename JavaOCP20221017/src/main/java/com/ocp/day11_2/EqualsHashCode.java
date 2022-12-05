@@ -2,9 +2,9 @@ package com.ocp.day11_2;
 
 public class EqualsHashCode {
 	public static void main(String[] args) {
-		OverrideEqualsHashCodeFunction pen1 = new OverrideEqualsHashCodeFunction("Pencil", 20);
-		OverrideEqualsHashCodeFunction pen2 = new OverrideEqualsHashCodeFunction("Rollerball pen", 30);
-		OverrideEqualsHashCodeFunction pen3 = new OverrideEqualsHashCodeFunction("Fountain pen", 80);
+		OverrideEqualsHashCode pen1 = new OverrideEqualsHashCode("Pencil", 20);
+		OverrideEqualsHashCode pen2 = new OverrideEqualsHashCode("Rollerball pen", 30);
+		OverrideEqualsHashCode pen3 = new OverrideEqualsHashCode("Fountain pen", 80);
 		
 		System.out.println(pen1);
 		System.out.println(pen2);
@@ -23,9 +23,9 @@ public class EqualsHashCode {
 
 /*
 	Console of 1) :	
-					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
-					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
-					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
+					OverrideEqualsHashCode [color = Pencil, price = 20]
+					OverrideEqualsHashCode [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCode [color = Fountain pen, price = 80]
 					false
 					true
 					false
@@ -37,9 +37,9 @@ public class EqualsHashCode {
 
 
 	Console of 2):		
-					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
-					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
-					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
+					OverrideEqualsHashCode [color = Pencil, price = 20]
+					OverrideEqualsHashCode [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCode [color = Fountain pen, price = 80]
 					false
 					true
 					false
@@ -51,9 +51,9 @@ public class EqualsHashCode {
 			
 					
 	Console of 3):				
-					OverrideEqualsHashCodeFunction [color = Pencil, price = 20]
-					OverrideEqualsHashCodeFunction [color = Rollerball pen, price = 30]
-					OverrideEqualsHashCodeFunction [color = Fountain pen, price = 80]
+					OverrideEqualsHashCode [color = Pencil, price = 20]
+					OverrideEqualsHashCode [color = Rollerball pen, price = 30]
+					OverrideEqualsHashCode [color = Fountain pen, price = 80]
 					false
 					true
 					false
@@ -62,5 +62,6 @@ public class EqualsHashCode {
 					-1907976736
 					-931664533
 					-616219772
+
 
 */
