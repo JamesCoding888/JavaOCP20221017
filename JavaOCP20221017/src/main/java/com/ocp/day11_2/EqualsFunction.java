@@ -10,8 +10,10 @@ public class EqualsFunction {
 		// string1 和 string2 屬於不同物件
 		System.out.println("object of string1 and string2 if Same? " + (string1 == string2));  // false
 		
-		// 比較物件的 value
-		// refer to "https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-"
+		// Comparison of value (case-sensitive) between string3 and string4 
+		// 比較 string1 和 string2 的 value (考慮大小寫不同)
+		// Of .equals() function, please refer to "https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-"
+		// 關於 .equals() 函式庫，請參官網連結
 		System.out.println("value of string1 and string2 if Same? " + (string1.equals(string2)));  // true
 		
 		/*
