@@ -699,10 +699,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 ------------------------------------------------------------------------------
-# day12 Java Advanced: Outter Class & Inner Class
+# day12 Java Advanced: Outer Class & Inner Class
 1. Introduction of Inner class ...
 
-> Inner.java
+> Outer.java
 - Description:  ...
 
 > InnerClassTest.java
@@ -724,7 +724,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > StaticInnerClassTest.java
 - Description:  ...
 
-> Outter.java
+> Outer.java
 - Description:  ...
 
 ------------------------------------------------------------------------------
