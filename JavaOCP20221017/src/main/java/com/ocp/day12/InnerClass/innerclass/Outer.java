@@ -3,10 +3,10 @@ package com.ocp.day12.InnerClass.innerclass;
 // 外部類別
 public class Outer {
 	
-	private String serialNumber;   // Serial number of card
+	private String serialNumber;   // Serial number of Card
 	
 	// "static member variable" could be in the Outer class (類別變數可放置於外部類別)
-	// No. of card
+	// No. of Card
 	static int number = 100;       
 	
 	public Outer(String serialNumber) {
@@ -15,11 +15,12 @@ public class Outer {
 	
 	}
 	
-	// Generally speaking of the general Inner Class, the static members NOT Allowable !
+	// Generally speaking of the general Inner Class, the "static member" NOT Allowable !
+	// 一般來說，若是一般內部類別，不允許『靜態的成員變數』
 	public class InnerCardOwner {
 		
 		// The field quantityOfCard CANNOT be declared static in a "non-static inner type", 
-		// unless initialized with a constant expression.
+		// unless initialized with a constant expression without "static".
 		/*
 			static int quantityOfCard = 1;  // How many q'ty of card does owner have?  
 		*/
