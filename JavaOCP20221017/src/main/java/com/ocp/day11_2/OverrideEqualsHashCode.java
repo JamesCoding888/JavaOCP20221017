@@ -1,5 +1,16 @@
 package com.ocp.day11_2;
-
+/*
+ 	====================================================================================
+ 	Sincerely recommended a Book for your reference - "Effective Java 3rd Edition" 
+ 	You will be even better to understand the "Hash Collision" and "hashCode algorithm"
+ 	====================================================================================
+ 	誠摯的推薦讀者一本書 - 『Effective Java 3rd Edition』
+ 	您將能夠更清楚的了解其『雜湊碰撞』和『hashCode 演算法』
+ 	
+ 	Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
+ 	====================================================================================
+ 	
+*/
 
 import java.util.Objects;
 

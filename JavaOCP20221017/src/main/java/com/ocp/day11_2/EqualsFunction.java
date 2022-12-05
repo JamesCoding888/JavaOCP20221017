@@ -2,9 +2,11 @@ package com.ocp.day11_2;
 
 public class EqualsFunction {
 	public static void main(String[] args) {
+		
 		String string1 = "James";
 		String string2 = new String("James");
-		
+
+		// The object of string1 and string2 is different
 		// string1 和 string2 屬於不同物件
 		System.out.println("object of string1 and string2 if Same? " + (string1 == string2));  // false
 		
@@ -21,14 +23,16 @@ public class EqualsFunction {
 		System.out.println("hashCode of string1: " + string1.hashCode());
 		System.out.println("hashCode of string2: " + string2.hashCode());		
 		
-		// 大小寫不同
+		// Case-Sensitive (考慮大小寫不同）	
 		String string3 = "james";
 		String string4 = new String("James");
 		
-		// 比較 string3 和 string4 的 value (忽略大小寫) 是否相同
+		// Comparison of value (Ignore case-sensitive) between string3 and string4 
+		// 比較 string3 和 string4 的 value (忽略大小寫)
 		System.out.println("value (ignore uppercase) of string3 and string4 if Same? " + (string3.equalsIgnoreCase(string4))); // true
 				
-		// 比較物件的 value
+		// Comparison of value (case-sensitive) between string3 and string4 
+		// 比較 string3 和 string4 的 value (考慮大小寫不同)
 		System.out.println("value of string3 and string4 if Same? " + (string3.equals(string4)));  // false
 		
 		/*
