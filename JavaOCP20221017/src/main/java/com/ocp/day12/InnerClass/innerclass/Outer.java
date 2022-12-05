@@ -15,8 +15,8 @@ public class Outer {
 	
 	}
 	
-	// Generally speaking of the general Inner Class, the "static member" NOT Allowable !
-	// 一般來說，若是一般內部類別，不允許『靜態的成員變數』
+	// Generally speaking of the general Inner Class, the "static member" - "static int variable" or "static void method(){ ... }" NOT Allowable !
+	// 一般來說，一般內部類別中，不允許『靜態的成員變數』，也就是 "static int variable" 或 "static void method(){ ... }"
 	public class InnerCardOwner {
 		
 		// The field quantityOfCard CANNOT be declared static in a "non-static inner type", 
@@ -36,12 +36,22 @@ public class Outer {
 			
 		}
 		
+		/*	In the general Inner Class, "static member" NOT Allowable
+			
+			public static void method() {
+				
+			}
+			 
+		*/
+		
 		public void print() {
 			
 			String name = "Card Info.";
 			
 			System.out.printf("%s: No.: %s, Name on Card: %s, Serial-Number: %s, Confidentiality Level: %d\n", name, Outer.number, this.nameOfCardOwner, serialNumber, confidentialityLevel);
 			
-		}
+			System.out.printf("No. of Card: %d", number);
+			
+		}	
 	}
 }

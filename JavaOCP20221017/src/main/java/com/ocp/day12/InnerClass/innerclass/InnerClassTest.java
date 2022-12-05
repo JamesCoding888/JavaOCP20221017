@@ -17,5 +17,6 @@ public class InnerClassTest {
 /*
   	Console:
   			Card Info.: No.: 100, Name on Card: Fubon, Serial-Number: 888888, Confidentiality Level: 5
+			No. of Card: 100
 
 */

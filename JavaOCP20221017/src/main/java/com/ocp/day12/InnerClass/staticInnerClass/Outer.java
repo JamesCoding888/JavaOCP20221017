@@ -11,8 +11,8 @@ public class Outer {
 	
 	static int staticMemberVariable = 2;
 	
-	// Generally speaking of the general Inner Class, the "static member" NOT Allowable !
-	// 一般來說，若是一般內部類別，不允許『靜態的成員變數』
+	// Generally speaking of the general Inner Class, the "static member" - "static int variable" or "static void method(){ ... }" NOT Allowable !
+	// 一般來說，一般內部類別中，不允許『靜態的成員變數』，也就是 "static int variable" 或 "static void method(){ ... }"
 	public class GeneralInner{
 	
 		int globalVariableInGeneralInnerClassDeclaredNonStaticInnerType = 3;
@@ -48,7 +48,7 @@ public class Outer {
 			System.out.println("I'm in staticInnerMethod");
 			
 			/*
-				System.out.println("Non-static variable, globalVariableInStaticInnerClass is Unreachable: " + Outer.Inner.globalVariableInStaticInnerClassDeclaredNonStaticInnerType);
+				System.out.println("Non-static variable, globalVariableInStaticInnerClassDeclaredNonStaticInnerType is Unreachable: " + Outer.Inner.globalVariableInStaticInnerClassDeclaredNonStaticInnerType);
 			*/
 			
 			
