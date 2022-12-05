@@ -727,6 +727,17 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > Outer.java
 - Description:  ...
 
+4. Introduction of Anonymous
+
+> Calc.java
+- Description:  ...
+
+> CalcImplement.java
+- Description:  ...
+
+> TestCalc.java
+- Description:  ...
+
 ------------------------------------------------------------------------------
 # day13 Java Advanced: ..., ... Coming Soon
 
