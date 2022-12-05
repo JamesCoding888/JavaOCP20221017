@@ -699,7 +699,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 ------------------------------------------------------------------------------
-# day12 Java Advanced: ..., ... Coming Soon
+# day12 Java Advanced: Outter Class & Inner Class
 1. Introduction ...
 
 > LocalVariableInvokedByInnerClass.java
