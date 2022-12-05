@@ -699,7 +699,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 ------------------------------------------------------------------------------
-# day12 Java Advanced: Outer Class & Inner Class
+# day12 Java Advanced: Outer Class, Inner Class and Anonymous
 1. Introduction of Inner class ...
 
 > Outer.java
