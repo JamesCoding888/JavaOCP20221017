@@ -5,7 +5,9 @@ public class LocalVariableInvokedByInnerClassTest {
 	public static void main(String[] args) {
 		
 		LocalVariableInvokedByInnerClass localVariableInvokedByInnerClass = new LocalVariableInvokedByInnerClass("A123456789");
+
 		String responseOfVariables = localVariableInvokedByInnerClass.print();
+		
 		System.out.print(responseOfVariables);
 		
 	}	
