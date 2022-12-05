@@ -4,9 +4,9 @@ public class InnerClassTest {
 	
 	public static void main(String[] args) {
 		
-		Inner inner = new Inner("888888");
+		Outter inner = new Outter("888888");
 		
-		Inner.CardOwner cardOwner = inner.new CardOwner("Fubon", 5);
+		Outter.InnerCardOwner cardOwner = inner.new InnerCardOwner("Fubon", 5);
 		
 		cardOwner.print();
 	}
