@@ -1,6 +1,6 @@
-package com.ocp.day12.static_innerClass;
+package com.ocp.day12.InnerClass.staticInnerClass;
 
-public class InnerClassTest {
+public class StaticInnerClassTest {
 
 	public static void main(String[] args) {
 		
@@ -12,3 +12,12 @@ public class InnerClassTest {
 		
 	}
 }
+
+
+
+/*
+	Console:
+			Invoke the globalVariable in Outter.class: 1
+			Invoke the staticMemberVariable in Outter.class: 2
+			I'm in staticInnerMethod
+*/

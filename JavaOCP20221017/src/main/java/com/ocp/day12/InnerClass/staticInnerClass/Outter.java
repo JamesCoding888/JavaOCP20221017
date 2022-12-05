@@ -1,4 +1,4 @@
-package com.ocp.day12.static_innerClass;
+package com.ocp.day12.InnerClass.staticInnerClass;
 
 /*
  	Please remove the following annotation with '/'* *'/', then you will see the error with red underline
