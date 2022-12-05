@@ -684,15 +684,10 @@ Observer Pattern (CipherText for RecipientCommuincation):
 # day11 Java Advanced: Equals & HashCode 
 1. Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collision" from two different objects being equally.
 
- 	====================================================================================
- 	Sincerely recommended a Book for your reference - "Effective Java 3rd Edition" 
- 	You will be even better to understand the "Hash Collision" and "hashCode algorithm"
- 	====================================================================================
- 	誠摯的推薦讀者一本書 - 『Effective Java 3rd Edition』
- 	您將能夠更清楚的了解其『雜湊碰撞』和『hashCode 演算法』
+
+2. Sincerely recommended a Book for your reference - "Effective Java 3rd Edition". You will be even better to understand the "Hash Collision" and "hashCode algorithm".
+Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997" 	
  	
- 	Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
- 	====================================================================================
 
 > EqualsFunction.java
 - Description:  ...
