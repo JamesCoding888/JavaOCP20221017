@@ -1,6 +1,55 @@
 package com.ocp.day12.InnerClass.innerclass;
+/*
+ 	============================================================================================================================= 
+ 	Rules of Local Inner Class:
 
-// 外部類別
+	1) The scope of the local inner class is restricted to the block they are defined in.
+	
+	2) A local inner class cannot be instantiated from outside the block where it is created in.
+	   For an example of following: 	
+	   		
+	   		OuterClassA {
+ 	   		
+ 	   			new InnerClassB(); // Unallowable  
+ 	   			
+ 	   			InnerClassB {
+ 	   			  
+ 	   			}
+ 	   		}
+ 	   		
+	3) Till JDK 7, the Local inner class can access only the final local variable of the enclosing block. 
+	   However, From JDK 8, it is possible to access the non-final local variable of enclosing block in the local inner class.
+	   
+	4) A local class has access to the members of its enclosing class.
+	
+	5) Local inner classes can extend an abstract class or implement an interface. 
+ 	=============================================================================================================================
+ 	區域內部類別之規定：
+ 	
+ 	1) 內部類別中，限制了開發者對於變數的定義
+ 	
+ 	2) 區域內部類別，不可由內部類別以外，來對內部類別初始化。
+ 	   例如:
+ 	   		OuterClassA {
+ 	   		
+ 	   			new InnerClassB(); // Unallowable  
+ 	   			
+ 	   			InnerClassB {
+ 	   			  
+ 	   			}
+ 	   		}
+ 	 
+ 	 3) JDK 1.7 以前 (含 1.7 version)，區域內部類別，只能調用其包覆的 "final 區域變數"。但到了 JDK 1.8 以上 (含 1.8 version)
+ 	    區域內部類別，不僅能調用其包覆的 final 區域變數，還能調用在區域內部類別中，其包覆的 "非 final 區域變數"。 
+ 	 		
+ 	 4) 區域類別可調用其成員 (變數/方法)
+ 	 
+ 	 5) 區域內部類別可繼承 "抽象類別" 或 "介面類別" 
+ 	=============================================================================================================================
+ 	
+ 	
+*/
+// Outer class (外部類別)
 public class Outer {
 	
 	private String serialNumber;   // Serial number of Card
