@@ -754,7 +754,17 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day13 Java Advanced: ..., ... Coming Soon
+# day13 Java Advanced: Java 1.8 API - Consumer, BiConsumer, ObjIntConsumer, Predicate, IntPredicate, BiPredicate, ...
+1. Introduction ...
+
+> StreamDemo.java
+- Description:  ...
+
+> ConsumerDemo.java
+- Description:  ...
+
+> PredicateDemo.java
+- Description:  ...
 
 
 
