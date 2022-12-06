@@ -1,4 +1,4 @@
-package com.ocp.day12.anonymous.speed;
+package com.ocp.day12.anonymous.speedLimits;
 import java.util.Arrays;
 import java.util.function.IntPredicate;
 import java.util.function.IntConsumer;
