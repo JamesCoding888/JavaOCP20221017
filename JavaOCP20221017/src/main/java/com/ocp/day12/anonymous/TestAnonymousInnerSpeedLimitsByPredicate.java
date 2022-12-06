@@ -1,7 +1,7 @@
 package com.ocp.day12.anonymous;
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.function.IntPredicate;
+import java.util.function.IntConsumer;
 public class TestAnonymousInnerSpeedLimitsByPredicate {
 
 	public static void main(String[] args) {
@@ -53,16 +53,35 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 		
 		Arrays.stream(speedPerMiles).filter(overSpeedLimits4Anonymous).forEach(speed -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed));
 		
-		System.out.println("*************************************** Lambda Expression ****************************************");
+		System.out.println("******************************** Lambda Expression - IntPredicate *********************************");
 		
 		IntPredicate overSpeedLimits4LambdaExpression = (int value) -> { return value > 60; };
 		
+		IntPredicate lowerSpeedLimits4LambdaExpression = value -> value < 30 ;
+
 //		boolean overSpeedLimits = Arrays.stream(speedPerMiles).anyMatch(overSpeedLimits4LambdaExpression);
 		
 		Arrays.stream(speedPerMiles).filter(overSpeedLimits4LambdaExpression).forEach(speed -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed));
 
+		System.out.println("********************************* Lambda Expression - IntConsumer *********************************");
 		
+		// Override the abstraction method of IntConsumer.class, as follows 
+		// please see the following method from Java 1.8 - java.util.function.InConsumer;
+		/**
+	     * Performs this operation on the given argument.
+	     * @param value the input argument	     
+	     * void accept(int value);
+		**/
+		
+		
+		// Following syntaxes, are All similar function
+		// IntConsumer consumer = (int value) -> System.out.println(value);
+		// IntConsumer consumer = (value) -> System.out.println(value);
+		IntConsumer intConsumer4HighSpeed = value -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", value);
+		Arrays.stream(speedPerMiles).filter(overSpeedLimits4LambdaExpression).forEach(intConsumer4HighSpeed);
+		
+		IntConsumer intConsumer4LowSpeed = value -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're lower speed limits and won a ticket for $5000 !!!\n", value);				
+		Arrays.stream(speedPerMiles).filter(lowerSpeedLimits4LambdaExpression).forEach(intConsumer4LowSpeed);
 		
 	}
-
 }
