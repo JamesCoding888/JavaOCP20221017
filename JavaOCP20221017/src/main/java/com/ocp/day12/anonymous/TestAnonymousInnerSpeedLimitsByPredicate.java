@@ -85,3 +85,35 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 		
 	}
 }
+
+/*
+	Console:
+			************************************** Anonymous Inner Class **************************************
+			Watching your speed, 65 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 78 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 87 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 98 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 105 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			*************************** Anonymous Inner Class & Lambda Expression ****************************
+			Watching your speed, 65 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 78 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 87 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 98 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 105 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			******************************** Lambda Expression - IntPredicate *********************************
+			Watching your speed, 65 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 78 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 87 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 98 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 105 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			********************************* Lambda Expression - IntConsumer *********************************
+			Watching your speed, 65 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 78 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 87 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 98 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 105 Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!
+			Watching your speed, 0 Miles/hours, Sir. You're lower speed limits and won a ticket for $5000 !!!
+			Watching your speed, 15 Miles/hours, Sir. You're lower speed limits and won a ticket for $5000 !!!
+			Watching your speed, 25 Miles/hours, Sir. You're lower speed limits and won a ticket for $5000 !!!
+
+*/
