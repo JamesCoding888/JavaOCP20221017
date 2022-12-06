@@ -1,5 +1,6 @@
 package com.ocp.day12.anonymous;
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.function.IntPredicate;
 public class TestAnonymousInnerSpeedLimitsByPredicate {
 
@@ -12,7 +13,7 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 		// that only released as-is.
 		int[] speedPerMiles = {0, 15, 25, 35, 65, 78, 87, 98, 105};  // Miles per hours
 		
-		IntPredicate overSpeedLimits = new IntPredicate() {
+		IntPredicate overSpeedLimits4Anonymous = new IntPredicate() {
 
 			// Override the abstraction method of IntPredicate.class, 
 			// please see the following method from Java 1.8 - java.util.function.IntPredicate;
@@ -41,17 +42,27 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 		
 		for (int speed : speedPerMiles) {
 			
-			if (overSpeedLimits.test(speed)) {
+			if (overSpeedLimits4Anonymous.test(speed)) {
 
 				System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed);
 
 			}
 		}
 		
+		System.out.println("*************************** Anonymous Inner Class & Lambda Expression ****************************");		
+		
+		Arrays.stream(speedPerMiles).filter(overSpeedLimits4Anonymous).forEach(speed -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed));
 		
 		System.out.println("*************************************** Lambda Expression ****************************************");
-//		Arrays.stream(speedPerMiles)
+		
+		IntPredicate overSpeedLimits4LambdaExpression = (int value) -> { return value > 60; };
+		
+//		boolean overSpeedLimits = Arrays.stream(speedPerMiles).anyMatch(overSpeedLimits4LambdaExpression);
+		
+		Arrays.stream(speedPerMiles).filter(overSpeedLimits4LambdaExpression).forEach(speed -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed));
 
+		
+		
 	}
 
 }
