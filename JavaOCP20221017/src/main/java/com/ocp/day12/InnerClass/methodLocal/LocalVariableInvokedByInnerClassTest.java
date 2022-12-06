@@ -1,4 +1,4 @@
-package com.ocp.day12.InnerClass.method;
+package com.ocp.day12.InnerClass.methodLocal;
 
 public class LocalVariableInvokedByInnerClassTest {
 	

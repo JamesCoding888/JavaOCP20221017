@@ -38,16 +38,15 @@ public class TestAnonymousInnerCalc {
 		
 		System.out.println(sumByAnonymous);
 		
-		
 	    // Lambda expression - Standard Syntax
         Calc calcByLambdaExpression01 = (int x, int y) -> { return x + y; };
         System.out.println(calcByLambdaExpression01.submit(7, 9));
 
-        // Lambda expression - allow to remove type of arguments (Reminder, remove ONLY one type of arguments - Unallowable)        
+        // Lambda expression - allow to remove type (i.e., int) of arguments (Reminder, remove ONLY one type of arguments - Unallowable)        
         Calc calcByLambdaExpression02 = (x, y) -> { return x + y; };
         System.out.println(calcByLambdaExpression02.submit(1, 3));
 
-        // Lambda expression - allow to remove type of arguments and "{ return  ;}"         
+        // Lambda expression - allow to remove type (i.e., int) of arguments and "{ return  ;}"         
         Calc calcByLambdaExpression03 = (x, y) -> x + y ;
         System.out.println(calcByLambdaExpression03.submit(3, 6));
 		
