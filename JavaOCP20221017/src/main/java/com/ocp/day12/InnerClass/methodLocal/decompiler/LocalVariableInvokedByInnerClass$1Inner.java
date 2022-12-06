@@ -1,4 +1,4 @@
-package com.ocp.day12.InnerClass.method.decompiler;
+package com.ocp.day12.InnerClass.methodLocal.decompiler;
 
 class LocalVariableInvokedByInnerClass$1Inner {
    String name;
