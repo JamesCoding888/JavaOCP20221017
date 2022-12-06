@@ -10,7 +10,7 @@ package com.ocp.day12.anonymous;
 @FunctionalInterface
 public interface Calc {
 	
-	int submit(int x, int y); // same as "public abstract int submit(int x, int y)"
+	int submit(int x, int y); // same as "public abstract int submit(int x, int y);"
 	
 	
 }
