@@ -1,4 +1,4 @@
-package com.ocp.day12.anonymous;
+package com.ocp.day12.anonymous.speed;
 
 public class SpeedLimitsImplement implements SpeedLimits {
  

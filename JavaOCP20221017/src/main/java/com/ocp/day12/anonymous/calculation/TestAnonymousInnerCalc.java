@@ -1,4 +1,4 @@
-package com.ocp.day12.anonymous;
+package com.ocp.day12.anonymous.calculation;
 
 public class TestAnonymousInnerCalc {
 

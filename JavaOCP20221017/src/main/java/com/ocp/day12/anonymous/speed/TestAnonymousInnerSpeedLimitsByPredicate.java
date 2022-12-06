@@ -1,4 +1,4 @@
-package com.ocp.day12.anonymous;
+package com.ocp.day12.anonymous.speed;
 import java.util.Arrays;
 import java.util.function.IntPredicate;
 import java.util.function.IntConsumer;
@@ -59,8 +59,6 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 		IntPredicate overSpeedLimits4LambdaExpression = (int value) -> { return value > 60; };
 		
 		IntPredicate lowerSpeedLimits4LambdaExpression = value -> value < 30 ;
-
-//		boolean overSpeedLimits = Arrays.stream(speedPerMiles).anyMatch(overSpeedLimits4LambdaExpression);
 		
 		Arrays.stream(speedPerMiles).filter(overSpeedLimits4LambdaExpression).forEach(speed -> System.out.printf("Watching your speed, %d Miles/hours, Sir. You're over speed limits and won a ticket for $1000 !!!\n", speed));
 

@@ -1,4 +1,4 @@
-package com.ocp.day12.anonymous;
+package com.ocp.day12.anonymous.calculation;
 /*
  	Description of FuntionalInterface: 
 	Given an annotation of @FunctionalInterface, to make sure the interface class, only has ONE abstraction method
