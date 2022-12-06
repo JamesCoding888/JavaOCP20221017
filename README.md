@@ -700,7 +700,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: Outer Class, Inner Class and Anonymous
-1. Introduction of Inner class ...
+1. Introduction of Inner class
 
 > Outer.java
 - Description:  ...
@@ -719,7 +719,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > LocalVariableInvokedByInnerClassTest.java
 - Description:  ...
 
-3. Introduction of static Inner class ...
+3. Introduction of static Inner class
 
 > StaticInnerClassTest.java
 - Description:  ...
