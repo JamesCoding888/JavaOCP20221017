@@ -730,25 +730,26 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 4. Introduction of Anonymous Inner Class & Lambda Expression
 
 > Calc.java
-- Description:  ...
+- Description: Created a Functional Interface - Only has ONE abstraction method
 
 > CalcImplement.java
-- Description:  ...
+- Description: Created a method to override the abstraction method of Calc.class
 
 > TestAnonymousInnerCalc.java
-- Description:  ...
+- Description: Created an Anonymous Inner Class to override the method of "a class" or "an interface". 
 
 > SpeedLimits.java
-- Description:  ...
+- Description: Created a Functional Interface - Only has ONE abstraction method
 
 > SpeedLimitsImplement.java
-- Description:  ...
+- Description: Created a method to override the abstraction method of SpeedLimits.class
 
 > TestAnonymousInnerSpeedLimits.java
-- Description:  ...
+- Description: This sample code we introduce how to implement the abstraction method by "Anonymous Inner Class" and "Lambda Expression"
 
-> TestAnonymousInnerCalc.java.
-- Description:  ...
+> TestAnonymousInnerSpeedLimitsByPredicate.java.
+- Description: This sample code we introduce how to implement the abstraction method by "Anonymous Inner Class" and "Lambda Expression" with Java 1.8 released API - IntPredicate and IntConsumer. 
+
 
 
 
