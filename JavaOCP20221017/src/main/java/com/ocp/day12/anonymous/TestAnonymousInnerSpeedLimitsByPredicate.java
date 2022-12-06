@@ -40,6 +40,7 @@ public class TestAnonymousInnerSpeedLimitsByPredicate {
 			*/
 		};				
 		
+
 		for (int speed : speedPerMiles) {
 			
 			if (overSpeedLimits4Anonymous.test(speed)) {
