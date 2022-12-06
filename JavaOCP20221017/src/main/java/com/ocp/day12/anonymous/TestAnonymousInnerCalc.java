@@ -18,7 +18,7 @@ public class TestAnonymousInnerCalc {
 			In case of anonymous inner classes, we "declare" and 
 			"instantiate" them at the same time. 
 		
-			Generally, they are used whenever you need to override the method of 
+			Generally speaking, they are used whenever you need to override the method of 
 			"a class" or "an interface". 
 		
 			The syntax of an anonymous inner class is as follows:			
