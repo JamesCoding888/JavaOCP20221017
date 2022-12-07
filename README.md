@@ -766,6 +766,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > PredicateDemo.java
 - Description:  ...
 
+> FunctionDemo.java
+- Description:  ...
+
+> SupplierDemo.java
+- Description:  ...
+
+
 
 
 ------------------------------------------------------------------------------
