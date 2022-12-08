@@ -663,8 +663,14 @@ For the sake of designing an abstraction class, you may have many requirements f
 - Description:  Tuna.class is subclass of Flavors.class. While you initiate the object of Tuna, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 Observer Pattern (CipherText for RecipientCommuincation):
-1. Following sample codes of Observer Pattern for your information:
+1. Following sample codes of Observer Pattern and UML for your information:
 
+	<img width="503" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
+
+
+
+
+	
 > Observer.java
 - Description:  ...
 
@@ -765,6 +771,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 > PredicateDemo.java
 - Description:  ...
+
+> FunctionDemo.java
+- Description:  ...
+
+> SupplierDemo.java
+- Description:  ...
+
 
 
 
