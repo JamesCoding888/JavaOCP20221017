@@ -1,6 +1,7 @@
 package com.ocp.day13;
 
 import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 public class FunctionDemo {
 
@@ -26,24 +27,18 @@ public class FunctionDemo {
 		
 		
 		/*
-		    // Returns a composed function that first applies this function to
-		    // its input, and then applies the {@code after} function to the result.
-		    // If evaluation of either function throws an exception, it is relayed to
-		    // the caller of the composed function.
-		    
-		    // @param <V> the type of output of the {@code after} function, and of the
-		    //           composed function
-		    // @param after the function to apply after this function is applied
-		    // @return a composed function that first applies this function and then
-		    // applies the {@code after} function
-		    // @throws NullPointerException if after is null
-		    
-		    default <V> BiFunction<T, U, V> andThen(Function<? super R, ? extends V> after) {
-		        Objects.requireNonNull(after);
-		        return (T t, U u) -> after.apply(apply(t, u));
-		    }
+		   @FunctionalInterface
+		   public interface BiFunction<T, U, R> {
+
+				// Applies this function to the given arguments.
+				     
+				// @param t the first function argument
+				// @param u the second function argument
+				// @return the function result			     
+				R apply(T t, U u);			
+			}
 	    */
-		BiFunction<String, Integer, Double> biFunction = (String name, Integer length) -> {
+		BiFunction<String, Integer, Double> biFunction4Area = (String name, Integer length) -> {
 			
 			double area = 0.0;
 			
@@ -61,8 +56,31 @@ public class FunctionDemo {
 			return area;
 		};
 		
-		System.out.println("Area of Square: " + biFunction.apply("Square", 10));
-		System.out.println("Circular area: " + biFunction.apply("Circular", 10));
+		System.out.println("Area of Square: " + biFunction4Area.apply("Square", 10));
+		System.out.println("Circular area: " + biFunction4Area.apply("Circular", 10));
+
+		BiFunction<Double, Double, Double> biFunction4BMI = (Double height, Double weight) -> {
+			Double BMI = 0.0;
+			BMI =  weight / Math.pow(height / 100, 2);
+			return BMI;
+		};
+		
+		BiFunction<Double, Double, Double> biFunction4BMIShorthand = (Double height, Double weight) -> (weight / Math.pow(height / 100, 2));
+		
+		System.out.println("BMI: " + biFunction4BMI.apply(180.0, 80.0));
+		System.out.println("BMI: " + biFunction4BMIShorthand.apply(180.0, 80.0));
+		
+		
+		/*	 		
+	 		Since interface of BinaryOperator inherits interface of BiFunction, developer could implement the abstraction method of BiFunction 
+	 		even BinaryOperator originally have neither.	
+	 		
+	 		請讀者留意，BinaryOperator 介面無此抽象方法 "R apply(T t, U u);"，但因 BinaryOperator 繼承 BiFunction 介面，因此覆寫其抽象方法
+		*/
+		
+		BinaryOperator<Double> binaryOperator = (height, weight) -> weight / Math.pow(height / 100, 2);			
+		System.out.println("BMI: " + binaryOperator.apply(180.0, 80.0));
+		
 		
 	}
 }
