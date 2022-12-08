@@ -665,7 +665,7 @@ For the sake of designing an abstraction class, you may have many requirements f
 Observer Pattern (CipherText for RecipientCommuincation):
 1. Following sample codes of Observer Pattern and UML for your information:
 
-	<img width="1373" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
+	<img width="503" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
 
 
 
