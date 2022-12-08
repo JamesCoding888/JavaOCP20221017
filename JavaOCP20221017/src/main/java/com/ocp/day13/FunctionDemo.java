@@ -73,9 +73,13 @@ public class FunctionDemo {
 		
 		/*	 		
 	 		Since interface of BinaryOperator inherits interface of BiFunction, developer could implement the abstraction method of BiFunction 
-	 		even BinaryOperator originally have neither.	
+	 		even BinaryOperator originally have neither.
 	 		
-	 		請讀者留意，BinaryOperator 介面無此抽象方法 "R apply(T t, U u);"，但因 BinaryOperator 繼承 BiFunction 介面，因此覆寫其抽象方法
+	 		By the way, if you expected to override the method of interface from BinaryFunction, suggested to use object type of BinaryOperator, 
+	 		then you could override the abstraction method from both of interface, at same time.
+	 			 		
+	 		請讀者留意，BinaryOperator 介面無此抽象方法 "R apply(T t, U u);"，但因 BinaryOperator 繼承 BiFunction 介面，因此覆寫其抽象方法。	 		
+	 		順帶一提，若實作 BinaryFunction 介面的抽象方法，建議物件型別改用 BinaryOperator，如此可同時擁有覆寫 BinaryOperator 和 BinaryFunction 介面的方法 
 		*/
 		
 		BinaryOperator<Double> binaryOperator = (height, weight) -> weight / Math.pow(height / 100, 2);			
