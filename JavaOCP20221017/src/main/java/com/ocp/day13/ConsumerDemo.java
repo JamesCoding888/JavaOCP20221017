@@ -56,3 +56,12 @@ public class ConsumerDemo {
 		objIntConsumer.accept("David", 18);
 	}
 }
+
+/*
+	 Console:
+	 	Consumer - My name is David
+		Consumer - Sum of all elements: 310
+		Consumer - Sum of all elements (Shorthand): 310
+		BiConsumer - My name is David, Age: 18
+		ObjIntConsumer - My name is David, Age: 18
+*/

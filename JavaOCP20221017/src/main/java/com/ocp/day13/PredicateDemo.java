@@ -69,3 +69,10 @@ public class PredicateDemo {
 		
 	}
 }
+
+/*
+	 Console:
+		 	Score >= 60: Pass
+		 	Score >= 60: Fail
+	 	 	The length of ID number is equal to 10? Yes
+*/

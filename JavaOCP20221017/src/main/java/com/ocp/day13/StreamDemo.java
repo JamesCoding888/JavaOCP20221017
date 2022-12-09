@@ -15,3 +15,14 @@ public class StreamDemo {
 		System.out.println("Length of \"elements >= 10\": " + intStream.count());
 	}
 }
+/*
+ Console:
+ 		6
+		9
+		10
+		11
+		14
+		Length of "elements >= 10": 3
+
+ 
+*/

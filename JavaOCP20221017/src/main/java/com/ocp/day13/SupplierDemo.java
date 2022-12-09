@@ -52,3 +52,9 @@ public class SupplierDemo {
 		
 	}
 }
+
+/*
+	Console:
+			Lambda Expression - Supplier
+			2022-12-09 | 05:45:15 | 05:45:15 Fri | 2022-12-09 PM | 2022-12-09 PM 05:45:15 Fri
+*/
