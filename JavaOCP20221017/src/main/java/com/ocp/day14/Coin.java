@@ -7,6 +7,12 @@ import java.util.function.IntPredicate;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+// The type EnumForUSCurrency cannot be the superclass of SubClass; 
+// a superclass must be a class.
+class SubClass extends EnumForUSCurrency{
+	
+	
+}
 public class Coin {
 	
 	public static void main(String[] args) {
@@ -15,7 +21,7 @@ public class Coin {
 		EnumForUSCurrency coinInNickle = EnumForUSCurrency.NICKLE;
 		EnumForUSCurrency coinInDime = EnumForUSCurrency.DIME;		
 		EnumForUSCurrency coinInQuarter = EnumForUSCurrency.QUARTER;
-
+		
 		List<EnumForUSCurrency> list = new ArrayList<>(); 
 		list.add(coinInPenny);
 		list.add(coinInNickle);
