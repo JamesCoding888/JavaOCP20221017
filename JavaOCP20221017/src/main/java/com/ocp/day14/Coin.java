@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Coin {
-
+	
 	public static void main(String[] args) {
         
 		EnumForUSCurrency coinInPenny = EnumForUSCurrency.PENNY;
@@ -20,10 +20,14 @@ public class Coin {
 		list.add(coinInPenny);
 		list.add(coinInNickle);
 		list.add(coinInDime);		
-		list.add(coinInQuarter);		
-		list.stream().forEach(coinObject -> {
+		list.add(coinInQuarter);	
+		if(list.isEmpty()) {
+			// If there is no any coinObject to be initiated, then execute the follows
+			System.out.println("Currency Out of Service");
+		} else {
+			list.stream().forEach(coinObject -> {
 
-			switch (coinObject.getValue()) {
+				switch (coinObject.getValue()) {
 				case 1:
 					System.out.println("penny: " + coinObject.getValue());
 					break;
@@ -38,8 +42,9 @@ public class Coin {
 					break;
 				default:
 					break;
-			};
-		});        
+				};
+			});
+		} 
     }
 }
 
