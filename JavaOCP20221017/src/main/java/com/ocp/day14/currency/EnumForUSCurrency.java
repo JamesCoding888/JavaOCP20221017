@@ -1,4 +1,4 @@
-package com.ocp.day14;
+package com.ocp.day14.currency;
 /*
  	Introduction of enum class:
  	1. Enum is introduced in Java 1.5 as a new type whose fields consists of a fixed set of constants 

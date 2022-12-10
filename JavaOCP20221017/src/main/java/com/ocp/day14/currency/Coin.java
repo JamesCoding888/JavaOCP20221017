@@ -1,4 +1,4 @@
-package com.ocp.day14;
+package com.ocp.day14.currency;
 
 import java.util.ArrayList;
 import java.util.Arrays;
