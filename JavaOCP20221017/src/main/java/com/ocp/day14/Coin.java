@@ -42,3 +42,11 @@ public class Coin {
 		});        
     }
 }
+
+/*
+		Console:
+				penny: 1
+				nickle: 5
+				dime: 10
+				quarter: 25
+*/
