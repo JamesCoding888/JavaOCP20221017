@@ -13,7 +13,7 @@ class SubClass extends EnumForUSCurrency{
 	
 	
 }
-public class Coin {
+public class TestCoin {
 	
 	public static void main(String[] args) {
         

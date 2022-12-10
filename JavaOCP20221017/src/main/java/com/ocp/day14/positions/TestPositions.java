@@ -1,14 +1,14 @@
-package com.ocp.day14;
+package com.ocp.day14.positions;
 
 public class TestPositions {
 	public static void main(String[] args) {
 		
-		Positions position = Positions.PG;
+		EnumPositions position = EnumPositions.PG;
 		
 		Announcement(position);
 	}
 	
-	public static void Announcement(Positions position) {
+	public static void Announcement(EnumPositions position) {
 		
 		switch(position) {
 			

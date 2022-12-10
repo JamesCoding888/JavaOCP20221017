@@ -1,7 +1,7 @@
-package com.ocp.day14;
+package com.ocp.day14.positions;
 
 // 列舉, 職位: 工讀生, 員工, 經理, 副總, 總經理
-public enum Positions {
+public enum EnumPositions {
     
 	SALES,
 	PM,
