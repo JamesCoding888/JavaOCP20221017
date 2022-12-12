@@ -69,8 +69,8 @@
 
 
 ------------------------------------------------------------------------------
-# day1 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1">Java Basic</a>
-1. Set-up environment with Eclipse Workspace
+# day1 Java Basic
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1">Set-up environment with Eclipse Workspace</a>
 2. Lesson learned of following programming:
 > Hello.java:
 - Description: To make sure the whole system of Eclipse is functional work after running on this code.
@@ -92,8 +92,8 @@
 - 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
-# day2 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day2">Java Basic: 1-D array</a> 
-1. Lesson learned of following programming for Accessibility:
+# day2 Java Basic: 1-D array 
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day2">Lesson learned of following programming for Accessibility:</a>
 > Let's talk about accessibilty of Java as following checklist. 
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
 ![image](https://user-images.githubusercontent.com/83496093/197315755-e25fed8a-5e11-420d-9f72-a5748a1fcd3b.png)
@@ -150,8 +150,8 @@
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
 ------------------------------------------------------------------------------
-# day3 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day3">Java Advanced: Application of String & Stream API</a>  
-1. Lesson learned of following programming with regards to String2Array and Stream's API:
+# day3 Java Advanced: Application of String & Stream API  
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day3">Lesson learned of following programming with regards to String2Array and Stream's API:</a>
 - Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
 - 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
 
@@ -202,8 +202,8 @@
 - Description: This session creates a "String addUtil()" for your reference.
 
 ------------------------------------------------------------------------------
-# day4 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day4">Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array</a> 
-1. Lesson learned of following programming for Array:
+# day4 Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day4">Lesson learned of following programming for Array:</a> 
 - Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
 - 本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
 
@@ -240,8 +240,8 @@
 
 
 ------------------------------------------------------------------------------
-# day5 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day5">Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API</a> 
-1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
+# day5 Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API 
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day5">This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference</a>
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
 - 此節介紹如何使用建構子將全域變數初始化
@@ -285,8 +285,8 @@
 
 
 ------------------------------------------------------------------------------
-# day6 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in</a> 
-1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
+# day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner</a> 
 
 
 
@@ -343,8 +343,8 @@
 
 
 ------------------------------------------------------------------------------
-# day7 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7">Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override</a>
-1. This lesson we give a following introduction:
+# day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7">This lesson we give a following introduction:</a>
 - 1) Inheritance
 - 2) Encapsulation
 - 3) Auto-boxing
@@ -369,7 +369,7 @@
 - Description:  ...
 - 
 
-2. This lesson we give a following introduction:
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7_2">This lesson we give a following introduction:</a>
 - 1) Inheritance
 - 2) Encapsulation
 - 3) Auto-boxing
@@ -410,8 +410,8 @@
 
 
 ------------------------------------------------------------------------------
-# day8 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance</a> 
-1. This lesson we give a following introduction:
+# day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance 
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">This lesson we give a following introduction:</a>
 ...
 
 
@@ -450,7 +450,7 @@
 
 ------------------------------------------------------------------------------
 # day9 Java Advanced: Varargs, DAO (Data Access Object), Singleton and Polymorphism
-1. Introduction the application of Varargs:
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_1">Introduction the application of Varargs:</a>
 - Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
 - 1) public String format() { ... }
 - 2) public String format(String value) { ... }
@@ -467,7 +467,7 @@
 > VarargsDemo3.java 
 - Description: 	This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for another 
 
-2. Introduction the application of DAO and Singleton:
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_1">Introduction the application of DAO and Singleton:</a>
 > Dao.java 
 - Description: The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate the application/business layer from the persistence layer (usually a relational database but could be any other persistence mechanism) using an "abstract API". Regarding the information above, it's at very beginning moment for you, since we do NOT include any "abstract API" during this lesson. But, no worry, we will review this topic at the following later day. 
 
@@ -486,7 +486,7 @@
 - Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
-3. Introduction the application of Polymorphism_1:
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_1:</a>
 - ...
 
 
@@ -508,7 +508,7 @@
 > TestPolymorphismOfAnimal.java 
 - Description: ...
 
-4. Introduction the application of Polymorphism_2:
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_2:</a>
 - This lesson you will learn a roughly design of different positions at company and some variables/methods only for specific position
 
 
@@ -543,7 +543,7 @@
 ------------------------------------------------------------------------------
 # day10 Java Advanced: Abstract and Interface
 1. Introduction of abstract:
-- 1) Abstraction can be achieved with either abstract classes or interfaces
+- 1) Abstraction can be achieved with either abstract classes or interfaces</a>
 - 2) The abstract keyword is a non-access modifier, used for classes and methods:
 - 3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 - 4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
@@ -560,7 +560,7 @@
 - 1) For security - we can hide certain details and only show the important details of an object (interface).
 - 2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
 
-4. The following sample code for your information of relationship between abstract and interface:
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day10_1">The following sample code for your information of relationship between abstract and interface:</a>
 > InterfaceAnimal.java
 - Description: Create an interface of Animal to introduce the rules of interface
 
@@ -571,13 +571,13 @@
 - Description: Create Cat.class to inherit AbstractAnimal.class, and also override the method of interfaceAnimal
 
 > Dog.java
-- Description: Create Cat.class to inherit AbstractAnimal.class, and also override the method of interfaceAnimal
+- Description: Create Dog.class to inherit AbstractAnimal.class, and also override the method of interfaceAnimal
 
 > PetStore.java
 - Description: Create PetStore.class to implement AbstractAnimal and InterfaceAnimal
 
 
-5. The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class. Please check out the following UML design Pattern.
+5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day10_2">The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class. Please check out the following UML design Pattern.</a>
 
 	<img width="438" alt="Class Diagram_Military" src="https://user-images.githubusercontent.com/83496093/204460202-efc085ac-a1d2-47f1-bb03-495fbf622803.png">
 
@@ -622,7 +622,7 @@ Decorator Pattern (A menu of Subway Order System):
 
 	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 	
-2. Following sample codes of Decorator Pattern for your information:
+2. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/decorator)">Following sample codes of Decorator Pattern for your information:</a>
 > Food.java
 - Description: The global variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
 
@@ -663,7 +663,7 @@ For the sake of designing an abstraction class, you may have many requirements f
 - Description:  Tuna.class is subclass of Flavors.class. While you initiate the object of Tuna, then the global variables of "name" (i.e., protected String name) and "price" (i.e., protected String name) will be implemented.
 
 Observer Pattern (CipherText for RecipientCommuincation):
-1. Following sample codes of Observer Pattern and UML for your information:
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/observer">Following sample codes of Observer Pattern and UML for your information:</a>
 
 	<img width="503" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
 
@@ -688,7 +688,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
-1. Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collision" from two different objects being equally.
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_2">Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collision" from two different objects being equally.</a>
 
 
 2. Sincerely recommended a Book for your reference - "Effective Java 3rd Edition". You will be even better to understand the "Hash Collision" and "hashCode algorithm".
@@ -706,7 +706,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: Outer Class, Inner Class and Anonymous
-1. Introduction of Inner class
+1. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/innerclass)">Introduction of Inner class</a>
 
 > Outer.java
 - Description:  ...
@@ -714,7 +714,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > InnerClassTest.java
 - Description:  ...
 
-2. Introduction of method-local inner class to invoke the local variable
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/methodLocal">Introduction of method-local inner class to invoke the local variable</a>
 
 > LocalVariableInvokedByInnerClass.java
 - Description: If local variable (i.e., number) expected to be invoked by Inner class, its value MUST be like characteristic as final, that is, value SHALL be constant. Please read the content of LocalVariableInvokedByInnerClass$1Inner.java, which was generated by decompiler tool, at "package: com.ocp.day12.InnerClass.method.decompiler".
@@ -726,13 +726,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > LocalVariableInvokedByInnerClassTest.java
 - Description: Test the sample code of LocalVariableInvokedByInnerClass.class
 
-3. Introduction of static Inner class
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/staticInnerClass">Introduction of static Inner class</a>
 
 > StaticInnerClassTest.java 
 > Outer.java
 - Description: Please read the content of sample code
 
-4. Introduction of Anonymous Inner Class & Lambda Expression
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/anonymous">Introduction of Anonymous Inner Class & Lambda Expression</a>
 
 > Calc.java
 - Description: Created a Functional Interface - Only has ONE abstraction method
@@ -761,7 +761,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 ------------------------------------------------------------------------------
 # day13 Java Advanced: API - IntStream, Consumer, Supplier, BiConsumer, ObjIntConsumer, Predicate, IntPredicate, BiPredicate, Function, BiFunction, UnaryOperator, BinaryOperator, IntBinaryOperator, DoubleBinaryOperator
-1. Introduction ...
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day13">Introduction ...</a>
 
 > StreamDemo.java
 - Description:  ...
