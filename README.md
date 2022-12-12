@@ -202,7 +202,7 @@
 - Description: This session creates a "String addUtil()" for your reference.
 
 ------------------------------------------------------------------------------
-# day4 Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array
+# day4 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day4">Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array</a> 
 1. Lesson learned of following programming for Array:
 - Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
 - 本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
@@ -240,7 +240,7 @@
 
 
 ------------------------------------------------------------------------------
-# day5 Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API
+# day5 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day5">Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API</a> 
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
