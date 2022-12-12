@@ -69,7 +69,7 @@
 
 
 ------------------------------------------------------------------------------
-# day1 Java Basic
+# day1 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1">Java Basic</a>
 1. Set-up environment with Eclipse Workspace
 2. Lesson learned of following programming:
 > Hello.java:
@@ -92,7 +92,7 @@
 - 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
-# day2 Java Basic: 1-D array
+# day2 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day2">Java Basic: 1-D array</a> 
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist. 
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
@@ -150,7 +150,7 @@
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
 ------------------------------------------------------------------------------
-# day3 Java Advanced: Application of String & Stream API 
+# day3 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day3">Java Advanced: Application of String & Stream API</a>  
 1. Lesson learned of following programming with regards to String2Array and Stream's API:
 - Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
 - 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
@@ -202,7 +202,7 @@
 - Description: This session creates a "String addUtil()" for your reference.
 
 ------------------------------------------------------------------------------
-# day4 Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array
+# day4 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day4">Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array</a> 
 1. Lesson learned of following programming for Array:
 - Description: The coming of sample codes of MultiArrayDemo(s) will give a lectures on the application of multiple array
 - 本次 day4 將介紹如何使用多維陣列 (eg., 一維和二維陣列) 之應用
@@ -240,7 +240,7 @@
 
 
 ------------------------------------------------------------------------------
-# day5 Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API
+# day5 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day5">Java Advanced: Introduction of Object-Oriented Programming (OOP) Patterns with including application of Stream API</a> 
 1. This lesson we give a differently Object-oriented design patterns and also create a roughly Account System from Bank for your reference
 > OO1.java 
 - Description: This lecture we would like sharing to reader about initializing the global variables by Constructor
@@ -285,7 +285,7 @@
 
 
 ------------------------------------------------------------------------------
-# day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
+# day6 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in</a> 
 1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
 
 
@@ -343,7 +343,7 @@
 
 
 ------------------------------------------------------------------------------
-# day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
+# day7 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7">Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override</a>
 1. This lesson we give a following introduction:
 - 1) Inheritance
 - 2) Encapsulation
@@ -410,7 +410,7 @@
 
 
 ------------------------------------------------------------------------------
-# day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance
+# day8 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance</a> 
 1. This lesson we give a following introduction:
 ...
 
