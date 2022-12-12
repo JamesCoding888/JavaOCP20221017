@@ -285,7 +285,7 @@
 
 
 ------------------------------------------------------------------------------
-# day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
+# day6 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in</a> 
 1. This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner
 
 
@@ -343,7 +343,7 @@
 
 
 ------------------------------------------------------------------------------
-# day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
+# day7 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7">Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override</a>
 1. This lesson we give a following introduction:
 - 1) Inheritance
 - 2) Encapsulation
@@ -410,7 +410,7 @@
 
 
 ------------------------------------------------------------------------------
-# day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance
+# day8 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance</a> 
 1. This lesson we give a following introduction:
 ...
 
