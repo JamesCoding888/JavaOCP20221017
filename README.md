@@ -69,7 +69,7 @@
 
 
 ------------------------------------------------------------------------------
-<a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1"># day1 Java Basic</a>
+# day1 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1"># Java Basic</a>
 1. Set-up environment with Eclipse Workspace
 2. Lesson learned of following programming:
 > Hello.java:
