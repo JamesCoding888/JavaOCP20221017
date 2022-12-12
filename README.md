@@ -92,7 +92,7 @@
 - 此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
-# day2 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day2>Java Basic: 1-D array</a> 
+# day2 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day2">Java Basic: 1-D array</a> 
 1. Lesson learned of following programming for Accessibility:
 > Let's talk about accessibilty of Java as following checklist. 
 - 在探討 day2 的程式碼之前，請讀者留意 Java 的讀取權限，如圖示
@@ -150,7 +150,7 @@
 - 5) Arrays.stream(name_of_ArrayObject).summaryStatistics().getMin()
 
 ------------------------------------------------------------------------------
-# day3 Java Advanced: Application of String & Stream API 
+# day3 <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day3">Java Advanced: Application of String & Stream API</a>  
 1. Lesson learned of following programming with regards to String2Array and Stream's API:
 - Description: The coming of sample codes of “StringArrayDemo(s)”, will give a guidance of reader for understanding the API of String, Array and Stream (Java 1.8).
 - 讀者可從本節 sample code - “StringArrayDemo(s)” 中，學習如何運用 String、Array 和 Stream (Java 1.8) 的 API
