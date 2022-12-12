@@ -43,6 +43,7 @@ public class NumPOJO {
 	        return hash;
 	   	}
 //   	*/
+		
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
