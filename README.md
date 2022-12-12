@@ -70,8 +70,8 @@
 
 ------------------------------------------------------------------------------
 # day1 Java Basic
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1">Set-up environment with Eclipse Workspace</a>
-2. Lesson learned of following programming:
+1. Set-up environment with Eclipse Workspace
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day1">Lesson learned of following programming:</a>
 > Hello.java:
 - Description: To make sure the whole system of Eclipse is functional work after running on this code.
 - 在 Eclipse Workspace 建立的新專案 Hello.java，並確認此程式可成功執行且印出 "Hello World"
