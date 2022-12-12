@@ -622,7 +622,7 @@ Decorator Pattern (A menu of Subway Order System):
 
 	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 	
-2. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/decorator)">Following sample codes of Decorator Pattern for your information:</a>
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/decorator">Following sample codes of Decorator Pattern for your information:</a>
 > Food.java
 - Description: The global variable of "name" and "price", we place here in the Food.class, for implement by subclass. Also, there are two methods given by abstraction, because these methods without body (so-called virtual method) are, developer expected them to be implemented. 
 
