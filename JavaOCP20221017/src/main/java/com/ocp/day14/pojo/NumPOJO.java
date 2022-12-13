@@ -27,7 +27,7 @@ public class NumPOJO {
 		}
    	*/
 	
-//	/*  2) Override the method of "public int hashCode(){ ... }"
+	/*  2) Override the method of "public int hashCode(){ ... }"
 		
 		// "The value 31 was chosen because it is an odd prime. If it were even and the multiplication overflowed, 
 	    // information would be lost, because multiplication by 2 is equivalent to shifting. 
@@ -37,14 +37,27 @@ public class NumPOJO {
 	    // Modern VMs do this sort of optimization automatically." - refer to "Effective Java (3rd Edition), Joshua Bloch"
 	
 		@Override
-	   	public int hashCode() {
-	   		int hash = 3;
-	        hash = 67 * hash + this.cash;
-	        hash = 67 * hash + (int) (Double.doubleToLongBits(this.rate) ^ (Double.doubleToLongBits(this.rate) >>> 32));
-	        return hash;
-	   	}
-//   	*/
+		public int hashCode() {
+			final int prime = 31;
+			int result = 1;
+			result = prime * result + Objects.hash(cash, rate);			
+			return result;
+		}
+	*/
+	 	
+//	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
+	 	@Override
+	 	public int hashCode() {
+	 	    int hash = 7;
+	 	    hash = 31 * hash + (int) rate;
+	 	    hash = 31 * hash + ((Integer)cash == null ? 0 : ((Integer)cash).hashCode());
+	 	    return hash;
+	 	}
+//	*/	
 		
+	
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

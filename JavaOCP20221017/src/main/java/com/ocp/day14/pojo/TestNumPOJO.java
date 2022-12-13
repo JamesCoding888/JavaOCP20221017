@@ -21,7 +21,12 @@ public class TestNumPOJO {
 	
 	Console of 2) Override the method of "public int hashCode(){ ... }":
 		
-		com.ocp.day14.pojo.NumPOJO@349b
-		com.ocp.day14.pojo.NumPOJO@5444f5ad
+		com.ocp.day14.pojo.NumPOJO@3e0
+		com.ocp.day14.pojo.NumPOJO@5444b6e2
+	
+	Console of 3) Override the method of "public int hashCode(){ ... }":
+		
+		com.ocp.day14.pojo.NumPOJO@1a47
+		com.ocp.day14.pojo.NumPOJO@1e4d
 
 */
