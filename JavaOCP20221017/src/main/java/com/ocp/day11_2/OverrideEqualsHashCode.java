@@ -60,7 +60,7 @@ public class OverrideEqualsHashCode {
 	    // The advantage of using a prime is less clear, but it is traditional. 
 	    // A nice property of 31 is that the multiplication can be replaced by a shift 
 	    // and a subtraction for better performance on some architectures: 31 * i == (i << 5) - i. 
-	    // Modern VMs do this sort of optimi- zation automatically." - refer to "Effective Java (3rd Edition), Joshua Bloch"
+	    // Modern VMs do this sort of optimization automatically." - refer to "Effective Java (3rd Edition), Joshua Bloch"
 		
 		@Override
 		public int hashCode() {
