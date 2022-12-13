@@ -702,7 +702,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 > OverrideEqualsHashCodeFunction.java
-- Description:  ...
+- Description: The method of "public int hashCode(){ ... }" being overrided, with the value of prime: 31, was chosen because it is an odd prime. 
+- If it were even and the multiplication overflowed, information would be lost, because multiplication by 2 is equivalent to shifting. The advantage of using a prime is less clear, but it is traditional. A nice property of 31 is that the multiplication can be replaced by a shift and a subtraction for better performance on some architectures: 31 * i == (i << 5) - i. Modern VMs do this sort of optimization automatically. Reference of "Effective Java (3rd Edition), Joshua Bloch
+		
+
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: Outer Class, Inner Class and Anonymous
