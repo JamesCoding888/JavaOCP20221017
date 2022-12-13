@@ -28,6 +28,7 @@ public class NumPOJO {
    	*/
 	
 //	/*  2) Override the method of "public int hashCode(){ ... }"
+		
 		// "The value 31 was chosen because it is an odd prime. If it were even and the multiplication overflowed, 
 	    // information would be lost, because multiplication by 2 is equivalent to shifting. 
 	    // The advantage of using a prime is less clear, but it is traditional. 
