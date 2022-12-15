@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-public class HashSetDemo {
+public class HashSetDemo1 {
 	public static void main(String[] args) {		
 		
 		// The element(s) of HashSet is no iteration guaranteed
@@ -180,36 +180,36 @@ public class HashSetDemo {
 		Console:
 				[80, English, 100, Chinese]
 				[Chinese, 100, English, 80]
-				Repeated element(s) NOT count it: [1, 2, 4, 5, 6, 9, 10]
-				Repeated element(s) NOT count it: [6, 10, 4, 1, 5, 2, 9]
-				Repeated element(s) count it: [6, 10, 10, 4, 1, 5, 4, 4, 2, 9]
+				Repeated element(s) NOT count it: [1, 2, 3, 4, 5, 6, 7]
+				Repeated element(s) NOT count it: [6, 1, 7, 5, 4, 2, 3]
+				Repeated element(s) count it: [6, 1, 7, 1, 5, 4, 5, 2, 7, 3]
 				element from iteratorOfloopHashSet: 1
 				element from iteratorOfloopLinkedHashSet: 6
 				element from iteratorOflist: 6
 				element from iteratorOfloopHashSet: 2
-				element from iteratorOfloopLinkedHashSet: 10
-				element from iteratorOflist: 10
-				element from iteratorOfloopHashSet: 4
-				element from iteratorOfloopLinkedHashSet: 4
-				element from iteratorOflist: 10
-				element from iteratorOfloopHashSet: 5
 				element from iteratorOfloopLinkedHashSet: 1
-				element from iteratorOflist: 4
-				element from iteratorOfloopHashSet: 6
+				element from iteratorOflist: 1
+				element from iteratorOfloopHashSet: 3
+				element from iteratorOfloopLinkedHashSet: 7
+				element from iteratorOflist: 7
+				element from iteratorOfloopHashSet: 4
 				element from iteratorOfloopLinkedHashSet: 5
 				element from iteratorOflist: 1
-				element from iteratorOfloopHashSet: 9
-				element from iteratorOfloopLinkedHashSet: 2
+				element from iteratorOfloopHashSet: 5
+				element from iteratorOfloopLinkedHashSet: 4
 				element from iteratorOflist: 5
-				element from iteratorOfloopHashSet: 10
-				element from iteratorOfloopLinkedHashSet: 9
+				element from iteratorOfloopHashSet: 6
+				element from iteratorOfloopLinkedHashSet: 2
 				element from iteratorOflist: 4
-				Result of add-up all elements from iteratorOfloopHashSet: 37
-				Result of add-up all elements from iteratorOfloopLinkedHashSet: 28
-				Result of add-up all elements from iteratorOflist: 36
-				Result of add-up all elements from sumOfloopHashSet: 37
-				Result of add-up all elements from sumOfloopLinkedHashSet: 37
-				Result of add-up all elements from sumOflist: 37
+				element from iteratorOfloopHashSet: 7
+				element from iteratorOfloopLinkedHashSet: 3
+				element from iteratorOflist: 5
+				Result of add-up all elements from iteratorOfloopHashSet: 28
+				Result of add-up all elements from iteratorOfloopLinkedHashSet: 25
+				Result of add-up all elements from iteratorOflist: 24
+				Result of add-up all elements from sumOfloopHashSet: 28
+				Result of add-up all elements from sumOfloopLinkedHashSet: 28
+				Result of add-up all elements from sumOflist: 28
 
 
 */
