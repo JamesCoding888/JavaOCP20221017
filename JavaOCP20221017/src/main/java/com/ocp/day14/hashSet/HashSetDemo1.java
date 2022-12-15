@@ -7,6 +7,10 @@ package com.ocp.day14.hashSet;
  	3. It does not guarantee that the order will remain constant over time
  	4. This class permits the null element
  	5. Repeated element(s), NOT allowable
+ 	6. The element of Iterator can only be read from the beginning to the end, 			 
+	   and also when we have already read the element, we cannot read the element repeatedly.
+		   
+		   
  	
  	Refer to the overview of Oracle as follows link: 
  	https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
