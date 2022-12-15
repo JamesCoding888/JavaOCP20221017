@@ -786,7 +786,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: HashSet, LinkedHashSet
+# day14 Java Advanced: HashSet, LinkedHashSet, Iterator
 1. Introduction of API - interface of Set 
 
 > HashSetDemo.java
