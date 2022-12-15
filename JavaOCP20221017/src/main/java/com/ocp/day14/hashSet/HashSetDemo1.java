@@ -1,13 +1,11 @@
 package com.ocp.day14.hashSet;
 
-import java.util.ArrayList;
-
 /*
  	Overview of HashSet:
- 	1. The class of HashSet implements the Set interface, backed by a hash table (actually a HashMap instance). 
+ 	1. The class of HashSet implements the Set interface, backed by a hash table (actually a HashMap instance)
  	2. It makes NO guarantees as to the iteration order of the set
- 	3. It does not guarantee that the order will remain constant over time. 
- 	4. This class permits the null element.
+ 	3. It does not guarantee that the order will remain constant over time
+ 	4. This class permits the null element
  	5. Repeated element(s), NOT allowable
  	
  	Refer to the overview of Oracle as follows link: 
@@ -15,6 +13,7 @@ import java.util.ArrayList;
  	
 */
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
