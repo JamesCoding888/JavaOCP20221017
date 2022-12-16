@@ -31,16 +31,18 @@ public class HashSetDemo3 {
         
         double total = 0;        
         for(Set<Number> elementOfLinkedHashSet4Collecting : linkedHashSet4Collecting) {
-        	// Giving a limited length of elementOfLinkedHashSet4Collecting, and 
-        	// 限制物件 (linkedHashSet4Collecting) 中的元素 (elementOfLinkedHashSet4Collecting) 長度必須為 2，才執行 if 判斷式
+        	// Giving a limited length of elementOfLinkedHashSet4Collecting by 2 elements in entries, then proceed If statements
+        	// the statement of if will allocate the 1st element to cash and 2nd element to rate
+        	// Notice here, the value of cash will be rounded to 1st decimal place
+        	// 限制物件 (linkedHashSet4Collecting) 中的元素 (elementOfLinkedHashSet4Collecting) 長度必須為 2，才執行 if 中的程式碼
         	// 將第一個元素分給 cash，第二個元素分給 rate
+        	// 注意 cash 的值會『無條件捨去』
         	if(elementOfLinkedHashSet4Collecting.size() == 2) {
         		Iterator<Number> iteratorOfLinkedHashSet4Collecting = elementOfLinkedHashSet4Collecting.iterator();
         		int cash = iteratorOfLinkedHashSet4Collecting.next().intValue();
         		double rate = iteratorOfLinkedHashSet4Collecting.next().doubleValue();        		
         		double result = cash * rate;
-        		total += result;
-        		       	
+        		total += result;        		       	
         	}        	        	
         }
         System.out.println(total);
