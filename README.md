@@ -786,18 +786,26 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: HashSet, LinkedHashSet, Iterator
-1. Introduction of API - interface of Set 
+# day14 Java Advanced: HashSet, LinkedHashSet, Iterator and HashCode
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14">Introduction of API - interface of Set</a> 
 
-> HashSetDemo.java
-- Description:  Giving a sample code to overview the application of HashSet
-
+> HashSetDemo1.java
+- Description:  Giving a sample code to overview the application of HashSet and LinkedHashSet
 
 > HashSetDemo2.java
 - Description: In this session, you will learn how to remove the element by Iterator and calculate the total scores by Iterator and Stream API
 
+> HashSetDemo3.java
+- Description: Application of LinkedHashSet
 
+> NumPOJO.java
+- Description: The NumPOJO.java with overriding the method of hashCode but neither of NumNonPOJOWithoutHashCode.java, are implemented by TestNumPOJO.java. You will see the consoles are different because of method of hashCode. Please refer to the content. 
 
+> NumNonPOJOWithoutHashCode.java
+- Description:
+
+> TestNumPOJO.java
+- Description:
 
 ------------------------------------------------------------------------------
 # day15 Java Advanced: Exception
