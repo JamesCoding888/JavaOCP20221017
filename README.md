@@ -801,7 +801,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > TestPositions.java
 - Description:
 
-2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/hashSet">Introduction of API - interface of Set</a> 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/hashSet">Introduction of interface of Set</a> 
 
 > HashSetDemo1.java
 - Description:  Giving a sample code to overview the application of HashSet and LinkedHashSet
