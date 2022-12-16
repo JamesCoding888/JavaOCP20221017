@@ -8,12 +8,18 @@ package com.ocp.day14.hashSet;
  	4. This class permits the null element
  	5. Repeated element(s), NOT allowable
  	6. The element of Iterator can only be read from the beginning to the end, 			 
-	   and also when we have already read the element, we cannot read the element repeatedly.
-		   
-		   
+	   and also when we have already read the element, we cannot read the element repeatedly
+	
+	Overview of LinkedHashSet:	   
+	1. Hash table and linked list implementation of the Set interface, with predictable iteration order
+	   LinkedHashSet implementation differs from HashSet in that it maintains a doubly-linked list running through all of its entries
+	2. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
+	3. The element(s) of LinkedHashSet is iteration guaranteed
+	4. Repeated element(s) NOT allowable	   
  	
  	Refer to the overview of Oracle as follows link: 
  	https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
+ 	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashSet.html
  	
 */
 
