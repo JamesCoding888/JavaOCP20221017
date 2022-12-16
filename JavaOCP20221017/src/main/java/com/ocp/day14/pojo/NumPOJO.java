@@ -45,7 +45,7 @@ public class NumPOJO {
 		}
 	*/
 	 	
-//	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
+	/*	3) Standard implementations for overriding the method of "public int hashCode(){ ... }"
 	 	@Override
 	 	public int hashCode() {
 	 	    int hash = 7;
@@ -53,8 +53,17 @@ public class NumPOJO {
 	 	    hash = 31 * hash + ((Integer)cash == null ? 0 : ((Integer)cash).hashCode());
 	 	    return hash;
 	 	}
-//	*/	
-		
+	*/	
+	 	
+//	/*	4) Standard implementations for overriding the method of "public int hashCode(){ ... }"
+	    @Override
+	    public int hashCode() {
+	        int hash = 3;
+	        hash = 67 * hash + this.cash;
+	        hash = 67 * hash + (int) (Double.doubleToLongBits(this.rate) ^ (Double.doubleToLongBits(this.rate) >>> 32));
+	        return hash;
+	    }
+//	*/		
 	
 	
 	
