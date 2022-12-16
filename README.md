@@ -812,7 +812,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashSetDemo3.java
 - Description: Application of LinkedHashSet
 
-3. https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/pojo>Introduction of POJO with application HashSet and LinkedHashSet</a>
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/pojo">Introduction of POJO with application HashSet and LinkedHashSet</a>
 
 > NumPOJO.java
 - Description: The NumPOJO.java with overriding the method of hashCode but neither of NumNonPOJOWithoutHashCode.java, are implemented by TestNumPOJO.java. You will see the consoles are different because of method of hashCode. For more detail info., please get into the programming of hyper-link above.
