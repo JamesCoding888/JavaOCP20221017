@@ -786,14 +786,15 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: HashSet, LinkedHashSet
+# day14 Java Advanced: HashSet, LinkedHashSet, Iterator
 1. Introduction of API - interface of Set 
 
 > HashSetDemo.java
 - Description:  Giving a sample code to overview the application of HashSet
 
 
-> 
+> HashSetDemo2.java
+- Description: In this session, you will learn how to remove the element by Iterator and calculate the total scores by Iterator and Stream API
 
 
 
