@@ -13,6 +13,7 @@ public class HashSetDemo3 {
 		Set<Number> linkedHashSet1 = new LinkedHashSet<>();
         Set<Number> linkedHashSet2 = new LinkedHashSet<>();
         Set<Number> linkedHashSet3 = new LinkedHashSet<>();
+        // 
         linkedHashSet1.add(7.8);
         linkedHashSet1.add(8.7);
         linkedHashSet2.add(6.9);
