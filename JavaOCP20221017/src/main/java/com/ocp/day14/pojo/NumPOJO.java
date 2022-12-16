@@ -95,11 +95,11 @@ public class NumPOJO {
 		this.rate = rate;
 	}
 	
-	/*	For checking the result of hashCode, please hide the following "public String toString(){ ... }"
+//	/*	For checking the result of hashCode, please hide the following "public String toString(){ ... }"
 		
 		@Override
 		public String toString() {
 			return "num [cash=" + cash + ", rate=" + rate + "]";
 		} 
-	*/	
+//	*/	
 }

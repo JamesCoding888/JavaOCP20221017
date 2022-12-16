@@ -1,17 +1,36 @@
 package com.ocp.day14.pojo;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class TestNumPOJO {
-	
 	public static void main(String[] args) {
 		
-		NumPOJO numPOJO1 = new NumPOJO();
-		NumPOJO numPOJO2 = new NumPOJO(100, 30.28);
-		System.out.println(numPOJO1);
-		System.out.println(numPOJO2);		
+		Set<NumPOJO> listkedHashSet1 = new LinkedHashSet<>();
+		listkedHashSet1.add(new NumPOJO(100, 0.5));
+		listkedHashSet1.add(new NumPOJO(100, 0.5));
+		listkedHashSet1.add(new NumPOJO(500, 0.2));
+		listkedHashSet1.add(new NumPOJO(1000, 0.1));
+        System.out.println("NumPOJO :" + listkedHashSet1);
+ 
+        double sum1 = listkedHashSet1.stream()
+                         		     .mapToDouble((NumPOJO numPOJO) -> numPOJO.getCash() * numPOJO.getRate())
+                         		     .sum();
+        System.out.println("NumPOJO :" + sum1);
 		
+        Set<NumNonPOJOWithoutHashCode> listkedHashSet2 = new LinkedHashSet<>();
+		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(100, 0.5));
+		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(100, 0.5));
+		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(500, 0.2));
+		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(1000, 0.1));
+        System.out.println("NumNonPOJOWithoutHashCode: " + listkedHashSet2);
+        // Please remove all methods of "public int hashCode(){ ... } 
+        double sum2 = listkedHashSet2.stream()
+                         		     .mapToDouble((NumNonPOJOWithoutHashCode numNonPOJOWithoutHashCode) -> numNonPOJOWithoutHashCode.getCash() * numNonPOJOWithoutHashCode.getRate())
+                         		     .sum();
+        System.out.println("NumNonPOJOWithoutHashCode: " + sum2);
 	}
 }
-
 
 /*	 
 
@@ -34,6 +53,14 @@ public class TestNumPOJO {
 				
 		com.ocp.day14.pojo.NumPOJO@349b
 		com.ocp.day14.pojo.NumPOJO@5444f5ad
+	
+	Console of 5) With overriding hashCode or NOT 
+		
+		NumPOJO :[num [cash=100, rate=0.5], num [cash=500, rate=0.2], num [cash=1000, rate=0.1]]
+		NumPOJO :250.0
+		NumNonPOJOWithoutHashCode: [num [cash=100, rate=0.5], num [cash=100, rate=0.5], num [cash=500, rate=0.2], num [cash=1000, rate=0.1]]
+		NumNonPOJOWithoutHashCode: 300.0
+	
 
 
 */
