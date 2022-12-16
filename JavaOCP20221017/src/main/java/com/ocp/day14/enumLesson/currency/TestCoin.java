@@ -1,4 +1,4 @@
-package com.ocp.day14.currency;
+package com.ocp.day14.enumLesson.currency;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.ocp.day14.positions;
+package com.ocp.day14.enumLesson.positions;
 
 public class TestPositions {
 	public static void main(String[] args) {
@@ -53,3 +53,11 @@ public class TestPositions {
 		}
 	}
 }
+
+
+/*
+	
+	Console:
+			PG
+			
+*/
