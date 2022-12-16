@@ -789,7 +789,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 # day14 Java Advanced: HashSet, LinkedHashSet, Iterator
 1. Introduction of API - interface of Set 
 
-> HashSetDemo.java
+> HashSetDemo1.java
 - Description:  Giving a sample code to overview the application of HashSet
 
 > HashSetDemo2.java
