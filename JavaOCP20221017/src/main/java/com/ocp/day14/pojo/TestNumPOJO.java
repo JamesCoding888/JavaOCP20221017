@@ -23,8 +23,10 @@ public class TestNumPOJO {
 		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(100, 0.5));
 		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(500, 0.2));
 		listkedHashSet2.add(new NumNonPOJOWithoutHashCode(1000, 0.1));
-        System.out.println("NumNonPOJOWithoutHashCode: " + listkedHashSet2);
-        // Please remove all methods of "public int hashCode(){ ... } 
+
+		// Please remove all methods of "public int hashCode(){ ... }
+        // Please see the console of following println, you will find the result is violation of specification of Set
+		System.out.println("NumNonPOJOWithoutHashCode: " + listkedHashSet2);
         double sum2 = listkedHashSet2.stream()
                          		     .mapToDouble((NumNonPOJOWithoutHashCode numNonPOJOWithoutHashCode) -> numNonPOJOWithoutHashCode.getCash() * numNonPOJOWithoutHashCode.getRate())
                          		     .sum();
