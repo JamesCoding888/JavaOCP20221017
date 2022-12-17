@@ -579,7 +579,7 @@
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day10_2">The following sample code for your information of how to design abstract class(es) to inherit interface class, and also each of abstract method or actual method being overrided by another class(es) or current class. Please check out the following UML design Pattern.</a>
 
-	<img width="438" alt="Class Diagram_Military" src="https://user-images.githubusercontent.com/83496093/204460202-efc085ac-a1d2-47f1-bb03-495fbf622803.png">
+	<img width="203" alt="Class Diagram_Military" src="https://user-images.githubusercontent.com/83496093/204460202-efc085ac-a1d2-47f1-bb03-495fbf622803.png">
 
 
 
@@ -620,7 +620,7 @@ Decorator Pattern (A menu of Subway Order System):
 
 1. The decorator pattern as following SubwayUML below:
 
-	<img width="503" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
+	<img width="203" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 	
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/decorator">Following sample codes of Decorator Pattern for your information:</a>
 > Food.java
@@ -665,7 +665,7 @@ For the sake of designing an abstraction class, you may have many requirements f
 Observer Pattern (CipherText for RecipientCommuincation):
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/observer">Following sample codes of Observer Pattern and UML for your information:</a>
 
-	<img width="503" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
+	<img width="203" alt="ObserverUML" src="https://user-images.githubusercontent.com/83496093/206376348-f554bbc5-910a-4c9f-8bbd-50f1a249f2a8.png">
 
 
 
@@ -814,10 +814,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/pojo">Introduction of POJO with application HashSet and LinkedHashSet</a>
 
-- Notice here, the description of POJO is NOT READY !!! 請後續補上
-
 > NumPOJO.java
-- Description: The NumPOJO.java with overriding the method of hashCode but neither of NumNonPOJOWithoutHashCode.java, are implemented by TestNumPOJO.java. You will see the consoles are different because of method of hashCode. For more detail info., please get into the programming of hyper-link above.
+- Description: The NumPOJO.java with overriding the method of hashCode but neither of NumNonPOJOWithoutHashCode.java, are implemented by TestNumPOJO.java. You will see the different consoles because of running the each of hashCode, respectively. For more detail info., please get into the programming of hyper-link above.
 
 > NumNonPOJOWithoutHashCode.java
 - Description: Same as description of NumPOJO.java.
@@ -827,7 +825,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: Exception
+# day15 Java Advanced: ...
 
 
 
@@ -840,7 +838,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day17 Java Advanced: ... , ... Coming Soon
+# day17 Java Advanced: Exception
+
+> HandleNumberException.java
+- Description:
+
+> TestException.java
+- Description
 
 
 
