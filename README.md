@@ -825,7 +825,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: Exception
+# day15 Java Advanced: ...
 
 
 
@@ -838,7 +838,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day17 Java Advanced: ... , ... Coming Soon
+# day17 Java Advanced: Exception
+
+> HandleNumberException.java
+- Description:
+
+> TestException.java
+- Description
 
 
 
