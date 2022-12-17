@@ -1,23 +1,47 @@
 package com.ocp.day14.pojo;
+/*
+ 	Description of POJO (Plain old Java object):
+	 	
+	 	1. The POJO class must be public and should not extend predefined classes.    
+		
+		2. It should not implement prespecified interfaces.     
+		
+		3. It should not have any prespecified annotation.       
+		
+		4. The object in the POJO Class can have any access modifies such as private, public, protected. But, all instance variables should be private for 
+		   improved security of the project.
+		
+		5. It must have a public default constructor.
+		
+		6. It may have the arguments constructor.
+	
+		7. All objects must have some public Getters and Setters to access the object values by other Java Programs.
+	
+*/
+
 
 import java.util.Objects;
 
+// Please see the description above, for 1, 2 and 3 
 public class NumPOJO {
+	// Please see the description above, at 4
 	private int cash;
 	private double rate;
 	
+	// Please see the description above, at 5
 	public NumPOJO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+	// Please see the description above, at 6
 	public NumPOJO(int cash, double rate) {
 		super();
 		this.cash = cash;
 		this.rate = rate;
 	}
 	
-	   
+	// Please see the description above, at 7
    
    	/*  1) Override the method of "public int hashCode(){ ... }"
    	 
