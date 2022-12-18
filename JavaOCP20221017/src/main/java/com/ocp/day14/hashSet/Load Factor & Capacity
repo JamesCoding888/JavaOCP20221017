@@ -1,0 +1,23 @@
+100 * 75% = 75 75 (Threshold)
+			175 * 75% = 131.25 (Threshold)
+				306.25 (=175 + 131.25) * 75% = 229.6875 (Threshold)
+							535.9375 (=229.6875 + 306.25) * 75% = 401.9531 (Threshold)
+												(535.9375 + 401.9531) * 75% = 703.4179 (Threshold)
+														(703.4179 + 937.8906 ) * 75% = 1,230.9814 (Threshold)
+											      			2,872.2899 (=1,641.3085  + 1,230.9814) * 75% = 2,154.2174 (Threshold)
+											      			
+											      			
+Index lookup costs:
+The database server incurs additional costs when it finds a row through an index. 
+The index is stored on disk, and its pages must be read into memory with the data pages that contain the desired rows.
+
+An index lookup works down from the root page to a leaf page. 
+The root page, because it is used so often, is almost always found in a page buffer. 
+The odds of finding a leaf page in a buffer depend on the size of the index, the form of the query, and the frequency of column-value duplication. 
+If each value occurs only once in the index and the query is a join, each row to be joined requires a non-sequential lookup into the index, followed by a non-sequential access to the associated row in the table.
+
+
+
+Please refer to the link: 
+-> https://www.baeldung.com/java-hashset
+-> https://www.ibm.com/docs/en/informix-servers/14.10?topic=query-index-lookup-costs											      			
