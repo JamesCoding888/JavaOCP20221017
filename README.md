@@ -786,7 +786,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day14 Java Advanced: Enum , HashSet, LinkedHashSet, Iterator and HashCode
+# day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/enumLesson">Introduction of Enum</a>
 > TestCoin.java
@@ -804,7 +804,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/hashSet">Introduction of Set</a> 
 
 > HashSetDemo1.java
-- Description:  Giving a sample code to overview the application of HashSet and LinkedHashSet
+- Description:  Giving a sample code to overview the application of HashSet, LinkedHashSet and LinkedList
 
 > HashSetDemo2.java
 - Description: In this session, you will learn how to remove the element by Iterator and calculate the total scores by Iterator and Stream API
