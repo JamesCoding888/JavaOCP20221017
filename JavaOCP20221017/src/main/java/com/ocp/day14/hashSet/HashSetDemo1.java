@@ -23,6 +23,7 @@ package com.ocp.day14.hashSet;
 	8. Notice that this implementation is NOT synchronized (i.e., not thread-safe). If Multiple-threads access a hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 
 	   This is Typically accomplished by Synchronizing on some object that naturally Encapsulates the set. 
 	   If NO such object EXISTS, the set should be "wrapped" using the "Collections.synchronizedSet" method.
+	   This is BEST Done at Creation Time, to Prevent Accidental Unsynchronized access to the set
 	   
 	   		Set s = Collections.synchronizedSet(new HashSet(...));
 	   
@@ -32,7 +33,7 @@ package com.ocp.day14.hashSet;
 
 	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
 	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
-	   the fail-fast behavior of iterators should be used only to detect bugs.
+	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
 
 
 	Overview of LinkedHashSet:	   
@@ -42,11 +43,54 @@ package com.ocp.day14.hashSet;
 	3. The element(s) of LinkedHashSet is iteration guaranteed
 	4. This class permits the null element
 	5. Repeated element(s) NOT allowable
+	6. LinkedHashSet provides constant-time performance for the basic operations (add, contains and remove), assuming the hash function disperses elements properly among the buckets. 
+	   Performance is likely to be just slightly below that of HashSet (super-class of LinkedHashSet), due to the added Expense of Maintaining the linked list, with one exception: Iteration over a LinkedHashSet requires time proportional to the SIZE of the set, regardless of LinkedHashSet's Capacity. 
+	   Iteration over a HashSet is likely to be MORE Expensive, requiring time proportional to its Capacity.
+	
+	7. A linked hash set has two parameters that affect its performance: 
+	   (1) Initial Capacity and (2) Load Factor - They are defined Precisely AS for HashSet. 
+	   Notice here, that the Penalty of LinkedHashSet for choosing an excessively high value for initial capacity is Less Severe for this class of LinkedHashSet than for HashSet, as iteration times for this class (i.e., LinkedHashSet) are Unaffected by Capacity.
+	
+	8. Note that this implementation is NOT synchronized. If Multiple-threads access a linked hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 	
+	   This is Typically accomplished by Synchronizing on some object that naturally Encapsulates the set. 
+	   If NO such object EXISTS, the set should be "wrapped" using the "Collections.synchronizedSet" method.
+	   This is BEST Done at Creation Time, to Prevent Accidental Unsynchronized access to the set
+	   
+	   		Set s = Collections.synchronizedSet(new HashSet(...));
+	 
+	   The iterators returned by this class's iterator method are fail-fast: 
+	   if the set is modified at any time after the iterator is created, in any way except through the iterator's own remove method, the Iterator throws a ConcurrentModificationException. 
+	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
+
+	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
+	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
+	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+	
+	
+	
 	
 	Overview of LinkedList:	   
-	1. Doubly-linked list implementation of the List and Deque interfaces. Implements all optional list operations, and permits all elements (including null).
-	2. All of the operations perform as could be expected for a doubly-linked list. Operations that index into the list will traverse the list from the beginning or the end, whichever is closer to the specified index.
-	3. Note that this implementation is not synchronized. If multiple threads access a linked list concurrently, and at least one of the threads modifies the list structurally, it must be synchronized externally. (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) This is typically accomplished by synchronizing on some object that naturally encapsulates the list. If no such object exists, the list should be "wrapped" using the Collections.synchronizedList method. This is best done at creation time, to prevent accidental unsynchronized access to the list:
+	1. Doubly-linked list implementation of the List and Deque interfaces 
+	2. LinkedList implements all Optional list operations 
+	3. LinkedList permits all elements (including null)
+	4. All of the operations perform as could be expected for a doubly-linked list. 
+	5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the Specified INDEX.
+	3. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
+	   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) 
+	   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
+	   If NO such object exists, the list should be "wrapped" using the Collections.synchronizedList method. 
+	   This is Best Done at Creation Time, to Prevent Accidental Unsynchronized access to the list:
+	  	
+	   		List list = Collections.synchronizedList(new LinkedList(...));
+
+	   The iterators returned by this class's iterator and listIterator methods are fail-fast: if the list is structurally modified at any time after the iterator is created, in any way except through the Iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException. 
+	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
+
+	   Note that the fail-fast behavior of an iterator CANNOT be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of Unsynchronized Concurrent Modification. 
+	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. 
+	   Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
+	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+
 
 
 
@@ -54,6 +98,7 @@ package com.ocp.day14.hashSet;
  	Refer to the overview of Oracle as follows link: 
  	https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
  	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashSet.html
+ 	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
  	
 */
 
