@@ -36,7 +36,8 @@ package com.ocp.day14.hashSet;
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
 
 
-	Overview of LinkedHashSet:	   
+	Overview of LinkedHashSet:	
+	   
 	1. Hash table and linked list implementation of the Set interface, with predictable iteration order
 	   LinkedHashSet implementation differs from HashSet in that it maintains a doubly-linked list running through all of its entries
 	2. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
@@ -75,7 +76,7 @@ package com.ocp.day14.hashSet;
 	3. LinkedList permits all elements (including null)
 	4. All of the operations perform as could be expected for a doubly-linked list. 
 	5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the Specified INDEX.
-	3. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
+	6. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
 	   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) 
 	   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
 	   If NO such object exists, the list should be "wrapped" using the Collections.synchronizedList method. 
@@ -83,7 +84,8 @@ package com.ocp.day14.hashSet;
 	  	
 	   		List list = Collections.synchronizedList(new LinkedList(...));
 
-	   The iterators returned by this class's iterator and listIterator methods are fail-fast: if the list is structurally modified at any time after the iterator is created, in any way except through the Iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException. 
+	   The iterators returned by this class's iterator and listIterator methods are fail-fast: 
+	   if the list is structurally modified at any time after the iterator is created, in any way except through the Iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException. 
 	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
 
 	   Note that the fail-fast behavior of an iterator CANNOT be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of Unsynchronized Concurrent Modification. 
