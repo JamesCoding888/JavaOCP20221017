@@ -67,23 +67,22 @@ public class HashSetDemo1 {
 		// Let's create a for-loop with running 10 times for collecting elements by HashSet
 		Set loopHashSet = new HashSet();
 		Set loopLinkedHashSet = new LinkedHashSet();
-		List list = new ArrayList();
-		ListIterator listIterator = new LinkedList().listIterator();
+		List loopLinkedList = new LinkedList();
 		for(int n=1 ; n<=10 ; n++) {
 			int number = new Random().nextInt(10)+1;
 			loopHashSet.add(number);
 			loopLinkedHashSet.add(number);						
-			list.add(number);
+			loopLinkedList.add(number);
 		}
 		
 		System.out.println("Repeated element(s) NOT count it: " + loopHashSet);
 		System.out.println("Repeated element(s) NOT count it: " + loopLinkedHashSet);
-		System.out.println("Repeated element(s) count it: " + list);		
+		System.out.println("Repeated element(s) count it: " + loopLinkedList);		
 		
 		// Iterator 
 		Iterator iteratorOfloopHashSet = loopHashSet.iterator();
 		Iterator iteratorOfloopLinkedHashSet = loopLinkedHashSet.iterator();
-		Iterator iteratorOflist = list.iterator();
+		Iterator iteratorOflist = loopLinkedList.iterator();
 		
 		while(true) {
 			if(iteratorOfloopHashSet.hasNext()) {
@@ -114,7 +113,7 @@ public class HashSetDemo1 {
 		
 		iteratorOfloopHashSet = loopHashSet.iterator();		
 		iteratorOfloopLinkedHashSet = loopLinkedHashSet.iterator();
-		iteratorOflist = list.iterator();		
+		iteratorOflist = loopLinkedList.iterator();		
 		Integer sumOfiteratorOfloopHashSet = 0;
 		Integer sumOfiteratorOfloopLinkedHashSet = 0;
 		Integer sumOfiteratorOflist = 0;
@@ -175,14 +174,14 @@ public class HashSetDemo1 {
 													  .mapToInt(next -> Integer.valueOf(next.toString())) // Object downcasting to String, then int
 									                  .sum();
 					  
-		int sumOflist = loopLinkedHashSet.stream()
-										 .filter((Object next) -> next instanceof Integer)
-										 .mapToInt(next -> Integer.valueOf(next.toString())) // Object downcasting to String, then int
-										 .sum();
+		int sumOfloopLinkedList = loopLinkedList.stream()
+											    .filter((Object next) -> next instanceof Integer)
+											    .mapToInt(next -> Integer.valueOf(next.toString())) // Object downcasting to String, then int
+											    .sum();
 		
 		System.out.println("Result of add-up all elements from sumOfloopHashSet: " + sumOfloopHashSet);
 		System.out.println("Result of add-up all elements from sumOfloopLinkedHashSet: " + sumOfloopLinkedHashSet);
-		System.out.println("Result of add-up all elements from sumOflist: " + sumOflist);
+		System.out.println("Result of add-up all elements from sumOflist: " + sumOfloopLinkedList);
 				
 	}
 }
@@ -192,39 +191,34 @@ public class HashSetDemo1 {
 		Console:
 				[80, English, 100, Chinese]
 				[Chinese, 100, English, 80]
-				Repeated element(s) NOT count it: [1, 2, 3, 4, 5, 7, 8, 10]
-				Repeated element(s) NOT count it: [2, 3, 7, 5, 10, 4, 8, 1]
-				Repeated element(s) count it: [2, 3, 7, 7, 5, 10, 4, 4, 8, 1]
+				Repeated element(s) NOT count it: [1, 2, 4, 6, 7, 10]
+				Repeated element(s) NOT count it: [6, 7, 4, 1, 2, 10]
+				Repeated element(s) count it: [6, 6, 7, 6, 4, 1, 2, 2, 10, 1]
 				element from iteratorOfloopHashSet: 1
-				element from iteratorOfloopLinkedHashSet: 2
-				element from iteratorOflist: 2
+				element from iteratorOfloopLinkedHashSet: 6
+				element from iteratorOflist: 6
 				element from iteratorOfloopHashSet: 2
-				element from iteratorOfloopLinkedHashSet: 3
-				element from iteratorOflist: 3
-				element from iteratorOfloopHashSet: 3
 				element from iteratorOfloopLinkedHashSet: 7
-				element from iteratorOflist: 7
+				element from iteratorOflist: 6
 				element from iteratorOfloopHashSet: 4
-				element from iteratorOfloopLinkedHashSet: 5
-				element from iteratorOflist: 7
-				element from iteratorOfloopHashSet: 5
-				element from iteratorOfloopLinkedHashSet: 10
-				element from iteratorOflist: 5
-				element from iteratorOfloopHashSet: 7
 				element from iteratorOfloopLinkedHashSet: 4
-				element from iteratorOflist: 10
-				element from iteratorOfloopHashSet: 8
-				element from iteratorOfloopLinkedHashSet: 8
+				element from iteratorOflist: 7
+				element from iteratorOfloopHashSet: 6
+				element from iteratorOfloopLinkedHashSet: 1
+				element from iteratorOflist: 6
+				element from iteratorOfloopHashSet: 7
+				element from iteratorOfloopLinkedHashSet: 2
 				element from iteratorOflist: 4
 				element from iteratorOfloopHashSet: 10
-				element from iteratorOfloopLinkedHashSet: 1
-				element from iteratorOflist: 4
-				Result of add-up all elements from iteratorOfloopHashSet: 40
-				Result of add-up all elements from iteratorOfloopLinkedHashSet: 39
-				Result of add-up all elements from iteratorOflist: 38
-				Result of add-up all elements from sumOfloopHashSet: 40
-				Result of add-up all elements from sumOfloopLinkedHashSet: 40
-				Result of add-up all elements from sumOflist: 40
+				element from iteratorOfloopLinkedHashSet: 10
+				element from iteratorOflist: 1
+				Result of add-up all elements from iteratorOfloopHashSet: 30
+				Result of add-up all elements from iteratorOfloopLinkedHashSet: 20
+				Result of add-up all elements from iteratorOflist: 29
+				Result of add-up all elements from sumOfloopHashSet: 30
+				Result of add-up all elements from sumOfloopLinkedHashSet: 30
+				Result of add-up all elements from sumOflist: 45
+
 
 
 */
