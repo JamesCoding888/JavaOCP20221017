@@ -797,7 +797,8 @@ Javadoc Since 	API
 1.7	Operator of <>
 	E.g., Set<Object> loopHashSet = new HashSet<>();
 1.8	Lambda
-![image](https://user-images.githubusercontent.com/83496093/208356413-73bb5211-dfd9-4f33-b8fb-6ca781516434.png)
+![image](https://user-images.githubusercontent.com/83496093/208356674-8248cb04-d97e-4145-aa73-116bb2f6afdc.png)
+
 
 
 
