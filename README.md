@@ -788,6 +788,18 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 ------------------------------------------------------------------------------
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
+Javadoc Since 	
+1.2	HashSet
+	LinkedList
+1.4	LinkedHashSet
+1.5	Auto-boxing
+	Generic 
+1.7	Operator of <>
+	E.g., Set<Object> loopHashSet = new HashSet<>();
+1.8	Lambda
+![image](https://user-images.githubusercontent.com/83496093/208356109-0946c790-a30d-4415-974d-2732a2850bbd.png)
+
+
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/enumLesson">Introduction of Enum</a>
 > TestCoin.java
 - Description:  ...
