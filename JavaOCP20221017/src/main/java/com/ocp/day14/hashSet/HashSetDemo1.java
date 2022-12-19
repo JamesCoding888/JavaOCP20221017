@@ -40,19 +40,22 @@ package com.ocp.day14.hashSet;
 	   
 	1. Hash table and linked list implementation of the Set interface, with predictable iteration order
 	   LinkedHashSet implementation differs from HashSet in that it maintains a doubly-linked list running through all of its entries
-	2. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
-	3. The element(s) of LinkedHashSet is iteration guaranteed
-	4. This class permits the null element
-	5. Repeated element(s) NOT allowable
-	6. LinkedHashSet provides constant-time performance for the basic operations (add, contains and remove), assuming the hash function disperses elements properly among the buckets. 
+	2. The doubly-linked list is on the implementation side, not necessarily exposed for you to get and use. 
+	   The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMaps). 
+	   A regular HashSet has NO need for a doubly-linked list since it makes NO guarantee about the order of its contents.
+	3. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
+	4. The element(s) of LinkedHashSet is iteration guaranteed
+	5. This class permits the null element
+	6. Repeated element(s) NOT allowable
+	7. LinkedHashSet provides constant-time performance for the basic operations (add, contains and remove), assuming the hash function disperses elements properly among the buckets. 
 	   Performance is likely to be just slightly below that of HashSet (super-class of LinkedHashSet), due to the added Expense of Maintaining the linked list, with one exception: Iteration over a LinkedHashSet requires time proportional to the SIZE of the set, regardless of LinkedHashSet's Capacity. 
 	   Iteration over a HashSet is likely to be MORE Expensive, requiring time proportional to its Capacity.
 	
-	7. A linked hash set has two parameters that affect its performance: 
+	8. A linked hash set has two parameters that affect its performance: 
 	   (1) Initial Capacity and (2) Load Factor - They are defined Precisely AS for HashSet. 
 	   Notice here, that the Penalty of LinkedHashSet for choosing an excessively high value for initial capacity is Less Severe for this class of LinkedHashSet than for HashSet, as iteration times for this class (i.e., LinkedHashSet) are Unaffected by Capacity.
 	
-	8. Note that this implementation is NOT synchronized. If Multiple-threads access a linked hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 	
+	9. Note that this implementation is NOT synchronized. If Multiple-threads access a linked hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 	
 	   This is Typically accomplished by Synchronizing on some object that naturally Encapsulates the set. 
 	   If NO such object EXISTS, the set should be "wrapped" using the "Collections.synchronizedSet" method.
 	   This is BEST Done at Creation Time, to Prevent Accidental Unsynchronized access to the set
@@ -76,7 +79,8 @@ package com.ocp.day14.hashSet;
 	3. LinkedList permits all elements (including null)
 	4. All of the operations perform as could be expected for a doubly-linked list. 
 	5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the Specified INDEX.
-	6. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
+	6. When we have already read the element, we cannot read the element repeatedly
+	7. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
 	   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) 
 	   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
 	   If NO such object exists, the list should be "wrapped" using the Collections.synchronizedList method. 
@@ -92,7 +96,8 @@ package com.ocp.day14.hashSet;
 	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. 
 	   Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
-
+	
+	8. There are NO Initial Capacity and Load Factor 
 
 
 
@@ -102,15 +107,16 @@ package com.ocp.day14.hashSet;
  	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashSet.html
  	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
  	
+ 	Refer to the stackOverFlow with regards to the doubly-linked list of LinkedHashSet:
+ 	https://stackoverflow.com/questions/4881868/bug-in-linkedhashset-javadoc
+ 	
 */
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Random;
 import java.util.Set;
 
@@ -130,11 +136,18 @@ public class HashSetDemo1 {
 		hashSet.add(80);	
 		
 		System.out.println(hashSet);
-		
-		// The element(s) of LinkedHashSet is iteration guaranteed
-		// Repeated element(s) NOT allowable
-		// LinkedHashSet 中的元素，保證有順序性
-		// 元素不允許重複
+				
+		/*	
+		   // The element(s) of LinkedHashSet is iteration guaranteed
+		   // Repeated element(s) NOT allowable
+		   // LinkedHashSet 中的元素，保證有順序性
+		   // 元素不允許重複
+           // Constructs a new, empty linked hash set with the default initial
+           // capacity (16) and load factor (0.75).
+           public LinkedHashSet() {
+           		super(16, .75f, true);
+           }	
+		*/
 		Set linkedHashSet = new LinkedHashSet();
 		linkedHashSet.add("Chinese");
 		linkedHashSet.add(100);   // type of 100, is Integer, NOT int
@@ -178,7 +191,18 @@ public class HashSetDemo1 {
 				Object next = iteratorOfloopLinkedHashSet.next();
 				System.out.println("element from iteratorOfloopLinkedHashSet: " + next);
 	
-			}
+			}		
+			/*
+			 	// The doubly-linked list is on the implementation side, not necessarily exposed for you to get and use. 
+	   			// The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMaps). 	   			
+	   			// 請留意 javadoc 之 LinkedHashSet，不支援 Backward Direct Iteration 
+	   			// 所謂的 doubly-linked list 係為了確保 LinkedHashSet 中的元素，具有順序性
+	   			if(iteratorOfloopLinkedHashSet.hasPrevious()) {
+					int index = iteratorOfloopLinkedHashSet.previousIndex();
+					String name = (String) iteratorOfloopLinkedHashSet.previous(); 
+				}
+			*/
+			
 			
 			if (iteratorOflist.hasNext()) {
 	
