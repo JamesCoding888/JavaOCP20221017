@@ -842,7 +842,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 ------------------------------------------------------------------------------
 # day15 Java Advanced: LinkedList, ListIterator
 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction ...</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList ...</a>
 
 > LinkedListDemo01.java
 - Description:  ...
@@ -850,6 +850,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > LinkedListDemo02.java
 - Description:  ...
 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector...</a>
 > VectorDemo.java
 - Description:  ...
 
