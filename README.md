@@ -788,7 +788,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 ------------------------------------------------------------------------------
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
-Javadoc Since 	Document
+Javadoc Since 	API
 1.2	HashSet
 	LinkedList
 1.4	LinkedHashSet
@@ -797,7 +797,9 @@ Javadoc Since 	Document
 1.7	Operator of <>
 	E.g., Set<Object> loopHashSet = new HashSet<>();
 1.8	Lambda
-![image](https://user-images.githubusercontent.com/83496093/208356246-e461dadb-0cd4-47a2-8e4d-24848dfa43b7.png)
+![image](https://user-images.githubusercontent.com/83496093/208356413-73bb5211-dfd9-4f33-b8fb-6ca781516434.png)
+
+
 
 
 
