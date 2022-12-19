@@ -1,12 +1,9 @@
 package com.ocp.day15.stack;
 
 /*
- 	Regarding application of Scanner, please recap the previously lecture of day6 at package: "com.ocp.day6.ScannerPractice" 
+ 	Regarding application of Scanner, please recap the previously lecture of day6 at package: "com.ocp.day6.ScannerPractice"
+ 	For the detail of processing on reverting the text, please read the following annotation of each syntax below.  
  	
- 	Of this session, we create an object of Stack which will collect the element(s) with method of .push().
- 	Also, the object of Character is responsible to convert the elements (i.e., end-user types text with API of Scanner) to a new character array.
- 	
- 	Then, 
 */
 
 import java.util.Scanner;
