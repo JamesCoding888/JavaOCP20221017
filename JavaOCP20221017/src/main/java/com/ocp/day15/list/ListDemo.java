@@ -43,7 +43,7 @@ public class ListDemo {
 		
 		ListIterator<String> listIterator = list.listIterator();
 		
-		// Operations that INDEX into the list will TRAVERSE the list from the BEGINNING  
+		// Operations that INDEX into the list will TRAVERSE the list from the BEGINNING, due to a doubly-linked list  
 		while(listIterator.hasNext()) {
 			int index = listIterator.nextIndex();
 			String name = (String)listIterator.next(); 
@@ -56,8 +56,8 @@ public class ListDemo {
 			String name = (String)listIterator.next(); 
 			System.out.printf("[2] Index -> %d : name -> %s\n", index, name);			
 		}
-
-		// Operations that INDEX into the list will TRAVERSE the list from the END 
+		
+		// Operations that INDEX into the list will TRAVERSE the list from the END, due to a doubly-linked list 
 		while(listIterator.hasPrevious()) {
 			int index = listIterator.previousIndex();			
 			String name = (String)listIterator.previous(); 
