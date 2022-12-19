@@ -1,5 +1,9 @@
 package com.ocp.day15.stack;
-
+/*
+	Introduction of Stack:
+	last-in-first-out (LIFO)
+	
+*/
 import java.util.Stack;
 public class StackDemo {
 	public static void main(String[] args) {
@@ -10,7 +14,7 @@ public class StackDemo {
 		System.out.println(names);
 		while(!names.isEmpty()) {
 			String name = names.pop();
-			// First in, Last out (先進，後出)
+			// last-in-first-out (LIFO) (後進，先出)
 			System.out.println("Last Out: " + name);
 			System.out.println("Elements: " + names);
 		}
