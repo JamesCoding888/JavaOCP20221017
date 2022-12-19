@@ -789,7 +789,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
 - Recap the development of Java Document:
-![image](https://user-images.githubusercontent.com/83496093/208357811-cbe48524-fa4e-47e1-bca5-8e93d93a663c.png)
+![image](https://user-images.githubusercontent.com/83496093/208358061-32bab95b-857c-445e-a86e-4a53d5396ce8.png)
+
 
 
 
