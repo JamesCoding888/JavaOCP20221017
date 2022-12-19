@@ -15,7 +15,7 @@ package com.ocp.day15.stack;
 */
 
 import java.util.Stack;
-public class StackDemo {
+public class StackDemo01 {
 	public static void main(String[] args) {
 		Stack<String> elements = new Stack<>();
 		elements.push("1");
