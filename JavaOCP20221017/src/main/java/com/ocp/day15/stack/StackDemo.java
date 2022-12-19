@@ -18,16 +18,16 @@ package com.ocp.day15.stack;
 import java.util.Stack;
 public class StackDemo {
 	public static void main(String[] args) {
-		Stack<String> names = new Stack<>();
-		names.push("1");
-		names.push("2");
-		names.push("3");
-		System.out.println(names);
-		while(!names.isEmpty()) {
-			String name = names.pop();
+		Stack<String> elements = new Stack<>();
+		elements.push("1");
+		elements.push("2");
+		elements.push("3");
+		System.out.println(elements);
+		while(!elements.isEmpty()) {
+			String string = elements.pop();
 			// last-in-first-out (LIFO) (後進，先出)
-			System.out.println("Last Out: " + name);
-			System.out.println("Elements: " + names);
+			System.out.println("Last Out: " + string);
+			System.out.println("Elements: " + elements);
 		}
 	}
 }
