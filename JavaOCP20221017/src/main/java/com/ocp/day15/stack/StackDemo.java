@@ -1,9 +1,20 @@
 package com.ocp.day15.stack;
 /*
 	Introduction of Stack:
-	last-in-first-out (LIFO)
 	
+	1. public class Stack<E> extends Vector<E>	
+	2. The Stack class represents a last-in-first-out (LIFO) stack of objects. 
+	3. It extends class Vector with five operations that allow a vector to be treated as a stack. 
+	4. The usual push and pop operations are provided, as well as a method to peek at the top item on the stack, 
+	   a method to test for whether the stack is empty, and a method to search the stack for an item and discover how far it is from the top.
+	
+	   When a stack is first created, it contains no items.
+	5. Since JDK 1.0
+	
+	Refer to the link of Oracle: 
+	https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
 */
+
 import java.util.Stack;
 public class StackDemo {
 	public static void main(String[] args) {
