@@ -1,4 +1,4 @@
-package com.ocp.day15.list;
+package com.ocp.day15.linkedlist;
 
 /*
  	Again, you may know the following statements from HashSetDemo1.java, at package "com.ocp.day14.hashSet"
@@ -34,7 +34,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ListDemo01 {
+public class LinkedListDemo01 {
 	public static void main(String[] args) {
 		List<String> list = new LinkedList<>();
 		list.add("james");

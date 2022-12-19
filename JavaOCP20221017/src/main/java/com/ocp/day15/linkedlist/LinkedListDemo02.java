@@ -1,4 +1,4 @@
-package com.ocp.day15.list;
+package com.ocp.day15.linkedlist;
 
 /*
 	Of this sample code, we remind the developer shall NOT invoke method of ".remove(int index)" inside for-loop/for-each, because the following object of list is Dynamic.
@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ListDemo02 {
+public class LinkedListDemo02 {
 
 	public static void main(String[] args) {
 		List<String> list = new LinkedList<>();
