@@ -812,6 +812,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashSetDemo3.java
 - Description: Application of LinkedHashSet
 
+> Load Factor & Capacity
+- Description: Load Factor and Initial Capacity
+
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/pojo">Introduction of POJO with application HashSet and LinkedHashSet</a>
 
 > NumPOJO.java
@@ -829,7 +832,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction ...</a>
 
-> LinkedList.java
+> ListDemo.java
 - Description:  ...
 
 
