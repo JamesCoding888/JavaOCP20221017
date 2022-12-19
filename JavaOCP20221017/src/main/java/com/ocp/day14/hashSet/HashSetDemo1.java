@@ -34,6 +34,7 @@ package com.ocp.day14.hashSet;
 	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
 	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+	9. Available since java 1.2
 
 
 	Overview of LinkedHashSet:	
@@ -70,7 +71,7 @@ package com.ocp.day14.hashSet;
 	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
 	
-	
+	10. Available since java 1.4
 	
 	
 	Overview of LinkedList:	   
@@ -129,7 +130,7 @@ public class HashSetDemo1 {
 		// 元素不允許重複
 		Set hashSet = new HashSet();
 		hashSet.add("Chinese");
-		hashSet.add(100);        // type of 100, is Integer, NOT int
+		hashSet.add(100);        // type of 100, is Integer, NOT int, due to Auto-boxing
 		hashSet.add("English");
 		hashSet.add(80);		
 		hashSet.add("English");
