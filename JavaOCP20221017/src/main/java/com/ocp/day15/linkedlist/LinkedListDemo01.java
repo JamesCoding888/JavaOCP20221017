@@ -28,6 +28,7 @@ package com.ocp.day15.linkedlist;
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
 	
 	8. There are NO Initial Capacity and Load Factor
+	9. Available since java 1.2
 */
 
 import java.util.LinkedList; 
