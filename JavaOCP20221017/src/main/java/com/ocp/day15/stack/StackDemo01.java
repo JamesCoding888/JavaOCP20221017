@@ -21,6 +21,7 @@ public class StackDemo01 {
 		elements.push("1");
 		elements.push("2");
 		elements.push("3");
+		elements.push("3");
 		System.out.println(elements);
 		// The java.util.Stack.search(Object element) method in Java
 		// is used to search for an element in the stack and get its distance from the top				
@@ -42,11 +43,14 @@ public class StackDemo01 {
 
 /*
 	Console:
-			[1, 2, 3]
+			[1, 2, 3, 3]
 			Search for an element in the stack and get its distance from the top: 1
-			Search for an element in the stack and get its distance from the top: 2
 			Search for an element in the stack and get its distance from the top: 3
+			Search for an element in the stack and get its distance from the top: 4
 			Search for an element in the stack and get its distance from the top: -1
+			Peek at the top of elements from Stack: 3
+			Last Out: 3
+			Elements: [1, 2, 3]
 			Peek at the top of elements from Stack: 3
 			Last Out: 3
 			Elements: [1, 2]
@@ -56,6 +60,7 @@ public class StackDemo01 {
 			Peek at the top of elements from Stack: 1
 			Last Out: 1
 			Elements: []
+
 
 
 */

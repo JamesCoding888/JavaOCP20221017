@@ -1,5 +1,8 @@
 package com.ocp.day15.queue;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /*
  	Introduction of Queue:
  	
@@ -10,7 +13,8 @@ package com.ocp.day15.queue;
 	   one throws an exception if the operation fails, 
 	   the other returns a special value (either null or false, depending on the operation). 
 	4. The latter form of the insert operation is designed specifically for use with capacity-restricted Queue implementations; in most implementations, insert operations cannot fail.
- 	5. Since JDK 1.5
+ 	5. DON'T SUGGEST to use the method of "remove()"! If the queue is empty, then throws NoSuchElementException. E.g., Please check-out the following sample code for more detail
+ 	6. Since JDK 1.5
  	
  	Refer to the link of Oracle:
  	https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html
@@ -20,9 +24,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 public class QueueDemo {
 	public static void main(String[] args) {
-		// add method here
+		// Created objects of Queue
 		Queue<String> elementsForAdd = new LinkedList <>();
-		// offer method here
 		Queue<String> elementsForOffer = new LinkedList <>();
 		// add method here
 		elementsForAdd.add("1");
@@ -31,10 +34,9 @@ public class QueueDemo {
 		elementsForAdd.add(null);
 		elementsForAdd.add(null);
 		elementsForAdd.add(null);
-		// Please remove the following line, throws: NoSuchElementException - if this queue is empty
+		// Please remove the following line, throws: NoSuchElementException - because queue is empty
 		elementsForAdd.add("3");    			
 		// offer method here
-		// 不要使用 offer，因為 null 不處理
 		elementsForOffer.offer("1");
 		elementsForOffer.offer("2");
 		elementsForOffer.offer("2"); 
@@ -52,7 +54,7 @@ public class QueueDemo {
 			System.out.println("Peek at the top of elements from Queue: " + peekAtTopOfQueue);
 			// method of remove() and poll(), both are handling with null
 			String stringOfPoll = elementsForAdd.poll();
-			String stringOfRemove = elementsForAdd.remove();
+			String stringOfRemove = elementsForAdd.remove();   // queue empty, throws NoSuchElementException
 			
 			// first-in-first-out (FIFO)
 			System.out.println("First Out (poll): " + stringOfPoll);
@@ -66,7 +68,7 @@ public class QueueDemo {
 			System.out.println("Peek at the top of elements from Queue: " + peekAtTopOfQueue);
 			// method of remove() and poll(), both are handling with null
 			String stringOfPoll = elementsForOffer.poll();
-			String stringOfRemove = elementsForOffer.remove();
+			String stringOfRemove = elementsForOffer.remove(); // queue empty, throws NoSuchElementException
 			
 			// first-in-first-out (FIFO)
 			System.out.println("First Out (poll): " + stringOfPoll);
@@ -77,16 +79,64 @@ public class QueueDemo {
 }
 
 /*
-	Console:
-			[1, 2, 3]
+	Console (1):
+			elementsForAdd:   [1, 2, 2, null, null, null, 3, null, null, null]
+			elementsForOffer: [1, 2, 2, 3]
+			=============================================
 			Peek at the top of elements from Queue: 1
-			First Out: 1
+			First Out (poll): 1
+			First Out (remove): 2
+			Elements: [2, null, null, null, 3, null, null, null]
+			Peek at the top of elements from Queue: 2
+			First Out (poll): 2
+			First Out (remove): null
+			Elements: [null, null, 3, null, null, null]
+			Peek at the top of elements from Queue: null
+			First Out (poll): null
+			First Out (remove): null
+			Elements: [3, null, null, null]
+			Peek at the top of elements from Queue: 3
+			First Out (poll): 3
+			First Out (remove): null
+			Elements: [null, null]
+			Peek at the top of elements from Queue: null
+			First Out (poll): null
+			First Out (remove): null
+			Elements: []
+			=============================================
+			Peek at the top of elements from Queue: 1
+			First Out (poll): 1
+			First Out (remove): 2
 			Elements: [2, 3]
 			Peek at the top of elements from Queue: 2
-			First Out: 2
-			Elements: [3]
-			Peek at the top of elements from Queue: 3
-			First Out: 3
+			First Out (poll): 2
+			First Out (remove): 3
 			Elements: []
+
+	Console (2):
+			elementsForAdd:   [1, 2, 2, null, null, null, null, null, null]
+			elementsForOffer: [1, 2, 2, 3]
+			=============================================
+			Peek at the top of elements from Queue: 1
+			First Out (poll): 1
+			First Out (remove): 2
+			Elements: [2, null, null, null, null, null, null]
+			Peek at the top of elements from Queue: 2
+			First Out (poll): 2
+			First Out (remove): null
+			Elements: [null, null, null, null, null]
+			Peek at the top of elements from Queue: null
+			First Out (poll): null
+			First Out (remove): null
+			Elements: [null, null, null]
+			Peek at the top of elements from Queue: null
+			First Out (poll): null
+			First Out (remove): null
+			Elements: [null]
+			Peek at the top of elements from Queue: null
+			Exception in thread "main" java.util.NoSuchElementException
+				at java.base/java.util.LinkedList.removeFirst(LinkedList.java:274)
+				at java.base/java.util.LinkedList.remove(LinkedList.java:689)
+				at com.ocp.day15.queue.QueueDemo.main(QueueDemo.java:54)
 
 */
