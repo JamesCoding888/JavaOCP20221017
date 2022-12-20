@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Stack;
 public class StackDemo02 {
 	public static void main(String[] args) {
-		// Scanner.next()
+		// Created object of Scanner being used for .next()
 		Scanner scanner4Char = new Scanner(System.in);		
 		System.out.print("Please type characters: ");
 		// Initialize the text
@@ -19,7 +19,7 @@ public class StackDemo02 {
 		char[] chars = text.toCharArray();
 		// Create an object of Stack to collect the each of element from chars
 		Stack<Character> stackChar = new Stack<>();		
-		// for-each to push the each of element from chars into stackChar
+		// for-each function - push the each of elements from chars into stackChar
 		for (Character c : chars) {
 			stackChar.push(c);
 		}
@@ -32,21 +32,21 @@ public class StackDemo02 {
 		
 		System.out.println();
 
-		// Scanner.nextLine()
+		// Created object of Scanner being used for .nextLine()
 		Scanner scanner4CharLine = new Scanner(System.in);
 		System.out.print("Please type characters: ");
 		// Initialize the textLine
 		String textLine = scanner4CharLine.nextLine();
-		// Convert the text to a new character array
+		// Convert the textLine to a new character array
 		char[] charsLine = textLine.toCharArray();
-		// Create an object of Stack to collect the each of element from chars
+		// Create an object of Stack to collect the each of element from charsLine
 		Stack<Character> stackCharLine = new Stack<>();	
-		// for-each to push the each of element from chars into stackCharLine
+		// for-each function - push the each of elements from charsLine into stackCharLine
 		for (Character c : charsLine) {
 			stackCharLine.push(c);
 		}		
 		System.out.println(stackCharLine);
-		// If the judgment of stackChar is NOT Empty, execute the following loop function
+		// If the judgment of stackCharLine is NOT Empty, execute the following loop function
 		while (!stackCharLine.isEmpty()) {
 			// LIFO (last-in-first-out)
 			System.out.print(stackCharLine.pop());
