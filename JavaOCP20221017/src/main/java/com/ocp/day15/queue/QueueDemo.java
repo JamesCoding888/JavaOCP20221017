@@ -35,7 +35,7 @@ public class QueueDemo {
 		elementsForAdd.add(null);
 		elementsForAdd.add(null);
 		// Please remove the following line, throws: NoSuchElementException - because queue is empty
-		elementsForAdd.add("3");    			
+		elementsForAdd.add("3");  
 		// offer method here
 		elementsForOffer.offer("1");
 		elementsForOffer.offer("2");
