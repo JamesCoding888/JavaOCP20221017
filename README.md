@@ -842,9 +842,20 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: Stack, Vector, LinkedList, ListIterator
+# day15 Java Advanced: Vector, Stack, LinkedList, ListIterator
 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList ...</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector...</a>
+> VectorDemo.java
+- Description:  ...
+
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/stack">Introduction of Stack ... </a>
+> StackDemo01.java
+- Description:  ...
+
+> StackDemo02.java
+- Description:  ...
+
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList ...</a>
 
 > LinkedListDemo01.java
 - Description:  ...
@@ -852,17 +863,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > LinkedListDemo02.java
 - Description:  ...
 
-2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector...</a>
-> VectorDemo.java
-- Description:  ...
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/queue">Introduction of Queue ...</a>
 
-3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/stack">Introduction of Stack ... </a>
-> StackDemo01.java
+> QueueDemo.java
 - Description:  ...
-
-> StackDemo02.java
-- Description:  ...
-
 
 
 ------------------------------------------------------------------------------
