@@ -1,5 +1,17 @@
 package com.ocp.day15.queue;
 
+/*
+	
+	Queues typically order elements in a FIFO (first-in-first-out) manner. 
+	
+	
+	Methods of Queue:
+	
+	remove()
+	NoSuchElementException - if this queue is empty
+
+*/
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
