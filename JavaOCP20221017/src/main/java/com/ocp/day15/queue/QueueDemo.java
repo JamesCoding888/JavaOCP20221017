@@ -2,14 +2,18 @@ package com.ocp.day15.queue;
 
 /*
 	
-	Queues typically order elements in a FIFO (first-in-first-out) manner. 
+	The Queue interface is presented in package of "java.util" and extends the Collection interface is used to hold the elements about to be processed in FIFO(First In First Out) order. 
+	The Queue is an ordered list of objects with limited to insert element(s) at the end of the list and deleting element(s) from the beginning of the list (i.e., following the first-in-first-out principal - FIFO).
 	
-	
-	Methods of Queue:
-	
-	remove()
-	NoSuchElementException - if this queue is empty
+	Of the methods of Queue, you shall notice here:
+	1) remove() 
+	   NoSuchElementException - if this queue is empty
 
+
+	Refer to the links as follows:
+	https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html
+	https://www.geeksforgeeks.org/queue-interface-java/
+	
 */
 
 import java.util.ArrayList;
