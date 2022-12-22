@@ -4,7 +4,7 @@
 *************************************************************************************************************/
 
 
-package com.ocp.day6;
+package com.ocp.day6.erp;
 
 // Following the previously lesson (i.e., ArrayListDemo1.java),   
 // we design an Office Check-in System with function of CRUD by ArrayList - API.

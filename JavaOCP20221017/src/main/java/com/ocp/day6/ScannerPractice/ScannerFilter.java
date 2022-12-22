@@ -13,11 +13,11 @@ public class ScannerFilter {
 		// Create an object of Scanner
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("(1) If exit program, please type \"exit\". Otherwise, (2) Type in the following sample string as \"ScannerSplit 888.8 GotYou 100 ~!@#$%^&*()_+}{|\":?>< \":");
-		// Array<String> 專門收集字串, e.g., 中文 空格 符號
+		// Collect the string
 		List<String> list4CollectingString = new ArrayList<>();		
-		// Array<nextDouble) 專門收集小數點數字
+		// Collect the number in decimal
 		List<Double> list4CollectingDecimal = new ArrayList<>();
-		// Array<nextInt> 專門收集整數數字
+		// Collect the number in Integer
 		List<Integer> list4CollectingInteger = new ArrayList<>();
 		
 		if(scanner.hasNext("exit")) {
