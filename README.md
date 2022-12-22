@@ -330,7 +330,7 @@
 - 
 
 
-4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by ArrayList - API, you will learn in this session</a>
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by API - ArrayList, you will learn in this session</a>
 
 > ArrayListDemo1.java 
 - Description:  ...
