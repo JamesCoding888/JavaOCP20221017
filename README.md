@@ -286,7 +286,7 @@
 
 ------------------------------------------------------------------------------
 # day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Introduction of how to use Scanner API</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Scanner API Practice</a>
 
 > ScannerDemo.java 
 - Description:  ...
