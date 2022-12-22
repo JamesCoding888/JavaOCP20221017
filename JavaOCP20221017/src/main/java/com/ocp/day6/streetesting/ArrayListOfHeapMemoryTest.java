@@ -1,4 +1,4 @@
-package com.ocp.day6;
+package com.ocp.day6.streetesting;
 /*
    在做壓力測試時，需清楚了解系統之最嚴苛的使用狀況下，最多可分配多少的 RAM 給 JVM 使用。 
    1) 底下程式碼，係實驗目前測試環境之最大的 heap memory 可容忍的測試數值
