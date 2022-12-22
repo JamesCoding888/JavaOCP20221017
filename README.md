@@ -286,9 +286,7 @@
 
 ------------------------------------------------------------------------------
 # day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner</a> 
-
-
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Introduction of how to use Scanner API</a>
 
 > ScannerDemo.java 
 - Description:  ...
@@ -310,6 +308,7 @@
 - Description:  ...
 - 
 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerException">Introduction of Scanner Exception</a>
 
 > IntroductionOfFinal.java
 - Description: ...
@@ -331,10 +330,7 @@
 - 
 
 
-> ArrayListOfHeapMemoryTest.java 
-- Description:  ...
-- 
-
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by ArrayList - API, you will learn in this session</a>
 
 > ArrayListDemo1.java 
 - Description:  ...
@@ -345,6 +341,9 @@
 - Description:  ...
 - 
 
+5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/streetesting">Introduction of Stress Testing</a>
+> ArrayListOfHeapMemoryTest.java 
+- Description:  ...
 
 ------------------------------------------------------------------------------
 # day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
