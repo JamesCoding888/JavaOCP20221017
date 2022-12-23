@@ -24,7 +24,7 @@ public class TreeSetDemo2 {
 		System.out.println("Elements of LinkedHashSet: " + linkedHashSet);
 		// 欲查詢 element(s)，改用 TreeSet
 		linkedHashSet = new TreeSet<>(linkedHashSet);
-		System.out.println("The elements are ordered using their natural ordering: " + linkedHashSet);
+		System.out.println("The elements are ordered using their natural ordering: " + linkedHashSet);		
 	}
 }
 
