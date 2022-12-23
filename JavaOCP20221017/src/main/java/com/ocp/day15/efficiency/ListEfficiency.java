@@ -5,7 +5,7 @@ package com.ocp.day15.efficiency;
 
 import java.util.ArrayList;
 import java.util.List;
-public class ArrayListEfficiency {
+public class ListEfficiency {
 	public static void main(String[] args) {
 		// 每次調用同一個 list 物件來存取字串 "1"
 //		List<String> list = new ArrayList<>();
