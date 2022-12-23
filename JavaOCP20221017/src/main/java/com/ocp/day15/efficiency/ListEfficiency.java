@@ -3,18 +3,19 @@ package com.ocp.day15.efficiency;
  	本次 List 效率實驗，如下：
 */
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
 public class ListEfficiency {
 	public static void main(String[] args) {
 		// 每次調用同一個 list 物件來存取字串 "1"
 //		List<String> list = new ArrayList<>();
 		double sum = 0.0;		
-		// 執行 1,000,000 筆資料運算
+		// 執行 100 次迴圈
 		for (int t = 0; t <= 100; t++) {
 			// 每次調用新的 list 物件
 			List<String> list = new ArrayList<>();
-			long start = System.nanoTime();			
+			long start = System.nanoTime();	
+			// 執行 1,000,000 筆資料運算
 			for (int n = 1; n <= 1000000; n++) {
 				list.add("1");
 			}
@@ -24,7 +25,8 @@ public class ListEfficiency {
 			double duration = (stop - start) * Math.pow(10, -9);
 			sum += duration;
 		}
-		System.out.printf("Average duration: %f ", sum / 100.0);
+		
+		System.out.printf("Average duration of 100 times: %f ", sum / 100.0);
 	}
 }
 
