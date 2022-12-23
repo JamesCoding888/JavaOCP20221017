@@ -1,7 +1,4 @@
 package com.ocp.day15.treeset;
-/*
-	 
-*/
 
 import java.util.LinkedHashSet;
 import java.util.Set; 
