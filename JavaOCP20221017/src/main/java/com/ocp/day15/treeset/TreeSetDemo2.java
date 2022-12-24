@@ -19,6 +19,7 @@ public class TreeSetDemo2 {
 		linkedHashSet.add("98");
 		linkedHashSet.add("108");
 		System.out.println("Elements of LinkedHashSet: " + linkedHashSet);
+		// Expected to query the element(s) of linkedHashSet, please use TreeSet, because of natural ordering
 		// 欲查詢 linkedHashSet 中的 element(s) ，改用 TreeSet，因為 natural ordering
 		linkedHashSet = new TreeSet<>(linkedHashSet);
 		System.out.println("The elements are ordered using their natural ordering: " + linkedHashSet);		
