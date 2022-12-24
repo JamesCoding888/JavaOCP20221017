@@ -882,7 +882,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency of sub-classes of Collection</a>
-- *****PENDING*****
+
+- ListEfficiency.java
+- Description: The executed efficiency of List in this sample code, you will learn the instantiated object of List from 1) always use the same object of list to proceed the loop function, 2) always use the newly object of list to proceed the loop function. 
+
+- TreeSetEfficiency.java
+- Description: The executed efficiency of TreeSet is faster than List by 6 times, almost. Pleease check out the sample code for more detail. 
+
+
+- ***** Another sample codes , TBD *****
+
 
 ------------------------------------------------------------------------------
 # day16 Java Advanced: ... , ... Coming Soon
