@@ -1,22 +1,20 @@
 package com.ocp.day15.treeset;
 /*
-	TreeSet is one of the most important implementations of the SortedSet interface 
-	in Java that uses a Tree for storage. 
+	Introduction of TreeSet:
 	
-	The ordering of the elements is maintained by a set using their natural ordering 
-	whether or not an explicit comparator is provided. 
+	1. TreeSet is one of the most important implementations of the SortedSet interface 
+	   in Java that uses a Tree for storage. 
 	
-	This must be consistent with equals if it is to correctly implement the Set interface.
+	2. The ordering of the elements is maintained by a set using their natural ordering 
+	   whether or not an explicit comparator is provided. 
+	
+	3. TreeSet must be consistent with equals if it is to correctly implement the Set interface.
+	
+	4. TreeSet class NOT permits the null element; Otherwise, Exception in thread "main" java.lang.NullPointerException
+	
 	
 	Reference of following link -> https://www.geeksforgeeks.org/treeset-in-java-with-examples/
 	
-	 
-	 
-	 ====
-	 
-	 1. This class NOT permits the null element. If element(s) 
-	 
-	 Exception in thread "main" java.lang.NullPointerException
 */
 
 import java.util.Set;
