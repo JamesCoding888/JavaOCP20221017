@@ -881,7 +881,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 > TreeSetDemo03.java
-- Description:  ...
+- Description:  Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
 ![image](https://user-images.githubusercontent.com/83496093/209419610-5ba36ec6-e72c-4d86-9579-81a43dccb85d.png)
