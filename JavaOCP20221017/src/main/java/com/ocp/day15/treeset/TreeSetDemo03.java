@@ -6,16 +6,18 @@ public class TreeSetDemo03 {
 	public static void main(String[] args) {
 		// Creating an object of TreeSet
 		TreeSet<String> treeSet = new TreeSet<String>();
-		// add element(s)
-		treeSet.add("David");
-		treeSet.add("James");
-		treeSet.add("Tim");
-		treeSet.add("Tesla");
+		// add element(s)		
+		treeSet.add("Tesla"); // Te
+		treeSet.add("James"); // J
+		treeSet.add("David"); // D
+		treeSet.add("Tasle"); // Ta
+		treeSet.add("Tim");   // Ti
 
 		// Traversing elements of TreeSet
-		Iterator<String> iteratorTreeSet = treeSet.iterator();
-
+		Iterator<String> iteratorTreeSet = treeSet.iterator();			
 		while (iteratorTreeSet.hasNext()) {
+			// D -> J -> T
+			// Ta -> Te -> Ti
 			System.out.println(iteratorTreeSet.next());
 		}
 	}
@@ -23,8 +25,10 @@ public class TreeSetDemo03 {
 
 /*
 	Console:
-		Tesla
-		Tim
 		David
 		James
+		Tasle
+		Tesla
+		Tim
+
 */
