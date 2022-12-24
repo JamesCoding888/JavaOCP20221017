@@ -885,7 +885,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
 ![image](https://user-images.githubusercontent.com/83496093/209419610-5ba36ec6-e72c-4d86-9579-81a43dccb85d.png)
-(The images comes from Geeksforgeeks - https://www.geeksforgeeks.org/treeset-in-java-with-examples/, this image Only for temporarily, and will be refreshed in coming next month)
+(The image comes from Geeksforgeeks - https://www.geeksforgeeks.org/treeset-in-java-with-examples/, and will be refreshed in coming next month)
 
 
 > ListEfficiency.java
