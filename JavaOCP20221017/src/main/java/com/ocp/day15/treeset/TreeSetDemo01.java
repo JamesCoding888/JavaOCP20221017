@@ -21,7 +21,7 @@ package com.ocp.day15.treeset;
 
 import java.util.Set;
 import java.util.TreeSet;
-public class TreeSetDemo1 {
+public class TreeSetDemo01 {
 
 	public static void main(String[] args) {
 		Set<Object> treeSet = new TreeSet<>();

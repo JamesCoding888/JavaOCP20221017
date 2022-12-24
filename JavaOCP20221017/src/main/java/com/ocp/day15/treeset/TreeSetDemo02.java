@@ -3,7 +3,7 @@ package com.ocp.day15.treeset;
 import java.util.LinkedHashSet; 
 import java.util.Set; 
 import java.util.TreeSet;
-public class TreeSetDemo2 {
+public class TreeSetDemo02 {
 
 	public static void main(String[] args) {
 		Set<Object> linkedHashSet = new LinkedHashSet<>();

@@ -35,7 +35,7 @@ public class TreeSetEfficiency {
 	Summary:
 		每次調用同一個 treeSet 物件，經運算結果，反而時間多 0.000627。
 		
-		請比對 ListEfficiency.java 的 Console 結果，很驚訝地發現，TreeSet 的執行效率是 List 的 6 倍。
+		請比對 package: com.ocp.day15.efficiency 的 ListEfficiency.java，從 Console 結果，很驚訝地發現，TreeSet 的執行效率是 List 的 6 倍。
 		 
 		
 */
