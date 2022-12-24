@@ -894,6 +894,36 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > TreeSetEfficiency.java
 - Description: The executed efficiency of TreeSet is faster than List by 6 times, almost. Pleease check out the sample code for more detail. 
 
+> ArrayListEfficiency.java
+- Description:  ...
+
+> VectorEfficiency.java
+- Description:  ...
+
+> StackEfficiency.java
+- Description:  ...
+
+> LinkedListEfficiency.java
+- Description:  ...
+
+> LinkedHashSetEfficiency.java
+- Description:  ...
+
+> HashSetEfficiency.java
+- Description:  ...
+
+> QueueEfficiency.java
+- Description:  ...
+
+> DequeEfficiency.java
+- Description:  ...
+
+> PriorityQueueEfficiency.java
+- Description:  ...
+
+> ArrayDequeEfficiency.java
+- Description:  ...
+
 
 > ***** Another sample codes , TBD *****
 
