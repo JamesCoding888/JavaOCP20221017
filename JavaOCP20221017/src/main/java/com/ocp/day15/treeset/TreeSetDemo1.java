@@ -8,7 +8,15 @@ package com.ocp.day15.treeset;
 	
 	This must be consistent with equals if it is to correctly implement the Set interface.
 	
-	Reference of following link -> https://www.geeksforgeeks.org/treeset-in-java-with-examples/ 
+	Reference of following link -> https://www.geeksforgeeks.org/treeset-in-java-with-examples/
+	
+	 
+	 
+	 ====
+	 
+	 1. This class NOT permits the null element. If element(s) 
+	 
+	 Exception in thread "main" java.lang.NullPointerException
 */
 
 import java.util.Set;
@@ -18,7 +26,7 @@ public class TreeSetDemo1 {
 	public static void main(String[] args) {
 		Set<Object> treeSet = new TreeSet<>();
 		treeSet.add("88");
-		treeSet.add("8");
+		treeSet.add("8");		
 		treeSet.add("78");
 		treeSet.add("68");
 		treeSet.add("28");
