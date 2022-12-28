@@ -7,19 +7,26 @@ public class Employee implements Comparable<Employee> {
 	private Integer age;
 	private Integer salary;
 
-	// sort: True (ASCENDING)
-	// sort: False (DESCENDING)
+	/*
+		The value of the "sort" variable could be used to determine the behavior of a class or its methods. 
+		For example, it might be used to determine the order in which a list of items is sorted. 
+		If "sort" is true, the items might be sorted in ASCENDING order, and if "sort" is false, 
+		they might be sorted in DESCENDING order.
+		
+		Hereinafter, sample code determined the behavior of sort to be "true", 
+		because query the rows from Table of Schema as ascending order
+	*/
 	private static boolean sort = true; 
+	
+	public Employee(){
+		super();
+	}
 	
 	public Employee(String name, Integer age, Integer salary) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
-	}
-
-	public Employee() {
-		super();
 	}
 
 	public String getName() {
@@ -81,13 +88,13 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-//		/*
+		/*
 			// 1) ASCENDING
 			//    The expression (age - o.age) calculates the difference between two ages, 
 			//    where "age" is the age of one person and "o.age" is the age of another person.
 		          
 		          return age - o.age;
-//		*/ 
+		*/ 
  
 		
 		/*
@@ -108,7 +115,7 @@ public class Employee implements Comparable<Employee> {
 		*/
 
 		
-		/*
+//		/*
 		    // 4) ASCENDING / DESCENDING
 		 	//    The expression (sort ? 1 : -1) is a ternary operator 
 		 	//    that evaluates to 1 if "sort" is true and -1 if "sort" is false. 
@@ -123,7 +130,7 @@ public class Employee implements Comparable<Employee> {
 				  System.out.println("(age - o.age) >= 0 ? " + ((age - o.age) >= 0));
 			   	  System.out.println("If sort = true or false, then 1 (ASCENDING) or -1 (DESCENDING) : " + (sort ? 1 : -1));
 				  return (age - o.age) * (sort ? 1 : -1);		
-		*/		
+//		*/		
 	}
 
 	@Override
