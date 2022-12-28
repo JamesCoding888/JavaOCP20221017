@@ -1,4 +1,4 @@
-package com.ocp.day15.treeset.comparable;
+package com.ocp.day15.comparable;
 
 import java.util.Set;
 import java.util.TreeSet;

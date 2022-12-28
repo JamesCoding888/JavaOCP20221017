@@ -1,4 +1,4 @@
-package com.ocp.day15.treeset.comparable;
+package com.ocp.day15.comparable;
 
 public enum SortType {
     小到大(true), 大到小(false);
