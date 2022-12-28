@@ -20,7 +20,6 @@ public class Employee implements Comparable<Employee> {
 
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -82,15 +81,41 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-		// 1) ASCENDING
-//		return age - o.age;        
-		// 2) ASCENDING
-//	    return salary - o.salary;  
-		// 3) DESCENDING
-//		return o.age - age;
-		// 4) ASCENDING / DESCENDING
-		System.out.println((age - o.age));
-		System.out.println("sort: " + (sort ? 1 : -1));
+		/*
+			1) ASCENDING
+			   The expression (age - o.age) calculates the difference between two ages, 
+			   where "age" is the age of one person and "o.age" is the age of another person.
+		*/ 
+//		return age - o.age; 
+		
+		/*
+			2) ASCENDING
+			   The expression (salary - o.salary) calculates the difference between two salaries, 
+			   where "salary" is the salary of one person and "o.salary" is the salary of another person.
+		*/ 
+//	    return salary - o.salary;
+		
+		/*		 
+		    3) DESCENDING
+		       The expression (o.age - age) calculates the difference between two ages, 
+			   where "age" is the age of one person and "o.age" is the age of another person.
+		*/
+//		return o.age - age;	
+		
+		/*
+		    4) ASCENDING / DESCENDING
+		 	   The expression (sort ? 1 : -1) is a ternary operator 
+		 	   that evaluates to 1 if "sort" is true and -1 if "sort" is false. 
+		 	   This value is then multiplied by the result of the calculation (age - o.age), 
+		 	   which determines the sign of the final result.
+		 	  
+		 	   If "sort" is true, the ages will be sorted in ascending order 
+		       and the result of the calculation will be positive.
+			   If "sort" is false, the ages will be sorted in descending order 
+			   and the result of the calculation will be negative
+		*/
+		System.out.println("(age - o.age) >= 0 ? " + ((age - o.age) >= 0));
+		System.out.println("If sort = true or false, then 1 (ASCENDING) or -1 (DESCENDING) : " + (sort ? 1 : -1));
 	    return (age - o.age) * (sort ? 1 : -1);
 	}
 
