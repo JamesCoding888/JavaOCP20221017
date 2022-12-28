@@ -7,7 +7,7 @@ package com.ocp.day14.enumLesson.currency;
  	   Accessibility of Constructors, MUST be in "private", eventually we do NOT specify an access modifier the enum constructor as default, 
  	   but finally JRE will help to pad with "private" on constructors
 	 
-	4. The type enum class cannot be the superclass of SubClass; a superclass must be a class. Please refer to the "Coin.java"
+	4. The type enum class cannot be the superclass of SubClass; a superclass must be a class. Please refer to the "TestCoin.java"
 	
 */
 

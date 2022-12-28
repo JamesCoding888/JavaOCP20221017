@@ -82,10 +82,10 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-		// return age - o.age; // 由小到大
+//		 return age - o.age; // ASCENDING
 		// return salary - o.salary;
-		// return o.age - age; // 由大到小
-		return (age - o.age) * (sort ? 1 : -1);
+		 return o.age - age; // DESCENDING
+//		return (age - o.age) * (sort ? 1 : -1);
 	}
 
 	@Override

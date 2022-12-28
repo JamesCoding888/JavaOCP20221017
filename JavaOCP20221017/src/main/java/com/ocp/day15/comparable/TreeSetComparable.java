@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 public class TreeSetComparable {
 	public static void main(String[] args) {
-		Employee.setSort(SortType.小到大.getValue());
+		Employee.setSort(SortType.ASCENDING.getValue());
 		Employee employee1 = new Employee("James", 20, 45000);
 		Employee employee2 = new Employee("David", 35, 55000);
 		Employee employee3 = new Employee("Tim", 55, 65000);
