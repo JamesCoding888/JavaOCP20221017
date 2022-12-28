@@ -845,7 +845,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: Vector, Stack, LinkedList, ListIterator, TreeSet, Set, compareTo, Comparable 
+# day15 Java Advanced: Vector, Stack, LinkedList, ListIterator, TreeSet, Set, compareTo, Comparable, Comparator 
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector</a>
 > VectorDemo.java
@@ -883,7 +883,26 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > TreeSetDemo03.java
 - Description:  Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
 
-6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
+6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparable">Introduction of Comparable</a>
+
+> Employee.java
+- Description:  ...
+
+> SortType.java
+- Description:  ...
+
+> TreeSetComparable.java
+- Description:  ...
+
+7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparator">Introduction of Comparator</a>
+
+> Comparator4Books.java
+- Description:  ...
+
+
+
+
+8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
 - *** Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
 - <img width="1003" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
 
