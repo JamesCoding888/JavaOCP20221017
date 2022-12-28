@@ -5,7 +5,9 @@ package com.ocp.day15.comparable;
 		
 */
 public enum SortedOrder {
+	// Supposed to Upper-case letters
     ASCENDING(true), DESCENDING(false);
+	
 	// Actually we give an accessibility of fields to be "private"
     private boolean value;
     
@@ -14,6 +16,7 @@ public enum SortedOrder {
     SortedOrder(boolean value) {      
         this.value = value;
     }
+
     public boolean getValue() {
         return value;
     }
