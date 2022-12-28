@@ -691,7 +691,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_2">Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collision" from two different objects being equally.</a>
+1. Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of<a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_2"> "public int hashCode(){ ... }" </a> to avoid "Hash Collision" from two different objects being equally.
 
 
 2. Sincerely recommended a Book for your reference - "Effective Java 3rd Edition". You will be even better to understand the "Hash Collision" and "hashCode algorithm".
