@@ -884,8 +884,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
-![image](https://user-images.githubusercontent.com/83496093/209419610-5ba36ec6-e72c-4d86-9579-81a43dccb85d.png)
-(The image comes from Geeksforgeeks - https://www.geeksforgeeks.org/treeset-in-java-with-examples/, and will be refreshed in coming next month)
+<img width="203" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
+
 
 
 > ListEfficiency.java
@@ -947,7 +947,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 
-<img width="203" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
+
 
 
 
