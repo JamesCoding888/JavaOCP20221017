@@ -1,7 +1,6 @@
 package com.ocp.day15.comparable;
 
 import java.util.Objects;
-
 public class Employee implements Comparable<Employee> {
 	
 	private String name;
@@ -76,16 +75,23 @@ public class Employee implements Comparable<Employee> {
 		if (getClass() != obj.getClass())
 			return false;
 		Employee other = (Employee) obj;
-		return Objects.equals(age, other.age) && Objects.equals(name, other.name)
-				&& Objects.equals(salary, other.salary);
+		return Objects.equals(age, other.age) && 
+			   Objects.equals(name, other.name) && 
+			   Objects.equals(salary, other.salary);
 	}
 
 	@Override
 	public int compareTo(Employee o) {
-//		 return age - o.age; // ASCENDING
-		// return salary - o.salary;
-		 return o.age - age; // DESCENDING
-//		return (age - o.age) * (sort ? 1 : -1);
+		// 1) ASCENDING
+//		return age - o.age;        
+		// 2) ASCENDING
+//	    return salary - o.salary;  
+		// 3) DESCENDING
+//		return o.age - age;
+		// 4) ASCENDING / DESCENDING
+		System.out.println((age - o.age));
+		System.out.println("sort: " + (sort ? 1 : -1));
+	    return (age - o.age) * (sort ? 1 : -1);
 	}
 
 	@Override

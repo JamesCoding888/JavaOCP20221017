@@ -4,7 +4,8 @@ import java.util.Set;
 import java.util.TreeSet;
 public class TreeSetComparable {
 	public static void main(String[] args) {
-		Employee.setSort(SortType.ASCENDING.getValue());
+		
+		Employee.setSort(SortedType.ASCENDING.getValue());
 		Employee employee1 = new Employee("James", 20, 45000);
 		Employee employee2 = new Employee("David", 35, 55000);
 		Employee employee3 = new Employee("Tim", 55, 65000);
@@ -17,6 +18,13 @@ public class TreeSetComparable {
 }
 
 /*
+ 	[
+ 		Employee [name=James, age=20, salary=45000], 
+ 		Employee [name=David, age=35, salary=55000], 
+ 		Employee [name=Tim, age=55, salary=65000]
+ 	]
+
+ 	
 	Console:
 			[Employee [name=Mary, age=25, salary=48000], Employee [name=John, age=30, salary=45000], Employee [name=Bob, age=40, salary=55000]]
 
