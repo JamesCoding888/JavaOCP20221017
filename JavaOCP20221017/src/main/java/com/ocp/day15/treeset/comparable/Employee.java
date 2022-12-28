@@ -82,8 +82,10 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee o) {
-		// TODO Auto-generated method stub
-		return 0;
+		// return age - o.age; // 由小到大
+		// return salary - o.salary;
+		// return o.age - age; // 由大到小
+		return (age - o.age) * (sort ? 1 : -1);
 	}
 
 	@Override
