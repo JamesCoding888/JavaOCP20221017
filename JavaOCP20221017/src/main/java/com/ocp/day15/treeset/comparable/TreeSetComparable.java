@@ -2,7 +2,6 @@ package com.ocp.day15.treeset.comparable;
 
 import java.util.Set;
 import java.util.TreeSet;
-
 public class TreeSetComparable {
 	public static void main(String[] args) {
 		Employee.setSort(SortType.小到大.getValue());
