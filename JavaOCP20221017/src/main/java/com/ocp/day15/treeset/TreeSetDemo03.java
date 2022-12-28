@@ -7,17 +7,16 @@ public class TreeSetDemo03 {
 		// Creating an object of TreeSet
 		TreeSet<String> treeSet = new TreeSet<String>();
 		// add element(s)		
-		treeSet.add("Tesla"); // Te
-		treeSet.add("James"); // J
-		treeSet.add("David"); // D
-		treeSet.add("Tasle"); // Ta
-		treeSet.add("Tim");   // Ti
+		treeSet.add("Tesla"); 
+		treeSet.add("James"); 
+		treeSet.add("David"); 
+		treeSet.add("Tasle"); 
+		treeSet.add("Tim");   
 
 		// Traversing elements of TreeSet
 		Iterator<String> iteratorTreeSet = treeSet.iterator();			
 		while (iteratorTreeSet.hasNext()) {
-			// D -> J -> T
-			// Ta -> Te -> Ti
+			// 'D'avid -> 'J'ames -> T'a'sle -> T'e'sla -> T'i'm
 			System.out.println(iteratorTreeSet.next());
 		}
 	}
