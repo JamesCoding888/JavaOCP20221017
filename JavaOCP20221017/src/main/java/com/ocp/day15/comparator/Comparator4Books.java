@@ -2,22 +2,22 @@ package com.ocp.day15.comparator;
 
 /*
 
-	What is the result of Case 1?
+	What is the result of Case 1 ?
 	
-	A.[A Guide to Java Tour:3.0, Beginning with Java:2.0]
+	A.[A Guide to Java Tour:3.0, Business for OpenAI:1.0, Beginning with Java:2.0]
 	
-	B.[Beginning with Java:2.0, A Guide to Java Tour:3.0]
+	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
 	
 	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
 	
 	D. An Exception is thrown at run time.
 
 	
-	What is the result of Case 2?
+	What is the result of Case 2 ?
 	
-	A.[a:1.0, b:2.0, b:3.0, c:4.0, c:5.0, c:5.0]
+	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
 	
-	B.[a:1.0, b:3.0, b:2.0, c:5.0, c:4.0, c:5.0]
+	B.[a:1.0, b:3.0, b:2.0, c:4.0, c:5.0, c:5.0, c:7.0]
 	
 	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
 	
@@ -59,19 +59,24 @@ class Book implements Comparator<Book>{
 public class Comparator4Books {
 	public static void main(String[] args) {
 		// Case 1:
-		List<Book> books_1 = Arrays.asList(new Book("Beginning with Java", 2), new Book("A Guide to Java Tour", 3));
+		List<Book> books_1 = Arrays.asList(
+									new Book("Beginning with Java", 2),    
+									new Book("Business for OpenAI", 1),
+									new Book("A Guide to Java Tour", 3)									
+								  );
 		// Case 2:
 		List<Book> books_2 = Arrays.asList(
-									new Book("a", 1), 
-									new Book("b", 2),
-									new Book("b", 3),
 									new Book("c", 4),
+									new Book("a", 1), 
+									new Book("b", 3),
+									new Book("c", 7),
 									new Book("c", 5),
+									new Book("b", 2),
 									new Book("c", 5)
 							      );								
 		Collections.sort(books_1, new Book());
 		Collections.sort(books_2, new Book());
-		System.out.println("Case 1: " + books_1);
+		System.out.println("Case 1: " + books_1); 
 		System.out.println("Case 2: " + books_2);
 	}
 }
@@ -96,7 +101,7 @@ public class Comparator4Books {
 	
 	Console: 
 
-			Case 1: [A Guide to Java Tour:3.0, Beginning with Java:2.0]
+			Case 1: [A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
 			Case 2: [a:1.0, b:2.0, b:3.0, c:4.0, c:5.0, c:5.0]
 
 		
