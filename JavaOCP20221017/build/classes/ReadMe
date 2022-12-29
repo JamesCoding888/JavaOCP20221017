@@ -286,11 +286,13 @@
 
 ------------------------------------------------------------------------------
 # day6 Java Advanced: Using ArrayList and Scanner to design an ERP Office System for Check-in
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6">This lesson we introduce how to design an Office Check-in System with function of CRUD by ArrayList - API. Also, you will learn the application of Scanner</a> 
-
-
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Scanner API Practice</a>
 
 > ScannerDemo.java 
+- Description:  ...
+-
+
+> ScannerFilter.java 
 - Description:  ...
 - 
 
@@ -306,6 +308,7 @@
 - Description:  ...
 - 
 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerException">Introduction of Scanner Exception</a>
 
 > IntroductionOfFinal.java
 - Description: ...
@@ -327,10 +330,7 @@
 - 
 
 
-> ArrayListOfHeapMemoryTest.java 
-- Description:  ...
-- 
-
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by API - ArrayList, you will learn in this session</a>
 
 > ArrayListDemo1.java 
 - Description:  ...
@@ -341,6 +341,9 @@
 - Description:  ...
 - 
 
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/streetesting">Introduction of Stress Testing</a>
+> ArrayListOfHeapMemoryTest.java 
+- Description:  ...
 
 ------------------------------------------------------------------------------
 # day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
@@ -688,7 +691,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_2">Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of "public int hashCode(){ ... }" to avoid "Hash Collision" from two different objects being equally.</a>
+1. Introduction of how to improve the hashCode() Implementation could be, as following sample codes with overriding the method of<a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_2"> "public int hashCode(){ ... }" </a> to avoid "Hash Collision" from two different objects being equally.
 
 
 2. Sincerely recommended a Book for your reference - "Effective Java 3rd Edition". You will be even better to understand the "Hash Collision" and "hashCode algorithm".
@@ -789,7 +792,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
 - Recap the development of Java Document:
-![image](https://user-images.githubusercontent.com/83496093/208358061-32bab95b-857c-445e-a86e-4a53d5396ce8.png)
+![image](https://user-images.githubusercontent.com/83496093/208557806-0a98b1a9-5f94-4e12-b414-45580cfb8103.png)
+
+
 
 
 
@@ -840,14 +845,108 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day15 Java Advanced: LinkedList, ListIterator
+# day15 Java Advanced: Vector, Stack, LinkedList, ListIterator, TreeSet, Set, compareTo, Comparable, Comparator, Efficiency Testing of group of objects from Collection 
 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction ...</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector</a>
+> VectorDemo.java
+- Description:  ...
 
-> ListDemo.java
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/stack">Introduction of Stack</a>
+> StackDemo01.java
+- Description:  ...
+
+> StackDemo02.java
+- Description:  ...
+
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList</a>
+
+> LinkedListDemo01.java
+- Description:  ...
+
+> LinkedListDemo02.java
+- Description:  ...
+
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/queue">Introduction of Queue</a>
+
+> QueueDemo.java
+- Description:  ...
+
+5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/treeset">Introduction of TreeSet</a>
+
+> TreeSetDemo01.java
 - Description:  ...
 
 
+> TreeSetDemo02.java
+- Description:  ...
+
+> TreeSetDemo03.java
+- Description:  Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
+
+6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparable">Introduction of Comparable</a>
+
+> Employee.java
+- Description:  ...
+
+> SortType.java
+- Description:  ...
+
+> TreeSetComparable.java
+- Description:  ...
+
+7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparator">Introduction of Comparator</a>
+
+> Comparator4Books.java
+- Description:  ...
+
+
+
+
+8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
+- *** Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
+- <img width="1003" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
+
+
+
+
+> ListEfficiency.java
+- Description: The executed efficiency of List in this sample code, you will learn the instantiated object of List from 1) always use the same object of list to proceed the loop function, 2) always use the newly object of list to proceed the loop function. 
+
+> TreeSetEfficiency.java
+- Description: The executed efficiency of TreeSet is faster than List by 6 times, almost. Pleease check out the sample code for more detail. 
+
+> ArrayListEfficiency.java
+- Description:  ...
+
+> VectorEfficiency.java
+- Description:  ...
+
+> StackEfficiency.java
+- Description:  ...
+
+> LinkedListEfficiency.java
+- Description:  ...
+
+> LinkedHashSetEfficiency.java
+- Description:  ...
+
+> HashSetEfficiency.java
+- Description:  ...
+
+> QueueEfficiency.java
+- Description:  ...
+
+> DequeEfficiency.java
+- Description:  ...
+
+> PriorityQueueEfficiency.java
+- Description:  ...
+
+> ArrayDequeEfficiency.java
+- Description:  ...
+
+
+> ***** Another sample codes , TBD *****
 
 
 ------------------------------------------------------------------------------
@@ -866,6 +965,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 > TestException.java
 - Description
+
+
+
 
 
 
