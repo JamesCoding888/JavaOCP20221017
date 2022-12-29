@@ -4,8 +4,8 @@ package com.ocp.day16.map;
  * https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
  *******************************************************************
  * 			   id    	               name						   *
- * row_1        1		james, marry, david						   *
- * row_2		2					 	tim						   *
+ * row_1        1		James, Marry, David						   *
+ * row_2		2					 	Tim						   *
  * row_3 		3					   Elon						   *
  *******************************************************************
 */
