@@ -1,6 +1,6 @@
 package com.ocp.day16.map;
 
-/*
+/*	後續整理~~~
  	Introduction of Hashtable class:
 	1) The Hashtable class implements a hash table
  	2) A hash table maps key(s) to value(s)
@@ -15,8 +15,8 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 public class EnumerationDemo {
 	public static void main(String[] args) {
-		// 起初先建立 200 個空間, 用到 80% 就會自動增長
-		Hashtable<String, Integer> tables = new Hashtable<>(200, 0.8f);
+		// 起初先建立 100 個空間, 用到 75% 就會自動增長
+		Hashtable<String, Integer> tables = new Hashtable<>(100, 0.75f);
 		tables.put("A", 100);
 		tables.put("C", 90);
 		tables.put("B", 80);
