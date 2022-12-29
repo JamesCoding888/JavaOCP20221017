@@ -2,7 +2,7 @@ package com.ocp.day15.comparator;
 
 /*
 
-	What is the result of Case 1 ?
+	What is the result of Case 1, based on 1) ASCENDING order of compare method ?
 	
 	A.[A Guide to Java Tour:3.0, Business for OpenAI:1.0, Beginning with Java:2.0]
 	
@@ -13,7 +13,7 @@ package com.ocp.day15.comparator;
 	D. An Exception is thrown at run time.
 
 	
-	What is the result of Case 2 ?
+	What is the result of Case 2, based on 1) ASCENDING order of compare method ?
 	
 	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
 	
@@ -22,6 +22,30 @@ package com.ocp.day15.comparator;
 	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
 	
 	D. An Exception is thrown at run time.
+	
+	
+	
+	What is the result of Case 1, based on 2) DESCENDING order of compare method ?
+	
+	A.[Business for OpenAI:1.0, Beginning with Java:2.0, A Guide to Java Tour:3.0]
+	
+	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+
+	
+	What is the result of Case 2, based on 2) DESCENDING order of compare method ?
+	
+	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
+	
+	B.[c:4.0, c:7.0, c:5.0, c:5.0, b:3.0, b:2.0, a:1.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+	
 	
 */
 
@@ -94,8 +118,15 @@ class Book implements Comparator<Book>{
 	*/
 	@Override
     public int compare(Book b1, Book b2) {
-		// ASCENDING order 
-        return b1.name.compareTo(b2.name);   
+		//  1) ASCENDING order
+//		/*          	
+        	return b1.name.compareTo(b2.name);  
+//      */
+
+		//  2) DESCENDING order		
+        /*  
+         	return b2.name.compareTo(b1.name);
+        */
     }
 	
 	public String toString() {
@@ -147,10 +178,13 @@ public class Comparator4Books {
 
 /*
 	
-	Console: 
+	Console of Case1, based on ASCENDING order: 
 
 			Case 1: [A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
-			Case 2: [a:1.0, b:2.0, b:3.0, c:4.0, c:5.0, c:5.0]
+			Case 2: [a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
 
+	Console of Case2, based on DESCENDING order:
+			Case 1: [Business for OpenAI:1.0, Beginning with Java:2.0, A Guide to Java Tour:3.0]
+			Case 2: [c:4.0, c:7.0, c:5.0, c:5.0, b:3.0, b:2.0, a:1.0]
 		
 */
