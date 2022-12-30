@@ -1,22 +1,24 @@
 package com.ocp.day16.map;
 
-/*  後續整理~~~
+/*  
  	Introduction of HashMap:
-  	1) HashMap<K, V> is a part of Java’s collection since Java 1.2. 
-  	   This class is found in java.util package. It provides the basic implementation of the Map interface of Java. 
-  	2) HashMap stores the data based on Key and Value. 
-  	3) You can access them by an index of another type (e.g. an Integer). One object is used as a key (index) to another object (value). If you try to insert the duplicate key, it will replace the element of the corresponding key.
-	3) HashMap is almost same as HashTable, but HashMap is Unsynchronized. 
-	4) It allows to store the null keys as well, but there should be only one null key object and there can be any number of null values.  This class makes no guarantees as to the order of the map. To use this class and its methods, you need to import java.util.HashMap package or its superclass.
- 
- 
- 	https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
- 
- 
- 
+  	1) HashMap<K, V> class, at package: "java.util", is a subclass of Map interface since Java 1.2.  
+  	2) Hash table is based implementation of the Map interface
+  	3) HashMap stores the data based on Key and Value. 
+  	4) Permit null values and the null keys 
+  	5) If trying to insert the duplicate key, HashMap will replace the element of the corresponding key.
+  	6) HashMap class is almost same as Hashtable class, except for unsynchronized and permitted nulls.
+  	7) HashMap is Unsynchronized but HashTable Synchronized
+  	8) HashMap permits elements of Key and Value to be "null", but HashTable is Unallowable
+  	9) HashMap class makes NO guarantees as to the order of the map; especially, 
+  	   HashMap does NOT guarantee that the order will remain constant over time.
+  	    	    
+  	Refer to the link as follows:
+  	https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+  	  	
  
  	Following the table page of sample code:
-	 	 
+ 		 	 
 		 *******************************************************************
 		 * 			   id    	               name						   *
 		 * row_1        1		James, Marry, David						   *
@@ -33,7 +35,26 @@ import java.util.Map;
 import java.util.Set;
 public class HashMapDemo {
 	public static void main(String[] args) {
-
+		int initialCapacity = 16;
+		float DEFAUL_LOAD_FACTOR = 0.75f;
+		new HashMap(initialCapacity, DEFAUL_LOAD_FACTOR);
+		
+		
+		/*
+		 	 // Please read the document of Oracle as follows
+		     
+		     // Constructs an empty {@code HashMap} with the default initial capacity (16) and the default load factor (0.75).
+		     // int initialCapacity = 16;
+		     // float DEFAUL_LOAD_FACTOR = 0.75f;
+			   
+			    public HashMap() {
+			        this.loadFactor = DEFAULT_LOAD_FACTOR; // all other fields defaulted
+			    }
+		*/
+		
+	    
+		// default Initial Capacity: 16 
+		// default Load Factor: 0.75
 		Map<Object, Set<Object>> hashMap1 = new HashMap<>();
 		Set<Object> hashSet1 = new LinkedHashSet<>();
 		
