@@ -1,11 +1,14 @@
-100 * 75% = 75 75 (Threshold)
-			175 * 75% = 131.25 (Threshold)
-				306.25 (=175 + 131.25) * 75% = 229.6875 (Threshold)
-							535.9375 (=229.6875 + 306.25) * 75% = 401.9531 (Threshold)
-												(535.9375 + 401.9531) * 75% = 703.4179 (Threshold)
-														(703.4179 + 937.8906 ) * 75% = 1,230.9814 (Threshold)
-											      			2,872.2899 (=1,641.3085  + 1,230.9814) * 75% = 2,154.2174 (Threshold)
-											      			
+default initial capacity of HashSet: 16
+default load factor of HashSet: 0.75
+
+Let's resized the initial capacity to be 100 as following example:
+1) 100 * 75% = 75 (Threshold)
+   That is, while the 75th entry (i.e., key-value-pair) is added, hashSet will increase the capacity from 100 to 200.  
+2) 200 * 75% = 150 (Threshold)
+   While adding the 150th entry, hashSet will increase the capacity from 200 to 300.
+   
+   
+										      			
 											      			
 Index lookup costs:
 The database server incurs additional costs when it finds a row through an index. 

@@ -1,14 +1,19 @@
+The performance of a hash map is affected by two parameters: Initial Capacity and Load Factor. 
+The capacity is the number of buckets or the underlying array length and the initial capacity is simply the capacity during creation.
+
+The load factor (LF), is a measure of how full the hash map should be after adding some values before it is resized.
+
 default initial capacity of HashSet: 16
 default load factor of HashSet: 0.75
+
 
 Let's resized the initial capacity to be 100 as following example:
 1) 100 * 75% = 75 (Threshold)
    That is, while the 75th entry (i.e., key-value-pair) is added, hashSet will increase the capacity from 100 to 200.  
 2) 200 * 75% = 150 (Threshold)
-   While adding the 150th entry, hashSet will increase the capacity from 200 to 300.
+   While adding the 150th entry, hash map will increase the capacity from 200 to 300.
    
-   
-										      			
+   							      			
 											      			
 Index lookup costs:
 The database server incurs additional costs when it finds a row through an index. 
@@ -22,5 +27,5 @@ If each value occurs only once in the index and the query is a join, each row to
 
 
 Please refer to the link: 
--> https://www.baeldung.com/java-hashset
+-> https://www.baeldung.com/java-hashmap
 -> https://www.ibm.com/docs/en/informix-servers/14.10?topic=query-index-lookup-costs											      			

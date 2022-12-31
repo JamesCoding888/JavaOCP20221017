@@ -34,6 +34,7 @@ package com.ocp.day14.hashSet;
 	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
 	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
 	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+
 	9. Available since java 1.2
 
 
