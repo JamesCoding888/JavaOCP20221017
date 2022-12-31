@@ -100,37 +100,21 @@ public class HashMapDemo {
 	    
 		// default Initial Capacity: 16 
 		// default Load Factor: 0.75
-		Map<Object, Set<Object>> hashMap1 = new HashMap<>();
-		Set<Object> hashSet1 = new LinkedHashSet<>();
-		// default Initial Capacity: 16 
-		// default Load Factor: 0.75
-		Map<Object, Set<Object>> hashMap2 = new HashMap<>();
-		Set<Object> hashSet2 = new LinkedHashSet<>();
-		// default Initial Capacity: 16
-		// default Load Factor: 0.75
-		Map<Object, Set<Object>> hashMap3 = new HashMap<>();
-		Set<Object> hashSet3 = new LinkedHashSet<>();
+		Map<Object, Set<Object>> hashMap = new HashMap<>();
+		Set<Object> linkedHashSet = new LinkedHashSet<>();
 		
-		hashSet1.add("James");
-		// If trying to insert the duplicate key, 
-		// HashMap will replace the element of the corresponding key
-		hashSet1.add("James");
-		// Permit null values
-		hashSet1.add(null);		
-		hashSet1.add("Marry");
-		hashSet1.add("David");	
-		hashMap1.put(1, hashSet1);
-		// Permit null values and the null keys
-		hashMap1.put(null, null);
-		hashSet2.add("Tim");					
-		hashMap2.put(2, hashSet2);
-		
-		hashSet3.add("Elon");					
-		hashMap3.put(3, hashSet3);	
-		
-		System.out.println(hashMap1);
-		System.out.println(hashMap2);
-		System.out.println(hashMap3);
+		linkedHashSet.add("James");
+		// linkedHashSet permits null value(s)
+		linkedHashSet.add(null);		
+		linkedHashSet.add("Marry");
+	 	// Repeated element(s), NOT allowable
+		linkedHashSet.add("Marry");
+		linkedHashSet.add("David");	
+		hashMap.put(1, linkedHashSet);
+		// hashMap permits null keys and the null values
+		hashMap.put(null, null);
+		System.out.println(hashMap);
+
 	}
 }
 

@@ -129,7 +129,7 @@ public class HashSetDemo1 {
 		// Repeated element(s) NOT allowable
 		// HashSet 中的元素，不保證有順序性
 		// 元素不允許重複
-		Set hashSet = new HashSet();
+		Set<Object> hashSet = new HashSet<>();
 		hashSet.add("Chinese");
 		hashSet.add(100);        // type of 100, is Integer, NOT int, due to Auto-boxing
 		hashSet.add("English");
@@ -150,7 +150,7 @@ public class HashSetDemo1 {
            		super(16, .75f, true);
            }	
 		*/
-		Set linkedHashSet = new LinkedHashSet();
+		Set<Object> linkedHashSet = new LinkedHashSet<>();
 		linkedHashSet.add("Chinese");
 		linkedHashSet.add(100);   // type of 100, is Integer, NOT int
 		linkedHashSet.add("English");
