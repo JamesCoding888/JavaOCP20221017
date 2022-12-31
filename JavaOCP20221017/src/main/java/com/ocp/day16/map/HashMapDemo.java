@@ -8,8 +8,8 @@ package com.ocp.day16.map;
 	  	4) Permit null values and the null keys 
 	  	5) If trying to insert the duplicate key, HashMap will replace the element of the corresponding key.
 	  	6) HashMap class is almost same as Hashtable class, except for unsynchronized and permitted nulls.
-	  	7) HashMap is Unsynchronized but HashTable Synchronized
-	  	8) HashMap permits elements of Key and Value to be "null", but HashTable is Unallowable
+	  	7) HashMap is "Unsynchronized" but HashTable "Synchronized"
+	  	8) HashMap permits elements of Key and Value to be "null", but HashTable is NOT allowable
 	  	9) HashMap class makes NO guarantee as to the order of the map; especially, 
 	  	   HashMap does NOT guarantee that the order will remain constant over time  	    	   
 	   10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
@@ -61,39 +61,17 @@ package com.ocp.day16.map;
 		       The expected number of entries in the map and its load factor should be taken into account when setting its initial capacity, so as to minimize the number of rehash operations. 
 		   (3) If the initial capacity is greater than the maximum number of entries divided by the load factor, no rehash operations will ever occur.
 			
-		   (4) If many mappings are to be stored in a HashMap instance, creating it with a sufficiently large capacity will allow the mappings to be stored more efficiently than letting it perform automatic rehashing as needed to grow the table. Note that using many keys with the same hashCode() is a sure way to slow down performance of any hash table. To ameliorate impact, when keys are Comparable, this class may use comparison order among keys to help break ties.
-
-   
-  	
-  		    
-
- 	
- 
-
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
-  	    	    
+		   (4) If many mappings are to be stored in a HashMap instance, creating it with a sufficiently large capacity will allow the mappings to be stored more efficiently 
+		       than letting it perform automatic rehashing as needed to grow the table. 
+		       
+		   (5) Note that using many keys with the same hashCode() is a sure way to slow down performance of any hash table. To improve impact, when keys are Comparable, 
+		       this class may use comparison order among keys to help break ties.
+	    
   	    	    
   	Refer to the link as follows:
-  	https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
-  	  	
- 
- 	Following the table page of sample code:
- 		 	 
-		 *******************************************************************
-		 * 			   id    	               name						   *
-		 * row_1        1		James, Marry, David						   *
-		 * row_2		2					 	Tim						   *
-		 * row_3 		3					   Elon						   *
-		 *******************************************************************
+  	https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html  	  	
+ 	https://www.baeldung.com/java-hashmap-load-factor
+ 	
 		 
 		 
 */
@@ -101,10 +79,11 @@ package com.ocp.day16.map;
 import java.util.HashMap; 
 import java.util.LinkedHashSet;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 public class HashMapDemo {
 	public static void main(String[] args) {
-		 
+		
 		 
 		/*
 		 	 // Please read the document of Oracle as follows
@@ -123,10 +102,12 @@ public class HashMapDemo {
 		// default Load Factor: 0.75
 		Map<Object, Set<Object>> hashMap1 = new HashMap<>();
 		Set<Object> hashSet1 = new LinkedHashSet<>();
-		
+		// default Initial Capacity: 16 
+		// default Load Factor: 0.75
 		Map<Object, Set<Object>> hashMap2 = new HashMap<>();
 		Set<Object> hashSet2 = new LinkedHashSet<>();
-		
+		// default Initial Capacity: 16
+		// default Load Factor: 0.75
 		Map<Object, Set<Object>> hashMap3 = new HashMap<>();
 		Set<Object> hashSet3 = new LinkedHashSet<>();
 		
@@ -148,6 +129,16 @@ public class HashMapDemo {
 }
 
 /*
+ 
+		Following the table page of sample code: 	 
+		 *******************************************************************
+		 * 			   id    	               name						   *
+		 * row_1        1		James, Marry, David						   *
+		 * row_2		2					 	Tim						   *
+		 * row_3 		3					   Elon						   *
+		 *******************************************************************
+		 
+		 
 		 Console: 
 		 
 				{1=[James, Marry, David]}
