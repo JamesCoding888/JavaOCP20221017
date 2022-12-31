@@ -25,7 +25,6 @@ The odds of finding a leaf page in a buffer depend on the size of the index, the
 If each value occurs only once in the index and the query is a join, each row to be joined requires a non-sequential lookup into the index, followed by a non-sequential access to the associated row in the table.
 
 
-
 Please refer to the link: 
 -> https://www.baeldung.com/java-hashmap
 -> https://www.ibm.com/docs/en/informix-servers/14.10?topic=query-index-lookup-costs											      			
