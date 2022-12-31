@@ -81,7 +81,7 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-public class HashMapDemo {
+public class HashMapDemo1 {
 	public static void main(String[] args) {
 		
 		 
@@ -100,7 +100,7 @@ public class HashMapDemo {
 	    
 		// default Initial Capacity: 16 
 		// default Load Factor: 0.75
-		Map<Object, Set<Object>> hashMap = new HashMap<>();
+		Map<Object, Object> hashMap = new HashMap<>();
 		Set<Object> linkedHashSet = new LinkedHashSet<>();
 		
 		linkedHashSet.add("James");
@@ -113,8 +113,18 @@ public class HashMapDemo {
 		hashMap.put(1, linkedHashSet);
 		// hashMap permits null keys and the null values
 		hashMap.put(null, null);
+		// If trying to insert the duplicate key, 
+		// HashMap will replace the element of the corresponding key.
+		hashMap.put(null, 5);
+		hashMap.put(2, null);
+		hashMap.put(3, "Tim");
 		System.out.println(hashMap);
-
+		System.out.println("hashMap.keySets: " + hashMap.keySet());
+		System.out.println("hashMap.values: " + hashMap.values());
+		System.out.println("hashMap.get(3): " + hashMap.get(3));
+		System.out.println("hashMap.remove(3): " + hashMap.remove(3));
+		System.out.println(hashMap);
+		System.out.println("hashMap.get(4): " + hashMap.get(4));
 	}
 }
 
@@ -124,15 +134,25 @@ public class HashMapDemo {
 		 *******************************************************************
 		 * 			  id    	                      name				   *
 		 * row_1    null                              null                 *
-		 * row_2       1         James, null, Marry, David				   *
-		 * row_3	   2					 	       Tim				   *
-		 * row_4 	   3					          Elon			       *		 
+		 * row_2       1         James, null, Marry, David				   *	
+		 * row_3       2         					  null				   *
+		 * row_4       3         			           Tim				   *	 
 		 *******************************************************************
-		 
+		 * 			  id    	                      name				   *
+		 * row_1    null                                 5                 *
+		 * row_2       1         James, null, Marry, David				   *	
+		 * row_3       2         					  null				   *
+		 * row_4       3         			           Tim				   *	 
+		 *******************************************************************
 		 
 		 Console: 
 		 
-				{null=null, 1=[James, null, Marry, David]}
-				{2=[Tim]}
-				{3=[Elon]}
+			{null=5, 1=[James, null, Marry, David], 2=null, 3=Tim}
+			hashMap.keySets: [null, 1, 2, 3]
+			hashMap.values: [5, [James, null, Marry, David], null, Tim]
+			hashMap.get(3): Tim
+			hashMap.remove(3): Tim
+			{null=5, 1=[James, null, Marry, David], 2=null}
+			hashMap.get(4): null
+			
 */
