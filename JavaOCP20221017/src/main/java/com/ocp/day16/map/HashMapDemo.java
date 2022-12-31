@@ -111,11 +111,17 @@ public class HashMapDemo {
 		Map<Object, Set<Object>> hashMap3 = new HashMap<>();
 		Set<Object> hashSet3 = new LinkedHashSet<>();
 		
-		hashSet1.add("James");		
+		hashSet1.add("James");
+		// If trying to insert the duplicate key, 
+		// HashMap will replace the element of the corresponding key
+		hashSet1.add("James");
+		// Permit null values
+		hashSet1.add(null);		
 		hashSet1.add("Marry");
 		hashSet1.add("David");	
 		hashMap1.put(1, hashSet1);
-		
+		// Permit null values and the null keys
+		hashMap1.put(null, null);
 		hashSet2.add("Tim");					
 		hashMap2.put(2, hashSet2);
 		
@@ -132,16 +138,17 @@ public class HashMapDemo {
  
 		Following the table page of sample code: 	 
 		 *******************************************************************
-		 * 			   id    	               name						   *
-		 * row_1        1		James, Marry, David						   *
-		 * row_2		2					 	Tim						   *
-		 * row_3 		3					   Elon						   *
+		 * 			  id    	                      name				   *
+		 * row_1    null                              null                 *
+		 * row_2       1         James, null, Marry, David				   *
+		 * row_3	   2					 	       Tim				   *
+		 * row_4 	   3					          Elon			       *		 
 		 *******************************************************************
 		 
 		 
 		 Console: 
 		 
-				{1=[James, Marry, David]}
+				{null=null, 1=[James, null, Marry, David]}
 				{2=[Tim]}
 				{3=[Elon]}
 */
