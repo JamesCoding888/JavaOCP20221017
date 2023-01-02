@@ -10,6 +10,8 @@
 > Certificates
 - <img width="203" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
+> Noticed
+- Please ctrl + F to search "Notice" string, that will be updated later
 
 
 ------------------------------------------------------------------------------
@@ -792,7 +794,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
 - Recap the development of Java Document:
-![image](https://user-images.githubusercontent.com/83496093/208557806-0a98b1a9-5f94-4e12-b414-45580cfb8103.png)
+- <img width="1020" alt="Published Date of Java API" src="https://user-images.githubusercontent.com/83496093/210194731-3971ed66-a40a-489c-adf7-a9fac7739701.png">
+
+
 
 
 
@@ -950,8 +954,41 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day16 Java Advanced: ... , ... Coming Soon
+# day16 Java Advanced: HashMap, HashTable, TreeMap, TreeSet, Enumeration
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map</a>
 
+> HashMapDemo1.java
+- Description:  ...
+
+> HashMapDemo2.java
+- Description:  ...
+
+> HashMapDemo3.java
+- Description:  ...
+
+> HashMapDemo4.java
+- Description:  ...
+
+> HashMapDemo5.java
+- Description:  ...
+
+> HashMapDemo6.java
+- Description:  ...
+
+> HashMapDemo7.java
+- Description:  ...
+
+> HashTableDemo.java
+- Description:  ...
+
+> TreeMapDemo.java
+- Description:  ...
+
+> EnumerationDemo.java
+- Description:  ...
+
+> Load Factor & Initial Capacity (hashMap).docx
+- Description:  Load Factor and Initial Capacity for hashMap
 
 
 
