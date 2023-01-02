@@ -985,8 +985,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > EnumerationDemo.java
 - Description:  ...
 
-> Load Factor & Capacity (Map)
-- Description:  Load Factor and Initial Capacity
+> Load Factor & Initial Capacity (hashMap).docx
+- Description:  Load Factor and Initial Capacity for hashMap
 
 
 
