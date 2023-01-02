@@ -44,10 +44,18 @@ public class HashMapDemo4int{
 		Set<String> keys = hashMap.keySet();
 		
 		// for-each to print out the each of keys
-		for (Object key : keys) {
-			System.out.printf("[Key : Value] -> [%s : %d]\n", key, hashMap.get(key));
-		}
-
+		// (1)
+		/*
+			for (Object key : keys) {
+				System.out.printf("[Key : Value] -> [%s : %d]\n", key, hashMap.get(key));
+			}
+		*/
+		// (2)
+//		/*
+			for (String key : keys) {
+				System.out.printf("[Key : Value] -> [%s : %d]\n", key, hashMap.get(key));
+			}
+//		/*
 		System.out.println("*************** Java 1.5 - Iterable API & Java 1.8 - forEach ***************");
 		/*
 			public interface Iterable<T> {
