@@ -101,7 +101,7 @@ public class HashMapDemo1 {
 		// default Initial Capacity: 16 
 		// default Load Factor: 0.75
 		Map<Object, Object> hashMap = new HashMap<>();
-		Set<Object> linkedHashSet = new LinkedHashSet<>();
+		Set<String> linkedHashSet = new LinkedHashSet<>();
 		
 		linkedHashSet.add("James");
 		// linkedHashSet permits null value(s)
