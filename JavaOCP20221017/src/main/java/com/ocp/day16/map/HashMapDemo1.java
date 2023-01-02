@@ -133,7 +133,7 @@ public class HashMapDemo1 {
 		Following the table page of sample code: 	 
 		 *******************************************************************
 		 * 			  id    	                      name				   *
-		 * row_1    null                              null                 *
+		 * row_1    null                                 5                 *
 		 * row_2       1         James, null, Marry, David				   *	
 		 * row_3       2         					  null				   *
 		 * row_4       3         			           Tim				   *	 
@@ -141,8 +141,7 @@ public class HashMapDemo1 {
 		 * 			  id    	                      name				   *
 		 * row_1    null                                 5                 *
 		 * row_2       1         James, null, Marry, David				   *	
-		 * row_3       2         					  null				   *
-		 * row_4       3         			           Tim				   *	 
+		 * row_3       2         					  null				   *	 
 		 *******************************************************************
 		 
 		 Console: 
