@@ -955,7 +955,25 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 # day16 Java Advanced: HashMap, HashTable, TreeMap, TreeSet, Enumeration
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map</a>
 
-> HashMapDemo.java
+> HashMapDemo1.java
+- Description:  ...
+
+> HashMapDemo2.java
+- Description:  ...
+
+> HashMapDemo3.java
+- Description:  ...
+
+> HashMapDemo4.java
+- Description:  ...
+
+> HashMapDemo5.java
+- Description:  ...
+
+> HashMapDemo6.java
+- Description:  ...
+
+> HashMapDemo7.java
 - Description:  ...
 
 > HashTableDemo.java
