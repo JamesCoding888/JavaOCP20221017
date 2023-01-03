@@ -627,7 +627,7 @@ Decorator Pattern (A menu of Subway Order System):
 
 	<img width="203" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
 	
-	<img width="203" alt="SubwayUML" src="https://user-images.githubusercontent.com/83496093/210288596-073956e6-f2f4-4934-848a-a005d5a83d95.png">
+
 
 	
 	
