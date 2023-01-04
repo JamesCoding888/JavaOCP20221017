@@ -2,6 +2,7 @@ package com.ocp.day16.map.comparable;
 
 /* 
 	Introduction of this lecture:
+
 	
 */
 
@@ -17,13 +18,13 @@ import java.util.function.ToIntFunction;
 
 public class HashMapDemoComparable {
 	public static void main(String[] args) {
-		// Initiated the objects of Exam
+		// Instantiate objects of Exam
 		Exam exam01 = new Exam("Mathematics", 98);
 		Exam exam02 = new Exam("Microwave Engineering", 88);
 		Exam exam03 = new Exam("RFIC Design", 89);
 		Exam exam04 = new Exam("Java-1z0-819", 87);
 
-		// Initiated the objects of Student
+		// Instantiate objects of Student
 		Student student01 = new Student(1, "Betty");
 		Student student02 = new Student(2, "James");
 		Student student03 = new Student(3, "David");
