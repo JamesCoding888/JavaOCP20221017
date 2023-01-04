@@ -2,10 +2,12 @@ package com.ocp.day16.map.comparable;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 import java.util.Map.Entry;
 
 public class HashMapDemoComparable {
-
 	public static void main(String[] args) {
 		
 		Exam exam01 = new Exam("Mathematics", 98);
@@ -26,16 +28,58 @@ public class HashMapDemoComparable {
 		
 		System.out.println(hashMap);
 		
-		int sum = hashMap.entrySet().stream()
-									.mapToInt((Entry<Student, Exam> entry) -> entry.getValue().getScore())
-									.sum();
-		System.out.println(sum);		
+		// 1) Generally syntax of calculation of total scores of each students as follows
+		
+		/*
+		   public interface Map<K, V> {
+		  
+	     * Returns a {@link Set} view of the mappings contained in this map.
+	     * The set is backed by the map, so changes to the map are
+	     * reflected in the set, and vice-versa.  If the map is modified
+	     * while an iteration over the set is in progress (except through
+	     * the iterator's own {@code remove} operation, or through the
+	     * {@code setValue} operation on a map entry returned by the
+	     * iterator) the results of the iteration are undefined.  The set
+	     * supports element removal, which removes the corresponding
+	     * mapping from the map, via the {@code Iterator.remove},
+	     * {@code Set.remove}, {@code removeAll}, {@code retainAll} and
+	     * {@code clear} operations.  It does not support the
+	     * {@code add} or {@code addAll} operations.	     
+	     * @return a set view of the mappings contained in this map
+	   	 
+	   	   		Set<Map.Entry<K, V>> entrySet();
+	   	   
+	   	   }
+	   	   
+		 */
+		Set<Map.Entry<Student, Exam>> set = hashMap.entrySet();
+		Stream<Entry<Student, Exam>> stream = set.stream();
+		IntStream intStream = stream.mapToInt((Map.Entry<Student, Exam> entry) -> entry.getValue().getScore());
+		int sum1 = intStream.sum();
+		System.out.println("sum1: " + sum1);
+		
+		// 2) Optimized syntax as follows
+		int sum2 = hashMap.entrySet()
+						  .stream()
+						  .mapToInt((Entry<Student, Exam> entry) -> entry.getValue().getScore())
+						  .sum();		
+		System.out.println("sum2: " + sum2);
+				
+		// 3) Optimized syntax as follows
+		int sum3 = hashMap.entrySet()
+						  .stream()
+						  .mapToInt(entry -> entry.getValue().getScore())
+						  .sum();		
+		System.out.println("sum3: " + sum3);		
 	}
 }
 
 /*
 	Console:
-		{Student [id=3, name=David]=Exam [subject=RFIC Design, score=89], Student [id=2, name=James]=Exam [subject=Microwave Engineering, score=88], Student [id=1, name=Betty]=Exam [subject=Mathematics, score=98], Student [id=4, name=Elon]=Exam [subject=Java-1z0-819, score=87]}
-		362
+			{Student [id=3, name=David]=Exam [subject=RFIC Design, score=89], Student [id=2, name=James]=Exam [subject=Microwave Engineering, score=88], Student [id=1, name=Betty]=Exam [subject=Mathematics, score=98], Student [id=4, name=Elon]=Exam [subject=Java-1z0-819, score=87]}
+			sum1: 362
+			sum2: 362
+			sum3: 362
+
 
 */
