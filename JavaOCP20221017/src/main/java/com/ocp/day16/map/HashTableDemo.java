@@ -39,6 +39,9 @@ public class HashTableDemo {
 		// default Load Factor: 0.75
 		Hashtable<String, Integer> hashTable = new Hashtable<>();
 		hashTable.put("Mathematics", 98);
+		// If trying to insert the duplicate key, 
+		// HashMap will replace the element of the corresponding key.
+		hashTable.put("Microwave Engineering", 88);
 		hashTable.put("Microwave Engineering", 88);
 		hashTable.put("RFIC Design", 59);
 		hashTable.put("Java-1z0-819", 87);
@@ -46,7 +49,7 @@ public class HashTableDemo {
 //		hashTable.put(null, null);
 		System.out.println(hashTable);
 
-		// Enumeration
+		// Enumeration (Hashtable did have this API, but HashMap neither
 		Enumeration<Integer> values = hashTable.elements();
 		while (values.hasMoreElements()) {
 			Integer value = values.nextElement();
