@@ -24,5 +24,11 @@ public class HashMapDemoComparable {
 		hashMap.put(student04, exam04);
 		
 		System.out.println(hashMap);
+		
+		int sum = hashMap.entrySet().stream()
+									.mapToInt(entry -> entry.getValue().getScore())
+									.sum();
+		System.out.println(sum);
+		
 	}
 }
