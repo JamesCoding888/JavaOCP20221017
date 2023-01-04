@@ -56,7 +56,7 @@ public class HashMapDemo4int{
 				System.out.printf("[Key : Value] -> [%s : %d]\n", key, hashMap.get(key));
 			}
 //		/*
-		System.out.println("*************** Java 1.5 - Iterable API & Java 1.8 - forEach ***************");
+		System.out.println("*************** Java 1.2 - Iterable API & Java 1.8 - forEach ***************");
 		/*
 			public interface Iterable<T> {
 			    
@@ -64,7 +64,7 @@ public class HashMapDemo4int{
 			     *
 			     * @return an Iterator.
 			    
-			    Iterator<T> iterator();
+			       Iterator<T> iterator();
 	
 			    
 			     * Performs the given action for each element of the {@code Iterable}
@@ -88,12 +88,14 @@ public class HashMapDemo4int{
 			     * @throws NullPointerException if the specified action is null
 			     * @since 1.8
 			     
-			    default void forEach(Consumer<? super T> action) {
-			        Objects.requireNonNull(action);
-			        for (T t : this) {
-			            action.accept(t);
-			        }
-			    }
+				   default void forEach(Consumer<? super T> action) {
+				       Objects.requireNonNull(action);
+				       for (T t : this) {
+				           action.accept(t);
+				       }
+			       }
+			}
+			       
 		*/
 		
 		set.forEach(entry -> System.out.printf("[Key : Value] -> [%s : %d]\n", entry.getKey(), entry.getValue()));
@@ -114,37 +116,7 @@ public class HashMapDemo4int{
 
 
 
-/*
-public class HashMapDemo2 {
-    public static void main(String[] args) {
-        Map<String, Integer> hashMap = new HashMap<>();
-        hashMap.put("Mathematics", 98);
-        hashMap.put("Microwave Engineering", 88);
-        hashMap.put("RFIC Design", 89);
-        hashMap.put("Java-1z0-819", 87);
-        System.out.println(hashMap);
-        
-        // Invoke the method of Map - keySet() to get all elements (i.e., keys) 
-        // and store those keys into object of Set
-        Set<String> keys = hashMap.keySet();  
-        // for-each to print out the each of keys and values
-        for(String key : keys) {
-            System.out.println(key + " = " + hashMap.get(key));
-        }
-        
-        Set<Entry<String, Integer>> entrySet = hashMap.entrySet();
-        entrySet.forEach((Entry<String, Integer> entry) -> System.out.println(entry.getKey() + " : " + entry.getValue()));
-        
-        // Sum of all scores
-        int sum = hashMap.entrySet()
-                         .stream()
-                       //.mapToInt(entry -> entry.getValue())
-                         .mapToInt(Entry::getValue) // same syntax as previously line
-                         .sum();
-        System.out.println("Total Scores: " + sum);
-    }
-}
-*/
+
 /*
 	Console: 
 			{Java-1z0-819=87, Microwave Engineering=88, Mathematics=98, RFIC Design=89}

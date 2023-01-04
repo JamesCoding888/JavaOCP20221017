@@ -2,7 +2,7 @@ package com.ocp.day16.map.comparable;
 
 
 /*
- 	Introduction of this Lecture:
+ 	Introduction of this lecture:
  		
  		1) API of "TreeMap" 
  		
