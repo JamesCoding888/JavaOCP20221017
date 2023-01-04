@@ -16,6 +16,9 @@ package com.ocp.day16.map;
 	   11) Fail-fast iteration  
 	   12) The Hashtable class was introduced in Java 1.0, which was released in 1996
 
+	Refer to the link as follows:
+	https://www.baeldung.com/java-hash-table
+	https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html
 */
 
 
@@ -31,14 +34,16 @@ public class HashTableDemo {
 		       this(11, 0.75f);
 		   }		    
 		*/
-//		Hashtable<String, Integer> hashTable = new Hashtable<>(200, 0.8f);
+	    
+		// default Initial Capacity: 11
+		// default Load Factor: 0.75
 		Hashtable<String, Integer> hashTable = new Hashtable<>();
 		hashTable.put("Mathematics", 98);
 		hashTable.put("Microwave Engineering", 88);
 		hashTable.put("RFIC Design", 59);
 		hashTable.put("Java-1z0-819", 87);
 		// Exception in thread "main" java.lang.NullPointerException
-		hashTable.put(null, null);
+//		hashTable.put(null, null);
 		System.out.println(hashTable);
 
 		// Enumeration
@@ -49,3 +54,12 @@ public class HashTableDemo {
 		}
 	}
 }
+
+/*
+	Console:
+			{Java-1z0-819=87, Mathematics=98, RFIC Design=59, Microwave Engineering=88}
+			87
+			98
+			59
+			88
+*/
