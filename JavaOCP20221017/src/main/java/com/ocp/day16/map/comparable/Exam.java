@@ -45,6 +45,7 @@ public class Exam implements Comparable<Exam>{
 		return hash;
 	}
 
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

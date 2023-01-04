@@ -32,3 +32,10 @@ public class HashMapDemoComparable {
 		System.out.println(sum);		
 	}
 }
+
+/*
+	Console:
+		{Student [id=3, name=David]=Exam [subject=RFIC Design, score=89], Student [id=2, name=James]=Exam [subject=Microwave Engineering, score=88], Student [id=1, name=Betty]=Exam [subject=Mathematics, score=98], Student [id=4, name=Elon]=Exam [subject=Java-1z0-819, score=87]}
+		362
+
+*/
