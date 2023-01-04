@@ -2,7 +2,11 @@ package com.ocp.day16.map.comparable;
 
 /* 
 	Introduction of this lecture:
-
+		
+		1) To recap the previously lecture at package: com.ocp.day15.comparable, 
+		   you will learn how to use "Set<Map.Entry<K, V>> entrySet()" to obtain object(s) from Map
+		
+		2) To review the Java 1.8 - Stream API of mapToInt, at day3, day4 and day5
 	
 */
 
@@ -39,7 +43,7 @@ public class HashMapDemoComparable {
 		
 		System.out.println(hashMap);
 		
-		// 1) Generally syntax of calculating the total scores of each student as follows
+		// (1) Generally syntax of calculating the total scores of each student as follows
 		
 		/*
 		   public interface Map<K, V> {
@@ -89,14 +93,14 @@ public class HashMapDemoComparable {
 		int sum1 = intStream.sum();
 		System.out.println("sum1: " + sum1);
 		
-		// 2) Optimized syntax as follows
+		// (2) Optimized syntax as follows
 		int sum2 = hashMap.entrySet()
 						  .stream()
 						  .mapToInt((Entry<Student, Exam> entry) -> entry.getValue().getScore())
 						  .sum();		
 		System.out.println("sum2: " + sum2);
 				
-		// 3) Optimized syntax as follows
+		// (3) Optimized syntax as follows
 		int sum3 = hashMap.entrySet()
 						  .stream()
 						  .mapToInt(entry -> entry.getValue().getScore())
