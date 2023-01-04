@@ -2,6 +2,7 @@ package com.ocp.day16.map.comparable;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class HashMapDemoComparable {
 
@@ -26,9 +27,8 @@ public class HashMapDemoComparable {
 		System.out.println(hashMap);
 		
 		int sum = hashMap.entrySet().stream()
-									.mapToInt(entry -> entry.getValue().getScore())
+									.mapToInt((Entry<Student, Exam> entry) -> entry.getValue().getScore())
 									.sum();
-		System.out.println(sum);
-		
+		System.out.println(sum);		
 	}
 }
