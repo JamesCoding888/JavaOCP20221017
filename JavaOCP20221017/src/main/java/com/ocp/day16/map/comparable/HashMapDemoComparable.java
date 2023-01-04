@@ -6,7 +6,7 @@ package com.ocp.day16.map.comparable;
 		1) To recap the previously lecture at package: com.ocp.day15.comparable, 
 		   you will learn how to use "Set<Map.Entry<K, V>> entrySet()" to obtain object(s) from Map
 		
-		2) To review the Java 1.8 - Stream API of mapToInt, at day3, day4 and day5
+		2) To review the Java 1.8 - Stream API of "mapToInt", at day3, day4 and day5
 		
 		3) There are different optimized syntaxes at (2) and (3) as following annotations
 	
