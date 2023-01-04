@@ -1,25 +1,35 @@
 package com.ocp.day16.map.comparable;
 
+/* 
+	Introduction of this lecture:
+	
+*/
+
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.BaseStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.util.Map.Entry;
+import java.util.function.ToIntFunction;
 
 public class HashMapDemoComparable {
 	public static void main(String[] args) {
-		
+		// Initiated the objects of Exam
 		Exam exam01 = new Exam("Mathematics", 98);
 		Exam exam02 = new Exam("Microwave Engineering", 88);
 		Exam exam03 = new Exam("RFIC Design", 89);
 		Exam exam04 = new Exam("Java-1z0-819", 87);
-		
+
+		// Initiated the objects of Student
 		Student student01 = new Student(1, "Betty");
 		Student student02 = new Student(2, "James");
 		Student student03 = new Student(3, "David");
 		Student student04 = new Student(4, "Elon");
 		
+		// Instantiate an object of HashMap to collect the objects of Key (i.e., Student) and Value (i.e., Exam)
 		Map<Student, Exam> hashMap = new HashMap<>();
 		hashMap.put(student01, exam01);
 		hashMap.put(student02, exam02);
@@ -28,7 +38,7 @@ public class HashMapDemoComparable {
 		
 		System.out.println(hashMap);
 		
-		// 1) Generally syntax of calculation of total scores of each students as follows
+		// 1) Generally syntax of calculating the total scores of each student as follows
 		
 		/*
 		   public interface Map<K, V> {
@@ -54,6 +64,26 @@ public class HashMapDemoComparable {
 		 */
 		Set<Map.Entry<Student, Exam>> set = hashMap.entrySet();
 		Stream<Entry<Student, Exam>> stream = set.stream();
+		
+		/*
+		   public interface Stream<T> extends BaseStream<T, Stream<T>> {
+		 	
+	     * Returns an {@code IntStream} consisting of the results of applying the
+	     * given function to the elements of this stream.
+	     *
+	     * <p>This is an <a href="package-summary.html#StreamOps">
+	     *     intermediate operation</a>.
+	     *
+	     * @param mapper a <a href="package-summary.html#NonInterference">non-interfering</a>,
+	     *               <a href="package-summary.html#Statelessness">stateless</a>
+	     *               function to apply to each element
+	     * @return the new stream
+	    	
+	       		IntStream mapToInt(ToIntFunction<? super T> mapper);
+	       		
+	       }
+	     */
+	   
 		IntStream intStream = stream.mapToInt((Map.Entry<Student, Exam> entry) -> entry.getValue().getScore());
 		int sum1 = intStream.sum();
 		System.out.println("sum1: " + sum1);
