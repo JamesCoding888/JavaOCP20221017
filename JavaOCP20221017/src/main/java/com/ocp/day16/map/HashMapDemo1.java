@@ -11,8 +11,9 @@ package com.ocp.day16.map;
 	  	7) HashMap is "Unsynchronized" but HashTable "Synchronized"
 	  	8) HashMap permits elements of Key and Value to be "null", but HashTable is NOT allowable
 	  	9) HashMap class makes NO guarantee as to the order of the map; especially, 
-	  	   HashMap does NOT guarantee that the order will remain constant over time  	    	   
-	   10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
+	  	   HashMap does NOT guarantee that the order will remain constant over time
+	   10) Fail-fast iteration   	    	   
+	   11) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
 	       assuming the hash function disperses the elements properly among the buckets. 
 	
 		   Please see the following demo code of initiated instance of hashMap and basic operations of "get" and "put".
