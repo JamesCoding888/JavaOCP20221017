@@ -71,7 +71,7 @@ public class TreeMapDemoComparable {
 		treeMap2.put(exam03, student03.getName());
 		treeMap2.put(exam04, student04.getName());
 		
-		// print out by ASCENDING order of score: 59 -> 87 -> 88 -> 98
+		// print out the score by ASCENDING order : 59 -> 87 -> 88 -> 98
 		System.out.println(treeMap2);
 	}
 }
