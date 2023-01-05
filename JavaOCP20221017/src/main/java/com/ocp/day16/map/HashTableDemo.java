@@ -45,10 +45,11 @@ public class HashTableDemo {
 		hashTable.put("Microwave Engineering", 88);
 		hashTable.put("RFIC Design", 59);
 		hashTable.put("Java-1z0-819", 87);
-		// Exception in thread "main" java.lang.NullPointerException
-//		hashTable.put(null, null);
+		/*
+			// Exception in thread "main" java.lang.NullPointerException
+			hashTable.put(null, null);			
+		*/
 		System.out.println(hashTable);
-
 		// Enumeration (Hashtable did have this API, but HashMap neither
 		Enumeration<Integer> values = hashTable.elements();
 		while (values.hasMoreElements()) {
