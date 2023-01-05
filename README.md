@@ -959,8 +959,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day16 Java Advanced: HashTable, Enumeration, HashMap, TreeMap, TreeSet
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map</a>
+# day16 Java Advanced: Hashtable, Enumeration, HashMap, TreeMap, TreeSet
+4. TreeMap, TreeSet
+
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration and HashMap</a>
+
+> HashTableDemo.java
+- Description:  ...
 
 > HashMapDemo1.java
 - Description:  ...
@@ -971,8 +976,11 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashMapDemo4int.java
 - Description:  ...
 
-> HashTableDemo.java
-- Description:  ...
+> Load Factor & Initial Capacity (hashMap).docx
+- Description:  Load Factor and Initial Capacity for hashMap
+
+
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map/comparable">Introduction of Sub-classes from Map - TreeMap and HashMap with an application of comparable</a>
 
 > TreeMapDemoComparable.java
 - Description:  ...
@@ -992,8 +1000,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > Exam.java
 - Description:  ...
 
-> Load Factor & Initial Capacity (hashMap).docx
-- Description:  Load Factor and Initial Capacity for hashMap
+
 
 
 
