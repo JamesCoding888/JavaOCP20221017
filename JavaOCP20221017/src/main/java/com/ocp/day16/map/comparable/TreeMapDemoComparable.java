@@ -24,18 +24,36 @@ package com.ocp.day16.map.comparable;
 					   }
 				}
 				
-		2) A TreeMap is a Map implementation that maintains its keys in ascending order, sorted according to the natural ordering of its keys or according to a Comparator provided at TreeMap creation time. 
+		2) A TreeMap is a Map implementation that maintains its keys in ASCENDING order, sorted according to the natural ordering of its keys or according to a Comparator provided at TreeMap creation time. 
 		
-		3) TreeMap is a Red-Black tree based NavigableMap implementation
+		3) TreeMap is a Red-Black tree based NavigableMap implementation.
 		
-		4) Pros 
+		4) If TreeMap objects CANNOT be sorted according to natural order, 
+		   then developer can use "Comparator" or "Comparable" to define the order 
+		   in which the elements are arranged within the Map		   		   		   		
+		
+		5) TreeMap does NOT allow a null key, because the compareTo() or the compare() method will throw a NullPointerException if element of Key is null
+		 
+		   
+		6) Pros 
 				- Provides log(n) time cost for the get, put and remove operations
 				- Offers the advantage of maintaining the elements in a sorted order
-		5) Cons
-				- Generally slower than a HashMap	
+				- TreeMap can save memory (in comparison to HashMap) because it only uses the amount of memory needed to hold its items, unlike a HashMap which uses contiguous region of memory
+				
+		7) Cons
+				- Generally performance is Slower than HashMap and LinkedHashMap
+				- A tree should maintain its balance in order to keep its intended performance, this requires a considerable amount of effort, hence complicates the implementation
+				- Since a TreeMap has a more significant locality, we might consider it if we want to access objects that are relatively close to each other according to their natural ordering
+
+		8) The java.util.TreeMap class was published as part of the 1st version of Java, available in all subsequent versions of the Java Development Kit (JDK), which was released in 1996. 
+		   You can see the following link ( https://en.wikipedia.org/wiki/Treemapping ) on Wikipedia that was "Hard disk space usage visualized in TreeSize (see the image of Tree_Map.png)", software first released in 1996.
+		   
 		
-		
-		6) Since JDK 1.2
+	Refer to the link as follows:
+	https://www.baeldung.com/java-treemap-vs-hashmap
+	https://www.baeldung.com/java-treemap
+		   
+		   
 */
 
 import java.util.Map;
@@ -61,9 +79,12 @@ public class TreeMapDemoComparable {
 		treeMap1.put(student02.getId(), exam02);
 		treeMap1.put(student03.getId(), exam03);
 		treeMap1.put(student04.getId(), exam04);
-		// print out in key order
+		// Exception in thread "main" java.lang.NullPointerException
+		/*
+			treeMap1.put(null, exam04);
+		*/
+		// print out based on numeric value of id by ASCENDING order
 		System.out.println(treeMap1);
-		
 		
 		Map<Exam, String> treeMap2 = new TreeMap<>();
 		treeMap2.put(exam01, student01.getName());
