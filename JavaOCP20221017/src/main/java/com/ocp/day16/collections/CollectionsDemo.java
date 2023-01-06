@@ -126,6 +126,24 @@ public class CollectionsDemo {
 		
 		
 		
+		/*
+		 	<Integer> List<Integer> java.util.Collections.unmodifiableList(List<? extends Integer> list)
+
+			Returns an unmodifiable view of the specified list. Query operations on the returned list "read through" to the specified list, and attempts to modify the returned list, whether direct or via its iterator, result in an UnsupportedOperationException.
+			
+			The returned list will be serializable if the specified list is serializable. Similarly, the returned list will implement RandomAccess if the specified list does.
+
+		*/
+		List<Integer> number = Collections.unmodifiableList(arrayList3);
+		System.out.println("Collections.unmodifiableList: " + number);
+		// Exception in thread "main" java.lang.UnsupportedOperationException
+//		/*
+			number.add(null);
+			number.add(3);
+			number.remove(15);
+			number.set(0, 2);
+//	    */
+		System.out.println("Collections.unmodifiableList: " + number);
 		
 		
 		
@@ -138,21 +156,28 @@ public class CollectionsDemo {
 				Anonymous inner class for implementation of Comparator: [3, 7, 9, 15]
 				Lambda's implementation of Comparator: [3, 7, 9, 15]
 				Lambda's implementation of BiConsumer: [3, 7, 9, 15]
-		
+				Collections.unmodifiableList: [3, 7, 9, 15]
+				Exception in thread "main" java.lang.UnsupportedOperationException
 	Console (2): 
 				Anonymous inner class for implementation of Comparator: [15, 9, 7, 3]
 				Lambda's implementation of Comparator: [15, 9, 7, 3]
 				Lambda's implementation of BiConsumer: [15, 9, 7, 3]
-												
+				Collections.unmodifiableList: [15
+				Exception in thread "main" java.lang.UnsupportedOperationException
+																
 	Console (3): 				
 				Anonymous inner class for implementation of Comparator: [3, 9, 15, 7]
 				Lambda's implementation of Comparator: [3, 9, 15, 7]
 				Lambda's implementation of BiConsumer: [3, 9, 15, 7]							
-				
+				Collections.unmodifiableList: [3, 9, 15, 7]
+				Exception in thread "main" java.lang.UnsupportedOperationException
+								
 	Console (4):
 				Anonymous inner class for implementation of Comparator: [7, 3, 9, 15]
 				Lambda's implementation of Comparator: [7, 3, 9, 15]
-				Lambda's implementation of BiConsumer: [7, 3, 9, 15]	
+				Lambda's implementation of BiConsumer: [7, 3, 9, 15]
+				Collections.unmodifiableList: [7, 3, 9, 15]
+				Exception in thread "main" java.lang.UnsupportedOperationException
 	
 
 				
