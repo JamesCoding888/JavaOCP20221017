@@ -20,7 +20,9 @@ public class CollectionsDemo {
 		arrayList2.add(3);   //  3 % 3 = 0
 		arrayList2.add(9);   //  9 % 3 = 0
 		arrayList2.add(15);  // 15 % 3 = 0
-	
+
+		// **************************** Implementation of Comparator ****************************
+		
 		// Regarding the previously lecture on "Anonymous inner class" for implement of Comparator, 
 		// please refer to TestAnonymousInnerSpeedLimits.java, at package: com.ocp.day12.anonymous.speedLimits		
 		/*  Following statement of Anonymous Inner class, for your info.:
@@ -94,11 +96,21 @@ public class CollectionsDemo {
 		*/		
 		System.out.println("Lambda's implementation of Comparator: " + arrayList2);
 		
+		// **************************** Implementation of BiConsumer ****************************
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 
 
 /*
+	**************************** Implementation of Comparator **************************** 
+	
 	Console (1): 
 				Anonymous inner class for implementation of Comparator: [3, 7, 9, 15]
 				Lambda's implementation of Comparator: [3, 7, 9, 15]
@@ -114,6 +126,13 @@ public class CollectionsDemo {
 	Console (4):
 				Anonymous inner class for implementation of Comparator: [7, 3, 9, 15]
 				Lambda's implementation of Comparator: [7, 3, 9, 15]	
+	
+	**************************** Implementation of BiConsumer ****************************
+				
+				
+				
+				
+				
 				
 		
 */
