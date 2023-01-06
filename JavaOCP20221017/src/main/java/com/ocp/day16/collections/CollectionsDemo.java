@@ -20,10 +20,10 @@ public class CollectionsDemo {
 		arrayList2.add(3);   //  3 % 3 = 0
 		arrayList2.add(9);   //  9 % 3 = 0
 		arrayList2.add(15);  // 15 % 3 = 0
-		
-		// Anonymous inner class for implementation of Comparator
-		// Please refer to TestAnonymousInnerSpeedLimits.java, at package: com.ocp.day12.anonymous.speedLimits
-		/*
+	
+		// Regarding the previously lecture on "Anonymous inner class" for implement of Comparator, 
+		// please refer to TestAnonymousInnerSpeedLimits.java, at package: com.ocp.day12.anonymous.speedLimits		
+		/*  Following statement of Anonymous Inner class, for your info.:
 	 		An inner class declared without a Class name is 
 			defined as an Anonymous Inner Class. 
 			
