@@ -50,7 +50,7 @@ public class CollectionsDemo {
 				}
 //			*/	
 		});
-		// print out the element(s) of arrayList in ASCENDING order, due to implementation of Comparator 
+		// print out the element(s) of arrayList based on the implementation of Comparator 
 		System.out.println(arrayList);
 		
 		
