@@ -121,9 +121,10 @@ public class CollectionsDemo {
 //		/*
 			biConsumer.accept(arrayList3, comparatorInDescendingOrderByＭodulo);
 //		*/
-		
-		
+			
 		System.out.println("Lambda's implementation of BiConsumer: " + arrayList3);
+		
+		
 		
 		
 		
@@ -132,9 +133,7 @@ public class CollectionsDemo {
 }
 
 
-/*
-	**************************** Implementation of Comparator **************************** 
-	
+/* 	
 	Console (1): 
 				Anonymous inner class for implementation of Comparator: [3, 7, 9, 15]
 				Lambda's implementation of Comparator: [3, 7, 9, 15]
@@ -155,7 +154,7 @@ public class CollectionsDemo {
 				Lambda's implementation of Comparator: [7, 3, 9, 15]
 				Lambda's implementation of BiConsumer: [7, 3, 9, 15]	
 	
-	**************************** Implementation of BiConsumer ****************************
+
 				
 				
 				
