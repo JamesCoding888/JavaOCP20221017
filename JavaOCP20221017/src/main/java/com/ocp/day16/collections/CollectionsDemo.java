@@ -1,15 +1,16 @@
 package com.ocp.day16.collections;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
+import java.util.function.BiConsumer;
 public class CollectionsDemo {
 	public static void main(String[] args) {
 		
 		List<Integer> arrayList1 = new ArrayList<>();
 		List<Integer> arrayList2 = new ArrayList<>();
+		List<Integer> arrayList3 = new ArrayList<>();
 		
 		arrayList1.add(7);   //  7 % 3 = 1
 		arrayList1.add(3);   //  3 % 3 = 0
@@ -21,6 +22,11 @@ public class CollectionsDemo {
 		arrayList2.add(9);   //  9 % 3 = 0
 		arrayList2.add(15);  // 15 % 3 = 0
 
+		arrayList3.add(7);   //  7 % 3 = 1
+		arrayList3.add(3);   //  3 % 3 = 0
+		arrayList3.add(9);   //  9 % 3 = 0
+		arrayList3.add(15);  // 15 % 3 = 0
+		
 		// **************************** Implementation of Comparator ****************************
 		
 		// Regarding the previously lecture on "Anonymous inner class" for implement of Comparator, 
@@ -38,12 +44,12 @@ public class CollectionsDemo {
 		Collections.sort(arrayList1, new Comparator<Integer>() {			
 			
 			// (1) ASCENDING order
-//			/*
+			/*
 				@Override
 				public int compare(Integer o1 , Integer o2) {				
 					return o1 - o2;				
 				}
-//			*/
+			*/
 				
 			// (2) DESCENDING order			
 			/*
@@ -62,12 +68,12 @@ public class CollectionsDemo {
 			*/				
 			
 			// (4) DESCENDING order by "result of o % 3"		
-			/*
+//			/*
 				@Override
 				public int compare(Integer o1 , Integer o2) {				
 					return (o2 % 3) - (o1 % 3);				
 				}
-			*/	
+//			*/	
 		});
 		// print out the element(s) of arrayList based on the implementation of Comparator 
 		System.out.println("Anonymous inner class for implementation of Comparator: " + arrayList1);
@@ -75,10 +81,10 @@ public class CollectionsDemo {
 		
 		// Lambda's implementation of Comparator
 		// (1) ASCENDING order	
-//		/*	
+		/*	
 			Comparator<Integer> comparatorInAscendingOrder = (Integer o1, Integer o2) -> (o1 - o2);
 			Collections.sort(arrayList2, comparatorInAscendingOrder);
-//		*/
+		*/
 		// (2) DESCENDING order
 		/*
 			Comparator<Integer> comparatorInDescendingOrder = (Integer o1, Integer o2) -> (o2 - o1);
@@ -90,16 +96,34 @@ public class CollectionsDemo {
 			Collections.sort(arrayList2, comparatorInAscendingOrderByＭodulo);
 		*/
 		// (4) DESCENDING order by "result of o % 3"						
-		/*
+//		/*
 			Comparator<Integer> comparatorInDescendingOrderByＭodulo = (o1, o2) -> ((o2 % 3) - (o1 % 3));
 			Collections.sort(arrayList2, comparatorInDescendingOrderByＭodulo);
-		*/		
+//		*/		
 		System.out.println("Lambda's implementation of Comparator: " + arrayList2);
 		
 		// **************************** Implementation of BiConsumer ****************************
 		
+		BiConsumer<List<Integer>, Comparator<Integer>> biConsumer = (list, comparator) -> Collections.sort(list, comparator);
+		// (1) ASCENDING order	
+		/*
+			biConsumer.accept(arrayList3, comparatorInAscendingOrder);
+		*/		
+		// (2) DESCENDING order	
+		/*
+			biConsumer.accept(arrayList3, comparatorInDescendingOrder);
+		*/
+		// (3) ASCENDING order by "result of o % 3"
+		/*
+			biConsumer.accept(arrayList3, comparatorInAscendingOrderByＭodulo);
+		*/
+		// (4) DESCENDING order by "result of o % 3"		
+//		/*
+			biConsumer.accept(arrayList3, comparatorInDescendingOrderByＭodulo);
+//		*/
 		
 		
+		System.out.println("Lambda's implementation of BiConsumer: " + arrayList3);
 		
 		
 		
@@ -114,18 +138,22 @@ public class CollectionsDemo {
 	Console (1): 
 				Anonymous inner class for implementation of Comparator: [3, 7, 9, 15]
 				Lambda's implementation of Comparator: [3, 7, 9, 15]
+				Lambda's implementation of BiConsumer: [3, 7, 9, 15]
 		
 	Console (2): 
 				Anonymous inner class for implementation of Comparator: [15, 9, 7, 3]
 				Lambda's implementation of Comparator: [15, 9, 7, 3]
+				Lambda's implementation of BiConsumer: [15, 9, 7, 3]
 												
 	Console (3): 				
 				Anonymous inner class for implementation of Comparator: [3, 9, 15, 7]
-				Lambda's implementation of Comparator: [3, 9, 15, 7]							
+				Lambda's implementation of Comparator: [3, 9, 15, 7]
+				Lambda's implementation of BiConsumer: [3, 9, 15, 7]							
 				
 	Console (4):
 				Anonymous inner class for implementation of Comparator: [7, 3, 9, 15]
-				Lambda's implementation of Comparator: [7, 3, 9, 15]	
+				Lambda's implementation of Comparator: [7, 3, 9, 15]
+				Lambda's implementation of BiConsumer: [7, 3, 9, 15]	
 	
 	**************************** Implementation of BiConsumer ****************************
 				
