@@ -44,12 +44,12 @@ public class CollectionsDemo {
 		Collections.sort(arrayList1, new Comparator<Integer>() {			
 			
 			// (1) ASCENDING order
-			/*
+//			/*
 				@Override
 				public int compare(Integer o1 , Integer o2) {				
 					return o1 - o2;				
 				}
-			*/
+//			*/
 				
 			// (2) DESCENDING order			
 			/*
@@ -68,12 +68,12 @@ public class CollectionsDemo {
 			*/				
 			
 			// (4) DESCENDING order by "result of o % 3"		
-//			/*
+			/*
 				@Override
 				public int compare(Integer o1 , Integer o2) {				
 					return (o2 % 3) - (o1 % 3);				
 				}
-//			*/	
+			*/	
 		});
 		// print out the element(s) of arrayList based on the implementation of Comparator 
 		System.out.println("Anonymous inner class for implementation of Comparator: " + arrayList1);
@@ -81,10 +81,10 @@ public class CollectionsDemo {
 		
 		// Lambda's implementation of Comparator
 		// (1) ASCENDING order	
-		/*	
+//		/*	
 			Comparator<Integer> comparatorInAscendingOrder = (Integer o1, Integer o2) -> (o1 - o2);
 			Collections.sort(arrayList2, comparatorInAscendingOrder);
-		*/
+//		*/
 		// (2) DESCENDING order
 		/*
 			Comparator<Integer> comparatorInDescendingOrder = (Integer o1, Integer o2) -> (o2 - o1);
@@ -96,19 +96,19 @@ public class CollectionsDemo {
 			Collections.sort(arrayList2, comparatorInAscendingOrderByＭodulo);
 		*/
 		// (4) DESCENDING order by "result of o % 3"						
-//		/*
+		/*
 			Comparator<Integer> comparatorInDescendingOrderByＭodulo = (o1, o2) -> ((o2 % 3) - (o1 % 3));
 			Collections.sort(arrayList2, comparatorInDescendingOrderByＭodulo);
-//		*/		
+		*/		
 		System.out.println("Lambda's implementation of Comparator: " + arrayList2);
 		
 		// **************************** Implementation of BiConsumer ****************************
 		
 		BiConsumer<List<Integer>, Comparator<Integer>> biConsumer = (list, comparator) -> Collections.sort(list, comparator);
 		// (1) ASCENDING order	
-		/*
+//		/*
 			biConsumer.accept(arrayList3, comparatorInAscendingOrder);
-		*/		
+//		*/		
 		// (2) DESCENDING order	
 		/*
 			biConsumer.accept(arrayList3, comparatorInDescendingOrder);
@@ -118,9 +118,9 @@ public class CollectionsDemo {
 			biConsumer.accept(arrayList3, comparatorInAscendingOrderByＭodulo);
 		*/
 		// (4) DESCENDING order by "result of o % 3"		
-//		/*
+		/*
 			biConsumer.accept(arrayList3, comparatorInDescendingOrderByＭodulo);
-//		*/
+		*/
 			
 		System.out.println("Lambda's implementation of BiConsumer: " + arrayList3);
 		
@@ -162,7 +162,7 @@ public class CollectionsDemo {
 				Anonymous inner class for implementation of Comparator: [15, 9, 7, 3]
 				Lambda's implementation of Comparator: [15, 9, 7, 3]
 				Lambda's implementation of BiConsumer: [15, 9, 7, 3]
-				Collections.unmodifiableList: [15
+				Collections.unmodifiableList: [15, 9, 7, 3]
 				Exception in thread "main" java.lang.UnsupportedOperationException
 																
 	Console (3): 				
