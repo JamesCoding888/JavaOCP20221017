@@ -23,11 +23,8 @@ package com.ocp.day16.map.comparable;
 					       comparator = null;
 					   }
 				}
-				
-			
-			
-		   
-				
+						
+		   				
 		2) A TreeMap is a Map implementation that maintains its "keys" in ASCENDING order, sorted according to the natural ordering of its keys or according to a Comparator provided at TreeMap creation time. 
 		
 		
@@ -35,26 +32,34 @@ package com.ocp.day16.map.comparable;
 		   	- For example of entries in type of Integer, the natural order will be ASCENDING order.
 		   	- For the entries in type of String, the natural order will be Alphabetical order.
 		    	
-		3) TreeMap is a Red-Black tree based NavigableMap implementation.
+		4) TreeMap is a Red-Black tree based NavigableMap implementation.
+		   
+		   
+		5) Red-black tree is a data structure that consists of nodes. For the detail information, please see the following link
+		   https://www.baeldung.com/cs/red-black-trees
+		   
+		6) Here is an animation of Red-Black tree for your reference:
+		   https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 		
-		4) If TreeMap objects CANNOT be sorted according to natural order, 
+		
+		7) If TreeMap objects CANNOT be sorted according to natural order, 
 		   then developer can use "Comparator" or "Comparable" to define the order 
 		   in which the elements are arranged within the Map		   		   		   		
 		
-		5) TreeMap does NOT allow a null key, because the compareTo() or the compare() method will throw a NullPointerException if element(s) of Key is null
+		8) TreeMap does NOT allow a null key, because the compareTo() or the compare() method will throw a NullPointerException if element(s) of Key is null
 		 
 		   
-		6) Pros 
+		9) Pros 
 				- Provides log(n) time cost for the get, put and remove operations
 				- Offers the advantage of maintaining the elements in a sorted order
 				- TreeMap can save memory (in comparison to HashMap) because it only uses the amount of memory needed to hold its items, unlike a HashMap which uses contiguous region of memory
 				
-		7) Cons
+		10) Cons
 				- Generally performance is Slower than HashMap and LinkedHashMap
-				- A tree should maintain its balance in order to keep its intended performance, this requires a considerable amount of effort, hence complicates the implementation
-				- Since a TreeMap has a more significant locality, we might consider it if we want to access objects that are relatively close to each other according to their natural ordering
+				- A tree should maintain its balance in order to keep its intended performance, this requires a Considerable Amount of Effort, hence Complicates the implementation
+				- Since a TreeMap has a more significant locality, we might consider it if we want to access objects that are Relatively Close to Each Other according to their natural ordering
 
-		8) The java.util.TreeMap class was published as part of the 1st version of Java, available in all subsequent versions of the Java Development Kit (JDK), which was released in 1996. 
+		11) The java.util.TreeMap class was published as part of the 1st version of Java, available in all subsequent versions of the Java Development Kit (JDK), which was released in 1996. 
 		   You can see the following link ( https://en.wikipedia.org/wiki/Treemapping ) on Wikipedia that was "Hard disk space usage visualized in TreeSize (see the image of Tree_Map.png)", software first released in 1996.
 		   
 		
