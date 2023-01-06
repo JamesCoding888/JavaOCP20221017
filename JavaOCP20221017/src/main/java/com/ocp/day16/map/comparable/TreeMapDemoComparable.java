@@ -2,7 +2,7 @@ package com.ocp.day16.map.comparable;
 
 
 /*
- 	Introduction of this lecture:
+ 	Introduction of this lecture: 
  		
  		1) API of "TreeMap" 
  		
@@ -24,15 +24,24 @@ package com.ocp.day16.map.comparable;
 					   }
 				}
 				
-		2) A TreeMap is a Map implementation that maintains its keys in ASCENDING order, sorted according to the natural ordering of its keys or according to a Comparator provided at TreeMap creation time. 
+			
+			
+		   
+				
+		2) A TreeMap is a Map implementation that maintains its "keys" in ASCENDING order, sorted according to the natural ordering of its keys or according to a Comparator provided at TreeMap creation time. 
 		
+		
+		3) What is the sorting in TreeMap by default? TreeMap sorts its all entries by natural ordering. 
+		   	- For example of entries in type of Integer, the natural order will be ASCENDING order.
+		   	- For the entries in type of String, the natural order will be Alphabetical order.
+		    	
 		3) TreeMap is a Red-Black tree based NavigableMap implementation.
 		
 		4) If TreeMap objects CANNOT be sorted according to natural order, 
 		   then developer can use "Comparator" or "Comparable" to define the order 
 		   in which the elements are arranged within the Map		   		   		   		
 		
-		5) TreeMap does NOT allow a null key, because the compareTo() or the compare() method will throw a NullPointerException if element of Key is null
+		5) TreeMap does NOT allow a null key, because the compareTo() or the compare() method will throw a NullPointerException if element(s) of Key is null
 		 
 		   
 		6) Pros 
@@ -83,7 +92,9 @@ public class TreeMapDemoComparable {
 		/*
 			treeMap1.put(null, exam04);
 		*/
-		// print out based on numeric value of id by ASCENDING order
+
+		// A TreeMap is a Map implementation that maintains its "keys" in ASCENDING order
+		// print out based on value of id (i.e., id of Student) by ASCENDING order as 1, 2, 3 and 4
 		System.out.println(treeMap1);
 		
 		Map<Exam, String> treeMap2 = new TreeMap<>();
@@ -91,8 +102,9 @@ public class TreeMapDemoComparable {
 		treeMap2.put(exam02, student02.getName());
 		treeMap2.put(exam03, student03.getName());
 		treeMap2.put(exam04, student04.getName());
-		
-		// print out the score by ASCENDING order : 59 -> 87 -> 88 -> 98
+
+		// A TreeMap is a Map implementation that maintains its "keys" in ASCENDING order, sorted according to a Comparator provided at TreeMap creation time
+		// print out based on value of score (i.e., score of Exam) by ASCENDING order as 59, 87, 88 and 98
 		System.out.println(treeMap2);
 	}
 }
