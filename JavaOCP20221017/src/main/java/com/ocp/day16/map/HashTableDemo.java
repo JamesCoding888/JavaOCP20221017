@@ -50,7 +50,7 @@ public class HashTableDemo {
 			hashTable.put(null, null);			
 		*/
 		System.out.println(hashTable);
-		// Enumeration (Hashtable did have this API, but HashMap neither
+		// Enumeration (Hashtable does have this API, but HashMap neither
 		Enumeration<Integer> values = hashTable.elements();
 		while (values.hasMoreElements()) {
 			Integer value = values.nextElement();
