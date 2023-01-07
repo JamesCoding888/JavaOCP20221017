@@ -136,7 +136,7 @@ public class CollectionsDemo {
 		*/
 		
 		// Instantiate an object of view for query
-		// This concept is likely to VIEW in database
+		// This concept is likely to VIEW in database, please check out the File: SQL- Sales_Order_Detail
 		List<Integer> number = Collections.unmodifiableList(arrayList3);
 		System.out.println("Collections.unmodifiableList: " + number);
 		// Exception in thread "main" java.lang.UnsupportedOperationException
@@ -148,7 +148,7 @@ public class CollectionsDemo {
 			number.set(0, 2);			
 	    */
 			
-		// Following syntaxes - query the data of VIEW
+		// Following syntaxes - to query the data of VIEW
 		System.out.println("number.get(0): " + number.get(0));		
 		System.out.println("number.contains(3): " + number.contains(3));
 		
