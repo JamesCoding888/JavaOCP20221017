@@ -132,7 +132,6 @@ public class CollectionsDemo {
 			Returns an unmodifiable VIEW of the specified list. Query operations on the returned list "read through" to the specified list, and attempts to modify the returned list, whether direct or via its iterator, result in an UnsupportedOperationException.
 			
 			The returned list will be serializable if the specified list is serializable. Similarly, the returned list will implement RandomAccess if the specified list does.
-
 		*/
 		
 		// Instantiate an object of view for query
@@ -190,13 +189,6 @@ public class CollectionsDemo {
 				Collections.unmodifiableList: [7, 3, 9, 15]
 				number.get(0): 7
 				number.contains(7): true
-	
-
-				
-				
-				
-				
-				
 				
 		
 */
