@@ -1010,7 +1010,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 > SQL - VIEW Sales_Order_Detail.docx
-- Description: Creating an object of Collections.unmodifiableList for developer to query the element of List. This concept is likely to create a VIEW Table in - database, please check out the File: "SQL - VIEW Sales_Order_Detail.docx". But, to be noticed here, the concept of add, set, delete, clear and remove from methods of List (i.e., the object of List is returned from Collections.unmodifiableList), is different from VIEW Table in database.			
+- Description: Creating an object of "Collections.unmodifiableList" for developer to query the element of List. This concept is likely to create a VIEW Table in - database, please check out the File: "SQL - VIEW Sales_Order_Detail.docx". But, to be noticed here, the concept of add, set, delete, clear and remove from methods of List (i.e., the object of List is returned from "Collections.unmodifiableList"), is different from VIEW Table in database.			
 - The VIEW Table in database:
 The rows of column that developer does query the VIEW table (i.e., Table of v_Sales_Order_Detail in File: "SQL - VIEW Sales_Order_Detail.docx"), is completely from the original data of Table: Sales_Order_Detail. Developer can add, query, update, and delete in the VIEW table, repectively.	
 DB Engineer creates VIEW table, is likely to limit the accessed privilege of column(s) and only present the columns in need for developer
