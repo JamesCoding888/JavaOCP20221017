@@ -792,6 +792,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 
+> GenericOperatorTest.java
+- Description: To be noticed here, '<>' operator is not allowed for source level below JDK - 1.7, and also '<>' cannot be used with anonymous classes for source level below JDK - 1.9 (or 9.0)
+
 
 
 ------------------------------------------------------------------------------
