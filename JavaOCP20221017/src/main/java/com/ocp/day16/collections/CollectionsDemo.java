@@ -31,7 +31,8 @@ public class CollectionsDemo {
 		
 		// Regarding the previously lecture on "Anonymous inner class" for implement of Comparator, 
 		// please refer to TestAnonymousInnerSpeedLimits.java, at package: com.ocp.day12.anonymous.speedLimits		
-		/*  Following statement of Anonymous Inner class, for your info.:
+		/*  
+		 	Following statement of Anonymous Inner class, for your info.:
 	 		An inner class declared without a Class name is 
 			defined as an Anonymous Inner Class. 
 			
@@ -104,6 +105,7 @@ public class CollectionsDemo {
 		
 		// **************************** Implementation of BiConsumer ****************************
 		
+		// Of the API of BiConsumer, please recap the previously lecture of "ConsumerDemo.java" at package com.ocp.day13
 		BiConsumer<List<Integer>, Comparator<Integer>> biConsumer = (list, comparator) -> Collections.sort(list, comparator);
 		// (1) ASCENDING order	
 		/*
@@ -135,7 +137,7 @@ public class CollectionsDemo {
 		*/
 		
 		// Instantiate an object of view for query
-		// This concept is likely to VIEW in database, please check out the File: SQL- Sales_Order_Detail
+		// This concept is likely to VIEW in database, please check out the File: "SQL- Sales_Order_Detail"
 		List<Integer> number = Collections.unmodifiableList(arrayList3);
 		System.out.println("Collections.unmodifiableList: " + number);
 		// Exception in thread "main" java.lang.UnsupportedOperationException
@@ -150,9 +152,7 @@ public class CollectionsDemo {
 		// Following syntaxes - to query the data of VIEW
 		System.out.println("number.get(0): " + number.get(0));		
 		System.out.println("number.contains(3): " + number.contains(3));
-		
-		
-		
+				
 	}
 }
 
