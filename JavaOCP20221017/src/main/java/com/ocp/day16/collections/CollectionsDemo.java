@@ -137,7 +137,13 @@ public class CollectionsDemo {
 		*/
 		
 		// Instantiate an object of view for query
-		// This concept is likely to VIEW in database, please check out the File: "SQL- Sales_Order_Detail"
+		/*
+			This concept is likely to create a VIEW Table in database, please check out the File: "SQL - VIEW Sales_Order_Detail"			
+			But, to be noticed here, the concept of add, set, delete, clear and remove, is different from VIEW Table in database.			
+			The rows of column that developer does query the VIEW table (i.e., v_Sales_Order_Detail), is completely from the original data of Table: Sales_Order_Detail. 	
+			Developer can add, query, update, and delete in the VIEW table.	
+			DB Engineer creates VIEW table, is likely to limit the accessed privilege of column(s) and only present the columns in need for developer
+		*/
 		List<Integer> number = Collections.unmodifiableList(arrayList3);
 		System.out.println("Collections.unmodifiableList: " + number);
 		// Exception in thread "main" java.lang.UnsupportedOperationException
