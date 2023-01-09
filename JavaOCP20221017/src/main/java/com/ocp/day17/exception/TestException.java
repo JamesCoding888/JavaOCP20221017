@@ -19,6 +19,32 @@ public class TestException {
 
 	static int x = 0;
 	static int result = 0;
+	
+	/*
+		Noticed here !!! Shall NOT Throw RuntimeException, Exception, or Throwable. 
+		
+		E.g.,
+			public static void main(String[] args) throws RuntimeException, Exception, Throwable{
+			
+		
+		Reason of NOT throwing RuntimeException:
+			
+			1) Throwing a RuntimeException can lead to subtle errors; for example, a caller cannot 
+			   examine the exception to determine why it was thrown and consequently cannot attempt recovery.
+		
+		
+		
+		Supposed to do:
+			
+			1) Methods can throw a customized exception or a sub-classes exception from Exception or RuntimeException. 
+	
+		
+		
+		Refer to the link as follows:
+		https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable
+		
+		
+	*/
 	public static void main(String[] args) throws HandleNumberException{
 		HandleNumberException handle = new HandleNumberException();			
 		
