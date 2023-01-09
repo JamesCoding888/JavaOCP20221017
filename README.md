@@ -1022,8 +1022,9 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
 
-- *** Notice here !!! The digrame below will be revised since the image is from "https://www.geeksforgeeks.org/collections-in-java-2/" ***
-- <img width="203" alt="Map" src="https://user-images.githubusercontent.com/83496093/210745966-e325db58-77d4-41a4-b6c9-2f79ba47f8a4.png">
+- *** Notice here !!! The digrame below will be revised with adding Security and Efficiency
+- <img width="203" alt="Map - data structure" src="https://user-images.githubusercontent.com/83496093/211237775-2aaa3bc1-7dc2-4c17-9b0d-fa20862d9571.png">
+
 
 > TreeMapEfficiency.java
 - Description:  ...
