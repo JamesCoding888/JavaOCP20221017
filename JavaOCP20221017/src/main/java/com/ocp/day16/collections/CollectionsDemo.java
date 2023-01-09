@@ -158,7 +158,7 @@ public class CollectionsDemo {
 		// Following syntaxes - to query the data of VIEW
 		System.out.println("number.get(0): " + number.get(0));		
 		System.out.println("number.contains(3): " + number.contains(3));
-				
+
 	}
 }
 
