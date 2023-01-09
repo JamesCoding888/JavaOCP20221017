@@ -1045,10 +1045,10 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception">Introduction of Exception</a>
 
 > HandleNumberException.java
-- Description:
+- Description:  ...
 
 > TestException.java
-- Description
+- Description:  ...
 
 
 
@@ -1082,7 +1082,10 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 
 ------------------------------------------------------------------------------
-# day22 Java Advanced: ... , ... Coming Soon
+# day22 Java Advanced: Thread...
+
+> ThreadTimer.java
+- Description:  ...
 
 
 
