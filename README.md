@@ -1006,13 +1006,25 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collections">Introduction of Collections - with an application of Comparator</a>
 
+> CollectionsDemo.java
+- Description:  ...
+
+> SQL - VIEW Sales_Order_Detail.docx
+- Description: Creating an object of "Collections.unmodifiableList" for developer to query the element of List. This concept is likely to create a VIEW Table in - database, please check out the File: "SQL - VIEW Sales_Order_Detail.docx". But, to be noticed here, the concept of add, set, delete, clear and remove from methods of List (i.e., the object of List is returned from "Collections.unmodifiableList"), is different from VIEW Table in database.			
+- The VIEW Table in database:
+The rows of column that developer does query the VIEW table (i.e., Table of v_Sales_Order_Detail in File: "SQL - VIEW Sales_Order_Detail.docx"), is completely from the original data of Table: Sales_Order_Detail. Developer can add, query, update, and delete in the VIEW table, repectively.	
+DB Engineer creates VIEW table, is likely to limit the accessed privilege of column(s) and only present the columns in need for developer
+
+
+
 
 
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
 
-- *** Notice here !!! The digrame below will be revised since the image is from "https://www.geeksforgeeks.org/collections-in-java-2/" ***
-- <img width="203" alt="Map" src="https://user-images.githubusercontent.com/83496093/210745966-e325db58-77d4-41a4-b6c9-2f79ba47f8a4.png">
+- *** Notice here !!! The digrame below will be revised with adding Security and Efficiency
+- <img width="203" alt="Map - data structure" src="https://user-images.githubusercontent.com/83496093/211237775-2aaa3bc1-7dc2-4c17-9b0d-fa20862d9571.png">
+
 
 > TreeMapEfficiency.java
 - Description:  ...
