@@ -625,7 +625,11 @@ Decorator Pattern (A menu of Subway Order System):
 
 1. The decorator pattern as following SubwayUML below:
 
-	<img width="203" alt="Screen Shot 2022-12-03 at 4 08 51 PM" src="https://user-images.githubusercontent.com/83496093/205431346-399cd33f-a28d-4c1d-a81f-48b9637132d1.png">
+	<img width="203" alt="SubwayUML" src="https://user-images.githubusercontent.com/83496093/210288800-2d7092ac-040c-4a44-8c7a-404ae920af10.png">
+
+
+
+	
 	
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day11_1/decorator">Following sample codes of Decorator Pattern for your information:</a>
 > Food.java
@@ -788,13 +792,18 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  ...
 
 
+> GenericOperatorTest.java
+- Description: To be noticed here, '<>' operator is not allowed for source level below JDK - 1.7, and also '<>' cannot be used with anonymous classes for source level below JDK - 1.9 (or 9.0)
+
 
 
 ------------------------------------------------------------------------------
 # day14 Java Advanced: Enum , HashSet, LinkedHashSet, LinkedList, Iterator and HashCode
 
 - Recap the development of Java Document:
-- <img width="1020" alt="Published Date of Java API" src="https://user-images.githubusercontent.com/83496093/210194731-3971ed66-a40a-489c-adf7-a9fac7739701.png">
+- <img width="1020" alt="Published Date of Java API" src="https://user-images.githubusercontent.com/83496093/210972586-24ac4a1b-97d1-413f-8c09-3148b6f905d8.png">
+
+
 
 
 
@@ -908,7 +917,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
 - *** Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
-- <img width="1003" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
+- <img width="203" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
 
 
 
@@ -954,42 +963,80 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day16 Java Advanced: HashMap, HashTable, TreeMap, TreeSet, Enumeration
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map</a>
-
-> HashMapDemo1.java
-- Description:  ...
-
-> HashMapDemo2.java
-- Description:  ...
-
-> HashMapDemo3.java
-- Description:  ...
-
-> HashMapDemo4.java
-- Description:  ...
-
-> HashMapDemo5.java
-- Description:  ...
-
-> HashMapDemo6.java
-- Description:  ...
-
-> HashMapDemo7.java
-- Description:  ...
+# day16 Java Advanced: Hashtable, Enumeration, HashMap, TreeMap, TreeSet
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration and HashMap</a>
 
 > HashTableDemo.java
 - Description:  ...
 
-> TreeMapDemo.java
+> HashMapDemo1.java
 - Description:  ...
 
-> EnumerationDemo.java
+> HashMapDemo4double.java
+- Description:  ...
+
+> HashMapDemo4int.java
 - Description:  ...
 
 > Load Factor & Initial Capacity (hashMap).docx
 - Description:  Load Factor and Initial Capacity for hashMap
 
+
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map/comparable">Introduction of Sub-classes from Map - TreeMap and HashMap with an application of Comparable</a>
+
+> TreeMapDemoComparable.java
+- Description:  ...
+
+> HashMapDemoComparable01.java
+- Description:  ...
+
+> HashMapDemoComparable02.java
+- Description:  ...
+
+> HashMapDemoComparable03.java
+- Description:  ...
+
+> Student.java
+- Description:  ...
+
+> Exam.java
+- Description:  ...
+
+
+
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collections">Introduction of Collections - with an application of Comparator</a>
+
+> CollectionsDemo.java
+- Description:  ...
+
+> SQL - VIEW Sales_Order_Detail.docx
+- Description: Creating an object of "Collections.unmodifiableList" for developer to query the element of List. This concept is likely to create a VIEW Table in - database, please check out the File: "SQL - VIEW Sales_Order_Detail.docx". But, to be noticed here, the concept of add, set, delete, clear and remove from methods of List (i.e., the object of List is returned from "Collections.unmodifiableList"), is different from VIEW Table in database.			
+- The VIEW Table in database:
+The rows of column that developer does query the VIEW table (i.e., Table of v_Sales_Order_Detail in File: "SQL - VIEW Sales_Order_Detail.docx"), is completely from the original data of Table: Sales_Order_Detail. Developer can add, query, update, and delete in the VIEW table, repectively.	
+DB Engineer creates VIEW table, is likely to limit the accessed privilege of column(s) and only present the columns in need for developer
+
+
+
+
+
+
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
+
+*** Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
+- <img width="203" alt="Map - data structure" src="https://user-images.githubusercontent.com/83496093/211237775-2aaa3bc1-7dc2-4c17-9b0d-fa20862d9571.png">
+
+
+
+
+
+> TreeMapEfficiency.java
+- Description:  ...
+
+> HashMapEfficiency.java
+- Description:  ...
+
+> LinkedHashMapMapEfficiency.java
+- Description:  ...
 
 
 ------------------------------------------------------------------------------
