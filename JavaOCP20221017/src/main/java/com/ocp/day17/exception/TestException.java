@@ -37,7 +37,7 @@ public class TestException {
 
 /*
 	Console:
-			[Number - ServiceTeam - 0001] Appologies, our system don't allow '0' number here. Please re-enter your number. Thank you
+			[Number - ServiceTeam - 0001] Apologies, our system don't allow '0' number here. Please re-enter your number. Thank you
 			[Number - Engineer - 0001] End-user enter 0 to denominator, engineer team shall record the log! 
 			
 			Exception in thread "main" com.ocp.day10.exception.HandleNumberException
