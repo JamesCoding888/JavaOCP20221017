@@ -37,6 +37,9 @@ class HandleNumberException extends Exception {
 	}
 
 	public void reDirect2FrontEnd() {
+		// The following statement will be thrown to the front-end web page
+		// A generally speaking, developer shall avoid the end-user to type the '0' number at the specific column of front-end web page (e.g., HTML5 or javascript).
+		// Why ? For the sake of efficiency, generally we handle with this case at front-end web page to reduce the Server Load.
 		System.out.println("[Number - ServiceTeam - 0001] Apologies, our system don't allow '0' number here. Please re-enter your number. Thank you");
 	}
 }
@@ -47,6 +50,7 @@ public class ExceptionDemo {
 	static int result = 0;
 	
 	public static void main(String[] args) throws HandleNumberException{
+		// Instantiate an object of customized exception (i.e., HandleNumberException)
 		HandleNumberException handle = new HandleNumberException();			
 		
 		if(x > 0) {
