@@ -1,4 +1,4 @@
-package com.ocp.day16.groupingBY;
+package com.ocp.day16.collector;
 
 public class MapGroupingBy {
 
