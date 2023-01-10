@@ -1,12 +1,15 @@
 package com.ocp.day16.collector;
-import java.util.Arrays;
+import java.util.Arrays; 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toSet;
 public class MapGroupingBy {
 	
 	public static void main(String[] args) {	
+		
 		List<PurchasedOrder> bookList = Arrays.asList(
 			new PurchasedOrder("English", 3, 32.0),
 			new PurchasedOrder("Math", 5, 35.0),
@@ -45,10 +48,19 @@ public class MapGroupingBy {
 		
 		// Collect the data of price of book v.s. Set<String>
 		Map<Double, Set<String>> collectedPrice4ProductNameInGroupingBy = bookList.stream().collect(
-				Collectors.groupingBy(PurchasedOrder::getPrice, Collectors.mapping(PurchasedOrder::getProductName, Collectors.toSet()))				
+				/*
+				 	If developer expected to reduce typing too many characters for invoking the API of Collectors.
+					The following syntaxes of mapping and toSet() for your reference. 
+					To be noticed, developer shall import the path of JRE System Library and also must give a "static" in front of path.
+					
+					import static java.util.stream.Collectors.mapping;
+					import static java.util.stream.Collectors.toSet;
+				*/ 				
+				Collectors.groupingBy(PurchasedOrder::getPrice, mapping(PurchasedOrder::getProductName, toSet()))				
 		);
-		System.out.println(collectedPrice4ProductNameInGroupingBy);				
 		
+		System.out.println(collectedPrice4ProductNameInGroupingBy);				
+	
 	}
 }
 
