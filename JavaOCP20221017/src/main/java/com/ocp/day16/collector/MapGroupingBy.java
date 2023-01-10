@@ -7,13 +7,13 @@ import java.util.stream.Collectors;
 public class MapGroupingBy {
 	public static void main(String[] args) {
 		List<PurchasedOrder> bookList = Arrays.asList(
-			new PurchasedOrder("Alan_Beaulieu-Learning_SQL-EN", 3, 32.0),
-			new PurchasedOrder("Effective.Java.3rd.Edition", 5, 35.0),
-			new PurchasedOrder("Effective.Java.3rd.Edition", 5, 35.0),
-			new PurchasedOrder("[O`Reilly. Head First]", 5, 35.0),
-			new PurchasedOrder("O'Reilly.High.Performance.MySQL", 2, 40.0),
-			new PurchasedOrder("[O`Reilly. Head First]", 5, 35.0),
-			new PurchasedOrder("O'Reilly.High.Performance.MySQL", 2, 40.0)
+			new PurchasedOrder("English", 3, 32.0),
+			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("Science", 2, 40.0),
+			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("History", 2, 40.0)
 		);		
 		
 		System.out.println(bookList);
@@ -36,12 +36,13 @@ public class MapGroupingBy {
 		);				
 		System.out.println(collectedProductName4PriceInGroupingBy);
 
-		// Collect the data of price of book v.s. price of book
+		// Collect the data of price of book v.s. List<PurchasedOrder>
 		Map<Double, List<PurchasedOrder>> collectedPrice4BookList = bookList.stream().collect(
 				Collectors.groupingBy(PurchasedOrder::getPrice)			
 		);
 		System.out.println(collectedPrice4BookList);
 		
+		// Collect the data of price of book v.s. Set<String>
 		Map<Double, Set<String>> collectedPrice4ProductNameInGroupingBy = bookList.stream().collect(
 				Collectors.groupingBy(PurchasedOrder::getPrice, Collectors.mapping(PurchasedOrder::getProductName, Collectors.toSet()))				
 		);
@@ -52,11 +53,12 @@ public class MapGroupingBy {
 
 /*
 	Console:
-			[PurchasedOrder [productName=Alan_Beaulieu-Learning_SQL-EN, quantity=3, price=32.0], PurchasedOrder [productName=Effective.Java.3rd.Edition, quantity=5, price=35.0], PurchasedOrder [productName=Effective.Java.3rd.Edition, quantity=5, price=35.0], PurchasedOrder [productName=[O`Reilly. Head First], quantity=5, price=35.0], PurchasedOrder [productName=O'Reilly.High.Performance.MySQL, quantity=2, price=40.0], PurchasedOrder [productName=[O`Reilly. Head First], quantity=5, price=35.0], PurchasedOrder [productName=O'Reilly.High.Performance.MySQL, quantity=2, price=40.0]]
-			{Effective.Java.3rd.Edition=2, Alan_Beaulieu-Learning_SQL-EN=1, O'Reilly.High.Performance.MySQL=2, [O`Reilly. Head First]=2}
-			{Effective.Java.3rd.Edition=10, Alan_Beaulieu-Learning_SQL-EN=3, O'Reilly.High.Performance.MySQL=4, [O`Reilly. Head First]=10}
-			{Effective.Java.3rd.Edition=70.0, Alan_Beaulieu-Learning_SQL-EN=32.0, O'Reilly.High.Performance.MySQL=80.0, [O`Reilly. Head First]=70.0}
-			{32.0=[PurchasedOrder [productName=Alan_Beaulieu-Learning_SQL-EN, quantity=3, price=32.0]], 35.0=[PurchasedOrder [productName=Effective.Java.3rd.Edition, quantity=5, price=35.0], PurchasedOrder [productName=Effective.Java.3rd.Edition, quantity=5, price=35.0], PurchasedOrder [productName=[O`Reilly. Head First], quantity=5, price=35.0], PurchasedOrder [productName=[O`Reilly. Head First], quantity=5, price=35.0]], 40.0=[PurchasedOrder [productName=O'Reilly.High.Performance.MySQL, quantity=2, price=40.0], PurchasedOrder [productName=O'Reilly.High.Performance.MySQL, quantity=2, price=40.0]]}
-			{32.0=[Alan_Beaulieu-Learning_SQL-EN], 35.0=[Effective.Java.3rd.Edition, [O`Reilly. Head First]], 40.0=[O'Reilly.High.Performance.MySQL]}
+			[PurchasedOrder [productName=English, quantity=3, price=32.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Science, quantity=2, price=40.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=History, quantity=2, price=40.0]]
+			{English=1, Science=1, History=1, Math=4}
+			{English=3, Science=2, History=2, Math=20}
+			{English=32.0, Science=40.0, History=40.0, Math=140.0}
+			{32.0=[PurchasedOrder [productName=English, quantity=3, price=32.0]], 35.0=[PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0]], 40.0=[PurchasedOrder [productName=Science, quantity=2, price=40.0], PurchasedOrder [productName=History, quantity=2, price=40.0]]}
+			{32.0=[English], 35.0=[Math], 40.0=[Science, History]}
+
  
 */
