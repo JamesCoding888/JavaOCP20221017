@@ -10,8 +10,8 @@
 > Certificates
 - <img width="203" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
-> Noticed
-- Please ctrl + F to search "Notice" string, that will be updated later
+> A kindly reminder of following annotation with "TBD", awaiting to be updated
+- Please ctrl + F to search "TBD" string
 
 
 ------------------------------------------------------------------------------
@@ -291,29 +291,29 @@
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Scanner API Practice</a>
 
 > ScannerDemo.java 
-- Description:  ...
+- Description:  TBD
 -
 
 > ScannerFilter.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 
 > ScannerForPractice_Loop_And_If.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 
 > ScannerLimiter.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerException">Introduction of Scanner Exception</a>
 
 > IntroductionOfFinal.java
-- Description: ...
+- Description:  TBD
 - 
 
 
@@ -323,29 +323,29 @@
 
 
 > ScannerNoSuchElementException.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by API - ArrayList, you will learn in this session</a>
 
 > ArrayListDemo1.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > ArrayListDemo2.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/streetesting">Introduction of Stress Testing</a>
 > ArrayListOfHeapMemoryTest.java 
-- Description:  ...
+- Description:  TBD
 
 ------------------------------------------------------------------------------
 # day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
@@ -357,21 +357,21 @@
 
 
 > Person.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 > Student.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > Teacher.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > Main.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7_2">This lesson we give a following introduction:</a>
@@ -383,73 +383,73 @@
 
 
 > Person.java 
-- Description: ... 
+- Description: TBD 
 - 
 
 > Student.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > Teacher.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > Main.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 
 > Classroom.java
-- Description: ...
+- Description:  TBD
 - 
 
 
 
 
 > Main2.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 ------------------------------------------------------------------------------
 # day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">This lesson we give a following introduction:</a>
-...
+TBD
 
 
 
 > DemoInheritanceAndConstructors.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 
 > Overloading01.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > Overloading02.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 
 > PrimitiveClass.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > WrapperClass1.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
 > WrapperClass2.java 
-- Description:  ...
+- Description:  TBD
 - 
 
 
@@ -492,26 +492,26 @@
 - (2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from creating more than one object for accessing the inside object of "SingleDao.java".
 	
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_1:</a>
-- ...
+- TBD
 
 
 > Cat.java 
-- Description: ...
+- Description: TBD
 
 > Lion.java 
-- Description: ...
+- Description: TBD
 
 > Cow.java 
-- Description: ...
+- Description: TBD
 
 > Horse.java 
-- Description: ...
+- Description: TBD
 
 > Feet.java 
-- Description: ...
+- Description: TBD
 
 > TestPolymorphismOfAnimal.java 
-- Description: ...
+- Description: TBD
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_2:</a>
 - This lesson you will learn a roughly design of different positions at company and some variables/methods only for specific position
@@ -681,19 +681,19 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 	
 > Observer.java
-- Description:  ...
+- Description:  TBD
 
 > Subject.java
-- Description:  ...
+- Description:  TBD
 
 > NewsTopic.java
-- Description:  ...
+- Description:  TBD
 
 > Recipient.java
-- Description:  ...
+- Description:  TBD
 
 > RecipientCommunication.java
-- Description:  ...
+- Description:  TBD
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
@@ -705,10 +705,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
  	
 
 > EqualsFunction.java
-- Description:  ...
+- Description:  TBD
 
 > EqualsHashCode.java
-- Description:  ...
+- Description:  TBD
 
 > OverrideEqualsHashCodeFunction.java
 - Description: The method of "public int hashCode(){ ... }" being overrided with the value of prime: 31, was chosen because it is an odd prime. 
@@ -721,10 +721,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/innerclass)">Introduction of Inner class</a>
 
 > Outer.java
-- Description:  ...
+- Description:  TBD
 
 > InnerClassTest.java
-- Description:  ...
+- Description:  TBD
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/methodLocal">Introduction of method-local inner class to invoke the local variable</a>
 
@@ -776,20 +776,20 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day13">Introduction ...</a>
 
 > StreamDemo.java
-- Description:  ...
+- Description:  TBD
 
 > ConsumerDemo.java
-- Description:  ...
+- Description:  TBD
 
 > PredicateDemo.java
-- Description:  ...
+- Description:  TBD
 
 > FunctionDemo.java
 - Description:  Since interface of BinaryOperator inherits interface of BiFunction, developer could implement the abstraction method of BiFunction even BinaryOperator originally have neither. By the way, if you expected to override the method of interface from BinaryFunction, suggested to use object type of BinaryOperator, then you could override the abstraction method from both of interface, at same time.
 - 請讀者留意，BinaryOperator 介面無此抽象方法 "R apply(T t, U u);"，但因 BinaryOperator 繼承 BiFunction 介面，因此可覆寫其抽象方法。順帶一提，若實作 BinaryFunction 介面的抽象方法，建議物件型別改用 BinaryOperator，如此可同時擁有覆寫 BinaryOperator 和 BinaryFunction 介面中的抽象方法
 
 > SupplierDemo.java
-- Description:  ...
+- Description:  TBD
 
 
 > GenericOperatorTest.java
@@ -820,16 +820,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/enumLesson">Introduction of Enum</a>
 > TestCoin.java
-- Description:  ...
+- Description:  TBD
 
 > EnumForUSCurrency.java
-- Description:  ...
+- Description:  TBD
 
 > EnumPositions.java
-- Description:  ...
+- Description:  TBD
 
 > TestPositions.java
-- Description:  ...
+- Description:  TBD
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/hashSet">Introduction of Set</a> 
 
@@ -862,36 +862,36 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector</a>
 > VectorDemo.java
-- Description:  ...
+- Description:  TBD
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/stack">Introduction of Stack</a>
 > StackDemo01.java
-- Description:  ...
+- Description:  TBD
 
 > StackDemo02.java
-- Description:  ...
+- Description:  TBD
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList</a>
 
 > LinkedListDemo01.java
-- Description:  ...
+- Description:  TBD
 
 > LinkedListDemo02.java
-- Description:  ...
+- Description:  TBD
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/queue">Introduction of Queue</a>
 
 > QueueDemo.java
-- Description:  ...
+- Description:  TBD
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/treeset">Introduction of TreeSet</a>
 
 > TreeSetDemo01.java
-- Description:  ...
+- Description:  TBD
 
 
 > TreeSetDemo02.java
-- Description:  ...
+- Description:  TBD
 
 > TreeSetDemo03.java
 - Description:  Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
@@ -899,18 +899,18 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparable">Introduction of Comparable</a>
 
 > Employee.java
-- Description:  ...
+- Description:  TBD
 
 > SortType.java
-- Description:  ...
+- Description:  TBD
 
 > TreeSetComparable.java
-- Description:  ...
+- Description:  TBD
 
 7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparator">Introduction of Comparator</a>
 
 > Comparator4Books.java
-- Description:  ...
+- Description:  TBD
 
 
 
@@ -929,34 +929,34 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description: The executed efficiency of TreeSet is faster than List by 6 times, almost. Pleease check out the sample code for more detail. 
 
 > ArrayListEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > VectorEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > StackEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > LinkedListEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > LinkedHashSetEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > HashSetEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > QueueEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > DequeEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > PriorityQueueEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > ArrayDequeEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 
 > ***** Another sample codes , TBD *****
@@ -967,16 +967,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration and HashMap</a>
 
 > HashTableDemo.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemo1.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemo4double.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemo4int.java
-- Description:  ...
+- Description:  TBD
 
 > Load Factor & Initial Capacity (hashMap).docx
 - Description:  Load Factor and Initial Capacity for hashMap
@@ -985,29 +985,29 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map/comparable">Introduction of Sub-classes from Map - TreeMap and HashMap with an application of Comparable</a>
 
 > TreeMapDemoComparable.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemoComparable01.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemoComparable02.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapDemoComparable03.java
-- Description:  ...
+- Description:  TBD
 
 > Student.java
-- Description:  ...
+- Description:  TBD
 
 > Exam.java
-- Description:  ...
+- Description:  TBD
 
 
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collections">Introduction of Collections - with an application of Comparator</a>
 
 > CollectionsDemo.java
-- Description:  ...
+- Description:  TBD
 
 > SQL - VIEW Sales_Order_Detail.docx
 - Description: Creating an object of "Collections.unmodifiableList" for developer to query the element of List. This concept is likely to create a VIEW Table in - database, please check out the File: "SQL - VIEW Sales_Order_Detail.docx". But, to be noticed here, the concept of add, set, delete, clear and remove from methods of List (i.e., the object of List is returned from "Collections.unmodifiableList"), is different from VIEW Table in database.			
@@ -1030,13 +1030,13 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 
 > TreeMapEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > HashMapEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 > LinkedHashMapMapEfficiency.java
-- Description:  ...
+- Description:  TBD
 
 
 ------------------------------------------------------------------------------
@@ -1045,10 +1045,10 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception">Introduction of Exception</a>
 
 > HandleNumberException.java
-- Description:  ...
+- Description:  TBD
 
 > TestException.java
-- Description:  ...
+- Description:  TBD
 
 
 
@@ -1085,7 +1085,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 # day22 Java Advanced: Thread...
 
 > ThreadTimer.java
-- Description:  ...
+- Description:  TBD
 
 
 
@@ -1126,29 +1126,29 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
 > StringBuilderPractice01.java
-- Description:  ...
+- Description:  TBD
 
 > StringBuilderPractice02.java
-- Description:  ...
+- Description:  TBD
 
 > StringBuilderPractice03.java
-- Description:  ...
+- Description:  TBD
 
 > StringBuilderPractice04.java
-- Description:  ...
+- Description:  TBD
 
 > ComparatorPractice.java
-- Description:  ...
+- Description:  TBD
 
 > Airplane.java
-- Description:  ...
+- Description:  TBD
 
 > VarTest.java
-- Description:  ...
+- Description:  TBD
 
 > VarDemo.java
-- Description:  ...
+- Description:  TBD
 
 > varCanAndCannot.java
-- Description:  ...
+- Description:  TBD
 
