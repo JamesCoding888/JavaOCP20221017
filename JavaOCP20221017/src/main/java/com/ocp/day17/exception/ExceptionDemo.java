@@ -15,7 +15,7 @@ class HandleNumberException extends Exception {
 	}
 }
 
-public class TestException {
+public class ExceptionDemo {
 
 	static int x = 0;
 	static int result = 0;
