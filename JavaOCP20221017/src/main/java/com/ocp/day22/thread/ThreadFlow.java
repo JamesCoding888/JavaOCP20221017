@@ -1,7 +1,7 @@
 package com.ocp.day22.thread;
 
 class ThreadTimer {
-	public final int MAX_PRIORITY = 1_000; // 1,000 milliseconds = 1 second(s)
+	public final int MAX_PRIORITY = 1_000; // 1,000 milliseconds = 1 second
 	// ThreadTimer method
 	public void countDown() {
 		try {
@@ -46,7 +46,7 @@ class Thread01 extends Thread {
 		        	}
 	       	   }	
 		*/
-		super.run();		
+		super.run(); // Nothing will be done and returned		
 		new ThreadTimer().countDown();
 		Thread02 thread02 = new Thread02();
 		thread02.start();
@@ -87,7 +87,7 @@ class Thread02 extends Thread {
 		        	}
 	       	   }  
 		*/
-		super.run();
+		super.run(); // Nothing will be done and returned
 		System.out.println("3");
 		new ThreadTimer().countDown();
 		new ThreadTimer().countDown();
