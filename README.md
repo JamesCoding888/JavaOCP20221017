@@ -10,8 +10,8 @@
 > Certificates
 - <img width="203" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
-> A kindly reminder of following annotation with "TBD", awaiting to be updated
-- Please ctrl + F to search "TBD" string
+> A kindly reminder of following annotation with "TBD", will have more info.
+- Please ctrl + F to search for "TBD" string
 
 
 ------------------------------------------------------------------------------
