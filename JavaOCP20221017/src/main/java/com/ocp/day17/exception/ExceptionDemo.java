@@ -11,7 +11,7 @@ package com.ocp.day17.exception;
 	Reason of NOT throwing RuntimeException:
 		
 		1) Throwing a RuntimeException can lead to subtle errors; for example, a caller cannot 
-		   examine the exception to determine why it was thrown and consequently cannot attempt recovery.
+		   examine the exception to determine why it was thrown and consequently cannot attempt to recover.
 	
 	
 	
