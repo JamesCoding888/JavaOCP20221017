@@ -1084,6 +1084,8 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 ------------------------------------------------------------------------------
 # day22 Java Advanced: Thread... TBD
 
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day22/thread">Introduction of Thread</a>
+
 > ThreadTimer.java
 - Description:  TBD
 
