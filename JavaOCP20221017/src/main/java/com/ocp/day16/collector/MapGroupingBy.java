@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 public class MapGroupingBy {
-	public static void main(String[] args) {
+	
+	public static void main(String[] args) {	
 		List<PurchasedOrder> bookList = Arrays.asList(
 			new PurchasedOrder("English", 3, 32.0),
 			new PurchasedOrder("Math", 5, 35.0),
@@ -59,6 +60,4 @@ public class MapGroupingBy {
 			{English=32.0, Science=40.0, History=40.0, Math=140.0}
 			{32.0=[PurchasedOrder [productName=English, quantity=3, price=32.0]], 35.0=[PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0], PurchasedOrder [productName=Math, quantity=5, price=35.0]], 40.0=[PurchasedOrder [productName=Science, quantity=2, price=40.0], PurchasedOrder [productName=History, quantity=2, price=40.0]]}
 			{32.0=[English], 35.0=[Math], 40.0=[Science, History]}
-
- 
 */
