@@ -33,13 +33,13 @@ class HandleNumberException extends Exception {
 	}
 
 	public HandleNumberException(int x) {
+		// The following statement will be stored into the specific column of table in Database.
 		System.out.printf("[Number - Engineer - 0001] End-user enter %d to denominator, engineer team shall stop end-user typing the '0' number into denominator at the front-end web page ! \n\n", x);
 	}
 
 	public void reDirect2FrontEnd() {
-		// The following statement will be thrown to the front-end web page
-		// A generally speaking, developer shall avoid the end-user to type the '0' number at the specific column of front-end web page (e.g., HTML5 or javascript).
-		// Why ? For the sake of efficiency, generally we handle with this case at front-end web page to reduce the Server Load.
+		// For the sake of efficiency, generally developer will handle with the '0' number at the specific column of front-end web page (e.g., HTML5 or javascript) to reduce the Server Load.
+		// The following statement will be thrown to the front-end web page for end-user. 
 		System.out.println("[Number - ServiceTeam - 0001] Apologies, our system don't allow '0' number here. Please re-enter your number. Thank you");
 	}
 }
