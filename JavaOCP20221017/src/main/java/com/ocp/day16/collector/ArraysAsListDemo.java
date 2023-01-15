@@ -148,7 +148,12 @@ public class ArraysAsListDemo {
 			[.NET, .java, .jar]
 			class java.util.Arrays$ArrayList
 			class java.util.ArrayList
-			[python, .java, .jar]
-			false
+			list: [python, .java, .jar]
+			stringList: [python, .java, .jar, Microsoft Power BI]
+			python .java .jar 
+			.NET .java .jar 
+			list.contains(".NET"): false
+			stringList.contains(".NET"): false
+
 
 */
