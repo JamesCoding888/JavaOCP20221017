@@ -1,21 +1,35 @@
 package com.ocp.day16.collector;
 
+
+
 /*
 	Introduction of API - Arrays.asList:
 	Arrays.asList() is a method of the Java programming language at class of java.util.Arrays 
-	that converts an array to a fixed-size list.
+	that converts an array to a fixed-size object of List.
 	
 	The object of list (i.e., so-called List view) is returned by the specified array; therefore, 
 	any changes made to the list will also be reflected in the array and vice versa. 
     
-    To be noticed here, the returned list is a fixed-size. Developer tries to add/delete the argument(s) of list, if do so, JRE will throw an UnsupportedOperationException.
+    To be noticed here: 
+    1) The returned list is a fixed-size. Developer tries to add/delete the element(s) of list, 
+       if do so, JVM (Java Virtual Machine) will throw an UnsupportedOperationException.
+    
+    2) Developer is allowed to modify a single element inside the array. 
+	   The modified element that developer makes to the single element of the List, 
+       will be reflected in original array.
+       
 */
 
-import java.util.Arrays;
+
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 public class ArraysAsListDemo {
 	public static void main(String[] args) {
 		
+		String[] string1 = {".NET", ".java", ".jar"};
+		String[] string2 = {".NET", ".java", ".jar"};
+
 		/* Coming the statement of Arrays.asList below, it's from Oracle's document.
 	     * Returns a fixed-size list backed by the specified array. Changes made to
 	     * the array will be visible in the returned list, and changes made to the
@@ -60,18 +74,81 @@ public class ArraysAsListDemo {
 		   }
 		   
 	    */
-		List<String> list = Arrays.asList(".NET", ".java", ".jar");
-		System.out.println(list); // [.NET, .java, .jar]
-		System.out.println(list.getClass());  // class java.util.Arrays$ArrayList
+		List<String> list = Arrays.asList(string1);				
+		List<String> stringList = new ArrayList<>(Arrays.asList(string2));
+	
 		
-		// Exception in thread "main" java.lang.UnsupportedOperationException
+		// print out the elements of list
+		// Console: [.NET, .java, .jar]
+		System.out.println(list); 
+		// print out the elements of stringList
+		// Console: [.NET, .java, .jar]
+		System.out.println(stringList); 
+		
+		// return the object that represents the runtime class of this object 
+		// i.e., class java.util.Arrays$ArrayList 		
+		System.out.println(list.getClass());  
+		// return the object that represents the runtime class of this object
+		// i.e., class java.util.ArrayList
+		System.out.println(stringList.getClass());  
+		
+
+		// Since an object of list returned an ArrayList with only wrapped an existing array, 
+		// and also API of Arrays.asList does NOT implement the method of add and remove.
+		// If developer invoke the method of add or remove, the JVM will throw an Exception in thread "main" java.lang.UnsupportedOperationException
 		/*
 			list.add("add");
 			list.remove(0);		
 			list.clear();
 		*/
-		System.out.println(list.contains(".NET")); // true
 		
+		// It's workable here !!! 
+		stringList.add("Microsoft Power BI");
+		
+		/*		   
+           public interface List<E> extends Collection<E> {
+           		
+           	// Replaces the element at the specified position in this list with the
+            // specified element (optional operation).
+        	E set(int index, E element);
+           		
+           }          
+		*/
+		list.set(0, "python");		
+		stringList.set(0, "python");
+		
+		// list: [python, .java, .jar]
+		System.out.println("list: " + list);
+		// stringList: [python, .java, .jar, Microsoft Power BI]
+		System.out.println("stringList: " + stringList);
+		// To be noticed here, the elements itself in original array (i.e., list) were MODIFIED
+		for(String valueOfString1 : string1) {
+			System.out.printf("%s ", valueOfString1);	
+		}
+		System.out.println();
+		// To be noticed here, the elements itself in original array (i.e., stringList) were NOT MODIFIED
+		for(String valueOfString2 : string2) {
+			System.out.printf("%s ", valueOfString2);	
+		} 
+		System.out.println();
+		
+		
+		// The element of ".NET" is NOT existence 
+		// false
+		System.out.println("list.contains(\".NET\"): " + list.contains(".NET")); 
+		// false
+		System.out.println("stringList.contains(\".NET\"): " +  stringList.contains(".NET"));
 		
 	}
 }
+
+/*
+	Console:
+			[.NET, .java, .jar]
+			[.NET, .java, .jar]
+			class java.util.Arrays$ArrayList
+			class java.util.ArrayList
+			[python, .java, .jar]
+			false
+
+*/
