@@ -1018,10 +1018,10 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collector">groupingBy of Collector</a>
 
-> MapGroupingBy.java (Continue)
+> MapGroupingBy.java (TBD)
 - Description:  TBD
 
-> PurchasedOrder.java (Continue)
+> PurchasedOrder.java (TBD)
 - Description:  TBD
 
 > ArraysAsListDemo.java
