@@ -58,11 +58,13 @@ public class ArraysAsListDemo {
 	    */
 		List<String> list = Arrays.asList(".NET", ".java", ".jar");
 		System.out.println(list); // [.NET, .java, .jar]
+		System.out.println(list.getClass());  // class java.util.Arrays$ArrayList
 		
 		// Exception in thread "main" java.lang.UnsupportedOperationException
 		/*
 			list.add("add");
 			list.remove(0);		
+			list.clear();
 		*/
 		System.out.println(list.contains(".NET")); // true
 		
