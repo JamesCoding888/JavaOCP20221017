@@ -76,8 +76,8 @@ public class ArraysAsListDemo {
 	    */
 		List<String> list = Arrays.asList(string1);
 		/*
-		 	HereinAfter, object of stringList is an independently copy of the array (i.e., this object of stringList will NOT affect the original array. 
-		 	Developer can proceed all capabilities of a regular ArrayList (e.g., method of add or remove)
+		 	HereinAfter, object of stringList is an independently copy of the array (i.e., this object of stringList will NOT affect the original array). 
+		 	Developer can proceed all capabilities of a regular ArrayList (e.g., method of add or remove).
 		*/
 		List<String> stringList = new ArrayList<>(Arrays.asList(string2));
 	
@@ -96,15 +96,15 @@ public class ArraysAsListDemo {
 		
 
 		// Since an object of list returned an ArrayList with only wrapped an existing array, 
-		// and also API of Arrays.asList does NOT implement the method of add and remove.
-		// If developer invoke the method of add or remove, the JVM will throw an Exception in thread "main" java.lang.UnsupportedOperationException
+		// and also API of Arrays.asList does NOT implement the method of add, remove or clear.
+		// If developer invoke the method of them, the JVM will throw an Exception in thread "main" java.lang.UnsupportedOperationException
 		/*
 			list.add("add");
 			list.remove(0);		
 			list.clear();
 		*/
 		
-		// Because object of stringList including all capabilities of ArrayList, then method of add and remove are supported
+		// Because object of stringList including all capabilities of ArrayList, then invoking the method of add and remove are successful
 		stringList.add("Microsoft Power BI");
 		stringList.remove(2); // the element of ".jar" being removed
 		
@@ -157,7 +157,6 @@ public class ArraysAsListDemo {
 			.NET .java .jar 
 			list.contains(".NET"): false
 			stringList.contains(".NET"): false
-
 
 
 */
