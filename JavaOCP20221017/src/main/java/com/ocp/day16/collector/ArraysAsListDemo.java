@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 public class ArraysAsListDemo {
 	public static void main(String[] args) {
-		
+
 		String[] string1 = {".NET", ".java", ".jar"};
 		String[] string2 = {".NET", ".java", ".jar"};
 
@@ -78,17 +78,15 @@ public class ArraysAsListDemo {
 		List<String> stringList = new ArrayList<>(Arrays.asList(string2));
 	
 		
-		// print out the elements of list
-		// Console: [.NET, .java, .jar]
+		// print out the elements of list - [.NET, .java, .jar]
 		System.out.println(list); 
-		// print out the elements of stringList
-		// Console: [.NET, .java, .jar]
+		// print out the elements of stringList - [.NET, .java, .jar]
 		System.out.println(stringList); 
 		
-		// return the object that represents the runtime class of this object 
+		// Return the object that represents the runtime class of this object 
 		// i.e., class java.util.Arrays$ArrayList 		
 		System.out.println(list.getClass());  
-		// return the object that represents the runtime class of this object
+		// Return the object that represents the runtime class of this object
 		// i.e., class java.util.ArrayList
 		System.out.println(stringList.getClass());  
 		
@@ -102,8 +100,9 @@ public class ArraysAsListDemo {
 			list.clear();
 		*/
 		
-		// It's workable here !!! 
+		// Because object of stringList including all capabilities of ArrayList, then method of add and remove are supported
 		stringList.add("Microsoft Power BI");
+		stringList.remove(2); // the element of ".jar" being removed
 		
 		/*		   
            public interface List<E> extends Collection<E> {
@@ -149,11 +148,12 @@ public class ArraysAsListDemo {
 			class java.util.Arrays$ArrayList
 			class java.util.ArrayList
 			list: [python, .java, .jar]
-			stringList: [python, .java, .jar, Microsoft Power BI]
+			stringList: [python, .java, Microsoft Power BI]
 			python .java .jar 
 			.NET .java .jar 
 			list.contains(".NET"): false
 			stringList.contains(".NET"): false
+
 
 
 */
