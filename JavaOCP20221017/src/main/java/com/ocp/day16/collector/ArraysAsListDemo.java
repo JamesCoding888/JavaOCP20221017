@@ -74,7 +74,11 @@ public class ArraysAsListDemo {
 		   }
 		   
 	    */
-		List<String> list = Arrays.asList(string1);				
+		List<String> list = Arrays.asList(string1);
+		/*
+		 	HereinAfter, object of stringList is an independently copy of the array (i.e., this object of stringList will NOT affect the original array. 
+		 	Developer can proceed all capabilities of a regular ArrayList (e.g., method of add or remove)
+		*/
 		List<String> stringList = new ArrayList<>(Arrays.asList(string2));
 	
 		
