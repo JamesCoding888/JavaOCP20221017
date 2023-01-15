@@ -2,8 +2,12 @@ package com.ocp.day16.collector;
 
 /*
 	Introduction of API - Arrays.asList:
-	Arrays.asList() is a method of the Java programming language at class of java.util.Arrays that converts an array to a fixed-size list.
-	The object of list (i.e., so-called List view) is returned by the specified array; therefore, any changes made to the list will also be reflected in the array and vice versa. 
+	Arrays.asList() is a method of the Java programming language at class of java.util.Arrays 
+	that converts an array to a fixed-size list.
+	
+	The object of list (i.e., so-called List view) is returned by the specified array; therefore, 
+	any changes made to the list will also be reflected in the array and vice versa. 
+    
     To be noticed here, the returned list is a fixed-size. Developer tries to add/delete the argument(s) of list, if do so, JRE will throw an UnsupportedOperationException.
 */
 
