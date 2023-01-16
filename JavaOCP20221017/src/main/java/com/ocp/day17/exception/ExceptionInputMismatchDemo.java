@@ -1,7 +1,7 @@
 package com.ocp.day17.exception;
 import java.util.InputMismatchException; 
 import java.util.Scanner;
-public class ExceptionInputMismatch {
+public class ExceptionInputMismatchDemo {
     public static void main(String[] args) {
     	int numerator = 100;
 		Integer[] denominator = {10, 0, null};
