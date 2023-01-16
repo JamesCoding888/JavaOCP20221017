@@ -1,4 +1,6 @@
 package com.ocp.day17.exception;
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 public class ExceptionDenominatorDemo {
 	public static void main(String[] args) {
@@ -7,27 +9,42 @@ public class ExceptionDenominatorDemo {
 		Scanner scan = new Scanner(System.in);	
 		System.out.print("Please type index of array from denominator: ");
 		try{
-			int index = scan.nextInt();
+			int index = scan.nextInt();  // type 0, 1, 2, 3 or ,
 			int result = numerator / denominator[index];
 			System.out.println(result);
+		  // java.lang.ArithmeticException	
 		} catch(ArithmeticException e) {		
 			System.out.println("I'm in ArithmeticException");
 			e.printStackTrace();		
+		  // java.lang.NullPointerException
 		} catch(NullPointerException e) {	
 			System.out.println("I'm in NullPointerException");
 			e.printStackTrace();		
+		  // java.lang.ArrayIndexOutOfBoundsException
 		} catch(ArrayIndexOutOfBoundsException e) {	
 			System.out.println("I'm in ArrayIndexOutOfBoundsException");
 			e.printStackTrace();		
+	      // java.lang.IndexOutOfBoundsException
 		} catch(IndexOutOfBoundsException e) {	
 			System.out.println("I'm in IndexOutOfBoundsException");
-			e.printStackTrace();		
+			e.printStackTrace();	
+		  // java.lang.InputMismatchException
+		} catch(InputMismatchException e) {	
+			System.out.println("I'm in InputMismatchException");
+			e.printStackTrace();	
+		  // java.lang.NoSuchElementException
+		} catch(NoSuchElementException e) {	
+			System.out.println("I'm in NoSuchElementException");
+			e.printStackTrace();	
+		  // java.lang.RuntimeException
 		} catch(RuntimeException e) {
 			System.out.println("I'm in RuntimeException");
 			e.printStackTrace();
-		} catch(Exception e) {
+		  // java.lang.Exception
+		} catch(Exception e) {	
 			System.out.println("I'm in Exception");
 			e.printStackTrace();
+		  // java.lang.Throwable
 		} catch(Throwable e) {
 			System.out.println("I'm in Throwable");
 			e.printStackTrace();
@@ -61,5 +78,10 @@ public class ExceptionDenominatorDemo {
 			java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 				at com.ocp.day17.exception.ExceptionDenominatorDemo.main(ExceptionDenominatorDemo.java:11)
 
+
+	Console:
+			Please type index of array from denominator: ,
+			I'm in InputMismatchException
+			java.util.InputMismatchException
 
 */
