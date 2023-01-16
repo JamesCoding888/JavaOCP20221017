@@ -963,7 +963,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 ------------------------------------------------------------------------------
-# day16 Java Advanced: Hashtable, Enumeration, HashMap, TreeMap, Collectors
+# day16 Java Advanced: Hashtable, Enumeration, HashMap, TreeMap, Collectors and Arrays.asList
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration and HashMap</a>
 
 > HashTableDemo.java
@@ -1025,7 +1025,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 - Description:  TBD
 
 > ArraysAsListDemo.java
-- Description:  TBD
+- Description:  Difference between Arrays.asList() and ArrayList
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
 
