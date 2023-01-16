@@ -19,6 +19,9 @@ public class ExceptionDenominatorDemo {
 		} catch(ArrayIndexOutOfBoundsException e) {	
 			System.out.println("I'm in ArrayIndexOutOfBoundsException");
 			e.printStackTrace();		
+		} catch(IndexOutOfBoundsException e) {	
+			System.out.println("I'm in IndexOutOfBoundsException");
+			e.printStackTrace();		
 		} catch(RuntimeException e) {
 			System.out.println("I'm in RuntimeException");
 			e.printStackTrace();
