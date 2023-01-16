@@ -7,8 +7,8 @@ public class ExceptionInputMismatch {
 		Integer[] denominator = {10, 0, null};
 		Scanner scan = new Scanner(System.in);	
 		System.out.print("Please type index of array from denominator: ");    
-        // try-catch
-//		/*
+        // 1) w/ try-catch
+		/*
 			try {
 	            int index = scan.nextInt();
 	            if(index < 0 || index >= denominator.length) {
@@ -28,18 +28,18 @@ public class ExceptionInputMismatch {
 	        } catch (InputMismatchException e) {
 	            e.printStackTrace();
 	        }  
-//      */
+      */
 		
-		// remove try-catch  
-		/*
+		// 2) w/o try-catch  
+//		/*
 	        String string = scan.next(); // transfer to String    
-	        // Whether the input value is numeric value or not
+	        // Whether the input string is numeric value or not
 	        boolean isNumeric = string.chars().allMatch(Character::isDigit);
 	        if(!isNumeric) {
 	            System.out.println("Pleas type numeric value");
 	            return;
 	        }
-			int index = scan.nextInt();
+	        int index = Integer.valueOf(string);
 			if (index < 0 || index >= denominator.length) {
 				System.out.println("index out of range of array");
 				return;
@@ -54,7 +54,45 @@ public class ExceptionInputMismatch {
 			}
 			int result = numerator / denominator[index];
 			System.out.println(result);  
-		*/  
+//		*/  
+			
 		scan.close();
     }
 }
+
+
+/*
+	Console 1):
+				Please type index of array from denominator: 0
+				10
+				
+				Please type index of array from denominator: 1
+				denominator = 0
+	
+				Please type index of array from denominator: 2
+				denominator = null
+				
+				Please type index of array from denominator: 3
+				index out of range of array
+				
+				Please type index of array from denominator: .
+				java.util.InputMismatchException
+
+	Console 2):
+				Please type index of array from denominator: 0
+				10
+				
+				Please type index of array from denominator: 1
+				denominator = 0
+	
+				Please type index of array from denominator: 2
+				denominator = null
+				
+				Please type index of array from denominator: 3
+				index out of range of array
+	
+				Please type index of array from denominator: .
+				Pleas type numeric value
+	
+	
+*/
