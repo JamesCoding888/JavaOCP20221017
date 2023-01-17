@@ -8,7 +8,7 @@ public class ExceptionInputMismatchDemo {
 		Scanner scan = new Scanner(System.in);	
 		System.out.print("Please type index of array from denominator: ");    
         // 1) w/ try-catch
-		/*
+//		/*
 			try {
 	            int index = scan.nextInt();
 	            if(index < 0 || index >= denominator.length) {
@@ -25,10 +25,11 @@ public class ExceptionInputMismatchDemo {
 	            }
 	            int result = numerator / denominator[index];
 	            System.out.println(result);
+	          // InputMismatchException -> NoSuchElementException -> RuntimeException
 	        } catch (InputMismatchException e) {
 	            e.printStackTrace();
 	        }  
-      */
+//      */
 		
 		// 2) w/o try-catch  
 //		/*
