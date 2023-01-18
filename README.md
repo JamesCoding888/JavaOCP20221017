@@ -1063,6 +1063,8 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > ExceptionInputMismatchDemo.java
 - Description:  TBD
 
+> IndexOutOfRangeExceptionDemo.java
+- Description:  Demostration of how to write a precisely exception without throwing exception by RuntimeException
 
 
 
