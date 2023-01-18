@@ -1,10 +1,10 @@
 package com.ocp.day17.exception;
 
 /*
-	What is advantage of using try/catch block?  
+	What is advantage of using try/catch block?   
 		
 		1. Using one try/catch instead of multiple if statements
-		2.
+		
 		
 		
 	What is disadvantage of using try/catch block?
