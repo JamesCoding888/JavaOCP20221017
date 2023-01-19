@@ -1,6 +1,6 @@
 package com.ocp.day17.exception;
 
-public class ExceptionDemo2 {
+public class ExceptionWithTermination {
 	public static void main(String[] args) {
 		
 		// finally
@@ -16,13 +16,13 @@ public class ExceptionDemo2 {
 			// Console 1), 2) and 3)
 			e.printStackTrace(System.out);
 			// Console 2)
-			/*
-				return;
-			 */
-			// Console 3)
 //			/*
+				return;
+//			 */
+			// Console 3)
+			/*
 				System.exit(0); 
-//			*/
+			*/
 		} finally {
 			// Console 1)
 			System.out.printf("Must execute avg = %d\n", avg);
