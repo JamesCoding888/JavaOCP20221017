@@ -1,4 +1,4 @@
-package com.ocp.day17.exception;
+package com.ocp.day17.exception.runtimeexception;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
