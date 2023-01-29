@@ -13,16 +13,6 @@
 > A kindly reminder of following annotation with "TBD", will have more info.
 - Please ctrl + F to search for "TBD" string
 
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto">
-	<pre class="notranslate">
-		<code>
-		      - To include the setups and teardowns, we include setups, then we include the test page content, and then we include the 				teardowns. 
-		      - To include the setups, we include the suite setup if this is a suite, then we include the regular setup. - To include the 			  suite setup, we search the parent hierarchy for the “SuiteSetUp” page and add an include statement with the path of that 			   page. 
-		      - To search the parent... 
-		</code>
-	</pre>	
-</div>
-
 ------------------------------------------------------------------------------
 #  Video of Each Lecture
 > day1
