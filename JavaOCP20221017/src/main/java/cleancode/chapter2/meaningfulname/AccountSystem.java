@@ -56,3 +56,11 @@ public final class AccountSystem {
 		System.out.println("{" + accountSystem4IT.id + ", " + accountSystem4IT.name + ", " + accountSystem4IT.position + ", " + accountSystem4IT.salary + "}");
 	}
 }
+
+/*
+	Console:
+				{MA-12890, James Bob}
+				{IT-14440, Bobby Go, Senior Software Engineer, 300000}
+
+
+*/
