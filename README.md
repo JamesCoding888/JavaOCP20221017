@@ -13,7 +13,11 @@
 > A kindly reminder of following annotation with "TBD", will have more info.
 - Please ctrl + F to search for "TBD" string
 
-
+<code>
+- 1
+- 2
+- 3
+</code>
 ------------------------------------------------------------------------------
 #  Video of Each Lecture
 > day1
