@@ -26,7 +26,8 @@ public final class AccountSystem {
 	
 	// Caller cannot see this private constructor.
 	// The only way to build a AccountSystem is by calling the static factory method.
-	// Constructor
+
+	// Constructors
 	private AccountSystem(String id, String name) {
 		this.id = id;
 		this.name = name;
