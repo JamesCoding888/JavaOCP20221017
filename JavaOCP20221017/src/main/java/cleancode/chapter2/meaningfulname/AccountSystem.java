@@ -7,7 +7,7 @@ package cleancode.chapter2.meaningfulname;
 		refer to the handbook - "Clean Code_ A Handbook of Agile Software Craftsmanship", at page 25
 */
 
-// Class name shall NOT be a verb
+// Classes and objects should have noun or noun phrase names, also shall NOT be a verb
 public final class AccountSystem {
 
 	private String id;
@@ -24,10 +24,9 @@ public final class AccountSystem {
 		return new AccountSystem(id, name, position, salary);
 	}
 	
-	// Caller cannot see this private constructor.
-	// The only way to build a AccountSystem is by calling the static factory method.
-
-	// Constructors to be private
+	
+	// When constructors are overloaded, use static factory methods with names that describe the arguments.
+	// Caller cannot see this private constructor(s).
 	private AccountSystem(String id, String name) {
 		this.id = id;
 		this.name = name;
