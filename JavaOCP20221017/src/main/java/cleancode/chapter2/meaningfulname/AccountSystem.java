@@ -27,7 +27,7 @@ public final class AccountSystem {
 	// Caller cannot see this private constructor.
 	// The only way to build a AccountSystem is by calling the static factory method.
 
-	// Constructors
+	// Constructors to be private
 	private AccountSystem(String id, String name) {
 		this.id = id;
 		this.name = name;
@@ -45,6 +45,13 @@ public final class AccountSystem {
 		// calling an static factory method valueOf()
 		AccountSystem accountSystem4Manager = AccountSystem.valueOf("MA-12890", "James Bob");
 		AccountSystem accountSystem4IT = AccountSystem.valueOf("IT-14440", "Bobby Go", "Senior Software Engineer", "300000");
+		/*
+		 	Generally better than:
+		 		
+		 		AccountSystem accountSystem4Manager = new AccountSystem("MA-12890", "James Bob");
+		 		AccountSystem accountSystem4IT = new AccountSystem("IT-14440", "Bobby Go", "Senior Software Engineer", "300000");
+		*/
+		
 		// Print out
 		System.out.println("{" + accountSystem4Manager.id + ", " + accountSystem4Manager.name +"}");
 		System.out.println("{" + accountSystem4IT.id + ", " + accountSystem4IT.name + ", " + accountSystem4IT.position + ", " + accountSystem4IT.salary + "}");
