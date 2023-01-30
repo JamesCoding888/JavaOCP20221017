@@ -1174,6 +1174,8 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > MentalMappingDemo.java
 - Description:   Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
 
+> MeaningfulContextDemo.java
+- Description:   s
 
 # <a href="">Chapter 3: Functions</a>
 
