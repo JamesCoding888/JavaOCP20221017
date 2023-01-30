@@ -2,7 +2,7 @@ package cleancode.chapter2.meaningfulname.meaningfulcontext;
 
 public class MeaningfulContextDemo {
 	
-	public static void print(String guessMessage) {
+	private void print(String guessMessage) {
 		System.out.println(guessMessage);
 	}
 	
