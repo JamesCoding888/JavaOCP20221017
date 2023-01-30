@@ -5,7 +5,7 @@ package cleancode.chapter2.meaningfulname.meaningfulcontext;
  	When all else fails, then prefixing the name may be necessary as a last resort. 
 */
 
-public class MeaningfulContextDemo1 {
+public class UnclearContextDemo {
 	
 	private void print(String guessMessage) {
 		System.out.println(guessMessage);
@@ -35,8 +35,8 @@ public class MeaningfulContextDemo1 {
 	
 	// Main 
 	public static void main(String[] args) {
-		new MeaningfulContextDemo1().printGuessStatistics('A', 0); // There are no As
-		new MeaningfulContextDemo1().printGuessStatistics('B', 1); // There is 1 B
-		new MeaningfulContextDemo1().printGuessStatistics('C', 2); // There are 2 Cs
+		new UnclearContextDemo().printGuessStatistics('A', 0); // There are no As
+		new UnclearContextDemo().printGuessStatistics('B', 1); // There is 1 B
+		new UnclearContextDemo().printGuessStatistics('C', 2); // There are 2 Cs
 	}
 }
