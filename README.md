@@ -1171,6 +1171,10 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > AccountSystem.java
 - Description:   The naming of Class names and Method names
 
+> MentalMappingDemo.java
+- Description:   Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
+
+
 # <a href="">Chapter 3: Functions</a>
 
 # <a href="">Chapter 4: Comments</a>
