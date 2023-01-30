@@ -1167,7 +1167,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 ------------------------------------------------------------------------------
 # Clean Code 
-<a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/cleancode/chapter2/meaningfulname"># Chapter 2: Meaningful Names</a>
+# <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/cleancode/chapter2/meaningfulname">Chapter 2: Meaningful Names</a>
 > AccountSystem.java
 - Description:   The naming of Class names and Method names
 
