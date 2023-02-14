@@ -32,11 +32,11 @@ public class MapGroupingBy {
 		// Arrays.asList fixed size of list 
 		List<PurchasedOrder> bookList = Arrays.asList(
 			new PurchasedOrder("English", 3, 32.0),
-			new PurchasedOrder("Math", 5, 35.0),
-			new PurchasedOrder("Math", 5, 35.0),
-			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("Math"   , 5, 35.0),
+			new PurchasedOrder("Math"   , 5, 35.0),
+			new PurchasedOrder("Math"   , 5, 35.0),
 			new PurchasedOrder("Science", 2, 40.0),
-			new PurchasedOrder("Math", 5, 35.0),
+			new PurchasedOrder("Math"   , 5, 35.0),
 			new PurchasedOrder("History", 2, 40.0)
 		);		
 		
