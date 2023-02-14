@@ -1,7 +1,7 @@
 package com.ocp.day16.collector;
 /*
   	 	
-	Collections.sort
+	Collections.sort 
 		-   
 	
 	Collectors.groupingBy
