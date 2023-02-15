@@ -24,11 +24,11 @@ public class ExceptionWithTermination {
 				System.exit(0); 
 			*/
 		} finally {
-			// Console 1)
+			// Console 1): w/o return 
+			// Console 2): w/ return 
 			System.out.printf("Must execute avg = %d\n", avg);
 		}
-		// Console 1) w/o return 
-		// Console 2): if return added
+		// Console 1): w/o return 
 		System.out.printf("maybe execute avg = %d\n", avg); 
 	}
 }
