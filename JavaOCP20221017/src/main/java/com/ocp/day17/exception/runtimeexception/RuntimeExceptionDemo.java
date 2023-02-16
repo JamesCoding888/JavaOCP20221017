@@ -9,7 +9,9 @@ class ScaleOverLimitedException extends RuntimeException{
 	}
 	
 	public ScaleOverLimitedException(Exception e) {
+		// inform engineer team
 		System.out.printf("[Number - Engineer - 0002] End-user enters scores over the limitedness of printScore(Double scores) method\n");
+		// inform service team
 		System.out.printf("[Number - ServiceTeam - 0002] My apologies, please enter scores between 60.00 to 100\n");
 	}
 }
