@@ -1057,6 +1057,13 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > ExceptionInputMismatchDemo.java
 - Description:  Demostration of how to use if/else conditions and try/catch block for catching the bugs and throwing out the error messages. 
 
+> ExceptionWithTermination01.java (Continue)
+- Description:  ...
+
+> ExceptionWithTermination02.java (Continue)
+- Description:  ...
+
+
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/runtimeexception">Introduction of sub-classes from RuntimeException</a>
 
 > IndexOutOfRangeExceptionDemo.java
