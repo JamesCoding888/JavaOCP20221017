@@ -1060,9 +1060,8 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > ExceptionWithTermination01.java (Continue)
 - Description:  ...
 
-> ExceptionWithTermination02.java (Continue)
-- Description:  ...
-
+> ExceptionWithTermination02.java 
+- Description:  Application of System.exit(0) in try-catch and finally statement. Also, this session is involved the API of java.nio (BufferedReader and FileReader - more detail of java.nio in the following lecture)
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/runtimeexception">Introduction of sub-classes from RuntimeException</a>
 
