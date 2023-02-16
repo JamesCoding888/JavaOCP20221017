@@ -33,10 +33,6 @@ public class ExceptionDenominatorDemo {
 			System.out.println("I'm in InputMismatchException");
 			e.printStackTrace();	
 		  // java.lang.NoSuchElementException
-		} catch(NoSuchElementException e) {	
-			System.out.println("I'm in NoSuchElementException");
-			e.printStackTrace();	
-		  // java.lang.RuntimeException
 		} catch(RuntimeException e) {
 			System.out.println("I'm in RuntimeException");
 			e.printStackTrace();
