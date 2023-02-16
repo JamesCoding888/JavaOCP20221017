@@ -1066,12 +1066,14 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/runtimeexception">Introduction of sub-classes from RuntimeException</a>
 
+> RuntimeExceptionDemo.java
+- Description:  Demonstrate the application of RuntimeException
+
 > IndexOutOfRangeExceptionDemo.java
 - Description:  Demostration of how to write a precisely exception without throwing exception by RuntimeException
 
 > ExceptionDenominatorDemo.java
 - Description: Demostration of subclasses from RuntimeException
-
 
 ------------------------------------------------------------------------------
 # day18 Java Advanced: ... , ... Coming Soon
