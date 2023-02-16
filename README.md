@@ -1059,7 +1059,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 > ExceptionWithTermination01.java
 - Description:  The try-catch and finally statement for exception handling, the block code of "finally" MUST be executed eventually the code block of catch statement does NOT handle any exception/error. <br>
-Of this lesson, we are going to demonstrate a function of "return" and "System.exit(0)". <br>
+Of this lesson, we are going to demonstrate a function of "return" and "System.exit(0)" with application of try-catch and finally statement.<br>
 
 > ExceptionWithTermination02.java 
 - Description:  Application of System.exit(0) in try-catch and finally statement. Also, this session is involved the API of java.nio (BufferedReader and FileReader - more detail of java.nio in the following lecture)
