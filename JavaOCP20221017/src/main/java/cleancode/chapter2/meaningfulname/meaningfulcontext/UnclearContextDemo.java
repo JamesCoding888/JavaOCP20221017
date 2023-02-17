@@ -1,7 +1,9 @@
 package cleancode.chapter2.meaningfulname.meaningfulcontext;
 /*
  	There are a few names which are meaningful in and of themselves—most are not. 
+ 
  	Instead, you need to place names in context for your reader by enclosing them in well-named classes, functions, or namespaces. 
+ 	
  	When all else fails, then prefixing the name may be necessary as a last resort. 
 */
 

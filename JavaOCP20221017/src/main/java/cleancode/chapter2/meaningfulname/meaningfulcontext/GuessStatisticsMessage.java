@@ -1,9 +1,13 @@
 package cleancode.chapter2.meaningfulname.meaningfulcontext;
 /*
- 	 The function is a bit too long and the variables are used throughout. 
+ 	 The function of UnclearContextDemo.java is a bit too long and the variables are used throughout. 
+ 	 
  	 To split the function into smaller pieces we need to create a GuessStatisticsMessage class and make the three variables fields of this class. 
- 	 This provides a clear context for the three variables. 
+ 	 
+ 	 GuessStatisticsMessage provides a clear context for the three variables. 
+ 	 
  	 They are definitively part of the GuessStatisticsMessage. 
+ 	 
  	 The improvement of context also allows the algorithm to be made much cleaner by breaking it into many smaller functions. 
 */
 	
