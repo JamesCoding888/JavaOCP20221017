@@ -1190,7 +1190,8 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > GuessStatisticsMessage.java
 - Description:   Add meaningful context for variables
 
-# <a href="">Chapter 2: Functions</a>
+# <a href="">Chapter 2: Functions</a><br>
+Continue~
 
 # <a href="">Chapter 3: Comments</a>
 
