@@ -1,4 +1,4 @@
-package cleancode.chapter2.meaningfulname.methodnames;
+package cleancode.chapter1.meaningfulname.methodnames;
 
 /* 
 

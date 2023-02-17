@@ -1,4 +1,4 @@
-package cleancode.chapter2.meaningfulname.meaningfulcontext;
+package cleancode.chapter1.meaningfulname.meaningfulcontext;
 /*
  	 The function of UnclearContextDemo.java is a bit too long and the variables are used throughout. 
  	 

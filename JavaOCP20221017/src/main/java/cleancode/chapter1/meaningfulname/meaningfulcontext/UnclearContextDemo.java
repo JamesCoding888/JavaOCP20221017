@@ -1,4 +1,4 @@
-package cleancode.chapter2.meaningfulname.meaningfulcontext;
+package cleancode.chapter1.meaningfulname.meaningfulcontext;
 /*
  	There are a few names which are meaningful in and of themselves—most are not. 
  
