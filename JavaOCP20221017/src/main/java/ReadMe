@@ -10,8 +10,9 @@
 > Certificates
 - <img width="203" alt="Screen Shot 2022-12-02 at 12 37 42 AM" src="https://user-images.githubusercontent.com/83496093/205109003-2d5cff3b-67fc-4e48-a47a-78c8c57f00db.png">
 
-> A kindly reminder of following annotation with "TBD", will have more info.
-- Please ctrl + F to search for "TBD" string
+> A kindly reminder of following annotation with "TBD" or "Continue", will need to be modified.
+- Please ctrl + F to search for "TBD" and "Continue" string
+
 
 ------------------------------------------------------------------------------
 #  Video of Each Lecture
@@ -1050,20 +1051,32 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception">Introduction of Exception</a>
 
-> ExceptionDemo.java
-- Description:  TBD
+> ExceptionDemo1.java
+- Description:  Methods can throw a customized exception or a sub-classes exception from Exception or RuntimeException.
+
+> ExceptionDemo2.java
+- Description:  Demonstrate of try-catch and finally statement 
 
 > ExceptionInputMismatchDemo.java
 - Description:  Demostration of how to use if/else conditions and try/catch block for catching the bugs and throwing out the error messages. 
 
+> ExceptionWithTermination01.java
+- Description:  The try-catch and finally statement for exception handling, the block code of "finally" MUST be executed eventually the code block of catch statement does NOT handle any exception/error. <br>
+Of this lesson, we are going to demonstrate a function of "return" and "System.exit(0)" with application of try-catch and finally statement.<br>
+
+> ExceptionWithTermination02.java 
+- Description:  Application of System.exit(0) in try-catch and finally statement. Also, this session is involved the API of java.nio (BufferedReader and FileReader - more detail of java.nio in the following lecture)
+
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/runtimeexception">Introduction of sub-classes from RuntimeException</a>
+
+> RuntimeExceptionDemo.java
+- Description:  Demonstrate the application of RuntimeException
 
 > IndexOutOfRangeExceptionDemo.java
 - Description:  Demostration of how to write a precisely exception without throwing exception by RuntimeException
 
 > ExceptionDenominatorDemo.java
 - Description: Demostration of subclasses from RuntimeException
-
 
 ------------------------------------------------------------------------------
 # day18 Java Advanced: ... , ... Coming Soon
@@ -1167,43 +1180,46 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 ------------------------------------------------------------------------------
 # Clean Code 
-# <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/cleancode/chapter2/meaningfulname">Chapter 2: Meaningful Names</a>
+# <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/cleancode/chapter2/meaningfulname">Chapter 1: Meaningful Names</a>
 > AccountSystem.java
-- Description:   The naming of Class names and Method names
+- Description:   Consider that developer(s) will read your code. A better naming will reduce the tedious process of communication or understaning
 
 > MentalMappingDemo.java
 - Description:   Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
 
 > UnclearContextDemo.java
-- Description:   TBD
+- Description:   Variables with unclear context
 
-> GuessStatisticsMessage.java [Continue]
-- Description:   TBD
+> GuessStatisticsMessage.java
+- Description:   Add meaningful context for variables
 
-# <a href="">Chapter 3: Functions</a>
+# <a href="">Chapter 2: Functions</a><br>
+Continue~
 
-# <a href="">Chapter 4: Comments</a>
+# <a href="">Chapter 3: Comments</a>
 
-# <a href="">Chapter 5: Formatting</a>
+# <a href="">Chapter 4: Formatting</a>
 
-# <a href="">Chapter 7: Error Handling</a>
+# <a href="">Chapter 5: Objects and Data Structures</a>
 
-# <a href="">Chapter 8: Boundaries</a>
+# <a href="">Chapter 6: Error Handling</a>
 
-# <a href="">Chapter 9: Unit Tests</a>
+# <a href="">Chapter 7: Boundaries</a>
 
-# <a href="">Chapter 10: Classes</a>
+# <a href="">Chapter 8: Unit Tests</a>
 
-# <a href="">Chapter 11: Systems</a>
+# <a href="">Chapter 9: Classes</a>
 
-# <a href="">Chapter 12: Emergence</a>
+# <a href="">Chapter 10: Systems</a>
 
-# <a href="">Chapter 13: Concurrency</a>
+# <a href="">Chapter 11: Emergence</a>
 
-# <a href="">Chapter 14: Successive Refinement</a>
+# <a href="">Chapter 12: Concurrency</a>
 
-# <a href="">Chapter 15: JUnit Internals</a>
+# <a href="">Chapter 13: Successive Refinement</a>
 
-# <a href="">Chapter 16: Refactoring SerialDate</a>
+# <a href="">Chapter 14: JUnit Internals</a>
 
-# <a href="">Chapter 17: Smells and Heuristics</a>
+# <a href="">Chapter 15: Refactoring SerialDate</a>
+
+# <a href="">Chapter 16: Smells and Heuristics</a>
