@@ -46,4 +46,14 @@ public class GuessStatisticsMessage {
 		pluralModifier = "s";
 	}
 	
+	public static void main(String[] args) {
+		String result = new GuessStatisticsMessage().make('K', 3);
+		System.out.println(result);
+	}
 }
+
+/*
+	Console:
+		
+			There are 3 Ks
+*/
