@@ -44,7 +44,7 @@ public class ExceptionWithTermination02 {
 	
 	Console 2 - pathInWrongDirection:
 		
-		java.io.FileNotFoundException: /Users123/liaojames/desktop/helloworld.txt (No such file or directory)
+		java.io.FileNotFoundException: .../helloworld.txt (No such file or directory)
 
 			
 */
