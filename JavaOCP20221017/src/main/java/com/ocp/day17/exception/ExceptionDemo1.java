@@ -44,7 +44,7 @@ class HandleNumberException extends Exception {
 	}
 }
 
-public class ExceptionDemo {
+public class ExceptionDemo1 {
 
 	static int x = 0;	// end-user enter the number at front-end web page
 	static int result = 0;
