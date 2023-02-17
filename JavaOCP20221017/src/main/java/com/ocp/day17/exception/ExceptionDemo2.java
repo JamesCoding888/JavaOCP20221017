@@ -1,7 +1,5 @@
 package com.ocp.day17.exception;
-/*
- 	Java_Virtual_Machine catches the exception
-*/
+
 public class ExceptionDemo2 {
 	
 	public static void printScore(Double score) throws Exception {
