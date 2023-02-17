@@ -27,7 +27,7 @@ public final class AccountSystem {
 	
 	
 	// When constructors are overloaded, use static factory methods with names that describe the arguments.
-	// Caller cannot see this private constructor(s).
+	// Consider enforcing caller to use static factory method to initialize object of AccountSystem class, then give those constructor(s) to be private
 	private AccountSystem(String id, String name) {
 		this.id = id;
 		this.name = name;
