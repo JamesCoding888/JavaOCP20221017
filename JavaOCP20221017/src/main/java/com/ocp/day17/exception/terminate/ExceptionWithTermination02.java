@@ -19,8 +19,10 @@ public class ExceptionWithTermination02 {
 			         and paste into your desktop.
 			   
 			*/
-			String pathInRightDirection = "/Users/liaojames/desktop/JavaOCP20221017_NIO/helloworld.txt";
-			String pathInWrongDirection = "/Users123/liaojames/desktop/JavaOCP20221017_NIO/helloworld.txt";
+
+			// Following path is incorrect, please write the correct path of file
+			String pathInRightDirection = ".../JavaOCP20221017_NIO/helloworld.txt";  
+			String pathInWrongDirection = ".../JavaOCP20221017_NIO/helloworld.txt";
 			BufferedReader br = new BufferedReader(new FileReader(pathInRightDirection));
 			System.out.println(br.readLine());
 			br.close();
