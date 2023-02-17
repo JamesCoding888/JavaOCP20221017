@@ -1,11 +1,26 @@
 package cleancode.chapter2.meaningfulname.methodnames;
 
-/*
- 	To be noticed the naming of following:
-		-	Class Names
-		-	Method Names
-		-	Constructors 		
-		
+/* 
+
+	Consider that developer will read your code. Therefore, a better naming is to use:
+		-	Computer Science Terms 
+		-	Algorithm names
+		-	Pattern names 
+		-	Math terms 
+		-	and so on...
+	
+	It is NOT wise to draw every name from the problem domain because developer does NOT want their colleague to run back and forth 
+	while customer requesting what every name means when colleague already know the concept by a different name. Tedious Process !!!
+	
+	Don’t Add Gratuitous Context as follows:
+		-	AccountSystem4EngineeringDepartmentsAndClient.class
+		    Note: Developer shall think about if characters are redundant or irrelevant
+	
+ 	
+ 	Final words: 	
+	The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background. 
+	This is a teaching issue rather than a technical, business, or management issue. 
+	As a result many people in this field don’t learn to do it very well.
 */
 
 // Classes and objects should have noun or noun phrase names, also shall NOT be a verb
