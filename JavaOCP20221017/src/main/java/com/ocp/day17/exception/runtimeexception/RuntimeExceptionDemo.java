@@ -27,8 +27,8 @@ public class RuntimeExceptionDemo
 			RuntimeException runtimeException = new RuntimeException("scale over limitedness !!!");
 			/*  
 			 	Console 1):
-				  	Notice here - Don't throw runtimeException !!! Otherwise, the main thread will be terminated.
-				  	Then, the following code or services will NOT proceed.
+				Notice here - Don't throw runtimeException !!! Otherwise, the main thread will be terminated.
+				Then, the following methods (i.e., printScore(100.001) and printScore(60.0)) will NOT proceed.
 			*/				
 			throw runtimeException;
 			
