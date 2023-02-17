@@ -1047,7 +1047,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 
 
 ------------------------------------------------------------------------------
-# day17 Java Advanced: Exception
+# day17 Java Advanced: RuntimeException, Exception, Throwable
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception">Introduction of Exception</a>
 
