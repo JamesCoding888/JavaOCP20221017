@@ -41,6 +41,9 @@ public final class AccountSystem {
 	}
 
 	// Methods should have verb or verb phrase names
+	// Functions should do one thing - If developer can extract another function 
+	// that is not only a restatement of original implementation, 
+	// then original function is doing more than "one thing"
 	public String getPersonalName() {
 		return name;
 	}		
