@@ -2,25 +2,30 @@ package cleancode.chapter2.meaningfulname.methodnames;
 
 /* 
 
-	Consider that developer will read your code. Therefore, a better naming is to use:
+	1. Consider that developer will read your code. Therefore, a better naming is to use:
 		-	Computer Science Terms 
 		-	Algorithm names
+		-	Solution Domain Names
+		-   Problem Domain Names 
 		-	Pattern names 
 		-	Math terms 
 		-	and so on...
 	
-	It is NOT wise to draw every name from the problem domain because developer does NOT want their colleague to run back and forth 
-	while customer requesting what every name means when colleague already know the concept by a different name. Tedious Process !!!
+	2. It is NOT wise to draw every name from the problem domain because developer does NOT want their colleague to run back and forth 
+	   while customer requesting what every name means when colleague already know the concept by a different name. Tedious Process !!!
 	
-	Don’t Add Gratuitous Context as follows:
-		-	AccountSystem4EngineeringDepartmentsAndClient.class
+	3. Don’t Add Gratuitous Context as follows:
+		
+		 -	AccountSystem4EngineeringDepartmentsAndClient.class
 		    Note: Developer shall think about if characters are redundant or irrelevant
 	
  	
- 	Final words: 	
-	The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background. 
-	This is a teaching issue rather than a technical, business, or management issue. 
-	As a result many people in this field don’t learn to do it very well.
+ 	4. Final words: 	
+	   	 -  The hardest thing in terms of choosing good names is that it requires good descriptive skills and a shared cultural background.
+	     -  Don't be afraid of renaming if change the name is for better!
+	     -  Most of time we don't remember the name of classes and methods, but developer does use modern tools to deal with details like 
+	        that so developer can keep eye on whether the code reads like paragraphs and sentences, or like tables and data structure at least.
+	  
 	
 */
 
