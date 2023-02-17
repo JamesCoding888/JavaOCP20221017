@@ -10,7 +10,7 @@ public class MentalMappingDemo {
 	// poor variable names
 	private int getT() {
 		int t = 0; // calculated result
-		// Shall NOT use single-letter variable names; especially 'l'
+		// Shall NOT use single-letter variable names; especially 'l' (like as '1'), 'i' (like as 'I') and 'o' (like as '0')
 		for(int l = 1 ; l <= 10 ; l++) { 
 			t += l;			
 		}

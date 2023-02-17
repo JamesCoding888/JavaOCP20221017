@@ -2,9 +2,9 @@ package cleancode.chapter2.meaningfulname.methodnames;
 
 /*
  	To be noticed the naming of following:
-	-	Class Names
-	-	Method Names
-	-	Constructors 		
+		-	Class Names
+		-	Method Names
+		-	Constructors 		
 		
 */
 
@@ -52,7 +52,7 @@ public final class AccountSystem {
 		AccountSystem accountSystem4IT = AccountSystem.valueOf("IT-14440", "Bobby Go", "Senior Software Engineer", "300000");
 		AccountSystem accountSystem4Sales = AccountSystem.valueOf("Sales-180", "David S.", "Senior Market Developing Executor", "1000000");
 		/*
-		 	Generally better than:
+		 	Generally better than follows:
 		 		
 		 		AccountSystem accountSystem4Manager = new AccountSystem("MA-12890", "James Bob");
 		 		AccountSystem accountSystem4IT = new AccountSystem("IT-14440", "Bobby Go", "Senior Software Engineer", "300000");
