@@ -1179,7 +1179,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 # Clean Code 
 # <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/cleancode/chapter2/meaningfulname">Chapter 2: Meaningful Names</a>
 > AccountSystem.java
-- Description:   The naming of Class names and Method names
+- Description:   Consider that developer(s) will read your code. A better naming will reduce the tedious process of communication or understaning
 
 > MentalMappingDemo.java
 - Description:   Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.
@@ -1187,7 +1187,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > UnclearContextDemo.java
 - Description:   TBD
 
-> GuessStatisticsMessage.java [Continue]
+> GuessStatisticsMessage.java
 - Description:   TBD
 
 # <a href="">Chapter 3: Functions</a>
