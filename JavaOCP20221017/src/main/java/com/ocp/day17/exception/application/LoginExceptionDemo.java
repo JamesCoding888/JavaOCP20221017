@@ -20,9 +20,13 @@ public class LoginExceptionDemo  {
 			throw new LoginException("Account Error");			
 		} 
 		if(!pwd.equals(password)) {
-			// Notice here - Hacker can try to guess your password. Do NOT throw Password Error message to end-user !!!
-			// Generally speaking, we will lock account if end-user submits incorrect password in 3 times. 
-			throw new LoginException("Password Error");
+			/*
+				Notice here - Hacker can try to guess your password. Do NOT throw Password Error message to end-user !!!
+				Generally speaking, we will lock account if end-user submits incorrect password in 3 times. 
+				
+				throw new LoginException("Password Error");
+			*/
+			throw new LoginException("Account Error");
 		}
 		return true;
 	}
@@ -46,10 +50,11 @@ public class LoginExceptionDemo  {
 
 /*
 	Console:
-			Password Error
+			Account Error
 			Please enter your password again
-			Password Error
+			Account Error
 			Please enter your password again
-			Password Error
+			Account Error
 			Account is currently locked out and may not be logged on to. This error when you enter an incorrect password repeatedly. This error prevents you from signing into your account. You can fix this issue by contacting Service Team
+
 */
