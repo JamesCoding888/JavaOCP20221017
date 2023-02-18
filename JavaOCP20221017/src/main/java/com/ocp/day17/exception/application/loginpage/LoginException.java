@@ -1,4 +1,4 @@
-package com.ocp.day17.exception.application;
+package com.ocp.day17.exception.application.loginpage;
 
 public class LoginException extends Exception{
 	
