@@ -110,7 +110,9 @@ package com.ocp.day14.hashSet;
  	https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html
  	
  	Refer to the stackOverFlow with regards to the doubly-linked list of LinkedHashSet:
- 	https://stackoverflow.com/questions/4881868/bug-in-linkedhashset-javadoc
+ 	-	https://stackoverflow.com/questions/4881868/bug-in-linkedhashset-javadoc
+ 	-	reference folder (p.s., For the sake of avoiding missing content on web-site, 
+ 		we duplicated the whole content from stackoverflow and paste to package of hashSet)  
  	
 */
 
