@@ -1042,7 +1042,7 @@ DB Engineer creates VIEW table, is likely to limit the accessed privilege of col
 > HashMapEfficiency.java
 - Description:  TBD
 
-> LinkedHashMapMapEfficiency.java
+> LinkedHashMapEfficiency.java
 - Description:  TBD
 
 
