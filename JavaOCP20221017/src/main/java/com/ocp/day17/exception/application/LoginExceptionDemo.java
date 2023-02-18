@@ -1,16 +1,18 @@
 package com.ocp.day17.exception.application;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 public class LoginExceptionDemo  {
 	
 	public static short lock = 0;
 	
-	private static Map<String, String> users = new HashMap<>();
+	private static Map<String, String> users;
 	
 	static {
-		// Following account already stored in Database
+		// Following account already stored in Database		
+		users = new LinkedHashMap<>();
 		users.put("James", "#$&(^1WS784");
+		users.put("James", "#$&(^1WS784"); 
 		users.put("David", "#&784(^1WS$");
 	}
 
