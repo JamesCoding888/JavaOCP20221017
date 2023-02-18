@@ -1078,8 +1078,12 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > ExceptionDenominatorDemo.java
 - Description: Demostration of subclasses from RuntimeException
 
-3. <a href="">Application of Exception for Login System</a> <br>
-Continue~ <br>
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/application">Application of Exception for Login System</a> <br>
+> LoginException.java <br>
+- Description:  TBD
+
+> LoginExceptionDemo.java <br>
+- Description:  TBD
 
 
 
