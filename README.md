@@ -965,7 +965,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 ------------------------------------------------------------------------------
 # day16 Java Advanced: Hashtable, Enumeration, LinkedHashMap, HashMap, TreeMap, Collectors and Arrays.asList
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration and HashMap</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration, LinkedHashMap, and HashMap</a>
 
 > HashTableDemo.java
 - Description:  TBD
