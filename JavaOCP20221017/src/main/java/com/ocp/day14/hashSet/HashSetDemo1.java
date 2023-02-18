@@ -43,7 +43,7 @@ package com.ocp.day14.hashSet;
 	1. Hash table and linked list implementation of the Set interface, with predictable iteration order
 	   LinkedHashSet implementation differs from HashSet in that it maintains a doubly-linked list running through all of its entries
 	2. The doubly-linked list is on the implementation side, not necessarily exposed for you to get and use. 
-	   The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMaps). 
+	   The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMap). 
 	   A regular HashSet has NO need for a doubly-linked list since it makes NO guarantee about the order of its contents.
 	3. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
 	4. The element(s) of LinkedHashSet is iteration guaranteed
@@ -198,7 +198,7 @@ public class HashSetDemo1 {
 			}		
 			/*
 			 	// The doubly-linked list is on the implementation side, not necessarily exposed for you to get and use. 
-	   			// The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMaps). 	   			
+	   			// The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMap). 	   			
 	   			// 請留意 javadoc 之 LinkedHashSet，不支援 Backward Direct Iteration 
 	   			// 所謂的 doubly-linked list 係為了確保 LinkedHashSet 中的元素，具有順序性
 	   			if(iteratorOfloopLinkedHashSet.hasPrevious()) {
