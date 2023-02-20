@@ -1,5 +1,5 @@
 package com.ocp.day17.exception.application.data;
-import java.io.IOException;
+import java.io.IOException; 
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Scanner;
@@ -11,8 +11,8 @@ public class DataAnalysisException {
 		String path = "https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx";
 		try {
 			URL url = new URL(path); // Created an object of URL
-			InputStream in = url.openStream(); // Get the stream data
-			Scanner scanner = new Scanner(in, "UTF-8");
+			InputStream inputDataFromResource = url.openStream(); // Get the stream data
+			Scanner scanner = new Scanner(inputDataFromResource, "utf-8");
 			String jsonStr = scanner.useDelimiter("\\A").next();
 			// System.out.println(jsonStr);
 			Gson gson = new Gson();
