@@ -46,8 +46,12 @@ public class DataAnalysisException {
 			System.out.printf("Following keyword of \"%s\" in jsonString, will be present as follows:\n\n", keyword);
 			for (Toxin toxin : rices) {
 				if (toxin.品名.contains(keyword)) {
-					System.out.printf("Title: %s\n 編號: %s\n 品名: %s\n 國際條碼: %s\n 廠商名稱: %s\n 廠商地址: %s\n 違反規定: %s\n 行政處分: %s\n 不合格原因: %s Log_UpdateTime: %s\n", 
-											toxin.Title, toxin.編號, toxin.品名, toxin.國際條碼, toxin.廠商名稱, toxin.廠商地址, toxin.違反規定, toxin.行政處分, toxin.不合格原因, toxin.Log_UpdateTime);
+					System.out.printf("Title: %s\n 編號: %s\n 品名: %s\n "
+									+ "國際條碼: %s\n 廠商名稱: %s\n 廠商地址: %s\n "
+									+ "違反規定: %s\n 行政處分: %s\n 不合格原因: %s Log_UpdateTime: %s\n", 
+									   toxin.Title, toxin.編號, toxin.品名, 
+									   toxin.國際條碼, toxin.廠商名稱, toxin.廠商地址, 
+									   toxin.違反規定, toxin.行政處分, toxin.不合格原因, toxin.Log_UpdateTime);
 				}
 			}
 		}
