@@ -1084,10 +1084,10 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/application/loginpage">Application of Exception for Login System</a> <br>
 > LoginException.java <br>
-- Description:  TBD
+- Description:  Creating a LoginException for reDirection to end-user to proceed the next step. But, if end-user tries to submit username and password in 3 times and failure, the system will terminate the verification of login process.
 
 > LoginExceptionDemo.java <br>
-- Description:  TBD
+- Description:  Create a verification of login system from back-end
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/application/data">Application of Exception for Data Analysis</a> <br>
 > Toxin.java <br>
