@@ -1090,8 +1090,8 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description:  TBD
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day17/exception/application/data">Application of Exception for Data Analysis</a> <br>
-> Toxin.java [Continue] <br>
-- Description:  TBD
+> Toxin.java <br>
+- Description:  Definition of object(s) that will be collected by Gson object
 
 > DataAnalysisException.java <br>
 - Description:  You will learn from this lesson:  <br>
