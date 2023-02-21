@@ -1106,32 +1106,19 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 
 ------------------------------------------------------------------------------
-# day18 Java Advanced: ... , ... Coming Soon
+# day18 Java Advanced: Assertion
 
 
 
 
 ------------------------------------------------------------------------------
-# day19 Java Advanced: ... , ... Coming Soon
+# day19 Java Advanced: Java DataBase Connection (JDBC)
 
 
 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: ... , ... Coming Soon
-
-
-
-
-------------------------------------------------------------------------------
-# day21 Java Advanced: ... , ... Coming Soon
-
-
-
-
-
-------------------------------------------------------------------------------
-# day22 Java Advanced: Thread... TBD
+# day20 Java Advanced: Thread, Runnable, Synchroization, Concurrency
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day22/thread">Introduction of Thread</a>
 
@@ -1139,35 +1126,9 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description:  TBD
 
 
-
-
-
 ------------------------------------------------------------------------------
-# day23 Java Advanced: ... , ... Coming Soon
+# day21 Java Advanced: IO
 
-
-
-
-
-
-------------------------------------------------------------------------------
-# day24 Java Advanced: ... , ... Coming Soon
-
-
-
-
-
-
-------------------------------------------------------------------------------
-# day25 Java Advanced: ... , ... Coming Soon
-
-
-
-
-
-
-------------------------------------------------------------------------------
-# day26 Java Advanced: ... , ... Coming Soon
 
 
 
