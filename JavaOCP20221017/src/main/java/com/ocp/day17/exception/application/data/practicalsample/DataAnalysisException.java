@@ -1,4 +1,15 @@
 package com.ocp.day17.exception.application.data.practicalsample;
+/*
+ 	You will learn from this lesson:
+	 	
+	 	1. API of Gson (external API, released by Google)
+	 	2. .fromJson
+	 	3. API of URL
+	 	4. API of useDelimiter
+	 	5. Open source of json content on-line
+ 		   Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
+ 
+*/
 import java.io.IOException;  
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -13,7 +24,8 @@ public class DataAnalysisException {
 		String path = "https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx";
 		try {
 			URL url = new URL(path); // Created an object of URL
-			InputStream inputDataFromResource = url.openStream(); // Get the stream data
+			// Open a connection to this URL and returning an InputStream for reading from that connection
+			InputStream inputDataFromResource = url.openStream(); 
 			Scanner scanner = new Scanner(inputDataFromResource, "utf-8");
 			// Initialize the string delimiter
 			/*
