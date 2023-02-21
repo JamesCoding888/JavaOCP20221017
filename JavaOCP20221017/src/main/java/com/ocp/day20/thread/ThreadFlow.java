@@ -1,4 +1,4 @@
-package com.ocp.day22.thread;
+package com.ocp.day20.thread;
 
 class ThreadTimer {
 	public final int MAX_PRIORITY = 1_000; // 1,000 milliseconds = 1 second
