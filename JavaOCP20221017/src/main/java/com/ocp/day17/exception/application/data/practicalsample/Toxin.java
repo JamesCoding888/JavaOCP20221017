@@ -1,4 +1,4 @@
-package com.ocp.day17.exception.application.data;
+package com.ocp.day17.exception.application.data.practicalsample;
 
 public class Toxin {
 	public String Title;

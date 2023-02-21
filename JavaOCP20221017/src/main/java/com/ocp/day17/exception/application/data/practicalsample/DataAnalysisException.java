@@ -1,4 +1,4 @@
-package com.ocp.day17.exception.application.data;
+package com.ocp.day17.exception.application.data.practicalsample;
 import java.io.IOException;  
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -55,3 +55,24 @@ public class DataAnalysisException {
 		}			
 	}
 }
+
+
+/*
+	Console (also you can read the comparison data between AgricultureiRiceFailure.file and actual console of DataAnalysisException.java):
+		
+			Total data: 348
+			Following keyword of "印度一等香米" in jsonString, will be present as follows:
+			
+			Title: 109年7月_不合格
+			 編號: 1
+			 品名: 印度一等香米
+			 國際條碼: 8904049600226
+			 廠商名稱: 大潤發流通事業股份有限公司
+			 廠商地址: 109.07.06大潤發流通事業股份有限公司台東分公司(台東縣臺東市中興路三段592號1樓)
+			 違反規定: 第14條第3項及第14之1第1款
+			 行政處分: 命限期改正
+			 不合格原因: 1.包裝標示經復查結果，應標示事項字體小於0.2公分。
+			2.品質規格經複驗結果，被害粒(含熱損害粒)分析值3
+			，  超過包袋標示CNS一等之標準(稉型白米最高限度 1)。 Log_UpdateTime: 20201209102542
+
+*/
