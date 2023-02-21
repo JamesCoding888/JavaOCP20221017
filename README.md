@@ -1102,7 +1102,11 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 	5. Open source of json content on-line <br>
 	Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
 
+> DelimiterSample.java
+- Description:  This sample code is integrated with DataAnalysisException.java. Suggested to reader before reading DataAnalysisException.java, please study this sample code. 
 
+> SplitSample.java
+- Description:  The application of split you will learn from this lesson.
 
 
 ------------------------------------------------------------------------------
