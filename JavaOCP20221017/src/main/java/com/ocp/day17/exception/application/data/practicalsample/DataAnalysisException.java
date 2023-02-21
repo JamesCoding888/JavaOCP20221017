@@ -1,6 +1,6 @@
 package com.ocp.day17.exception.application.data.practicalsample;
 /*
- 	You will learn from this lesson:
+ 	You will learn from this lesson: 
 	 	
 	 	1. API of Gson (external API, released by Google)
 	 	2. .fromJson
