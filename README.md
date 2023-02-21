@@ -1095,12 +1095,12 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 > DataAnalysisException.java <br>
 - Description:  You will learn from this lesson:  <br>
-	<br> - API of Gson (external API, released by Google) <br>
-	<br> - API of gson.fromJson <br>
-	<br> - API of URL <br>
-	<br> - API of useDelimiter <br>
-	<br> - Open source of json content on-line <br>
-	Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
+- API of Gson (external API, released by Google) <br>
+- API of gson.fromJson <br>
+- API of URL <br>
+- API of useDelimiter <br>
+- Open source of json content on-line <br>
+Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
 
 
 
