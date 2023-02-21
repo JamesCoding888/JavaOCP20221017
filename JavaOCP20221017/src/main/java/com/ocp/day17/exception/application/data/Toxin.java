@@ -10,4 +10,5 @@ public class Toxin {
 	public String 違反規定;
 	public String 行政處分;
 	public String 不合格原因;
+	public String Log_UpdateTime;
 }

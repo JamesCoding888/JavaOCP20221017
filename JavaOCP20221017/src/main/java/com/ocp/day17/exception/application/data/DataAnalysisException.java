@@ -28,13 +28,14 @@ public class DataAnalysisException {
 //			System.out.println(jsonString);
 			Gson gson = new Gson();
 			Toxin[] rices = gson.fromJson(jsonString, Toxin[].class);
-			System.out.printf("資料總筆數: %d\n", rices.length);
-			String keyword = "冠軍";
-			System.out.printf("品名關鍵字: %s 的資料下:\n", keyword);
+			System.out.printf("Total data: %d\n", rices.length);
+			// Following keyword - will be caught by toxin.品名.contains(keyword)
+			String keyword = "印度一等香米";
+			System.out.printf("Following keyword of \"%s\" in jsonString, will be present as follows:\n\n", keyword);
 			for (Toxin toxin : rices) {
 				if (toxin.品名.contains(keyword)) {
-					System.out.printf("Title: %s\n 編號: %s\n 品名: %s\n 國際條碼: %s\n 廠商名稱: %s\n 廠商地址: %s\n 違反規定: %s\n 行政處分: %s\n 不合格原因: %s\n", 
-											toxin.Title, toxin.編號, toxin.品名, toxin.國際條碼, toxin.廠商名稱, toxin.廠商地址, toxin.違反規定, toxin.行政處分, toxin.不合格原因);
+					System.out.printf("Title: %s\n 編號: %s\n 品名: %s\n 國際條碼: %s\n 廠商名稱: %s\n 廠商地址: %s\n 違反規定: %s\n 行政處分: %s\n 不合格原因: %s Log_UpdateTime: %s\n", 
+											toxin.Title, toxin.編號, toxin.品名, toxin.國際條碼, toxin.廠商名稱, toxin.廠商地址, toxin.違反規定, toxin.行政處分, toxin.不合格原因, toxin.Log_UpdateTime);
 				}
 			}
 		}
