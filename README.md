@@ -1095,19 +1095,23 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 > DataAnalysisException.java <br>
 - Description:  You will learn from this lesson:  <br>
-	<br> 1. API of Gson (external API, released by Google) <br>
-	<br> 2. API of gson.fromJson <br>
-	<br> 3. API of URL <br>
-	<br> 4. API of useDelimiter <br>
-	<br> 5. Open source of json content on-line <br>
+	1. API of Gson (external API, released by Google) <br>
+	2. API of gson.fromJson <br>
+	3. API of URL <br>
+	4. API of useDelimiter <br>
+	5. Open source of json content on-line <br>
 	Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
 
+> DelimiterSample.java
+- Description:  This sample code is integrated with DataAnalysisException.java. Suggested to reader before reading DataAnalysisException.java, please study this sample code. 
 
+> SplitSample.java
+- Description:  The application of split you will learn from this lesson.
 
 
 ------------------------------------------------------------------------------
 # day18 Java Advanced: Assertion
-
+[Continue]
 
 
 
