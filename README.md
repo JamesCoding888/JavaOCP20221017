@@ -1111,7 +1111,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 ------------------------------------------------------------------------------
 # day18 Java Advanced: Assertion
-
+[Continue]
 
 
 
