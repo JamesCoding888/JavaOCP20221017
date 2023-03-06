@@ -16,7 +16,7 @@ package com.ocp.day19.connection;
 		12. Click on Apply and Close
 		13. Done!
 		
-		refer to the image of "Java Building.png"
+		refer to the image of "Java Building Path.png" and "location of jar.png"
 
 */
 
