@@ -60,3 +60,9 @@ public class TestConnection4MySQL {
 	}
 }
 
+/*
+	Console:
+			Start test
+			Connection successfully, because receive instance of Connection: com.mysql.cj.jdbc.ConnectionImpl@795509d9
+	
+*/
