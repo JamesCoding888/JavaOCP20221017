@@ -6,9 +6,10 @@ import java.sql.Statement;
 public class Select {
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/SQL4javaWebEE?useUnicode=true&characterEncoding=utf-8";
-		String user = "root";
-		String password = "meidalr1231qaz@WSX3edc";
+		String url = "jdbc:mysql://localhost:xxxxx/xxxxx?useUnicode=true&characterEncoding=utf-8";
+		String user = "xxxxx";
+		String password = "xxxxx";
+
 		// Establish Connection
 		Connection connection = DriverManager.getConnection(url, user, password);
 		// Create Statement
