@@ -1124,18 +1124,30 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 ------------------------------------------------------------------------------
 # day19 Java Advanced: Java DataBase Connection (JDBC)
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/connection">Introduction of JDBC</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/jdbc/connection">Introduction of JDBC</a>
 > TestConnection4MySQL.jaba
 - Description: Of this lesson, you will learn the JDBC Architechture. <br>
 - Note: This lesson will need to udpate following operation of JDBC 4.0 META-INF > service > java.sql.Driver [Continue] 
 
-2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/select">Introduction of SELECT statement</a>
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/jdbc/select">Introduction of SELECT statement</a>
 > Select.java
 - Description: Application of query according to SELECT statement of MySQL <br>
 
 [Continue]
 > Select4ClientDataSource.java <br>
 - Description: Application of query with combination of external resource from "org.apache.derby.jdbc.ClientDataSource" <br>
+
+> DBTest.java <br>
+- Description: <br>
+
+> Dao.java <br>
+- Description: <br>
+
+> Department.java <br>
+- Description: <br>
+
+> Employee.java <br>
+- Description: <br> 
 
 ------------------------------------------------------------------------------
 # day20 Java Advanced: Thread, Runnable, Synchroization, Concurrency
