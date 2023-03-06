@@ -1130,6 +1130,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 [Continue] // JDBC 4.0 META-INF > service > java.sql.Driver
 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/select">Introduction of SELECT statement</a>
 > Select.java
 - Description: Application of query according to SELECT statement of MySQL
 
