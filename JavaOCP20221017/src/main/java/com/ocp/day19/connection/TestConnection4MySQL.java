@@ -78,7 +78,7 @@ public class TestConnection4MySQL {
 			Class.forName("com.mysql.cj.jdbc.Driver");  // Register driver
 			connection = DriverManager.getConnection(url, user, password);	// Get Connection
 			System.out.println("Connection successfully, because instantiate instance of Connection: " + connection);			
-			String sql4update = "update SQL4javaWebEE.SQL4javaWebEE set name = 'James' where badge = 1"; // MySQL - update statment
+			String sql4update = "update SQL4javaWebEE.SQL4javaWebEE set name = 'James' where badge = 1"; // MySQL - update statement
 			PreparedStatement preparedStatement = connection.prepareStatement(sql4update);  // Create Statement		
 			preparedStatement.executeUpdate(); // Execute query	for update statement	
 			connection.close(); // Close connection
