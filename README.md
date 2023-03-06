@@ -1118,7 +1118,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > AssertionDemo.java
 - Description: The application of assert keyword of Java 1.4 <br>
 
-2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java.day18>Introduction of Junit Test</a>
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java.day18">Introduction of Junit Test</a>
 > TestArea.java
 - Description:  Create many different methods for Junit Test
 
