@@ -1,4 +1,4 @@
-package com.ocp.day19.connection;
+package com.ocp.day19.jdbc.connection;
 
 /*
  	1. Establish JDBC Driver, e,g., Class.forName("com.mysql.cj.jdbc.Driver"):  

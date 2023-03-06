@@ -1,4 +1,4 @@
-package com.ocp.day19.select;
+package com.ocp.day19.jdbc.select;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
