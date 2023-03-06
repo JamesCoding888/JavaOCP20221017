@@ -1128,6 +1128,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > TestConnection4MySQL.jaba
 - Description: Of this lesson, you will learn the JDBC Architechture.
 
+[Continue] // JDBC 4.0 META-INF > service > java.sql.Driver
 
 
 
