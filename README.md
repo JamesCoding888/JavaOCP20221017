@@ -1137,15 +1137,19 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > Select4ClientDataSource.java <br>
 - Description: Application of query with combination of external resource from "org.apache.derby.jdbc.ClientDataSource" <br>
 
+[Continue]
 > DBTest.java <br>
 - Description: <br>
 
+[Continue]
 > Dao.java <br>
 - Description: <br>
 
+[Continue]
 > Department.java <br>
 - Description: <br>
 
+[Continue]
 > Employee.java <br>
 - Description: <br> 
 
