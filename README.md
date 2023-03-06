@@ -2,7 +2,8 @@
 ------------------------------------------------------------------------------
 > Toolkits
 - Integrated Development Environment (IDE): Eclipse 2021-06
-- JDK: Java SE 11
+- JDK: Java SE 11D
+- Database: MySQLWorkbench 8.0.26 
 
 > Recommended Book
 - Java 8 Lambdas [[https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/03/java8lambdas.pdf](https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772)]
