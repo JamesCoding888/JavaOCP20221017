@@ -1131,7 +1131,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 [Continue] // JDBC 4.0 META-INF > service > java.sql.Driver
 
 > Select.java
-- Description: Application of query data from MySQL according to the SQL statement  
+- Description: Application of query according to SELECT statement of MySQL
 
 
 ------------------------------------------------------------------------------
