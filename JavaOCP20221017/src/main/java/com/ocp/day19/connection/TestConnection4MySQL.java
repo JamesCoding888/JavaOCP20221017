@@ -1,7 +1,7 @@
-package com.ocp.day19;
+package com.ocp.day19.connection;
 
 /*
- 	If you see the warning message of "java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver", please follow the setting below:
+ 	If you see the warning message of "java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver", please follow the setting below: 
 		1. Visit on the website of "https://mvnrepository.com/artifact/mysql/mysql-connector-java"
 		2. Select 8.0.26
 		3. See the Files of jar
