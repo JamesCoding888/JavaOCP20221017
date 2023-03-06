@@ -1122,6 +1122,9 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 ------------------------------------------------------------------------------
 # day19 Java Advanced: Java DataBase Connection (JDBC)
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/connection">Introduction of JDBC</a>
+> TestConnection4MySQL.jaba
+- Description: TBD
 
 
 
