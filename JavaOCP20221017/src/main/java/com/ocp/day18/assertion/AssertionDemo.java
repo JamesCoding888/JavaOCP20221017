@@ -27,6 +27,7 @@ public class AssertionDemo {
 	}
 }
 
+
 /*
 	Console: 
 		Exception in thread "main" java.lang.AssertionError: Fail: 59
