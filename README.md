@@ -1118,7 +1118,9 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > AssertionDemo.java
 - Description: The application of assert keyword of Java 1.4 <br>
 
-
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java.day18">Introduction of Junit Test</a>
+> TestArea.java
+- Description:  Create many different methods for Junit Test
 
 ------------------------------------------------------------------------------
 # day19 Java Advanced: Java DataBase Connection (JDBC)
@@ -1126,6 +1128,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > TestConnection4MySQL.jaba
 - Description: Of this lesson, you will learn the JDBC Architechture.
 
+[Continue] // JDBC 4.0 META-INF > service > java.sql.Driver
 
 
 
