@@ -1111,12 +1111,11 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 ------------------------------------------------------------------------------
 # day18 Java Advanced: Assertion
-
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day18/assertion">Introduction of assert keyword</a><br>
 > Area.java
-- Description: Created methods of getArea() and getPerimeters() for returning the calculation to main class. 
-
+- Description: Created methods of getArea() and getPerimeters() for returning the calculation to main class.<br>
 > AssertionDemo.java
-- Description: The application of assert keyword of Java 1.4
+- Description: The application of assert keyword of Java 1.4 <br>
 
 
 
