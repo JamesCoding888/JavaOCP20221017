@@ -2,6 +2,7 @@ package Java11.chapterXX_jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /*
  	Which action can be used to load a databae driver by using JDBC 3.0?
@@ -18,7 +19,7 @@ public class DatabaseApplication {
 	private static final String username = "root";
 	private static final String password = "1234";
 	
-	public static void main(String[] args) throws ClassNotFoundException {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		java.lang.Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(String.format("jdbc:mysql://localhost:%s/%s", port, schema), username, password);
 				
