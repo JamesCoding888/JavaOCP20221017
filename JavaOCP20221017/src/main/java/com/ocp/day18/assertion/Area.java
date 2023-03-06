@@ -1,4 +1,4 @@
-package com.ocp.day18;
+package com.ocp.day18.assertion;
 
 public class Area {
 	private int weight;
