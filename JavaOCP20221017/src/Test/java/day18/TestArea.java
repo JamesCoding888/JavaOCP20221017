@@ -1,13 +1,13 @@
 package day18;
 /*
- 	Of this lesson, we created testing methods with annotation of Junit @Test. 
+ 	Of this lesson, we created testing methods with annotation of Junit @Test.  
  	After running on the application of TestArea.java, you will find the some of method(s) are either Pass or Fail 
  	(refer to attached image of "test_day18.png"), according to testing structures of QA/Engineer.
  	 
  	
 */
 
-import org.junit.Test;    
+import org.junit.Test;     
 import com.ocp.day18.assertion.Area;
 import junit.framework.Assert;
 public class TestArea {
