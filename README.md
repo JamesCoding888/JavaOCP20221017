@@ -1118,7 +1118,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > AssertionDemo.java
 - Description: The application of assert keyword of Java 1.4 <br>
 
-2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java.day18">Introduction of Junit Test</a>
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java/day18">Introduction of Junit Test</a>
 > TestArea.java
 - Description:  Create many different methods for Junit Test
 
@@ -1134,8 +1134,12 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description: Application of query according to SELECT statement of MySQL <br>
 
 [Continue]
-> Select4ClientDataSource.java <br>
+> Select4ClientDataSource1.java <br>
 - Description: Application of query with combination of external resource from "org.apache.derby.jdbc.ClientDataSource" <br>
+- Note: Begining of this lesson, we did convert Dynamic Web Project to Maven Project. 
+> Select4ClientDataSource2.java <br>
+- Description: Same as Select4ClientDataSource1 but different process without "Class.forName("org.apache.derby.jdbc.ClientDriver")"
+- Note: Begining of this lesson, we did convert Dynamic Web Project to Maven Project. 
 
 [Continue]
 > DBTest.java <br>
