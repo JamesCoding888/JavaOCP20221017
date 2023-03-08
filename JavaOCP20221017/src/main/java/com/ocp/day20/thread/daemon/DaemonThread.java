@@ -1,15 +1,20 @@
 package com.ocp.day20.thread.daemon;
 
 /*
- 	1. If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException.
+ 	1. A daemon thread is a type of thread in a computer program that runs in the background and provides a supporting service to other threads or processes. 
+ 	   Unlike user threads, daemon threads do NOT prevent the program from exiting when the main thread finishes execution.
  	
- 	2. Daemon Thread in Java: Garbage collection in Java (gc)
+ 			E.g., call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException.
+ 		
+ 	2. In other words, a daemon thread is a type of thread that runs in the background, without being tied to the lifetime of the application or the process. 
+ 	   Daemon threads are typically used to perform tasks that do not require direct interaction with the user, such as monitoring resources or performing maintenance tasks.
+
+	3. One common example of a daemon thread (low-priority thread) is the garbage collector (GC) in Java. The garbage collector is a daemon thread that runs in the background, 
+	   automatically freeing up memory that is NO longer being used by the program.
  	
- 	3. JVM will terminate itself when all user threads finish their execution
- 	
- 	4. If JVM finds a running daemon thread, it terminates the thread and, after that, shutdown it. JVM does not care whether the Daemon thread is running or not.
+ 	4. In summary, daemon threads are used to perform tasks that need to run continuously in the background, without being tied to the lifetime of the program. 
+ 	   They are designed to provide supporting services to other threads and processes without interfering with their execution.
 	
-	5. Daemon thread is a "low priority" thread
 	
 */
 public class DaemonThread {
