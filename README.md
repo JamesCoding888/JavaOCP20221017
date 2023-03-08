@@ -1166,8 +1166,8 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description:  TBD
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/daemon">Introduction of Daemon Thread</a>
-> DaemonThread.java
-- Description:  TBD
+> DaemonThread.java <br>
+- Description:  If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException. <br>
 
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
