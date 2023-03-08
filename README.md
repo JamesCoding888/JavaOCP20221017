@@ -1160,9 +1160,9 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 ------------------------------------------------------------------------------
 # day20 Java Advanced: Thread, Runnable, Synchroization, Concurrency
 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day22/thread">Introduction of Thread</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread">Introduction of Thread</a>
 
-> ThreadTimer.java
+> ThreadFlow.java
 - Description:  TBD
 
 
