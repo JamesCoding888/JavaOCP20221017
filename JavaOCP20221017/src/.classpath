@@ -30,8 +30,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/derby.jar"/>
-	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/derbyshared.jar"/>
-	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/derbytools.jar"/>
+	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,11 +1,13 @@
 package com.ocp.day19.jdbc.db.dao;
-import java.sql.Connection;
+import java.sql.Connection; 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.derby.jdbc.ClientDataSource;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import com.ocp.day19.jdbc.db.entity.Department;
 import com.ocp.day19.jdbc.db.entity.Employee;
 
@@ -19,7 +21,7 @@ public class Dao {
 		clientDataSource.setPortNumber(0000);
 		clientDataSource.setDatabaseName("");
 		clientDataSource.setUser("");
-		clientDataSource.setPassword("");		
+		clientDataSource.setPassword("");
 	}
 	
 	public List<Department> queryDepartments(){
@@ -53,10 +55,16 @@ public class Dao {
 	}
 	
 	public List<Employee> queryEmployees(){
-//		JdbcTemplate jdbcTemplate = new JdbcTemplate(clientDataSource);
-		
-		return null;
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(clientDataSource);
+		String sql = "SELECT id, name, salary, dept_id from employee";
+		List<Employee> employees = jdbcTemplate.query(sql, new BeanPropertyRowMapper(Employee.class));
+		for(Employee employee : employees) {
+			sql = "SELECT id, name from department where id = ?";
+			Object[] args = { employee.getDeptId() };
+			Department department = (Department)jdbcTemplate.queryForObject(sql, args, new BeanPropertyRowMapper(Employee.class));
+			employee.setDepartment(department);
+		}
+				
+		return employees;
 	}
-	
-	
 }
