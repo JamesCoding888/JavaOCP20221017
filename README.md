@@ -1166,8 +1166,18 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description:  TBD
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/daemon">Introduction of Daemon Thread</a>
-> DaemonThread.java <br>
+> DaemonThreadExample1.java <br>
+- Description: Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
+In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
+Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread finishes <br> execution, even though the daemon thread is still running. <br>
+For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
+
+> DaemonThreadExample2.java and Log.java <br>
 - Description:  If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException. <br>
+
+> ThreadPriority.java and Log.java <br>
+- Description:  TBD
+
 
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
