@@ -1165,6 +1165,9 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 > ThreadFlow.java. [Continue]
 - Description:  TBD
 
+2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/daemon">Introduction of Daemon Thread</a>
+> DaemonThread.java
+- Description:  TBD
 
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
