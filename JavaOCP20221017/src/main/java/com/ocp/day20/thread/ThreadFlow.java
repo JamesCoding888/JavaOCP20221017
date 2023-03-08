@@ -99,21 +99,26 @@ public class ThreadFlow {
 	public static void main(String[] args) {
 		// TBD ...
 		new Thread01().start();
-		
 	}
 }
 
 
 /*
- 	Console w/ countDown:
-				 			1
-							3
-							2
-							4
-	Console w/o countDown:
-							1
-							2
-							3
-							4
+ 	Console w/ "new ThreadTimer().countDown()" 
+	at line 50 and line 53:
+ 	
+									 			1
+												3
+												2
+												4
+	
+	
+	Console w/o "new ThreadTimer().countDown()" 
+	at line 50 and line 53:
+	
+												1
+												2
+												3
+												4
 
 */
