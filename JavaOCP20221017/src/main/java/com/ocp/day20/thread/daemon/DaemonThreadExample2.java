@@ -17,7 +17,7 @@ package com.ocp.day20.thread.daemon;
 	
 	
 */
-public class DaemonThread {
+public class DaemonThreadExample2 {
 
 	public static void main(String[] args) {
 		Log log1 = new Log();
@@ -63,7 +63,7 @@ public class DaemonThread {
 	
 	Exception in thread "main" java.lang.IllegalThreadStateException
 	User thread of CPU1 operating 	at java.base/java.lang.Thread.setDaemon(Thread.java:1400)
-		at com.ocp.day20.thread.daemon.DaemonThread.main(DaemonThread.java:36)
+		at com.ocp.day20.thread.daemon.DaemonThreadExample2.main(DaemonThreadExample2.java:36)
 	1
 	User thread of CPU1 operating 2
 	User thread of CPU1 operating 3
