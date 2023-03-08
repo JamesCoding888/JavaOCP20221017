@@ -1177,7 +1177,7 @@ For the specifically operation of Daemon thread, please refer to the DaemonThrea
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/priority">Introduction of Thread Priority</a><br>
 > ThreadPriority.java and Log.java <br>
-- Description:  TBD
+- Description:  Thread priority is used by the underlying operating system to determine the order in which threads are scheduled to execute.
 
 
 ------------------------------------------------------------------------------
