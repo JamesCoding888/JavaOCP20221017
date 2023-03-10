@@ -13,7 +13,7 @@ package com.ocp.day20.thread.daemon;
 public class DaemonThreadExample1 {
 
 	public static void main(String[] args) throws InterruptedException {
-		// create a daemon thread in Java 1.7
+		// Create a daemon thread with Java 1.1 - Anonymous class
 		/*
 			Runnable runnable = new Runnable() {
 				
@@ -33,7 +33,7 @@ public class DaemonThreadExample1 {
 		*/
 		
 		
-		// Create a daemon thread in Java 1.8 with lambda expression
+		// Create a daemon thread with Java 1.8 - Lambda Expression
 //		/*
 			Thread daemonThread = new Thread(() -> {
 				while (true) {
