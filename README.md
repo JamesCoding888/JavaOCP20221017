@@ -1179,7 +1179,7 @@ For the specifically operation of Daemon thread, please refer to the DaemonThrea
 > ThreadPriority.java and Log.java <br>
 - Description:  Thread priority is used by the underlying operating system to determine the order in which threads are scheduled to execute.
 
-4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/guessnumber">Application of using multi-ple threads to guess the lucky ball</a>
+4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/guessnumber">Application of using multiple threads to guess the lucky ball</a>
 > Guesses.java <br>
 - Description:  Instantiate the instance of LuckyBall and initiate the fields of id_num, name, number and threadName. <br>
 
