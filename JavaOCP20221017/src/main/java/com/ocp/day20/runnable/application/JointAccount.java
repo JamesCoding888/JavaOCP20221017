@@ -8,10 +8,11 @@ public class JointAccount {
 	}
 	
 	// non-synchronized: Warning! Currently balance never being deducted - Console 1
-	public void withdraw(int amount) {
+//	public void withdraw(int amount) {
+	
 	// Must have "synchronized" for transaction - Console 2
-//	public synchronized void withdraw(int amount) {
-		
+	public synchronized void withdraw(int amount) // Another valid syntax like "synchronized public void withdraw(int amount)"
+	{
 		String threadName = Thread.currentThread().getName();
 		System.out.printf("%s expected to withdraw $%d and currently balance: $%d\n", threadName, amount, balance);
 
