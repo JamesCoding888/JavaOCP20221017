@@ -1186,6 +1186,40 @@ For the specifically operation of Daemon thread, please refer to the DaemonThrea
 > LuckyBall.java <br>
 - Description:  Design a method of Algorithm for record of how many times of each thread being conducted into guessing the Lucky Ball from users. <br>
 
+5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/daemon">Introduction of Runnable</a> <br>
+Continue of DaemonThreadExample1.java, we updated the inheritance of Log.java from "extends to Thread" to "implements Runnable" <br>
+Because only one super class could be extended to, what if we need to extend to any other class, respectively? We will do implement Runnable interface!  
+ 	
+In general speaking, we do encourage the use of Runnable over Thread: <br>
+
+1) While extending the Thread class, we're NOT overriding any of Thread's methods. However, we do override the method of Runnable (which Thread conducts implementation of Runnable). <br>
+	   
+This is a clear violation of IS-A Thread principle. For more detailed info of violation of IS-A Thread principle, please read the following description: <br>
+	   
+The "IS-A Thread" principle refers to the concept that a class that extends the Thread class is a type of thread, and should therefore be used as a thread in the same way that the Thread class is used. <br>
+
+The principle of IS-A is a fundamental principle of object-oriented programming, which states that a subclass should be able to be used anywhere that its superclass is expected. <br>
+	   
+In the case of threading, if a class extends the Thread class, it should be able to be used in the same way that the Thread class is used. <br>
+
+However, when extending the Thread class, it is generally not recommended to override the Thread class's run() method directly. Instead, it is recommended to implement the Runnable interface and pass an instance of the class to a Thread object's constructor. <br>
+	   
+This is because the Thread class provides other functionality besides just running a thread, such as managing thread states and handling thread interruptions. <br>
+	   
+By implementing the Runnable interface and passing it to a Thread object, we can separate the code that will actually run in the thread from the underlying thread management functionality provided by the Thread class. <br>
+
+So, while it is technically possible to override the Thread class's run() method when extending the Thread class, it is generally not recommended and can be considered a violation of the IS-A Thread principle. <br>
+	   
+The preferred approach is to implement the Runnable interface and separate the thread management functionality from the code that runs in the thread. <br>
+	
+2) Beginning of Java 1.8, Runnable can be represented as lambda expressions <br>
+
+> DaemonRunnableExample1.java and LogImpl1.java <br>
+- Description:  <br>
+
+> DaemonRunnableExample2.java and LogImpl2.java <br>
+- Description:  <br>
+
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
 
