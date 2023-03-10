@@ -1221,7 +1221,17 @@ Because only one super class could be extended to, what if we need to extend to 
 - Description: Continue of DaemonThreadExample2  <br>
 
 
-6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/application">Application of ATM w/ synchronized and w/o synchronized's principle</a>
+6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod">Synchronized Methods</a>
+A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
+
+In this example, we create two threads t1 and t2 that increment the Counter object 1000 times each using the increment() method. We start the threads using the start() method, which causes them to execute concurrently.
+
+We then use the join() method to wait for both threads to finish before printing the final count using the getCount() method. Because the increment() method is synchronized, we can safely update the count from multiple threads without causing race conditions or other concurrency issues.
+
+This example should output a final count of 20000 if the Counter class is implemented correctly.
+
+
+7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/application">Application of ATM w/ synchronized and w/o synchronized's principle</a>
 > ATM.java, Withdraw.java, JointAccout.java <br>
 - Description:  Of this application of transaction demonstration, you will learn a strictly bug while using non-synchroized during transaction. To make a method synchronized, simply add the synchronized keyword to its declaration<br>  
 
