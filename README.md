@@ -1223,7 +1223,7 @@ Because only one super class could be extended to, what if we need to extend to 
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/application">Application of ATM w/ synchronized and w/o synchronized's principle</a>
 > ATM.java, Withdraw.java, JointAccout.java <br>
-- Description:  Of this application of transaction demonstration, you will learn a strictly bug while using non-synchroized during transaction.<br>  
+- Description:  Of this application of transaction demonstration, you will learn a strictly bug while using non-synchroized during transaction. To make a method synchronized, simply add the synchronized keyword to its declaration<br>  
 
 
 
