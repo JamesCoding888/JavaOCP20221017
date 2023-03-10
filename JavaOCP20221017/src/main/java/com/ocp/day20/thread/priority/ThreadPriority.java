@@ -1,7 +1,8 @@
 package com.ocp.day20.thread.priority;
 
 /*
- 	Thread class provides a method called setPriority(int priority) to set the priority of a thread. 
+ 	Thread class provides a method called setPriority(int priority) to set the priority of a thread.
+ 
  	
  	The priority parameter is an integer value that ranges from 1 (minimum) to 10 (maximum), where 5 is the default priority.
 
