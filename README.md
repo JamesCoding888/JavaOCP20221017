@@ -1190,7 +1190,7 @@ For the specifically operation of Daemon thread, please refer to the DaemonThrea
 Continue of DaemonThreadExample1.java, we updated the inheritance of Log.java from "extends to Thread" to "implements Runnable" <br>
 Because only one super class could be extended to, what if we need to extend to any other class, respectively? We will do implement Runnable interface!  
  	
->	In general speaking, we do encourage the use of Runnable over Thread: <br>
+> In general speaking, we do encourage the use of Runnable over Thread: <br>
 
 	1) While extending the Thread class, we're NOT overriding any of Thread's methods. However, we do override the method of Runnable (which Thread conducts implementation of Runnable). 
 	   
@@ -1215,10 +1215,10 @@ Because only one super class could be extended to, what if we need to extend to 
 	2) Beginning of Java 1.8, Runnable can be represented as lambda expressions 
 
 > DaemonRunnableExample1.java and LogImpl1.java <br>
-- Description:  <br>
+- Description: Continue of DaemonThreadExample1 <br>
 
 > DaemonRunnableExample2.java and LogImpl2.java <br>
-- Description:  <br>
+- Description: Continue of DaemonThreadExample2  <br>
 
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
