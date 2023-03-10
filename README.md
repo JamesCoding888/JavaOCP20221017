@@ -1220,6 +1220,20 @@ Because only one super class could be extended to, what if we need to extend to 
 > DaemonRunnableExample2.java and LogImpl2.java <br>
 - Description: Continue of DaemonThreadExample2  <br>
 
+
+6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/application">Application of ATM w/ synchronized and w/o synchronized's principle</a>
+> ATM.java <br>
+- Description:  <br>  
+
+> Withdraw.java <br>
+- Description:  <br>
+
+> JointAccount.java <br>
+- Description:  <br>
+
+
+
+
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
 
