@@ -2,7 +2,7 @@ package com.ocp.day20.runnable.daemon;
 
 /*
  	Continue of DaemonThreadExample2.java, we updated the inheritance of Log.java from "extends to Thread" to "implements Runnable"
- 	Because only one super class could be extended to, what if we need to extend to many super classes, respectively? We will implement Runnable interface! 
+ 	Because only one super class could be extended to, what if we need to extend to any other class, respectively? We will implement Runnable interface! 
 */
 public class DaemonRunnableExample2 {
 
