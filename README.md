@@ -1233,6 +1233,10 @@ Because only one super class could be extended to, what if we need to extend to 
 		This example should output a final count of 20000 if the Counter class is implemented correctly.
 
 
+> SynchronizedCounter2.java <br>
+- Description:  How to make non-synchronized method to be likely with same synchronized function? Please read the code of three consoles, respectively. <br>
+ 	
+
 7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/application">Application of ATM w/ synchronized and w/o synchronized's principle</a>
 > ATM.java, Withdraw.java, JointAccout.java <br>
 - Description:  Of this application of transaction demonstration, you will learn a strictly bug while using non-synchroized during transaction. To make a method synchronized, simply add the synchronized keyword to its declaration<br>  
