@@ -1,6 +1,6 @@
 package com.ocp.day20.runnable.application;
 /*
- 	For more understanding of synchronized method, please read the SynchronizedCounter.java, firstly. 
+ 	For more understanding of synchronized method, please read the SynchronizedCounter.java and SynchronizedCounter2.java, firstly. 
  	
 */
 public class ATM {
