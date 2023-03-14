@@ -106,15 +106,15 @@ class SynchronizedCounter extends Thread {
 }
 
 /*
- 	Console 1 (synchronized):
+ 	Console 1 (w/ synchronized keyword):
  			
  			Final count: 20000
  	
-	Console 2 (non-synchronized):
+	Console 2 (non-synchronized keyword; run on the application in 1st time):
  			
  			Final count: 14855
 
- 	Console 3 (non-synchronized):
+ 	Console 3 (non-synchronized keyword; run on the application in 2nd time):
  			
  			Final count: 16740
 */
