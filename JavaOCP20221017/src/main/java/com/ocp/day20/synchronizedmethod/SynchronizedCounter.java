@@ -8,7 +8,7 @@ package com.ocp.day20.synchronizedmethod;
 class SynchronizedCounter extends Thread {
 
 	private int count = 0;
-	/*  synchronized
+//	/*  synchronized
 		public synchronized void increment() {
 			count++;
 		}
@@ -20,9 +20,9 @@ class SynchronizedCounter extends Thread {
 		public synchronized int getCount() {
 			return count;
 		}
-	*/
+//	*/
 	
-//	/*  non-synchronized
+	/*  non-synchronized
 		public void increment() {
 			count++;
 		}
@@ -34,30 +34,30 @@ class SynchronizedCounter extends Thread {
 		public int getCount() {
 			return count;
 		}
-//	*/
+	*/
 		
 	public static void main(String[] args) {
 
 		SynchronizedCounter counter = new SynchronizedCounter();
 
 		// Create and start two threads that increment the counter
-		Thread t1 = new Thread(() -> {
+		Thread thread1 = new Thread(() -> {
 			for (int i = 0; i < 10000; i++) {
 				counter.increment();
 			}
 		});
-		Thread t2 = new Thread(() -> {
+		Thread thread2 = new Thread(() -> {
 			for (int i = 0; i < 10000; i++) {
 				counter.increment();
 			}
 		});
-		t1.start();
-		t2.start();
+		thread1.start();
+		thread2.start();
 
 		// Wait for the threads to finish
 		try {
-			t1.join();
-			t2.join();
+			thread1.join();
+			thread2.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
