@@ -1226,7 +1226,7 @@ Because only one super class could be extended to, what if we need to extend to 
 > SynchronizedCounter.java <br>
 - Description:  A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
 
-		In this example, we create two threads t1 and t2 that increment the Counter object 1000 times each using the increment() method. We start the threads using the start() method, which causes them to execute concurrently.
+		In this example, we create two threads thread1 and thread2 that increment the Counter object 1000 times each using the increment() method. We start the threads using the start() method, which causes them to execute concurrently.
 
 		We then use the join() method to wait for both threads to finish before printing the final count using the getCount() method. Because the increment() method is synchronized, we can safely update the count from multiple threads without causing race conditions or other concurrency issues.
 
