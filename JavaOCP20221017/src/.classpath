@@ -31,5 +31,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="main/webapp/WEB-INF/lib/gson-2.8.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
