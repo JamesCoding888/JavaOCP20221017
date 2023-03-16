@@ -10,7 +10,7 @@ package com.ocp.day17.exception.application.data.practicalsample;
  		   Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
  
 */
-import java.io.IOException;  
+import java.io.IOException;   
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
