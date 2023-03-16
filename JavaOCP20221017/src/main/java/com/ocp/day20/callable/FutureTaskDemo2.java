@@ -31,7 +31,7 @@ public class FutureTaskDemo2 {
 				e.printStackTrace();
 			} 
 		*/
-		// Using ExecutorService to execute futureTask
+		// Using ExecutorService to execute futureTask4Runnable and futureTask4Callable
 		ExecutorService exectutorService = Executors.newSingleThreadExecutor();
 		exectutorService.execute(futureTask4Runnable);
 		exectutorService.execute(futureTask4Callable);
