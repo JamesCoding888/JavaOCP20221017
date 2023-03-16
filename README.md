@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------
 > Toolkits
 - Integrated Development Environment (IDE): Eclipse 2021-06
-- JDK: Java SE 11D
+- JDK: Java SE 11
 - Database: MySQLWorkbench 8.0.26 
 
 > Recommended Book
