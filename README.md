@@ -1234,7 +1234,7 @@ Because only one super class could be extended to, what if we need to extend to 
 
 
 
-8. <a href="">Introduction of Callable and FutureTask</a>
+8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/callable">Introduction of Callable and FutureTask</a>
 > Lotto.java    <br>
 - Description:  <br>
 
