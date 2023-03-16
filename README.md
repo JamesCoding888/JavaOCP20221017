@@ -1241,11 +1241,11 @@ Because only one super class could be extended to, what if we need to extend to 
 > LottoMain.java <br>
 - Description:   <br>
 
-> FutureTask1.java <br>
-- Description:   <br>
+> FutureTaskDemo1.java <br>
+- Description:  The FutureTaskDemo1 class is an example of how to use FutureTask and Thread in Java. <br>
 
-> FutureTask2.java <br>
-- Description:   <br>
+> FutureTaskDemo2.java <br>
+- Description:  The FutureTaskDemo2 class is an example of how to use FutureTask and ExecutorService in Java. <br>
 
 
 
