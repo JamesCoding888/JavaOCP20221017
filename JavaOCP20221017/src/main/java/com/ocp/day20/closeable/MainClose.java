@@ -10,13 +10,28 @@ package com.ocp.day20.closeable;
 	
 	when the block of code that uses them is exited, either normally or due to an exception being thrown. 
 	
-	The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
+	
 	
 */
 public class MainClose {
-	public static void main(String[] args) {
-		try (CloseImpl closeImpl = new CloseImpl();) {
+	public static void main(String[] args) {		
+		// Resource leak: 'closeImpl' is never closed, then caller need to invoke .close()
+		/*
+			try {		
+				CloseImpl closeImpl = new CloseImpl();
+				closeImpl.printData();
+				closeImpl.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		*/
+
+		// try-with-resources statement was introduced in Java 1.7 as a convenient 
+		// and safe way to handle resource management in Java programs
+		try (CloseImpl closeImpl = new CloseImpl();) {		
 			closeImpl.printData();
+			// Don't need to invoke .close() since try-with-resources statement will execute .close(), automatically			
+			// closeImpl.close(); 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
