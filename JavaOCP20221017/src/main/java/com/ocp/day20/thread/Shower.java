@@ -1,4 +1,4 @@
-package com.ocp.day20.closeable;
+package com.ocp.day20.thread;
 class Worker extends Thread{
 	
 	@Override
