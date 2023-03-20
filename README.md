@@ -1247,9 +1247,9 @@ Because only one super class could be extended to, what if we need to extend to 
 > FutureTaskDemo2.java <br>
 - Description:  The FutureTaskDemo2 class is an example of how to use FutureTask and ExecutorService in Java. <br>
 
-9. <a href=""></a><br>
+9. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/closeable">Introduction of Closeable</a><br>
 
-> MainClose.java and CloseImpl.java
+> MainClose.java and CloseImpl.java <br>
 - Description:  Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
 The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
 
