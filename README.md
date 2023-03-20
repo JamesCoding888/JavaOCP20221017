@@ -1149,7 +1149,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description: <br> 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: Thread, Runnable, Synchroization, Concurrency
+# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, Synchroization, Concurrency
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread">Introduction of Thread</a>
 
@@ -1236,10 +1236,10 @@ Because only one super class could be extended to, what if we need to extend to 
 
 8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/callable">Introduction of Callable and FutureTask</a>
 > Lotto.java    <br>
-- Description:  <br>
+- Description:  The Lotto class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may throw an exception. The Lotto class contains a method call() which is called when the Lotto object is executed as a task.<br>
 
 > LottoMain.java <br>
-- Description:   <br>
+- Description:  The program is an example of using a FutureTask with a Callable to generate a set of random numbers as "Lucky Balls" for a lottery game. <br>
 
 > FutureTaskDemo1.java <br>
 - Description:  The FutureTaskDemo1 class is an example of how to use FutureTask and Thread in Java. <br>
@@ -1247,7 +1247,11 @@ Because only one super class could be extended to, what if we need to extend to 
 > FutureTaskDemo2.java <br>
 - Description:  The FutureTaskDemo2 class is an example of how to use FutureTask and ExecutorService in Java. <br>
 
+9. <a href=""></a><br>
 
+> MainClose.java and CloseImpl.java
+- Description:  Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
+The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
 
 
 ------------------------------------------------------------------------------
