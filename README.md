@@ -1328,7 +1328,8 @@ It may not be suitable for simple tasks where no return value is needed.
 Overall, the choice of implementation (Thread, Runnable, or Callable) depends on the complexity of the task and whether a return value is needed. For simple tasks, the Thread or Runnable approach may be sufficient, while for more complex tasks that require a result, the Callable approach is recommended. It is also important to consider the efficiency of thread management and resource usage, in which case submitting tasks to an ExecutorService is recommended.
 
 Here are the pros and cons of each approach:
-![image](https://user-images.githubusercontent.com/83496093/226576936-55280c12-d2e1-47d0-923a-519b66d5a0e8.png)
+![CyclicBarrier](https://user-images.githubusercontent.com/83496093/226577396-0aa03131-3e46-4013-a147-5c0df37ad441.png)
+
 
 	
 	
