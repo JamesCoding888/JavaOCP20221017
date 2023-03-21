@@ -1158,10 +1158,12 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/daemon">Introduction of Daemon Thread</a>
 > DaemonThreadExample1.java <br>
-- Description: Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
-In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
-Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread finishes <br> execution, even though the daemon thread is still running. <br>
-For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
+- Description: 
+		
+		Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
+		In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
+		Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread finishes <br> execution, even though the daemon thread is still running. <br>
+		For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
 
 > DaemonThreadExample2.java and Log.java <br>
 - Description:  If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException. <br>
@@ -1215,7 +1217,9 @@ Because only one super class could be extended to, what if we need to extend to 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod">Synchronized Methods</a> <br>
 		
 > SynchronizedCounter.java <br>
-- Description:  A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
+- Description:  
+		
+		A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
 
 		In this example, we create two threads thread1 and thread2 that increment the Counter object 1000 times each using the increment() method. We start the threads using the start() method, which causes them to execute concurrently.
 
@@ -1250,8 +1254,10 @@ Because only one super class could be extended to, what if we need to extend to 
 9. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/closeable">Introduction of Closeable</a><br>
 
 > MainClose.java and CloseImpl.java <br>
-- Description:  Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
-The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
+- Description:  
+	
+		Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
+		The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
 
 10. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/cyclicbarrier">Introduction of CyclicBarrier</a><br>
 
