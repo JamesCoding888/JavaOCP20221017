@@ -1261,7 +1261,7 @@ Because only one super class could be extended to, what if we need to extend to 
 
 10. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/cyclicbarrier">Introduction of CyclicBarrier</a><br>
 	
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/cyclicbarrier/application/bank">CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java</a>
+> CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java
 - Description:  
 		
 		CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing.   
@@ -1282,12 +1282,16 @@ Because only one super class could be extended to, what if we need to extend to 
 
 			2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding at a later stage.
 	
-
+> Transaction.java
+- Description:  For a group of members to start a transaction, you can use a CyclicBarrier.
+	
 > CyclicBarrierImplThread.java
 - Description:  This code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program. <br>
+
 > CyclicBarrierImplRunnable.java
 - Description:  
 	This implementation, it is similar to the one (i.e., CyclicBarrierImplThread.java) with threads, but uses Runnable tasks instead of directly creating threads. <br>
+
 > CyclicBarrierImplCallable.java
 - Description:  
 		
@@ -1297,6 +1301,7 @@ Because only one super class could be extended to, what if we need to extend to 
 
 		To execute the tasks in parallel using a thread pool, you can use a ExecutorService to submit the tasks and wait for their completion using Future objects. 	
 		Please refer to the sample code of "CyclicBarrierImplCallableWithThreadPool.java" 
+
 > CyclicBarrierImplCallableWithoutThreadPool.java
 - Description:  
 		
@@ -1306,12 +1311,15 @@ Because only one super class could be extended to, what if we need to extend to 
 		A better approach is to use a thread pool, which can manage a group of threads and reuse them to execute multiple tasks.
 		
 		Please refer to CyclicBarrierImplCallableWithThreadPool.java and CyclicBarrierImplCallableWithThreadPool2.java for a better approach.
+
+
 > CyclicBarrierImplCallableWithThreadPool.java
 - Description:  Using an ExecutorService with a thread pool is a good approach to manage the execution of multiple Callable tasks efficiently.
+
+
 > CyclicBarrierImplCallableWithThreadPool2.java
 - Description:  In this sample code, we create a thread pool with 3 threads using the Executors.newFixedThreadPool(3) method.
-> Transaction.java
-- Description:  For a group of members to start a transaction, you can use a CyclicBarrier.
+
 	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
