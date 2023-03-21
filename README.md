@@ -1262,6 +1262,7 @@ The try-with-resources statement was introduced in Java 1.7 as a convenient and 
 	This implementation, it is similar to the one (i.e., CyclicBarrierImplThread.java) with threads, but uses Runnable tasks instead of directly creating threads. <br>
 > CyclicBarrierImplCallable.java
 - Description:  
+		
 		This example is missing the code to submit the Callable tasks to a thread pool for execution, that's why the console you see it's continually awaiting another 2 tasks to reach the barrier. 		
 
 		In the current implementation, the tasks are being executed sequentially in the main thread, which is why you see the console-lines "main is doing some work" and "main is waiting at the barrier" instead of the messages from the Worker tasks. 	
