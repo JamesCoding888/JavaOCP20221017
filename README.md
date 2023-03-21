@@ -1253,7 +1253,30 @@ Because only one super class could be extended to, what if we need to extend to 
 - Description:  Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
 The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
 
+10. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/cyclicbarrier">Introduction of CyclicBarrier</a><br>
 
+> CyclicBarrierImplThread.java
+- Description:  This code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program. <br>
+> CyclicBarrierImplRunnable.java
+- Description:  This implementation, it is similar to the one (i.e., CyclicBarrierImplThread.java) with threads, but uses Runnable tasks instead of directly creating threads. <br>
+> CyclicBarrierImplCallable.java
+- Description:  This example is missing the code to submit the Callable tasks to a thread pool for execution, that's why the console you see it's continually awaiting another 2 tasks to reach the barrier. <br>		
+		In the current implementation, the tasks are being executed sequentially in the main thread, which is why you see the console-lines "main is doing some work" and "main is waiting at the barrier" instead of the messages from the Worker tasks. <br>	
+		To execute the tasks in parallel using a thread pool, you can use a ExecutorService to submit the tasks and wait for their completion using Future objects. <br>		
+		Please refer to the sample code of "CyclicBarrierImplCallableWithThreadPool.java" <br>
+> CyclicBarrierImplCallableWithoutThreadPool.java
+- Description:  
+> CyclicBarrierImplCallableWithThreadPool.java
+- Description:  
+> CyclicBarrierImplCallableWithThreadPool2.java
+- Description:  
+> Transaction.java
+- Description:  
+> CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java
+- Description:  
+	
+	
+	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
 
