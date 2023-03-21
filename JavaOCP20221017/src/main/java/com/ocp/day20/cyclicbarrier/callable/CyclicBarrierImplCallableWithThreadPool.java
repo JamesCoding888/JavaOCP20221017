@@ -2,7 +2,6 @@ package com.ocp.day20.cyclicbarrier.callable;
 /*
  	
 	Here is an example of how you can modify the main method of CyclicBarrierImplCallable class to execute the tasks using a thread pool:
-
 	
 	In this modified code, a new ExecutorService with a fixed thread pool of size 3 is created using the Executors.newFixedThreadPool(3) method. 
 	
