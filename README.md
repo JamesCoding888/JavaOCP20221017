@@ -1283,14 +1283,23 @@ The try-with-resources statement was introduced in Java 1.7 as a convenient and 
 - Description:  For a group of members to start a transaction, you can use a CyclicBarrier.
 > CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java
 - Description:  
+		CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing.   
+ 	
+		It is a barrier that all threads must wait at until all of them have reached that point, and then the barrier is released, and all threads can continue executing.
+
+		A CyclicBarrier is initialized with a fixed number of parties, which is the number of threads that need to reach the barrier. 
+
+		As each thread arrives at the barrier, it calls the await() method, which causes it to wait until all other threads have also arrived at the barrier. 
+
+		Once all the threads have arrived, the barrier is released, and all threads can continue executing.	
+
 		Application of CyclicBarrier:
 
-		1) CyclicBarrier can be useful in situations where you have multiple threads that need to work in parallel on a particular task and need to synchronize their execution at certain points,
-		
-		   and then wait for each other to complete before moving on to the next stage of processing.
-	
-		2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding at a later stage.	
-	
+			1) CyclicBarrier can be useful in situations where you have multiple threads that need to work in parallel on a particular task and need to synchronize their execution at certain points,
+
+			   and then wait for each other to complete before moving on to the next stage of processing.
+
+			2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding at a later stage.
 	
 	
 ------------------------------------------------------------------------------
