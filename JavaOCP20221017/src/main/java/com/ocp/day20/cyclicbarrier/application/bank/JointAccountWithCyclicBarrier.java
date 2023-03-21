@@ -1,4 +1,4 @@
-package com.ocp.day20.runnable.application.car;
+package com.ocp.day20.cyclicbarrier.application.bank;
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

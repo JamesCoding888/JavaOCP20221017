@@ -1,6 +1,6 @@
-package com.ocp.day20.runnable.application.car;
+package com.ocp.day20.cyclicbarrier.application.bank;
 /*
- 	CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing. 
+ 	CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing.  
  	
  	It is a barrier that all threads must wait at until all of them have reached that point, and then the barrier is released, and all threads can continue executing.
 
@@ -13,9 +13,11 @@ package com.ocp.day20.runnable.application.car;
 	
 	Application of CyclicBarrier:
 
-		1) CyclicBarrier can be useful in situations where a group of threads need to work together on a particular task and need to synchronize their execution at certain points. 
+		1) CyclicBarrier can be useful in situations where you have multiple threads that need to work in parallel on a particular task and need to synchronize their execution at certain points,
+		
+		   and then wait for each other to complete before moving on to the next stage of processing.
 	
-		2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding.	
+		2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding at a later stage.	
 */
 import java.util.Arrays;
 import java.util.concurrent.CyclicBarrier;
