@@ -1283,6 +1283,7 @@ The try-with-resources statement was introduced in Java 1.7 as a convenient and 
 - Description:  For a group of members to start a transaction, you can use a CyclicBarrier.
 > CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java
 - Description:  
+		
 		CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing.   
  	
 		It is a barrier that all threads must wait at until all of them have reached that point, and then the barrier is released, and all threads can continue executing.
