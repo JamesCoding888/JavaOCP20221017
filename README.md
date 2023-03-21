@@ -1322,12 +1322,13 @@ Because only one super class could be extended to, what if we need to extend to 
 - Description:  In this sample code, we create a thread pool with 3 threads using the Executors.newFixedThreadPool(3) method.
 
 > Summaries:
-CyclicBarrier is a useful tool for synchronizing threads and coordinating their execution. The implementation of CyclicBarrier can be done using Thread, Runnable, or Callable. 
 
-It may not be suitable for simple tasks where no return value is needed.
-Overall, the choice of implementation (Thread, Runnable, or Callable) depends on the complexity of the task and whether a return value is needed. For simple tasks, the Thread or Runnable approach may be sufficient, while for more complex tasks that require a result, the Callable approach is recommended. It is also important to consider the efficiency of thread management and resource usage, in which case submitting tasks to an ExecutorService is recommended.
+		CyclicBarrier is a useful tool for synchronizing threads and coordinating their execution. The implementation of CyclicBarrier can be done using Thread, Runnable, or Callable. 
 
-Here are the pros and cons of each approach:
+		It may not be suitable for simple tasks where no return value is needed.
+		Overall, the choice of implementation (Thread, Runnable, or Callable) depends on the complexity of the task and whether a return value is needed. For simple tasks, the Thread or Runnable approach may be sufficient, while for more complex tasks that require a result, the Callable approach is recommended. It is also important to consider the efficiency of thread management and resource usage, in which case submitting tasks to an ExecutorService is recommended.
+
+		Here are the pros and cons of each approach:
 ![CyclicBarrier](https://user-images.githubusercontent.com/83496093/226577396-0aa03131-3e46-4013-a147-5c0df37ad441.png)
 
 
