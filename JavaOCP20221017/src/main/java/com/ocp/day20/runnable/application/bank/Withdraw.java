@@ -1,4 +1,4 @@
-package com.ocp.day20.runnable.application;
+package com.ocp.day20.runnable.application.bank;
 
 public class Withdraw implements Runnable{
 

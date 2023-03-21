@@ -1,4 +1,4 @@
-package com.ocp.day20.runnable.application;
+package com.ocp.day20.runnable.application.bank;
 /*
  	For more understanding of synchronized method, please read the SynchronizedCounter.java and SynchronizedCounter2.java, firstly. 
  	
