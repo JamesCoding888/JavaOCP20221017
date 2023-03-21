@@ -1278,6 +1278,7 @@ Because only one super class could be extended to, what if we need to extend to 
 > CyclicBarrierImplCallableWithoutThreadPool.java
 - Description:  
 		
+		
 		This approach creates a new thread for each task and is NOT very efficient, especially if we need to execute a large number of tasks. 
 		
 		A better approach is to use a thread pool, which can manage a group of threads and reuse them to execute multiple tasks.
