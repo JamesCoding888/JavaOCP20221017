@@ -1149,7 +1149,8 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description: <br> 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, Synchroization, Concurrency
+# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, CyclicBarrier , Synchroization, Concurrency
+
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread">Introduction of Thread</a>
 
@@ -1158,10 +1159,12 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/daemon">Introduction of Daemon Thread</a>
 > DaemonThreadExample1.java <br>
-- Description: Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
-In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
-Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread finishes <br> execution, even though the daemon thread is still running. <br>
-For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
+- Description: 
+		
+		Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
+		In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
+		Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread finishes <br> execution, even though the daemon thread is still running. <br>
+		For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
 
 > DaemonThreadExample2.java and Log.java <br>
 - Description:  If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will throw IllegalThreadStateException. <br>
@@ -1215,7 +1218,9 @@ Because only one super class could be extended to, what if we need to extend to 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod">Synchronized Methods</a> <br>
 		
 > SynchronizedCounter.java <br>
-- Description:  A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
+- Description:  
+		
+		A synchronized method is a method in Java that can only be accessed by one thread at a time. When a thread invokes a synchronized method, it acquires the lock for that method, which prevents other threads from accessing the method until the lock is released. Here's an example of a synchronized method:
 
 		In this example, we create two threads thread1 and thread2 that increment the Counter object 1000 times each using the increment() method. We start the threads using the start() method, which causes them to execute concurrently.
 
@@ -1250,10 +1255,86 @@ Because only one super class could be extended to, what if we need to extend to 
 9. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/closeable">Introduction of Closeable</a><br>
 
 > MainClose.java and CloseImpl.java <br>
-- Description:  Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
-The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
+- Description:  
+	
+		Classes that implement the Closeable interface are designed to be used with a try-with-resources statement,  which ensures that the resources are automatically released when the block of code that uses them is exited, either normally or due to an exception being thrown. 
+		The try-with-resources statement was introduced in Java 1.7 as a convenient and safe way to handle resource management in Java programs.
+
+10. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/cyclicbarrier">Introduction of CyclicBarrier</a><br>
+	
+> CyclicBarrierDemo.java and JointAccountWithCyclicBarrier.java
+- Description:  
+		
+		CyclicBarrier is a synchronization aid in Java that allows a set of threads to wait for each other to reach a certain point of execution before continuing.   
+ 	
+		It is a barrier that all threads must wait at until all of them have reached that point, and then the barrier is released, and all threads can continue executing.
+
+		A CyclicBarrier is initialized with a fixed number of parties, which is the number of threads that need to reach the barrier. 
+
+		As each thread arrives at the barrier, it calls the await() method, which causes it to wait until all other threads have also arrived at the barrier. 
+
+		Once all the threads have arrived, the barrier is released, and all threads can continue executing.	
+
+		Application of CyclicBarrier:
+
+			1) CyclicBarrier can be useful in situations where you have multiple threads that need to work in parallel on a particular task and need to synchronize their execution at certain points,
+
+			   and then wait for each other to complete before moving on to the next stage of processing.
+
+			2) It is also useful in cases where you need to split a larger task into smaller sub-tasks and want to wait until all sub-tasks are completed before proceeding at a later stage.
+	
+> Transaction.java
+- Description:  For a group of members to start a transaction, you can use a CyclicBarrier.
+	
+> CyclicBarrierImplThread.java
+- Description:  This code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program. <br>
+
+> CyclicBarrierImplRunnable.java
+- Description:  
+	This implementation, it is similar to the one (i.e., CyclicBarrierImplThread.java) with threads, but uses Runnable tasks instead of directly creating threads. <br>
+
+> CyclicBarrierImplCallable.java
+- Description:  
+		
+		This example is missing the code to submit the Callable tasks to a thread pool for execution, that's why the console you see it's continually awaiting another 2 tasks to reach the barrier. 		
+
+		In the current implementation, the tasks are being executed sequentially in the main thread, which is why you see the console-lines "main is doing some work" and "main is waiting at the barrier" instead of the messages from the Worker tasks. 	
+
+		To execute the tasks in parallel using a thread pool, you can use a ExecutorService to submit the tasks and wait for their completion using Future objects. 	
+		Please refer to the sample code of "CyclicBarrierImplCallableWithThreadPool.java" 
+
+> CyclicBarrierImplCallableWithoutThreadPool.java
+- Description:  
+		
+		
+		This approach creates a new thread for each task and is NOT very efficient, especially if we need to execute a large number of tasks. 
+		
+		A better approach is to use a thread pool, which can manage a group of threads and reuse them to execute multiple tasks.
+		
+		Please refer to CyclicBarrierImplCallableWithThreadPool.java and CyclicBarrierImplCallableWithThreadPool2.java for a better approach.
 
 
+> CyclicBarrierImplCallableWithThreadPool.java
+- Description:  Using an ExecutorService with a thread pool is a good approach to manage the execution of multiple Callable tasks efficiently.
+
+
+> CyclicBarrierImplCallableWithThreadPool2.java
+- Description:  In this sample code, we create a thread pool with 3 threads using the Executors.newFixedThreadPool(3) method.
+
+> Summaries:
+
+		CyclicBarrier is a useful tool for synchronizing threads and coordinating their execution. The implementation of CyclicBarrier can be done using Thread, Runnable, or Callable. 
+
+		It may not be suitable for simple tasks where no return value is needed.
+		Overall, the choice of implementation (Thread, Runnable, or Callable) depends on the complexity of the task and whether a return value is needed. For simple tasks, the Thread or Runnable approach may be sufficient, while for more complex tasks that require a result, the Callable approach is recommended. It is also important to consider the efficiency of thread management and resource usage, in which case submitting tasks to an ExecutorService is recommended.
+
+		Here are the pros and cons of each approach:
+![CyclicBarrier](https://user-images.githubusercontent.com/83496093/226577396-0aa03131-3e46-4013-a147-5c0df37ad441.png)
+
+
+	
+	
+	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
 
