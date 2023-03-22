@@ -1,13 +1,31 @@
 package com.ocp.day20.cyclicbarrier.thread;
+/*
+	This Java code demonstrates the use of CyclicBarrier from the java.util.concurrent package.
+
+	The CyclicBarrier class provides a synchronization aid that allows a set of threads to wait for each other to reach a common barrier point. 
+	
+	In this code, a CyclicBarrier object is created with a count of 3, meaning that 3 threads must reach the barrier point before they can continue.
+
+	3 instances of the Worker class are created and passed the CyclicBarrier object in their constructors. 
+	
+	When a Worker thread runs, it performs some work for 1 second and then waits at the barrier by calling the await() method of the CyclicBarrier object.
+
+	Once all 3 Worker threads have reached the barrier, they are released and can continue executing. 
+	
+	As shown in the console output, all 3 threads wait at the barrier until all of them have reached it, and then they proceed with their execution.
+
+	Overall, this code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program.
+	
+*/
 import java.util.concurrent.BrokenBarrierException;
 /* 
-	In this example, we create a CyclicBarrier with a count of 3, meaning that three threads will need to reach the barrier before they can continue.
+	In this example, we create a CyclicBarrier with a count of 3, meaning that 3 threads will need to reach the barrier before they can continue.
 	
-	We then create and start three threads, each running an instance of the Worker class.
+	We then create and start 3 threads, each running an instance of the Worker class.
 	
-	Once all three Worker threads have reached the barrier, they are released and can continue executing. 
+	Once all 3 Worker threads have reached the barrier, they are released and can continue executing. 
 	
-	As you can see the console below, all three threads wait at the barrier until all of them have reached it, and then they proceed with their execution.
+	As you can see the console below, all 3 threads wait at the barrier until all of them have reached it, and then they proceed with their execution.
 	
 	
 	
@@ -20,7 +38,7 @@ public class CyclicBarrierImplThread {
       // Create a new CyclicBarrier with a count of 3
       CyclicBarrier barrier = new CyclicBarrier(3);
 
-      // Create and start three threads
+      // Create and start 3 threads
       Thread thread1 = new Thread(new Worker(barrier));
       Thread thread2 = new Thread(new Worker(barrier));
       Thread thread3 = new Thread(new Worker(barrier));

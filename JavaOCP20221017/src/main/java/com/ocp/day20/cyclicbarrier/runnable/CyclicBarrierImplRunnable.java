@@ -1,6 +1,6 @@
 package com.ocp.day20.cyclicbarrier.runnable;
 /* 
- 	In this example, we have 5 threads executing concurrently.  
+ 	In this example, we have 5 threads executing concurrently.   
  	
  	Each thread will print a message indicating that it is working, and then wait for all other threads to reach the barrier. 
  	

@@ -2,7 +2,7 @@ package com.ocp.day20.cyclicbarrier.callable;
 /*
  	
 	Here is an example of how you can modify the main method of CyclicBarrierImplCallable class:
-	
+
 	This example does NOT use a thread pool explicitly. 
 	
 	Instead, we create 3 new threads explicitly using the new Thread(task).start() method to submit each FutureTask to a new thread for execution.  
