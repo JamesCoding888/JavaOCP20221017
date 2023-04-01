@@ -1239,6 +1239,7 @@ Because only one super class could be extended to, what if we need to extend to 
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod/e_commerce">Customer.java, Item.java, Order.java, OrderAcceptor.java, OrderProcessor.java and OrderQueue.java</a>
 - Description:  You have a multi-threaded application that processes orders for an e-commerce website. One thread might be responsible for accepting new orders and adding them to a queue, while another thread might be responsible for processing orders from the queue and updating the website's inventory.
 
+[Continue - refine the decription of code] <br>
 > <a
 href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod/e_commence2">Customer2.java, Item.java, Order.java, OrderAcceptor2.java, OrderProcessor.java and OrderQueue.java</a>
 - Description:  ...
