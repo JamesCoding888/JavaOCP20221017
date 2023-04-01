@@ -1149,7 +1149,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description: <br> 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, CyclicBarrier , Synchroization, Concurrency
+# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, CyclicBarrier, ThreadPoolExecutor, Synchroization, Concurrency
 
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread">Introduction of Thread</a>
@@ -1340,6 +1340,27 @@ Because only one super class could be extended to, what if we need to extend to 
 
 
 	
+
+11. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
+
+> JobDemo.java, Task1,java, and Task2,java
+- Description:
+		
+		1. This code implements a thread pool using the ThreadPoolExecutor class in Java. 
+	   The program creates a thread pool using the Executors.newCachedThreadPool() method, 
+	   which creates a thread pool that creates new threads as needed and reuses previously constructed threads when they are available.
+	
+		2. The program then submits 5 tasks to the thread pool, alternating between Task1 and Task2. 
+	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1).
+	
+		3. After all tasks have been submitted, the program initiates a graceful shutdown of the thread pool using executors.shutdown(). 
+	   The program then waits for 5 seconds for all tasks to be completed using executors.awaitTermination(5, TimeUnit.SECONDS). 
+	   If any threads inside the thread pool are not executed completely, the program outputs the thread name that is awaiting for remaining thread(s) being executed. 
+	   Otherwise, the program prints out "All tasks were executed and completed, so Pool thread was closed!".
+	   
+		4. The Task1 and Task2 classes implement the Runnable interface, which allows them to be executed in a thread pool. 
+	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1). 
+	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
 	
 	
 ------------------------------------------------------------------------------
