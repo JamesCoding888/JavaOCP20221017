@@ -73,6 +73,11 @@ public class Customer2 {
 	   
 	   we added to the 'OrderAcceptor2' class, which waits if the queue is full, should help prevent this from happening.
 	   
+	   		// Wait if the queue is full, to avoid experiencing a deadlock
+			while (queue.getBlockingQueue().size() >= maxQueueSize) {
+				Thread.sleep(1000);
+			}
+	   
 	   By waiting for the queue to have space before adding new orders, we ensure that the 'OrderProcessor2' thread has 
 	   
 	   a chance to remove orders from the queue and create space for new ones. 
@@ -80,11 +85,7 @@ public class Customer2 {
 	   Without this waiting mechanism, it's possible for the 'OrderAcceptor2' thread to keep adding orders to the queue, 
 	   
 	   eventually causing it to become full and blocking the 'OrderProcessor2' thread.
-			
-			// Wait if the queue is full, to avoid experiencing a deadlock
-			while (queue.getBlockingQueue().size() >= maxQueueSize) {
-				Thread.sleep(1000);
-			}
+				
 			
 			Console 4:
 			
