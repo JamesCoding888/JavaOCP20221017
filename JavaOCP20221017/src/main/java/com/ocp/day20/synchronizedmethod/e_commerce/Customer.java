@@ -8,7 +8,8 @@ package com.ocp.day20.synchronizedmethod.e_commerce;
  	
  	   When the program starts, a new OrderQueue instance is created, and two threads are started: 
  		
- 			One for the OrderAcceptor and another for the OrderProcessor. 
+ 			i.  One for the OrderAcceptor 
+ 			ii. Another for the OrderProcessor 
  		
  	4. The OrderAcceptor thread generates new orders and adds them to the queue using the addOrder method of the OrderQueue class.
  	

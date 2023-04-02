@@ -12,7 +12,7 @@ public class OrderAcceptor implements Runnable {
     public void run() {
         while (true) {
             Order order = new Order(915, "James", Arrays.asList(new Item("keyboard", 10))); // get the next order from the website
-            queue.addOrder(order);
+            queue.addOrder(order);           
         }
     }
 }

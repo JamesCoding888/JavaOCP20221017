@@ -22,8 +22,7 @@ public class OrderProcessor implements Runnable {
     
     private void processOrder(Order order) {
         // process the order here
-    	System.out.printf("Processing order: %d, buyer: %s\n", order.getOrderId(), order.getCustomerName());
-        order.getItems().forEach((Item item) -> System.out.printf("Item name: %s, Quantity: %d\n", item.getName(), item.getQuantity()));
+        System.out.println("Processing order: " + order.getOrderId());
     }
     
     private void handleException(InterruptedException e) {
