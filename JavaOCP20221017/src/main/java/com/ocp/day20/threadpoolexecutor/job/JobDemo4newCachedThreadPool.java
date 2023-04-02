@@ -23,7 +23,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class JobDemo {
+public class JobDemo4newCachedThreadPool {
 	public static void main(String[] args) {
 		// The Executors.newCachedThreadPool() method creates a thread pool that creates new threads as needed, 
 		// but will reuse previously constructed threads when they are available.
