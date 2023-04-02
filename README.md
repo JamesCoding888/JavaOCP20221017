@@ -1366,6 +1366,17 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1). 
 	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
 	
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lotto">JobDemo4newFixedThreadPool.java, Task.java</a>
+- Description:
+	
+		Of this lesson, we demonstrate two type of thread pool, differently. 
+ 	
+ 		Which one is better depends on the specific requirements of the program. 
+ 	
+ 		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best 		 fit for a specific program.
+	
+	
 	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
