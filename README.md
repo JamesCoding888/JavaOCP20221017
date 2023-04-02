@@ -1345,9 +1345,9 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 	
 
-11. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/job">Introduction of ThreadPoolExecutor</a><br>	
+11. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
 
-> JobDemo.java, Task1,java, and Task2,java
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/job">JobDemo.java, Task1,java, and Task2,java</a>
 - Description:
 		
 		1. This code implements a thread pool using the ThreadPoolExecutor class in Java. 
