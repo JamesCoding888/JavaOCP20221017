@@ -1,7 +1,6 @@
 package com.ocp.day20.synchronizedmethod.e_commence2;
 /*
- 	This program sets up a producer-consumer architecture, where OrderAcceptor2 produces orders and adds them to the OrderQueue2, 
- 	while OrderProcessor2 consumes orders from the OrderQueue2.
+ 	We refined the code of OrderQueue2, OrderAcceptor2, and OrderProcessor2 from e_commerce package, to avoid experiencing deadlock.
 */
 public class Customer2 {
     public static void main(String[] args) throws InterruptedException {                

@@ -8,7 +8,9 @@ public class OrderQueue2 {
 	// It has a private instance variable blockingQueue of type BlockingQueue<Order>, 
 	// which is initialized to a new LinkedBlockingQueue<Order> object. 
 	private BlockingQueue<Order> blockingQueue = new LinkedBlockingQueue<>();
- 
+	// Since the blockingQueue field in OrderQueue2 is declared as private, 
+	// it cannot be accessed directly from another class. 
+	// Instead, we can create a public method in OrderQueue2 that provides access to the blockingQueue.
 	public BlockingQueue<Order> getBlockingQueue() {
         return blockingQueue;
     }
