@@ -1,4 +1,4 @@
-package com.ocp.day20.threadpoolexecutor;
+package com.ocp.day20.threadpoolexecutor.job;
 
 /*
 	1. This code implements a thread pool using the ThreadPoolExecutor class in Java. 

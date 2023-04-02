@@ -1,4 +1,4 @@
-package com.ocp.day20.threadpoolexecutor;
+package com.ocp.day20.threadpoolexecutor.job;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
