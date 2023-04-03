@@ -1509,7 +1509,17 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
  		
  		we can use tempFile.createNewFile() instead.
 
-
+> FileWriterDemo.java
+- Description: 
+	
+		This Java program generates a file named "lotto.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
+ 	
+	 	The file contains 10 lines of lottery numbers, with each line having 6 unique numbers between 1 and 42.
+	
+	
+	
+	
+	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
