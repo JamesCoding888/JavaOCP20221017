@@ -1370,11 +1370,11 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lotto">JobDemo4newFixedThreadPool.java, Task.java</a>
 - Description:
 	
-		Of this lesson, we demonstrate two type of thread pool, differently. 
+		Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', , differently.  
  	
- 		Which one is better depends on the specific requirements of the program. 
+ 	Which one is better depends on the specific requirements of the program. 
  	
- 		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
+ 	In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
 	
 	
 	
