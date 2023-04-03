@@ -1,6 +1,6 @@
 package com.ocp.day21.io.temporary;
 /*
- 	Continue the previously lesson: 
+ 	Continue the previously lesson:  
  	
  		We used tempFile.createNewFile() instead of File.createTempFile(prefix, suffix, directoryOfTemp) is that 
  		
