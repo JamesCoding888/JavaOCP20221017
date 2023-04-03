@@ -1,6 +1,6 @@
 package com.ocp.day21.io.file;
 /*
- 	This program uses the Java File class to create and check for the existence of a file. 
+ 	This program uses the Java File class to create and check for the existence of a file.
 	
 	It is useful when we need to create a new file in the file system, 
 	

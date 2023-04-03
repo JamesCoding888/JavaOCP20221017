@@ -1,7 +1,7 @@
 package com.ocp.day21.io.foler;
 
 /*
- 	The given code is a Java program that creates a new folder in a specific location on the file system 
+ 	The given code is a Java program that creates a new folder in a specific location on the file system  
  
 	if it does not already exist.
 */
