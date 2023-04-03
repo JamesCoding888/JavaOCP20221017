@@ -2,8 +2,10 @@ package com.ocp.day20.executor;
 
 
 /* 	
+	
  	Description of the structure for the Executor and its main subclasses:
  	
+
  	interface:
  		
  		1) Executor
@@ -58,6 +60,3 @@ package com.ocp.day20.executor;
  		
 */
 
-public interface Executor {
-
-}
