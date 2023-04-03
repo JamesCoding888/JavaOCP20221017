@@ -1345,7 +1345,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 
 	
-11. The structure of the Executor and its main subclasses <br>
+11. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/describe">The structure of the Executor and its main subclasses</a> <br>
 > ExecutorDescribe.java
 	
 		
@@ -1405,7 +1405,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
  		
 
 
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor">ExecutorDemo.java and ExecutorTask.java</a>
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/demo">ExecutorDemo.java and ExecutorTask.java</a>
 - Description:  This code demonstrates the use of the Executor interface to execute multiple Runnable tasks asynchronously. The Executor interface provides a way to decouple task submission from task execution, allowing the tasks to be executed in parallel without blocking the main thread.
 	
 	
