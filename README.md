@@ -1479,7 +1479,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 		if it does not already exist.
 	
 
-> TemporaryFileCreated.java
+> UniqueTemporaryFileCreated.java
 - Description: 
 	
 	
@@ -1488,8 +1488,27 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
  	
  	Overall, this program demonstrates how to create a temporary file using the createTempFile() method of the File class, 
  	
- 	and how to check whether the file was successfully created.
+ 	and how to check whether the file was successfully created and deleted.
 	
+
+> FixedTemporaryFileCreated.java
+- Description: 
+	
+	
+		
+		Continue the previously lesson: 
+ 	
+ 		We used tempFile.createNewFile() instead of File.createTempFile(prefix, suffix, directoryOfTemp) is that 
+ 		
+ 		it allows us to specify the exact name of the temporary file that we want to create.
+ 		
+ 		When we use File.createTempFile(prefix, suffix, directoryOfTemp), a unique file name is generated automatically, 
+ 		
+ 		which can be useful in preventing naming conflicts. 
+ 		
+ 		However, if we want to create a temporary file with a specific name or a specific naming convention, 
+ 		
+ 		we can use tempFile.createNewFile() instead.
 
 
 ------------------------------------------------------------------------------
