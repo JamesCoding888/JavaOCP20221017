@@ -1522,7 +1522,8 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 		This program demonstrates how to use the FileReader class in Java to read the contents of a file character by character.  
  	
- 		The program prompts the user to choose between two options: displaying all the data in the file on one line or showing each line 		
+ 		The program prompts the user to choose between two options: displaying all the data in the file on one line or showing each line 
+		
 		separately.
 	
 	
