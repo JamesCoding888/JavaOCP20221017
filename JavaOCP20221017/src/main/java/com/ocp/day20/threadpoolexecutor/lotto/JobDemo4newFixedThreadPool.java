@@ -1,6 +1,6 @@
 package com.ocp.day20.threadpoolexecutor.lotto;
 /*
- 	Of this lesson, we demonstrate two type of thread pool, differently. 
+ 	Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', , differently.  
  	
  	Which one is better depends on the specific requirements of the program. 
  	
