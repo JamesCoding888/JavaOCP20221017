@@ -21,8 +21,6 @@ public class FileCreated {
 		 	Java File class to create and check for the existence of a folder. 
 			It is useful when we need to create a new directory in the file system, 
 		    such as for storing data files or configuration files for our Java application.
-			
-			Then, we create a new File object called "folder" using the pathOfFolder string
 		*/
 		File file = new File(pathOfFolder + pathOfFile);
 		// Check if the file exists using the exists() method of the File class
