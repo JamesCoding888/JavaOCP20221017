@@ -1446,8 +1446,37 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO
 
+> Directory.java
+- Description: 
+	
+	
+	This Java program checks whether the specified paths represent directories or files 
+ 	
+ 	using the isDirectory() and isFile() methods of the File class.
+ 	
+ 	Overall, this program demonstrates how to use the isDirectory() and isFile() methods of the File class 
+ 	
+ 	to check whether a path represents a directory or a file.
 
+> FileCreated.java
+- Description: 
+	
+	
+ 	This program uses the Java File class to create and check for the existence of a file.
+	
+	It is useful when we need to create a new file in the file system, 
+	
+	such as for storing data or configuration files for our Java application.
 
+> FolderCreated.java
+- Description: 
+	
+	
+	
+	The given code is a Java program that creates a new folder in a specific location on the file system  
+ 
+	if it does not already exist.
+	
 
 
 
