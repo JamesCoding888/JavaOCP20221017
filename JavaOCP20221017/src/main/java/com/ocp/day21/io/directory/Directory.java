@@ -34,13 +34,3 @@ public class Directory {
 		System.out.printf("'%s' is file: %b\n", directoryCheck, filehCheck.isFile());
 	}	
 }
-
-
-/*
-	Console: 
-			'/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data' is directory: true
-			'/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data' is file: false
-			'/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/file.txt' is directory: false
-			'/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/file.txt' is file: true
-
-*/
