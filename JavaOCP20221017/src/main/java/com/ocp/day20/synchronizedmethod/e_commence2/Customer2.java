@@ -38,6 +38,7 @@ public class Customer2 {
 	2) Explanation of this situation:
 	
 		Since the OrderAcceptor2 is responsible for adding orders to the queue, 
+		
 		and the maxQueueSize parameter in the addOrder method is used to limit the number of orders that can be added to the queue at a time. 
 		
 		However, it is NOT directly related to the number of orders that will be processed by the OrderProcessor2. 
@@ -67,11 +68,13 @@ public class Customer2 {
 				OrderProcessor2 - Thread-1
 				Processing order: 917
 
-	3) Caller may ask a question. The thread is still running but only see the result of Console 3. Yes, the programs was experiencing a deadlock.
+	3) Caller may ask a question. The thread is still running but only see the result of Console 3. 
 	
-	   Where both the 'OrderAcceptor2' and 'OrderProcessor2' threads were blocked, waiting for each other to release a shared resource. The code
+	   Yes, the programs was experiencing a deadlock.
+	
+	   Where both the 'OrderAcceptor2' and 'OrderProcessor2' threads were blocked, waiting for each other to release a shared resource. 
 	   
-	   we added to the 'OrderAcceptor2' class, which waits if the queue is full, should help prevent this from happening.
+	   The code	we added to the 'OrderAcceptor2' class, which waits if the queue is full, should help prevent this from happening.
 	   
 	   		// Wait if the queue is full, to avoid experiencing a deadlock
 			while (queue.getBlockingQueue().size() >= maxQueueSize) {
@@ -85,6 +88,8 @@ public class Customer2 {
 	   Without this waiting mechanism, it's possible for the 'OrderAcceptor2' thread to keep adding orders to the queue, 
 	   
 	   eventually causing it to become full and blocking the 'OrderProcessor2' thread.
+	   
+	   Let's see  the Console 4, without deadlock, below!
 				
 			
 			Console 4:
