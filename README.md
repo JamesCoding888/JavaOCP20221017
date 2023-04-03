@@ -1485,10 +1485,10 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 	
 		This Java program creates a temporary file using the createTempFile() method of the File class.
+ 		
+		Overall, this program demonstrates how to create a temporary file using the createTempFile() method of the File class, 
  	
- 	Overall, this program demonstrates how to create a temporary file using the createTempFile() method of the File class, 
- 	
- 	and how to check whether the file was successfully created and deleted.
+	 	and how to check whether the file was successfully created and deleted.
 	
 
 > FixedTemporaryFileCreated.java
