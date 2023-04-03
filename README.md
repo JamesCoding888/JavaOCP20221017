@@ -1495,14 +1495,13 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description: 
 	
 	
-		
 		Continue the previously lesson: 
  	
  		We used tempFile.createNewFile() instead of File.createTempFile(prefix, suffix, directoryOfTemp) is that 
  		
  		it allows us to specify the exact name of the temporary file that we want to create.
  		
- 		When we use File.createTempFile(prefix, suffix, directoryOfTemp), a unique file name is generated automatically, 
+		When we use File.createTempFile(prefix, suffix, directoryOfTemp), a unique file name is generated automatically, 
  		
  		which can be useful in preventing naming conflicts. 
  		
