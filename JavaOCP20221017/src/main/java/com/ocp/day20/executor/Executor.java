@@ -2,7 +2,7 @@ package com.ocp.day20.executor;
 
 
 /* 	
- 	The structure of the Executor and its main subclasses:
+ 	Description of the structure for the Executor and its main subclasses:
  	
  	interface:
  		
