@@ -1149,7 +1149,7 @@ Of this lesson, we are going to demonstrate a function of "return" and "System.e
 - Description: <br> 
 
 ------------------------------------------------------------------------------
-# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, CyclicBarrier, ThreadPoolExecutor, Synchroization, Concurrency
+# day20 Java Advanced: Thread, Runnable, Callable, FutureTask, CyclicBarrier, ThreadPoolExecutor, Executor, Synchroization, Concurrency
 
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread">Introduction of Thread</a>
@@ -1346,6 +1346,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 	
 11. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/describe">The structure of the Executor and its main subclasses</a> <br>
+[Continue]: please insert the image of Structure for Executor
 > ExecutorDescribe.java
 	
 		
