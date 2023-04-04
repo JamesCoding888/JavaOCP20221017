@@ -1,7 +1,7 @@
 package com.ocp.day21.io.filereader;
 
 /*
- 	This program demonstrates how to use the FileReader class in Java to read the contents of a file character by character. 
+ 	This program demonstrates how to use the FileReader class in Java to read the contents of a file character by character.  
  	
  	The program prompts the user to choose between two options: displaying all the data in the file on one line or showing each line separately.
  	
@@ -25,13 +25,17 @@ public class FileReaderDemo {
 		// If the user chooses option 2, the program reads the file character by character and appends each character to a StringBuilder object.
 		System.out.printf("[Enter '1'] - show all the data in the file on one line| [Enter '2'] - show each line separately\n", pathOfFile, pathOfFile);
 		int option = scan.nextInt();
-		/*
-		 	In the first option, the program reads the file character by character using the 'fileReader.read(buffer)' method, where 'buffer' is a character array with a size of 1. The while loop continues until the end of the file is reached, and each character is printed to the console using 'System.out.print(buffer[0])'.
-		*/
+		// In the first option: This code block reads a file character by character and prints each character to the console. 
 		if(option == 1) {
+			// The FileReader object is created by passing in the file path to the constructor.
 			try (FileReader fileReader = new FileReader(pathOfFolder + pathOfFile)) {
+				// A character buffer of size 1 is created
 				char[] buffer = new char[1];
+				// The while loop reads each character from the file until the end of the file is reached. 
+				// The read() method of FileReader reads the next character from the file into the buffer and returns the number of characters read. 
+				// If the end of the file has been reached, it returns -1, which terminates the loop. 
 				while (fileReader.read(buffer) != -1) {
+					 // Inside the while loop, the character in the buffer is printed to the console using System.out.print(buffer[0])
 					 System.out.print(buffer[0]);
 				}
 			} catch (IOException e) {
