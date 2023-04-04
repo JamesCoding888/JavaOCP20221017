@@ -1527,6 +1527,26 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 		separately.
 	
 	
+
+
+> AnalysisLotto.java
+- Description: 
+
+		
+		This program analyzes lottery numbers by counting the occurrences of each number in the given input data. 
+ 	
+ 		The input data is a string that represents a list of numbers separated by commas and spaces. 
+ 	
+ 		The program splits the string into an array of individual number strings, creates a linked hash map with 
+		
+		keys as the numbers from 1 to 5 and values as 0, 
+ 	
+		and then iterates through the array to increment the value of each corresponding key in the map.
+ 	
+	
+		
+
+
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
