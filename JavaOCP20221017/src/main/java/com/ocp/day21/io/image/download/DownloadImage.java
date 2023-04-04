@@ -1,8 +1,6 @@
 package com.ocp.day21.io.image.download;
 /*
- 	This Java program downloads an image from a URL and saves it to a specified location on the local filesystem.
- 	
- 	
+ 	This Java program downloads an image from a URL and saves it to a specified location on the local filesystem. 
  	
 */
 import java.io.FileOutputStream;

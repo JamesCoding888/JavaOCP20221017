@@ -1,4 +1,4 @@
-package com.ocp.day21.io.application.copy;
+package com.ocp.day21.io.copy;
 /*
 	This Java program reads the content of a file named "lotto.txt" located in the subdirectory "data" 
 	
