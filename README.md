@@ -1556,8 +1556,51 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 		The program uses FileReader and FileWriter classes to read and write the file content, respectively.
  	
+
+		
+> DownloadImage.java
+- Description: 
+
+		
+		This Java program downloads an image from a URL and saves it to a specified location on the local filesystem.
+ 	
 	
 
+> DownloadImage4LargerSize.java
+- Description: 
+
+		
+		To make the code more efficient for downloading larger files, 
+ 		
+ 		you can increase the size of the byte buffer used to read and write the data. 
+ 		
+ 		Instead of reading and writing one byte at a time, you can read and write a larger chunk of data at once.
+ 		
+ 		In this updated version of the code, we use a buffer of 4096 bytes (4KB) to read and write the data. 
+ 		
+ 		This should be more efficient than reading and writing one byte at a time.
+ 		
+ 		Additionally, we use the read method of the input stream to read as much data as possible into the buffer, 
+ 		
+ 		and we use the write method of the output stream to write the entire buffer to the file.
+
+		This updated code will be more efficient for downloading larger files. 
+		
+		However, it's still important to note that downloading very large files can take a long time, 
+		
+		and there may be network limitations or other factors that could impact the download speed.
+ 
+
+	
+> RenderedOpSampleCode1.java
+- Description: 
+
+		
+	
+> RenderedOpSampleCode2.java
+- Description: 
+		
+	
 
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
