@@ -1,4 +1,4 @@
-package com.ocp.day21.imageutil;
+package com.ocp.day21.io.image.rendering;
 
 import java.awt.FlowLayout;   
 import java.awt.image.BufferedImage;

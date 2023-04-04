@@ -1,4 +1,4 @@
-package com.ocp.day21.imageutil;
+package com.ocp.day21.io.image.rendering;
 /*
  * If you want to accelerate image processing in Java without having to set any environment variables, you can use the Java Advanced Imaging (JAI) API with the JAI Image I/O Tools.
  * 
