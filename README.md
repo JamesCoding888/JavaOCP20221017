@@ -1517,7 +1517,14 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	 	The file contains 10 lines of lottery numbers, with each line having 6 unique numbers between 1 and 42.
 	
 	
+> FileReaderDemo.java
+- Description: 
 	
+		This program demonstrates how to use the FileReader class in Java to read the contents of a file character by character.  
+ 	
+ 		The program prompts the user to choose between two options: displaying all the data in the file on one line or showing each line 
+		
+		separately.
 	
 	
 ------------------------------------------------------------------------------
