@@ -1544,7 +1544,19 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 		and then iterates through the array to increment the value of each corresponding key in the map.
  	
 	
+
+	
+> CopyContent.java
+- Description: 
+
 		
+		This Java program reads the content of a file named "lotto.txt" located in the subdirectory "data"  
+
+		and creates a copy of its content in a new file named "lotto_Copy.txt" located in the same directory. 
+
+		The program uses FileReader and FileWriter classes to read and write the file content, respectively.
+ 	
+	
 
 
 ------------------------------------------------------------------------------
