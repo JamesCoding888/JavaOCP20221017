@@ -5,7 +5,7 @@ package com.ocp.day21.analysis;
  	
  	The input data is a string that represents a list of numbers separated by commas and spaces. 
  	
- 	The program splits the string into an array of individual number strings, creates a linked hash map with keys as the numbers from 1 to 5 and values as 0, 
+ 	The program splits the string into an array of individual number strings, creates a linked hash map with keys as the numbers from 1 to 42 and values as 0, 
  	
  	and then iterates through the array to increment the value of each corresponding key in the map.
  	
