@@ -1621,6 +1621,34 @@ BufferedReaderExecutionTime.java
 		specified by the variable "root".
 
 
+> BufferedWriterDemo.java
+- Description: 
+	
+	
+		This Java code creates a file named "log.txt" in the directory. 
+ 	
+	 	It then writes three lines of text to the file using a BufferedWriter.
+	
+
+	
+> BufferedWriterExecutionTime.java
+- Description: 	
+	
+	
+		The provided code is an example of using a BufferedWriter to write data to a file. 
+ 	
+		It creates a BufferedWriter object that wraps around a FileWriter object to write text to a file.
+
+		In this code, the BufferedWriter object is created by passing a FileWriter object to its constructor. 
+
+		The FileWriter object is used to specify the file path and to allow for appending data to the file. 
+
+		The write() method of the BufferedWriter object is used to write the text to the file, 
+
+		and the close() method is automatically called when the try block is exited.
+	
+	
+	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
