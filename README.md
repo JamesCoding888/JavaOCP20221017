@@ -1600,7 +1600,26 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 > RenderedOpSampleCode2.java
 - Description: [Continue] 
 		
+
+> ExecutionTimeCalculator.java
+- Description: 
 	
+	
+		This code creates an ExecutionTimeCalculator class with a main method that measures the execution time of two code 
+		
+		samples using the System.nanoTime() method. 
+ 	
+		To properly measure the running time of two code samples, you need to insert the code for each sample between the 		
+		startTime and endTime measurements.
+	
+BufferedReaderExecutionTime.java
+- Description: 
+	
+		
+		This Java program reads data from a text file named "lotto.txt" located in the "data" subdirectory of the directory 
+		
+		specified by the variable "root".
+
 
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
