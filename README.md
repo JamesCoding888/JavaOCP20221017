@@ -1444,7 +1444,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 	
 ------------------------------------------------------------------------------
-# day21 Java Advanced: IO
+# day21 Java Advanced: IO, File, FileReader, BufferedReader, FileWriter, BufferedWriter, URL, InputStream, FileOutputStream, NIO, Path, Paths
 
 > Directory.java
 - Description: 
@@ -1660,8 +1660,15 @@ BufferedReaderExecutionTime.java
 		The write() method of the BufferedWriter object is used to write the text to the file, 
 
 		and the close() method is automatically called when the try block is exited.
+
+	
+		
+> PathReader.java
+- Description: 	
 	
 	
+		This Java program reads and manipulates paths using the java.nio.file.Path and java.nio.file.Paths classes.
+ 	
 	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
