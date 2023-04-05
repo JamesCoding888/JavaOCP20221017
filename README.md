@@ -1529,7 +1529,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 
 
-> AnalysisLotto.java
+> AnalyzeLotteryNumbers.java
 - Description: 
 
 		
