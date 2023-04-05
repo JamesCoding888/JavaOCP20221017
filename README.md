@@ -1675,7 +1675,39 @@ BufferedReaderExecutionTime.java
 	
 	
 		This is a Java program that demonstrates some basic operations on file paths using the java.nio.file.Path class.	
- 	
+ 
+	
+> BufferedReaderDemo.java
+- Description:
+	
+
+		This Java program uses the BufferedReader class to read the contents of a file located at a specific path.
+	
+	
+
+> NewBufferedReaderDemo.java
+- Description:
+		
+	
+		This is a Java program that demonstrates how to use the BufferedReader class to read the contents of a file.
+	
+	
+	
+> FileReadAllLineDemo.java
+- Description: 
+	
+		
+		This Java program reads all the lines from a text file using the Files.readAllLines() method, and then prints each line to the console 
+		
+		using a Java 8 stream.
+	
+	
+> FileLinesDemo.java
+- Description: 
+	
+	
+		This Java program demonstrates how to read and print the lines of a text file using the Files.lines() method.	
+	
 	
 	
 ------------------------------------------------------------------------------
