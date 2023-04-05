@@ -1709,6 +1709,17 @@ BufferedReaderExecutionTime.java
 		This Java program demonstrates how to read and print the lines of a text file using the Files.lines() method.	
 	
 	
+		
+> CopyAndDeleteFile.java
+- Description: 
+	
+	
+		This Java program copies a file from a source path to a destination path and then deletes both the original file and the copied file.
+
+		Note that the specific file paths in this program are system-dependent and may need to be changed to match the file paths on your own 
+		
+		system.
+	
 	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
