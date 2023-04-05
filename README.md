@@ -1631,6 +1631,20 @@ BufferedReaderExecutionTime.java
 	
 
 	
+> BufferedWriterDemo2.java
+- Description: 
+	
+	
+		Continue BufferedWriterDemo.java: 
+ 	
+		This Java code creates a file named "log3.txt" in the directory. 
+
+		It then writes three lines of text to the file using a BufferedWriter.
+
+		We used "logs" string to split into an array of strings using the "," delimiter, and assigned to the "dataSplit" variable.
+
+	
+	
 > BufferedWriterExecutionTime.java
 - Description: 	
 	
