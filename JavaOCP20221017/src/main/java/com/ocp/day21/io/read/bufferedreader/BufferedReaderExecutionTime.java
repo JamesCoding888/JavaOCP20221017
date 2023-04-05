@@ -1,7 +1,10 @@
 package com.ocp.day21.io.read.bufferedreader;
 
 /*
- 	Both code samples, code sample #1 and code sample #2, achieve the same goal, which is to read the contents of a text file and print it to the console. 
+ 	
+ 	This Java program reads data from a text file named "lotto.txt" located in the "data" subdirectory of the directory specified by the variable "root".
+ 	
+ 	Both code samples, code sample #1 and code sample #2, achieve the same goal, which is to read the contents of a text file and print it to the console.  
  		
  	However, the efficiency of the code depends on the size of the file being read.
  	
