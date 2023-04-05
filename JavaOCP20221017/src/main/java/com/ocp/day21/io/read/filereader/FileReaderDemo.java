@@ -1,4 +1,4 @@
-package com.ocp.day21.io.filereader;
+package com.ocp.day21.io.read.filereader;
 
 /*
  	This program demonstrates how to use the FileReader class in Java to read the contents of a file character by character.  

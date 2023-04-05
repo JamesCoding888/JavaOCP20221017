@@ -1,4 +1,4 @@
-package com.ocp.day21.io.filewriter;
+package com.ocp.day21.io.write.filewriter;
 /*
  	This Java program generates a file named "lotto.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
  	
