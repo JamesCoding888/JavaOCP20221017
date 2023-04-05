@@ -1670,6 +1670,14 @@ BufferedReaderExecutionTime.java
 		This Java program reads and manipulates paths using the java.nio.file.Path and java.nio.file.Paths classes.
  	
 	
+> PathReader2.java
+- Description: 	
+	
+	
+		This is a Java program that demonstrates some basic operations on file paths using the java.nio.file.Path class.	
+ 	
+	
+	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
