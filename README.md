@@ -1720,6 +1720,17 @@ BufferedReaderExecutionTime.java
 		
 		system.
 	
+
+	
+> FileReadAllBytesDemo.java
+- Description: 
+	
+	
+		This is a Java program that reads the contents of a text file and prints them to the console.
+	
+	
+	
+	
 	
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
