@@ -1789,7 +1789,29 @@ BufferedReaderExecutionTime.java
 				 	Cache the downloaded file, so that if the destination file already exists, the file is not downloaded again.
 		
 	
+
 	
+			
+> FilesWriteAndReadString.java
+- Description: 
+	
+	
+		 	This Java program demonstrates how to use the java.nio.file.Files class to write a string to a file and then read the same 
+			file.
+	
+			The java.nio.file.Files class in Java 11, introduced the new writeString and readString methods for writing and reading a 
+			string to/from a file, respectively.
+
+			Both methods throw an IOException if an error occurs while accessing the file.
+
+				1) The writeString method creates a new file at the specified path using the Files.createFile(path) method, and then 
+				   writes the provided string to the file using the CharSequence argument. 
+
+				   The StandardOpenOption.WRITE option is used to open the file for writing.
+
+				2) The readString method reads the contents of the file at the specified path as a string and returns the result.
+
+ 
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
