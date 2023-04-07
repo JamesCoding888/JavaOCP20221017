@@ -66,7 +66,7 @@ public class CopyFileEnhancedEfficiency {
         // creates a URI object uri from the URL string.
         URI uri = URI.create(url);
         // Specify the path to the destination file where the image will be saved using a Path object dest.
-        Path destination = Paths.get("/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/Cherry blossom5.jpg");
+        Path destination = Paths.get("/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/Cherry blossom_CopyFileEnhancedEfficiency.jpg");
         // Record the start time
         long startTime4One = System.nanoTime();
 		// Option 1: Use a BufferedInputStream
@@ -149,7 +149,7 @@ public class CopyFileEnhancedEfficiency {
 
 /*
  	Console:
-			Downloaded file to: /Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/Cherry blossom5.jpg
+			Downloaded file to: /Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/Cherry blossom_CopyFileEnhancedEfficiency.jpg
 			Copied the image file to the destination!
 			Elapsed time for Option #1: 3116 ms
 			Elapsed time for Option #2: 613 ms
