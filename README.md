@@ -1728,8 +1728,66 @@ BufferedReaderExecutionTime.java
 	
 		This is a Java program that reads the contents of a text file and prints them to the console.
 	
+		
+> CopyFileWithInputStream.java
+- Description: 
 	
 	
+		This Java program downloads an image from a URL and saves it to a local file using the Java NIO Files class.
+	
+	
+		
+> CopyFileEnhancedEfficiency.java
+- Description: 
+	
+	
+		This Java program demonstrates four different options to copying a file from a URL to a local destination file, and measures the 
+		elapsed time for each option. 
+ 	
+ 			1) The program first defines a URL string url pointing to an image file, and creates a URI object uri from the url string. 
+ 	
+	 		2) The program also specifies the path to the destination file where the image will be saved using a Path object destination.
+	
+			3) The program performs four different options to copying the image file to the destination file:
+	
+		 	   For each option, the program records the start and end times of the copying process using System.nanoTime(), and calculates 	
+			   the elapsed time in milliseconds. 
+			
+			   The program then prints the elapsed time for each option.
+	
+				Option 1:
+				 	
+					Use a BufferedInputStream to copy the file in a single thread.
+				
+				Option 2:
+					
+					Use a BufferedInputStream, but with a larger buffer size than option 1.
+				
+				Option 3:
+				 	
+				 	Use multiple threads to copy the file. The program uses an ExecutorService to create a thread pool with four 
+					threads, and submits a DownloadTask to the thread pool, which downloads the file and returns the Path of the 
+					downloaded file. 
+				 	
+				 	The program then retrieves the downloaded Path from the Future object returned by the submit method.
+				 			 	
+				 	
+				 	DownloadTask class:
+				
+						The program also defines a nested class DownloadTask, which implements the Callable interface, 
+						
+						and is used for option 3 to download the file using a separate thread. 
+						
+						The DownloadTask takes a URI object and a Path object as its constructor arguments, and downloads the 
+						
+						file using a BufferedInputStream, and saves the file to the specified destination file. The 
+						
+						DownloadTask returns the Path of the downloaded file.
+				
+				Option 4:
+				 	
+				 	Cache the downloaded file, so that if the destination file already exists, the file is not downloaded again.
+		
 	
 	
 ------------------------------------------------------------------------------
