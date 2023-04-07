@@ -1811,7 +1811,24 @@ BufferedReaderExecutionTime.java
 
 				2) The readString method reads the contents of the file at the specified path as a string and returns the result.
 
- 
+
+> FileWalkDemo.java
+- Description: 
+	
+	
+		 	This Java program demonstrates how to use the Files.walk() method to recursively traverse a directory tree and process each 
+			file in the tree. 
+ 	
+		 	The program looks for files with a .txt extension, prints their absolute paths, creation time, and size, and increments a 			  counter to keep track of the number of .txt files processed.
+ 	
+
+			Overall, this program provides a simple example of how to use the Files.walk() method to recursively traverse a directory tree 
+			and process each file in the tree. 
+ 	
+
+			It demonstrates how to filter files based on their extension and how to access their attributes such as creation time and size.
+ 	
+			
 ------------------------------------------------------------------------------
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
