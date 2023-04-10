@@ -1412,7 +1412,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 
 
-12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">
+12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">Introduction of API - ScheduledExecutorService and ScheduledFuture</a>
 
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">NewSingleThreadScheduledExecutorDemo.java, Lottery1.java, Lottery2.java, Lottery3.java</a>
 - Description:
