@@ -2,17 +2,17 @@ package com.ocp.day20.callable;
 /*
  	Explanation of programs as following:
 	
-	The Lotto class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may throw an exception.
+	The Lottery class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may throw an exception.
     
-    The Lotto class contains a method call() which is called when the Lotto object is executed as a task. 
+    The Lottery class contains a method call() which is called when the Lottery object is executed as a task. 
 	
-	The main method in the LottoMain class creates a FutureTask object using the Lotto object and starts a new thread to execute the task. 
+	The main method in the LotteryMain class creates a FutureTask object using the Lottery object and starts a new thread to execute the task. 
 	
 	The main thread waits for the result of the FutureTask by calling the get() method. 
 	
 	If the task throws an InterruptedException or an ExecutionException, they are caught and their stack traces are printed.
 
-	When the Lotto task is executed, it generates a set of 6 random integers and returns them as the result of the task. 
+	When the Lottery task is executed, it generates a set of 6 random integers and returns them as the result of the task. 
 	
 	Finally, the main thread prints the result of the task, which is the set of 6 random integers.
 	
@@ -21,7 +21,7 @@ import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.Callable;
-public class Lotto implements Callable<Set<Integer>>{
+public class Lottery implements Callable<Set<Integer>>{
 	
 	private Random random = new Random();
 	

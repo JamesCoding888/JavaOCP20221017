@@ -1,4 +1,4 @@
-package com.ocp.day20.threadpoolexecutor.lotto;
+package com.ocp.day20.threadpoolexecutor.lottery;
 
 import java.util.Random;
 

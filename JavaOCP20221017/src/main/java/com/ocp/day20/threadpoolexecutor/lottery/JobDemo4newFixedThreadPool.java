@@ -1,4 +1,4 @@
-package com.ocp.day20.threadpoolexecutor.lotto;
+package com.ocp.day20.threadpoolexecutor.lottery;
 /*
  	Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', , differently.  
  	
