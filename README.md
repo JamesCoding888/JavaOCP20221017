@@ -1442,6 +1442,41 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
  		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
 	
 	
+
+
+
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">NewSingleThreadScheduledExecutorDemo.java, Lottery1.java, Lottery2.java, Lottery3.java</a>
+- Description:
+	
+		Introduction of this sample code:
+ 	
+ 		This NewSingleThreadScheduledExecutorDemo class demonstrates the use of the ScheduledExecutorService interface to schedule tasks for 
+		
+		execution. 
+ 	
+ 		It creates a new instance of ScheduledExecutorService using the newSingleThreadScheduledExecutor() method of the Executors class, 
+ 	
+ 		which returns a single-threaded executor. 
+ 	
+ 		It then schedules three tasks to run after a delay of one second each using the schedule() method of the ScheduledExecutorService 
+		
+		interface.
+ 			 
+	 		1) The first task is an instance of the Lottery1 class	 		  	 		  
+	 		
+	 		2) The second task is an instance of the Lottery2 class
+	 		
+	 		3) The third task is an instance of the Lottery3 class
+	 		
+
+		The result of obtaining tasks:
+			
+			1) The first and third's task are obtained using the get() method of the ScheduledFuture interface
+			
+			2) The second task is obtained using the getResult() method of the Lottery2 class	
+ 	
+	
 	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO, File, FileReader, BufferedReader, FileWriter, BufferedWriter, URL, InputStream, FileOutputStream, NIO, Path, Paths
