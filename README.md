@@ -1410,41 +1410,9 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description:  This code demonstrates the use of the Executor interface to execute multiple Runnable tasks asynchronously. The Executor interface provides a way to decouple task submission from task execution, allowing the tasks to be executed in parallel without blocking the main thread.
 	
 	
-12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
-
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/job">JobDemo4newCachedThreadPool.java, Task1,java, and Task2,java</a>
-- Description:
-		
-		1. This code implements a thread pool using the ThreadPoolExecutor class in Java. 
-	   The program creates a thread pool using the Executors.newCachedThreadPool() method, 
-	   which creates a thread pool that creates new threads as needed and reuses previously constructed threads when they are available.
-	
-		2. The program then submits 5 tasks to the thread pool, alternating between Task1 and Task2. 
-	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1).
-	
-		3. After all tasks have been submitted, the program initiates a graceful shutdown of the thread pool using executors.shutdown(). 
-	   The program then waits for 5 seconds for all tasks to be completed using executors.awaitTermination(5, TimeUnit.SECONDS). 
-	   If any threads inside the thread pool are not executed completely, the program outputs the thread name that is awaiting for remaining thread(s) being executed. 
-	   Otherwise, the program prints out "All tasks were executed and completed, so Pool thread was closed!".
-	   
-		4. The Task1 and Task2 classes implement the Runnable interface, which allows them to be executed in a thread pool. 
-	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1). 
-	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
-	
-
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lottery">JobDemo4newFixedThreadPool.java, Task.java</a>
-- Description:
-	
-		Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', differently.  
- 	
-	 	Which one is better depends on the specific requirements of the program. 
- 	
- 		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
-	
-	
 
 
-
+12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">
 
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">NewSingleThreadScheduledExecutorDemo.java, Lottery1.java, Lottery2.java, Lottery3.java</a>
 - Description:
@@ -1476,6 +1444,46 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 			
 			2) The second task is obtained using the getResult() method of the Lottery2 class	
  	
+	
+13. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/job">JobDemo4newCachedThreadPool.java, Task1,java, and Task2,java</a>
+- Description:
+		
+		1. This code implements a thread pool using the ThreadPoolExecutor class in Java. 
+	   The program creates a thread pool using the Executors.newCachedThreadPool() method, 
+	   which creates a thread pool that creates new threads as needed and reuses previously constructed threads when they are available.
+	
+		2. The program then submits 5 tasks to the thread pool, alternating between Task1 and Task2. 
+	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1).
+	
+		3. After all tasks have been submitted, the program initiates a graceful shutdown of the thread pool using executors.shutdown(). 
+	   The program then waits for 5 seconds for all tasks to be completed using executors.awaitTermination(5, TimeUnit.SECONDS). 
+	   If any threads inside the thread pool are not executed completely, the program outputs the thread name that is awaiting for remaining thread(s) being executed. 
+	   Otherwise, the program prints out "All tasks were executed and completed, so Pool thread was closed!".
+	   
+		4. The Task1 and Task2 classes implement the Runnable interface, which allows them to be executed in a thread pool. 
+	   Each task simulates some work by sleeping for a random amount of time between 1 and 5 seconds using TimeUnit.SECONDS.sleep(new Random().nextInt(5) + 1). 
+	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
+	
+
+	
+14. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
+
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lottery">JobDemo4newFixedThreadPool.java, Task.java</a>
+- Description:
+	
+		Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', differently.  
+ 	
+	 	Which one is better depends on the specific requirements of the program. 
+ 	
+ 		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
+	
+	
+
+
+
 	
 	
 ------------------------------------------------------------------------------
