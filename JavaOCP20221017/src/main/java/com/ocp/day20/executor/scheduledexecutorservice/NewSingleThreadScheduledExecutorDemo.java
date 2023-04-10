@@ -1,9 +1,33 @@
 package com.ocp.day20.executor.scheduledexecutorservice;
 /*
+ 	 1. Introduction of API - ScheduledExecutorService and ScheduledFuture:
+ 		
+ 		Both ScheduledExecutorService and ScheduledFuture are APIs provided by the Java programming language in Java 5, for scheduling tasks to be executed at a later time.
+ 		
+ 		These APIs allow developers to schedule and execute tasks at specific times or intervals, providing a convenient way to perform periodic or delayed operations in Java applications.
+ 		
+ 			1) ScheduledExecutorService is an interface in the java.util.concurrent package that provides methods to schedule tasks to be executed after a certain delay or at fixed intervals. 
+ 				
+ 			   It allows the creation of a thread pool of worker threads that can execute tasks in parallel. 
+ 			   
+ 			   It provides methods such as schedule(), which schedules a task to be executed once after a specified delay, and scheduleAtFixedRate() and scheduleWithFixedDelay(), 
+ 			   
+ 			   which schedule tasks to be executed repeatedly at a fixed rate or with a fixed delay between executions.
+ 		 		
+ 			2) ScheduledFuture is an interface that represents the result of a scheduled task that has not yet been executed. 
+ 			
+ 			   It provides methods to check the status of the task, cancel the task if necessary, and retrieve the result of the task once it has been executed. 
+ 			   
+ 			   It extends the Future interface, which represents the result of an asynchronous computation.
+ 			   
+ 		
+ 		
+ 		
+ 		
+ 			   
+ 	 2.	Introduction of this sample code:
  	
- 	NewSingleThreadScheduledExecutorDemo:
- 	 
- 		This class demonstrates the use of the ScheduledExecutorService interface to schedule tasks for execution. 
+ 		This NewSingleThreadScheduledExecutorDemo class demonstrates the use of the ScheduledExecutorService interface to schedule tasks for execution. 
  	
  		It creates a new instance of ScheduledExecutorService using the newSingleThreadScheduledExecutor() method of the Executors class, 
  	
