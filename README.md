@@ -1251,10 +1251,10 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 
 8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/callable">Introduction of Callable and FutureTask</a>
-> Lotto.java    <br>
-- Description:  The Lotto class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may throw an exception. The Lotto class contains a method call() which is called when the Lotto object is executed as a task.<br>
+> Lottery.java    <br>
+- Description:  The Lottery class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may throw an exception. The Lottery class contains a method call() which is called when the Lottery object is executed as a task.<br>
 
-> LottoMain.java <br>
+> LotteryMain.java <br>
 - Description:  The program is an example of using a FutureTask with a Callable to generate a set of random numbers as "Lucky Balls" for a lottery game. <br>
 
 > FutureTaskDemo1.java <br>
@@ -1432,7 +1432,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
 	
 
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lotto">JobDemo4newFixedThreadPool.java, Task.java</a>
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lottery">JobDemo4newFixedThreadPool.java, Task.java</a>
 - Description:
 	
 		Of this lesson, we demonstrate two type of thread pool - 'newCachedThreadPool' and 'newFixedThreadPool', differently.  
@@ -1512,7 +1512,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 > FileWriterDemo.java
 - Description: 
 	
-		This Java program generates a file named "lotto.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
+		This Java program generates a file named "lottery.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
  	
 	 	The file contains 10 lines of lottery numbers, with each line having 6 unique numbers between 1 and 42.
 	
@@ -1550,9 +1550,9 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description: 
 
 		
-		This Java program reads the content of a file named "lotto.txt" located in the subdirectory "data"  
+		This Java program reads the content of a file named "lottery.txt" located in the subdirectory "data"  
 
-		and creates a copy of its content in a new file named "lotto_Copy.txt" located in the same directory. 
+		and creates a copy of its content in a new file named "lottery_Copy.txt" located in the same directory. 
 
 		The program uses FileReader and FileWriter classes to read and write the file content, respectively.
  	
@@ -1616,7 +1616,7 @@ BufferedReaderExecutionTime.java
 - Description: 
 	
 		
-		This Java program reads data from a text file named "lotto.txt" located in the "data" subdirectory of the directory 
+		This Java program reads data from a text file named "lottery.txt" located in the "data" subdirectory of the directory 
 		
 		specified by the variable "root".
 
