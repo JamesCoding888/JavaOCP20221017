@@ -1,8 +1,8 @@
 package com.ocp.day21.io.copy;
 /*
-	This Java program reads the content of a file named "lotto.txt" located in the subdirectory "data" 
+	This Java program reads the content of a file named "lottery.txt" located in the subdirectory "data" 
 	
-	and creates a copy of its content in a new file named "lotto_Copy.txt" located in the same directory. 
+	and creates a copy of its content in a new file named "lottery_Copy.txt" located in the same directory. 
 	
 	The program uses FileReader and FileWriter classes to read and write the file content, respectively.
 */
@@ -18,9 +18,9 @@ public class CopyContent {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder"
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		// copy original file to new file
-		String pathOfCopyFile = "/lotto_Copy.txt";
+		String pathOfCopyFile = "/lottery_Copy.txt";
 		//
 		try (FileReader fileReader = new FileReader(pathOfFolder + pathOfFile); 
 			 FileWriter fileWriter = new FileWriter(pathOfFolder + pathOfCopyFile);) {					

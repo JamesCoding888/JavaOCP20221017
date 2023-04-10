@@ -14,7 +14,7 @@ public class FileLinesDemo {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder"
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		Path path = Paths.get(pathOfFolder + pathOfFile);				
 		// Use the Files.lines() method to read the lines of the file as a Stream 
 		// and prints them to the console using the forEach() method.

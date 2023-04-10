@@ -16,7 +16,7 @@ public class NewBufferedReaderDemo {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder"
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		Path path = Paths.get(pathOfFolder + pathOfFile);
 		// Use the Files.newBufferedReader() method to create a BufferedReader object, passing in the Path object. 
 		try (BufferedReader bufferedReader = Files.newBufferedReader(path)) {

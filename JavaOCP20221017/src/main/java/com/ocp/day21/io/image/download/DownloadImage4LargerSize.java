@@ -30,16 +30,42 @@ import java.net.URL;
 import java.net.URLConnection;
 public class DownloadImage4LargerSize {
     public static void main(String[] args) {
-        String pathOfImageSource = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
-        String pathOfDestination = "/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data";
-        String pathOfImageFile = "/beauty.jpg";
+        // pathOfImageSource is the URL of the image that we want to download
+    	String pathOfImageSource = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
+        // pathOfDestination is the path to the directory where we want to save the downloaded image
+    	String pathOfDestination = "/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data";
+        // pathOfImageFile is the name of the file that we want to save the downloaded image as
+    	String pathOfImageFile = "/beauty.jpg";
         try {
-            URL url = new URL(pathOfImageSource);
+            // Create a new URL object from the pathOfImageSource string.
+        	URL url = new URL(pathOfImageSource);
+        	// Open a connection to the URL using the openConnection() method of the URL object
+        	// and returns a URLConnection object that we can use to interact with the URL
             URLConnection connection = url.openConnection();
+            /*
+            	1) Create an InputStream object from the connection using the getInputStream() method of the URLConnection object. 
+                   This allows us to read the contents of the URL
+             	2) Create a new FileOutputStream object with the specified file path pathOfDestination + pathOfImageFile. 
+                   This allows us to write the contents of the URL to a file on the local file system.
+            */
             try (InputStream inputStream = connection.getInputStream();
                  FileOutputStream fileOutputStream = new FileOutputStream(pathOfDestination + pathOfImageFile)) {
-                byte[] buffer = new byte[4096];
+                // Creates a byte array buffer with a size of 4096 bytes (4KB).
+            	// This is the amount of data that we will read and write at a time.
+            	byte[] buffer = new byte[4096];
                 int bytesRead;
+                /*
+	                 1) Enters a loop that reads data from the input stream and writes it to the output stream 
+	                 	until there is no more data to read.
+	                 
+	                 2) The loop uses the read() method of the input stream to read data into the buffer. 
+	                 	The read() method returns the number of bytes read, which is stored in the bytesRead variable.
+	                 
+	                 3) The loop uses the write() method of the output stream to write the contents of the buffer to the output file. 
+	                    The write() method takes three arguments: the buffer to write, the starting offset within the buffer, and the number of bytes to write (which is equal to bytesRead in this case).
+	                 
+	                 4) The loop continues until there is no more data to read (which is indicated by inputStream.read() returning -1).
+                */
                 while ((bytesRead = inputStream.read(buffer)) != -1) {
                     fileOutputStream.write(buffer, 0, bytesRead);
                 }

@@ -19,7 +19,7 @@ public class FileReaderDemo {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder"
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		Scanner scan = new Scanner(System.in);
 		// If the user chooses option 1, the program reads the file character by character and prints each character until the end of the file is reached.
 		// If the user chooses option 2, the program reads the file character by character and appends each character to a StringBuilder object.
@@ -75,7 +75,7 @@ public class FileReaderDemo {
 
 /*
 	Console:
-			[Enter '1'] - Show all data of /lotto.txt | [Enter '2'] - Show all data of /lotto.txt in line
+			[Enter '1'] - Show all data of /lottery.txt | [Enter '2'] - Show all data of /lottery.txt in line
 			1
 			[12, 38, 10, 17, 9, 22]
 			[2, 15, 21, 10, 22, 26]
@@ -89,7 +89,7 @@ public class FileReaderDemo {
 			[30, 7, 35, 1, 42, 24]
 			
 	Console:	
-			[Enter '1'] - Show all data of /lotto.txt | [Enter '2'] - Show all data of /lotto.txt in line
+			[Enter '1'] - Show all data of /lottery.txt | [Enter '2'] - Show all data of /lottery.txt in line
 			2
 			12, 38, 10, 17, 9, 22, 2, 15, 21, 10, 22, 26, 41, 14, 23, 6, 21, 9, 26, 16, 29, 2, 31, 8, 14, 29, 5, 35, 20, 16, 23, 3, 19, 18, 9, 31, 24, 3, 23, 18, 28, 6, 32, 9, 20, 41, 2, 39, 39, 28, 9, 10, 15, 33, 30, 7, 35, 1, 42, 24, 
 

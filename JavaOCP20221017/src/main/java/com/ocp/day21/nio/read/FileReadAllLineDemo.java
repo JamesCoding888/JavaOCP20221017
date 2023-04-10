@@ -16,7 +16,7 @@ public class FileReadAllLineDemo {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder"
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		// The Paths.get() method is used to create a Path object that represents the full path to the file to be read
 		Path path = Paths.get(pathOfFolder + pathOfFile);		
 		// The Files.readAllLines() method is then called to read all the lines from the file. 

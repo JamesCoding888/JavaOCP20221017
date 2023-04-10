@@ -1,6 +1,6 @@
 package com.ocp.day21.io.write.filewriter;
 /*
- 	This Java program generates a file named "lotto.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
+ 	This Java program generates a file named "lottery.txt" in the "data" subdirectory of the directory path specified in the "root" variable. 
  	
  	The file contains 10 lines of lottery numbers, with each line having 6 unique numbers between 1 and 42.
 */
@@ -19,7 +19,7 @@ public class FileWriterDemo {
 		// Add the subdirectory "data" to this path using the variable "pathOfFolder" 
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		/*
 			 In Java, the FileWriter constructor accepts two arguments: 
 			 	1) 1st argument: The path of the file to be created or opened
@@ -46,7 +46,7 @@ public class FileWriterDemo {
 			*/
 			IntStream.rangeClosed(1, 10).forEach(i -> {				
 					try {
-						fileWriter.append(getLotto() + "\n");
+						fileWriter.append(getLottery() + "\n");
 					} catch (IOException e) {
 						e.printStackTrace();
 					}	
@@ -56,13 +56,13 @@ public class FileWriterDemo {
 		}
 	}	
 	
-	public static Set<Integer> getLotto() {
+	public static Set<Integer> getLottery() {
 		//	java.util.LinkedHashSet: A class that extends HashSet and maintains the insertion order of elements in a set
-        Set<Integer> lotto = new LinkedHashSet<>();
+        Set<Integer> lottery = new LinkedHashSet<>();
         Random random = new Random();
-        while (lotto.size() < 6) {
-            lotto.add(random.nextInt(42) + 1);
+        while (lottery.size() < 6) {
+            lottery.add(random.nextInt(42) + 1);
         }
-        return lotto;
+        return lottery;
     }
 }

@@ -2,7 +2,7 @@ package com.ocp.day21.io.read.bufferedreader;
 
 /*
  	
- 	This Java program reads data from a text file named "lotto.txt" located in the "data" subdirectory of the directory specified by the variable "root".
+ 	This Java program reads data from a text file named "lottery.txt" located in the "data" subdirectory of the directory specified by the variable "root".
  	
  	Both code samples, code sample #1 and code sample #2, achieve the same goal, which is to read the contents of a text file and print it to the console.  
  		
@@ -55,7 +55,7 @@ public class BufferedReaderExecutionTime {
 		String pathOfFolder = root + "/data";
 		// Set the path and filename of the file to be created as a string variable
 		// "pathOfFile"
-		String pathOfFile = "/lotto.txt";
+		String pathOfFile = "/lottery.txt";
 		// Record the start time
 		long startTime4One = System.nanoTime();
 		// code sample #1 

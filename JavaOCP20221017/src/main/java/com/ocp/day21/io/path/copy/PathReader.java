@@ -1,6 +1,6 @@
 package com.ocp.day21.io.path.copy;
-//String filePath = "src/main/java/com/ocp/day25_io/data/lotto.txt";
-// String filePath = "C:/src/main/java/com/ocp/day25_io/data/lotto.txt";
+//String filePath = "src/main/java/com/ocp/day25_io/data/lottery.txt";
+// String filePath = "C:/src/main/java/com/ocp/day25_io/data/lottery.txt";
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
