@@ -1410,7 +1410,42 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description:  This code demonstrates the use of the Executor interface to execute multiple Runnable tasks asynchronously. The Executor interface provides a way to decouple task submission from task execution, allowing the tasks to be executed in parallel without blocking the main thread.
 	
 	
-12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
+
+
+12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">Introduction of ScheduledExecutorService and ScheduledFuture</a>
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">NewSingleThreadScheduledExecutorDemo.java, Lottery1.java, Lottery2.java, Lottery3.java</a>
+- Description:
+	
+		Introduction of this sample code:
+ 	
+ 		This NewSingleThreadScheduledExecutorDemo class demonstrates the use of the ScheduledExecutorService interface to schedule tasks for 
+		
+		execution. 
+ 	
+ 		It creates a new instance of ScheduledExecutorService using the newSingleThreadScheduledExecutor() method of the Executors class, 
+ 	
+ 		which returns a single-threaded executor. 
+ 	
+ 		It then schedules three tasks to run after a delay of one second each using the schedule() method of the ScheduledExecutorService 
+		
+		interface.
+ 			 
+	 		1) The first task is an instance of the Lottery1 class	 		  	 		  
+	 		
+	 		2) The second task is an instance of the Lottery2 class
+	 		
+	 		3) The third task is an instance of the Lottery3 class
+	 		
+
+		The result of obtaining tasks:
+			
+			1) The first and third's task are obtained using the get() method of the ScheduledFuture interface
+			
+			2) The second task is obtained using the getResult() method of the Lottery2 class	
+ 	
+	
+13. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
 
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/job">JobDemo4newCachedThreadPool.java, Task1,java, and Task2,java</a>
 - Description:
@@ -1432,6 +1467,10 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	   When the task is executed, it outputs a message to the console indicating that it has been assigned to the thread pool and another message indicating that it has been executed.
 	
 
+	
+14. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
+
+
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor/lottery">JobDemo4newFixedThreadPool.java, Task.java</a>
 - Description:
 	
@@ -1441,6 +1480,10 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
  	
  		In general, it's a good idea to experiment with different thread pool configurations and measure their performance to determine the best fit for a specific program.
 	
+	
+
+
+
 	
 	
 ------------------------------------------------------------------------------
