@@ -20,8 +20,7 @@ package com.ocp.day20.invokeallAndinvokeany;
 	 	  	
 	 	  	   It does not return a Future object for each task.
 	
-	
-	
+		
 	Overall, this code demonstrates how to submit multiple tasks to a thread pool using the invokeAll method and obtain their results, 
 	
 	as well as how to obtain the result of the first completed task using the invokeAny method. 	
