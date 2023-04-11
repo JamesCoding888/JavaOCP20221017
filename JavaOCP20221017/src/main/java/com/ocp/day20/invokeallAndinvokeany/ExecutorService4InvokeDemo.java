@@ -2,9 +2,30 @@ package com.ocp.day20.invokeallAndinvokeany;
 /*
  	This is a Java code example that demonstrates the use of the ExecutorService.invokeAll() and ExecutorService.invokeAny() methods.
  	
- 	Overall, this code demonstrates how to submit multiple tasks to a thread pool using the invokeAll method and obtain their results, 
+ 	invokeAll() and invokeAny() are both methods of the ExecutorService interface in Java, which allow you to submit a collection of tasks to a thread pool for execution.
  	
- 	as well as how to obtain the result of the first completed task using the invokeAny method.
+ 	The main difference between the two methods is in their return types and behavior:
+ 	
+	 	invokeAll():
+	 		
+	 		1) invokeAll() takes a collection of Callable tasks, and returns a list of Future objects. 
+	 		
+	 		   The Future objects can be used to retrieve the result of each task after it has completed.
+	 		   
+	 		   i.e., invokeAll() submits all tasks for execution and waits for all of them to complete.
+	 	 		 	 	
+	 	invokeAny():
+	 	  
+	 	  	1) invokeAny() also takes a collection of Callable tasks, but it returns the result of the first task that completes successfully. 
+	 	  	
+	 	  	   It does not return a Future object for each task.
+	
+	
+	
+	Overall, this code demonstrates how to submit multiple tasks to a thread pool using the invokeAll method and obtain their results, 
+	
+	as well as how to obtain the result of the first completed task using the invokeAny method. 	
+ 	
  	
 */
 
@@ -29,6 +50,7 @@ public class ExecutorService4InvokeDemo {
         collection.add(new Lottery3());
         collection.add(new Lottery3());
         collection.add(new Lottery3());
+        System.out.println("****** Console of invokeAll ******");
         // Use the invokeAll method of the ExecutorService object to submit all the Callable objects to the thread pool for execution
         // The invokeAll method returns a list of Future objects that represent the results of the submitted tasks.
         List<Future<Integer>> list = executorService.invokeAll(collection);
@@ -36,9 +58,9 @@ public class ExecutorService4InvokeDemo {
         for(Future<Integer> future : list) {
             // Call the get method on each Future object to obtain the result of the corresponding task
         	// The get method blocks until the task completes and the result is available.
-        	System.out.println(future.get());
+        	System.out.println("Return the result of the corresponding task: " + future.get());
         }
-        System.out.println("------------------------------------------------");
+        System.out.println("****** Console of invokeAny ******");
         // Use the invokeAny method of the ExecutorService object to obtain the result of the first completed task
         // The invokeAny method blocks until at least one task completes and returns the result of the first task that completes successfully.
         Integer resultOfFirstTask = executorService.invokeAny(collection);
