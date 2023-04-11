@@ -1541,7 +1541,41 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 
 
-> <a href="">InvokeAll...</a>
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/invokeallAndinvokeany">ExecutorService4InvokeDemo.java, Lottery3.java</a>
+- Description:
+	
+		This is a Java code example that demonstrates the use of the ExecutorService.invokeAll() and ExecutorService.invokeAny() methods.
+ 	
+		invokeAll() and invokeAny() are both methods of the ExecutorService interface in Java, which allow you to submit a collection of tasks 
+		to a thread pool for execution. 	
+	
+		The main difference between the two methods is in their return types and behavior:
+ 	
+	 	
+			invokeAll():
+	 			 		
+				1) invokeAll() takes a collection of Callable tasks, and returns a list of Future objects. 
+	 			 		
+					The Future objects can be used to retrieve the result of each task after it has completed.
+	 		   
+					i.e., invokeAll() submits all tasks for execution and waits for all of them to complete.
+	 	 		 	 	
+
+			invokeAny():
+	 	  	 	  	
+				1) invokeAny() also takes a collection of Callable tasks, but it returns the result of the first task that completes 
+				   successfully. 
+	 	  	
+				   It does not return a Future object for each task.
+	
+		
+		Overall, this code demonstrates how to submit multiple tasks to a thread pool using the invokeAll method and obtain their results, 
+		
+		as well as how to obtain the result of the first completed task using the invokeAny method.
+	
+	
+	
 	
 	
 ------------------------------------------------------------------------------
