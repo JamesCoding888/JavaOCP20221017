@@ -1,4 +1,4 @@
-package com.ocp.day20.executor.scheduledexecutorservice;
+package com.ocp.day20.executor.scheduledexecutorservice.schedule;
 
 /*
 	This class implements the Runnable interface and defines a run() method that generates a random number 

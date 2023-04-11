@@ -1,4 +1,4 @@
-package com.ocp.day20.executor.scheduledexecutorservice;
+package com.ocp.day20.executor.scheduledexecutorservice.schedule;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;

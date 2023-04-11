@@ -1,4 +1,4 @@
-package com.ocp.day20.executor.scheduledexecutorservice;
+package com.ocp.day20.executor.scheduledexecutorservice.schedule;
 /*
  	 1. Introduction of API - ScheduledExecutorService and ScheduledFuture:
  		
