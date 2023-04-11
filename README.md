@@ -1577,6 +1577,53 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 	
 	
+
+	
+14. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/forkjoin">Introduction of Fork/Join framework</a><br>	
+	
+	
+		Introduction of Fork/Join framework:
+	
+			The Fork/Join framework is a Java concurrency mechanism that enables the parallel execution of tasks in a recursive divide-and-
+			conquer approach. 
+		
+			It is designed to efficiently handle workloads that can be broken down into smaller, independent pieces that can be processed in 
+			parallel.
+		
+			One of the key benefits of the Fork/Join framework is that it can take advantage of multiple processors and cores, 	
+			which can significantly improve the performance of parallelizable algorithms. 
+		
+			Additionally, the framework automatically balances the workload among the available threads, ensuring that each thread is 
+			working on a comparable amount of work.
+ 		
+	 		Overall, the Fork/Join framework is a powerful tool for writing efficient, parallelizable code in Java.
+ 		
+ 		
+			The Fork/Join framework consists of two main components: 
+
+				1) ForkJoinPool 
+
+						The ForkJoinPool is a thread pool that manages the execution of ForkJoinTasks.
+
+				2) ForkJoinTask
+
+						The ForkJoinTask is an abstract class that represents a task that can be divided into smaller subtasks. 
+
+						When a ForkJoinTask is executed, it may split itself into multiple subtasks, which are then executed in 
+						parallel by the threads in the ForkJoinPool.
+ 			  		
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/forkjoin/recursivetask">ForkJoinTaskDemo.java, Task.java</a>
+- Description:
+		
+		This program demonstrates how to use the Fork/Join framework to calculate the sum of an array of integers.
+	
+	
+	
+	
+	
+	
+	
 	
 ------------------------------------------------------------------------------
 # day21 Java Advanced: IO, File, FileReader, BufferedReader, FileWriter, BufferedWriter, URL, InputStream, FileOutputStream, NIO, Path, Paths
