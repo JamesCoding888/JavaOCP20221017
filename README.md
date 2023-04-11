@@ -1414,32 +1414,30 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 12. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">Introduction of ScheduledExecutorService and ScheduledFuture</a>
 
-		ScheduledExecutorService is an interface in the Java programming language that provides a way to schedule tasks to be executed at a 			
-		specified time or with a fixed delay. It is part of the java.util.concurrent package and is commonly used in multi-threaded applications 
 		
+		ScheduledExecutorService is an interface in the Java programming language that provides a way to schedule tasks to be executed at a 
+		specified time or with a fixed delay. It is part of the java.util.concurrent package and is commonly used in multi-threaded applications 
 		where tasks need to be executed periodically or at a specific time.
 
-		The ScheduledExecutorService interface provides methods for scheduling tasks to be executed, such as schedule(), scheduleAtFixedRate(), 		
-		and scheduleWithFixedDelay(). These methods take a Runnable or Callable object as a parameter and specify the time or delay at which the
-		
+
+		The ScheduledExecutorService interface provides methods for scheduling tasks to be executed, such as schedule(), scheduleAtFixedRate(), 
+		and scheduleWithFixedDelay(). These methods take a Runnable or Callable object as a parameter and specify the time or delay at which the 
 		task should be executed. The ScheduledExecutorService manages the execution of these tasks in a background thread, allowing the 
-		
 		application to continue running without interruption.
 
+
 		ScheduledFuture is an interface that represents a delayed result of a scheduled task. When a task is scheduled using the 
-		
 		ScheduledExecutorService, a ScheduledFuture object is returned that can be used to check the status of the task, cancel the task, or 
-		
 		retrieve the result of the task once it has completed. The ScheduledFuture interface extends the Future interface, which is used to 
-		
 		represent the result of an asynchronous computation.
 
-		Using the ScheduledExecutorService and ScheduledFuture interfaces, developers can easily schedule tasks to be executed at a specific 
-		
-		time or with a fixed delay, and manage the execution of those tasks in a background thread. This makes it easier to write efficient and 
-		
-		responsive multi-threaded applications that can perform tasks at specific intervals or times.
 
+		Using the ScheduledExecutorService and ScheduledFuture interfaces, developers can easily schedule tasks to be executed at a specific 
+		time or with a fixed delay, and manage the execution of those tasks in a background thread. This makes it easier to write efficient and 
+		responsive multi-threaded applications that can perform tasks at specific intervals or times.
+	
+	
+	
 	
 	
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice">NewSingleThreadScheduledExecutorDemo.java, Lottery1.java, Lottery2.java, Lottery3.java</a>
