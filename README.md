@@ -1443,7 +1443,40 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 			1) The first and third's task are obtained using the get() method of the ScheduledFuture interface
 			
 			2) The second task is obtained using the getResult() method of the Lottery2 class	
+ 
+	
+	
+	
+	
+	
+	
+
+> <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/executor/scheduledexecutorservice/scheduleWithFixedDelayAndscheduleAtFixedRate">NewSingleThreadScheduledExecutorDemo2.java, Lottery1.java, Lottery2.java</a>
+- Description:
+	
+		The NewSingleThreadScheduledExecutorDemo2 class demonstrates the use of a ScheduledExecutorService instance that executes two tasks: 
+		
+		Lottery1 and Lottery2. 
  	
+	 	ScheduledExecutorService is a Java interface that provides methods to schedule the execution of tasks at a specified time or with a 
+		
+		fixed delay/interval.
+ 	
+	 	Please notice the following code is unreachable. 
+ 	
+			scheduledFuture4LotteryTask2.get(); // wait for Lottery2 to complete
+			System.out.println("Lottery2 task completed time: " + new Date());
+			scheduledExecutorService.shutdown();
+
+ 		This is because scheduledFuture4LotteryTask2.get() will block the thread until the task is complete, but the task is scheduled to run 
+		
+		indefinitely every second using scheduleAtFixedRate(). Therefore, scheduledFuture4LotteryTask2.get() will never complete, and the 
+		
+		subsequent code to print the completion time and shutdown the executor service will never execute.
+	
+	
+	
+	
 	
 13. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/threadpoolexecutor">Introduction of ThreadPoolExecutor</a><br>	
 
