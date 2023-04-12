@@ -1634,7 +1634,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 
 			2) Implementing the Fibonacci sequence can be a good exercise for beginner programmers to learn these concepts.
 
-			3) Note that for larger values of n, the recursive algorithm can be very slow and may cause a stack overflow error. 
+			3) Note that for larger values of THRESHOLD, the recursive algorithm can be very slow and may cause a stack overflow error. 
 
 			   In practice, it is often better to use an iterative algorithm or a more efficient algorithm, such as dynamic programming, to 
 			   
