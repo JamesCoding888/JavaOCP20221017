@@ -5,6 +5,32 @@ package com.ocp.day20.fibonacci;
 	
 	The class FibonacciForkJoinWithForkJoinPool extends the RecursiveTask class, which represents a task that can be split into smaller subtasks and executed asynchronously in separate threads. 
 	
+	Also, the class FibonacciForkJoinWithForkJoinPool allows for more control over the number of threads used.
+	
+	In Summary of both of the FibonacciForkJoinWithInvokeAll and FibonacciForkJoinWithForkJoinPool classes:
+	
+		1) Both of classes use the fork/join framework to compute the nth Fibonacci number recursively in parallel. 
+	
+		   However, they differ in the way the subtasks are executed and the number of threads used.
+	
+		2) FibonacciForkJoinWithInvokeAll:
+	
+		   Use the invokeAll() method to execute the subtasks asynchronously in separate threads. 
+		   
+		   The two subtasks are created and added to a list, which is then passed to the invokeAll() method. 
+		   
+		   The invokeAll() method returns when all the subtasks are complete, and the results are obtained using the join() method.
+		   
+		3) FibonacciForkJoinWithForkJoinPool:
+			
+		   Use the ForkJoinPool class to execute the subtasks. The ForkJoinPool class is instantiated with the desired number of threads, and the invoke() method is called on the main task to execute the computation. 
+		   
+		   The invoke() method returns the result of the computation, which is obtained using the join() method.
+		   
+		   FibonacciForkJoinWithForkJoinPool also has a maximum number of threads limit. The number of threads created is based on the number of processors available and also the maximum limit set as MAXIMUM_NUMBER_THREADS.
+		   
+		   The ForkJoinPool will create threads up to this limit, and if there are more subtasks than threads available, some of the subtasks will have to wait for a thread to become available before they can be executed.
+		   		 
 */
 
 
