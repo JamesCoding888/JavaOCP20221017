@@ -46,23 +46,16 @@ public class FibonacciForkJoin extends RecursiveTask<Integer> {
             // Finally, the results of the two subtasks are added together and returned as the result of the current task
             return fibonacciForkJoin2.compute() + fibonacciForkJoin1.join();
         }
-    }
-    public static void main(String[] args) {
-        // Create an instance of FibonacciForkJoin with the specific value
-    	int n = 48;
-        FibonacciForkJoin fibonacci = new FibonacciForkJoin(n);
-        long startTime = System.nanoTime();
-        int result = fibonacci.compute();
-        long endTime = System.nanoTime();
-        System.out.println("The " + n + "th Fibonacci number is: " + result);
-        System.out.println("Elapsed time: " + (endTime - startTime) + " nanoseconds");
-    }
+    }  
+
+	public static void main(String[] args) {
+		// Create an instance of FibonacciForkJoin with the specific value
+		int n = 48;
+		FibonacciForkJoin fibonacci = new FibonacciForkJoin(n);
+		long startTime = System.nanoTime();
+		int result = fibonacci.compute();
+		long endTime = System.nanoTime();
+		System.out.println("The " + n + "th Fibonacci number is: " + result);
+		System.out.println("Elapsed time: " + (endTime - startTime) + " nanoseconds");
+	}	
 }
-
-
-/*
-	Console:
-	 		The 48th Fibonacci number is: 512559680
-			Elapsed time: 42156460125 nanoseconds
-
-*/

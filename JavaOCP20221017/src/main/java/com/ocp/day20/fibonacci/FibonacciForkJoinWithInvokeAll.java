@@ -31,25 +31,25 @@ public class FibonacciForkJoinWithInvokeAll extends RecursiveTask<Integer> {
         if (n <= THRESHOLD) {
             return n;
         } else {
-            FibonacciForkJoin fibonacciForkJoin1 = new FibonacciForkJoin(n - 1);
-            FibonacciForkJoin fibonacciForkJoin2 = new FibonacciForkJoin(n - 2);
+        	FibonacciForkJoinWithInvokeAll fibonacciForkJoinWithInvokeAll01 = new FibonacciForkJoinWithInvokeAll(n - 1);
+        	FibonacciForkJoinWithInvokeAll fibonacciForkJoinWithInvokeAll02 = new FibonacciForkJoinWithInvokeAll(n - 2);
             // Create a list to hold the subtasks
-            List<FibonacciForkJoin> subtasks = Arrays.asList(fibonacciForkJoin1, fibonacciForkJoin2);
+            List<FibonacciForkJoinWithInvokeAll> subtasks = Arrays.asList(fibonacciForkJoinWithInvokeAll01, fibonacciForkJoinWithInvokeAll02);
             /*
 	            Call the invokeAll() method on the subtasks, which will execute all the subtasks
 	            asynchronously in separate threads. This allows the current thread to continue
 	            computing while waiting for the results of the subtasks.
             */
             invokeAll(subtasks);
-            return fibonacciForkJoin2.join() + fibonacciForkJoin1.join();
+            return fibonacciForkJoinWithInvokeAll02.join() + fibonacciForkJoinWithInvokeAll01.join();
         }
     }
 
     public static void main(String[] args) {
         int n = 48;
-        FibonacciForkJoin fibonacci = new FibonacciForkJoin(n);
+        FibonacciForkJoinWithInvokeAll fibonacciForkJoinWithInvokeAll = new FibonacciForkJoinWithInvokeAll(n);
         long startTime = System.nanoTime();
-        int result = fibonacci.compute();
+        int result = fibonacciForkJoinWithInvokeAll.compute();
         long endTime = System.nanoTime();
         System.out.println("The " + n + "th Fibonacci number is: " + result);
         System.out.println("Elapsed time: " + (endTime - startTime) + " nanoseconds");
