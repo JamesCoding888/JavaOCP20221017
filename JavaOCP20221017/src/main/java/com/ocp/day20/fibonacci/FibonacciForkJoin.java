@@ -35,16 +35,16 @@ public class FibonacciForkJoin extends RecursiveTask<Integer> {
         		Create two new instances of the FibonacciForkJoin class, passing n - 1 and n - 2 as arguments to their respective constructors. 
             	These instances represent the subtasks that will compute the (n-1)th and (n-2)th numbers in the Fibonacci sequence.
             */	
-            FibonacciForkJoin f1 = new FibonacciForkJoin(n - 1);
-            FibonacciForkJoin f2 = new FibonacciForkJoin(n - 2);
+            FibonacciForkJoin fibonacciForkJoin1 = new FibonacciForkJoin(n - 1);
+            FibonacciForkJoin fibonacciForkJoin2 = new FibonacciForkJoin(n - 2);
             /*
-              Call the fork() method on the first subtask f1, which will execute the task asynchronously in a separate thread.
-              This allows the current thread to continue computing the second subtask f2. 
+              Call the fork() method on the first subtask fibonacciForkJoin1, which will execute the task asynchronously in a separate thread.
+              This allows the current thread to continue computing the second subtask fibonacciForkJoin2. 
             */
-            f1.fork();
+            fibonacciForkJoin1.fork();
             // Call join() on the first instance, which waits for its result to be available before returning its value
             // Finally, the results of the two subtasks are added together and returned as the result of the current task
-            return f2.compute() + f1.join();
+            return fibonacciForkJoin2.compute() + fibonacciForkJoin1.join();
         }
     }
     public static void main(String[] args) {
