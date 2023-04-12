@@ -8,7 +8,7 @@ package com.ocp.day20.fibonacci;
 	 	
 	 	2) Implementing the Fibonacci sequence can be a good exercise for beginner programmers to learn these concepts.
 	 	
-	 	3) Note that for larger values of n, the recursive algorithm can be very slow and may cause a stack overflow error. 
+	 	3) Note that for larger values of THRESHOLD, the recursive algorithm can be very slow and may cause a stack overflow error. 
 	 	
 	 	   In practice, it is often better to use an iterative algorithm or a more efficient algorithm, such as dynamic programming, to compute large Fibonacci numbers.
 	 	
@@ -26,8 +26,11 @@ package com.ocp.day20.fibonacci;
  	
 */
 public class FibonacciExecutionTime {
-    public static void main(String[] args) {
-        int n = 48; // the nth Fibonacci number to compute
+	
+	private static final int THRESHOLD = 1;
+    private static int n = 48; // the nth Fibonacci number to compute
+	
+    public static void main(String[] args) {    	    
         // Record the start time
         long startTime4First = System.nanoTime();
         int result4First = fibonacciFirst(n);
@@ -55,7 +58,7 @@ public class FibonacciExecutionTime {
     }
     // Recursive algorithm, computes the nth number in the Fibonacci sequence using a recursive algorithm.
     public static int fibonacciFirst(int n) {
-        if (n <= 1) {
+        if (n <= THRESHOLD) {
         	// System.out.println(n);
             return n;
         } else {
@@ -71,10 +74,10 @@ public class FibonacciExecutionTime {
      	
      	The loop continues until the nth Fibonacci number is computed.
 
-		This algorithm has linear time complexity, which means it is more efficient than the recursive algorithm for large values of n.
+		This algorithm has linear time complexity, which means it is more efficient than the recursive algorithm for large values of THRESHOLD.
     */
     public static int fibonacciSecond(int n) {
-        if (n <= 1) {
+        if (n <= THRESHOLD) {
         	return n;
         } else {
             int fibNMinus2 = 0;
@@ -99,10 +102,10 @@ public class FibonacciExecutionTime {
      	
      	This way, we avoid recomputing the same Fibonacci numbers multiple times.
 
-		This algorithm also has linear time complexity and is more efficient than the recursive algorithm for large values of n.
+		This algorithm also has linear time complexity and is more efficient than the recursive algorithm for large values of THRESHOLD.
     */    
     public static int fibonacciThird(int n) {
-        if (n <= 1) {
+        if (n <= THRESHOLD) {
             return n;
         } else {
             int[] fib = new int[n+1];
@@ -115,3 +118,15 @@ public class FibonacciExecutionTime {
         }
     }
 }
+
+
+
+/*
+ 	Console:
+ 				The 48th Fibonacci number is: 512559680
+				The 48th Fibonacci number is: 512559680
+				The 48th Fibonacci number is: 512559680
+				Elapsed time for fibonacciFirst: 15761124291 nanoseconds
+				Elapsed time for fibonacciSecond: 876500 nanoseconds
+				Elapsed time for fibonacciThird: 864417 nanoseconds
+*/
