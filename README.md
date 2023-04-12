@@ -1660,18 +1660,6 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 	
 	
 
-
-
-> <a href="https://github.com/JamesCoding888/JavaOCP20221017/blob/master/JavaOCP20221017/src/main/java/com/ocp/day20/fibonacci/FibonacciForkJoin.java">FibonacciForkJoin.java</a>
-- Description:
-		
- 		
- 		The following code demonstrates three different ways of computing the nth Fibonacci number, using recursion, iteration, and dynamic 
-		programming, and compares the execution times of each approach.
- 		
- 		For the sample code with fork/join framework to compute the nth Finonacci number, please refer to FibonacciForkJoin.java.
-	
-
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/blob/master/JavaOCP20221017/src/main/java/com/ocp/day20/fibonacci/FibonacciForkJoin.java">FibonacciForkJoin.java</a>
 - Description:
 		
