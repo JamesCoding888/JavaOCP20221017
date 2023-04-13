@@ -1554,7 +1554,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		In the main thread, we print a message and sleep for 5 seconds before printing another message. 
 		
 		Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread 
-		finishes <br> execution, even though the daemon thread is still running. 
+		finishes execution, even though the daemon thread is still running. 
 		
 		For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java 
 
