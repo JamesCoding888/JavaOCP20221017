@@ -1399,10 +1399,11 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description:  
 
 		The try-catch and finally statement for exception handling, the block code of "finally" MUST be executed eventually the code block of 
-		catch statement does NOT handle any exception/error. <br>
+		catch statement does NOT handle any exception/error. 
+	
 
 		Of this lesson, we are going to demonstrate a function of "return" and "System.exit(0)" with application of try-catch and finally 
-		statement.<br>
+		statement.
 
 > ExceptionWithTermination02.java 
 - Description:  
@@ -1448,12 +1449,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > DataAnalysisException.java <br>
 - Description:  
 
-		You will learn from this lesson:  <br>
-			1. API of Gson (external API, released by Google) <br>
-			2. API of gson.fromJson <br>
-			3. API of URL <br>
-			4. API of useDelimiter <br>
-			5. Open source of json content on-line <br>
+		You will learn from this lesson:  
+			1. API of Gson (external API, released by Google) 
+			2. API of gson.fromJson 
+			3. API of URL 
+			4. API of useDelimiter 
+			5. Open source of json content on-line 
 			Link as following -> https://data.coa.gov.tw/Service/OpenData/FromM/AgricultureiRiceFailure.aspx
 
 > DelimiterSample.java
@@ -1474,12 +1475,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > Area.java
 - Description: 
 
-		Created methods of getArea() and getPerimeters() for returning the calculation to main class.<br>
+		Created methods of getArea() and getPerimeters() for returning the calculation to main class.
 
 > AssertionDemo.java
 - Description: 
 
-		The application of assert keyword of Java 1.4 <br>
+		The application of assert keyword of Java 1.4 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/Test/java/day18">Introduction of Junit Test</a>
 > TestArea.java
@@ -1493,7 +1494,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > TestConnection4MySQL.jaba
 - Description: 
 
-		Of this lesson, you will learn the JDBC Architechture. <br>
+		Of this lesson, you will learn the JDBC Architechture. 
 		
 		Note: This lesson will need to udpate following operation of JDBC 4.0 META-INF > service > java.sql.Driver [Continue] 
 
@@ -1501,13 +1502,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > Select.java
 - Description: 
 
-		Application of query according to SELECT statement of MySQL <br>
+		Application of query according to SELECT statement of MySQL 
 
 [Continue]
 > Select4ClientDataSource1.java <br>
 - Description: 
 
-		Application of query with combination of external resource from "org.apache.derby.jdbc.ClientDataSource" <br>
+		Application of query with combination of external resource from "org.apache.derby.jdbc.ClientDataSource" 
 		
 		Note: Begining of this lesson, we did convert Dynamic Web Project to Maven Project. 
 
@@ -1548,20 +1549,20 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description: 
 		
 		Of this lesson, we create a daemon thread that runs an infinite loop, printing a message every second. We set the daemon flag to true 
-		which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. <br>
+		which is likely calling method of setDaemon(true) to mark the thread as a daemon thread. 
 		
-		In the main thread, we print a message and sleep for 5 seconds before printing another message. <br>
+		In the main thread, we print a message and sleep for 5 seconds before printing another message. 
 		
 		Because the daemon thread is running in the background and does not block the main thread, the program will exit after the main thread 
-		finishes <br> execution, even though the daemon thread is still running. <br>
+		finishes <br> execution, even though the daemon thread is still running. 
 		
-		For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java <br>
+		For the specifically operation of Daemon thread, please refer to the DaemonThreadExample2.java 
 
 > DaemonThreadExample2.java and Log.java <br>
 - Description:  
 
 		If you call the setDaemon(true) method after stating of the thread, the method of "public final void setDaemon(boolean on) {...}" will 
-		throw IllegalThreadStateException. <br>
+		throw IllegalThreadStateException. 
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/thread/priority">Introduction of Thread Priority</a><br>
 > ThreadPriority.java and Log.java <br>
@@ -1573,12 +1574,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > Guesses.java <br>
 - Description:  
 
-		Instantiate the instance of LuckyBall and initiate the fields of id_num, name, number and threadName. <br>
+		Instantiate the instance of LuckyBall and initiate the fields of id_num, name, number and threadName. 
 
 > LuckyBall.java <br>
 - Description:  
 
-		Design a method of Algorithm for record of how many times of each thread being conducted into guessing the Lucky Ball from users. <br>
+		Design a method of Algorithm for record of how many times of each thread being conducted into guessing the Lucky Ball from users. 
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/runnable/daemon">Introduction of Runnable</a> <br>
 Continue of DaemonThreadExample1.java, we updated the inheritance of Log.java from "extends to Thread" to "implements Runnable" <br>
@@ -1620,12 +1621,12 @@ Because only one super class could be extended to, what if we need to extend to 
 > DaemonRunnableExample1.java and LogImpl1.java <br>
 - Description: 
 
-		Continue of DaemonThreadExample1 <br>
+		Continue of DaemonThreadExample1 
 
 > DaemonRunnableExample2.java and LogImpl2.java <br>
 - Description: 
 
-		Continue of DaemonThreadExample2  <br>
+		Continue of DaemonThreadExample2  
 
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod">Synchronized Methods</a> <br>
@@ -1651,14 +1652,14 @@ Because only one super class could be extended to, what if we need to extend to 
 - Description:  
 		
 		How to make non-synchronized method to be likely with same synchronized function? Please read the code of three consoles, respectively.
-		<br>
+		
  
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod/cookiesdispatcher">Cookies.java, CookieNotifyTest.java, Eat.java and Put.java</a>
 - Description:  
 
 		These sample codes that simulate a plate of cookies that can be eaten by a dog and refilled by an owner, and also test the 
 		synchronization of the eat() and put() methods in the Cookies class to ensure that the dog and the owner interact with the plate of 
-		cookies correctly. <br>
+		cookies correctly. 
 
 
 > <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod/e_commerce">Customer.java, Item.java, Order.java, OrderAcceptor.java, OrderProcessor.java and OrderQueue.java</a>
@@ -1666,7 +1667,7 @@ Because only one super class could be extended to, what if we need to extend to 
 
 		You have a multi-threaded application that processes orders for an e-commerce website. One thread might be responsible for accepting 
 		new orders and adding them to a queue, while another thread might be responsible for processing orders from the queue and updating the 
-		website's inventory.<br>
+		website's inventory.
 
 > <a
 href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/synchronizedmethod/e_commence2">Customer2.java, Item.java, Order.java, OrderAcceptor2.java, OrderProcessor2.java and OrderQueue2.java</a>
@@ -1680,7 +1681,7 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description:  
 
 		Of this application of transaction demonstration, you will learn a strictly bug while using non-synchroized during transaction. To make 
-		a method synchronized, simply add the synchronized keyword to its declaration<br>  
+		a method synchronized, simply add the synchronized keyword to its declaration
 
 
 
@@ -1689,23 +1690,23 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 - Description:  
 		
 		The Lottery class implements Callable<Set<Integer>> which means that it can be used as a task that returns a set of integers and may 
-		throw an exception. The Lottery class contains a method call() which is called when the Lottery object is executed as a task.<br>
+		throw an exception. The Lottery class contains a method call() which is called when the Lottery object is executed as a task.
 
 > LotteryMain.java <br>
 - Description:  
 
 		The program is an example of using a FutureTask with a Callable to generate a set of random numbers as "Lucky Balls" for a lottery 
-		game. <br>
+		game. 
 
 > FutureTaskDemo1.java <br>
 - Description:  
 
-		The FutureTaskDemo1 class is an example of how to use FutureTask and Thread in Java. <br>
+		The FutureTaskDemo1 class is an example of how to use FutureTask and Thread in Java. 
 
 > FutureTaskDemo2.java <br>
 - Description:  
 
-		The FutureTaskDemo2 class is an example of how to use FutureTask and ExecutorService in Java. <br>
+		The FutureTaskDemo2 class is an example of how to use FutureTask and ExecutorService in Java. 
 
 	
 9. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day20/closeable">Introduction of Closeable</a><br>
@@ -1751,13 +1752,13 @@ href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221
 > CyclicBarrierImplThread.java
 - Description:  
 
-		This code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program. <br>
+		This code demonstrates how to use the CyclicBarrier class to synchronize multiple threads in a concurrent program. 
 
 > CyclicBarrierImplRunnable.java
 - Description:  
 	
 		This implementation, it is similar to the one (i.e., CyclicBarrierImplThread.java) with threads, but uses Runnable tasks instead of 
-		directly creating threads. <br>
+		directly creating threads. 
 
 > CyclicBarrierImplCallable.java
 - Description:  
