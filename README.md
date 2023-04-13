@@ -283,8 +283,13 @@
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerPractice">Scanner API Practice</a>
 
 > ScannerDemo.java 
-- Description:  TBD
--
+- Description:  
+		
+		
+		This lesson we introduce the API of Scanner of hasNext(T pattern), hasNext() and scan.next().  
+		
+		此課程介紹如何使用 Scanner 的 API - hasNext(T pattern)、hasNext() 和 scan.next()
+		
 
 > ScannerFilter.java 
 - Description:  TBD
