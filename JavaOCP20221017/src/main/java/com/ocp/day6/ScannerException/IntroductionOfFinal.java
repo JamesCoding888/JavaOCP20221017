@@ -1,11 +1,13 @@
 package com.ocp.day6.ScannerException;
 
 /*
+ 	This Java program demonstrates the use of the final keyword in various contexts.
+ 	
  	=================================================================
  	
  	final is a non-access modifier applicable only to the following:
  		
- 		1) a variable: To Create an Constant Variable, and Must be initialized
+ 		1) a variable: To Create a Constant Variable, and Must be initialized
  		   			 		   
  		2) a method: Prevent method Overriding
  		
@@ -30,7 +32,8 @@ package com.ocp.day6.ScannerException;
 	
 */
 
-// Prevent Inheritance (無法被繼承)
+// a final class that cannot be subclassed or extended further. This means that no other class can inherit from a final class, and its behavior cannot be altered. 
+// 無法被繼承
 final class Alcoholic_Beverages{
 	/*
 	  A method of drinkAlcoholicBeveragesInDrivingCar (一支喝酒不開車之方法)
@@ -106,6 +109,4 @@ public class IntroductionOfFinal
 			Don't Drink And Drive !!! 
  
 
-			
-	
 */
