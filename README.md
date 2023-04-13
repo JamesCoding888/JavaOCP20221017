@@ -292,9 +292,14 @@
 		
 
 > ScannerFilter.java 
-- Description:  TBD
-- 
+- Description:  
 
+		This Java program reads input from the user using a Scanner object and then collects the input into different lists 
+ 	
+	 	based on the type of input. 
+ 	
+ 		The program then adds the lists to a larger list called "list4TimingController" and prints the contents of that list.
+ 
 
 
 > ScannerForPractice_Loop_And_If.java 
