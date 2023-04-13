@@ -428,20 +428,57 @@
 
 
 > ScannerForPractice_Loop_And_If.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java program that uses the Scanner class to read input from the user and control the execution of the program 
+ 		using loops and conditional statements (i.e., break and return).
+	
+		'break' : break loop
+		'return' : Terminate operation of current method
+
 
 
 
 > ScannerLimiter.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java program that uses a Scanner object to take user input and limit the number of iterations in a while-loop.
+ 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/ScannerException">Introduction of Scanner Exception</a>
 
 > IntroductionOfFinal.java
-- Description:  TBD
-- 
+- Description:  
+
+		This Java program demonstrates the use of the final keyword in various contexts.
+ 	
+
+		=================================================================
+ 	
+		final is a non-access modifier applicable only to the following:
+
+			1) a variable: To Create a Constant Variable, and Must be initialized
+
+			2) a method: Prevent method Overriding
+
+			3) a class: Prevent Inheritance
+
+			4) final variable Must be initialized at early beginning or inside Constructor
+		   
+		   
+ 		=================================================================
+ 	
+		關於 final 變數之用法如下:
+
+			1) 用來宣告一個類別、函數、或者變數
+
+			2) 類別: 當宣告在類別上時，該類別就無法被繼承！
+
+			3) 函數: 當一個函數被宣告為 final 時，則繼承他的子類別無法覆寫
+
+			4) final 變數，必須被初始化，其初始化之方式有兩種，一種在一開始設計變數時就給定，另一種則是在建構子中
+
+		=================================================================
 
 
 > ScannerIllegalStateException.java 
