@@ -1,8 +1,13 @@
 package com.ocp.day1;
+/*
+		This program is giving three design of methods (eg, calcSum, calcAvg and calcSD) to calculate the add-up score and average score and 
+		standard deviation of students 
 
+		此程式建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
+*/
 public class CalcMath {
 	 public static void main(String[] args) {
-	        // 桃園三結義學生時代成績 100, 95, 80
+	        // 學生成績 100, 95, 80
 	        // 計算總分與平均
 	        int x = 100, y = 95, z = 80;
 	        int sum = x + y + z;

@@ -1,5 +1,9 @@
 package com.ocp.day1;
+/*
+ 		Giving the both of BMI-method calculation but different concept.
 
+		如 BMIUtil.java 所述， 此節調整為 BMI method 工具，供開發者使用
+*/
 public class CalcBMI {
 	public static void main(String[] args) {
 		double h1 = 170;
