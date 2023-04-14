@@ -1,5 +1,21 @@
 package com.ocp.day2;
-
+/*
+		1) This program goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on 
+		   using length of Array object to print out the value of Array object.
+		
+		   介接如何使用 for-loop 和 for-each 的方式，將陣列中的值印出，另外方式是藉由抓取陣列的長度，將陣列的值印出
+		
+		2) Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
+		
+		   將學到如何使用 Oracle 提供的 API - Arrays.toString(name_of_ArrayObject)，在 package java.util 中
+		
+		3) Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - 
+		   Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package 
+		   java.util;".
+		
+		   介紹 Java 1.8 提供的 API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", 
+		   "))，在 Oracle 中的 package java.util，將陣列中的值印出 
+*/
 import java.util.Arrays; // 提供一些好用的陣列工具
 
 public class ArrayDemo2 {

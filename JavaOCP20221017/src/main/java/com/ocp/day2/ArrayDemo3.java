@@ -1,4 +1,14 @@
 package com.ocp.day2;
+/*
+		Of this program, we design methods to get the result of Sum, Average, Maximum and Minimum value from Array object. Please see the 
+		following methods that presented in this session 
+		
+		此程式建立了 4 個 method 去獲取分數之和、平均、最小值和最大值
+		1) getSum(int[] array)
+		2) getAvg(int[] array)
+		3) getMin(int[] array)
+		4) getMax(int[] array)
+*/
 public class ArrayDemo3 {
 	public static void main(String[] args) {
 		// 計算個數、總和、平均、最大值、最小值

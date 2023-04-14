@@ -1,5 +1,9 @@
 package com.ocp.day2;
-
+/*
+		This program will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
+		
+		本程式將說明如何將一維陣列初始化，並計算陣列物件的長度
+*/
 public class ArrayDemo1 {
     public static void main(String[] args) {
         int[] x = new int[3]; // [0, 0, 0]
