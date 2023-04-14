@@ -795,35 +795,123 @@ TBD
 
 
 > DemoInheritanceAndConstructors.java 
-- Description:  TBD
-- 
+- Description:  
+
+	   	A Java file contains only ONE public class with a particular name. 
+	   	If you create another class with same name it will be a duplicate class. 
+	   	Still if you try to create such class then the compiler will generate a compile time error.
+	  
+	   	In fact, you can’t create TWO public classes in a single file, 
+	   	Only one class should be public and it should be the name of the class.
+	   	If you try to create two public classes in same file,
+	   	the compiler generates a compile time error.
+	  
+	   	請讀者注意，Java 在進行 compiler 時，一個 Java 檔案中，只允許一個 public class，如果有兩個 public class，
+	   	compiler 是不會通過的
+	  
+	   	E.g., class Father -> public class Father  // error 
 
 
 
 > Overloading01.java 
-- Description:  TBD
-- 
+- Description:  
+
+
+		Method overloading is a feature of Java in which a class has more than one method of the same name and their parameters are different.
+		In other words, we can say that Method overloading is a concept of Java in which we can create multiple methods of the same name in the 
+		same class, but type differently or length of parameters differently will decide which method will be invoked.
+
+		Java supports method overloading through two mechanisms:
+
+		1) By changing the data type of parameters 
+		2) By changing the number of parameters
+
+		=================================================================
+
+		方法重載是 Java 的一個特性:
+		1) 意思是一個類有多個同名方法，但帶入的型別不同 
+		2) 參數長度不同，而決定要呼叫哪一個方法
 
 
 > Overloading02.java 
-- Description:  TBD
-- 
+- Description:  
+
+ 		This is a Java program that demonstrates method overloading in a food ordering scenario. 
+ 		
+ 		The program defines a class called Overloading02 that has four different methods all named menu, but with different parameter types and 
+		numbers.
+ 		
+ 		此範例講述方法重載 (參數長度不同)
 
 
 
 > PrimitiveClass.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This lesson we introduce the Primitive type
+		本節介紹基本 "基本資料型別"
+
+		A primitive data type specifies the size and type of variable values, 
+		and it has no additional methods. 
+		基本型別 (或稱原始型別) 指定變數值的大小和類型，無其它方法。
+
+		There are eight primitive data types in Java (Java 中有八種原始資料型別):    		
+		Data Type		Size			Description
+		byte			1 byte			Stores whole numbers from -128 to 127
+		short			2 bytes			Stores whole numbers from -32,768 to 32,767
+		int				4 bytes			Stores whole numbers from -2,147,483,648 to 2,147,483,647
+		long			8 bytes			Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+		float			4 bytes			Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+		double			8 bytes			Stores fractional numbers. Sufficient for storing 15 decimal digits
+		boolean			1 bit			Stores true or false values
+		char			2 bytes			Stores a single character/letter or ASCII (American Standard Code for Information 
+								Interchange, 美國信息交換標準編碼) values							
+								Introduction of ASCII -> https://zh.wikipedia.org/wiki/ASCII
+
+
+		<A kindly reminder - 溫馨提醒>
+		1) boolean: The boolean data type has only two possible values: true and false. 
+				Use this data type for simple flags that track true/false conditions. 
+				This data type represents 1-bit of Size.
+				There are some subtle differences between programming languages (e.g., C and Java), for your information.
+				For C language, Boolean variable is stored as 16-bit (2-byte) values.
+
+					
+				boolean 資料型別，只有兩種值: true 和 false
+				使用此資料型別，作為簡易偵測條件之 '真' 和 '否' 
+			    	boolean 資料型別在 Java 中，只佔 1 bit 記憶體空間
+			    	我們需特別注意編程語言（例如 C 和 Java）之間的一些細微差別
+			    	關於 C 語言之 boolean 資料型別則佔 16-bit (2-byte) 記憶體	    	    
+
+
+		2) char: The char data type is a single 16-bit Unicode character. 
+			 It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
+			 char 資料型別，係單個 16 位元 Unicode 字符。
+			 統一編碼的最小值為 '\u0000'（或 0），最大值為 '\uffff'（或 65,535)。
+
 
 
 > WrapperClass1.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This Java program demonstrates the difference between using wrapper classes in versions 1.0-1.4 and versions 1.5 and above. 
+		
+		In versions 1.0-1.4, there is no support for auto-boxing and unboxing, so developers must manually upcast and downcast between 
+		primitive types and their corresponding wrapper classes. 
+		
+		In versions 1.5 and above, auto-boxing and unboxing are supported, making it easier and more intuitive to work with primitive types and 
+		their corresponding wrapper classes. 
+		
+		本程式介紹 "包覆類別"
 
 
 > WrapperClass2.java 
-- Description:  TBD
-- 
+- Description:  
+
+ 		This code demonstrates how to use the Arrays class and Stream API in Java 1.8 to work with arrays of primitive types and their 
+		corresponding wrapper classes.
+ 	
+ 		本程式介紹 "包覆類別" 及 Java 1.8 - Stream API 之應用
 
 
 ------------------------------------------------------------------------------
