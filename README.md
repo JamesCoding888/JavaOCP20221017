@@ -917,12 +917,16 @@ TBD
 ------------------------------------------------------------------------------
 # day9 Java Advanced: Varargs, DAO (Data Access Object), Singleton and Polymorphism
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_1">Introduction the application of Varargs:</a>
-- Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N methods (one for each additional parameter):
-- 1) public String format() { ... }
-- 2) public String format(String value) { ... }
-- 3) public String format(String value_1, String value_2) { ... }
-- After Java 1.5 (including 1.5 version), provides a short-hand for methods that support an arbitrary number of parameters of one type
-- 1) public String format() {String ... values}
+
+		Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, we had to pass all arguments in an array or implement N 
+		methods (one for each additional parameter). 
+		1) public String format() { ... }
+		2) public String format(String value) { ... }
+		3) public String format(String value_1, String value_2) { ... }
+		
+		After Java 1.5, a shorthand for methods that support an arbitrary number of parameters of 
+		one type was introduced, which is as follows:
+		1) public String format() {String ... values}
 
 > VarargsDemo1.java 
 - Description: 
