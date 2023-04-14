@@ -656,18 +656,45 @@
 
 
 > Student.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java class called "Student" that inherits from the superclass "Person".
+		
+		The class has an additional private instance variable called "score", which can be accessed using the getter and setter methods.
+		
+		It should be noted that this code was written before Java 1.5 and therefore does not use the "@Override" annotation.
+		
+	  	Java 1.5 之前版本，不支援 
+	  	1) auto-boxing 
+	  	2) Annotation of "@Override"
 
 
 > Teacher.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java class called "Teacher" that also inherits from the superclass "Person". 
+
+		The class has an additional private instance variable called "salary", which can be accessed using the getter and setter methods.
+  
+  		It should be noted that this code was written before Java 1.5 and therefore does not use the "@Override" annotation.
+  		
+		Java 1.5 之前版本，不支援 
+	 	1) auto-boxing
+		2) Annotation of "@Override"
 
 
 > Main.java 
-- Description:  TBD
-- 
+- Description:  
+
+ 		Overall, this code demonstrates object-oriented programming concepts such as inheritance, encapsulation, and polymorphism in Java.
+		
+		This lesson we give a following introduction:
+ 		1) Inheritance
+ 		2) Encapsulation
+ 		3) Auto-boxing
+ 		4) Annotation of Override
+
+
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7_2">This lesson we give a following introduction:</a>
 - 1) Inheritance
