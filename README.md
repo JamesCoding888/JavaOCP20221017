@@ -470,7 +470,9 @@
 - Description:  
 		
 		
-		This lesson we introduce the API of Scanner of hasNext(T pattern), hasNext() and scan.next().  
+	 	This program we introduce the API of Scanner of hasNext(T pattern), hasNext() and scan.next().  
+	 
+	 	此程式介紹如何使用 Scanner 的 API - hasNext(T pattern)、hasNext() 和 scan.next()  
 		
 
 > ScannerFilter.java 
@@ -541,7 +543,13 @@
 > ScannerIllegalStateException.java 
 - Description: 
 	
-		本節使用了 final 變數，需請讀者先閱讀 IntroductionOfFinal.java，再回來此節
+		This programming is a demo of IllegalStateException. 
+	 	Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
+ 		Then, you will get IllegalStateException.
+ 	
+		此程式碼模擬如何得到 IllegalStateException。
+		當 getAge method 中，將 Scanner closed 後，再執行 getName method 時，因 Scanner 已經關閉了，
+		導致在執行 getName method 時，無 Scanner 可用，因此跳出 IllegalStateException
  
 
 
