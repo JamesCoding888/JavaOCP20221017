@@ -305,7 +305,7 @@
 > StringDemo4.java:
 - Description: 
 
-		The code above defines a class StringDemo4 with a main() method and a addUtil() method.
+		The program defines a class StringDemo4 with a main() method and a addUtil() method.
 		
 		In the main() method, a String variable language is initialized with the value "Javascrip".
 	 	
@@ -335,23 +335,23 @@
 > MultiArrayDemo1.java:
 - Description: 
 
-		This session will introduce how to initialize for an array, and print out the memory and value of multiple Array
+		This program will introduce how to initialize for an array, and print out the memory and value of multiple Array
 
-		此節將介紹如何將陣列初始化，並印出陣列的記憶體位址和多維陣列的值
+		此程式將介紹如何將陣列初始化，並印出陣列的記憶體位址和多維陣列的值
 
 > MultiArrayDemo2.java:
 - Description: 
 
-		This session creates method of print and getSum util 
+		This program creates method of print and getSum util 
 		
-		此節建立 print 和 getSum 的工具，當需要用這些工具 (也就是 method)，將可直接調用
+		此程式建立 print 和 getSum 的工具，當需要用這些工具 (也就是 method)，將可直接調用
 
 > MultiArrayDemo3.java:
 - Description: 
 
-		This session will give a lecture on BMI calculator of multi-ple array 
+		This program will give a lecture on BMI calculator of multi-ple array 
 		
-		此節介紹使用多維陣列，來收集體重和身高的參數，並建立一個多維陣列的 BMI 計算器，將每組的 BMI 參數產出
+		此程式介紹使用多維陣列，來收集體重和身高的參數，並建立一個多維陣列的 BMI 計算器，將每組的 BMI 參數產出
 
 > MultiArrayDemo4.java:
 - Description: 
@@ -367,9 +367,9 @@
 > MultiArrayDemo5.java:
 - Description: 
 
-		Of this session, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3). 
+		Of this program, we give a lecture on converting a 2-D array (Column: 3, Row: 2) to 2-D array (Column: 2, Row: 3). 
 		
-		此節介紹一組二維陣列 (列: 3, 行: 2) 的內容，轉換成 2 維陣列 (列: 2, 行: 3)。對於讀者而言，本節為了訓練陣列大小編排的邏輯概念，所設置。但在開發中，建議仍採用 
+		此程式介紹一組二維陣列 (列: 3, 行: 2) 的內容，轉換成 2 維陣列 (列: 2, 行: 3)。對於讀者而言，本節為了訓練陣列大小編排的邏輯概念，所設置。但在開發中，建議仍採用 
 		Java 1.8 提供的 API 來做設計，因為設計者胥撰寫 for-loop 或 for-each 的迴圈架構，其迴圈的順序對於抓取陣列的位置和內容，至關重要，但對於維護上，並不是一個上
 		策，假設開發者過了兩個月後，再回來閱讀程式碼時，將花上許多時間來回顧當時撰寫此程式碼的心路歷程。再者，用迴圈的撰寫方式，邏輯上較不直接 (若與 Java 1.8 的 API 相
 		比)
@@ -377,13 +377,13 @@
 > MultiArrayDemo6.java & MultiArrayDemo7.java:
 - Description: 
 
-		We will introduce the application of API from Arrays in Java 1.8. You shall learn a combination of following
+		We introduce the application of API from Arrays in Java 1.8, from MultiArrayDemo6 class and MultiArrayDemo6 class.
 		1) Arrays.stream
 		2) flatMapToInt
 		3) flatMapToDouble
 		4) mapToDouble
 		5) peek
-		6) forEach
+		6) forEach 
 
 
 ------------------------------------------------------------------------------
