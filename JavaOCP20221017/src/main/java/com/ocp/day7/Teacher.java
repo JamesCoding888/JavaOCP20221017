@@ -1,9 +1,15 @@
 package com.ocp.day7;
 /*
- * Java 1.5 之前版本，不支援 
- * 1) auto-boxing
- * 2) Annotation of "@Override"
- */
+		This is a Java class called "Teacher" that also inherits from the superclass "Person". 
+
+		The class has an additional private instance variable called "salary", which can be accessed using the getter and setter methods.
+  
+  		It should be noted that this code was written before Java 1.5 and therefore does not use the "@Override" annotation.
+  		
+		Java 1.5 之前版本，不支援 
+	 	1) auto-boxing
+		2) Annotation of "@Override"
+*/
 
 // Child Class (子類別)
 // Inheritance of Parent Class: Person

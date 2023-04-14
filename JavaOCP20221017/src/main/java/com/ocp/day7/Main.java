@@ -1,9 +1,14 @@
 package com.ocp.day7;
-// This lesson we give a following introduction:
-// 1) Inheritance
-// 2) Encapsulation
-// 3) Auto-boxing
-// 4) Annotation of Override
+/*
+ 		Overall, this code demonstrates object-oriented programming concepts such as inheritance, encapsulation, and polymorphism in Java.
+		
+		This lesson we give a following introduction:
+ 		1) Inheritance
+ 		2) Encapsulation
+ 		3) Auto-boxing
+ 		4) Annotation of Override
+*/
+
 
 
 public class Main {
