@@ -1,10 +1,17 @@
 package com.ocp.day7_2;
-// This lesson we give a following introduction:
-// 1) Inheritance
-// 2) Encapsulation
-// 3) Auto-boxing
-// 4) Annotation of Override
-// 5) Application of Stream API to calculate the average age and score
+/*
+		This is a Java program that demonstrates concepts of object-oriented programming such as inheritance, encapsulation, auto-boxing, annotation of override, 
+		
+		and the use of the Stream API to calculate the average age and score.
+		
+		This lesson we give a following introduction:
+ 		1) Inheritance
+ 		2) Encapsulation
+ 		3) Auto-boxing
+ 		4) Annotation of Override
+ 		5) Application of Stream API to calculate the average age and score
+*/
+
 
 public class Main2 {
 	

@@ -1,9 +1,12 @@
 package com.ocp.day7_2;
 /*
- * Java 1.5 之前版本，不支援 
- * 1) auto-boxing and unboxing
- * 2) Annotation of "@Override"
- */
+		This is a Java code for a class called Student that extends the Person class. 
+		
+		Java 1.5 之前版本，不支援 
+		1) auto-boxing and unboxing
+		2) Annotation of "@Override"
+
+*/
 
 
 // Child Class (子類別)

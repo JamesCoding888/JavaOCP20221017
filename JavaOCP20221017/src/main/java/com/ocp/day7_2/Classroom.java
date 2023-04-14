@@ -1,5 +1,17 @@
 package com.ocp.day7_2;
-
+/*
+		This is a Java class named "Classroom" which is designed to manage a classroom's information including its ID, teacher, and students. 
+		
+		The class has several methods, including constructors with arguments, getters, and setters for the ID and teacher, as well as methods 
+		
+		for adding and removing students from an ArrayList object.
+		
+		The class also includes two methods for calculating the average score of students and the average age of the teacher and students. 
+		
+		The former uses Java's Stream API to retrieve the score of each student and then calculate the average, while the latter calculates the average age of all students and the teacher, 
+		
+		depending on the number of students present.
+*/
 import java.util.ArrayList; 
 import java.util.Arrays;
 

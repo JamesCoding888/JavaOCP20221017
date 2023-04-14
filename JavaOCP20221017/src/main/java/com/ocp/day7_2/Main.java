@@ -1,9 +1,18 @@
 package com.ocp.day7_2;
-// This lesson we give a following introduction:
-// 1) Inheritance
-// 2) Encapsulation
-// 3) Auto-boxing
-// 4) Annotation of Override
+/*
+		The code initializes objects of the Student and Teacher classes using their constructors, and then calls their toString() methods to print out their attributes, 
+		
+		which includes their name, age, and either score or salary depending on the class. This code demonstrates inheritance, encapsulation, and the use of constructors and the toString() method. 
+		
+		The code does not demonstrate auto-boxing or the @Override annotation since it is written in Java 1.5 which does not support those features.
+
+		This lesson we give a following introduction:
+		1) Inheritance
+	 	2) Encapsulation
+		3) Auto-boxing
+		4) Annotation of Override
+*/
+
 public class Main {
 	
     public static void main(String[] args) {

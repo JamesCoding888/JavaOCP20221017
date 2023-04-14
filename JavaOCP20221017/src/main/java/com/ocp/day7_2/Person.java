@@ -1,9 +1,17 @@
 package com.ocp.day7_2;
 /*
- * Java 1.5 之前版本，不支援 
- * 1) auto-boxing and unboxing
- * 2) Annotation of "@Override"
- */
+		This is a superclass called "Person" that both the "Student" and "Teacher" classes inherit from. It contains private instance variables for the name and age of a person, as well as public getter and setter methods for these variables.
+		
+		The constructor of the Person class takes two arguments, a String name and an integer age, and initializes the corresponding instance variables.
+		
+		The Person class also overrides the default toString() method inherited from the Object class with a custom implementation that returns a string representation of the Person object.
+		
+		This class also notes that features like auto-boxing and unboxing, as well as the "@Override" annotation, are not supported in versions of Java prior to version 1.5.
+		
+		Java 1.5 之前版本，不支援 
+		1) auto-boxing and unboxing
+		2) Annotation of "@Override"
+*/
 
 
 // Super Class (父類別) of Student.class and Teacher.class

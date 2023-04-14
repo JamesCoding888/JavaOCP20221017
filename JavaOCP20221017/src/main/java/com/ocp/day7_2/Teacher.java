@@ -1,9 +1,17 @@
 package com.ocp.day7_2;
 /*
- * Java 1.5 之前版本，不支援 
- * 1) auto-boxing and unboxing
- * 2) Annotation of "@Override"
- */
+		The code defines two child classes, Student and Teacher, which inherit from the parent class Person. 
+
+		Both child classes have additional instance variables and methods specific to them.
+		
+		Overall, this code demonstrates the use of inheritance to define classes that share common attributes and behaviors from a parent class, 
+		
+		while also extending those classes to add specific attributes and behaviors unique to each child class.
+		
+  		Java 1.5 之前版本，不支援 
+  		1) auto-boxing and unboxing
+  		2) Annotation of "@Override"  		
+*/
 
 
 // Child Class (子類別)
