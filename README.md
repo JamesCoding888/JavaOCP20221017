@@ -392,64 +392,64 @@
 > OO1.java 
 - Description: 
 
-		This lecture we would like sharing to reader about initializing the global variables by Constructor
+		This program we would like sharing to reader about initializing the global variables by Constructor
 		
-		此節介紹如何使用建構子將全域變數初始化
+		此課程介紹如何使用建構子將全域變數初始化
 
 > OO2.java
 - Description: 
 
-		This lecture we would like sharing to reader about initializing the global variables by Object
+		This program we would like sharing to reader about initializing the global variables by Object
 		
-		此節介紹如何由物件變數將全域變數初始化
+		此程式介紹如何由物件變數將全域變數初始化
 
 > OO3.java
 - Description: 
 
 
-		This lecture we create Constructors and also initialize the global variables at the same time
+		This program we create Constructors and also initialize the global variables at the same time
 		
-		此節介紹如何由建構子將全域變數初始化
+		此程式介紹如何由建構子將全域變數初始化
 
 
 > OO4.java
 - Description: 
 
-		According to the previously lecture (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+		According to the previously program (i.e., OO3.java), you will learn how to print out the value of global variable from void method
 		
 		依先前課程 (也就是 003.java)，您將可學到如何將全域變數的值，由 void 方法印出
 
 > OO5.java
 - Description: 
 
-		We create 1-D array of Student with 10 Fixed length (which is 10 differently memory) and initialize the global variable from object of 
-		1-D array
+		This program creates 1-D array of Student with 10 Fixed length (which is 10 differently memory) and initialize the global variable from 
+		object of 1-D array
 		
-		此節將學到，如何建立固定長度 (也就是 10 個不同的記憶體) 的一維陣列之 Student 物件，並由一維陣列中的物件，將全域變數 (也就是 name 和 score) 初始化
+		此程式將學到，如何建立固定長度 (也就是 10 個不同的記憶體) 的一維陣列之 Student 物件，並由一維陣列中的物件，將全域變數 (也就是 name 和 score) 初始化
 
 > OO6.java
 - Description: 
 		
-		We create 1-D array of Student with Dynamic Memory
+		This program creates 1-D array of Student with Dynamic Memory
 		
-		此節將介紹，如何建立一個動態的一維陣列的 Student 物件
+		此程式將介紹，如何建立一個動態的一維陣列的 Student 物件
 
 > OO7.java
 - Description: 
 
-		We create 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of students by 
+		This program creates 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of students by 
 		mapToDouble
 		
-		此節介紹，使用一個動態的一維陣列的 Student 物件，並結合 Java 1.8 Stream API - mapToDouble，來計算學生的平均分數
+		此程式介紹，使用一個動態的一維陣列的 Student 物件，並結合 Java 1.8 Stream API - mapToDouble，來計算學生的平均分數
 
 > OO8.java
 - Description: 
 
-		We create two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. And also, you 
-		will learn how to use Java 1.8 Stream API to calculate the average score of students
+		This program creates two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. 
+		And also, you will learn how to use Java 1.8 Stream API to calculate the average score of students
 		A kindly reminder, we need to understand how differently does we use Java 1.8 Stream API - flatMap and flatMapToDouble
 		
-		此節介紹，建立兩個動態的一維陣列的 Student 物件，並將其放入至二維陣列中來管理，並結合 Java 1.8 Stream API，來計算學生的平均分數
+		此程式介紹，建立兩個動態的一維陣列的 Student 物件，並將其放入至二維陣列中來管理，並結合 Java 1.8 Stream API，來計算學生的平均分數
 		請讀者特別留意，Java 1.8 Stream API - flatMap 和 flatMapToDouble 之應用
 
 > OO9.java & Account.java & Student.java
@@ -459,7 +459,7 @@
 		Oriented Programming) is likely to 4th pattern of OOP (which is OO4.java). Furthermore, we share a concept of how to handle with error 
 		message during this lesson.
 
-		本節設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
+		本程式設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
 
 
 ------------------------------------------------------------------------------
