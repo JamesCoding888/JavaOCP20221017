@@ -1,4 +1,7 @@
 package com.ocp.day3;
+/*
+ 		This program is giving an introduction of StringBuffer and StringBuilder.
+*/
 public class StringBuilderDemo {
 	public static void main(String[] args) {
 		// StringBuffer / StringBuilder 可變字串

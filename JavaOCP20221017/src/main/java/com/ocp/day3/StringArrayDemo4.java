@@ -1,4 +1,12 @@
 package com.ocp.day3;
+/*
+		This program will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Score 
+		(which is >= 60) in Java 1.8.
+		1) mapToInt(score -> Integer.parseInt(score))
+		2) filter(score -> score >= 60)
+		3) average()
+		4) getAsDouble()
+*/
 import java.util.Arrays;
 
 public class StringArrayDemo4 {

@@ -1,4 +1,11 @@
 package com.ocp.day3;
+/*
+		This program will tell you, 
+		1) how to use "String[] java.lang.String.split(String regex)" for collecting the each name into String[]
+		2) how to use "Arrays.toString(name_of_stringArray)"
+		3) calculation of arrayLength, p.s., name_of_array.length
+		4) calculation of stringLength, p.s., name_of_string.length() 
+*/
 import java.util.Arrays;
 
 public class StringArrayDemo {

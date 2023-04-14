@@ -1,4 +1,27 @@
 package com.ocp.day3;
+/*
+		The code above defines a class StringDemo3 with a main() method.
+
+		In the main() method, a String variable message is initialized with the value " she sell sea shell on the sea shore ". 
+		
+		The trim() method is then called on message to remove leading and trailing whitespace characters, and the resulting string is printed using println().
+		
+		The length() method is then called on message to get the length of the string, which is printed using printf().
+		
+		The substring() method is then demonstrated with two examples. 
+		
+		The first example uses the substring() method to extract a substring of message starting at index 9 and ending at index 12 (not inclusive of the character at index 12), 
+		
+		which corresponds to the substring "sea". The resulting substring is printed using printf().
+		
+		The second example extracts each character of the String variable name by calling substring() with appropriate start and end indexes for each character. 
+		
+		Finally, the code attempts to extract a substring starting at index 5 and ending at index 6 of name, which results in a java.lang.StringIndexOutOfBoundsException 
+		
+		since the string is only 5 characters long and there is no character at index 5.
+		
+		Overall, the substring() method can be useful for extracting substrings from a String, but care must be taken to ensure that the indexes are valid.
+*/
 public class StringDemo3 {
 
 	public static void main(String[] args) {

@@ -1,4 +1,7 @@
 package com.ocp.day3;
+/*
+		This program will follow up the previously StringArraydemo.java but updated in Java 1.8
+*/
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.OptionalDouble;
