@@ -664,9 +664,6 @@
 		
 		It should be noted that this code was written before Java 1.5 and therefore does not use the "@Override" annotation.
 		
-	  	Java 1.5 之前版本，不支援 
-	  	1) auto-boxing 
-	  	2) Annotation of "@Override"
 
 
 > Teacher.java 
@@ -678,9 +675,6 @@
   
   		It should be noted that this code was written before Java 1.5 and therefore does not use the "@Override" annotation.
   		
-		Java 1.5 之前版本，不支援 
-	 	1) auto-boxing
-		2) Annotation of "@Override"
 
 
 > Main.java 
@@ -705,35 +699,92 @@
 
 
 > Person.java 
-- Description: TBD 
-- 
+- Description: 
+
+		This is a superclass called "Person" that both the "Student" and "Teacher" classes inherit from. It contains private instance variables 
+		for the name and age of a person, as well as public getter and setter methods for these variables.
+		
+		The constructor of the Person class takes two arguments, a String name and an integer age, and initializes the corresponding instance 
+		variables.
+		
+		The Person class also overrides the default toString() method inherited from the Object class with a custom implementation that returns 
+		a string representation of the Person object.
+		
+		This class also notes that features like auto-boxing and unboxing, as well as the "@Override" annotation, are not supported in versions 
+		of Java prior to version 1.5.
+		
 
 > Student.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java code for a class called Student that extends the Person class. 
+		
+
 
 
 > Teacher.java 
-- Description:  TBD
-- 
+- Description:  
+
+		The code defines two child classes, Student and Teacher, which inherit from the parent class Person. 
+
+		Both child classes have additional instance variables and methods specific to them.
+		
+		Overall, this code demonstrates the use of inheritance to define classes that share common attributes and behaviors from a parent 
+		class, while also extending those classes to add specific attributes and behaviors unique to each child class.
+			 
 
 
 > Main.java 
-- Description:  TBD
-- 
+- Description:  
+
+		The code initializes objects of the Student and Teacher classes using their constructors, and then calls their toString() methods to 
+		print out their attributes, 
+		
+		which includes their name, age, and either score or salary depending on the class. This code demonstrates inheritance, encapsulation, 
+		and the use of constructors and the toString() method. 
+		
+		The code does not demonstrate auto-boxing or the @Override annotation since it is written in Java 1.5 which does not support those 
+		features.
+
+		This lesson we give a following introduction:
+		1) Inheritance
+	 	2) Encapsulation
+		3) Auto-boxing
+		4) Annotation of Override
 
 
 
 > Classroom.java
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java class named "Classroom" which is designed to manage a classroom's information including its ID, teacher, and students. 
+		
+		The class has several methods, including constructors with arguments, getters, and setters for the ID and teacher, as well as methods 
+		
+		for adding and removing students from an ArrayList object.
+		
+		The class also includes two methods for calculating the average score of students and the average age of the teacher and students. 
+		
+		The former uses Java's Stream API to retrieve the score of each student and then calculate the average, while the latter calculates the 
+		average age of all students and the teacher, 
+		
+		depending on the number of students present.
 
 
 
 
 > Main2.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This is a Java program that demonstrates concepts of object-oriented programming such as inheritance, encapsulation, auto-boxing, 
+		annotation of override, and the use of the Stream API to calculate the average age and score.
+		
+		This lesson we give a following introduction:
+ 		1) Inheritance
+ 		2) Encapsulation
+ 		3) Auto-boxing
+ 		4) Annotation of Override
+ 		5) Application of Stream API to calculate the average age and score
 
 
 ------------------------------------------------------------------------------
