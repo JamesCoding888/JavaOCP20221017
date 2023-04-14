@@ -1003,7 +1003,25 @@ TBD
 		creating more than one object for accessing the inside object of "SingleDao.java".
 	
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_1:</a>
-- TBD
+
+		Polymorphism is one of the four fundamental principles of object-oriented programming (OOP), along with encapsulation, inheritance, and 
+		abstraction. It allows objects of different classes to be treated as if they were objects of a common superclass or interface, 
+		providing flexibility and reusability in code.
+
+		In OOP, Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
+		Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This 
+		allows us to perform a single action in different ways.
+
+		One of the most common examples of polymorphism is method overriding, where a subclass provides its own implementation of a method that 
+		is already defined in its superclass. This allows objects of the subclass to be used in place of objects of the superclass, without 
+		requiring any changes to the code that uses them.
+
+		Another example of polymorphism is method overloading, where a class provides multiple methods with the same name but different 
+		parameters. This allows the same method name to be used for different purposes, based on the types of the arguments passed to it.
+
+		In Java, polymorphism is achieved through the use of inheritance, interfaces, and dynamic method dispatch. Dynamic method dispatch is a 
+		mechanism by which a call to an overridden method is resolved at runtime, rather than at compile time. This allows the method to be 
+		invoked on objects of different classes, based on the type of the object at runtime.
 
 
 > TestPolymorphismOfAnimal.java, Cat.java, Lion.java, Cow.java, Horse.java, Feet.java 
