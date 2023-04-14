@@ -1,20 +1,20 @@
 package com.ocp.day8;
 
 /*
- * A Java file contains only ONE public class with a particular name. 
- * If you create another class with same name it will be a duplicate class. 
- * Still if you try to create such class then the compiler will generate a compile time error.
- * 
- * In fact, you can’t create TWO public classes in a single file, 
- * Only one class should be public and it should be the name of the class.
- * If you try to create two public classes in same file,
- * the compiler generates a compile time error.
- * 
- * 請讀者注意，Java 在進行 compiler 時，一個 Java 檔案中，只允許一個 public class，如果有兩個 public class，
- * compiler 是不會通過的
- * 
- * E.g., class Father -> public class Father  // error
- */
+	   A Java file contains only ONE public class with a particular name. 
+	   If you create another class with same name it will be a duplicate class. 
+	   Still if you try to create such class then the compiler will generate a compile time error.
+	  
+	   In fact, you can’t create TWO public classes in a single file, 
+	   Only one class should be public and it should be the name of the class.
+	   If you try to create two public classes in same file,
+	   the compiler generates a compile time error.
+	  
+	   請讀者注意，Java 在進行 compiler 時，一個 Java 檔案中，只允許一個 public class，如果有兩個 public class，
+	   compiler 是不會通過的
+	  
+	   E.g., class Father -> public class Father  // error
+*/
 
 
 class Love {

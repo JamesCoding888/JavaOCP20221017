@@ -1,6 +1,10 @@
 package com.ocp.day8;
-// This lesson we introduce the Wrapper Class and Application of Java 1.8 - Stream API
-// 本節介紹 "包覆類別" 及 Java 1.8 - Stream API 之應用
+/*
+ 		This code demonstrates how to use the Arrays class and Stream API in Java 1.8 to work with arrays of primitive types and their corresponding wrapper classes.
+ 	
+ 		本程式介紹 "包覆類別" 及 Java 1.8 - Stream API 之應用
+*/
+
 
 import java.util.Arrays;
 public class WrapperClass2 {

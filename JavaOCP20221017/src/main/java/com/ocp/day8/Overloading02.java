@@ -1,7 +1,13 @@
 package com.ocp.day8;
 
-// The following sample code by changing the number of parameters
-// 此範例講述方法重載 (引數長度不同)
+/*
+ 		This is a Java program that demonstrates method overloading in a food ordering scenario. 
+ 		
+ 		The program defines a class called Overloading02 that has four different methods all named menu, but with different parameter types and numbers.
+ 		
+ 		此範例講述方法重載 (參數長度不同)
+*/
+
 public class Overloading02 {
 
 	// Gloabl Variables 

@@ -1,5 +1,14 @@
 package com.ocp.day8;
-// This lesson we introduce the Wrapper Class (本節介紹 "包覆類別")
+/*
+		This Java program demonstrates the difference between using wrapper classes in versions 1.0-1.4 and versions 1.5 and above. 
+		
+		In versions 1.0-1.4, there is no support for auto-boxing and unboxing, so developers must manually upcast and downcast between primitive types and their corresponding wrapper classes. 
+		
+		In versions 1.5 and above, auto-boxing and unboxing are supported, making it easier and more intuitive to work with primitive types and their corresponding wrapper classes. 
+		
+		本程式介紹 "包覆類別"
+*/
+
 
 public class WrapperClass1 {
     public static void main(String[] args) {
