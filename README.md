@@ -554,29 +554,80 @@
 
 
 > ScannerNoSuchElementException.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This program is a demo of NoSuchElementException. 
+
+		Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
+		Then, you will get NoSuchElementException.
+
+		此程式碼模擬如何得到 NoSuchElementException。
+		當 getAge method 中，將 Scanner closed 後，再執行 getName method 時，因 Scanner 已經關閉了，
+		導致在執行 getName method 時，無 Scanner 可用，因此跳出 NoSuchElementException
 
 
 > ScannerResolvedIllegalStateExceptionNoSuchElementException.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This sample code could resolve the NoSuchElementException and IllegalStateException 
+ 		
+ 		此程式碼解決 NoSuchElementException and IllegalStateException 的問題
+
+	
+		When a Scanner is closed, it will close its input source if the source implements the Closeable interface.
+		 
+		Clearly, if we have reached the end of input, or if the source is closed, 
+	  	then we get the NoSuchElementException().
+	  	 
+	  	Please see the specification of Oracle 1.5 as following:
+	  	->	Class 
+	  				public final class Scanner implements Iterator<String>, Closeable { ... }
+	  	 			
+	  	-> throwFor method
+					
+					private void throwFor() {
+						  skipped = false;
+						  if ((sourceClosed) && (position == buf.limit()))
+						      throw new NoSuchElementException();
+						  else
+						      throw new InputMismatchException();
+						  }
+					}
 
 
-3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by API - ArrayList, you will learn in this session</a>
+
+3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/erp">Designing an Office Check-in System with function of CRUD by API - ArrayList, you will learn in this lesson</a>
 
 > ArrayListDemo1.java 
-- Description:  TBD
-- 
+- Description:  
+
+		This program introduces how to use API of "ArrayList"
+	
+		此節將介紹如何使用 ArrayList 的 API
+
 
 
 > ArrayListDemo2.java 
-- Description:  TBD
-- 
+- Description:  
+
+
+	 	Following the previously program (i.e., ArrayListDemo1.java),   
+		this  design an Office Check-in System with function of CRUD by ArrayList - API.
+	 	
+		此課程延續 ArrayListDemo1.java，設計一個 CRUD 的簽到系統，使用 ArrayList API
+
+
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day6/streetesting">Introduction of Stress Testing</a>
 > ArrayListOfHeapMemoryTest.java 
-- Description:  TBD
+- Description:  
+
+
+		The given code demonstrates three different scenarios for testing the heap memory of JVM with the ArrayList collection.
+
+		Overall, the program demonstrates different ways to handle the heap memory limitations while using ArrayList in Java.
+	
+		在做壓力測試時，需清楚了解系統之最嚴苛的使用狀況下，最多可分配多少的 RAM 給 JVM 使用。 
 
 ------------------------------------------------------------------------------
 # day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
@@ -588,8 +639,21 @@
 
 
 > Person.java 
-- Description:  TBD
-- 
+- Description:  
+
+
+		This is a Java class called "Person" that defines a superclass. The superclass has two private instance variables called "name" and 
+		"age". 
+		
+		The instance variables can only be accessed within the same class due to their accessibility in "private".
+		
+		It should be noted that this code was written before Java 1.5 and therefore does not support auto-boxing and the "@Override" 
+		annotation.
+		
+		Java 1.5 之前版本，不支援 
+		1) auto-boxing
+		2) Annotation of "@Override"
+
 
 > Student.java 
 - Description:  TBD
