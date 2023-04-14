@@ -2,13 +2,13 @@ package com.ocp.day6.ScannerException;
 import java.util.Scanner;
 
 /*
- 	This programming is a demo of IllegalStateException. 
- 	Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
- 	Then, you will get IllegalStateException.
- 	
- 	此程式碼模擬如何得到 IllegalStateException。
- 	當 getAge method 中，將 Scanner closed 後，再執行 getName method 時，因 Scanner 已經關閉了，
- 	導致在執行 getName method 時，無 Scanner 可用，因此跳出 IllegalStateException
+	 	This program is a demo of IllegalStateException. 
+	 	Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
+	 	Then, you will get IllegalStateException.
+	 	
+	 	此程式碼模擬如何得到 IllegalStateException。
+	 	當 getAge method 中，將 Scanner closed 後，再執行 getName method 時，因 Scanner 已經關閉了，
+	 	導致在執行 getName method 時，無 Scanner 可用，因此跳出 IllegalStateException
 */
 public class ScannerIllegalStateException {
 	 

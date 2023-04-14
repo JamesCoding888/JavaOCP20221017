@@ -3,17 +3,18 @@
 *	開始學習本課程之前，請讀者先將 package: ScannerPractice 和 ScannerException 的課程研讀後，再回來此節				*
 *************************************************************************************************************/
 
-
 package com.ocp.day6.erp;
 
-// Following the previously lesson (i.e., ArrayListDemo1.java),   
-// we design an Office Check-in System with function of CRUD by ArrayList - API.
-// 此課程延續 ArrayListDemo1.java，設計一個 CRUD 的簽到系統，使用 ArrayList API
+/*
+	 Following the previously program (i.e., ArrayListDemo1.java),   
+	 we design an Office Check-in System with function of CRUD by ArrayList - API.
+	 
+	 此課程延續 ArrayListDemo1.java，設計一個 CRUD 的簽到系統，使用 ArrayList API
+*/
 
 import java.awt.Toolkit;    
 import java.util.ArrayList;
 import java.util.Scanner;
-
 
 public class ArrayListDemo2 {
     // Create a static variable - new ArrayList<>()

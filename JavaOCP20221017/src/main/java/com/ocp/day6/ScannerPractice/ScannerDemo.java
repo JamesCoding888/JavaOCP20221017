@@ -1,7 +1,8 @@
 package com.ocp.day6.ScannerPractice;
 /*
-	 This lesson we introduce the API of Scanner of hasNext(T pattern), hasNext() and scan.next().  
-	 此課程介紹如何使用 Scanner 的 API - hasNext(T pattern)、hasNext() 和 scan.next()
+	 This program we introduce the API of Scanner of hasNext(T pattern), hasNext() and scan.next().  
+	 
+	 此程式介紹如何使用 Scanner 的 API - hasNext(T pattern)、hasNext() 和 scan.next()
  
 */
 import java.util.Scanner; 

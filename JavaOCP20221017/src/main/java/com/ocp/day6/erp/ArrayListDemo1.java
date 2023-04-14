@@ -1,6 +1,11 @@
 package com.ocp.day6.erp;
-// This lesson will share you how to use API of "ArrayList"
-// 此節將介紹如何使用 ArrayList 的 API
+/*
+		This program introduces how to use API of "ArrayList"
+	
+		此節將介紹如何使用 ArrayList 的 API
+*/
+
+
 import java.util.ArrayList;
 
 public class ArrayListDemo1 {

@@ -1,27 +1,29 @@
 package com.ocp.day6.ScannerException;
-// This sample code could resolve the NoSuchElementException and IllegalStateException
-// 此程式碼解決 NoSuchElementException and IllegalStateException 的問題
-
 /*
-	 When a Scanner is closed, it will close its input source if the source implements the Closeable interface.
-	 
-	 Clearly, if we have reached the end of input, OR if the source is closed, 
-  	 then we get the NoSuchElementException().
-  	 
-  	 Please see the specification of Oracle 1.5 as following:
-  	 ->	Class 
-  	 			public final class Scanner implements Iterator<String>, Closeable { ... }
-  	 			
-  	 -> throwFor method
-				
-				private void throwFor() {
-					  skipped = false;
-					  if ((sourceClosed) && (position == buf.limit()))
-					      throw new NoSuchElementException();
-					  else
-					      throw new InputMismatchException();
-					  }
-				}
+ 		This sample code could resolve the NoSuchElementException and IllegalStateException 
+ 		
+ 		此程式碼解決 NoSuchElementException and IllegalStateException 的問題
+
+	
+		When a Scanner is closed, it will close its input source if the source implements the Closeable interface.
+		 
+		Clearly, if we have reached the end of input, or if the source is closed, 
+	  	then we get the NoSuchElementException().
+	  	 
+	  	Please see the specification of Oracle 1.5 as following:
+	  	->	Class 
+	  				public final class Scanner implements Iterator<String>, Closeable { ... }
+	  	 			
+	  	-> throwFor method
+					
+					private void throwFor() {
+						  skipped = false;
+						  if ((sourceClosed) && (position == buf.limit()))
+						      throw new NoSuchElementException();
+						  else
+						      throw new InputMismatchException();
+						  }
+					}
 				
 */
  

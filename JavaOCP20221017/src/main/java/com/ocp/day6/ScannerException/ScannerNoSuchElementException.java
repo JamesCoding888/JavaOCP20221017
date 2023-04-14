@@ -2,7 +2,7 @@ package com.ocp.day6.ScannerException;
 import java.util.Scanner;
 
 /*
- 	This programming is a demo of NoSuchElementException. 
+ 	This program is a demo of NoSuchElementException. 
 
  	Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
  	Then, you will get NoSuchElementException.
