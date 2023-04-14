@@ -93,10 +93,10 @@
 > CalcMath.java:
 - Description: 
 		
-		This session is giving three design of methods (eg, calcSum, calcAvg and calcSD) to calculate the add-up score and average score and 
+		This program is giving three design of methods (eg, calcSum, calcAvg and calcSD) to calculate the add-up score and average score and 
 		standard deviation of students 
 
-		此節建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
+		此程式建立 calcSum、 calcAvg  calcSD 方法，來計算學生的加總分數、平均分數和標準差
 
 ------------------------------------------------------------------------------
 # day2 Java Basic: 1-D array 
@@ -109,7 +109,7 @@
 
 		This lesson we introduce the accessibility of java from following sample code. 
 		
-		此節介紹底下範例，讓讀者更清楚了解 Java 的讀取權限之應用
+		此課程介紹底下範例，讓讀者更清楚了解 Java 的讀取權限之應用
 		1) Apple.java
 		2) Banana.java
 		3) Cherry.java
@@ -120,34 +120,36 @@
 > ArrayDemo1.java:
 - Description: 
 
-		This session will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
+		This program will go to tell you how to initiate the array variable and check the length of Array object that has been initiated.
 		
-		本節將說明如何將一維陣列初始化，並計算陣列物件的長度
+		本程式將說明如何將一維陣列初始化，並計算陣列物件的長度
 
 > ArrayDemo2.java:
 - Description: 
 
-		a. This session goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on 
-		using length of Array object to print out the value of Array object.
+		1) This program goes to tell you how to use for-loop and for-Each to print out of value from Array object, and also giving a lecture on 
+		   using length of Array object to print out the value of Array object.
 		
-		介接如何使用 for-loop 和 for-each 的方式，將陣列中的值印出，另外方式是藉由抓取陣列的長度，將陣列的值印出
-		b. Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
+		   介接如何使用 for-loop 和 for-each 的方式，將陣列中的值印出，另外方式是藉由抓取陣列的長度，將陣列的值印出
 		
-		將學到如何使用 Oracle 提供的 API - Arrays.toString(name_of_ArrayObject)，在 package java.util 中
-		c. Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - 
-		Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package 
-		java.util;".
+		2) Also, you will learn the Array API - Arrays.toString(name_of_ArrayObject), under "package java.util;".
 		
-		介紹 Java 1.8 提供的 API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", 
-		"))，在 Oracle 中的 package java.util，將陣列中的值印出
+		   將學到如何使用 Oracle 提供的 API - Arrays.toString(name_of_ArrayObject)，在 package java.util 中
+		
+		3) Also, you shall understand the modern Java 8 (Version: 1.8) that provides an API - 
+		   Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + ", ")), under "package 
+		   java.util;".
+		
+		   介紹 Java 1.8 提供的 API - Arrays.stream(name_of_ArrayObject).forEach(value_of_ArrayObject -> System.out.print(value_of_ArrayObject + 
+		   ", "))，在 Oracle 中的 package java.util，將陣列中的值印出 		
 
 > ArrayDemo3.java:
 - Description:
 
-		Of this session, we design methods to get the result of Sum, Average, Maximum and Minimum value from Array object. Please see the 
+		Of this program, we design methods to get the result of Sum, Average, Maximum and Minimum value from Array object. Please see the 
 		following methods that presented in this session 
 		
-		此節建立了 4 個 method 去獲取分數之和、平均、最小值和最大值
+		此程式建立了 4 個 method 去獲取分數之和、平均、最小值和最大值
 		1) getSum(int[] array)
 		2) getAvg(int[] array)
 		3) getMin(int[] array)
@@ -171,7 +173,7 @@
 - Description: 
 
 
-		This session will give you a tool which is API of "IntSummaryStatistics".
+		This program will give you a tool which is API of "IntSummaryStatistics".
 		
 		讀者可從本節學到如何使用 Oracle 內建的 API - IntSummaryStatistics，此 Class 包被放置在此路徑中 java.util.stream.IntStream.summaryStatistics()，裡
 		面提供了幾個好用的工具，例如計算總數、加總、平均、最大值和最小值
@@ -196,7 +198,7 @@
 > StringArraydemo.java:
 - Description: 
 
-		This session will tell you, 
+		This program will tell you, 
 		1) how to use "String[] java.lang.String.split(String regex)" for collecting the each name into String[]
 		2) how to use "Arrays.toString(name_of_stringArray)"
 		3) calculation of arrayLength, p.s., name_of_array.length
@@ -206,21 +208,21 @@
 > StringArraydemo2.java:
 - Description: 
 
-		This session will follow up the previously StringArraydemo.java but updated in Java 1.8
+		This program will follow up the previously StringArraydemo.java but updated in Java 1.8
 
 > StringArraydemo3.java:
 - Description: 
 
-		This session will give a lecture on how to use "Integer.parseInt" （which is meaning by "Parses the string argument as a signed decimal 
+		This program will give a lecture on how to use "Integer.parseInt" （which is meaning by "Parses the string argument as a signed decimal 
 		integer"）to catch the score of students that are over or equal to 60, and turn into calculating their average score.
 		
-		此節說明如何運用 "Integer.parseInt" (此 API 將 String 的引數轉成十進制的值)，來去抓取學生分數係大於或等於 60 分的人數，並將這些及格分數另外做總及格平均分數
-		的計算
+		此程式說明如何運用 "Integer.parseInt" (此 API 將 String 的引數轉成十進制的值)，來去抓取學生分數係大於或等於 60 分的人數，並將這些及格分數另外做總及格平均分
+		數的計算
 
 > StringArraydemo4.java:
 - Description: 
 
-		This session will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Score 
+		This program will follow up the previously StringArraydemo3.java but giving a differently demostration of calculation of average Score 
 		(which is >= 60) in Java 1.8.
 		1) mapToInt(score -> Integer.parseInt(score))
 		2) filter(score -> score >= 60)
@@ -231,18 +233,18 @@
 > StringBuilderDemo.java:
 - Description: 
 		
-		This session is giving an introduction of StringBuffer and StringBuilder.
+		This program is giving an introduction of StringBuffer and StringBuilder.
 
 > StringBuilderDemo2.java:
 - Description: 
 		
-		This session gives a lecture on how to use StringBuilder Util.
+		This program gives a lecture on how to use StringBuilder Util.
 
 > StringDemo1.java:
 - Description: 
 
 
-		This session will introduce how to compare with two differently String variables of their memory and value.
+		This program will introduce how to compare with two differently String variables of their memory and value.
 		1) string_name1 == string_name2
 		2) string_name1.equals(string_name2)
 		3) string_name1.equalsIgnoreCase(string_name2) 
@@ -252,19 +254,74 @@
 - Description: 
 
 
-		This session is not big deal but only one NEW API of .intern() for your reference
-		1) string_name1.intern() == string_name2
+		In this code, two String objects are created: string1 and string2. string1 is created using the new keyword, which creates a new object 
+		on the heap, while string2 is created using a string literal, which is stored in the string pool.
+
+		The == operator compares the references of the two objects, and since string1 and string2 refer to different objects, the result of 
+		string1 == string2 is false.
+		
+		The equals() method compares the contents of the two strings, so string1.equals(string2) returns true because both strings contain the 
+		same characters.
+		
+		The intern() method is used to put a String object into the string pool, and it returns a reference to the string pool object. In the 
+		code above, string1.intern() returns a reference to the string "Java" in the string pool, which is the same as string2. 
+		
+		Therefore, string1.intern() == string2 returns true.
+		
+		It's worth noting that while using intern() can be useful in certain situations, it can also have negative performance implications, so 
+		it should be used judiciously.
 
 > StringDemo3.java:
 - Description: 
 
 
-		This session will introduce "public String substring(int beginIndex, int endIndex)"
+		The code above defines a class StringDemo3 with a main() method.
+
+		In the main() method, a String variable message is initialized with the value " she sell sea shell on the sea shore ". 
+		
+		The trim() method is then called on message to remove leading and trailing whitespace characters, and the resulting string is printed 
+		using println().
+		
+		The length() method is then called on message to get the length of the string, which is printed using printf().
+		
+		The substring() method is then demonstrated with two examples. 
+		
+		The first example uses the substring() method to extract a substring of message starting at index 9 and ending at index 12 (not 
+		inclusive of the character at index 12), 
+		
+		which corresponds to the substring "sea". The resulting substring is printed using printf().
+		
+		The second example extracts each character of the String variable name by calling substring() with appropriate start and end indexes 
+		for each character. 
+		
+		Finally, the code attempts to extract a substring starting at index 5 and ending at index 6 of name, which results in a 
+		java.lang.StringIndexOutOfBoundsException 
+		
+		since the string is only 5 characters long and there is no character at index 5.
+		
+		Overall, the substring() method can be useful for extracting substrings from a String, but care must be taken to ensure that the 
+		indexes are valid.
 
 > StringDemo4.java:
 - Description: 
 
-		This session creates a "String addUtil()" for your reference.
+		The code above defines a class StringDemo4 with a main() method and a addUtil() method.
+		
+		In the main() method, a String variable language is initialized with the value "Javascrip".
+	 	
+	 	Then, the addUtil() method is called with language as an argument. The addUtil() method concatenates the string " to be node.js" to the 
+		end of the string parameter and returns the resulting string.
+		
+		The main() method then prints the concatenated string using the println() method.
+		
+		One thing to note is that the String class in Java is immutable, which means that once a String object is created, it cannot be 
+		modified. Therefore, when string += " to be node.js"; is executed in the addUtil() method, a new String object is created with the 
+		concatenated value, and string is updated to refer to the new object. This means that the original String object referenced by language 
+		in the main() method is not modified.
+		
+		
+		In general, it is recommended to use a StringBuilder or StringBuffer when concatenating strings in Java, as these classes are mutable 
+		and can provide better performance when performing multiple concatenations.
 
 ------------------------------------------------------------------------------
 # day4 Java Advanced: Application of Stream API for calculation with 1-D array and 2-D array
