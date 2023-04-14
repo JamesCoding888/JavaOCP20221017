@@ -1,4 +1,13 @@
 package com.ocp.day5;
+/*
+		This program creates two differently length of 1-D array in dynamic memory of Student and collect them into one object of 2-D array. 
+		And also, you will learn how to use Java 1.8 Stream API to calculate the average score of students
+		A kindly reminder, we need to understand how differently does we use Java 1.8 Stream API - flatMap and flatMapToDouble
+		
+		此程式介紹，建立兩個動態的一維陣列的 Student 物件，並將其放入至二維陣列中來管理，並結合 Java 1.8 Stream API，來計算學生的平均分數
+		請讀者特別留意，Java 1.8 Stream API - flatMap 和 flatMapToDouble 之應用
+*/
+
 // 8th pattern of Object-Oriented
 import java.util.Arrays;
 public class OO8 {

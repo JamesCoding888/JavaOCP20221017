@@ -1,4 +1,10 @@
 package com.ocp.day5;
+/*
+		This program we would like sharing to reader about initializing the global variables by Object
+		
+		此程式介紹如何由物件變數將全域變數初始化
+*/
+
 // 2nd pattern of Object-Oriented 
 public class OO2 {
     public static void main(String[] args) {

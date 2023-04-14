@@ -1,4 +1,10 @@
 package com.ocp.day5;
+/*
+		According to the previously program (i.e., OO3.java), you will learn how to print out the value of global variable from void method
+		
+		依先前課程 (也就是 003.java)，您將可學到如何將全域變數的值，由 void 方法印出 
+*/
+
 // 4th pattern of Object-Oriented
 public class OO4 {
     public static void main(String[] args) {

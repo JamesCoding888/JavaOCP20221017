@@ -1,4 +1,12 @@
 package com.ocp.day5;
+/*
+		You will learn how to design a roughly Account System of Bank for withdraw and deposit money from your Account. The OOP (Object-
+		Oriented Programming) is likely to 4th pattern of OOP (which is OO4.java). Furthermore, we share a concept of how to handle with error 
+		message during this lesson.
+
+		本程式設計一個簡易版的銀行轉帳系統，運用了之前課程 (OO4.java) 提到的設計架構。此外，也介紹一般使用者和工程人員關於處理錯誤訊息的處理方式
+*/
+
 // Application of 4th pattern of Object-Oriented to design a Roughly Account System
 public class OO9 {
     public static void main(String[] args) {

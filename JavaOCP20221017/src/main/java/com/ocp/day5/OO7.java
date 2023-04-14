@@ -1,4 +1,11 @@
 package com.ocp.day5;
+/*
+		This program creates 1-D array of Student with Dynamic Memory and use Java 1.8 Stream API to calculate the average score of students by 
+		mapToDouble
+		
+		此程式介紹，使用一個動態的一維陣列的 Student 物件，並結合 Java 1.8 Stream API - mapToDouble，來計算學生的平均分數
+*/
+
 // 7th pattern of Object-Oriented
 import java.util.Arrays;
 public class OO7 {

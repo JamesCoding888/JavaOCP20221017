@@ -1,4 +1,10 @@
 package com.ocp.day5;
+/*
+		This program creates 1-D array of Student with Dynamic Memory
+		
+		此程式將介紹，如何建立一個動態的一維陣列的 Student 物件
+*/
+
 // 6th pattern of Object-Oriented
 import java.util.Arrays;
 public class OO6 {

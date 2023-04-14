@@ -1,4 +1,11 @@
 package com.ocp.day5;
+/*
+		This program creates 1-D array of Student with 10 Fixed length (which is 10 differently memory) and initialize the global variable from object of 
+		1-D array
+		
+		此程式將學到，如何建立固定長度 (也就是 10 個不同的記憶體) 的一維陣列之 Student 物件，並由一維陣列中的物件，將全域變數 (也就是 name 和 score) 初始化
+*/
+
 // 5th pattern of Object-Oriented
 public class OO5 {
     public static void main(String[] args) {

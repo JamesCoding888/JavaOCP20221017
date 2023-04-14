@@ -1,4 +1,10 @@
 package com.ocp.day5;
+/*
+		This program we would like sharing to reader about initializing the global variables by Constructor
+		
+		此課程介紹如何使用建構子將全域變數初始化
+*/
+
 // 1st pattern of Object-Oriented
 public class OO1 {
 	public static void main(String[] args) {

@@ -1,4 +1,10 @@
 package com.ocp.day5;
+/*
+		This program we create Constructors and also initialize the global variables at the same time
+		
+		此程式介紹如何由建構子將全域變數初始化
+*/
+
 // 3rd pattern of Object-Oriented 
 public class OO3 {
     public static void main(String[] args) {
