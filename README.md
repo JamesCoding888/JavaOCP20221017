@@ -927,18 +927,43 @@ TBD
 > VarargsDemo1.java 
 - Description: 
 
-		You will learn how to design a 1-D array of Varargs method and 2-D array of Varargs to add up all values.
+		This program we introduce the application of Varargs:
+		==============================================================================================================
+		Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, 
+		we had to pass all arguments in an array or implement N methods (one for each additional parameter):
+
+		1) public String format() { ... }
+
+		2) public String format(String value) { ... }
+
+		3) public String format(String val1, String val2) { ... }
+
+		==============================================================================================================
+		After Java 1.5 (including 1.5 version), provides a short-hand for methods that support an arbitrary number of parameters of one type
+		1) public String format() {String ... values}
+
+		==============================================================================================================
+		Overall, this program provides a good example of how varargs can simplify code and allow methods to be more flexible in accepting 
+		arguments.
+
 
 > VarargsDemo2.java 
 - Description: 
 
-		This lesson we design a same name of Varargs method but differently arbitrary number of arguments 
+		The program above demonstrates method overloading with varargs. 
+		
+		There are two methods with the same name "test", but one takes an arbitrary number of int arguments and the other takes two int 
+		arguments.
+		
+		本程式設計相同的方法名稱，但不同的參數	
 
 > VarargsDemo3.java 
 - Description: 	
 
-		This lesson we design a method with one fixed argument but support an arbitrary number of parameters of one type (i.e., int) for 
-		another 
+		This program we design a method with one fixed argument  
+		but support an arbitrary number of parameters of one type (i.e., int) for another
+
+		本程式設計一個方法，其中一個固定的輸入參數為 int 型別，另外一個則是可變參數
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_1">Introduction the application of DAO and Singleton:</a>
 > Dao.java 
@@ -952,13 +977,13 @@ TBD
 > SingleDao.java 
 - Description: 
 
-		This lesson you wil learn how to design Singleton pattern.
+		This program you wil learn how to design Singleton pattern.
 		To create a singleton-class, this class must implement the following properties:
 		1) Create a private constructor of the class to restrict object created outside of the singleton-class.
 		2) Create a private attribute (eg., "private static SingleDao SingleDao_Instance = new SingleDao()") of the class type that refers to 
-		3) the single  object.
+		   the single  object.
 		3) Create a public static method (eg., "public static SingleDao getSingleDaoInstance()") that allows us to create and access the object 
-		4) we created.  Inside the method, we will create a condition that prohibits us from creating more than one object.
+		   we created.  Inside the method, we will create a condition that prohibits us from creating more than one object.
 
 		What's this mean by, "allows us to create and access the object we created" ? It's likely you share a Single Global Instance and 
 		provide a Global Point of Access to SingleDao.class.
@@ -978,26 +1003,52 @@ TBD
 		creating more than one object for accessing the inside object of "SingleDao.java".
 	
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_1:</a>
-- TBD
+
+		Polymorphism is one of the four fundamental principles of object-oriented programming (OOP), along with encapsulation, inheritance, and 
+		abstraction. It allows objects of different classes to be treated as if they were objects of a common superclass or interface, 
+		providing flexibility and reusability in code.
+
+		In OOP, Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. 
+		Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This 
+		allows us to perform a single action in different ways.
+
+		One of the most common examples of polymorphism is method overriding, where a subclass provides its own implementation of a method that 
+		is already defined in its superclass. This allows objects of the subclass to be used in place of objects of the superclass, without 
+		requiring any changes to the code that uses them.
+
+		Another example of polymorphism is method overloading, where a class provides multiple methods with the same name but different 
+		parameters. This allows the same method name to be used for different purposes, based on the types of the arguments passed to it.
+
+		In Java, polymorphism is achieved through the use of inheritance, interfaces, and dynamic method dispatch. Dynamic method dispatch is a 
+		mechanism by which a call to an overridden method is resolved at runtime, rather than at compile time. This allows the method to be 
+		invoked on objects of different classes, based on the type of the object at runtime.
 
 
-> Cat.java 
-- Description: TBD
+> TestPolymorphismOfAnimal.java, Cat.java, Lion.java, Cow.java, Horse.java, Feet.java 
+- Description: 
 
-> Lion.java 
-- Description: TBD
+		Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
 
-> Cow.java 
-- Description: TBD
+		Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This 
+		allows us to perform a single action in different ways.
 
-> Horse.java 
-- Description: TBD
+		For example, think of a super-class called Cat that has a method called animalSound(). Sub-classes of Animals could be Lion...etc - And 
+		they also have their own implementation of an animal sound (the Lion "roar", etc.)
 
-> Feet.java 
-- Description: TBD
 
-> TestPolymorphismOfAnimal.java 
-- Description: TBD
+		The following the structures of Polymorphism are:
+
+
+			Super-class:	Cat       Feet     Feet
+
+					 ^	   ^        ^
+					 |	   |        |
+
+			Sub-class:	Lion	   Cow     Horse
+
+
+
+
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day9_2">Introduction the application of Polymorphism_2:</a>
 - This lesson you will learn a roughly design of different positions at company and some variables/methods only for specific position
