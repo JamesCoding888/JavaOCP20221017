@@ -1,6 +1,6 @@
 package com.ocp.day9_1.Varargs;
 /*
- 	This lesson we introduce the application of Varargs:
+ 	This program we introduce the application of Varargs:
 	==============================================================================================================
  	Before Java 1.5, whenever we wanted to pass an arbitrary number of arguments, 
  	we had to pass all arguments in an array or implement N methods (one for each additional parameter):
@@ -14,6 +14,9 @@ package com.ocp.day9_1.Varargs;
 	==============================================================================================================
 	After Java 1.5 (including 1.5 version), provides a short-hand for methods that support an arbitrary number of parameters of one type
 	1) public String format() {String ... values}
+	
+	==============================================================================================================
+	Overall, this program provides a good example of how varargs can simplify code and allow methods to be more flexible in accepting arguments.
 
 */
 public class VarargsDemo1 {

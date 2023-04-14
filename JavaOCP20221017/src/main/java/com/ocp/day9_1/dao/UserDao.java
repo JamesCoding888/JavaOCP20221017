@@ -1,5 +1,16 @@
 package com.ocp.day9_1.dao;
+/*
+		This UserDaoclass is implementing the Dao.class and SingleDao.class
+		
+		A kindly Reminder: 
+		(1) You may get a different Console message from the annotation of this UserDao.java, because the programming of generating value of 
+		id_number from "Dao.java" is via "new Random().nextInt()"
+		
+		Of the "SingleDao.java", we design a Singleton pattern into this class, and you will see the generated id_number is SAME!
 
+		(2) Since we created a public static method (i.e., "public static SingleDao getSingleDaoInstance()") to prohibit developer from 
+		creating more than one object for accessing the inside object of "SingleDao.java". 
+*/
 public class UserDao {
 
 	public static void main(String[] args) {

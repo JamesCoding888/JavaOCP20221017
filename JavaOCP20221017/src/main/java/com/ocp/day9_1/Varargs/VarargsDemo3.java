@@ -1,9 +1,9 @@
 package com.ocp.day9_1.Varargs;
 /*
- 	This lesson we design a method with one fixed argument  
- 	but support an arbitrary number of parameters of one type (i.e., int) for another
- 	
- 	本節設計一個方法，其中一個固定的輸入參數為 int 型別，另外一個則是可變參數
+	 	This program we design a method with one fixed argument  
+	 	but support an arbitrary number of parameters of one type (i.e., int) for another
+	 	
+	 	本程式設計一個方法，其中一個固定的輸入參數為 int 型別，另外一個則是可變參數
  	
 */
 
