@@ -1,4 +1,9 @@
 package com.ocp.day4;
+/*
+		This program creates method of print and getSum util 
+		
+		此程式建立 print 和 getSum 的工具，當需要用這些工具 (也就是 method)，將可直接調用 
+*/
 public class MultiArrayDemo2 {
 	public static void main(String[] args) {
 		int[][] arrayByInt = {{0, 1}, {2, 3}, {4, 5}};

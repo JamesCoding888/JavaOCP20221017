@@ -1,4 +1,9 @@
 package com.ocp.day4;
+/*
+		This program will give a lecture on BMI calculator of multi-ple array 
+		
+		此程式介紹使用多維陣列，來收集體重和身高的參數，並建立一個多維陣列的 BMI 計算器，將每組的 BMI 參數產出
+*/
 import java.util.Arrays;
 public class MultiArrayDemo3 {
 	public static void main(String[] args) {

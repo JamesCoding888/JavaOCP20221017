@@ -1,4 +1,13 @@
 package com.ocp.day4;
+/*
+		We introduce the application of API from Arrays in Java 1.8, from MultiArrayDemo6 class and MultiArrayDemo6 class.
+		1) Arrays.stream
+		2) flatMapToInt
+		3) flatMapToDouble
+		4) mapToDouble
+		5) peek
+		6) forEach 
+*/
 import java.util.Arrays;
 public class MultiArrayDemo6 {
 	public static void main(String[] args) {

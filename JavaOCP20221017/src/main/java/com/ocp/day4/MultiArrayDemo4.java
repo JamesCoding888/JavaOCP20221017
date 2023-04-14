@@ -1,4 +1,13 @@
 package com.ocp.day4;
+/*
+		Following the previously MultiArrayDemo3.java, we modify the order of initialized array, and re-design the for-loop algorithm to 
+		generate the each group of BMI. Also, one API of Arrays.deepToString(name_of_array) for your reference
+		
+		依據先前的 MultiArrayDemo3.java 介紹，我們修改了初始化陣列的順序，並重新設計一個 for-loop 的演算法，將每組的 BMI 參數產出。另外此節介紹了一個內建 API - 
+		Arrays.deepToString(name_of_array)，可直接將陣列的值抓出，並由 System.out.println(Arrays.deepToString(name_of_array)) 印出陣列的 value(s)。
+
+		備註: name_of_array 係指陣列的變數名稱 
+*/
 import java.util.Arrays;
 public class MultiArrayDemo4 {
 	public static void main(String[] args) {

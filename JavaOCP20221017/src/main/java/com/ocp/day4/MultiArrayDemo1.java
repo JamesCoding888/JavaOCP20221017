@@ -1,4 +1,9 @@
 package com.ocp.day4;
+/*
+		This program will introduce how to initialize for an array, and print out the memory and value of multiple Array
+
+		此程式將介紹如何將陣列初始化，並印出陣列的記憶體位址和多維陣列的值 
+*/
 public class MultiArrayDemo1 {
 	public static void main(String[] args) {
 		int[][] arrayByInt = new int[3][2];		
