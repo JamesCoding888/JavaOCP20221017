@@ -543,7 +543,7 @@
 > ScannerIllegalStateException.java 
 - Description: 
 	
-		This programming is a demo of IllegalStateException. 
+		This program is a demo of IllegalStateException. 
 	 	Because the Scanner in method of getAge() was closed, then caused NO Scanner could be used in the method of getName(). 
  		Then, you will get IllegalStateException.
  	
