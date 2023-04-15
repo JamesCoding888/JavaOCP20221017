@@ -581,7 +581,7 @@
 	  	 
 	  	Please see the specification of Oracle 1.5 as following:
 	  	-> Class 
-	  				public final class Scanner implements Iterator<String>, Closeable { ... }
+	  			public final class Scanner implements Iterator<String>, Closeable { ... }
 	  	 			
 	  	-> throwFor method
 					
