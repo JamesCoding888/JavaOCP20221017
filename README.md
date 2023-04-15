@@ -1079,23 +1079,49 @@ TBD
 > Manager.java 
 - Description: 
 
-		Create a Sub-class (Manager) to inherite Super-class (Employee)
+
+		This is an example of a Java subclass named "Manager" that extends the "Employee" superclass. 
+		
+		The "Manager" class has its own instance variable named "budget", which is assigned a value of 100,000. 
+		
+		This variable represents the budget that is allocated for the manager to use in their role.
+
 
 > Supervisor.java 
 - Description: 
 
-		Create a Sub-class (Supervisor) to inherite Super-class (Employee)
+		This is an example of another Java subclass named "Supervisor" that also extends the "Employee" superclass. 
+		
+		The "Supervisor" class has its own instance variable named "stock_option", 
+		
+		which represents the employee stock option (ESO) granted to the supervisor as part of their compensation package. 
+		
+		The variable is assigned a value of 120,000. 
+
 
 > Test01.java 
 - Description: 
 
-		No inheritance between Supervisor and Manager, we cannot move the object of Supervisor to Employee, and then downcast the object from 
-		Employee to Manager; otherwise, java.lang.ClassCastException.
+		This is an example of a nested cast, where the "supervisor" instance is first cast to its superclass "Employee", and then to the 
+		"Manager" subclass. 
+		
+		However, this cast will result in a runtime exception "java.lang.ClassCastException", because the "Supervisor" class cannot be cast to 
+		the "Manager" class, as they are unrelated subclasses.
 
 > Test02.java 
 - Description: 
 
-		Only invoke the value from salary variable in Employee, because of polymorphism.
+		The code attempts to access various instance variables from each of these instances, and print them to the console.
+	
+		The "salary" instance variable is accessed for each instance, which is inherited from the "Employee" superclass, so it is present in 
+		all three instances.
+
+		For the "manager" and "supervisor" instances, the code attempts to access the "budget" and "stock_option" instance variables, 
+		respectively, 
+		
+		which are not present in the "Employee" superclass. This will result in a compiler error, because the variable is not defined in the 
+		superclass, and is specific to the subclass.
+		
 
 > Test03.java 
 - Description: 
@@ -1105,13 +1131,32 @@ TBD
 > Test04.java 
 - Description: 
 
-		"instanceof" operator to test whether the object is an instance of the specified type.
+		The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+
+		The instanceof in java is also known as type comparison operator because it compares the instance with type. 
+
+		Notice:
+			1) It returns either true or false. 
+			2) If we apply the instanceof operator with any variable that has null value, 
+			   it returns false.
 
 > Test05.java 
 - Description: 
 
-		We create a static method of printBudget to test whether the object from employee, manager and supervisor is an instance of the 
-		specified type. 
+		The Test05 class takes an instance of the Employee, Manager, and Supervisor classes as input and calls the printBudget method with each 
+		of them as arguments. 
+		
+		The printBudget method takes an Employee object as an argument and checks whether it is an instance of Manager or Supervisor. 
+		
+		If it is an instance of Manager, it downcasts the Employee object to Manager and prints out the value of the budget variable from the 
+		Manager class. 
+		
+		If it is an instance of Supervisor, it downcasts the Employee object to Supervisor and prints out the value of the stock_option 
+		variable from the Supervisor class.
+		
+		Overall, the Test05 class is an example of how to check whether an object is an instance of a particular class or subclass, 
+		
+		and how to downcast an object to a subclass to access its variables or methods.		 
 
 
 
