@@ -1065,7 +1065,16 @@ TBD
 > Employee.java 
 - Description: 
 		
-		Create a Super-class (Employee)
+ 		This is an example of a Java class named "Employee", 
+ 		
+ 		which serves as a superclass (or parent class) for other classes that inherit its properties and methods.
+ 		
+ 		Overall, this class provides a basic template that can be used to create more specific classes for different types of employees within 
+		the company. 
+ 		
+ 		By inheriting from this superclass, these classes will have access to its properties and methods, and can override them or add new ones 
+		as needed.
+
 
 > Manager.java 
 - Description: 
