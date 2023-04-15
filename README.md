@@ -580,7 +580,7 @@
 	  	then we get the NoSuchElementException().
 	  	 
 	  	Please see the specification of Oracle 1.5 as following:
-	  	->	Class 
+	  	-> Class 
 	  				public final class Scanner implements Iterator<String>, Closeable { ... }
 	  	 			
 	  	-> throwFor method
