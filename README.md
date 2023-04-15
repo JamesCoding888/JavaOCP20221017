@@ -1165,28 +1165,51 @@ TBD
 ------------------------------------------------------------------------------
 # day10 Java Advanced: Abstract and Interface
 1. Introduction of abstract:
-- 1) Abstraction can be achieved with either abstract classes or interfaces</a>
-- 2) The abstract keyword is a non-access modifier, used for classes and methods:
-- 3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
-- 4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+
+		1) Abstraction can be achieved with either abstract classes or interfaces
+		2) The abstract keyword is a non-access modifier, used for classes and methods:
+		3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+		4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited 
+		   from).
 
 2. Introduction of interface:
-- 1) Another way to achieve abstract
-- 2) interface method (does not have a body), the body is provided by the "implement" class
-- 3) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of "extends")
-- 4) On implementation of an interface, you must override all of its methods
-- 5) Interface attributes are by "public static final"
-- 6) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
+
+		1) Another way to achieve abstract
+		2) interface method (does not have a body), the body is provided by the "implement" class
+		3) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of 
+		   "extends")
+		4) On implementation of an interface, you must override all of its methods
+		5) Interface attributes are by "public static final"
+		6) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
+		7) An interface doesn't have any memory space of its own. It is just a blueprint or a contract that defines a set of methods that must 
+		   be implemented by a class that implements the interface. 
+		   When a class implements an interface, it provides the actual implementation for the methods defined in the interface, and it is the 
+		   object of that class that will have memory space allocat	
 	
-3. Why And When To Use Interfaces?
-- 1) For security - we can hide certain details and only show the important details of an object (interface).
-- 2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
+
+		Why And When To Use Interfaces?
+		1) For security - we can hide certain details and only show the important details of an object (interface).
+		2) Java does not support "multiple inheritance" (i.e., a class can only inherit from one superclass, e.g., A extends B). However, 
+		   interface can be achieved with interfaces, since the class can implement multiple interfaces, e.g., A implements B, C, D
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day10_1">The following sample code for your information of relationship between abstract and interface:</a>
 > InterfaceAnimal.java
 - Description: 
 
-		Create an interface of Animal to introduce the rules of interface
+		Introduction of this program:
+			1) In the given code snippet, we have an interface called InterfaceAnimal. It declares three abstract methods eat(), play(), 
+			   and name(). 
+			   These methods don't have any implementation and will be implemented by any class that implements this interface.
+			2) The interface also has a constant COPY_RIGHT declared as public static final String COPY_RIGHT = "Discovery.com". 
+			   It means that any class implementing this interface will have access to this constant.
+
+			3) The interface also has a default method copyRight() declared as default void copyRight() { ... }. 
+			   It means that any class implementing this interface will have this method with a default implementation that prints the 
+			   value of COPY_RIGHT.
+
+			4) An interface cannot have a constructor. This is because an interface is not a class and cannot be instantiated, 
+			   so it doesn't make sense to have a constructor in an interface.
 
 > AbstractAnimal.java
 - Description: 
