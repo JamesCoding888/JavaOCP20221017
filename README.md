@@ -1167,7 +1167,7 @@ TBD
 1. Introduction of abstract:
 
 
-		1) Abstraction can be achieved with either abstract classes or interfaces</a>
+		1) Abstraction can be achieved with either abstract classes or interfaces
 		2) The abstract keyword is a non-access modifier, used for classes and methods:
 		3) Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 		4) Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited 
@@ -1175,13 +1175,13 @@ TBD
 
 2. Introduction of interface:
 
-		1) Another way to achieve abstract
-		2) interface method (does not have a body), the body is provided by the "implement" class
-		3) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of 
+		Another way to achieve abstract
+		1) interface method (does not have a body), the body is provided by the "implement" class
+		2) To access the interface methods, the interface must be "implemented" by another class with the "implements" keyword (instead of 
 		   "extends")
-		5) On implementation of an interface, you must override all of its methods
-		6) Interface attributes are by "public static final"
-		7) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
+		3) On implementation of an interface, you must override all of its methods
+		4) Interface attributes are by "public static final"
+		5) An interface CANNOT contain a constructor (that is, interface cannot be used to create objects)
 	
 3. Why And When To Use Interfaces?
 
