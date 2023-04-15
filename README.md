@@ -871,7 +871,7 @@ TBD
 								Introduction of ASCII -> https://zh.wikipedia.org/wiki/ASCII
 
 
-		<A kindly reminder - 溫馨提醒>
+		<A kindly reminder>
 		1) boolean: 
 				The boolean data type has only two possible values: true and false. 
 				Use this data type for simple flags that track true/false conditions. 
