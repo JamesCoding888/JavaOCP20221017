@@ -632,10 +632,11 @@
 ------------------------------------------------------------------------------
 # day7 Java Advanced: Application of Stream API with Inheritance, Encapsulation, Auto-boxing and Annotation of Override
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7">This lesson we give a following introduction:</a>
-- 1) Inheritance
-- 2) Encapsulation
-- 3) Auto-boxing
-- 4) Annotation of Override
+
+		1) Inheritance
+		2) Encapsulation
+		3) Auto-boxing
+		4) Annotation of Override
 
 
 > Person.java 
@@ -691,11 +692,12 @@
 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day7_2">This lesson we give a following introduction:</a>
-- 1) Inheritance
-- 2) Encapsulation
-- 3) Auto-boxing
-- 4) Annotation of Override
-- 5) Application of Stream API to calculate the average age and score
+
+		1) Inheritance
+		2) Encapsulation
+		3) Auto-boxing
+		4) Annotation of Override
+		5) Application of Stream API to calculate the average age and score
 
 
 > Person.java 
