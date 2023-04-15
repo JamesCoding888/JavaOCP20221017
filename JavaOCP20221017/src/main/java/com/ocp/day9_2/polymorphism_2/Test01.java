@@ -1,4 +1,11 @@
 package com.ocp.day9_2.polymorphism_2;
+/*
+		This is an example of a nested cast, where the "supervisor" instance is first cast to its superclass "Employee", and then to the "Manager" subclass. 
+		
+		However, this cast will result in a runtime exception "java.lang.ClassCastException", because the "Supervisor" class cannot be cast to the "Manager" class, 
+		
+		as they are unrelated subclasses.
+*/
 
 public class Test01 {
 	

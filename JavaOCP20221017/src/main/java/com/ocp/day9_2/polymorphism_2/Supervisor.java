@@ -1,4 +1,13 @@
 package com.ocp.day9_2.polymorphism_2;
+/*
+		This is an example of another Java subclass named "Supervisor" that also extends the "Employee" superclass. 
+		
+		The "Supervisor" class has its own instance variable named "stock_option", 
+		
+		which represents the employee stock option (ESO) granted to the supervisor as part of their compensation package. 
+		
+		The variable is assigned a value of 120,000. 
+*/
 // Super-class (父類別): Employee 
 // Sub-class (子類別): Supervisor
 public class Supervisor extends Employee {

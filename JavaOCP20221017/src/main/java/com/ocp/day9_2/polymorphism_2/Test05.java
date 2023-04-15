@@ -1,5 +1,18 @@
 package com.ocp.day9_2.polymorphism_2;
 
+/*
+		The Test05 class takes an instance of the Employee, Manager, and Supervisor classes as input and calls the printBudget method with each of them as arguments. 
+		
+		The printBudget method takes an Employee object as an argument and checks whether it is an instance of Manager or Supervisor. 
+		
+		If it is an instance of Manager, it downcasts the Employee object to Manager and prints out the value of the budget variable from the Manager class. 
+		
+		If it is an instance of Supervisor, it downcasts the Employee object to Supervisor and prints out the value of the stock_option variable from the Supervisor class.
+		
+		Overall, the Test05 class is an example of how to check whether an object is an instance of a particular class or subclass, 
+		
+		and how to downcast an object to a subclass to access its variables or methods. 
+*/
 public class Test05 {
 
 	public static void main(String[] args) {
