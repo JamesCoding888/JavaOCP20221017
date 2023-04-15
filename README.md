@@ -872,7 +872,8 @@ TBD
 
 
 		<A kindly reminder - 溫馨提醒>
-		1) boolean: The boolean data type has only two possible values: true and false. 
+		1) boolean: 
+				The boolean data type has only two possible values: true and false. 
 				Use this data type for simple flags that track true/false conditions. 
 				This data type represents 1-bit of Size.
 				There are some subtle differences between programming languages (e.g., C and Java), for your information.
@@ -886,10 +887,11 @@ TBD
 			    	關於 C 語言之 boolean 資料型別則佔 16-bit (2-byte) 記憶體	    	    
 
 
-		2) char: The char data type is a single 16-bit Unicode character. 
-			 It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
-			 char 資料型別，係單個 16 位元 Unicode 字符。
-			 統一編碼的最小值為 '\u0000'（或 0），最大值為 '\uffff'（或 65,535)。
+		2) char: 
+				The char data type is a single 16-bit Unicode character. 
+			 	It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
+				char 資料型別，係單個 16 位元 Unicode 字符。
+			 	統一編碼的最小值為 '\u0000'（或 0），最大值為 '\uffff'（或 65,535)。
 
 
 
