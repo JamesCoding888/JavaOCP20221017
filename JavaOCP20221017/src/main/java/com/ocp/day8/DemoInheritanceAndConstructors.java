@@ -1,19 +1,21 @@
 package com.ocp.day8;
 
 /*
-	   A Java file contains only ONE public class with a particular name. 
-	   If you create another class with same name it will be a duplicate class. 
-	   Still if you try to create such class then the compiler will generate a compile time error.
-	  
-	   In fact, you can’t create TWO public classes in a single file, 
-	   Only one class should be public and it should be the name of the class.
-	   If you try to create two public classes in same file,
-	   the compiler generates a compile time error.
-	  
-	   請讀者注意，Java 在進行 compiler 時，一個 Java 檔案中，只允許一個 public class，如果有兩個 public class，
-	   compiler 是不會通過的
-	  
-	   E.g., class Father -> public class Father  // error
+	In Java, a source file can only contain one public class, and the name of that class must match the name of the file. If you try to 
+  	create another public class with the same name in the same file, you will get a compile-time error. This is because Java uses the name 
+  	of the public class to identify the file and to load the class into memory when it is needed.
+
+  	It is possible to have multiple classes in a single file, but only one of them can be public. The other classes must have default 
+  	(package-private) access or be explicitly declared as private or protected. These classes can be used within the same package, but they 
+  	cannot be accessed from outside the package.
+  
+  	一個源文件只能包含一個 public 類，且該類的名稱必須與文件名匹配。如果您嘗試在同一文件中創建另一個具有相同名稱的 public 類，則會收到編譯時錯誤。這是因為 Java 使
+  	用公共類的名稱來識別文件並在需要時加載類到內存中。
+	
+  	在同一個文件中可以有多個類，但其中只能有一個是 public。其他類必須具有默認（包私有）訪問權限，或者明確聲明為 private 或 protected。這些類可以在同一個包 
+  	(package) 中使用，但無法從包外訪問。
+ 	
+  	E.g., class Father -> public class Father  // error 
 */
 
 
