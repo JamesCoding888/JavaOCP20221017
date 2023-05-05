@@ -791,27 +791,29 @@
 
 ------------------------------------------------------------------------------
 # day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">This lesson we give a following introduction:</a>
-TBD
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Introduction of primitive type, wrapper class, overloading and inheritance:</a>
+
 
 
 
 > DemoInheritanceAndConstructors.java 
 - Description:  
 
-	   	A Java file contains only ONE public class with a particular name. 
-	   	If you create another class with same name it will be a duplicate class. 
-	   	Still if you try to create such class then the compiler will generate a compile time error.
-	  
-	   	In fact, you can’t create TWO public classes in a single file, 
-	   	Only one class should be public and it should be the name of the class.
-	   	If you try to create two public classes in same file,
-	   	the compiler generates a compile time error.
-	  
-	   	請讀者注意，Java 在進行 compiler 時，一個 Java 檔案中，只允許一個 public class，如果有兩個 public class，
-	   	compiler 是不會通過的
-	  
-	   	E.g., class Father -> public class Father  // error 
+		In Java, a source file can only contain one public class, and the name of that class must match the name of the file. If you try to 
+		create another public class with the same name in the same file, you will get a compile-time error. This is because Java uses the name 
+		of the public class to identify the file and to load the class into memory when it is needed.
+
+		It is possible to have multiple classes in a single file, but only one of them can be public. The other classes must have default 
+		(package-private) access or be explicitly declared as private or protected. These classes can be used within the same package, but they 
+		cannot be accessed from outside the package.
+		
+		一個源文件只能包含一個 public 類，且該類的名稱必須與文件名匹配。如果您嘗試在同一文件中創建另一個具有相同名稱的 public 類，則會收到編譯時錯誤。這是因為 Java 使
+		用公共類的名稱來識別文件並在需要時加載類到內存中。
+	  	
+		在同一個文件中可以有多個類，但其中只能有一個是 public。其他類必須具有默認（包私有）訪問權限，或者明確聲明為 private 或 protected。這些類可以在同一個包 
+		(package) 中使用，但無法從包外訪問。
+	   	
+		E.g., class Father -> public class Father  // error 
 
 
 
@@ -1390,19 +1392,110 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 	
 > Observer.java
-- Description:  TBD
+- Description:  
+
+		This is the definition of a Java interface called Observer.
+
+		The interface has a single method called update, which takes a String parameter named message. 
+
+		The method does not have an implementation because interfaces only define the method signature but not the implementation.
+
+		Any class that implements this interface will be required to provide its own implementation of the update method. 
+
+		The purpose of this interface is to define a common contract for classes that need to observe and react to changes in a system or data.
 
 > Subject.java
-- Description:  TBD
+- Description:  
+	
+		This is the definition of a Java interface called Subject.
+	
+		The interface defines three methods: add, remove, and notifyObserver. All three methods are declared without implementation because 
+		this is an interface.
+	 
+			1. add method:
+
+				The add method takes an object that implements the Observer interface as a parameter, and its purpose is to add the 
+				observer to the list of observers that the subject will notify when a change occurs.
+
+			2. remove method:
+
+				The remove method takes an object that implements the Observer interface as a parameter, and its purpose is to remove 
+				the observer from the list of observers that the subject will notify when a change occurs.
+				
+			3. notifyObserver method:
+
+				The notifyObserver method takes a String parameter named message. Its purpose is to notify all the observers that a 
+				change has occurred by calling the update method on each observer and passing the message parameter.
+
+		By defining this interface, any class that needs to act as a subject in the observer pattern can implement this interface and provide 
+		its own implementation of these three methods.
+
+
 
 > NewsTopic.java
-- Description:  TBD
+- Description:  
+
+		This is a Java class called NewsTopic that implements the Subject interface.
+
+		The class has a private field called collectElementsFromObserver that is a List of Observer objects. This list is used to manage the 
+		observers that are interested in receiving notifications from the subject.
+
+		The class provides implementations for the three methods defined in the Subject interface.
+
+			1. add method:
+
+			   The add method adds an Observer object to the list of observers managed by the subject.
+
+			2. remove method:
+
+			   The remove method removes an Observer object from the list of observers managed by the subject.
+
+
+			3. notifyObserver method:
+
+			   The notifyObserver method notifies all the observers in the list by calling the update method on each observer and passing 
+			   the message parameter.
+
+		By implementing the Subject interface, this class can act as a subject in the observer pattern, and other classes can register 
+		themselves as observers by calling the add method. When a change occurs, the subject can notify all the registered observers by calling 
+		the notifyObserver method. The observers will receive the notification and can take appropriate actions based on the information 
+		provided in the message parameter.
 
 > Recipient.java
-- Description:  TBD
+- Description:  
+
+		This is a Java class called Recipient that implements the Observer interface.
+
+		By implementing the Observer interface, this class can act as an observer in the observer pattern.
+
+		The class has a private field called name that represents the name of the recipient.
+
+		The class provides an implementation for the update method defined in the Observer interface.
+
+		1. update method:
+
+		   The update method takes a String parameter named message, which represents the message sent by the subject. 
+
+		   The method simply prints a message to the console indicating that the recipient has received the message and displays the name of 
+		   the recipient and the message itself.
+
+		   When a change occurs in the subject, the update method will be called on each registered observer, including instances of this 
+		   class. 
+
+		   In the update method, the recipient can take appropriate actions based on the information provided in the message parameter.
 
 > RecipientCommunication.java
-- Description:  TBD
+- Description:  
+
+		This is a Java class called RecipientCommunication that demonstrates the use of the observer pattern using the NewsTopic and Recipient 
+		classes.
+
+		In this example, each recipient is added to the list of observers managed by the subject, and then removed after receiving a 
+		notification. 
+
+		This demonstrates the dynamic nature of the observer pattern, where observers can be added and removed as needed, depending on the 
+		requirements of the application.
+
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
