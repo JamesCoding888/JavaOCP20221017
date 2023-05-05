@@ -791,7 +791,7 @@
 
 ------------------------------------------------------------------------------
 # day8 Java Advanced: Primitive type, Wrapper Class (including Application of Java 1.8 - Stream API), Overloading and Inheritance 
-1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Introduction of primitive type, wrapper class, overloading and inheritance</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day8">Introduction of primitive type, wrapper class, overloading and inheritance:</a>
 
 
 
