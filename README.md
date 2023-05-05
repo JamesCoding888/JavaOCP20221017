@@ -1485,7 +1485,17 @@ Observer Pattern (CipherText for RecipientCommuincation):
 		   In the update method, the recipient can take appropriate actions based on the information provided in the message parameter.
 
 > RecipientCommunication.java
-- Description:  TBD
+- Description:  
+
+		This is a Java class called RecipientCommunication that demonstrates the use of the observer pattern using the NewsTopic and Recipient 
+		classes.
+
+		In this example, each recipient is added to the list of observers managed by the subject, and then removed after receiving a 
+		notification. 
+
+		This demonstrates the dynamic nature of the observer pattern, where observers can be added and removed as needed, depending on the 
+		requirements of the application.
+
 
 ------------------------------------------------------------------------------
 # day11 Java Advanced: Equals & HashCode 
