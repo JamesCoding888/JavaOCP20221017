@@ -806,8 +806,8 @@ TBD
 		It is possible to have multiple classes in a single file, but only one of them can be public. The other classes must have default 
 		(package-private) access or be explicitly declared as private or protected. These classes can be used within the same package, but they 
 		cannot be accessed from outside the package.
-	  
-	   	一個源文件只能包含一個 public 類，且該類的名稱必須與文件名匹配。如果您嘗試在同一文件中創建另一個具有相同名稱的 public 類，則會收到編譯時錯誤。這是因為 Java 使
+		
+		一個源文件只能包含一個 public 類，且該類的名稱必須與文件名匹配。如果您嘗試在同一文件中創建另一個具有相同名稱的 public 類，則會收到編譯時錯誤。這是因為 Java 使
 		用公共類的名稱來識別文件並在需要時加載類到內存中。
 	  	
 		在同一個文件中可以有多個類，但其中只能有一個是 public。其他類必須具有默認（包私有）訪問權限，或者明確聲明為 private 或 protected。這些類可以在同一個包 
