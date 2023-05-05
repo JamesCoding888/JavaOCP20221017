@@ -4,7 +4,7 @@ package com.ocp.day11_1.decorator;
  	Of this lecture - Decorator Pattern (a menu of Subway Order System). 
  	 
  	We design a Scanner object for customer to choose three fixed option of bread (i.e., Wheat, Honey Oat, or Italian and Parmesan Oregano).
-	Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 40 and 48-57.
+	Firstly, you will see the many different initiated objects from o1 to o11. Please read the line at 38 and 46-55.
 	Each of initiated object will be the argument of the next Constructor. It's likely all of them are wrapped up as decoration of furniture at house.
 	For an instance of your house, you may need a big door, chairs, a oval table, a set of sofa, two Televisions, and many bulbs...etc. 
 	Those of furniture of house, it seems that you can add or remove whenever you want. For this said, we create a sample code of Subway Order System. 
