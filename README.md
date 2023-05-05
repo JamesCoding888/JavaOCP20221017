@@ -1421,7 +1421,7 @@ Observer Pattern (CipherText for RecipientCommuincation):
 
 				The remove method takes an object that implements the Observer interface as a parameter, and its purpose is to remove 
 				the observer from the list of observers that the subject will notify when a change occurs.
-
+				
 			3. notifyObserver method:
 
 				The notifyObserver method takes a String parameter named message. Its purpose is to notify all the observers that a 
