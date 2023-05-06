@@ -1672,26 +1672,49 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day13">Introduction TBD ...</a>
 
 > StreamDemo.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the use of Java 1.8 - Stream API to perform operations on an array of strings.
+
+		Overall, the code calculates and prints the number of framework names in the frameworks array whose lengths are greater than or equal 
+		to 10. 
+
+		It also prints the length of each framework name as a side effect using the peek operation.
 
 > ConsumerDemo.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the use of various functional interfaces in Java 8 and later versions.
+
+		These functional interfaces are part of the Java 1.8 functional programming features and can be used in scenarios where you need to 
+		pass behavior as arguments to methods or lambda expressions. 
+
+		They provide a way to define reusable code blocks and enhance code readability and maintainability.
+
 
 > PredicateDemo.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the use of the Predicate, IntPredicate, and BiPredicate functional interfaces in Java.
 
 > FunctionDemo.java
 - Description:  
 
-		Since interface of BinaryOperator inherits interface of BiFunction, developer could implement the abstraction method of BiFunction even 
-		BinaryOperator originally have neither. By the way, if you expected to override the method of interface from BinaryFunction, suggested 
-		to use object type of BinaryOperator, then you could override the abstraction method from both of interface, at same time.
+		The code we provided demonstrates the usage of various functional interfaces in Java.
 
-		請讀者留意，BinaryOperator 介面無此抽象方法 "R apply(T t, U u);"，但因 BinaryOperator 繼承 BiFunction 介面，因此可覆寫其抽象方法。順帶一提，若實作 
-		BinaryFunction 介面的抽象方法，建議物件型別改用 BinaryOperator，如此可同時擁有覆寫 BinaryOperator 和 BinaryFunction 介面中的抽象方法
+		The code demonstrates different ways to define and use lambda expressions and functional interfaces in Java.	 		
 
 > SupplierDemo.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the usage of the Supplier functional interface in Java. 
+
+		The Supplier interface is part of the java.util.function package and is a functional interface that represents a supplier of results. 
+
+		It has a single abstract method called get() which returns a result.
+
+		Overall, the code demonstrates how to use the Supplier functional interface to create a supplier of results, both with a simple string 
+		value and with formatted date and time strings.
 
 
 > GenericOperatorTest.java
