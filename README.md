@@ -1720,8 +1720,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > GenericOperatorTest.java
 - Description: 
 
-		To be noticed here, '<>' operator is not allowed for source level below JDK - 1.7, and also '<>' cannot be used with anonymous classes 
-		for source level below JDK - 1.9 (or 9.0)
+		The code we provided demonstrates the usage of the diamond operator (<>) and anonymous classes in Java.
+
+		Diamond Operator (<>):
+	
+			The diamond operator was introduced in Java 7 and is used to infer the type arguments of a generic class instance creation. It 
+			allows you to omit the explicit type arguments when the type can be inferred from the context.
+	
 
 
 
