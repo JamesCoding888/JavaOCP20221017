@@ -1,5 +1,8 @@
 package com.ocp.day11_2;
-
+/*
+	The given code snippet is a Java program that demonstrates the usage of the equals() and hashCode() methods in Java.
+	 
+*/
 public class EqualsHashCode {
 	public static void main(String[] args) {
 		OverrideEqualsHashCode pen1 = new OverrideEqualsHashCode("Pencil", 20);

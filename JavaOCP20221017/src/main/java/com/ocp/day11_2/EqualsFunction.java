@@ -1,5 +1,11 @@
 package com.ocp.day11_2;
-
+/*
+	The code we provided demonstrates the usage of the equals() method and the hashCode() method in Java.
+	
+	It's important to note that the hash code calculation and the possibility of hash collisions may vary depending on the Java Virtual Machine (JVM) version and implementation. 
+	
+	The behavior described in the comments is specific to the execution environment using Java-11 with JRE 16.0.1.  
+*/
 public class EqualsFunction {
 	public static void main(String[] args) {
 		
