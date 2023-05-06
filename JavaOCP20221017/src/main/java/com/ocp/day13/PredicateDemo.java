@@ -1,5 +1,9 @@
 package com.ocp.day13;
-
+/*
+	The code we provided demonstrates the use of the Predicate, IntPredicate, and BiPredicate functional interfaces in Java.
+	
+	 
+*/
 import java.util.function.BiPredicate;
 import java.util.function.IntPredicate;
 import java.util.function.Predicate;

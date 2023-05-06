@@ -1,5 +1,12 @@
 package com.ocp.day13;
-
+/*
+	The code we provided demonstrates the use of Java 1.8 - Stream API to perform operations on an array of strings.
+	
+	Overall, the code calculates and prints the number of framework names in the frameworks array whose lengths are greater than or equal to 10. 
+	
+	It also prints the length of each framework name as a side effect using the peek operation.
+	 
+*/
 import java.util.Arrays;
 import java.util.stream.IntStream;
 public class StreamDemo {
@@ -16,13 +23,13 @@ public class StreamDemo {
 	}
 }
 /*
- Console:
- 		6
-		9
-		10
-		11
-		14
-		Length of "elements >= 10": 3
 
- 
+	 Console:
+	 		6
+			9
+			10
+			11
+			14
+			Length of "elements >= 10": 3
+	 
 */

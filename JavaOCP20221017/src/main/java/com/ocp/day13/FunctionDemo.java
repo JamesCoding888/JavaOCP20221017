@@ -1,5 +1,11 @@
 package com.ocp.day13;
-
+/*
+	
+	The code we provided demonstrates the usage of various functional interfaces in Java.
+	
+	The code demonstrates different ways to define and use lambda expressions and functional interfaces in Java.	 
+	
+*/
 import java.util.function.BiFunction; 
 import java.util.function.BinaryOperator;
 import java.util.function.DoubleBinaryOperator;

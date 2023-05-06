@@ -1,5 +1,13 @@
 package com.ocp.day13;
-
+/*
+	
+	The code we provided demonstrates the use of various functional interfaces in Java 8 and later versions.
+	
+	These functional interfaces are part of the Java 1.8 functional programming features and can be used in scenarios where you need to pass behavior as arguments to methods or lambda expressions. 
+	
+	They provide a way to define reusable code blocks and enhance code readability and maintainability.
+	 
+*/
 import java.util.Arrays;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;

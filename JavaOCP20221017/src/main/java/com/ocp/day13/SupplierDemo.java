@@ -1,4 +1,14 @@
 package com.ocp.day13;
+/*
+	The code we provided demonstrates the usage of the Supplier functional interface in Java. 
+	
+	The Supplier interface is part of the java.util.function package and is a functional interface that represents a supplier of results. 
+	
+	It has a single abstract method called get() which returns a result.
+
+	Overall, the code demonstrates how to use the Supplier functional interface to create a supplier of results, both with a simple string value and with formatted date and time strings.
+ 
+*/
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
