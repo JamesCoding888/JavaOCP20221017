@@ -1530,11 +1530,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 ------------------------------------------------------------------------------
 # day12 Java Advanced: Outer Class, Inner Class and Anonymous
-1. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/innerclass)">Introduction of Inner class</a>
+1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/innerclass">Introduction of Inner class</a>
 
-> Outer.java
-- Description:  
-
+		============================================================================================================================= 
 		Rules of Local Inner Class:
 
 		1) The scope of the local inner class is indeed restricted to the block they are defined in. 
@@ -1585,11 +1583,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 		 5) 區域內部類別可繼承 "抽象類別" 或 "實作介面"。
 		    這使得內部類別可以繼承或實作在抽象類別或介面中定義的行為。
+		=============================================================================================================================
+	
+> Outer.java, InnerClassTest.java
+- Description:  
 
-
-
-> InnerClassTest.java
-- Description:  TBD
+		Describe the rules and features of local inner classes in Java.
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/methodLocal">Introduction of method-local inner class to invoke the local variable</a>
 
