@@ -1507,12 +1507,17 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
  	
 
 > EqualsFunction.java
-- Description:  TBD
+- Description:  
 
-> EqualsHashCode.java
-- Description:  TBD
+		The code you provided demonstrates the usage of the equals() method and the hashCode() method in Java.
 
-> OverrideEqualsHashCodeFunction.java
+		It's important to note that the hash code calculation and the possibility of hash collisions may vary depending on the Java Virtual 
+		Machine (JVM) version and implementation. 
+
+		The behavior described in the comments is specific to the execution environment using Java-11 with JRE 16.0.1. 
+
+
+> EqualsHashCode.java, OverrideEqualsHashCodeFunction.java
 - Description: 
 
 		The method of "public int hashCode(){ ... }" being overrided with the value of prime: 31, was chosen because it is an odd prime. 
