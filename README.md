@@ -1533,7 +1533,60 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="[https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass](https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day12/InnerClass/innerclass)">Introduction of Inner class</a>
 
 > Outer.java
-- Description:  TBD
+- Description:  
+
+		Rules of Local Inner Class:
+
+		1) The scope of the local inner class is indeed restricted to the block they are defined in. 
+		   It means that the class can only be accessed and used within the block of code where it is defined.
+
+		2) A local inner class cannot be instantiated from outside the block where it is created in.
+		   For an example of following: 	
+
+				OuterClassA {
+
+					new InnerClassB(); // Unallowable  
+
+					InnerClassB {
+
+					}
+				}
+
+		3) Prior to JDK 8, local inner classes could only access the final local variables of the enclosing block. 
+		   However, starting from JDK 8, they can also access non-final local variables. 
+		   This allows more flexibility in using local variables within the inner class.
+
+		4) A local class (inner class) has access to the members of its enclosing class. 
+		   In the given example, the InnerCardOwner class has access to the private serialNumber field of the Outer class.
+
+		5) Local inner classes can extend an abstract class or implement an interface. 
+		   This enables the inner class to inherit or implement behavior defined in the abstract class or interface.
+		=============================================================================================================================
+		區域內部類別之規定：
+
+		1) 區域內部類別的範圍限定在其所定義的區塊內。這意味著該類別只能在定義它的程式碼區塊內部被存取和使用。
+
+		2) 區域內部類別不能從創建它的區塊外部實例化。在提供的例子中，試圖在 OuterClassA 區塊之外創建 InnerClassB 的實例是不允許的。
+		   例如:
+				OuterClassA {
+
+					new InnerClassB(); // Unallowable  
+
+					InnerClassB {
+
+					}
+				}
+
+		 3) 在 JDK 8 之前，區域內部類別只能存取封閉區塊的 final 區域變數。
+		    然而，從 JDK 8 開始，它們還可以存取非 final 區域變數。這樣可以更靈活地在內部類別中使用區域變數。
+
+		 4) 區域類別（內部類別）可以調用其封閉類別的成員 (變數/方法)。
+		    在給定的例子中，InnerCardOwner 類別可以存取 Outer 類別的私有 serialNumber 欄位。
+
+		 5) 區域內部類別可繼承 "抽象類別" 或 "實作介面"。
+		    這使得內部類別可以繼承或實作在抽象類別或介面中定義的行為。
+
+
 
 > InnerClassTest.java
 - Description:  TBD
