@@ -3326,31 +3326,38 @@ BufferedReaderExecutionTime.java
 # Java SE 11 Developer Exam - <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/Java11/chapter01_dataTypes">Data Types</a>
 
 > StringBuilderPractice01.java
-- Description:  TBD
+
 
 > StringBuilderPractice02.java
-- Description:  TBD
+
 
 > StringBuilderPractice03.java
-- Description:  TBD
+
 
 > StringBuilderPractice04.java
-- Description:  TBD
+
+
+> StringBuilderPractice05.java
+
 
 > ComparatorPractice.java
-- Description:  TBD
+
+
+> ArgumentDemo.java
+
 
 > Airplane.java
-- Description:  TBD
+
 
 > VarTest.java
-- Description:  TBD
+
 
 > VarDemo.java
-- Description:  TBD
+
 
 > varCanAndCannot.java
-- Description:  TBD
+
+
 
 
 
