@@ -1,5 +1,10 @@
 package com.ocp.day14.hashSet;
+/*
 
+	The code we provided demonstrates the use of a LinkedHashSet and an Iterator to perform various operations on a set of numbers.
+	
+	Overall, the code showcases different ways to iterate over a set and perform operations on its elements, including removing elements and calculating the sum using an iterator and Java 8 Streams.
+*/
 import java.util.Iterator;  
 import java.util.LinkedHashSet;
 import java.util.Set;

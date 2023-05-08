@@ -1,5 +1,7 @@
 package com.ocp.day14.hashSet;
-
+/*
+	This Java program demonstrates the use of LinkedHashSet and nested sets.
+*/
 import java.util.Iterator;  
 import java.util.LinkedHashSet;
 import java.util.Set;

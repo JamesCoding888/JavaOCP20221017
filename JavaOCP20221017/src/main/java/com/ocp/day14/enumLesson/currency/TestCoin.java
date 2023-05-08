@@ -18,7 +18,7 @@ public class TestCoin {
 	public static void main(String[] args) {
         
 		EnumForUSCurrency coinInPenny = EnumForUSCurrency.PENNY;
-		EnumForUSCurrency coinInNickle = EnumForUSCurrency.NICKLE;
+		EnumForUSCurrency coinInNickle = EnumForUSCurrency.NICKEL;
 		EnumForUSCurrency coinInDime = EnumForUSCurrency.DIME;		
 		EnumForUSCurrency coinInQuarter = EnumForUSCurrency.QUARTER;
 		
@@ -57,7 +57,7 @@ public class TestCoin {
 /*
 		Console:
 				penny: 1
-				nickle: 5
+				nickel: 5
 				dime: 10
 				quarter: 25
 */

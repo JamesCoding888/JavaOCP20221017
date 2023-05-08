@@ -1,5 +1,10 @@
 package com.ocp.day14.enumLesson.positions;
-
+/*
+	The given code is written in Java and defines a class called TestPositions and an enum called EnumPositions.
+	
+	Overall, this code demonstrates the use of enums and switch statements in Java to handle different job positions and perform actions based on the selected position.
+ 
+*/
 public class TestPositions {
 	public static void main(String[] args) {
 		

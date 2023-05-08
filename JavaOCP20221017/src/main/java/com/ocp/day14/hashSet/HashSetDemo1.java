@@ -1,8 +1,9 @@
 package com.ocp.day14.hashSet;
 
 /*
- 	Overview of HashSet:
+======================================================================================================================================================================
  	
+ 	Overview of HashSet:
  	1. The class of HashSet implements the Set interface, backed by a hash table (actually a HashMap instance)
  	   E.g., HashMapInstance.java at package "com.ocp.day16.hashMap"
  	2. It makes NO guarantees as to the iteration order of the set
@@ -37,6 +38,7 @@ package com.ocp.day14.hashSet;
 
 	9. Available since java 1.2
 
+======================================================================================================================================================================
 
 	Overview of LinkedHashSet:	
 	   
@@ -74,6 +76,7 @@ package com.ocp.day14.hashSet;
 	
 	10. Available since java 1.4
 	
+======================================================================================================================================================================
 	
 	Overview of LinkedList:	   
 	1. Doubly-linked list implementation of the List and Deque interfaces 
@@ -113,7 +116,13 @@ package com.ocp.day14.hashSet;
  	-	https://stackoverflow.com/questions/4881868/bug-in-linkedhashset-javadoc
  	-	reference folder (p.s., For the sake of avoiding missing content on web-site, 
  		we duplicated the whole content from stackoverflow and paste to package of hashSet)  
+ 
+======================================================================================================================================================================
  	
+ 	The given code is this example of using HashSet, LinkedHashSet, and LinkedList in Java.
+ 	Overall, the code demonstrates the usage of HashSet, LinkedHashSet, and LinkedList, as well as the iteration and stream operations on these collections.
+
+======================================================================================================================================================================
 */
 
 import java.util.HashSet;
