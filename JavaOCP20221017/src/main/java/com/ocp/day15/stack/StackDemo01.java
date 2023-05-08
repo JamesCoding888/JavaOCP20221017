@@ -1,5 +1,7 @@
 package com.ocp.day15.stack;
 /*
+=====================================================================================================================================================================
+	
 	Introduction of Stack:
 	
 	1. public class Stack<E> extends Vector<E>	
@@ -12,6 +14,15 @@ package com.ocp.day15.stack;
 	
 	Refer to the link of Oracle: 
 	https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+	
+=====================================================================================================================================================================
+	
+	The code we provided demonstrates the use of the java.util.Stack class in Java.
+	
+	In summary, the code demonstrates various operations on a stack, including pushing elements, 
+	searching for elements, peeking at the top element, and popping elements in a last-in-first-out (LIFO) order.
+
+=====================================================================================================================================================================
 */
 
 import java.util.Stack;

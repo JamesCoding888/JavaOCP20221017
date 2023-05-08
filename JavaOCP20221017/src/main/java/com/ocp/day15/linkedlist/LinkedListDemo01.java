@@ -1,6 +1,8 @@
 package com.ocp.day15.linkedlist;
 
 /*
+========================================================================================================================================================================================================================
+
  	Again, you may know the following statements from HashSetDemo1.java, at package "com.ocp.day14.hashSet"
  	
 	Overview of LinkedList:	   
@@ -29,6 +31,13 @@ package com.ocp.day15.linkedlist;
 	
 	8. There are NO Initial Capacity and Load Factor
 	9. Available since java 1.2
+	
+========================================================================================================================================================================================================================
+	
+	The given code demonstrates the usage of a LinkedList in Java and various operations performed on it. 
+	That's the overview of the code provided. It demonstrates how to create a LinkedList, add elements, iterate over it using a ListIterator, and perform modifications on the list.
+
+========================================================================================================================================================================================================================
 */
 
 import java.util.LinkedList; 

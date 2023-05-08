@@ -1,9 +1,10 @@
 package com.ocp.day15.stack;
 
-/*
- 	Regarding application of Scanner, please recap the previously lecture of day6 at package: "com.ocp.day6.ScannerPractice"
- 	For the detail of processing on reverting the text, please read the following annotation of each syntax below.  
+/* 	
+	   	
+ 	The provided code is a Java program that demonstrates the use of a stack data structure to reverse the input characters and takes input from the user using the Scanner class. 
  	
+ 	Regarding application of Scanner, please recap the previously lecture of day6 at package: "com.ocp.day6.ScannerPractice"
 */
 
 import java.util.Scanner;

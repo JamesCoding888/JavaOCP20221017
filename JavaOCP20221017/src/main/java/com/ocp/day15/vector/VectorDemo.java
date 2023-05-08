@@ -1,5 +1,12 @@
 package com.ocp.day15.vector;
-
+/*
+	The given code is a Java program that demonstrates the use of the Vector class in Java.
+		
+	Overall, this code demonstrates the usage of the Vector class in Java and how to handle capacity and resizing. 
+	
+	It also highlights the importance of correctly managing the size and index when removing elements from a collection while iterating over it.
+	 
+*/
 import java.util.Vector;
 
 public class VectorDemo {

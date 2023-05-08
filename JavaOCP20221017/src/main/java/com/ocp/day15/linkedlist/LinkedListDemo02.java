@@ -1,9 +1,13 @@
 package com.ocp.day15.linkedlist;
 
 /*
-	Of this sample code, we remind the developer shall NOT invoke method of ".remove(int index)" inside for-loop/for-each, because the following object of list is Dynamic.
-		
-		List<String> list = new LinkedList<>();
+ 	
+	The provided code demonstrates the usage of a LinkedList in Java and shows the correct approach to remove null elements from the list using a ListIterator. 
+	
+	A reminder to reader, shall NOT invoke method of ".remove(int index)" inside for-loop/for-each, because the following object of list is Dynamic.
+			
+			List<String> list = new LinkedList<>();
+			
 */
 
 import java.util.LinkedList;

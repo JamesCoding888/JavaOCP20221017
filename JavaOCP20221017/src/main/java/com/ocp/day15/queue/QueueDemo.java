@@ -1,6 +1,7 @@
 package com.ocp.day15.queue;
 
 /*
+=========================================================================================================================================================================================================================
 	
 	The Queue interface is presented in package of "java.util" and extends the Collection interface is used to hold the elements about to be processed in FIFO(First In First Out) order. 
 	The Queue is an ordered list of objects with limited to insert element(s) at the end of the list and deleting element(s) from the beginning of the list (i.e., following the first-in-first-out principal - FIFO).
@@ -13,7 +14,14 @@ package com.ocp.day15.queue;
 	Refer to the links as follows:
 	https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html
 	https://www.geeksforgeeks.org/queue-interface-java/
+
+=========================================================================================================================================================================================================================	
+
+	The code we provided demonstrates the usage of the Queue interface in Java.
 	
+	In summary, the code demonstrates how to use the Queue interface in Java to add, access, and remove elements from a queue using different methods such as add, offer, peek, poll, and remove.
+
+=========================================================================================================================================================================================================================
 */
 
 import java.util.ArrayList;
