@@ -1753,11 +1753,28 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/enumLesson">Introduction of Enum</a>
-> TestCoin.java
-- Description:  TBD
+> TestCoin.java, EnumForUSCurrency.java
+- Description:
+ 	
+		Introduction of enum class:
 
-> EnumForUSCurrency.java
-- Description:  TBD
+			1. Enum is introduced in Java 1.5 as a new type whose fields consists of a fixed set of constants 
+
+			2. fields - The fields in the enum class are given private accessibility. 
+
+			3. Constructors:
+			   Accessibility of Constructors, MUST be in "private", eventually we do NOT specify an access modifier the enum constructor as 
+			   default, but finally JRE will help to pad with "private" on constructors
+
+			4. Constants: 
+			   The constants of the enum class are defined at the top, with each constant followed by its associated value in parentheses. 
+
+			5. The type enum class cannot be the superclass of SubClass; a superclass must be a regular class. Please refer to the 
+			"TestCoin.java"
+
+
+	
+
 
 > EnumPositions.java
 - Description:  TBD
