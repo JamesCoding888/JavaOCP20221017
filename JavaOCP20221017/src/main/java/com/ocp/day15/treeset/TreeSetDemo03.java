@@ -1,5 +1,10 @@
 package com.ocp.day15.treeset;
-
+/*
+	The given code demonstrates the usage of the TreeSet class in Java. 
+	
+	It creates a TreeSet object, adds elements to it, and then traverses the elements using an iterator.
+	 
+*/
 import java.util.Iterator;
 import java.util.TreeSet;
 public class TreeSetDemo03 {

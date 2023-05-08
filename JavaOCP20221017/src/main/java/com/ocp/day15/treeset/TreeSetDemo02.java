@@ -1,5 +1,9 @@
 package com.ocp.day15.treeset;
+/*
 
+	The given code is written in Java and demonstrates the use of LinkedHashSet and TreeSet to store and order elements. 
+
+*/
 import java.util.LinkedHashSet; 
 import java.util.Set; 
 import java.util.TreeSet;
