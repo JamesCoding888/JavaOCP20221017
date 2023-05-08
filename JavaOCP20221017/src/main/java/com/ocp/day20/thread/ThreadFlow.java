@@ -1,8 +1,12 @@
 package com.ocp.day20.thread;
-
+/*
+	The given code represents a multi-threaded program in Java.
+	
+	Note that the execution order may vary slightly between runs since the threads are running concurrently. 
+*/
 class ThreadTimer {
 	public final int MAX_PRIORITY = 1_000; // 1,000 milliseconds = 1 second
-	// ThreadTimer method
+	// A method countDown() that causes the current thread to sleep for a specified duration. 
 	public void countDown() {
 		try {
 			Thread.sleep(MAX_PRIORITY);
@@ -97,7 +101,7 @@ class Thread02 extends Thread {
 
 public class ThreadFlow {
 	public static void main(String[] args) {
-		// TBD ...
+		// Create an instance of Thread01 and starts it by calling the start() method
 		new Thread01().start();
 	}
 }
