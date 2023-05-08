@@ -1881,7 +1881,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/queue">Introduction of Queue</a>
 
 > QueueDemo.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the usage of the Queue interface in Java.
+
+		In summary, the code demonstrates how to use the Queue interface in Java to add, access, and remove elements from a queue using 
+		different methods such as add, offer, peek, poll, and remove.
+
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/treeset">Introduction of TreeSet</a>
 
