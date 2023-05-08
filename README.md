@@ -1789,17 +1789,24 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashSetDemo1.java
 - Description:  
 
-		Giving a sample code to overview the application of HashSet, LinkedHashSet and LinkedList
+		The given code is this example of using HashSet, LinkedHashSet, and LinkedList in Java.
+ 	
+		Overall, the code demonstrates the usage of HashSet, LinkedHashSet, and LinkedList, as well as the iteration and stream operations on 
+		these collections.
 
 > HashSetDemo2.java
 - Description: 
 
-		In this session, you will learn how to remove the element by Iterator and calculate the total scores by Iterator and Stream API
+		
+		The code we provided demonstrates the use of a LinkedHashSet and an Iterator to perform various operations on a set of numbers.
+
+		Overall, the code showcases different ways to iterate over a set and perform operations on its elements, including removing elements 
+		and calculating the sum using an iterator and Java 8 Streams.
 
 > HashSetDemo3.java
 - Description: 
 
-		Application of LinkedHashSet
+		This Java program demonstrates the use of LinkedHashSet and nested sets.
 
 > Load Factor & Capacity
 - Description: 
