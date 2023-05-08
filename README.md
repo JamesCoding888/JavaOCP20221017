@@ -1892,7 +1892,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/treeset">Introduction of TreeSet</a>
 
 > TreeSetDemo01.java
-- Description:  TBD
+- Description:  
+
+		The code you provided demonstrates the usage of a TreeSet in Java. 
+	
+		A TreeSet is an implementation of the Set interface that maintains its elements in sorted order.
+
 
 
 > TreeSetDemo02.java
