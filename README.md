@@ -1901,12 +1901,17 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 > TreeSetDemo02.java
-- Description:  TBD
+- Description:  
+
+		The given code is written in Java and demonstrates the use of LinkedHashSet and TreeSet to store and order elements.
 
 > TreeSetDemo03.java
 - Description:  
 
-		Demonstration of treeSet with Iterator, and also you will see a storage of Tree for string based on letter
+		The given code demonstrates the usage of the TreeSet class in Java. 
+
+		It creates a TreeSet object, adds elements to it, and then traverses the elements using an iterator.
+		
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparable">Introduction of Comparable</a>
 
