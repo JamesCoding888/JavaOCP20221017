@@ -1829,19 +1829,68 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/vector">Introduction of Vector</a>
 > VectorDemo.java
-- Description:  TBD
+- Description:  
+	
+		The given code is a Java program that demonstrates the use of the Vector class in Java.
+
+		Overall, this code demonstrates the usage of the Vector class in Java and how to handle capacity and resizing. 
+
+		It also highlights the importance of correctly managing the size and index when removing elements from a collection while iterating 
+		over it.
+
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/stack">Introduction of Stack</a>
 > StackDemo01.java
-- Description:  TBD
+- Description:  
+
+		The code we provided demonstrates the use of the java.util.Stack class in Java.
+
+		In summary, the code demonstrates various operations on a stack, including pushing elements, 
+		searching for elements, peeking at the top element, and popping elements in a last-in-first-out (LIFO) order.
 
 > StackDemo02.java
-- Description:  TBD
+- Description:  
+	
+		The provided code is a Java program that demonstrates the use of a stack data structure to reverse the input characters and takes input 
+		from the user using the Scanner class.
 
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/list">Introduction of LinkedList</a>
 
 > LinkedListDemo01.java
-- Description:  TBD
+- Description:  
+
+
+		Overview of LinkedList:	   
+			1. Doubly-linked list implementation of the List and Deque interfaces 
+			2. LinkedList implements all Optional list operations 
+			3. LinkedList permits all elements (including null)
+			4. All of the operations perform as could be expected for a doubly-linked list. 
+			5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the 			   Specified INDEX.
+			6. When we have already read the element, we cannot read the element repeatedly
+			7. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE  				  of the threads modifies the list structurally, it MUST be Synchronized Externally. 
+			   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an 
+			   element is not a structural modification.) 
+			   
+			   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
+			   If NO such object exists, the list should be "wrapped" using the Collections.synchronizedList method. 
+			   This is Best Done at Creation Time, to Prevent Accidental Unsynchronized access to the list:
+
+					List list = Collections.synchronizedList(new LinkedList(...));
+
+			   The iterators returned by this class's iterator and listIterator methods are fail-fast: 
+			   if the list is structurally modified at any time after the iterator is created, in any way except through the Iterator's own 
+			   remove or add methods, the iterator will throw a ConcurrentModificationException. 
+			   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-
+			   deterministic behavior at an undetermined time in the future.
+
+			   Note that the fail-fast behavior of an iterator CANNOT be guaranteed as it is, generally speaking, impossible to make any 
+			   hard guarantees in the presence of Unsynchronized Concurrent Modification. 
+			   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. 
+			   Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
+			   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+
+			8. There are NO Initial Capacity and Load Factor
+			9. Available since java 1.2
 
 > LinkedListDemo02.java
 - Description:  TBD
