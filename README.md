@@ -1770,7 +1770,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 			   The constants of the enum class are defined at the top, with each constant followed by its associated value in parentheses. 
 
 			5. The type enum class cannot be the superclass of SubClass; a superclass must be a regular class. Please refer to the 
-			"TestCoin.java"
+			   "TestCoin.java"
 
 
 	
