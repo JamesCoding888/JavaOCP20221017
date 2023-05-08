@@ -1776,11 +1776,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 	
 
 
-> EnumPositions.java
-- Description:  TBD
+> TestPositions.java, EnumPositions.java
+- Description:  
+		The given code is written in Java and defines a class called TestPositions and an enum called EnumPositions.
 
-> TestPositions.java
-- Description:  TBD
+		Overall, this code demonstrates the use of enums and switch statements in Java to handle different job positions and perform actions 
+		based on the selected position.
+
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day14/hashSet">Introduction of Set</a> 
 
