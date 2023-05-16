@@ -1942,8 +1942,29 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > ListEfficiency.java
 - Description: 
 
-		The executed efficiency of List in this sample code, you will learn the instantiated object of List from 1) always use the same object 
-		of list to proceed the loop function, 2) always use the newly object of list to proceed the loop function. 
+		The code we provided compares the performance of two approaches: 
+
+			Reusing the same List object and creating a new List object in each iteration of the loop. 
+
+			The code measures the time it takes to add 1,000,000 strings to the list for each approach and calculates the average duration over 100 iterations.
+
+
+		When reusing the same List object:
+
+			The list is cleared before each iteration using list.clear().
+			The memory allocated for the list remains the same throughout the loop.
+
+		When creating a new List object in each iteration:
+
+			A new List object is created for each iteration.
+			The memory allocated for the previous List object is released and garbage collected.
+
+		In terms of performance, creating a new List object in each iteration may provide better memory management as the memory is released and garbage collected after each 
+		iteration. 
+		However, this approach incurs the overhead of creating a new List object repeatedly.
+
+		To accurately determine which approach is faster, it is recommended to perform benchmarking and testing in your specific environment and use case. 
+		The actual performance may vary depending on factors such as JVM implementation, memory management, and hardware.		
 
 > TreeSetEfficiency.java
 - Description: 
