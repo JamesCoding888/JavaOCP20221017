@@ -1966,44 +1966,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		To accurately determine which approach is faster, it is recommended to perform benchmarking and testing in your specific environment and use case. 
 		The actual performance may vary depending on factors such as JVM implementation, memory management, and hardware.		
 
-> TreeSetEfficiency.java
+> EfficiencyLab4Collection.java
 - Description: 
 
-		The executed efficiency of TreeSet is faster than List by 6 times, almost. Pleease check out the sample code for more detail. 
+		The subject of this code is to compare the efficiency of different collection classes in Java. 
 
-> ArrayListEfficiency.java
-- Description:  TBD
+		It measures the time taken to perform 1,000,000 data operations (adding elements) on various collection classes and presents the results in ascending order based on 
+		the average duration. 
 
-> VectorEfficiency.java
-- Description:  TBD
-
-> StackEfficiency.java
-- Description:  TBD
-
-> LinkedListEfficiency.java
-- Description:  TBD
-
-> LinkedHashSetEfficiency.java
-- Description:  TBD
-
-> HashSetEfficiency.java
-- Description:  TBD
-
-> QueueEfficiency.java
-- Description:  TBD
-
-> DequeEfficiency.java
-- Description:  TBD
-
-> PriorityQueueEfficiency.java
-- Description:  TBD
-
-> ArrayDequeEfficiency.java
-- Description:  TBD
-
-
-> ***** Another sample codes , TBD *****
-
+		The code aims to provide insights into the performance characteristics of different collection classes, allowing developers to make informed decisions when choosing 
+		the appropriate collection class for their specific requirements.
 
 ------------------------------------------------------------------------------
 # day16 Java Advanced: Hashtable, Enumeration, LinkedHashMap, HashMap, TreeMap, Collectors and Arrays.asList
