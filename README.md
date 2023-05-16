@@ -1976,6 +1976,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 		The code aims to provide insights into the performance characteristics of different collection classes, allowing developers to make informed decisions when choosing 
 		the appropriate collection class for their specific requirements.
+		
+		Based on the implementation of the code, the console output appears to display the average durations (in seconds) for each collection class in ascending order. 
+		It suggests that the TreeSet class has the lowest average duration, indicating better performance compared to the other classes.  
+
 
 ------------------------------------------------------------------------------
 # day16 Java Advanced: Hashtable, Enumeration, LinkedHashMap, HashMap, TreeMap, Collectors and Arrays.asList
