@@ -1,27 +1,15 @@
 package: com.ocp.day15.efficiency
 
-Subject: Performance Inspection 
-Target: Stack, Vector, Queue, Deque, ArrayList, LinkedHashSet, LinkedList, Iterator
+Subject: 
+	
+	Performance Inspection 
 
-Description:
-This session we will simulate the objects of Target and list out the pros and cons of them as follows. 
-
-
-- Stack
-
-- Vector 
-
+Target: 
+	
+	Vector, Stack, TreeSet, LinkedHashSet, Queue, Deque, PriorityDeque, Array and LinkedList
+	
 - Queue
   Reference of following link:
   https://stackoverflow.com/questions/63097585/stack-implementation-java-linkedlist-vs-vector
   https://publicobject.com/2010/07/07/caliper_confirms_reality_linked_list_vs_array_list/
 
-- Deque
-
-- ArrayList
-
-- LinkedHashSet
-
-- LinkedList
-
-- Iterator
