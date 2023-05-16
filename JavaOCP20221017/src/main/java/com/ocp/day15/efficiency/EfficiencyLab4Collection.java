@@ -6,6 +6,10 @@ package com.ocp.day15.efficiency;
 	It measures the time taken to perform 1,000,000 data operations (adding elements) on various collection classes and presents the results in ascending order based on the average duration. 
 	
 	The code aims to provide insights into the performance characteristics of different collection classes, allowing developers to make informed decisions when choosing the appropriate collection class for their specific requirements.
+	
+	Based on the implementation of the code, the console output appears to display the average durations (in seconds) for each collection class in ascending order. 
+	
+	It suggests that the TreeSet class has the lowest average duration, indicating better performance compared to the other classes.  
 	 
 */
 import java.util.ArrayDeque;
