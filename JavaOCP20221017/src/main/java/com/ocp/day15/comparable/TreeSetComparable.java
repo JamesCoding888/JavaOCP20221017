@@ -1,5 +1,10 @@
 package com.ocp.day15.comparable;
-
+/*
+	The code provided is a Java program that demonstrates the use of a TreeSet to sort and store objects of the Employee class based on their properties.
+	
+	The Employee class implements the Comparable interface, allowing the objects to be compared and sorted.
+	 
+*/
 import java.util.Set;
 import java.util.TreeSet;
 public class TreeSetComparable {

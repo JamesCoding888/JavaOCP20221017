@@ -1,52 +1,9 @@
 package com.ocp.day15.comparator;
 
 /*
-
-	What is the result of Case 1, based on 1) ASCENDING order of compare method ?
+	The code provided is an example of using the Comparator interface in Java to sort a list of Book objects based on their names. 
 	
-	A.[A Guide to Java Tour:3.0, Business for OpenAI:1.0, Beginning with Java:2.0]
-	
-	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
-	
-	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
-	
-	D. An Exception is thrown at run time.
-
-	
-	What is the result of Case 2, based on 1) ASCENDING order of compare method ?
-	
-	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
-	
-	B.[a:1.0, b:3.0, b:2.0, c:4.0, c:5.0, c:5.0, c:7.0]
-	
-	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
-	
-	D. An Exception is thrown at run time.
-	
-	
-	
-	What is the result of Case 1, based on 2) DESCENDING order of compare method ?
-	
-	A.[Business for OpenAI:1.0, Beginning with Java:2.0, A Guide to Java Tour:3.0]
-	
-	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
-	
-	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
-	
-	D. An Exception is thrown at run time.
-
-	
-	What is the result of Case 2, based on 2) DESCENDING order of compare method ?
-	
-	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
-	
-	B.[c:4.0, c:7.0, c:5.0, c:5.0, b:3.0, b:2.0, a:1.0]
-	
-	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
-	
-	D. An Exception is thrown at run time.
-	
-	
+	The Book class implements the Comparator interface and overrides the compare method to define the comparison logic. 
 */
 
 import java.util.Arrays; 
@@ -162,21 +119,54 @@ public class Comparator4Books {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
+
+	What is the result of Case 1, based on 1) ASCENDING order of compare method ?
+	
+	A.[A Guide to Java Tour:3.0, Business for OpenAI:1.0, Beginning with Java:2.0]
+	
+	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+
+	
+	What is the result of Case 2, based on 1) ASCENDING order of compare method ?
+	
+	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
+	
+	B.[a:1.0, b:3.0, b:2.0, c:4.0, c:5.0, c:5.0, c:7.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+	
+	
+	
+	What is the result of Case 1, based on 2) DESCENDING order of compare method ?
+	
+	A.[Business for OpenAI:1.0, Beginning with Java:2.0, A Guide to Java Tour:3.0]
+	
+	B.[A Guide to Java Tour:3.0, Beginning with Java:2.0, Business for OpenAI:1.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+
+	
+	What is the result of Case 2, based on 2) DESCENDING order of compare method ?
+	
+	A.[a:1.0, b:3.0, b:2.0, c:4.0, c:7.0, c:5.0, c:5.0]
+	
+	B.[c:4.0, c:7.0, c:5.0, c:5.0, b:3.0, b:2.0, a:1.0]
+	
+	C. A compilation error occurs because the Book class does not override the abstract method compareTo().
+	
+	D. An Exception is thrown at run time.
+	
+	
+	=====================================================================================================================
 	
 	Console of Case1, based on ASCENDING order: 
 

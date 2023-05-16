@@ -1,27 +1,54 @@
 package com.ocp.day15.efficiency;
 /*
- 	本次 List 效率實驗，如下：
+ 	The code we provided compares the performance of two approaches: 
+ 	
+ 		Reusing the same List object and creating a new List object in each iteration of the loop. 
+ 	
+ 		The code measures the time it takes to add 1,000,000 strings to the list for each approach and calculates the average duration over 100 iterations.
+ 	
+
+ 	When reusing the same List object:
+
+		The list is cleared before each iteration using list.clear().
+		The memory allocated for the list remains the same throughout the loop.
+	
+	When creating a new List object in each iteration:
+
+		A new List object is created for each iteration.
+		The memory allocated for the previous List object is released and garbage collected.
+	
+	In terms of performance, creating a new List object in each iteration may provide better memory management as the memory is released and garbage collected after each iteration. 
+	However, this approach incurs the overhead of creating a new List object repeatedly.
+
+	To accurately determine which approach is faster, it is recommended to perform benchmarking and testing in your specific environment and use case. 
+	The actual performance may vary depending on factors such as JVM implementation, memory management, and hardware.
+
 */
 
 import java.util.ArrayList; 
 import java.util.List;
 public class ListEfficiency {
 	public static void main(String[] args) {
-		// 每次調用同一個 list 物件來存取字串 "1"
-//		List<String> list = new ArrayList<>();
+		// reusing the same List object
+		List<String> list = new ArrayList<>();
 		double sum = 0.0;		
-		// 執行 100 次迴圈
-		for (int t = 0; t <= 100; t++) {
-			// 每次調用新的 list 物件
-			List<String> list = new ArrayList<>();
+        // Execute the loop 100 times
+		for (int t = 0; t < 100; t++) {
+			// creating a new List object in each iteration
+//			List<String> list = new ArrayList<>();
 			long start = System.nanoTime();	
-			// 執行 1,000,000 筆資料運算
+			// Perform 1,000,000 data operations
 			for (int n = 1; n <= 1000000; n++) {
 				list.add("1");
 			}
-			// 避免計算效能誤差，不在此將數值轉成 10^-9，因為最後 stop 區域變數存取轉換後的數值，可能已不是原先的時間點
+			/*
+				It suggests avoiding converting the measured duration to seconds (10^-9 conversion) immediately after capturing the stop time 
+				because the stop variable might not hold the exact stop time anymore due to potential optimizations or other factors.
+			*/
 			long stop = System.nanoTime();
-			// 已存取的 stop 區域變數數值在做 10^-9 轉換，會比較好
+			/*
+			 	By converting the duration to seconds right after capturing the stop time, any subsequent operations or calculations may introduce additional overhead and inaccuracies. 
+			*/
 			double duration = (stop - start) * Math.pow(10, -9);
 			sum += duration;
 		}
@@ -31,15 +58,23 @@ public class ListEfficiency {
 }
 
 /*
-	Console 1) - 每次調用同一個 list 物件:
-			Average duration: 0.028037 
+	Console 1) - Reusing the same List object:
+			Average duration of 100 times: 0.019897 
 	
-	Console 2) - 每次調用新的 list 物件: 			
-			Average duration: 0.018791
+	Console 2) - Creating a new List object: 			
+			Average duration of 100 times: 0.016871 
 			
-	Summary:
-		每次調用同一個 list 物件，經運算結果，反而時間多 0.009246s。
-		也就是說，開發者若對於效能很講究，用記憶體空間來換取效能，也不失為一個解決方法。
-		畢竟現今 SSD 的價格低廉，在絞盡思考如何優化程式碼的效能，可能花錢的方式會更有效率。
+		
+	Summary:	
+		
+		From these results, it appears that creating a new List object in each iteration is slightly faster than reusing the same List object. The time difference is approximately 0.003026 seconds.
+
+		In terms of performance, using more memory space by creating new List objects seems to provide better efficiency. 
+		
+		As we mentioned, considering the current affordability of SSDs, investing in memory usage to optimize performance might be a viable solution.
+
+		It's important to note that the actual performance may vary depending on various factors, such as hardware, JVM implementation, and specific use cases. 
+		
+		Therefore, it's recommended to perform thorough benchmarking and testing in your specific environment to evaluate the performance implications accurately.
 		
 */
