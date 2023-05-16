@@ -1915,19 +1915,19 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 6. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparable">Introduction of Comparable</a>
 
-> Employee.java
-- Description:  TBD
+> Employee.java, SortOrder.java, TreeSetComparable.java
+- Description:  
 
-> SortType.java
-- Description:  TBD
-
-> TreeSetComparable.java
-- Description:  TBD
+		The code provided is a Java program that demonstrates the use of a TreeSet to sort and store objects of the Employee class based on their properties.
+	
+		The Employee class implements the Comparable interface, allowing the objects to be compared and sorted.
 
 7. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/comparator">Introduction of Comparator</a>
 
 > Comparator4Books.java
-- Description:  TBD
+- Description:  
+		
+		The code provided is an example of using the Comparator interface in Java to sort a list of Book objects based on their names.
 
 
 
