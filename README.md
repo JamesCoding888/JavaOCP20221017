@@ -2172,10 +2172,20 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 	<img width="600" alt="Comparison of HashTable   HashMap" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a09aabf2-fe45-46d7-88ed-78f2550e0412">
 
 > HashMapDemo4double.java
-- Description:  TBD
+- Description:  
+		
+		The code provided is a Java program that demonstrates the use of HashMap and various operations on it. 
+
+		It stores key-value pairs representing subject names and their corresponding scores as doubles.
+
 
 > HashMapDemo4int.java
-- Description:  TBD
+- Description:  
+
+		The code you provided demonstrates the use of a HashMap to store subjects and their corresponding scores. 
+
+		It prints out the key-value pairs, the keys only, and calculates the total scores.
+
 
 > LinkedHashMapDemo.java
 - Description:  TBD
