@@ -1,19 +1,28 @@
 package com.ocp.day16.map;
 
-/*  
+/*
+
+======================================================================================================================================================================================================================  
+
  	Introduction of HashMap:
-	  	1) HashMap<K, V> class, at package: "java.util", is a subclass of Map interface.  
-	  	2) Hash table is based implementation of the Map interface
-	  	3) HashMap stores the data based on Key and Value
-	  	4) Permit null values and the null keys 
-	  	5) If trying to insert the duplicate key, HashMap will replace the element of the corresponding key.
-	  	6) HashMap class is almost same as Hashtable class, except for unsynchronized and permitted nulls.
-	  	7) HashMap is "Unsynchronized" but HashTable "Synchronized"
-	  	8) HashMap permits elements of Key and Value to be "null", but HashTable is NOT allowable
-	  	9) HashMap class makes NO guarantee as to the order of the map; especially, 
-	  	   HashMap does NOT guarantee that the order will remain constant over time
-	   10) Fail-fast iteration   	    	   
-	   11) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
+ 	
+	  	1) HashMap<K, V> class, is indeed a class in the "java.util" package and is a subclass of Map interface.  
+	  
+	  	2) HashMap stores data as key-value pairs.
+	  	
+	  	3) HashMap allows both null values and null keys.
+	  	 
+	  	4) When inserting a key-value pair with a duplicate key, HashMap will replace the existing value with the new one.
+	  	
+	  	6) HashMap is unsynchronized (not thread-safe), while Hashtable is synchronized (thread-safe).
+	  	
+	  	7) HashMap allows null values and keys, whereas Hashtable does not.
+	  	   
+	  	8) HashMap does not guarantee the order of the map. The iteration order can change over time due to various factors.
+	   
+	    9) HashMap provides fail-fast iteration, which means that if the map is modified while iterating over it, it will throw a ConcurrentModificationException to indicate the structural modification.   	    	   
+	   
+	   10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
 	       assuming the hash function disperses the elements properly among the buckets. 
 	
 		   Please see the following demo code of initiated instance of hashMap and basic operations of "get" and "put".
@@ -35,16 +44,17 @@ package com.ocp.day16.map;
 			*		B123546879									 *
 		 	******************************************************
 	   
-	   11) Available since java 1.2
+	   11) The HashMap class was introduced in Java 1.2, which was released in 1998.
     
     
     Load Factor & Initial Capacity:	
+	
 	    1) Iteration over collection views requires time proportional to 
 		   the "capacity" of the HashMap instance (the number of buckets) 
 	       plus its size (the number of key-value mappings).
 	   
 	    2) It's very IMPORTANT NOT to set the "initial capacity" too high or the "load factor" too low if iteration PERFORMANCE is IMPORTANT.
-		   An instance of HashMap has two parameters that affect its performance: 
+		   An instance of HashMap has two variables that affect its performance: 
 	       
 	       (1) Initial Capacity:
 	           The capacity is the number of buckets in the "hash table", and the initial capacity is simply the capacity at the time the "hash table" is created.
@@ -74,7 +84,10 @@ package com.ocp.day16.map;
  	https://www.baeldung.com/java-hashmap-load-factor
  	
 		 
-		 
+======================================================================================================================================================================================================================		 
+	
+	The code demonstrates various operations with HashMap, including insertion, retrieval, removal, and printing of key sets and values. It also shows the usage of LinkedHashSet with HashMap. 
+	
 */
 
 import java.util.HashMap; 
@@ -99,26 +112,26 @@ public class HashMapDemo1 {
 		*/
 		
 	    
-		// default Initial Capacity: 16 
-		// default Load Factor: 0.75
+		// Create instances of LinkedHashSet and HashMap with default initial capacity (16) and load factor (0.75)
 		Map<Object, Object> hashMap = new HashMap<>();
 		Set<String> linkedHashSet = new LinkedHashSet<>();
 		
-		linkedHashSet.add("James");
-		// linkedHashSet permits null value(s)
-		linkedHashSet.add(null);		
-		linkedHashSet.add("Marry");
-	 	// Repeated element(s), NOT allowable
-		linkedHashSet.add("Marry");
+		// Add elements to the LinkedHashSet
+		linkedHashSet.add("James");		
+		linkedHashSet.add(null);	// LinkedHashSet permits null values	
+		linkedHashSet.add("Marry");	 	
+		linkedHashSet.add("Marry"); // Repeated elements are not allowed
 		linkedHashSet.add("David");	
-		hashMap.put(1, linkedHashSet);
-		// hashMap permits null keys and the null values
-		hashMap.put(null, null);
-		// If trying to insert the duplicate key, 
-		// HashMap will replace the element of the corresponding key.
-		hashMap.put(null, 5);
+
+		// Put the LinkedHashSet into the HashMap
+		hashMap.put(1, linkedHashSet);		
+		hashMap.put(null, null);    // HashMap permits null keys and values
+		hashMap.put(null, 5); 
+		hashMap.put(null, 5);       // a duplicate key is inserted, the element of the corresponding key is replaced
 		hashMap.put(2, null);
 		hashMap.put(3, "Tim");
+		
+		// Print the HashMap and perform various operations
 		System.out.println(hashMap);
 		System.out.println("hashMap.keySets: " + hashMap.keySet());
 		System.out.println("hashMap.values: " + hashMap.values());

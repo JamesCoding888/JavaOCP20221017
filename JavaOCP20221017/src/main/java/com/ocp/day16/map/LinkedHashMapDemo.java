@@ -2,6 +2,7 @@ package com.ocp.day16.map;
 
 /*
  	Overview of LinkedHashMap:
+	 	
 	 	1) LinkedHashMap is a class in the Java programming language that extends the HashMap class. 
 	 			
 	 	   E.g.,
@@ -50,14 +51,19 @@ package com.ocp.day16.map;
 		   then it MUST be externally synchronized.
 		   
 		   Best to do this at creation for synchronization:	   		
+		 		
 		 		Map m = Collections.synchronizedMap(new LinkedHashMap());
+		 		
+		   For the detail explanation, see class of 'LinkedHashMapWithSynchronizedMap'
 	 	
 	 	9) The constant-time performance of LinkedHashMap is likely to be a little worse than the constant-time of HashMap due to the added overhead of maintaining a doubly-linked list.
 		   Iteration over collection views of LinkedHashMap also takes linear time O(n) similar to that of HashMap. 
 		   On the flip side, LinkedHashMap‘s linear time performance during iteration is better than HashMap‘s linear time.
 		   This is because, for LinkedHashMap, n in O(n) is only the number of entries in the map regardless of the capacity. Whereas, for HashMap, n is capacity and the size summed up, O(size+capacity).
 		   
-	   10) Available since java 1.4
+		   For the detail explanation, see class of 'LinkedHashMapAndHashMapEfficiency'
+		   
+	   10) The LinkedHashMap class was introduced in Java 1.4, which was released in 2002.
 	
 	
 	Refer to the link as follows:

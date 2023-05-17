@@ -1,5 +1,10 @@
 package com.ocp.day16.map;
-
+/*
+	The code provided is a Java program that demonstrates the use of HashMap and various operations on it. 
+	
+	It stores key-value pairs representing subject names and their corresponding scores as doubles.
+	  
+*/
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -11,18 +16,20 @@ import java.util.Set;
 public class HashMapDemo4double{
 	public static void main(String[] args) {
 		Map<Object, Object> hashMap = new HashMap<>();
+		// Insert key-value pairs into the HashMap
 		hashMap.put("Mathematics", 98.0);
 		hashMap.put("Microwave Engineering", 88.0);
 		hashMap.put("RFIC Design", 89.0);
 		hashMap.put("Java-1z0-819", 87.0);
 		System.out.println(hashMap);
+		// Iterate over the entries using a for-each loop and print each key-value pair
 		Set<Map.Entry<Object, Object>> set = hashMap.entrySet(); 
 		// for-each to print out the each of keys and values
 		for(Entry<Object, Object> entry : set) {
 			System.out.printf("[Key : Value] -> [%s : %.3f]\n", entry.getKey(), entry.getValue());			
 		}
 		
-		// Invoke the method of Map (i.e., keySet()) to get all keys and store those keys into object of Set
+		// Retrieve the keys using the keySet() method of Map and print each key-value pair
 		Set<Object> keys = hashMap.keySet();
 		// for-each to print out the each of keys
 		for (Object key : keys) {
@@ -69,11 +76,13 @@ public class HashMapDemo4double{
 			    }
 		*/
 		
+		// Iterate over the entries using the forEach() method and print each key-value pair
 		set.forEach(entry -> System.out.printf("[Key : Value] -> [%s : %.3f]\n", entry.getKey(), entry.getValue()));
 
+		// Calculate the sum of all scores using Java 8 Stream API and print the result
 		double sum = hashMap.entrySet().stream()	
 									// Notice here - "Type mismatch: cannot convert from Object to double", 
-									// Please down-casting the type of entry.getValue() to double
+									// Please downcast the type of entry.getValue() to double
 									   .mapToDouble((Entry<Object, Object> entry) -> (double)entry.getValue()).sum();
 		System.out.printf("Total Scores: %.3f", sum);
 	}

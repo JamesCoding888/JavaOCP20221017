@@ -1,5 +1,11 @@
 package com.ocp.day16.map;
+/*
 
+	The code you provided demonstrates the use of a HashMap to store subjects and their corresponding scores. 
+	
+	It prints out the key-value pairs, the keys only, and calculates the total scores.
+
+*/
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -103,7 +109,7 @@ public class HashMapDemo4int{
 		int sum = hashMap.entrySet().stream()
 								 // (1)
 								 // Notice here - "Type mismatch: cannot convert from Object to Integer", 
-								 // Please down-casting the type of entry.getValue() to Integer
+								 // Please downcast the type of entry.getValue() to Integer
 								 // .mapToInt((Entry<Object, Object> entry) -> (Integer)entry.getValue()).sum();
 							   	 
 								 // (2)
