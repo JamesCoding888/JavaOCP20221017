@@ -39,7 +39,7 @@ public class EfficiencyLab4Collection {
 		double prioritydeque = getPriorityDeque();
 		double array = getList();
 		double linkedlist = getLinkedList();
-
+		
 		Map<String, Double> map = new HashMap<>();
 		map.put("Vector", vector);
 		map.put("Stack", stack);
@@ -49,8 +49,8 @@ public class EfficiencyLab4Collection {
 		map.put("Deque", deque);
 		map.put("PriorityDeque", prioritydeque);
 		map.put("List", array);
-		map.put("LinkedList", linkedlist);		
-
+		map.put("LinkedList", linkedlist);			
+		
 		List<Map.Entry<String, Double>> sortedEntries = 
 									map.entrySet()
 									   .stream()
