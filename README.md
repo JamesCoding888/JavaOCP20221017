@@ -2120,21 +2120,20 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 		Load Factor & Initial Capacity:	
 
-			    1) Iteration over collection views requires time proportional to 
-				   the "capacity" of the HashMap instance (the number of buckets) 
+			    1) Iteration over collection views requires time proportional to the "capacity" of the HashMap instance (the number of buckets) 
 			       plus its size (the number of key-value mappings).
 
 			    2) It's very IMPORTANT NOT to set the "initial capacity" too high or the "load factor" too low if iteration PERFORMANCE is IMPORTANT.
-				   An instance of HashMap has two variables that affect its performance: 
+				An instance of HashMap has two variables that affect its performance: 
 
 			       (1) Initial Capacity:
 				   The capacity is the number of buckets in the "hash table", and the initial capacity is simply the capacity at the time the "hash table" is created.
 
 			       (2) Load Factor:
-					   The load factor is a Measure of how full the "hash table" is Allowed to Get before its capacity is automatically increased. 
-					   When the number of entries in the "hash table" EXCEEDS the product of the load factor and the current capacity, 
-					   the hash table is "rehashed" (that is, internal data structures are rebuilt) so that the "hash table" has approximately Twice the number of 
-					   buckets.
+				   The load factor is a Measure of how full the "hash table" is Allowed to Get before its capacity is automatically increased. 
+				   When the number of entries in the "hash table" EXCEEDS the product of the load factor and the current capacity, 
+				   the hash table is "rehashed" (that is, internal data structures are rebuilt) so that the "hash table" has approximately Twice the number of 
+				   buckets.
 
 
 				3) As a general rule speaking:
@@ -2142,13 +2141,12 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 				   (1) The default load factor (.75) offers a Good TradeOff between Time and Space Costs (Hard Disk / SSD). 
 				   (2) Higher value of load factor decreases the space overhead but increase the lookup cost (reflected in most of the operations of the HashMap class, 
 				   including get and put). 
-				       The expected number of entries in the map and its load factor should be taken into account when setting its initial capacity, so as to minimize 
-				       the number of rehash operations. 
+				   The expected number of entries in the map and its load factor should be taken into account when setting its initial capacity, so as to minimize 
+				   the number of rehash operations. 
 				   (3) If the initial capacity is greater than the maximum number of entries divided by the load factor, no rehash operations will ever occur.
 
 				   (4) If many mappings are to be stored in a HashMap instance, creating it with a sufficiently large capacity will allow the mappings to be stored 
-				   more efficiently 
-				       than letting it perform automatic rehashing as needed to grow the table. 
+				   more efficiently than letting it perform automatic rehashing as needed to grow the table. 
 
 				   (5) Note that using many keys with the same hashCode() is a sure way to Slow Down Performance of any hash table. To improve impact, when keys are 
 				   Comparable, this class may use comparison order among keys to help break ties.
