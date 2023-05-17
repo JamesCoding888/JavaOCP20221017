@@ -1933,7 +1933,6 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 8. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day15/efficiency">Efficiency Testing of Sub-classes from Collection</a>
-- *** TBD - Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
 - <img width="203" alt="Screen Shot 2022-12-28 at 10 24 23 AM" src="https://user-images.githubusercontent.com/83496093/209747502-93a2e299-728b-48ec-a567-abe1ae6b0ae2.png">
 
 
@@ -1968,7 +1967,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 > EfficiencyLab4Collection.java
 - Description: 
-
+		<img width="836" alt="EfficiencyLab4Collection" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/ed7f8106-38c0-47e0-a1de-ab147e786d16"><br>
+		
 		The subject of this code is to compare the efficiency of different collection classes in Java. 
 
 		It measures the time taken to perform 1,000,000 data operations (adding elements) on various collection classes and presents the results in ascending order based on 
@@ -1979,6 +1979,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		
 		Based on the implementation of the code, the console output appears to display the average durations (in seconds) for each collection class in ascending order. 
 		It suggests that the TreeSet class has the lowest average duration, indicating better performance compared to the other classes.  
+
 
 
 ------------------------------------------------------------------------------
