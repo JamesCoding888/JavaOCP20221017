@@ -2072,7 +2072,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		    	9) HashMap provides fail-fast iteration, which means that if the map is modified while iterating over it, it will throw a ConcurrentModificationException to 
 		    	indicate the structural modification.   	    	   
 
-		       10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
+		    	10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
 		       assuming the hash function disperses the elements properly among the buckets. 
 
 			   Please see the following demo code of initiated instance of hashMap and basic operations of "get" and "put".
@@ -2094,7 +2094,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 				*	   B123546879					 *
 				**********************************************************
 
-		       11) The HashMap class was introduced in Java 1.2, which was released in 1998.
+			11) The HashMap class was introduced in Java 1.2, which was released in 1998.
 
 	<br>
 	<img width="600" alt="Comparison of HashTable   HashMap" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a09aabf2-fe45-46d7-88ed-78f2550e0412">
