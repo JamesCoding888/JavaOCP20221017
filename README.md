@@ -2140,16 +2140,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 				   (1) The default load factor (.75) offers a Good TradeOff between Time and Space Costs (Hard Disk / SSD). 
 				   (2) Higher value of load factor decreases the space overhead but increase the lookup cost (reflected in most of the operations of the HashMap class, 
-				   including get and put). 
-				   The expected number of entries in the map and its load factor should be taken into account when setting its initial capacity, so as to minimize 
-				   the number of rehash operations. 
+				       including get and put). 
+				       The expected number of entries in the map and its load factor should be taken into account when setting its initial capacity, so as to minimize 
+				       the number of rehash operations. 
 				   (3) If the initial capacity is greater than the maximum number of entries divided by the load factor, no rehash operations will ever occur.
 
 				   (4) If many mappings are to be stored in a HashMap instance, creating it with a sufficiently large capacity will allow the mappings to be stored 
-				   more efficiently than letting it perform automatic rehashing as needed to grow the table. 
+				       more efficiently than letting it perform automatic rehashing as needed to grow the table. 
 
 				   (5) Note that using many keys with the same hashCode() is a sure way to Slow Down Performance of any hash table. To improve impact, when keys are 
-				   Comparable, this class may use comparison order among keys to help break ties.
+				       Comparable, this class may use comparison order among keys to help break ties.
 
 
 			Refer to the link as follows:
