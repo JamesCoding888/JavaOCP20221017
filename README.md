@@ -2317,19 +2317,19 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 			1. For numElements = 1000000:
 
-					LinkedHashMap execution time (adding elements): 254905292 nanoseconds
-					HashMap execution time (adding elements): 194495166 nanoseconds
+				LinkedHashMap execution time (adding elements): 254905292 nanoseconds
+				HashMap execution time (adding elements): 194495166 nanoseconds
 
-					LinkedHashMap iteration time: 14460583 nanoseconds
-					HashMap iteration time: 26360292 nanoseconds
+				LinkedHashMap iteration time: 14460583 nanoseconds
+				HashMap iteration time: 26360292 nanoseconds
 
 			2. For numElements = 100:
 
-					LinkedHashMap execution time (adding elements): 1998791 nanoseconds
-					HashMap execution time (adding elements): 198208 nanoseconds
+				LinkedHashMap execution time (adding elements): 1998791 nanoseconds
+				HashMap execution time (adding elements): 198208 nanoseconds
 
-					LinkedHashMap iteration time: 900083 nanoseconds
-					HashMap iteration time: 11958 nanoseconds
+				LinkedHashMap iteration time: 900083 nanoseconds
+				HashMap iteration time: 11958 nanoseconds
 
 
 
