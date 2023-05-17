@@ -2051,7 +2051,53 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 			ConcurrentHashMap or CopyOnWriteArrayList, which are specifically designed to handle concurrent modifications safely.
 
 > HashMapDemo1.java
-- Description:  TBD
+- Description:  
+
+		Introduction of HashMap:
+
+			1) HashMap<K, V> class, is indeed a class in the "java.util" package and is a subclass of Map interface.  
+
+			2) HashMap stores data as key-value pairs.
+
+			3) HashMap allows both null values and null keys.
+
+			4) When inserting a key-value pair with a duplicate key, HashMap will replace the existing value with the new one.
+
+			6) HashMap is unsynchronized (not thread-safe), while Hashtable is synchronized (thread-safe).
+
+			7) HashMap allows null values and keys, whereas Hashtable does not.
+
+			8) HashMap does not guarantee the order of the map. The iteration order can change over time due to various factors.
+
+		    	9) HashMap provides fail-fast iteration, which means that if the map is modified while iterating over it, it will throw a ConcurrentModificationException to 
+		    	indicate the structural modification.   	    	   
+
+		       10) This implementation of Map, provides constant-time performance for the basic operations (get and put), 
+		       assuming the hash function disperses the elements properly among the buckets. 
+
+			   Please see the following demo code of initiated instance of hashMap and basic operations of "get" and "put".
+
+				******************************************************
+				*	Map<Object, Object> hashMap = new HashMap<>();   *
+				*	hashMap.put(1 , "A123456789");					 *
+				*	hashMap.put(2 , "H123546789");					 *
+				*	hashMap.put(3 , "B123546879");					 *
+				*	System.out.println(hashMap);					 *	
+				*	System.out.println(hashMap.get(1));			     *
+				*	System.out.println(hashMap.get(2));				 *
+				*	System.out.println(hashMap.get(3));				 *
+				******************************************************
+				*	Console: 										 *
+				*		{1=A123456789, 2=H123546789, 3=B123546879}   *
+				*		A123456789									 *
+				*		H123546789									 *
+				*		B123546879									 *
+				******************************************************
+
+		      11) The HashMap class was introduced in Java 1.2, which was released in 1998.
+
+	<br>
+	<img width="600" alt="Comparison of HashTable   HashMap" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a09aabf2-fe45-46d7-88ed-78f2550e0412">
 
 > HashMapDemo4double.java
 - Description:  TBD
