@@ -1991,7 +1991,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashTableDemo.java
 - Description:  
 	
-		Introduction of this lecture (Please also recap HashMap at package: com.ocp.day16.map):
+		Introduction of this lesson (Please also recap HashMap at package: com.ocp.day16.map):
 
 			1) The Hashtable class is the oldest implementation of a hash table data structure in Java.
 
@@ -2012,13 +2012,13 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 			9) Hashtable provides fail-fast iteration. If a collection is modified while being iterated, a ConcurrentModificationException will be thrown. 
 
-		   10) Hashtable provides an Enumeration interface for iterating over its elements. However, HashMap does not provide a specific Enumeration interface.
+		   	10) Hashtable provides an Enumeration interface for iterating over its elements. However, HashMap does not provide a specific Enumeration interface.
 
-		   11) Hashtable does not guarantee any specific order of the key-value pairs in the map. The order may vary, and it is not guaranteed to remain constant over time.
+		   	11) Hashtable does not guarantee any specific order of the key-value pairs in the map. The order may vary, and it is not guaranteed to remain constant over time.
 
-		   12) Hashtable implements fail-fast iteration. This means that if a collection is modified while being iterated, a ConcurrentModificationException will be thrown.  
+		   	12) Hashtable implements fail-fast iteration. This means that if a collection is modified while being iterated, a ConcurrentModificationException will be thrown.  
 
-		   13) The Hashtable class was indeed introduced in Java 1.0, which was released in 1996.
+		   	13) The Hashtable class was indeed introduced in Java 1.0, which was released in 1996.
 
 		Refer to the link as follows:
 		https://www.baeldung.com/java-hash-table
