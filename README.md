@@ -1989,7 +1989,66 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 1. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map">Introduction of Sub-classes from Map - Hashtable, Enumeration, LinkedHashMap, and HashMap</a>
 
 > HashTableDemo.java
-- Description:  TBD
+- Description:  
+	
+		Introduction of this lecture (Please also recap HashMap at package: com.ocp.day16.map):
+
+			1) The Hashtable class is the oldest implementation of a hash table data structure in Java.
+
+			2) Hashtable<K, V> class, at package: "java.util", is a subclass of Map interface, 
+			   which means it implements the Map interface and provides the functionality of a key-value mapping.
+
+			3) Hashtable is specifically designed as a hashtable-based implementation of the Map interface. 
+
+			4) Hashtable stores data in the form of key-value pairs. Each key is associated with a corresponding value.
+
+			5) Hashtable does not allow null values or null keys. Attempting to store null values or null keys will result in an exception.
+
+			6) Hashtable utilizes a hash table data structure, where keys are mapped to specific indices in an underlying array using a hash function.
+
+			7) When attempting to insert a key-value pair with a duplicate key, Hashtable will replace the existing value associated with that key.
+
+			8) Hashtable is synchronized, meaning it is designed to be thread-safe for concurrent access. On the other hand, HashMap is not synchronized by default.
+
+			9) Hashtable provides fail-fast iteration. If a collection is modified while being iterated, a ConcurrentModificationException will be thrown. 
+
+		   10) Hashtable provides an Enumeration interface for iterating over its elements. However, HashMap does not provide a specific Enumeration interface.
+
+		   11) Hashtable does not guarantee any specific order of the key-value pairs in the map. The order may vary, and it is not guaranteed to remain constant over time.
+
+		   12) Hashtable implements fail-fast iteration. This means that if a collection is modified while being iterated, a ConcurrentModificationException will be thrown.  
+
+		   13) The Hashtable class was indeed introduced in Java 1.0, which was released in 1996.
+
+		Refer to the link as follows:
+		https://www.baeldung.com/java-hash-table
+		https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html
+
+> FailFastIterationExample.java
+- Description:  
+
+		Introduction of this example:
+
+			We have a list called names containing three elements. 
+
+			We obtain an iterator from the list using the iterator() method. 
+
+			Then, we enter a loop to iterate over the elements using the hasNext() and next() methods of the iterator.
+
+			Inside the loop, we print each name and intentionally modify the list by adding a new element ("David") while iterating. 
+
+			This modification violates the fail-fast behavior, as the list is structurally modified during iteration.
+
+		Exception:
+
+			When you run this code, it will throw a ConcurrentModificationException because the list was modified while being iterated. 
+
+			This exception serves as a fail-fast mechanism, alerting you to the concurrent modification and preventing potential data inconsistencies.
+
+		Avoid ConcurrentModificationException:
+
+			To avoid the ConcurrentModificationException in this scenario, you can use proper synchronization or utilize concurrent collection classes like 
+			ConcurrentHashMap or CopyOnWriteArrayList, which are specifically designed to handle concurrent modifications safely.
 
 > HashMapDemo1.java
 - Description:  TBD
