@@ -2210,7 +2210,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 				   public LinkedHashMap(int initialCapacity, float loadFactor, boolean accessOrder) {
 					super(initialCapacity, loadFactor);
 					this.accessOrder = accessOrder;
-			       }
+			           }
 
 				   initialCapacity: 
 
@@ -2247,7 +2247,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 			   For the detail explanation, see class of 'LinkedHashMapWithSynchronizedMap'
 			   
 			9) The constant-time performance of LinkedHashMap is likely to be a little worse than the constant-time of HashMap due to the added overhead of maintaining a 
-			doubly-linked list.
+			   doubly-linked list.
 			   Iteration over collection views of LinkedHashMap also takes linear time O(n) similar to that of HashMap. 
 			   On the flip side, LinkedHashMap‘s linear time performance during iteration is better than HashMap‘s linear time.
 			   This is because, for LinkedHashMap, n in O(n) is only the number of entries in the map regardless of the capacity. Whereas, for HashMap, n is capacity and 
@@ -2337,18 +2337,19 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 			1. Adding Elements: 
 
-					The execution time for adding elements is generally higher for LinkedHashMap compared to HashMap. This can be attributed to the additional 
-					overhead in maintaining the insertion order of elements in LinkedHashMap.
+				The execution time for adding elements is generally higher for LinkedHashMap compared to HashMap. This can be attributed to the additional 
+				overhead in maintaining the insertion order of elements in LinkedHashMap.
 
 			2. Iteration Time: 
 
-					The iteration time for both LinkedHashMap and HashMap is relatively faster compared to adding elements. In both cases, iterating over the 
-					elements is efficient. However, the iteration time for LinkedHashMap is slightly higher compared to HashMap due to the need to maintain the 
-					insertion order.
+				The iteration time for both LinkedHashMap and HashMap is relatively faster compared to adding elements. In both cases, iterating over the 
+				elements is efficient. However, the iteration time for LinkedHashMap is slightly higher compared to HashMap due to the need to maintain the 
+				insertion order.
 
-			3. Overall, the choice between LinkedHashMap and HashMap depends on your specific requirements. If you need to maintain the insertion order of elements, 
-			   LinkedHashMap is a suitable choice despite the slightly higher execution and iteration time. If insertion order is not a concern, HashMap can provide faster 
-			   execution and iteration time.
+			3. Overall: 
+				The choice between LinkedHashMap and HashMap depends on your specific requirements. If you need to maintain the insertion order of elements, 
+			   	LinkedHashMap is a suitable choice despite the slightly higher execution and iteration time. If insertion order is not a concern, HashMap can provide 
+				faster execution and iteration time.
 
 
 
