@@ -2077,24 +2077,24 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 			   Please see the following demo code of initiated instance of hashMap and basic operations of "get" and "put".
 
-				******************************************************
+				**********************************************************
 				*	Map<Object, Object> hashMap = new HashMap<>();   *
-				*	hashMap.put(1 , "A123456789");					 *
-				*	hashMap.put(2 , "H123546789");					 *
-				*	hashMap.put(3 , "B123546879");					 *
-				*	System.out.println(hashMap);					 *	
-				*	System.out.println(hashMap.get(1));			     *
-				*	System.out.println(hashMap.get(2));				 *
-				*	System.out.println(hashMap.get(3));				 *
-				******************************************************
-				*	Console: 										 *
-				*		{1=A123456789, 2=H123546789, 3=B123546879}   *
-				*		A123456789									 *
-				*		H123546789									 *
-				*		B123546879									 *
-				******************************************************
+				*	hashMap.put(1 , "A123456789");			 *
+				*	hashMap.put(2 , "H123546789");			 *
+				*	hashMap.put(3 , "B123546879");			 *
+				*	System.out.println(hashMap);			 *	
+				*	System.out.println(hashMap.get(1));	         *
+				*	System.out.println(hashMap.get(2));		 *
+				*	System.out.println(hashMap.get(3));		 *
+				**********************************************************
+				*	Console: 					 *
+				*	   {1=A123456789, 2=H123546789, 3=B123546879}    *
+				*          A123456789					 *
+				*	   H123546789					 *
+				*	   B123546879					 *
+				**********************************************************
 
-		      11) The HashMap class was introduced in Java 1.2, which was released in 1998.
+		       11) The HashMap class was introduced in Java 1.2, which was released in 1998.
 
 	<br>
 	<img width="600" alt="Comparison of HashTable   HashMap" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a09aabf2-fe45-46d7-88ed-78f2550e0412">
