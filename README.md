@@ -1980,7 +1980,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		Based on the implementation of the code, the console output appears to display the average durations (in seconds) for each collection class in ascending order. 
 		It suggests that the TreeSet class has the lowest average duration, indicating better performance compared to the other classes.  
 	<br>	
-	<img width="836" alt="EfficiencyLab4Collection" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/ed7f8106-38c0-47e0-a1de-ab147e786d16"><br>
+	<img width="836" alt="EfficiencyLab4Collection_02" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/50a224ed-b48a-4132-84c1-5cc5a21ff0ce">
+
 
 ------------------------------------------------------------------------------
 # day16 Java Advanced: Hashtable, Enumeration, LinkedHashMap, HashMap, TreeMap, Collectors and Arrays.asList
