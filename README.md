@@ -2362,7 +2362,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/map/comparable">Introduction of Sub-classes from Map - TreeMap and HashMap with an application of Comparable</a>
 
-> TreeMapDemoComparable.java
+> TreeMapDemoComparable.java, Student.java, Exam.java
 - Description: 
 		
 		Introduction of this lesson: 
@@ -2452,6 +2452,15 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		https://www.baeldung.com/java-treemap
 
 
+> TreeMapDemoComparator.java, Student.java, Exam.java
+- Description:
+
+		The code provided demonstrates the usage of a custom comparator with a TreeMap to sort the entries based on the keys. 
+
+		The TreeMap is created with the custom comparator, and the keys are of type Integer. 
+
+		The sorting is performed in reverse order of the keys using the custom comparator.
+		
 > HashMapDemoComparable01.java
 - Description:  TBD
 
@@ -2461,11 +2470,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 > HashMapDemoComparable03.java
 - Description:  TBD
 
-> Student.java
-- Description:  TBD
 
-> Exam.java
-- Description:  TBD
 
 
 
