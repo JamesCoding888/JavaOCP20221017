@@ -1,5 +1,5 @@
 package com.ocp.day16.efficiency;
 
-public class TreeMapEfficiency {
+public class EnumMapEfficiency {
 
 }
