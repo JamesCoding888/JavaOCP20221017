@@ -2748,7 +2748,8 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		that performance can vary depending on the specific use case and the operations performed. It's always recommended to benchmark and test different 
 		implementations to determine the best choice for your specific requirements. 
 	<br>
-	![EfficiencyLab4Map](https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/ac7602b2-9a83-4a1c-9bb9-f45dcdb98ce0)
+	<img width="600" alt="EfficiencyLab4Map" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a4f84177-12d2-4b16-a01e-3f0c9441172d.png">
+
 
 ------------------------------------------------------------------------------
 # day17 Java Advanced: RuntimeException, Exception, Throwable
