@@ -2711,23 +2711,44 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		It's important to understand these limitations when using Arrays.asList(), especially if you need to modify the size or structure of the collection.
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
-
-- *** TBD - Notice here !!! The UML digrames will be revised with adding x-axis and y-axis, against the Efficiency/Security and Released Date of each API, for more precisely ***
 - <img width="203" alt="Map - data structure" src="https://user-images.githubusercontent.com/83496093/211237775-2aaa3bc1-7dc2-4c17-9b0d-fa20862d9571.png">
 
 
+> EfficiencyLab4Map.java
+- Description: 
 
+		The provided code measures the efficiency of different map implementations (TreeMap, HashMap, LinkedHashMap, and EnumMap) 
 
+		by performing data operations and calculating the average duration for each implementation. 
 
-> TreeMapEfficiency.java
-- Description:  TBD
+		The map implementations are ranked based on their average duration, with the most efficient implementation at the top.
 
-> HashMapEfficiency.java
-- Description:  TBD
+		Of the console, the EnumMap is the fastest in this particular code execution because it is specifically designed to work with enums as keys.
 
-> LinkedHashMapEfficiency.java
-- Description:  TBD
+		Here are a few reasons why EnumMap performs well in this scenario:
 
+			1) Memory Efficiency: 
+			   EnumMap internally uses an array to store the values, where the index corresponds to the ordinal value of the enum constant. Since enum 
+			   constants have a fixed and sequential range of values, EnumMap can efficiently utilize the memory by allocating an array of the 
+			   appropriate size.
+
+			2) Efficient Lookup: 
+			   As the keys are enums, EnumMap takes advantage of the ordinal values of the enum constants to perform quick lookups. The ordinal values 
+			   provide direct access to the corresponding array index, allowing for constant-time retrieval.
+
+			3) Compact Data Structure: 
+			   EnumMap is designed to work specifically with enums, which are finite and known at compile-time. This knowledge allows EnumMap to optimize 
+			   the data structure for efficient storage and retrieval.
+
+			4) Type Safety:  
+			   EnumMap provides type safety guarantees at compile-time. It enforces that only keys of the specified enum type can be used, preventing 
+			   accidental key-value associations with incompatible types.
+
+		These factors contribute to the efficiency of EnumMap in this code example compared to other map implementations. However, it's important to note 
+		that performance can vary depending on the specific use case and the operations performed. It's always recommended to benchmark and test different 
+		implementations to determine the best choice for your specific requirements. 
+	<br>
+	![EfficiencyLab4Map](https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/ac7602b2-9a83-4a1c-9bb9-f45dcdb98ce0)
 
 ------------------------------------------------------------------------------
 # day17 Java Advanced: RuntimeException, Exception, Throwable
