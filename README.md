@@ -2749,6 +2749,19 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		implementations to determine the best choice for your specific requirements. 
 	<br>
 	<img width="600" alt="EfficiencyLab4Map" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/a4f84177-12d2-4b16-a01e-3f0c9441172d.png">
+	<br> 
+
+> EfficiencyLab4CollectionAndMap.java
+- Description: 
+
+		The provided code is a Java program that measures the efficiency of different collection and map data structures. 
+
+		It performs various data operations on each data structure and measures the time taken for those operations. 
+
+		The program then calculates the average duration of the operations for each data structure and prints the results in ascending order of efficiency.
+
+	<br>
+	<img width="600" alt="EfficiencyLab4CollectionAndMap" src="https://github.com/JamesCoding888/JavaOCP20221017/assets/83496093/ce8f4e24-4b5e-4b18-a0f6-4292f96a376a.png">
 
 
 ------------------------------------------------------------------------------
