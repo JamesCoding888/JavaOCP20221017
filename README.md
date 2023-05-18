@@ -2462,10 +2462,103 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		The sorting is performed in reverse order of the keys using the custom comparator.
 		
 > HashMapDemoComparable01.java
-- Description:  TBD
+- Description:  
+		
+		The code provided demonstrates the use of a HashMap to associate students with 
+		
+		their exam scores and calculates the total scores using different syntax optimizations. 
+		
+		
+		1) Please review the previously lecture at package: com.ocp.day15.comparable, 
+		   for learning how to use "Set<Map.Entry<K, V>> entrySet()" to obtain object(s) from Map.
+		
+		2) Please review the Java 1.8 - Stream API of "mapToInt", at day3, day4 and day5
+		
+		3) There are different optimized syntaxes at (2) and (3), in sample code.
+	
+
 
 > HashMapDemoComparable02.java
-- Description:  TBD
+- Description:  
+		
+		Introduction of this lesson:
+
+			1) interface Entry<K, V>
+
+					interface Entry<K, V> {
+
+					 * Returns the key corresponding to this entry.
+					 *
+					 * @return the key corresponding to this entry
+					 * @throws IllegalStateException implementations may, but are not
+					 *         required to, throw this exception if the entry has been
+					 *         removed from the backing map.
+
+					   K getKey();
+
+
+					 * Returns the value corresponding to this entry.  If the mapping
+					 * has been removed from the backing map (by the iterator's
+					 * {@code remove} operation), the results of this call are undefined.
+					 *
+					 * @return the value corresponding to this entry
+					 * @throws IllegalStateException implementations may, but are not
+					 *         required to, throw this exception if the entry has been
+					 *         removed from the backing map.
+
+					   V getValue();
+
+					}
+
+
+			2) To recap the Java 1.8 - Stream API of ".filter", at day3  
+
+
+
+			3) API of "<R> Stream<R> map(Function<? super T, ? extends R> mapper)"
+
+					public interface Stream<T> extends BaseStream<T, Stream<T>> {
+
+					     * Returns a stream consisting of the results of applying the given
+					     * function to the elements of this stream.
+					     *
+					     * <p>This is an <a href="package-summary.html#StreamOps">intermediate
+					     * operation</a>.
+					     *
+					     * @param <R> The element type of the new stream
+					     * @param mapper a <a href="package-summary.html#NonInterference">non-interfering</a>,
+					     *               <a href="package-summary.html#Statelessness">stateless</a>
+					     *               function to apply to each element
+					     * @return the new stream
+
+					       <R> Stream<R> map(Function<? super T, ? extends R> mapper);
+					}
+
+			4) API of "Collector<T, ?, List<T>> toList()"
+
+					public final class Collectors {
+
+					     * Returns a {@code Collector} that accumulates the input elements into a
+					     * new {@code List}. There are no guarantees on the type, mutability,
+					     * serializability, or thread-safety of the {@code List} returned; if more
+					     * control over the returned {@code List} is required, use {@link #toCollection(Supplier)}.
+					     *
+					     * @param <T> the type of the input elements
+					     * @return a {@code Collector} which collects all the input elements into a
+					     * {@code List}, in encounter order
+
+						   public static <T> Collector<T, ?, List<T>> toList() {
+
+							return new CollectorImpl<>(
+												ArrayList::new, 
+												List::add,
+												(left, right) -> { left.addAll(right); return 
+												left; },
+												CH_ID
+										  );
+						    }
+					}
+
 
 > HashMapDemoComparable03.java
 - Description:  TBD
