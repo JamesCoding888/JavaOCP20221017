@@ -2564,7 +2564,84 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 
 > HashMapDemoComparable03.java
-- Description:  TBD
+- Description:  
+	
+		Introduction of this lesson:
+
+		The code provided demonstrates the usage of a HashMap to associate Student objects with their corresponding Exam objects. 
+
+		It then converts the HashMap into a Map that maps student names to their exam scores using Java 8 streams and collectors.
+
+			1) API of "public static <T, K, U> Collector<T, ?, Map<K,U>> toMap(Function<? super T, ? extends K> keyMapper, Function<? super T, ? extends 
+			   U> valueMapper)"
+
+				public final class Collectors {
+
+				     * Returns a {@code Collector} that accumulates elements into a
+				     * {@code Map} whose keys and values are the result of applying the provided
+				     * mapping functions to the input elements.
+				     *
+				     * <p>If the mapped keys contain duplicates (according to
+				     * {@link Object#equals(Object)}), an {@code IllegalStateException} is
+				     * thrown when the collection operation is performed.  If the mapped keys
+				     * might have duplicates, use {@link #toMap(Function, Function, BinaryOperator)}
+				     * instead.
+				     *
+				     * <p>There are no guarantees on the type, mutability, serializability,
+				     * or thread-safety of the {@code Map} returned.
+				     *
+				     * @apiNote
+				     * It is common for either the key or the value to be the input elements.
+				     * In this case, the utility method
+				     * {@link java.util.function.Function#identity()} may be helpful.
+				     * For example, the following produces a {@code Map} mapping
+				     * students to their grade point average:
+				     * <pre>{@code
+				     * Map<Student, Double> studentToGPA
+				     *   = students.stream().collect(
+				     *     toMap(Function.identity(),
+				     *           student -> computeGPA(student)));
+				     * }</pre>
+				     * And the following produces a {@code Map} mapping a unique identifier to
+				     * students:
+				     * <pre>{@code
+				     * Map<String, Student> studentIdToStudent
+				     *   = students.stream().collect(
+				     *     toMap(Student::getId,
+				     *           Function.identity()));
+				     * }</pre>
+				     *
+				     * @implNote
+				     * The returned {@code Collector} is not concurrent.  For parallel stream
+				     * pipelines, the {@code combiner} function operates by merging the keys
+				     * from one map into another, which can be an expensive operation.  If it is
+				     * not required that results are inserted into the {@code Map} in encounter
+				     * order, using {@link #toConcurrentMap(Function, Function)}
+				     * may offer better parallel performance.
+				     *
+				     * @param <T> the type of the input elements
+				     * @param <K> the output type of the key mapping function
+				     * @param <U> the output type of the value mapping function
+				     * @param keyMapper a mapping function to produce keys
+				     * @param valueMapper a mapping function to produce values
+				     * @return a {@code Collector} which collects elements into a {@code Map}
+				     * whose keys and values are the result of applying mapping functions to
+				     * the input elements
+				     *
+				     * @see #toMap(Function, Function, BinaryOperator)
+				     * @see #toMap(Function, Function, BinaryOperator, Supplier)
+				     * @see #toConcurrentMap(Function, Function)
+
+					   public static <T, K, U>
+					   Collector<T, ?, Map<K,U>> toMap(Function<? super T, ? extends K> keyMapper,
+									   Function<? super T, ? extends U> valueMapper) {
+
+					       return new CollectorImpl<>(HashMap::new,
+									  uniqKeysMapAccumulator(keyMapper, valueMapper),
+									  uniqKeysMapMerger(),
+									  CH_ID);
+					   }
+				}	
 
 
 
