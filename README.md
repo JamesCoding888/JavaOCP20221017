@@ -2461,7 +2461,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 		The sorting is performed in reverse order of the keys using the custom comparator.
 		
-> HashMapDemoComparable01.java
+> HashMapDemoComparable01.java, Student.java, Exam.java
 - Description:  
 		
 		The code provided demonstrates the use of a HashMap to associate students with 
@@ -2478,7 +2478,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 	
 
 
-> HashMapDemoComparable02.java
+> HashMapDemoComparable02.java, Student.java, Exam.java
 - Description:  
 		
 		Introduction of this lesson:
@@ -2563,7 +2563,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 					}
 
 
-> HashMapDemoComparable03.java
+> HashMapDemoComparable03.java, Student.java, Exam.java
 - Description:  
 	
 		Introduction of this lesson:
@@ -2650,7 +2650,9 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 3. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collections">Introduction of Collections - with an application of Comparator</a>
 
 > CollectionsDemo.java
-- Description:  TBD
+- Description:  
+	
+		The provided code demonstrates the implementation of Comparator and BiConsumer interfaces using anonymous inner classes and lambda expressions.
 
 > SQL - VIEW Sales_Order_Detail.docx
 - Description: 
@@ -2671,16 +2673,42 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 
 4. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/collector">groupingBy of Collector</a>
 
-> MapGroupingBy.java (TBD)
-- Description:  TBD
+> MapGroupingBy.java, PurchasedOrder.java 
+- Description:  
 
-> PurchasedOrder.java (TBD)
-- Description:  TBD
+		The given code demonstrates various examples of using the groupingBy collector from the Collectors class in the Java Stream API. 
+
+		It groups a list of PurchasedOrder objects based on different criteria and collects the data into maps.
+
+		The PurchasedOrder class represents an order with a product name, quantity, and price.
+
+		It has getters and setters for these properties, as well as overridden hashCode, equals, and toString methods.
+
 
 > ArraysAsListDemo.java
 - Description:  
 		
-		Difference between Arrays.asList() and ArrayList
+		Introduction of API - Arrays.asList:
+
+		The Arrays.asList() method in Java is used to convert an array to a fixed-size List object. 
+		This method is part of the java.util.Arrays class.
+
+		When you use Arrays.asList() to convert an array to a List, the resulting List is a view of the original array. 
+		This means that any modifications made to the List will be reflected in the original array and vice versa. 
+		It provides a convenient way to work with arrays using the functionality provided by the List interface.
+
+		However, there are a few important points to note:
+
+			1) The returned List is of fixed size, which means you cannot add or remove elements from the List. 
+			   If you attempt to do so by calling methods like add(), remove(), or clear() on the List, 
+			   JVM (Java Virtual Machine) will throw an UnsupportedOperationException.
+
+
+			2) Although you cannot change the size of the List, you can modify individual elements of the array through the List view. 
+			   Changes made to a single element of the List will be reflected in the original array.
+
+
+		It's important to understand these limitations when using Arrays.asList(), especially if you need to modify the size or structure of the collection.
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
 
