@@ -1,17 +1,13 @@
 package com.ocp.day16.collector;
 /*
-  	 	
-	Collections.sort 
-		-   
-	
-	Collectors.groupingBy
-		- 
-	
-	SQL Syntax of groupingBy
-    	- 
  
- 	<Map<String, Long>, Object> Map<String, Long> java.util.stream.Stream.collect(Collector<? super PurchasedOrder, Object, Map<String, Long>> collector)
- 	
+	The given code demonstrates various examples of using the groupingBy collector from the Collectors class in the Java Stream API. 
+	
+	It groups a list of PurchasedOrder objects based on different criteria and collects the data into maps.
+	
+	The PurchasedOrder class represents an order with a product name, quantity, and price.
+	
+	It has getters and setters for these properties, as well as overridden hashCode, equals, and toString methods.
  	
 */
 

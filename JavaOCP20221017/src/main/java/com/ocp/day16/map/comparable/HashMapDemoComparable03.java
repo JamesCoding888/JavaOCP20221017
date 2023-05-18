@@ -2,7 +2,11 @@ package com.ocp.day16.map.comparable;
 
 
 /*
- 	Introduction of this lecture:
+ 	Introduction of this lesson:
+ 	
+	The code provided demonstrates the usage of a HashMap to associate Student objects with their corresponding Exam objects. 
+	
+	It then converts the HashMap into a Map that maps student names to their exam scores using Java 8 streams and collectors.
 	
 		1) API of "public static <T, K, U> Collector<T, ?, Map<K,U>> toMap(Function<? super T, ? extends K> keyMapper, Function<? super T, ? extends U> valueMapper)"
 			

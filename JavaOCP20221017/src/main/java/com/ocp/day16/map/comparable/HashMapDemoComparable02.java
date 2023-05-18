@@ -1,7 +1,9 @@
 package com.ocp.day16.map.comparable;
 
 /* 
-	Introduction of this lecture:
+	Introduction of this lesson:
+	
+	The given code is a Java program that demonstrates the usage of HashMap and stream operations to filter and collect objects based on certain conditions.
 		
 		1) interface Entry<K, V>
 		

@@ -1,5 +1,8 @@
 package com.ocp.day16.collections;
-
+/*
+	The provided code demonstrates the implementation of Comparator and BiConsumer interfaces using anonymous inner classes and lambda expressions.
+	 
+*/
 import java.util.ArrayList; 
 import java.util.Collections;
 import java.util.Comparator;
