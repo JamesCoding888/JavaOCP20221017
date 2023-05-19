@@ -1,0 +1,27 @@
+CREATE TABLE `JavaDB`.`JavaTable` (
+  `badge` INT NOT NULL,
+  `name` VARCHAR(40) NULL DEFAULT NULL,
+  PRIMARY KEY (`badge`)
+  );
+
+CREATE TABLE `JavaDB`.`JavaTableEncryption` (
+  `badge` INT NOT NULL,
+  `name` VARCHAR(40) NULL DEFAULT NULL,
+  PRIMARY KEY (`badge`)
+  );
+
+CREATE TABLE `JavaDB`.`MasterKeyTable` (
+  `encryption_key` VARCHAR(255) NULL DEFAULT NULL
+  );
+
+Select * from JavaDB.JavaTable;
+Select * from JavaDB.JavaTableEncryption;
+Select * from JavaDB.MasterKeyTable;
+insert into JavaDB.JavaTable values(1, 'james');
+
+ALTER TABLE JavaDB.JavaTableEncryption ADD COLUMN encryption_key VARCHAR(255) AFTER encryption_key;
+ALTER TABLE JavaDB.JavaTableEncryption DROP COLUMN encryption_key;
+ALTER TABLE JavaDB.JavaTableEncryption RENAME TO JavaDB.MasterKeyTable;
+ALTER TABLE JavaDB.JavaTableEncryption RENAME TO JavaDB.MasterKeyTable;
+
+GRANT CREATE, ALTER, DROP, SELECT, INSERT, UPDATE ON JavaDB.JavaTableEncryption TO 'User1'@'localhost';

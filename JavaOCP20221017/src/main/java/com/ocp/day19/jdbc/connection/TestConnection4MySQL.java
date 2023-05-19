@@ -63,11 +63,50 @@ package com.ocp.day19.jdbc.connection;
 	 
 	5. Java Database Connectivity
 	
-		1) Register driver 
-		2) Get Connection
-		3) Create Statement
-		4) Execute query
-		5) Close connection
+		1) Register driver:		
+		   	
+		   		Before establishing a connection to a database, you need to load and register the appropriate JDBC driver. 
+		   		This step informs the Java runtime environment about the driver class that will be used to connect to the database. 
+		   		
+		   		For example, with the MySQL Connector/J JDBC driver, you would typically use 'Class.forName("com.mysql.cj.jdbc.Driver")' to register the driver class.
+		
+		2) Get Connection:
+		   
+		   		Once the driver is registered, you can use the 'DriverManager.getConnection()' method to establish a connection to the database. 
+		   		This method requires a database URL, username, and password as parameters. 
+		   		
+		   		The URL specifies the database's location and other connection details.
+		
+		3) Create Statement:
+				
+				After successfully connecting to the database, you can create a Statement object using the Connection.createStatement() method. 
+				The Statement object allows you to execute SQL statements and retrieve the results.
+				
+		4) Execute query:
+				
+				To retrieve data from the database, you can use the Statement.executeQuery() method to execute a SELECT statement. 
+				
+				This method returns a ResultSet object that represents the result set of the query. 
+				
+				You can then iterate over the result set to access the retrieved data.
+				
+		5) Execute update:
+								
+				The Statement.executeUpdate() method is used to execute SQL statements that modify data in the database. 
+				
+				It is typically used for statements like INSERT, UPDATE, DELETE, and DDL (Data Definition Language) statements. 
+				
+				The method returns the number of rows affected by the update operation.
+		
+		6) Close connection:
+				
+				Once you have finished executing your queries and processing the results, 
+				
+				it is important to close the database resources to free up system resources and maintain proper database connections. 
+				
+				You should close the ResultSet, Statement, and Connection objects in reverse order of their creation. 
+				
+				For example, you can call the close() method on the ResultSet, Statement, and Connection objects.
 		
 	 
 	6. If you see the warning message of "java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver", please follow the setting below:
@@ -80,47 +119,50 @@ package com.ocp.day19.jdbc.connection;
 		6) Right click -> Properties
 		7) Java Build Path -> Libraries 
 		8) Select Modulepath -> Add JARs…
-		9) Select the external .jar that developer expected to install into Modulepath from fold of lib
-		10) Select mysql-connector-java-8.0.26.jar
-		11) Click on OK
-		12) Click on Apply and Close
-		13) Done!
+		9) Select the external .jar that developer expected to install into Modulepath from folder of lib
+	   10) Select mysql-connector-java-8.0.26.jar
+	   11) Click on OK
+	   12) Click on Apply and Close
+	   13) Done!
 		
 		refer to the image of "Java Building Path.png" and "location of jar.png"
-	 
+		 
 */
 
 
 import java.sql.Connection;   
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 public class TestConnection4MySQL {
 
 	static Connection getDB() {
-		// Following information shall NOT be uploaded to Github  !!!
-		// If needed, please have those critical info to be encrypted!
-		String url = "jdbc:mysql://localhost:xxxxx/xxxxx?useUnicode=true&characterEncoding=utf-8";
-		String user = "xxxxx";
-		String password = "xxxxx";
-
-
+		/*
+			It's important to avoid sharing sensitive information, such as database connection details
+			If you need to include such information in your code, it's recommended to encrypt it or use other secure methods to protect it.
+			
+			see the sample code of class 'TestConnection4MySQLWithEncryption', 'JDBCEncryption' and 'GeneratedSecretKey'
+		*/
+		String url = "jdbc:mysql://localhost:3306/JavaDB?useUnicode=true&characterEncoding=utf-8";
+		String user = "User1";
+		String password = "1234";
 		
 		Connection connection = null;
-		try {			
-			Class.forName("com.mysql.cj.jdbc.Driver");  // Register driver
+		try {		
+			/*
+				Starting from JDBC 4.0, the driver manager can automatically detect and load the appropriate JDBC driver for your application without 
+				the need to explicitly call Class.forName(). 
+			*/
+		    Class.forName("com.mysql.cj.jdbc.Driver");  // Register driver
 			connection = DriverManager.getConnection(url, user, password);	// Get Connection
 			System.out.println("Connection successfully, because instantiate instance of Connection: " + connection);			
-			String sql4update = "update SQL4javaWebEE.SQL4javaWebEE set name = 'James' where badge = 1"; // MySQL - update statement
-			PreparedStatement preparedStatement = connection.prepareStatement(sql4update);  // Create Statement		
-			preparedStatement.executeUpdate(); // Execute query	for update statement	
 			connection.close(); // Close connection
 			
-		} catch (ClassNotFoundException e) {
+		} 
+		catch (ClassNotFoundException e) {
 			System.out.println("No driver");
-			e.printStackTrace();
-		
-		} catch (SQLException e) {
+			e.printStackTrace();		
+		} 
+		catch (SQLException e) {
 			System.out.println("No Connection");
 			e.printStackTrace();
 		}
@@ -136,6 +178,6 @@ public class TestConnection4MySQL {
 /*
 	Console:
 			Start test
-			Connection successfully, because receive instance of Connection: com.mysql.cj.jdbc.ConnectionImpl@795509d9
-	
+			Connection successfully, because instantiate instance of Connection: com.mysql.cj.jdbc.ConnectionImpl@169bb4dd
+
 */

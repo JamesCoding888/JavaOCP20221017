@@ -1,4 +1,4 @@
-package com.ocp.day19.jdbc.select;
+package com.ocp.day19.derby.select;
 /*
 	Of this lesson, we used the API of Apache Derby 10.14.2.0 from following link.   
 		

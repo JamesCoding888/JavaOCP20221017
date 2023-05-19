@@ -1,4 +1,4 @@
-package com.ocp.day19.jdbc.db.entity;
+package com.ocp.day19.derby.db.entity;
 
 public class Department {
 	

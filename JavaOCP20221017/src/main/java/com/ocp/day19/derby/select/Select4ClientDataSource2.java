@@ -1,4 +1,4 @@
-package com.ocp.day19.jdbc.select;
+package com.ocp.day19.derby.select;
 
 import java.sql.Connection;  
 import java.sql.ResultSet;

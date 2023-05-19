@@ -1,9 +1,9 @@
-package com.ocp.day19.jdbc.db;
+package com.ocp.day19.derby.db;
 
 import java.util.List;
-import com.ocp.day19.jdbc.db.dao.Dao;
-import com.ocp.day19.jdbc.db.entity.Department;
-import com.ocp.day19.jdbc.db.entity.Employee;
+import com.ocp.day19.derby.db.dao.Dao;
+import com.ocp.day19.derby.db.entity.Department;
+import com.ocp.day19.derby.db.entity.Employee;
 
 /*
 	

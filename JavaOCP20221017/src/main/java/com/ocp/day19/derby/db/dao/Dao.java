@@ -1,4 +1,4 @@
-package com.ocp.day19.jdbc.db.dao;
+package com.ocp.day19.derby.db.dao;
 import java.sql.Connection; 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,8 +8,8 @@ import java.util.List;
 import org.apache.derby.jdbc.ClientDataSource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import com.ocp.day19.jdbc.db.entity.Department;
-import com.ocp.day19.jdbc.db.entity.Employee;
+import com.ocp.day19.derby.db.entity.Department;
+import com.ocp.day19.derby.db.entity.Employee;
 
 public class Dao {
 	

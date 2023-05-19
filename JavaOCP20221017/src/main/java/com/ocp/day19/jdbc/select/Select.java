@@ -1,4 +1,10 @@
 package com.ocp.day19.jdbc.select;
+/*
+
+	The code provided is a Java program that connects to a MySQL database, executes a SELECT query, and prints the retrieved data.
+ 
+*/
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -6,16 +12,16 @@ import java.sql.Statement;
 public class Select {
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:xxxxx/xxxxx?useUnicode=true&characterEncoding=utf-8";
-		String user = "xxxxx";
-		String password = "xxxxx";
+		String url = "jdbc:mysql://localhost:3306/JavaDB?useUnicode=true&characterEncoding=utf-8";
+		String user = "User1";
+		String password = "1234";
 
 		// Establish Connection
 		Connection connection = DriverManager.getConnection(url, user, password);
 		// Create Statement
 		Statement statement = connection.createStatement();
 		// MySQL statement for SELECT
-		String sql4select = "SELECT s4jwe.badge, s4jwe.name FROM SQL4javaWebEE s4jwe";
+		String sql4select = "SELECT JavaTable.badge, JavaTable.name FROM JavaDB.JavaTable";
 
 		// A table of data representing a database result set, which is usually generated 
 		// by executing a statement that queries the database.
@@ -38,15 +44,10 @@ public class Select {
 /*
 	Console: 
 	
-			|  1 | James |
-			|  2 | marry |
-			|  3 | david |
-			|  4 | jack  |
-			|  5 | Musk  |
-			|  6 | Marry |
-			|  7 | Jason |
-			|  8 | Ted   |
-			|  9 | Stock |
-			| 10 | Tiger |
+			|  1 | Happy |
+			|  2 | james |
+			|  3 | jamessss |
+			|  4 | Happy |
+
 
 */
