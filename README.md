@@ -3016,10 +3016,10 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 			7) Java Build Path -> Libraries 
 			8) Select Modulepath -> Add JARs…
 			9) Select the external .jar that developer expected to install into Modulepath from folder of lib
-		       10) Select mysql-connector-java-8.0.26.jar
-		       11) Click on OK
-		       12) Click on Apply and Close
-		       13) Done!
+		      10) Select mysql-connector-java-8.0.26.jar
+		      11) Click on OK
+		      12) Click on Apply and Close
+		      13) Done!
 
 			refer to the image of "Java Building Path.png" and "location of jar.png"
 
@@ -3065,6 +3065,21 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 - Description: 
 
 		The code provided is a Java program that connects to a MySQL database, updates a record in a table, and then closes the connection. 
+
+> UpdateWithEncryption.java
+- Description: 
+
+		The code provided demonstrates a Java program that connects to a MySQL database using encrypted URL, username, and password values. 
+
+		It also includes key verification to ensure the validity of the encryption key before establishing the database connection.
+
+
+		Note: 
+
+			In the code provided, the implementation of the verifyKey() method assumes the existence of a table named MasterKeyTable with a column named 
+			encryption_key, which stores the valid encryption keys. 
+
+			You need to modify this method to match your specific database schema and key verification logic.
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/jdbc/delete">Introduction of DELETE statement</a>
 > Delete.java
