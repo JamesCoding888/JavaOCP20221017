@@ -17,11 +17,14 @@ CREATE TABLE `JavaDB`.`MasterKeyTable` (
 Select * from JavaDB.JavaTable;
 Select * from JavaDB.JavaTableEncryption;
 Select * from JavaDB.MasterKeyTable;
+
 insert into JavaDB.JavaTable values(1, 'james');
+insert into JavaDB.MasterKeyTable values('4A23027820742BC80B0A9E3B54DEC34729CE74CD76C0208F90301D2B5920EDE9');
+
+Delete from JavaDB.MasterKeyTable where badge = 6;
+Delete from JavaDB.MasterKeyTable where encryption_key = '4A23027820742BC80B0A9E3B54DEC34729CE74CD76C0208F90301D2B5920EDE9';
 
 ALTER TABLE JavaDB.JavaTableEncryption ADD COLUMN encryption_key VARCHAR(255) AFTER encryption_key;
 ALTER TABLE JavaDB.JavaTableEncryption DROP COLUMN encryption_key;
 ALTER TABLE JavaDB.JavaTableEncryption RENAME TO JavaDB.MasterKeyTable;
 ALTER TABLE JavaDB.JavaTableEncryption RENAME TO JavaDB.MasterKeyTable;
-
-GRANT CREATE, ALTER, DROP, SELECT, INSERT, UPDATE ON JavaDB.JavaTableEncryption TO 'User1'@'localhost';
