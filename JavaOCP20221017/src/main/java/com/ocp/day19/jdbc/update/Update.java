@@ -1,7 +1,7 @@
 package com.ocp.day19.jdbc.update;
 /*
 
-	The code provided is a Java program that connects to a MySQL database, updates a record in a table, and then closes the connection. Here's a breakdown of the code:
+	The code provided is a Java program that connects to a MySQL database, updates a record in a table, and then closes the connection.
 
 */
 
