@@ -1,4 +1,7 @@
 package com.ocp.day19.jdbc.connection;
+/*
+	The given code is an example of encrypting and decrypting JDBC (Java Database Connectivity) connection details using the AES (Advanced Encryption Standard) algorithm. 
+*/
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;

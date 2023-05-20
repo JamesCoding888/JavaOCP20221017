@@ -1,5 +1,6 @@
 package com.ocp.day19.derby.db.dao;
-import java.sql.Connection; 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,7 +19,7 @@ public class Dao {
 	static {
 		clientDataSource = new ClientDataSource();
 		clientDataSource.setServerName("localhost");
-		clientDataSource.setPortNumber(0000);
+		clientDataSource.setPortNumber(1527);
 		clientDataSource.setDatabaseName("");
 		clientDataSource.setUser("");
 		clientDataSource.setPassword("");
@@ -36,7 +37,7 @@ public class Dao {
 		  		  In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed.
 		*/
 		try(Connection connection = clientDataSource.getConnection();
-			Statement statement = connection.createStatement();
+			PreparedStatement statement = connection.prepareStatement(sql);
 			ResultSet resultSet = statement.executeQuery(sql)){
 			// O/R Mapping: Object Relational Mapping
 			while(resultSet.next()) {

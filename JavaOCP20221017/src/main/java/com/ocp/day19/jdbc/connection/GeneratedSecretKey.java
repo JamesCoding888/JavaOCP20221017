@@ -1,5 +1,7 @@
 package com.ocp.day19.jdbc.connection;
-
+/*
+	The provided Java code generates a secure random secret key using the AES algorithm with a key size of 256 bits.  
+*/
 import java.security.SecureRandom;
 
 import javax.crypto.KeyGenerator;
