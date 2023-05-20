@@ -3041,11 +3041,16 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 			You need to modify this method to match your specific database schema and key verification logic.
 
 > GeneratedSecretKey.java
-- Description: TBD
+- Description: 
+	
+		The provided Java code generates a secure random secret key using the AES algorithm with a key size of 256 bits.
 
 
 > JDBCEncryption.java
-- Description: TBD
+- Description: 
+
+		The given code is an example of encrypting and decrypting JDBC (Java Database Connectivity) connection details using the AES (Advanced Encryption 
+		Standard) algorithm.
 
 
 2. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day19/jdbc/select">Introduction of SELECT statement</a>
