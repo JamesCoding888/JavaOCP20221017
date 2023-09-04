@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="mydbEmbeddedProjectToBillingPeriods">
+	<entities>
+		<data-source id="mysql8-18a45b0adc5-6926f683a50f80d2">
+			<entity id="1" name="project_embedded" fq-name="mydb.project_embedded">
+				<path name="mydb"/>
+			</entity>
+			<entity id="2" name="T_BILLING_PERIOD" fq-name="mydb.T_BILLING_PERIOD">
+				<path name="mydb"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FKn4o0q6sglrao5nkiy1dkgko0l" fq-name="mydb.T_BILLING_PERIOD.FKn4o0q6sglrao5nkiy1dkgko0l" type="fk" pk-ref="1" fk-ref="2"/>
+	</relations>
+</diagram>

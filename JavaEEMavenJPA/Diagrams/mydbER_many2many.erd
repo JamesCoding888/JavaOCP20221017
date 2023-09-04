@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="mydbER-1.erd">
+	<entities>
+		<data-source id="mysql8-18a45b0adc5-6926f683a50f80d2">
+			<entity id="1" name="person_many" fq-name="mydb.person_many" order="0" x="169" y="11">
+				<path name="mydb"/>
+			</entity>
+			<entity id="2" name="person_project" fq-name="mydb.person_project" order="1" x="20" y="143">
+				<path name="mydb"/>
+			</entity>
+			<entity id="3" name="project" fq-name="mydb.project" order="2" x="169" y="200">
+				<path name="mydb"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FKoeilb9s8mnpl8i9r7esxkgp3t" fq-name="mydb.person_project.FKoeilb9s8mnpl8i9r7esxkgp3t" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="FKi50tajew8ec1xdu11inyqv6s8" fq-name="mydb.person_project.FKi50tajew8ec1xdu11inyqv6s8" type="fk" pk-ref="3" fk-ref="2"/>
+	</relations>
+</diagram>

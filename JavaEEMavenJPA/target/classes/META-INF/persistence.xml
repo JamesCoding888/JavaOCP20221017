@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" 
+             version="2.1">
+	
+	
+    <persistence-unit name="mydb" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Entity Employee -->
+        <class>entity.Employee</class>
+        <!-- Entity Person -->
+        <class>entity.Person</class>
+        <!-- Entity ID_CARD -->
+        <class>entity.one2one.IdCard</class>
+        <!-- Entity User -->
+        <class>entity.one2one.User</class>
+        <!-- Entity Owner -->
+        <class>entity.one2many.generationtype_identity.Owner</class>
+        <!-- Entity Phone -->
+        <class>entity.one2many.generationtype_identity.Phone</class>
+        <!-- Entity Owner_T -->
+        <class>entity.one2many.generationtype_table.Owner_T</class>
+        <!-- Entity Phone_T -->
+        <class>entity.one2many.generationtype_table.Phone_T</class>
+        <!-- Entity PersonMany -->
+        <class>entity.many2many.PersonMany</class>
+        <!-- Entity Project -->
+        <class>entity.many2many.Project</class>
+        <!-- Entity Designer -->
+        <class>entity.many2many.Designer</class>                
+        <!-- Entity ProjectEmbedded -->
+        <class>entity.embed.ProjectEmbedded</class> 
+        <!-- Entity Period -->
+        <class>entity.embed.Period</class>
+        <!-- Entity PKTable -->
+        <class>entity.PKTable</class> 
+        <!-- Entity PKIdentity -->
+        <class>entity.PKIdentity</class> 
+        <!-- Entity PKSequence -->
+        <class>entity.PKSequence</class> 
+        <!-- Entity PKAuto -->
+        <class>entity.PKAuto</class> 
+        <!-- Entity Account -->
+        <class>entity.Account</class>
+        <!-- Entity Book -->
+        <class>entity.Book</class>                  
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />            
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8" />
+            <property name="javax.persistence.jdbc.user" value="User1" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
+            <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57InnoDBDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+    </persistence-unit>
+</persistence>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="mydbM2M_EmbeddedProjectToBillingPeriods.erd">
+	<entities>
+		<data-source id="mysql8-18a45b0adc5-6926f683a50f80d2">
+			<entity id="1" name="id_card" fq-name="mydb.id_card" order="0" x="361" y="39">
+				<path name="mydb"/>
+			</entity>
+			<entity id="2" name="person_many" fq-name="mydb.person_many" order="1" x="192" y="20">
+				<path name="mydb"/>
+			</entity>
+			<entity id="3" name="person_project" fq-name="mydb.person_project" order="2" x="20" y="143">
+				<path name="mydb"/>
+			</entity>
+			<entity id="4" name="project" fq-name="mydb.project" order="3" x="192" y="200">
+				<path name="mydb"/>
+			</entity>
+			<entity id="5" name="project_embedded" fq-name="mydb.project_embedded" order="4" x="532" y="201">
+				<path name="mydb"/>
+			</entity>
+			<entity id="6" name="T_BILLING_PERIOD" fq-name="mydb.T_BILLING_PERIOD" order="5" x="360" y="201">
+				<path name="mydb"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FK1yla88ij0ci4mbypgkscyhaca" fq-name="mydb.person_many.FK1yla88ij0ci4mbypgkscyhaca" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="FKcb0682fxd4idjr270yh43sona" fq-name="mydb.person_project.FKcb0682fxd4idjr270yh43sona" type="fk" pk-ref="2" fk-ref="3"/>
+		<relation name="FKbptk3m22oahhg6yletw7mv3of" fq-name="mydb.person_project.FKbptk3m22oahhg6yletw7mv3of" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="FKn4o0q6sglrao5nkiy1dkgko0l" fq-name="mydb.T_BILLING_PERIOD.FKn4o0q6sglrao5nkiy1dkgko0l" type="fk" pk-ref="5" fk-ref="6"/>
+	</relations>
+</diagram>
