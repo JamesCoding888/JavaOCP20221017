@@ -4191,7 +4191,31 @@ BufferedReaderExecutionTime.java
 			It demonstrates how to filter files based on their extension and how to access their attributes such as creation time and size.
 	
 	
-	
+------------------------------------------------------------------------------
+# day22 Java RSA v.s. ECDSA:
+
+> SecurityLevelSimulation.java
+- Description:
+
+To verify the security level of SHA256withRSA and SHA256withECDSA at the same level, it’s important to understand the underlying mathematical assumptions and key lengths that provide the security guarantees. Here’s an outline:
+1. Security Level of RSA vs. ECDSA:
+•	RSA relies on the difficulty of factoring large composite numbers. The security strength increases with key size.
+o	RSA-2048 provides roughly 112 bits of security.
+o	RSA-3072 provides roughly 128 bits of security (equivalent to AES-128).
+•	ECDSA relies on the elliptic curve discrete logarithm problem (ECDLP), which is harder to break than RSA at smaller key sizes.
+o	ECDSA-256 (secp256r1 curve) provides roughly 128 bits of security (similar to RSA-3072).
+2. Security Simulation:
+While directly simulating the cryptographic "security" (i.e., breaking the encryption or signature algorithm) in Java is impractical due to the complexity and computational resources required (factorization and solving discrete logarithms are not feasible with ordinary computing power), you can perform simulations that stress-test the implementation under various conditions to understand if they behave correctly and maintain their integrity.
+Here are two ways to proceed:
+1.	Stress Testing the signature and verification process with different key sizes and large amounts of data.
+2.	Test Against Known Attacks: Use built-in libraries and frameworks to ensure the algorithms are resistant to common cryptographic attacks (like chosen-ciphertext attacks).
+3. Java Simulation to Compare Security Features
+While you cannot directly "break" either algorithm, you can simulate cryptographic integrity by:
+1.	Generating and verifying a large number of signatures to ensure no vulnerabilities or flaws in the cryptographic implementation (this ensures the practical security of the system).
+2.	Testing different key sizes to observe how long it takes for the algorithm to handle encryption/decryption or signing/verifying under various loads.
+Example Java Code to Simulate Signature Creation and Verification Stress Testing:
+![image](https://github.com/user-attachments/assets/4178ba31-ab04-4eb8-9d20-adc40bc02bd9)
+
 	
 	
 	
