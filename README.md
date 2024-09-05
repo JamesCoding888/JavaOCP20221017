@@ -4231,7 +4231,6 @@ Security is ultimately about:
 •	Mathematical hardness of the underlying problems (factoring for RSA, discrete logarithms for ECDSA).
 •	Protection against quantum computing (both RSA and ECDSA are vulnerable but will require post-quantum algorithms in the future).
 This simulation tests the correctness, performance, and practical security aspects of these algorithms rather than the theoretical cryptographic hardness (which requires large-scale factorization or discrete logarithm problem-solving, not possible with normal computation).
-![image](https://github.com/user-attachments/assets/ee2df987-e38a-4c70-906f-c02f20af48e7)
 
 
 	
