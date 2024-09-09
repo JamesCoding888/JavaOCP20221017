@@ -1,4 +1,4 @@
-package com.ocp.day13.test;
+package com.ocp.day13;
 
 import java.util.Arrays;
 import java.util.function.Predicate;
