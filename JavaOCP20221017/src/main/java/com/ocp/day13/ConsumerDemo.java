@@ -6,7 +6,11 @@ package com.ocp.day13;
 	These functional interfaces are part of the Java 1.8 functional programming features and can be used in scenarios where you need to pass behavior as arguments to methods or lambda expressions. 
 	
 	They provide a way to define reusable code blocks and enhance code readability and maintainability.
-	 
+	
+	=================================================================================================================================================================================================
+	Key Differences:
+		1) BiConsumer allows for two arbitrary types as inputs (T, U), while ObjIntConsumer fixes the second input to be an int, which can improve performance by avoiding autoboxing of integers.
+		2) You'd use ObjIntConsumer in scenarios where the second input is always a primitive int to avoid the overhead of boxing/unboxing.
 */
 import java.util.Arrays;
 import java.util.function.BiConsumer;
