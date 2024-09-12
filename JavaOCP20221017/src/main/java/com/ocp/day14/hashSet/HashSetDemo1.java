@@ -4,37 +4,47 @@ package com.ocp.day14.hashSet;
 ======================================================================================================================================================================
  	
  	Overview of HashSet:
- 	1. The class of HashSet implements the Set interface, backed by a hash table (actually a HashMap instance)
- 	   E.g., HashMapInstance.java at package "com.ocp.day16.hashMap"
- 	2. It makes NO guarantees as to the iteration order of the set
- 	3. It does not guarantee that the order will remain constant over time
- 	4. This class permits the null element
- 	5. Repeated element(s), NOT allowable
- 	6. The element of Iterator can only be read from the beginning to the end, 			 
-	   and also when we have already read the element, we cannot read the element repeatedly
-	7. The class of HashSet offers constant time performance for the basic operations (add, remove, contains and size), 
-	   assuming the hash function disperses the elements properly among the buckets. 
-	   Iterating over this set requires time proportional to the sum of the HashSet instance's size (the number of elements) 
-	   plus the "capacity" of the backing HashMap instance (the number of buckets). 
-	   Thus, it's VERY IMPORTANT NOT to set the Initial Capacity too High (or the load factor too low) 
-	   if iteration performance is important
-	   
-	   What's "Load Factor" and "Initial Capacity" ? Please refer to File: "Load Factor & Capacity", at package: "com.ocp.day14.hashSet"
+ 	1. Implementation: The HashSet class implements the Set interface, backed by a hash table (actually an instance of HashMap).
+	   Example: See HashMapInstance.java in the package com.ocp.day16.hashMap.
+ 	   
+ 	2. Iteration Order: There are no guarantees regarding the iteration order of the set, and the order may change over time.
+ 	
+ 	3. Order Stability: The order of elements is not constant over time.
+ 	
+ 	4. Null Element: This class permits the inclusion of a null element.
+ 	
+ 	5. Duplicates: Duplicate elements are not allowed.
+ 	
+ 	6. Iterator Behavior: The Iterator only allows reading elements sequentially from the beginning to the end. 
+ 	   Once an element is read, it cannot be read again.
+ 	   
+ 	   
+	7. Performance: The class provides constant time performance for basic operations (such as add, remove, contains, and size), 
+	   assuming the hash function distributes elements evenly across buckets. 
+	   Iterating over the set requires time proportional to the size of the HashSet instance and the "capacity" of the backing HashMap.
+       
+       Important: Do not set the initial capacity too high or the load factor too low if iteration performance is important.
+       
+       For more details about "Load Factor" and "Initial Capacity", refer to:
+       File: "Load Factor & Capacity" in the package com.ocp.day14.hashSet.
 	
-	8. Notice that this implementation is NOT synchronized (i.e., not thread-safe). If Multiple-threads access a hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 
-	   This is Typically accomplished by Synchronizing on some object that naturally Encapsulates the set. 
-	   If NO such object EXISTS, the set should be "wrapped" using the "Collections.synchronizedSet" method.
-	   This is BEST Done at Creation Time, to Prevent Accidental Unsynchronized access to the set
+	8. Thread Safety: This implementation is not synchronized (i.e., not thread-safe). If multiple threads access the set concurrently and at least one modifies it, external synchronization is required.
+	   Solution:
 	   
 	   		Set s = Collections.synchronizedSet(new HashSet(...));
 	   
-	   The iterators returned by this class's iterator method are fail-fast: 
-	   if the set is modified at any time after the iterator is created, in any way except through the iterator's own remove method, the Iterator throws a ConcurrentModificationException. 
-	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
-
-	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
-	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
-	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+	   Iterators are fail-fast, throwing a ConcurrentModificationException if the set is modified after the iterator is created.
+	   
+	9. Fail-fast Behavior:
+	   The description of fail-fast iterators throwing ConcurrentModificationException is accurate. 
+	   The key point is that HashSet's iterator fails quickly if the set is structurally modified outside the iterator's own remove method after its creation.
+	   
+	   Improvement: It would be useful to add that this behavior is provided by the modCount field, which tracks modifications to the HashSet. 
+	   When the iterator detects that the modCount has changed unexpectedly, it throws ConcurrentModificationException.
+       
+       Limitations of Fail-fast Iterators:
+	   The note that fail-fast behavior is not guaranteed is correctly stated. Since concurrency issues in a multithreaded environment are hard to predict, relying on the ConcurrentModificationException for correctness is discouraged.
+       Improvement: Emphasize that synchronization is still required even though the fail-fast mechanism exists because the exception is not a substitute for proper thread safety mechanisms.
 
 	9. Available since java 1.2
 
@@ -42,68 +52,66 @@ package com.ocp.day14.hashSet;
 
 	Overview of LinkedHashSet:	
 	   
-	1. Hash table and linked list implementation of the Set interface, with predictable iteration order
-	   LinkedHashSet implementation differs from HashSet in that it maintains a doubly-linked list running through all of its entries
-	2. The doubly-linked list is on the implementation side, not necessarily exposed for you to get and use. 
-	   The doubly-linked list CAN KEEP track of the order your items are inserted into the set (and also for order of accessing elements in access-order LinkedHashMap). 
-	   A regular HashSet has NO need for a doubly-linked list since it makes NO guarantee about the order of its contents.
-	3. This linked list defines the iteration ordering, which is the order in which elements were inserted into the set (insertion-order) 
-	4. The element(s) of LinkedHashSet is iteration guaranteed
-	5. This class permits the null element
-	6. Repeated element(s) NOT allowable
-	7. LinkedHashSet provides constant-time performance for the basic operations (add, contains and remove), assuming the hash function disperses elements properly among the buckets. 
-	   Performance is likely to be just slightly below that of HashSet (super-class of LinkedHashSet), due to the added Expense of Maintaining the linked list, with one exception: Iteration over a LinkedHashSet requires time proportional to the SIZE of the set, regardless of LinkedHashSet's Capacity. 
-	   Iteration over a HashSet is likely to be MORE Expensive, requiring time proportional to its Capacity.
+	1. Implementation: LinkedHashSet is a hash table and linked list implementation of the Set interface, with predictable iteration order. It differs from HashSet by maintaining a doubly-linked list of all entries.
+	2. Order Tracking: The doubly-linked list keeps track of insertion order (or access order in access-order LinkedHashMap). This differs from HashSet, which makes no order guarantees.
+	3. Iteration Order: The iteration order is defined by the order in which elements were inserted (insertion-order). 
+	4. Guaranteed Iteration: The elements of a LinkedHashSet have a guaranteed iteration order.
+	5. Null Element: This class permits the inclusion of a null element.
+	6. Duplicates: Duplicate elements are not allowed.
+	7. Performance: Similar to HashSet, it provides constant-time performance for basic operations. 
+	   However, it incurs a slight performance overhead due to maintaining the linked list. 
+	   Iteration time is proportional to the size of the set, unlike HashSet, where iteration time is proportional to the capacity of the set.
 	
-	8. A linked hash set has two parameters that affect its performance: 
-	   (1) Initial Capacity and (2) Load Factor - They are defined Precisely AS for HashSet. 
-	   Notice here, that the Penalty of LinkedHashSet for choosing an excessively high value for initial capacity is Less Severe for this class of LinkedHashSet than for HashSet, as iteration times for this class (i.e., LinkedHashSet) are Unaffected by Capacity.
+	8. Parameters: The performance of LinkedHashSet is affected by two parameters:
+	   (1) Initial Capacity
+	   (2) Load Factor
+	   These are defined similarly to HashSet, but the impact of a high initial capacity is less severe since iteration time is unaffected by capacity.
 	
-	9. Note that this implementation is NOT synchronized. If Multiple-threads access a linked hash set concurrently, and at least ONE of the threads modifies the set, it MUST be Synchronized Externally. 	
-	   This is Typically accomplished by Synchronizing on some object that naturally Encapsulates the set. 
-	   If NO such object EXISTS, the set should be "wrapped" using the "Collections.synchronizedSet" method.
-	   This is BEST Done at Creation Time, to Prevent Accidental Unsynchronized access to the set
-	   
-	   		Set s = Collections.synchronizedSet(new HashSet(...));
+	9. Thread Safety: Like HashSet, it is not synchronized. External synchronization is required if accessed by multiple threads concurrently.
+	   Solution:
+	   	   		
+	   		Set s = Collections.synchronizedSet(new LinkedHashSet(...));
 	 
-	   The iterators returned by this class's iterator method are fail-fast: 
-	   if the set is modified at any time after the iterator is created, in any way except through the iterator's own remove method, the Iterator throws a ConcurrentModificationException. 
-	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
-
-	   Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. 
-	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
-	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
-	
-	10. Available since java 1.4
+   10. Fail-fast Behavior:
+	   Similar to HashSet, LinkedHashSet uses a fail-fast iterator, which throws a ConcurrentModificationException if the set is structurally modified outside the iterator's own remove method after its creation.
+	  
+	   Improvement: The modCount field in LinkedHashSet (inherited from HashSet) tracks structural modifications. If an unexpected modification is detected while iterating, it triggers a ConcurrentModificationException, ensuring that inconsistencies due to concurrent modifications are avoided.
+	   
+	   Limitations of Fail-fast Iterators:
+	   While fail-fast behavior is reliable in single-threaded environments, it is not guaranteed in multithreaded environments. The occurrence of ConcurrentModificationException is not a certainty but rather a best-effort mechanism.
+	   
+	   Improvement: As with HashSet, it is important to highlight that LinkedHashSet still requires proper synchronization for thread safety. The fail-fast mechanism should not be relied upon as a substitute for synchronization in multithreaded scenarios.
+	   
+	11. Available since java 1.4
 	
 ======================================================================================================================================================================
 	
 	Overview of LinkedList:	   
-	1. Doubly-linked list implementation of the List and Deque interfaces 
-	2. LinkedList implements all Optional list operations 
-	3. LinkedList permits all elements (including null)
-	4. All of the operations perform as could be expected for a doubly-linked list. 
-	5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the Specified INDEX.
-	6. When we have already read the element, we cannot read the element repeatedly
-	7. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
-	   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) 
-	   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
-	   If NO such object exists, the list should be "wrapped" using the Collections.synchronizedList method. 
-	   This is Best Done at Creation Time, to Prevent Accidental Unsynchronized access to the list:
+	1. Implementation: LinkedList is a doubly-linked list implementation of the List and Deque interfaces. 
+	2. Optional Operations: It implements all optional list operations. 
+	3. Permitted Elements: All types of elements, including null, are allowed.
+	4. Performance: Operations are consistent with what is expected of a doubly-linked list. 
+	5. Indexing: Index-based operations will traverse the list from the beginning or the end, whichever is closer to the specified index.
+	6. Iterator Behavior: Once an element is read, it cannot be read again.
+	7. Thread Safety: Like HashSet and LinkedHashSet, LinkedList is not synchronized. External synchronization is required if the list is accessed concurrently by multiple threads, especially if structural modifications occur.
+	   Solution:
 	  	
 	   		List list = Collections.synchronizedList(new LinkedList(...));
-
-	   The iterators returned by this class's iterator and listIterator methods are fail-fast: 
-	   if the list is structurally modified at any time after the iterator is created, in any way except through the Iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException. 
-	   Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
-
-	   Note that the fail-fast behavior of an iterator CANNOT be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of Unsynchronized Concurrent Modification. 
-	   Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. 
-	   Therefore, it would be wrong to write a program that depended on this exception for its correctness: 
-	   the fail-fast behavior of iterators should be used ONLY to detect bugs.
+       
+       Iterators are fail-fast, throwing a ConcurrentModificationException if the list is modified structurally after iterator creation.
+       
+	8. Fail-fast Behavior:
+	   LinkedList also provides a fail-fast iterator, throwing a ConcurrentModificationException if the list is structurally modified outside of the iterator's own remove method.
+	   
+	   Improvement: The fail-fast behavior is implemented by the modCount field (inherited from AbstractList), which tracks changes to the list. If the iterator detects that the modCount has been altered unexpectedly, a ConcurrentModificationException is thrown, ensuring the iterator operates on a consistent state.
+	   
+	   Limitations of Fail-fast Iterators:
+	   Just like with HashSet and LinkedHashSet, the fail-fast behavior in LinkedList is not guaranteed in a multithreaded environment. The exception may or may not occur depending on the timing of concurrent modifications.
+	   
+	   Improvement: Emphasize that proper synchronization mechanisms (such as using synchronized blocks or CopyOnWriteArrayList) are still needed for thread safety when working with LinkedList in concurrent scenarios, as the fail-fast behavior alone is not enough to ensure correctness. 
 	
-	8. There are NO Initial Capacity and Load Factor 
-	9. Available since java 1.2
+	9. Capacity and Load Factor: LinkedList has no initial capacity or load factor constraints.
+	10. Available since java 1.2
 
 
  	
@@ -171,6 +179,16 @@ public class HashSetDemo1 {
 		
 		System.out.println(linkedHashSet);		
 		
+		LinkedList<Object> linkedList = new LinkedList<>();
+		linkedList.add("Chinese");
+		linkedList.add(100);   // type of 100, is Integer, NOT int
+		linkedList.add("English");
+		linkedList.add(80);
+		linkedList.add("English");
+		linkedList.add(80);
+		
+		System.out.println(linkedList);		
+		
 		// Let's create a for-loop with running 10 times for collecting elements by HashSet
 		Set<Object> loopHashSet = new HashSet<>();
 		Set<Object> loopLinkedHashSet = new LinkedHashSet<>();
@@ -192,11 +210,9 @@ public class HashSetDemo1 {
 		Iterator<Object> iteratorOflist = loopLinkedList.iterator();
 		
 		while(true) {
-			if(iteratorOfloopHashSet.hasNext()) {
-				
+			if(iteratorOfloopHashSet.hasNext()) {				
 				Object next = iteratorOfloopHashSet.next();
 				System.out.println("element from iteratorOfloopHashSet: " + next);
-				
 			}
 			
 			if (iteratorOfloopLinkedHashSet.hasNext()) {
@@ -309,6 +325,7 @@ public class HashSetDemo1 {
 		Console:
 				[80, English, 100, Chinese]
 				[Chinese, 100, English, 80]
+				[Chinese, 100, English, null, English, 80]
 				Repeated element(s) NOT count it: [3, 4, 6, 8, 9]
 				Repeated element(s) NOT count it: [3, 4, 6, 8, 9]
 				Repeated element(s) count it: [3, 3, 4, 6, 6, 3, 8, 9, 6, 9]
