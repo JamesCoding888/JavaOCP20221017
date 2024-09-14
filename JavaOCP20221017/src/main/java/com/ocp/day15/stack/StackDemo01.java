@@ -10,7 +10,8 @@ package com.ocp.day15.stack;
 	4. The usual push and pop operations are provided, as well as a method to peek at the top item on the stack, 
 	   a method to test for whether the stack is empty, and a method to search the stack for an item and discover how far it is from the top.	
 	5. When a stack is first created, it contains no items.
-	6. Since JDK 1.0
+	6. Duplicates are allowed in the stack.
+	7. Since JDK 1.0
 	
 	Refer to the link of Oracle: 
 	https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
