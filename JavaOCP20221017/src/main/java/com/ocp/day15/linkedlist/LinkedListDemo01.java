@@ -11,7 +11,8 @@ package com.ocp.day15.linkedlist;
 	3. LinkedList permits all elements (including null)
 	4. All of the operations perform as could be expected for a doubly-linked list. 
 	5. Operations that INDEX into the list will TRAVERSE the list from the BEGINNING or the END, whichever is Closer to the Specified INDEX.
-	6. When we have already read the element, we cannot read the element repeatedly
+	6. The ListIterator is being used to traverse the elements of a LinkedList.Once the iterator reaches the end of the list, it doesn't reset automatically, 
+	   which is why you cannot read the elements repeatedly after the first iteration.
 	7. Note that this implementation is NOT Synchronized. If Multiple-threads access a linked list concurrently, and at least ONE of the threads modifies the list structurally, it MUST be Synchronized Externally. 
 	   (A structural modification is any operation that adds or deletes one or more elements; merely setting the value of an element is not a structural modification.) 
 	   This is typically accomplished by Synchronizing on some object that naturally encapsulates the list. 
