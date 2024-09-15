@@ -176,6 +176,7 @@ public class Employee implements Comparable<Employee> {
 			//    and the result of the calculation will be negative
 				  
 				  System.out.println("(age - o.age) >= 0 ? " + ((age - o.age) >= 0));
+				  System.out.printf("age: %d | o.age: %d\n", age, o.age);
 			   	  System.out.println("If sort = true or false, then 1 (ASCENDING) or -1 (DESCENDING) : " + (sort ? 1 : -1));
 				  return (age - o.age) * (sort ? 1 : -1);		
 //		*/		
