@@ -1,59 +1,50 @@
 package com.ocp.day16.map;
-/*
-======================================================================================================================================================================================================================
-
-	Introduction of this lesson (Please also recap HashMap at package: com.ocp.day16.map):
-	
-		1) The Hashtable class is the oldest implementation of a hash table data structure in Java.
-		
-		2) Hashtable<K, V> class, at package: "java.util", is a subclass of Map interface, 
-		   which means it implements the Map interface and provides the functionality of a key-value mapping.
-		
-		3) Hashtable is specifically designed as a hashtable-based implementation of the Map interface. 
-		
-		4) Hashtable stores data in the form of key-value pairs. Each key is associated with a corresponding value.
-		
-		5) Hashtable does not allow null values or null keys. Attempting to store null values or null keys will result in an exception.
-				 
-		6) Hashtable utilizes a hash table data structure, where keys are mapped to specific indices in an underlying array using a hash function.
-		
-		7) When attempting to insert a key-value pair with a duplicate key, Hashtable will replace the existing value associated with that key.
-		
-		8) Hashtable is synchronized, meaning it is designed to be thread-safe for concurrent access. On the other hand, HashMap is not synchronized by default.
-		
-		9) Hashtable provides fail-fast iteration. If a collection is modified while being iterated, a ConcurrentModificationException will be thrown. 
-		
-	   10) Hashtable provides an Enumeration interface for iterating over its elements. However, HashMap does not provide a specific Enumeration interface.
-	   
-	   11) Hashtable does not guarantee any specific order of the key-value pairs in the map. The order may vary, and it is not guaranteed to remain constant over time.
-	   
-	   12) Hashtable implements fail-fast iteration. This means that if a collection is modified while being iterated, a ConcurrentModificationException will be thrown.  
-	   
-	   13) The Hashtable class was indeed introduced in Java 1.0, which was released in 1996.
-
-	Refer to the link as follows:
-	https://www.baeldung.com/java-hash-table
-	https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html
-	
-======================================================================================================================================================================================================================		 
-	
-	The code demonstrates the usage of a Hashtable in Java. 
-	
-	It initializes a Hashtable with a default initial capacity of 11 and a load factor of 0.75. 
-	
-	Then, it adds key-value pairs to the Hashtable using the put() method. 
-	
-	If a duplicate key is inserted, the Hashtable will replace the existing value associated with that key.
-
-	Also the code attempts to add a null key and a null value to the Hashtable, which would result in a NullPointerException. 
-		
-	It's important to avoid storing null keys or null values in a Hashtable.
-
-	The code also demonstrates the usage of the elements() method, which returns an Enumeration of the values in the Hashtable. 
-		
-	It iterates over the elements using the hasMoreElements() and nextElement() methods of the Enumeration, printing each value. 
-		
-*/
+/**
+ * Introduction of this lesson:
+ *
+ * 1) The `Hashtable` class is the oldest implementation of a hash table data structure in Java.
+ *
+ * 2) `Hashtable<K, V>` is part of the `java.util` package and is a subclass of the `Map` interface,
+ *    which provides the functionality of a key-value mapping.
+ *
+ * 3) `Hashtable` is designed as a hash table-based implementation of the `Map` interface.
+ *
+ * 4) `Hashtable` stores data in the form of key-value pairs, where each key is associated with a corresponding value.
+ *
+ * 5) `Hashtable` does not allow `null` keys or `null` values. Attempting to store `null` values or keys will result in a `NullPointerException`.
+ *
+ * 6) It uses a hash table data structure to map keys to specific indices in an underlying array through a hash function.
+ *
+ * 7) If you attempt to insert a key-value pair with a duplicate key, `Hashtable` will replace the existing value for that key.
+ *
+ * 8) `Hashtable` is synchronized, meaning it is thread-safe for concurrent access, unlike `HashMap` which is not synchronized by default.
+ *
+ * 9) `Hashtable` provides fail-fast iteration. If the collection is modified while being iterated, a `ConcurrentModificationException` will be thrown.
+ *
+ * 10) It also provides an `Enumeration` interface for iterating over its elements. This feature is not available in `HashMap`.
+ *
+ * 11) `Hashtable` does not guarantee any specific order for its key-value pairs, and the order may change over time.
+ *
+ * 12) Like `HashMap`, `Hashtable` also implements fail-fast iteration to prevent concurrent modification issues.
+ *
+ * 13) The `Hashtable` class was introduced in Java 1.0, which was released in 1996.
+ *
+ * Code demonstration:
+ *
+ * 1) A `Hashtable` is initialized with a default initial capacity of 11 and a load factor of 0.75.
+ *
+ * 2) The `put()` method is used to add key-value pairs. If a duplicate key is inserted, the existing value is replaced.
+ *
+ * 3) Adding a `null` key or value to the `Hashtable` will result in a `NullPointerException`, so it is important to avoid this.
+ *
+ * 4) The `elements()` method is used to return an `Enumeration` of the values in the `Hashtable`.
+ *    The iteration over the elements is done using the `hasMoreElements()` and `nextElement()` methods from the `Enumeration` interface, 
+ *    printing each value.
+ *
+ * References:
+ * - https://www.baeldung.com/java-hash-table
+ * - https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html
+ */
 
 
 import java.util.Enumeration;
