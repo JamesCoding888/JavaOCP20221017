@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6d3615ad-c1e5-4984-a12a-8714f5caee13)# Java SE 11 Developer
+# Java SE 11 Developer
 ------------------------------------------------------------------------------
 > Toolkits
 - Integrated Development Environment (IDE): Eclipse 2021-06
