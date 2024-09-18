@@ -2711,7 +2711,7 @@ Link -> "https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
 		It's important to understand these limitations when using Arrays.asList(), especially if you need to modify the size or structure of the collection.
 
 5. <a href="https://github.com/JamesCoding888/JavaOCP20221017/tree/master/JavaOCP20221017/src/main/java/com/ocp/day16/efficiency">Efficiency Testing of Sub-classes from Map</a>  
-- <img width="203" alt="Map - data structure" src="/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day16/map/UML/GroupOfObjectsFromMap.png">
+- <img width="203" alt="Map - data structure" src="https://user-images.githubusercontent.com/83496093/211237775-2aaa3bc1-7dc2-4c17-9b0d-fa20862d9571.png">
 
 
 > EfficiencyLab4Map.java
