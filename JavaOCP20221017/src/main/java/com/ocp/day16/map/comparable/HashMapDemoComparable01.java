@@ -1,21 +1,15 @@
 package com.ocp.day16.map.comparable;
-
 /* 
-	The code provided demonstrates the use of a HashMap to associate students with 
-		
-	their exam scores and calculates the total scores using different syntax optimizations. 
-		
-		
-	1) Please review the previously lecture at package: com.ocp.day15.comparable, 
-	   for learning how to use "Set<Map.Entry<K, V>> entrySet()" to obtain object(s) from Map.
-		
-	2) Please review the Java 1.8 - Stream API of "mapToInt", at day3, day4 and day5
-		
-	3) There are different optimized syntaxes at (2) and (3), in sample code.
+	The code provided demonstrates the use of a HashMap to associate students 
+	with their exam scores and calculates the total scores using different syntax optimizations.
 	
+	1) Please review the previous lecture at package: com.ocp.day15.comparable, 
+	   to learn how to use "Set<Map.Entry<K, V>> entrySet()" to obtain object(s) from Map.
+	
+	2) Please review the Java 1.8 - Stream API for "mapToInt", at day3, day4, and day5.
+	
+	3) There are different optimized syntaxes demonstrated in (2) and (3) in the sample code.
 */
-
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
