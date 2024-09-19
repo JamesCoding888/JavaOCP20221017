@@ -1,11 +1,15 @@
 package com.ocp.day16.map.comparable;
 /*
-	The code provided demonstrates the usage of a custom comparator with a TreeMap to sort the entries based on the keys. 
+	This code demonstrates how to use a custom comparator with a TreeMap to sort entries based on the keys.
 	
-	The TreeMap is created with the custom comparator, and the keys are of type Integer. 
+	The TreeMap is initialized with a custom comparator, where the keys are of type Integer.
 	
-	The sorting is performed in reverse order of the keys using the custom comparator.
+	The custom comparator is designed to sort the keys in **reverse order** (descending).
+	
+	This approach showcases the flexibility of TreeMap in allowing developers to define their own sorting logic 
+	for keys, overriding the default natural ordering.
 */
+
 import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
