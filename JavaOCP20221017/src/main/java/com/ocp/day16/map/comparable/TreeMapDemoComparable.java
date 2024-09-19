@@ -111,11 +111,11 @@ public class TreeMapDemoComparable {
 		// print out based on value of id (i.e., id of Student) by ASCENDING order as 1, 2, 3 and 4
 		System.out.println(treeMap1);
 		
-		Map<Exam, String> treeMap2 = new TreeMap<>();
-		treeMap2.put(exam01, student01.getName());
-		treeMap2.put(exam02, student02.getName());
-		treeMap2.put(exam03, student03.getName());
-		treeMap2.put(exam04, student04.getName());
+		Map<Integer, String> treeMap2 = new TreeMap<>();
+		treeMap2.put(exam01.getScore(), student01.getName());
+		treeMap2.put(exam02.getScore(), student02.getName());
+		treeMap2.put(exam03.getScore(), student03.getName());
+		treeMap2.put(exam04.getScore(), student04.getName());
 
 		// A TreeMap is a Map implementation that maintains its "keys" in ASCENDING order, sorted according to a Comparator provided at TreeMap creation time
 		// print out based on value of score (i.e., score of Exam) by ASCENDING order as 59, 87, 88 and 98
@@ -126,5 +126,6 @@ public class TreeMapDemoComparable {
 /*
 	Console:
 			{1=Exam [subject=Mathematics, score=98], 2=Exam [subject=Microwave Engineering, score=88], 3=Exam [subject=RFIC Design, score=59], 4=Exam [subject=Java-1z0-819, score=87]}
-			{Exam [subject=RFIC Design, score=59]=David, Exam [subject=Java-1z0-819, score=87]=Elon, Exam [subject=Microwave Engineering, score=88]=James, Exam [subject=Mathematics, score=98]=Betty}
+			{59=David, 87=Elon, 88=James, 98=Betty}
+
 */
