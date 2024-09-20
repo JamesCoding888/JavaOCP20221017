@@ -1,19 +1,27 @@
 package com.ocp.day16.collector;
 /*
- 
-	The given code demonstrates various examples of using the groupingBy collector from the Collectors class in the Java Stream API. 
+	The code demonstrates the usage of the `groupingBy` collector from the Java Stream API. 
 	
-	It groups a list of PurchasedOrder objects based on different criteria and collects the data into maps.
+	It processes a list of `PurchasedOrder` objects, grouping them by different criteria such as product name, quantity, and price. 
+	The collected data is stored in various types of maps depending on the grouping criteria.
 	
-	The PurchasedOrder class represents an order with a product name, quantity, and price.
+	The `PurchasedOrder` class represents an order containing product details such as:
+	- Product name
+	- Quantity
+	- Price
 	
-	It has getters and setters for these properties, as well as overridden hashCode, equals, and toString methods.
- 	
+	The class also includes standard getters and setters for these fields, as well as overridden `hashCode`, `equals`, 
+	and `toString` methods.
+	
+	The examples provided cover:
+	- Counting repeated occurrences of a product name.
+	- Summing the total quantity for each product.
+	- Summing the total price for each product.
+	- Grouping by price and mapping to the respective `PurchasedOrder` objects.
+	- Grouping by price and collecting a `Set` of unique product names.
+	
+Additionally, the `mapping` and `toSet` methods are statically imported for convenience, reducing code verbosity.
 */
-
-
-
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
