@@ -1,7 +1,8 @@
 package com.ocp.day16.collections;
 /*
-	The provided code demonstrates the implementation of Comparator and BiConsumer interfaces using anonymous inner classes and lambda expressions.
-	 
+	The code below demonstrates various implementations of the Comparator and BiConsumer interfaces,
+	including the use of anonymous inner classes and lambda expressions for sorting a list of integers.
+	Additionally, it showcases how the `Collections.unmodifiableList()` method can create an immutable view of a list.
 */
 import java.util.ArrayList; 
 import java.util.Collections;
