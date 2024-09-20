@@ -1,33 +1,28 @@
 package com.ocp.day16.collector;
-
-
-
 /*
-	Introduction of API - Arrays.asList:
+	Introduction to API - Arrays.asList:
 	
-	The Arrays.asList() method in Java is used to convert an array to a fixed-size List object. 
-	This method is part of the java.util.Arrays class.
+	The `Arrays.asList()` method in Java is used to convert an array into a fixed-size List object. 
+	This method is part of the `java.util.Arrays` class.
 	
-	When you use Arrays.asList() to convert an array to a List, the resulting List is a view of the original array. 
-	This means that any modifications made to the List will be reflected in the original array and vice versa. 
-	It provides a convenient way to work with arrays using the functionality provided by the List interface.
+	Key characteristics of Arrays.asList():
 	
-	However, there are a few important points to note:
+	1) The list returned by `Arrays.asList()` is backed by the original array, meaning changes to the list will 
+	   reflect in the array, and vice versa.
 	
-		1) The returned List is of fixed size, which means you cannot add or remove elements from the List. 
-		   If you attempt to do so by calling methods like add(), remove(), or clear() on the List, 
-		   JVM (Java Virtual Machine) will throw an UnsupportedOperationException.
+	2) The size of the list is fixed, so you cannot add or remove elements. Attempting to do so by calling 
+	   `add()`, `remove()`, or `clear()` will throw an `UnsupportedOperationException`.
 	
+	3) You *can* modify individual elements within the list, and the changes will propagate to the original array.
 	
-		2) Although you cannot change the size of the List, you can modify individual elements of the array through the List view. 
-		   Changes made to a single element of the List will be reflected in the original array.
-		   
+	4) For a fully unmodifiable list, you can use alternatives like `Collections.unmodifiableList()`, 
+	   `List.copyOf()`, or `ImmutableList.copyOf()`.
 	
-	It's important to understand these limitations when using Arrays.asList(), especially if you need to modify the size or structure of the collection.   
-       
+	Usage Considerations:
+	- The `Arrays.asList()` method offers a convenient way to work with array-based data using List operations.
+	- It's useful when you need a fixed-size, modifiable list view of an array but be cautious about 
+	  the limitations around resizing.
 */
-
-
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
