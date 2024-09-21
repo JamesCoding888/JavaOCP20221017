@@ -1,31 +1,25 @@
 package com.ocp.day17.exception;
 
 /*
-	Noticed here !!! Shall NOT Throw RuntimeException, Exception, or Throwable. 
+	Important Notice: DO NOT throw RuntimeException, Exception, or Throwable directly.
 	
-	E.g.,
-		public static void main(String[] args) throws RuntimeException, Exception, Throwable { ... }
-		
+	Example of incorrect usage:
+	    public static void main(String[] args) throws RuntimeException, Exception, Throwable { ... }
 	
+	Reason for avoiding RuntimeException:
 	
-	Reason of NOT throwing RuntimeException:
-		
-		1) Throwing a RuntimeException can lead to subtle errors; for example, a caller cannot 
-		   examine the exception to determine why it was thrown and consequently cannot attempt to recover.
+	    1) Throwing a RuntimeException can lead to subtle and hard-to-diagnose errors. 
+	       For instance, the caller cannot inspect the exception to determine the cause 
+	       and therefore cannot make an attempt to recover from the issue.
 	
+	Preferred approach:
 	
+	    1) Instead of throwing RuntimeException, create and throw a custom exception, 
+	       or extend an existing exception class (either from Exception or RuntimeException).
 	
-	Supposed to do:
-		
-		1) Methods can throw a customized exception or a sub-classes exception from Exception or RuntimeException. 
-	
-	
-	
-	Refer to the link as follows:
+	For more details, refer to:
 	https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable
-	
 */
-
 class HandleNumberException extends Exception {
 
 	public HandleNumberException() {
