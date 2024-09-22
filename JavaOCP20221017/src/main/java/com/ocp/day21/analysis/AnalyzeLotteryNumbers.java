@@ -1,45 +1,63 @@
 package com.ocp.day21.analysis;
 
 /*
- 	This program analyzes lottery numbers by counting the occurrences of each number in the given input data. 
- 	
- 	The input data is a string that represents a list of numbers separated by commas and spaces. 
- 	
- 	The program splits the string into an array of individual number strings, creates a linked hash map with keys as the numbers from 1 to 42 and values as 0, 
- 	
- 	and then iterates through the array to increment the value of each corresponding key in the map.
- 	
- 	
+	This program analyzes lottery numbers by counting how many times each number appears in a given dataset.
+	
+	The input data is a string of numbers, where each number is separated by a comma and a space.
+	
+	The program works in the following steps:
+	1. Splits the input string into an array of individual number strings.
+	2. Initializes a LinkedHashMap where the keys are numbers from 1 to 42, and the values are all set to 0, representing the initial count.
+	3. Iterates through the array of numbers, incrementing the count for each number in the map.
+	
+	Finally, it outputs the frequency of each number, showing how many times each one occurred in the dataset.
 */
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
-
+import java.util.function.IntConsumer;
 public class AnalyzeLotteryNumbers {
     public static void main(String[] args) {
+        // Input data: a string representing a list of numbers separated by commas and spaces
         String data = "12, 38, 10, 17, 9, 22, 2, 15, 21, 10, 22, 26, 41, 14, 23, 6, 21, 9, 26, 16, 29, 2, 31, 8, 14, 29, 5, 35, 20, 16, 23, 3, 19, 18, 9, 31, 24, 3, 23, 18, 28, 6, 32, 9, 20, 41, 2, 39, 39, 28, 9, 10, 15, 33, 30, 7, 35, 1, 42, 24";
-        String[] array = data.split(", ");        
-        System.out.println("Length of array: " + array.length);
-        // A LinkedHashMap is created to store the frequency count of each number from 1 to 42. 
+        
+        // Split the data into an array of number strings
+        String[] array = data.split(", ");
+        
+        System.out.println("Length of array: " + array.length); // Prints the length of the array
+        
+        // Create a LinkedHashMap to store the frequency count of each number from 1 to 42
         Map<String, Integer> map = new LinkedHashMap<>();
-        // The IntStream class is used to iterate from 1 to 42, 
-        // and for each iteration, a new key-value pair is added to the map 
-        // with the key as the current number (converted to a string) and the value as 0.
+        
+        // Initialize the map with numbers 1 to 42 as keys, each having a value of 0 (no occurrences yet)
+        ///*
         IntStream.rangeClosed(1, 42).forEach(i -> {
-        	// i+"" -> convert int to String type
-        	map.put(i+"", 0);
+            map.put(String.valueOf(i), 0); // Convert int to String and insert into map with value 0
         });
-        System.out.println(map); 
-        // The program loops through the array of numbers and increments the frequency count 
-        // for each number in the map using the put() and get() methods.
-        for(String key : array) {
+        //*/
+        // Use an anonymous class instead of a lambda for IntStream.forEach
+        /*
+        IntStream.rangeClosed(1, 42).forEach(new IntConsumer() {
+            @Override
+            public void accept(int i) {
+                map.put(String.valueOf(i), 0); // Convert int to String and insert into map with value 0
+            }
+        });
+        */
+        // Print the initialized map (all numbers have a value of 0)
+        System.out.println("Initial map: " + map); 
+        
+        // Iterate over the array of number strings
+        for (String key : array) {
+            // Increment the count for each number in the map
             map.put(key, map.get(key) + 1);
         }
-        // The program prints out the length of the input array 
-        // and the resulting map with the frequency count of each number.
-        System.out.println(map);
+        
+        // Print the map after counting the occurrences of each number
+        System.out.println("Map with frequency counts: " + map);
     }
 }
+
 
 /*
 	Console: 
