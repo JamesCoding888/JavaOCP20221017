@@ -16,8 +16,8 @@ import java.nio.file.StandardCopyOption;
 public class CopyAndDeleteFile {
     public static void main(String[] args) throws IOException {
         // Define the source and destination file paths
-        Path source = Paths.get("/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/log4.txt");
-        Path destination = Paths.get("/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/log5.txt");
+        Path source = Paths.get("../src/main/java/com/ocp/day21/io/data/log4.txt");
+        Path destination = Paths.get("../src/main/java/com/ocp/day21/io/data/log5.txt");
 
         // Copy the file from source to destination, replacing the destination file if it already exists
         Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
