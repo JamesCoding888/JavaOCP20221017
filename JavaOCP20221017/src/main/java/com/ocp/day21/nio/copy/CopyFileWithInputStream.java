@@ -17,7 +17,7 @@ public class CopyFileWithInputStream {
         // creates a URI object uri from the URL string.
         URI uri = URI.create(url);
         // Specify the path to the destination file where the image will be saved using a Path object dest.
-        Path destination = Paths.get("/Users/liaojames/git/repository/JavaOCP20221017/src/main/java/com/ocp/day21/io/data/Cherry blossom.jpg");
+        Path destination = Paths.get("../src/main/java/com/ocp/day21/io/data/Cherry blossom.jpg");
         // Use the Files class copy method to download the image and save it to the destination file
         // The copy method takes three arguments: 
         // 		1) The input stream of the source file
