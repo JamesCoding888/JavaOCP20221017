@@ -1,25 +1,40 @@
 package com.ocp.day17.exception.application.data.practiceOfSplitAndDelimiter;
 import java.util.Scanner;
+
 public class SplitSample {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Please type in: "); // How are you
-		if (scan.hasNext()) {			
-			scan.useDelimiter(" ");
-			String str1 = scan.nextLine();
-			System.out.println(str1);
-			String[] stringInSplit = str1.split("\\u0020"); // Regular Expression for blank
-			System.out.println(stringInSplit[0]);
-			System.out.println(stringInSplit[1]);
-			System.out.println(stringInSplit[2]);
-		}
-	}
+    public static void main(String[] args) {
+        // Create Scanner to read input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please type in: "); // Example input: How are you
+        
+        // Check if there is input
+        if (scanner.hasNextLine()) {			
+            // Read the entire input line
+            String inputLine = scanner.nextLine();
+            
+            // Display the input line
+            System.out.println("Input: " + inputLine);
+            
+            // Split the input line by spaces
+            String[] words = inputLine.split("\\u0020"); // Regular expression for a space
+            
+            // Print each word from the split array
+            for (int i = 0; i < words.length; i++) {
+                System.out.println("Word " + (i + 1) + ": " + words[i]);
+            }
+        }
+        
+        // Close the scanner
+        scanner.close();
+    }
 }
+
 /*
  Console:	
- 			Please type in: How are you
-			How are you
-			How
-			are
-			you
+			Please type in: How areyou @
+			Input: How areyou @
+			Word 1: How
+			Word 2: areyou
+			Word 3: @
+
 */
