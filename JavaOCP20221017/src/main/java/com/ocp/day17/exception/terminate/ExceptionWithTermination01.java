@@ -1,16 +1,21 @@
 package com.ocp.day17.exception.terminate;
 /*
- 	To be noticed:			 	  
-	 	   As you may know, the try-catch and finally statement for exception handling, the block code of "finally" MUST be executed eventually the code block of catch statement does NOT handle any exception/error.
-	 	   Of this lesson, we are going to demonstrate a function of "return" and "System.exit(0)" with application of try-catch and finally statement.
-	 	   
-	 	   Please read the follows: 
-	 	   		
-	 	   		a. The keyword of return is to finish the execution of a method, and also can be used to return a value of a method.
-	 	   
-	 	   		b. The function of System.exit(0), is going to terminate the currently running JVM and exits the program. 		 	  
-				  	   Why do we need System.exit(0)? If there is an abnormal condition and shall exit immediately, then proceed System.exit(0).
-				
+	Key Points to Notice:
+	
+	- In Java exception handling, the `finally` block **must** be executed even if the `catch` block does not handle any exceptions or errors.
+	
+	- This lesson demonstrates the behavior of `return` and `System.exit(0)` in conjunction with the try-catch-finally structure.
+	
+	Detailed Explanation:
+	
+	a. The keyword `return`:
+	   - It is used to end the execution of a method and, optionally, return a value from the method.
+	
+	b. The method `System.exit(0)`:
+	   - Terminates the currently running Java Virtual Machine (JVM) and exits the program.
+	   - Use `System.exit(0)` to handle situations where an immediate termination of the program is necessary, such as encountering an abnormal condition.
+	   
+	Please observe the behavior in the following code.
 */
 public class ExceptionWithTermination01 {
 	public static void main(String[] args) {
@@ -25,14 +30,15 @@ public class ExceptionWithTermination01 {
 			avg = x / y;
 		} catch(Exception e) {
 			// Console 1), 2) and 3)
-			e.printStackTrace(System.out);
+			e.printStackTrace(System.out); // Explicitly prints to standard output (System.out), less common and used when you want to redirect errors to standard output.
+			e.printStackTrace(); // Default to standard error (System.err), preferred for error handling.
 			// Console 2)
 			/*
 				return;
 			 */
 			// Console 3)
 //			/*
-				System.exit(0); 
+				System.exit(0); // Terminates the Java Virtual Machine (JVM), meaning the entire application will stop running, not just the current thread. 
 //			*/
 		} finally {
 			// Console 1): w/o return 
