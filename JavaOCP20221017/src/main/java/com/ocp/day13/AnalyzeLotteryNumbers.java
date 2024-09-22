@@ -1,4 +1,4 @@
-package com.ocp.day21.analysis;
+package com.ocp.day13;
 
 /*
 	This program analyzes lottery numbers by counting how many times each number appears in a given dataset.
